@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OMORI Map Guide</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #ddd; }
+  header { padding: 8px 16px; border-bottom: 1px solid #333; display: flex; align-items: center; gap: 16px; }
+  header h1 { margin: 0; font-size: 18px; }
+  header select { background: #2a2a2a; color: #ddd; border: 1px solid #444; padding: 4px 8px; }
+  #map { width: 100vw; height: calc(100vh - 50px); background: #0a0a0a; }
+  .leaflet-container { background: #0a0a0a; }
+  .map-event-marker {
+    background: #ff4080; border: 2px solid #fff; border-radius: 50%;
+    width: 16px; height: 16px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>OMORI Map Guide</h1>
+  <select id="mapSelect"></select>
+  <span id="mapInfo" style="color:#888;font-size:12px"></span>
+</header>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// Tile size used by RPG Maker MV
+const TILE_PX = 32; // goats.dev rendered at 32px per tile (will verify)
+
+let mapMeta = null;
+let edges = null;
+let leafletMap = null;
+let currentLayer = null;
+let currentMarkers = [];
+
+async function init() {
+  // load metadata
+  const [metaRes, edgesRes] = await Promise.all([
+    fetch('../data/faraway_maps.json'),
+    fetch('../data/faraway_edges.json'),
+  ]);
+  mapMeta = await metaRes.json();
+  edges = await edgesRes.json();
+
+  // populate dropdown
+  const sel = document.getElementById('mapSelect');
+  const sortedIds = Object.keys(mapMeta).sort((a, b) => +a - +b);
+  for (const id of sortedIds) {
+    const m = mapMeta[id];
+    const opt = document.createElement('option');
+    opt.value = id;
+    opt.textContent = `Map${id}: ${m.name}`;
+    sel.appendChild(opt);
+  }
+  sel.addEventListener('change', () => loadMap(sel.value));
+
+  // init Leaflet with simple CRS (pixel-coordinate, not geographic)
+  leafletMap = L.map('map', {
+    crs: L.CRS.Simple,
+    minZoom: -3,
+    maxZoom: 2,
+    zoomSnap: 0.25,
+    attributionControl: false,
+  });
+
+  // default: load PLAYER STREET (Map 13)
+  sel.value = '13';
+  loadMap('13');
+}
+
+function loadMap(mapId) {
+  const meta = mapMeta[mapId];
+  if (!meta) return;
+  document.getElementById('mapInfo').textContent =
+    `${meta.width}×${meta.height} tiles · BGM: ${meta.bgm || 'none'}`;
+
+  // remove old layer + markers
+  if (currentLayer) leafletMap.removeLayer(currentLayer);
+  for (const m of currentMarkers) leafletMap.removeLayer(m);
+  currentMarkers = [];
+
+  // image overlay (Leaflet uses [y, x] for L.latLng with CRS.Simple)
+  const imgUrl = `../data/raw_pngs/map${mapId}.png`;
+  const w = meta.width * TILE_PX;
+  const h = meta.height * TILE_PX;
+  const bounds = [[0, 0], [h, w]]; // [y, x]
+  currentLayer = L.imageOverlay(imgUrl, bounds).addTo(leafletMap);
+  leafletMap.fitBounds(bounds);
+
+  // add markers for outgoing transfers from this map
+  const exits = (edges.internal || []).filter(e => String(e.from.mapId) === String(mapId));
+  for (const e of exits) {
+    const fy = e.from.y * TILE_PX + TILE_PX / 2;
+    const fx = e.from.x * TILE_PX + TILE_PX / 2;
+    // Note: Leaflet uses [lat, lng] = [y, x] but with CRS.Simple, y goes UP from origin.
+    // We want screen y (down). Image is placed with bounds [[0,0],[h,w]] — top of image at lat=h.
+    // L.latLng(lat, lng) — lat=h-screenY for screen-Y convention.
+    const lat = h - fy;
+    const lng = fx;
+    const dst = mapMeta[e.to.mapId];
+    const dstName = dst ? dst.name : `Map${e.to.mapId}`;
+    const marker = L.circleMarker([lat, lng], {
+      radius: 6,
+      color: '#fff',
+      weight: 1.5,
+      fillColor: '#ff4080',
+      fillOpacity: 0.85,
+    }).addTo(leafletMap);
+    marker.bindPopup(
+      `<b>${e.from.evName}</b><br>` +
+      `(${e.from.x},${e.from.y}) → Map${e.to.mapId}<br>` +
+      `<i>${dstName}</i> @(${e.to.x},${e.to.y})<br>` +
+      `<a href="#" data-mid="${e.to.mapId}" class="goto">→ go</a>`
+    );
+    currentMarkers.push(marker);
+  }
+
+  // delegate click on "go" links
+  setTimeout(() => {
+    document.querySelectorAll('.leaflet-popup .goto').forEach(a => {
+      a.addEventListener('click', (ev) => {
+        ev.preventDefault();
+        const mid = ev.target.dataset.mid;
+        document.getElementById('mapSelect').value = mid;
+        loadMap(mid);
+      });
+    });
+  }, 50);
+}
+
+init();
+</script>
+</body>
+</html>

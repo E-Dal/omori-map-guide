@@ -13,6 +13,20 @@ An interactive map atlas for OMORI — explore Faraway Town and Headspace, find 
 
 Early WIP. Vanilla content only for now.
 
+## Run locally
+
+```bash
+# 1. Extract adjacency data (one-time, regenerate when game data changes)
+node scripts/01_extract_faraway_adjacency.js
+
+# 2. Download map PNGs from goats.dev (one-time, ~30 MB)
+./scripts/02_download_goats_pngs.sh
+
+# 3. Serve the web folder
+python3 -m http.server 8000
+# then open http://localhost:8000/web/
+```
+
 ## Stack
 
 - Static HTML site
