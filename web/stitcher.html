@@ -88,7 +88,20 @@ const TILE_PX = 32;
 
 // Outdoor map IDs to load (Faraway day-version outdoor only).
 // Edit this list as needed.
-const MAP_IDS = [13, 22, 31, 45, 54, 63, 42, 64, 391];
+const MAP_IDS = [
+  13,   // PLAYER STREET (3-stripe)
+  22,   // OTHER STREET (3-stripe)
+  31,   // AUBREY STREET (3-stripe)
+  40,   // CHURCH (DAY)
+  42,   // GRAVEYARD (DAY)
+  45,   // BASIL STREET (3-stripe)
+  54,   // PARK + THAT PLACE (small connector)
+  55,   // SHOPPING CENTER (DAY)
+  63,   // PARK (DAY)
+  64,   // SECRET LAKE (DAY)
+  75,   // CROSSROADS (DAY)
+  391,  // OUTSIDE (treehouse)
+];
 
 // State
 let mapMeta = null;
