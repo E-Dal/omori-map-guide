@@ -469,22 +469,39 @@ async function exportPNG() {
     alert('Place at least one map first.');
     return;
   }
-  // Composite to a canvas at 1:1 pixel scale
-  const minX = +world.dataset.minX, minY = +world.dataset.minY;
-  const maxX = +world.dataset.maxX, maxY = +world.dataset.maxY;
-  const w = maxX - minX, h = maxY - minY;
-  const canvas = document.createElement('canvas');
-  canvas.width = w;
-  canvas.height = h;
-  const ctx = canvas.getContext('2d');
+
+  // Recompute bounds fresh from current placed state (world.dataset may be
+  // stale if user moved maps via drag/arrow keys).
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
   for (const id of Object.keys(placed)) {
+    const m = mapMeta[id];
+    const pos = placed[id];
+    const cr = cropRect(pos.crop || 'full', m);
+    const w = m.width * TILE_PX;
+    const cropH = cr.h * TILE_PX;
+    minX = Math.min(minX, pos.x);
+    minY = Math.min(minY, pos.y);
+    maxX = Math.max(maxX, pos.x + w);
+    maxY = Math.max(maxY, pos.y + cropH);
+  }
+  const cw = maxX - minX, ch = maxY - minY;
+
+  const canvas = document.createElement('canvas');
+  canvas.width = cw;
+  canvas.height = ch;
+  const ctx = canvas.getContext('2d');
+
+  // Sort by zOrder ascending so higher zOrder renders on top (matches editor).
+  const idsSorted = Object.keys(placed).sort(
+    (a, b) => (placed[a].zOrder ?? 0) - (placed[b].zOrder ?? 0)
+  );
+  for (const id of idsSorted) {
     const pos = placed[id];
     const m = mapMeta[id];
     const cr = cropRect(pos.crop || 'full', m);
     const img = new Image();
     img.src = `../data/raw_pngs/map${id}.png`;
     await new Promise(r => { img.onload = r; img.onerror = r; });
-    // drawImage(img, sx, sy, sW, sH, dx, dy, dW, dH) — crop source rectangle
     ctx.drawImage(
       img,
       0, cr.y * TILE_PX, m.width * TILE_PX, cr.h * TILE_PX,
