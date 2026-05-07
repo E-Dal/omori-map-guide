@@ -73,9 +73,9 @@
     <span class="info">
       zoom: <span id="zoomLabel">100%</span>
       &nbsp;|&nbsp;
-      pan: <span id="panLabel">0, 0</span>
-      &nbsp;|&nbsp;
       placed: <span id="placedLabel">0/0</span>
+      &nbsp;|&nbsp;
+      <span style="color:#666">Shift+drag = pixel · ←↑↓→ = nudge 1px (Shift = 32px)</span>
     </span>
   </div>
   <div id="viewport">
@@ -259,11 +259,12 @@ function setupCropButtons(el, id) {
 }
 
 function setupDrag(el, id) {
-  let dragging = false, sx, sy, ox, oy;
+  let dragging = false, sx, sy, ox, oy, shiftHeld = false;
   el.addEventListener('mousedown', e => {
     if (e.button !== 0) return;
     e.stopPropagation();
     dragging = true;
+    shiftHeld = e.shiftKey;
     sx = e.clientX; sy = e.clientY;
     ox = placed[id].x; oy = placed[id].y;
     document.querySelectorAll('.placed-map').forEach(n => n.classList.remove('selected'));
@@ -271,16 +272,19 @@ function setupDrag(el, id) {
   });
   window.addEventListener('mousemove', e => {
     if (!dragging) return;
+    shiftHeld = e.shiftKey;
     const dx = (e.clientX - sx) / zoom;
     const dy = (e.clientY - sy) / zoom;
-    const nx = Math.round((ox + dx) / TILE_PX) * TILE_PX;
-    const ny = Math.round((oy + dy) / TILE_PX) * TILE_PX;
+    const snap = shiftHeld ? 1 : TILE_PX; // shift = pixel precision
+    const nx = Math.round((ox + dx) / snap) * snap;
+    const ny = Math.round((oy + dy) / snap) * snap;
     placed[id].x = nx;
     placed[id].y = ny;
     el.style.left = nx + 'px';
     el.style.top = ny + 'px';
+    const cropTag = (placed[id].crop && placed[id].crop !== 'full') ? ` [${placed[id].crop}]` : '';
     el.querySelector('.label').textContent =
-      `Map ${id}: ${mapMeta[id].name.replace(/^[- ]+/,'')} @ (${nx}, ${ny})`;
+      `Map ${id}: ${mapMeta[id].name.replace(/^[- ]+/,'')} @ (${nx}, ${ny})${cropTag}`;
   });
   window.addEventListener('mouseup', () => { dragging = false; });
 }
@@ -310,7 +314,12 @@ function setupViewportZoom() {
     // world coord under cursor before zoom
     const wx = (mx - panX) / zoom;
     const wy = (my - panY) / zoom;
-    const factor = e.deltaY < 0 ? 1.15 : 1 / 1.15;
+    // Gentler zoom: factor scales with |deltaY| so trackpads (small delta)
+    // give fine zoom and mouse wheels (big delta) still feel responsive but
+    // no longer huge jumps.
+    // Magnitude per pixel of deltaY ≈ 0.005 (so a 100px scroll ≈ 1.65x).
+    const sign = e.deltaY < 0 ? 1 : -1;
+    const factor = Math.exp(sign * Math.min(Math.abs(e.deltaY), 60) * 0.005);
     zoom = Math.max(0.05, Math.min(8, zoom * factor));
     // adjust pan so world coord under cursor stays put
     panX = mx - wx * zoom;
@@ -330,8 +339,29 @@ function setupGlobalKeys() {
         renderThumbs();
         updatePlacedLabel();
       }
+      return;
     }
-    if (e.key === '0') resetView();
+    if (e.key === '0') { resetView(); return; }
+
+    // Arrow keys: nudge selected map (1px, or 32px with Shift for full tile)
+    const sel = world.querySelector('.placed-map.selected');
+    if (!sel) return;
+    const id = sel.dataset.id;
+    const step = e.shiftKey ? TILE_PX : 1;
+    let dx = 0, dy = 0;
+    if (e.key === 'ArrowLeft')  dx = -step;
+    else if (e.key === 'ArrowRight') dx = step;
+    else if (e.key === 'ArrowUp')    dy = -step;
+    else if (e.key === 'ArrowDown')  dy = step;
+    else return;
+    e.preventDefault();
+    placed[id].x += dx;
+    placed[id].y += dy;
+    sel.style.left = placed[id].x + 'px';
+    sel.style.top = placed[id].y + 'px';
+    const cropTag = (placed[id].crop && placed[id].crop !== 'full') ? ` [${placed[id].crop}]` : '';
+    sel.querySelector('.label').textContent =
+      `Map ${id}: ${mapMeta[id].name.replace(/^[- ]+/,'')} @ (${placed[id].x}, ${placed[id].y})${cropTag}`;
   });
 }
 
