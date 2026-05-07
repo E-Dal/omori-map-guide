@@ -39,12 +39,21 @@
               cursor: grab; }
   #viewport.panning { cursor: grabbing; }
   #world { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
-  .placed-map { position: absolute; cursor: move; outline: 1px solid #444; }
+  .placed-map { position: absolute; cursor: move; outline: 1px solid #444;
+                background-repeat: no-repeat; }
   .placed-map.selected { outline: 2px solid #ff80c0; z-index: 100; }
   .placed-map .label { position: absolute; left: 4px; top: 4px;
                         background: rgba(0,0,0,0.7); color: #fff;
                         padding: 2px 6px; font-size: 11px; border-radius: 3px;
                         pointer-events: none; }
+  .placed-map .crop-bar { position: absolute; right: 4px; top: 4px;
+                          background: rgba(0,0,0,0.8); border-radius: 3px;
+                          display: flex; gap: 0; padding: 1px;
+                          font-size: 10px; }
+  .placed-map .crop-bar button { background: #444; color: #ddd; border: none;
+                                 padding: 2px 6px; cursor: pointer; }
+  .placed-map .crop-bar button:hover { background: #666; }
+  .placed-map .crop-bar button.active { background: #ff80c0; color: #000; }
 </style>
 </head>
 <body>
@@ -83,9 +92,27 @@ const MAP_IDS = [13, 22, 31, 45, 54, 63, 42, 64, 391];
 
 // State
 let mapMeta = null;
-let placed = {}; // mapId -> {x, y}  (in world pixels, before transform)
+let placed = {}; // mapId -> {x, y, crop}  (crop is 'full' | 'top3' | 'mid3' | 'bot3')
 let zoom = 0.5;
 let panX = 0, panY = 0;
+
+// Default crop based on map height. Tall maps (height % 30 == 0 and >= 60) are
+// usually 3-stripe day/sunset/night. Default to 'top3' (day).
+function defaultCrop(meta) {
+  const h = meta.height;
+  if (h >= 60 && h % 30 === 0) return 'top3';
+  // Some maps are 2-stripe (day+sunset stacked); we treat them as 'top3' too,
+  // user can switch to 'full' if needed.
+  return 'full';
+}
+
+function cropRect(crop, meta) {
+  // Returns {y, h} in tiles for the crop window (top-left + height)
+  if (crop === 'top3') return { y: 0, h: meta.height / 3 };
+  if (crop === 'mid3') return { y: meta.height / 3, h: meta.height / 3 };
+  if (crop === 'bot3') return { y: meta.height * 2 / 3, h: meta.height / 3 };
+  return { y: 0, h: meta.height };
+}
 
 const $ = id => document.getElementById(id);
 const world = $('world');
@@ -142,9 +169,12 @@ function renderThumbs() {
         const cx = (-panX + viewport.clientWidth / 2) / zoom;
         const cy = (-panY + viewport.clientHeight / 2) / zoom;
         const m = mapMeta[id];
+        const crop = defaultCrop(m);
+        const cropH = cropRect(crop, m).h;
         placed[id] = {
           x: Math.round((cx - m.width * TILE_PX / 2) / TILE_PX) * TILE_PX,
-          y: Math.round((cy - m.height * TILE_PX / 2) / TILE_PX) * TILE_PX,
+          y: Math.round((cy - cropH * TILE_PX / 2) / TILE_PX) * TILE_PX,
+          crop,
         };
         renderPlaced();
         renderThumbs();
@@ -163,26 +193,56 @@ function renderPlaced() {
   for (const id of Object.keys(placed)) {
     const m = mapMeta[id];
     const pos = placed[id];
-    const w = m.width * TILE_PX, h = m.height * TILE_PX;
+    const crop = pos.crop || 'full';
+    const cr = cropRect(crop, m);
+    const w = m.width * TILE_PX;
+    const fullH = m.height * TILE_PX;
+    const cropH = cr.h * TILE_PX;
+    const cropOffsetY = cr.y * TILE_PX;
     const div = document.createElement('div');
     div.className = 'placed-map';
     div.style.left = pos.x + 'px';
     div.style.top = pos.y + 'px';
     div.style.width = w + 'px';
-    div.style.height = h + 'px';
+    div.style.height = cropH + 'px';
     div.style.backgroundImage = `url(../data/raw_pngs/map${id}.png)`;
-    div.style.backgroundSize = `${w}px ${h}px`;
+    div.style.backgroundSize = `${w}px ${fullH}px`;
+    div.style.backgroundPosition = `0 -${cropOffsetY}px`;
     div.dataset.id = id;
-    div.innerHTML = `<div class="label">Map ${id}: ${m.name.replace(/^[- ]+/, '')} @ (${pos.x}, ${pos.y})</div>`;
+
+    // crop options: only show if map height suggests multi-stripe
+    const showCropBar = m.height >= 60;
+    const cropBar = showCropBar
+      ? `<div class="crop-bar">
+          <button data-crop="top3" class="${crop==='top3'?'active':''}">Day</button>
+          <button data-crop="mid3" class="${crop==='mid3'?'active':''}">Sunset</button>
+          <button data-crop="bot3" class="${crop==='bot3'?'active':''}">Night</button>
+          <button data-crop="full" class="${crop==='full'?'active':''}">Full</button>
+        </div>`
+      : '';
+
+    div.innerHTML = `<div class="label">Map ${id}: ${m.name.replace(/^[- ]+/, '')} @ (${pos.x}, ${pos.y}) ${crop !== 'full' ? '['+crop+']' : ''}</div>${cropBar}`;
     setupDrag(div, id);
+    setupCropButtons(div, id);
     world.appendChild(div);
     minX = Math.min(minX, pos.x); minY = Math.min(minY, pos.y);
-    maxX = Math.max(maxX, pos.x + w); maxY = Math.max(maxY, pos.y + h);
+    maxX = Math.max(maxX, pos.x + w); maxY = Math.max(maxY, pos.y + cropH);
   }
   world.dataset.minX = minX === Infinity ? 0 : minX;
   world.dataset.minY = minY === Infinity ? 0 : minY;
   world.dataset.maxX = maxX === -Infinity ? 0 : maxX;
   world.dataset.maxY = maxY === -Infinity ? 0 : maxY;
+}
+
+function setupCropButtons(el, id) {
+  el.querySelectorAll('.crop-bar button').forEach(btn => {
+    btn.addEventListener('mousedown', e => e.stopPropagation()); // don't start drag
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      placed[id].crop = btn.dataset.crop;
+      renderPlaced();
+    });
+  });
 }
 
 function setupDrag(el, id) {
@@ -334,10 +394,16 @@ async function exportPNG() {
   for (const id of Object.keys(placed)) {
     const pos = placed[id];
     const m = mapMeta[id];
+    const cr = cropRect(pos.crop || 'full', m);
     const img = new Image();
     img.src = `../data/raw_pngs/map${id}.png`;
     await new Promise(r => { img.onload = r; img.onerror = r; });
-    ctx.drawImage(img, pos.x - minX, pos.y - minY, m.width * TILE_PX, m.height * TILE_PX);
+    // drawImage(img, sx, sy, sW, sH, dx, dy, dW, dH) — crop source rectangle
+    ctx.drawImage(
+      img,
+      0, cr.y * TILE_PX, m.width * TILE_PX, cr.h * TILE_PX,
+      pos.x - minX, pos.y - minY, m.width * TILE_PX, cr.h * TILE_PX
+    );
   }
   canvas.toBlob(blob => {
     const a = document.createElement('a');
