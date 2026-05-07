@@ -39,7 +39,7 @@
               cursor: grab; }
   #viewport.panning { cursor: grabbing; }
   #world { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
-  .placed-map { position: absolute; cursor: move; outline: 1px solid #444;
+  .placed-map { position: absolute; cursor: move;
                 background-repeat: no-repeat; }
   .placed-map.selected { outline: 2px solid #ff80c0; z-index: 100; }
   .placed-map .label { position: absolute; left: 4px; top: 4px;
@@ -294,6 +294,8 @@ function setupViewportPan() {
   let panning = false, sx, sy, opx, opy;
   viewport.addEventListener('mousedown', e => {
     if (e.target !== viewport && e.target !== world) return;
+    // click on empty area = deselect all placed maps
+    document.querySelectorAll('.placed-map.selected').forEach(n => n.classList.remove('selected'));
     panning = true; viewport.classList.add('panning');
     sx = e.clientX; sy = e.clientY; opx = panX; opy = panY;
   });
