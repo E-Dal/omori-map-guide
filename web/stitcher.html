@@ -46,14 +46,15 @@
                         background: rgba(0,0,0,0.7); color: #fff;
                         padding: 2px 6px; font-size: 11px; border-radius: 3px;
                         pointer-events: none; }
-  .placed-map .crop-bar { position: absolute; right: 4px; top: 4px;
+  .placed-map .ctrl-bar { position: absolute; right: 4px; top: 4px;
                           background: rgba(0,0,0,0.8); border-radius: 3px;
                           display: flex; gap: 0; padding: 1px;
                           font-size: 10px; }
-  .placed-map .crop-bar button { background: #444; color: #ddd; border: none;
+  .placed-map .ctrl-bar button { background: #444; color: #ddd; border: none;
                                  padding: 2px 6px; cursor: pointer; }
-  .placed-map .crop-bar button:hover { background: #666; }
-  .placed-map .crop-bar button.active { background: #ff80c0; color: #000; }
+  .placed-map .ctrl-bar button:hover { background: #666; }
+  .placed-map .ctrl-bar button.active { background: #ff80c0; color: #000; }
+  .placed-map .ctrl-bar .sep { width: 1px; background: #222; margin: 0 2px; }
 </style>
 </head>
 <body>
@@ -75,7 +76,7 @@
       &nbsp;|&nbsp;
       placed: <span id="placedLabel">0/0</span>
       &nbsp;|&nbsp;
-      <span style="color:#666">drag = snap to tile · Shift+drag = 1px · ←↑↓→ = nudge 1px (selected map)</span>
+      <span style="color:#666">drag · Shift+drag = 1px · ←↑↓→ = nudge · [ / ] = back / front</span>
     </span>
   </div>
   <div id="viewport">
@@ -125,6 +126,34 @@ function cropRect(crop, meta) {
   if (crop === 'mid3') return { y: meta.height / 3, h: meta.height / 3 };
   if (crop === 'bot3') return { y: meta.height * 2 / 3, h: meta.height / 3 };
   return { y: 0, h: meta.height };
+}
+
+// Z-order helpers
+function allZOrders() {
+  return Object.values(placed).map(p => p.zOrder ?? 0);
+}
+function nextZOrder() {
+  const zs = allZOrders();
+  return zs.length === 0 ? 0 : Math.max(...zs) + 1;
+}
+function prevZOrder() {
+  const zs = allZOrders();
+  return zs.length === 0 ? 0 : Math.min(...zs) - 1;
+}
+function bringToFront(id) {
+  if (!placed[id]) return;
+  placed[id].zOrder = nextZOrder();
+  renderPlaced();
+  // restore selected highlight
+  const el = world.querySelector(`.placed-map[data-id="${id}"]`);
+  if (el) el.classList.add('selected');
+}
+function sendToBack(id) {
+  if (!placed[id]) return;
+  placed[id].zOrder = prevZOrder();
+  renderPlaced();
+  const el = world.querySelector(`.placed-map[data-id="${id}"]`);
+  if (el) el.classList.add('selected');
 }
 
 const $ = id => document.getElementById(id);
@@ -188,6 +217,7 @@ function renderThumbs() {
           x: Math.round((cx - m.width * TILE_PX / 2) / TILE_PX) * TILE_PX,
           y: Math.round((cy - cropH * TILE_PX / 2) / TILE_PX) * TILE_PX,
           crop,
+          zOrder: nextZOrder(),
         };
         renderPlaced();
         renderThumbs();
@@ -203,7 +233,9 @@ function renderPlaced() {
   // remove all .placed-map nodes
   world.querySelectorAll('.placed-map').forEach(n => n.remove());
   let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-  for (const id of Object.keys(placed)) {
+  // sort by zOrder ascending — last-rendered = on top
+  const idsSorted = Object.keys(placed).sort((a, b) => (placed[a].zOrder ?? 0) - (placed[b].zOrder ?? 0));
+  for (const id of idsSorted) {
     const m = mapMeta[id];
     const pos = placed[id];
     const crop = pos.crop || 'full';
@@ -223,20 +255,24 @@ function renderPlaced() {
     div.style.backgroundPosition = `0 -${cropOffsetY}px`;
     div.dataset.id = id;
 
-    // crop options: only show if map height suggests multi-stripe
+    // ctrl bar = order buttons + (optional) crop buttons
     const showCropBar = m.height >= 60;
-    const cropBar = showCropBar
-      ? `<div class="crop-bar">
-          <button data-crop="top3" class="${crop==='top3'?'active':''}">Day</button>
-          <button data-crop="mid3" class="${crop==='mid3'?'active':''}">Sunset</button>
-          <button data-crop="bot3" class="${crop==='bot3'?'active':''}">Night</button>
-          <button data-crop="full" class="${crop==='full'?'active':''}">Full</button>
-        </div>`
+    const cropBtns = showCropBar
+      ? `<button data-crop="top3" class="${crop==='top3'?'active':''}">Day</button>
+         <button data-crop="mid3" class="${crop==='mid3'?'active':''}">Sunset</button>
+         <button data-crop="bot3" class="${crop==='bot3'?'active':''}">Night</button>
+         <button data-crop="full" class="${crop==='full'?'active':''}">Full</button>
+         <span class="sep"></span>`
       : '';
+    const ctrlBar = `<div class="ctrl-bar">
+        ${cropBtns}
+        <button data-order="back" title="Send to back">⇩</button>
+        <button data-order="front" title="Bring to front">⇧</button>
+      </div>`;
 
-    div.innerHTML = `<div class="label">Map ${id}: ${m.name.replace(/^[- ]+/, '')} @ (${pos.x}, ${pos.y}) ${crop !== 'full' ? '['+crop+']' : ''}</div>${cropBar}`;
+    div.innerHTML = `<div class="label">Map ${id}: ${m.name.replace(/^[- ]+/, '')} @ (${pos.x}, ${pos.y}) ${crop !== 'full' ? '['+crop+']' : ''}</div>${ctrlBar}`;
     setupDrag(div, id);
-    setupCropButtons(div, id);
+    setupCtrlButtons(div, id);
     world.appendChild(div);
     minX = Math.min(minX, pos.x); minY = Math.min(minY, pos.y);
     maxX = Math.max(maxX, pos.x + w); maxY = Math.max(maxY, pos.y + cropH);
@@ -247,13 +283,19 @@ function renderPlaced() {
   world.dataset.maxY = maxY === -Infinity ? 0 : maxY;
 }
 
-function setupCropButtons(el, id) {
-  el.querySelectorAll('.crop-bar button').forEach(btn => {
+function setupCtrlButtons(el, id) {
+  el.querySelectorAll('.ctrl-bar button').forEach(btn => {
     btn.addEventListener('mousedown', e => e.stopPropagation()); // don't start drag
     btn.addEventListener('click', e => {
       e.stopPropagation();
-      placed[id].crop = btn.dataset.crop;
-      renderPlaced();
+      if (btn.dataset.crop) {
+        placed[id].crop = btn.dataset.crop;
+        renderPlaced();
+      } else if (btn.dataset.order === 'front') {
+        bringToFront(id);
+      } else if (btn.dataset.order === 'back') {
+        sendToBack(id);
+      }
     });
   });
 }
@@ -340,10 +382,15 @@ function setupGlobalKeys() {
     }
     if (e.key === '0') { resetView(); return; }
 
-    // Arrow keys: nudge selected map (1px, or 32px with Shift for full tile)
     const sel = world.querySelector('.placed-map.selected');
     if (!sel) return;
     const id = sel.dataset.id;
+
+    // Z-order shortcuts
+    if (e.key === ']') { e.preventDefault(); bringToFront(id); return; }
+    if (e.key === '[') { e.preventDefault(); sendToBack(id); return; }
+
+    // Arrow keys: nudge selected map (1px, or 32px with Shift for full tile)
     const step = e.shiftKey ? TILE_PX : 1;
     let dx = 0, dy = 0;
     if (e.key === 'ArrowLeft')  dx = -step;
