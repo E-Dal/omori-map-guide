@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Node (if we ever add tooling)
+node_modules/
+package-lock.json
+
+# Local build artifacts
+dist/
+.cache/
+
+# Local-only data dumps (we'll gitignore the bulk PNGs and only commit a manifest)
+data/raw_pngs/
+*.log
