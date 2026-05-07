@@ -75,7 +75,7 @@
       &nbsp;|&nbsp;
       placed: <span id="placedLabel">0/0</span>
       &nbsp;|&nbsp;
-      <span style="color:#666">Shift+drag = pixel · ←↑↓→ = nudge 1px (Shift = 32px)</span>
+      <span style="color:#666">drag = 1px · Shift+drag = snap to tile · ←↑↓→ = nudge 1px (selected map)</span>
     </span>
   </div>
   <div id="viewport">
@@ -275,7 +275,8 @@ function setupDrag(el, id) {
     shiftHeld = e.shiftKey;
     const dx = (e.clientX - sx) / zoom;
     const dy = (e.clientY - sy) / zoom;
-    const snap = shiftHeld ? 1 : TILE_PX; // shift = pixel precision
+    // Default: pixel-precise (no snap). Hold Shift for tile-grid snap.
+    const snap = shiftHeld ? TILE_PX : 1;
     const nx = Math.round((ox + dx) / snap) * snap;
     const ny = Math.round((oy + dy) / snap) * snap;
     placed[id].x = nx;
@@ -311,17 +312,11 @@ function setupViewportZoom() {
     const rect = viewport.getBoundingClientRect();
     const mx = e.clientX - rect.left;
     const my = e.clientY - rect.top;
-    // world coord under cursor before zoom
     const wx = (mx - panX) / zoom;
     const wy = (my - panY) / zoom;
-    // Gentler zoom: factor scales with |deltaY| so trackpads (small delta)
-    // give fine zoom and mouse wheels (big delta) still feel responsive but
-    // no longer huge jumps.
-    // Magnitude per pixel of deltaY ≈ 0.005 (so a 100px scroll ≈ 1.65x).
-    const sign = e.deltaY < 0 ? 1 : -1;
-    const factor = Math.exp(sign * Math.min(Math.abs(e.deltaY), 60) * 0.005);
+    // Constant 8% per tick — moderate, predictable across trackpad/wheel.
+    const factor = e.deltaY < 0 ? 1.08 : 1 / 1.08;
     zoom = Math.max(0.05, Math.min(8, zoom * factor));
-    // adjust pan so world coord under cursor stays put
     panX = mx - wx * zoom;
     panY = my - wy * zoom;
     applyTransform();
