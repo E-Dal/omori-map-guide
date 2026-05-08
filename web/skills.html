@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OMORI Skills</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #ddd; padding: 16px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+  h1 { margin: 0; font-size: 20px; }
+  .filter { background: #2a2a2a; color: #ddd; border: 1px solid #444; padding: 6px 10px; border-radius: 3px; font-size: 13px; }
+  nav { margin-bottom: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+  nav a { background: #2a2a2a; color: #aaccff; padding: 4px 10px; text-decoration: none; border-radius: 3px; font-size: 12px; }
+  nav a.active, nav a:hover { background: #ff80c0; color: #000; }
+
+  .actor-section { margin-bottom: 32px; }
+  .actor-title { font-size: 16px; color: #ff80c0; padding-bottom: 4px; border-bottom: 1px solid #333; margin-bottom: 8px; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th, td { padding: 6px 8px; text-align: left; vertical-align: top; border-bottom: 1px solid #2a2a2a; }
+  th { background: #222; color: #aaa; font-weight: normal; font-size: 11px; }
+  tr:hover td { background: #232323; }
+
+  .lv { color: #888; width: 30px; text-align: right; font-family: monospace; }
+  .name { color: #fff; font-weight: bold; width: 160px; }
+  .desc { color: #999; font-style: italic; max-width: 320px; }
+  .cost { color: #88f; font-family: monospace; font-size: 11px; width: 70px; }
+  .formula { color: #ffd070; font-family: monospace; font-size: 11px; max-width: 360px; word-break: break-word; }
+  .scope { color: #80c0ff; font-size: 11px; width: 100px; }
+  .effects { color: #ff80c0; font-size: 11px; }
+  .state-tag { display: inline-block; background: #4a2a4a; color: #ffaadd; padding: 1px 6px;
+               border-radius: 3px; margin-right: 4px; margin-bottom: 2px; cursor: help; }
+
+  .states-legend { margin-top: 32px; padding: 12px; background: #1f1f1f; border-radius: 4px; }
+  .states-legend h2 { margin: 0 0 8px; font-size: 14px; color: #aaa; }
+  .state-row { display: flex; gap: 12px; padding: 4px 0; border-bottom: 1px solid #2a2a2a; font-size: 12px; }
+  .state-row .sn { color: #ffaadd; font-weight: bold; min-width: 100px; }
+  .state-row .sd { color: #888; flex: 1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>OMORI Skills (Vanilla)</h1>
+  <input type="text" class="filter" id="filter" placeholder="filter (skill name / state / formula)..." />
+  <a href="index.html" style="color:#88aaff">← back to map guide</a>
+</header>
+
+<nav id="actorNav"></nav>
+
+<div id="content"></div>
+
+<div class="states-legend" id="statesLegend"></div>
+
+<script>
+let data;
+
+async function init() {
+  data = await fetch('../data/skills_vanilla.json').then(r => r.json());
+  render();
+  $('filter').addEventListener('input', render);
+  // build actor nav
+  const nav = $('actorNav');
+  for (const a of data.actors) {
+    const link = document.createElement('a');
+    link.href = '#actor-' + a.id;
+    link.textContent = a.label;
+    nav.appendChild(link);
+  }
+}
+
+const $ = id => document.getElementById(id);
+
+function effectStr(e, states) {
+  if (e.kind === 'add_state') {
+    return `<span class="state-tag" title="${(states[e.stateId]?.note || '').replace(/"/g,'&quot;')}">→ ${e.stateName}</span>`;
+  }
+  if (e.kind === 'remove_state') return `<span class="state-tag">remove ${e.stateName}</span>`;
+  if (e.kind === 'recover_hp') return `<span style="color:#80ff80">+HP ${e.percent}%${e.flat?' +'+e.flat:''}</span>`;
+  if (e.kind === 'recover_mp') return `<span style="color:#80c0ff">+MP ${e.percent}%${e.flat?' +'+e.flat:''}</span>`;
+  if (e.kind === 'gain_tp') return `<span style="color:#ffc080">+TP ${e.amount}</span>`;
+  if (e.kind === 'common_event') return `<span style="color:#666">[CE ${e.ceId}]</span>`;
+  if (e.kind === 'special_escape') return `<span style="color:#ff8080">flee</span>`;
+  return `<span style="color:#666">${e.kind}</span>`;
+}
+
+function costStr(s) {
+  const parts = [];
+  if (s.mpCost) parts.push(`${s.mpCost} MP`);
+  if (s.tpCost) parts.push(`${s.tpCost} TP`);
+  return parts.join('+') || '-';
+}
+
+function render() {
+  const filter = $('filter').value.toLowerCase().trim();
+  const out = [];
+  for (const a of data.actors) {
+    const rows = [];
+    for (const l of a.learnings) {
+      const sk = data.skills[l.skillId];
+      if (!sk) continue;
+      const eff = sk.effects.map(e => effectStr(e, data.states)).join(' ');
+      const text = (sk.name + ' ' + (sk.description || '') + ' ' + (sk.damage.formula || '') + ' ' + eff).toLowerCase();
+      if (filter && !text.includes(filter)) continue;
+      rows.push(`
+        <tr>
+          <td class="lv">Lv${l.level}</td>
+          <td class="name">${escape(sk.name)}</td>
+          <td class="desc">${escape(sk.description || '')}</td>
+          <td class="cost">${costStr(sk)}</td>
+          <td class="scope">${escape(sk.scopeName)}<br><small style="color:#666">${escape(sk.damage.typeName)}</small></td>
+          <td class="formula">${escape(sk.damage.formula || '-')}</td>
+          <td class="effects">${eff || '-'}</td>
+        </tr>`);
+    }
+    if (rows.length === 0) continue;
+    out.push(`
+      <section class="actor-section" id="actor-${a.id}">
+        <div class="actor-title">${escape(a.label)} <small style="color:#666">(class: ${escape(a.className)})</small></div>
+        <table>
+          <thead>
+            <tr><th>Lv</th><th>Skill</th><th>Description</th><th>Cost</th><th>Scope/Type</th><th>Damage Formula</th><th>Effects</th></tr>
+          </thead>
+          <tbody>${rows.join('')}</tbody>
+        </table>
+      </section>`);
+  }
+  $('content').innerHTML = out.join('');
+
+  // States legend
+  const stateRows = Object.values(data.states).map(s =>
+    `<div class="state-row"><span class="sn">${escape(s.name)}</span><span class="sd">${escape((s.note||'').slice(0,160))}</span></div>`
+  ).join('');
+  $('statesLegend').innerHTML = `<h2>States referenced (hover skill state tags for details)</h2>${stateRows}`;
+}
+
+function escape(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+init();
+</script>
+</body>
+</html>
