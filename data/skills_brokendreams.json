@@ -1,0 +1,3311 @@
+{
+  "actors": [
+    {
+      "id": 1,
+      "name": "OMORI",
+      "label": "OMORI (Actor 1)",
+      "classId": 1,
+      "className": "OMORI",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 26,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 3,
+          "skillId": 27,
+          "skillName": "STAB"
+        },
+        {
+          "level": 5,
+          "skillId": 30,
+          "skillName": "BREAD SLICE"
+        },
+        {
+          "level": 7,
+          "skillId": 35,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 10,
+          "skillId": 28,
+          "skillName": "HACK AWAY"
+        },
+        {
+          "level": 12,
+          "skillId": 32,
+          "skillName": "LUCKY SLICE"
+        },
+        {
+          "level": 15,
+          "skillId": 33,
+          "skillName": "TRICK"
+        },
+        {
+          "level": 19,
+          "skillId": 44,
+          "skillName": "PAINFUL TRUTH"
+        },
+        {
+          "level": 20,
+          "skillId": 34,
+          "skillName": "SHUN"
+        },
+        {
+          "level": 25,
+          "skillId": 41,
+          "skillName": "STARE"
+        },
+        {
+          "level": 30,
+          "skillId": 36,
+          "skillName": "EXPLOIT"
+        },
+        {
+          "level": 35,
+          "skillId": 37,
+          "skillName": "FINAL STRIKE"
+        },
+        {
+          "level": 1,
+          "skillId": 46,
+          "skillName": "ATTACK AGAIN CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 49,
+          "skillName": "TRIP CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 52,
+          "skillName": "RELEASE ENERGY CHECK"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "AUBREY",
+      "label": "AUBREY (Actor 2)",
+      "classId": 2,
+      "className": "AUBREY",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 68,
+          "skillName": "PEP TALK"
+        },
+        {
+          "level": 6,
+          "skillId": 74,
+          "skillName": "COUNTER"
+        },
+        {
+          "level": 10,
+          "skillId": 76,
+          "skillName": "TWIRL"
+        },
+        {
+          "level": 11,
+          "skillId": 84,
+          "skillName": "TEAM SPIRIT"
+        },
+        {
+          "level": 14,
+          "skillId": 72,
+          "skillName": "POWER HIT"
+        },
+        {
+          "level": 17,
+          "skillId": 77,
+          "skillName": "MOOD WRECKER"
+        },
+        {
+          "level": 20,
+          "skillId": 71,
+          "skillName": "WIND-UP THROW"
+        },
+        {
+          "level": 23,
+          "skillId": 75,
+          "skillName": "MASH"
+        },
+        {
+          "level": 27,
+          "skillId": 78,
+          "skillName": "BEATDOWN"
+        },
+        {
+          "level": 30,
+          "skillId": 73,
+          "skillName": "LAST RESORT"
+        },
+        {
+          "level": 1,
+          "skillId": 86,
+          "skillName": "LOOK AT OMORI CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 89,
+          "skillName": "LOOK AT KEL CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 92,
+          "skillName": "LOOK AT HERO CHECK"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "KEL",
+      "label": "KEL (Actor 3)",
+      "classId": 3,
+      "className": "KEL",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 107,
+          "skillName": "ANNOY"
+        },
+        {
+          "level": 4,
+          "skillId": 109,
+          "skillName": "REBOUND"
+        },
+        {
+          "level": 9,
+          "skillId": 115,
+          "skillName": "RUN 'N GUN"
+        },
+        {
+          "level": 10,
+          "skillId": 123,
+          "skillName": "CURVEBALL"
+        },
+        {
+          "level": 16,
+          "skillId": 114,
+          "skillName": "RICOCHET"
+        },
+        {
+          "level": 20,
+          "skillId": 116,
+          "skillName": "MEGAPHONE"
+        },
+        {
+          "level": 21,
+          "skillId": 117,
+          "skillName": "CAN'T CATCH ME"
+        },
+        {
+          "level": 26,
+          "skillId": 111,
+          "skillName": "RALLY"
+        },
+        {
+          "level": 29,
+          "skillId": 124,
+          "skillName": "COMEBACK"
+        },
+        {
+          "level": 30,
+          "skillId": 113,
+          "skillName": "TICKLE"
+        },
+        {
+          "level": 1,
+          "skillId": 126,
+          "skillName": "PASS TO OMORI CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 129,
+          "skillName": "PASS TO AUBREY CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 132,
+          "skillName": "PASS TO HERO CHECK"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "HERO",
+      "label": "HERO (Actor 4)",
+      "classId": 4,
+      "className": "HERO",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 147,
+          "skillName": "COOK"
+        },
+        {
+          "level": 2,
+          "skillId": 148,
+          "skillName": "MASSAGE"
+        },
+        {
+          "level": 8,
+          "skillId": 153,
+          "skillName": "CHARM"
+        },
+        {
+          "level": 9,
+          "skillId": 148,
+          "skillName": "MASSAGE"
+        },
+        {
+          "level": 10,
+          "skillId": 149,
+          "skillName": "SMILE"
+        },
+        {
+          "level": 13,
+          "skillId": 157,
+          "skillName": "FAST FOOD"
+        },
+        {
+          "level": 16,
+          "skillId": 158,
+          "skillName": "HOMEMADE JAM"
+        },
+        {
+          "level": 20,
+          "skillId": 154,
+          "skillName": "CAPTIVATE"
+        },
+        {
+          "level": 22,
+          "skillId": 160,
+          "skillName": "ENCHANT"
+        },
+        {
+          "level": 24,
+          "skillId": 156,
+          "skillName": "SHARE FOOD"
+        },
+        {
+          "level": 28,
+          "skillId": 155,
+          "skillName": "MESMERIZE"
+        },
+        {
+          "level": 30,
+          "skillId": 161,
+          "skillName": "DAZZLE"
+        },
+        {
+          "level": 1,
+          "skillId": 168,
+          "skillName": "CALL OMORI CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 171,
+          "skillName": "CALL AUBREY CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 174,
+          "skillName": "CALL KEL CHECK"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "PLAYER",
+      "label": "PLAYER (Actor 8)",
+      "classId": 6,
+      "className": "PLAYER",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 1474,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 1,
+          "skillId": 1475,
+          "skillName": "KNIFE TRICKS"
+        },
+        {
+          "level": 1,
+          "skillId": 1476,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 1,
+          "skillId": 1477,
+          "skillName": "FOCUS"
+        },
+        {
+          "level": 1,
+          "skillId": 1478,
+          "skillName": "STAREDOWN"
+        },
+        {
+          "level": 1,
+          "skillId": 1479,
+          "skillName": "ABYSS SHRIEK"
+        },
+        {
+          "level": 1,
+          "skillId": 1480,
+          "skillName": "CLEAVE"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "AUBREY",
+      "label": "AUBREY (Actor 9)",
+      "classId": 7,
+      "className": "AUBREY",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 70,
+          "skillName": "HOMERUN "
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "HERO",
+      "label": "HERO (Actor 11)",
+      "classId": 9,
+      "className": "HENRY",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 185,
+          "skillName": "FIRST AID"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "backup:",
+      "label": "backup: (Actor 14)",
+      "classId": 1,
+      "className": "OMORI",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 26,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 3,
+          "skillId": 27,
+          "skillName": "STAB"
+        },
+        {
+          "level": 5,
+          "skillId": 30,
+          "skillName": "BREAD SLICE"
+        },
+        {
+          "level": 7,
+          "skillId": 35,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 10,
+          "skillId": 28,
+          "skillName": "HACK AWAY"
+        },
+        {
+          "level": 12,
+          "skillId": 32,
+          "skillName": "LUCKY SLICE"
+        },
+        {
+          "level": 15,
+          "skillId": 33,
+          "skillName": "TRICK"
+        },
+        {
+          "level": 19,
+          "skillId": 44,
+          "skillName": "PAINFUL TRUTH"
+        },
+        {
+          "level": 20,
+          "skillId": 34,
+          "skillName": "SHUN"
+        },
+        {
+          "level": 25,
+          "skillId": 41,
+          "skillName": "STARE"
+        },
+        {
+          "level": 30,
+          "skillId": 36,
+          "skillName": "EXPLOIT"
+        },
+        {
+          "level": 35,
+          "skillId": 37,
+          "skillName": "FINAL STRIKE"
+        },
+        {
+          "level": 1,
+          "skillId": 46,
+          "skillName": "ATTACK AGAIN CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 49,
+          "skillName": "TRIP CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 52,
+          "skillName": "RELEASE ENERGY CHECK"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "BERLY",
+      "label": "BERLY (Actor 16)",
+      "classId": 2,
+      "className": "AUBREY",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 68,
+          "skillName": "PEP TALK"
+        },
+        {
+          "level": 6,
+          "skillId": 74,
+          "skillName": "COUNTER"
+        },
+        {
+          "level": 10,
+          "skillId": 76,
+          "skillName": "TWIRL"
+        },
+        {
+          "level": 11,
+          "skillId": 84,
+          "skillName": "TEAM SPIRIT"
+        },
+        {
+          "level": 14,
+          "skillId": 72,
+          "skillName": "POWER HIT"
+        },
+        {
+          "level": 17,
+          "skillId": 77,
+          "skillName": "MOOD WRECKER"
+        },
+        {
+          "level": 20,
+          "skillId": 71,
+          "skillName": "WIND-UP THROW"
+        },
+        {
+          "level": 23,
+          "skillId": 75,
+          "skillName": "MASH"
+        },
+        {
+          "level": 27,
+          "skillId": 78,
+          "skillName": "BEATDOWN"
+        },
+        {
+          "level": 30,
+          "skillId": 73,
+          "skillName": "LAST RESORT"
+        },
+        {
+          "level": 1,
+          "skillId": 86,
+          "skillName": "LOOK AT OMORI CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 89,
+          "skillName": "LOOK AT KEL CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 92,
+          "skillName": "LOOK AT HERO CHECK"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "MAKOTO",
+      "label": "MAKOTO (Actor 18)",
+      "classId": 13,
+      "className": "MAKOTO",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 1529,
+          "skillName": "AWKWARD SMILE"
+        },
+        {
+          "level": 1,
+          "skillId": 1530,
+          "skillName": "THIRD EYE"
+        },
+        {
+          "level": 1,
+          "skillId": 1531,
+          "skillName": "HEAVY SLAM"
+        },
+        {
+          "level": 1,
+          "skillId": 1540,
+          "skillName": "UMBRA VEIL"
+        },
+        {
+          "level": 1,
+          "skillId": 1533,
+          "skillName": "EVOCATION"
+        },
+        {
+          "level": 1,
+          "skillId": 1534,
+          "skillName": "DEMON SHIFT"
+        },
+        {
+          "level": 1,
+          "skillId": 1535,
+          "skillName": "BEATDOWN"
+        },
+        {
+          "level": 1,
+          "skillId": 1536,
+          "skillName": "LUCKY SWING"
+        },
+        {
+          "level": 1,
+          "skillId": 1537,
+          "skillName": "SPEED BLITZ"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "SUNNY",
+      "label": "SUNNY (Actor 19)",
+      "classId": 14,
+      "className": "SUNNY",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 1474,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 1,
+          "skillId": 1475,
+          "skillName": "KNIFE TRICKS"
+        },
+        {
+          "level": 1,
+          "skillId": 1476,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 1,
+          "skillId": 1477,
+          "skillName": "FOCUS"
+        },
+        {
+          "level": 1,
+          "skillId": 1478,
+          "skillName": "STAREDOWN"
+        },
+        {
+          "level": 1,
+          "skillId": 1479,
+          "skillName": "ABYSS SHRIEK"
+        },
+        {
+          "level": 1,
+          "skillId": 1480,
+          "skillName": "CLEAVE"
+        },
+        {
+          "level": 1,
+          "skillId": 1481,
+          "skillName": "STAB"
+        },
+        {
+          "level": 1,
+          "skillId": 1482,
+          "skillName": "ANDANTE"
+        },
+        {
+          "level": 1,
+          "skillId": 1483,
+          "skillName": "GROUP BABY"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "LUCILLE",
+      "label": "LUCILLE (Actor 20)",
+      "classId": 11,
+      "className": "LUCILLE",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 1502,
+          "skillName": "BACKHAND"
+        },
+        {
+          "level": 1,
+          "skillId": 1503,
+          "skillName": "ANNOY"
+        },
+        {
+          "level": 1,
+          "skillId": 1504,
+          "skillName": "INSULT"
+        },
+        {
+          "level": 1,
+          "skillId": 1505,
+          "skillName": "HYPER LOVE SHOT"
+        },
+        {
+          "level": 1,
+          "skillId": 1506,
+          "skillName": "DONUT BOX"
+        },
+        {
+          "level": 1,
+          "skillId": 1507,
+          "skillName": "MAKESHIFT COSPLAY"
+        },
+        {
+          "level": 1,
+          "skillId": 1509,
+          "skillName": "CUTE POSE"
+        },
+        {
+          "level": 1,
+          "skillId": 1510,
+          "skillName": "MACE SWEEP"
+        },
+        {
+          "level": 1,
+          "skillId": 1511,
+          "skillName": "COMMAND"
+        },
+        {
+          "level": 1,
+          "skillId": 1512,
+          "skillName": "PROVOKE"
+        },
+        {
+          "level": 1,
+          "skillId": 1501,
+          "skillName": "FLIRT"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "MARI",
+      "label": "MARI (Actor 21)",
+      "classId": 12,
+      "className": "MARI",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 1517,
+          "skillName": "DEEP BREATH"
+        },
+        {
+          "level": 1,
+          "skillId": 1518,
+          "skillName": "IKO"
+        },
+        {
+          "level": 1,
+          "skillId": 1519,
+          "skillName": "OKURIMONO"
+        },
+        {
+          "level": 1,
+          "skillId": 1520,
+          "skillName": "DAZZLE"
+        },
+        {
+          "level": 1,
+          "skillId": 1521,
+          "skillName": "LULLABY"
+        },
+        {
+          "level": 1,
+          "skillId": 1523,
+          "skillName": "WARM BREW"
+        },
+        {
+          "level": 1,
+          "skillId": 1522,
+          "skillName": "HOMEMADE JAM"
+        },
+        {
+          "level": 1,
+          "skillId": 1524,
+          "skillName": "BITE"
+        },
+        {
+          "level": 1,
+          "skillId": 1525,
+          "skillName": "COAGULATION"
+        },
+        {
+          "level": 1,
+          "skillId": 1526,
+          "skillName": "PICNIC BREAK"
+        },
+        {
+          "level": 1,
+          "skillId": 1539,
+          "skillName": "REST"
+        },
+        {
+          "level": 1,
+          "skillId": 1542,
+          "skillName": "CHEER"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "ROSA",
+      "label": "ROSA (Actor 22)",
+      "classId": 1,
+      "className": "OMORI",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 26,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 3,
+          "skillId": 27,
+          "skillName": "STAB"
+        },
+        {
+          "level": 5,
+          "skillId": 30,
+          "skillName": "BREAD SLICE"
+        },
+        {
+          "level": 7,
+          "skillId": 35,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 10,
+          "skillId": 28,
+          "skillName": "HACK AWAY"
+        },
+        {
+          "level": 12,
+          "skillId": 32,
+          "skillName": "LUCKY SLICE"
+        },
+        {
+          "level": 15,
+          "skillId": 33,
+          "skillName": "TRICK"
+        },
+        {
+          "level": 19,
+          "skillId": 44,
+          "skillName": "PAINFUL TRUTH"
+        },
+        {
+          "level": 20,
+          "skillId": 34,
+          "skillName": "SHUN"
+        },
+        {
+          "level": 25,
+          "skillId": 41,
+          "skillName": "STARE"
+        },
+        {
+          "level": 30,
+          "skillId": 36,
+          "skillName": "EXPLOIT"
+        },
+        {
+          "level": 35,
+          "skillId": 37,
+          "skillName": "FINAL STRIKE"
+        },
+        {
+          "level": 1,
+          "skillId": 46,
+          "skillName": "ATTACK AGAIN CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 49,
+          "skillName": "TRIP CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 52,
+          "skillName": "RELEASE ENERGY CHECK"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "SUNNY",
+      "label": "SUNNY (Actor 25)",
+      "classId": 14,
+      "className": "SUNNY",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 1474,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 1,
+          "skillId": 1475,
+          "skillName": "KNIFE TRICKS"
+        },
+        {
+          "level": 1,
+          "skillId": 1476,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 1,
+          "skillId": 1477,
+          "skillName": "FOCUS"
+        },
+        {
+          "level": 1,
+          "skillId": 1478,
+          "skillName": "STAREDOWN"
+        },
+        {
+          "level": 1,
+          "skillId": 1479,
+          "skillName": "ABYSS SHRIEK"
+        },
+        {
+          "level": 1,
+          "skillId": 1480,
+          "skillName": "CLEAVE"
+        },
+        {
+          "level": 1,
+          "skillId": 1481,
+          "skillName": "STAB"
+        },
+        {
+          "level": 1,
+          "skillId": 1482,
+          "skillName": "ANDANTE"
+        },
+        {
+          "level": 1,
+          "skillId": 1483,
+          "skillName": "GROUP BABY"
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "name": "bird 1",
+      "label": "bird 1 (Actor 97)",
+      "classId": 1,
+      "className": "OMORI",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 26,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 3,
+          "skillId": 27,
+          "skillName": "STAB"
+        },
+        {
+          "level": 5,
+          "skillId": 30,
+          "skillName": "BREAD SLICE"
+        },
+        {
+          "level": 7,
+          "skillId": 35,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 10,
+          "skillId": 28,
+          "skillName": "HACK AWAY"
+        },
+        {
+          "level": 12,
+          "skillId": 32,
+          "skillName": "LUCKY SLICE"
+        },
+        {
+          "level": 15,
+          "skillId": 33,
+          "skillName": "TRICK"
+        },
+        {
+          "level": 19,
+          "skillId": 44,
+          "skillName": "PAINFUL TRUTH"
+        },
+        {
+          "level": 20,
+          "skillId": 34,
+          "skillName": "SHUN"
+        },
+        {
+          "level": 25,
+          "skillId": 41,
+          "skillName": "STARE"
+        },
+        {
+          "level": 30,
+          "skillId": 36,
+          "skillName": "EXPLOIT"
+        },
+        {
+          "level": 35,
+          "skillId": 37,
+          "skillName": "FINAL STRIKE"
+        },
+        {
+          "level": 1,
+          "skillId": 46,
+          "skillName": "ATTACK AGAIN CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 49,
+          "skillName": "TRIP CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 52,
+          "skillName": "RELEASE ENERGY CHECK"
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "name": "bird 2",
+      "label": "bird 2 (Actor 98)",
+      "classId": 1,
+      "className": "OMORI",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 26,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 3,
+          "skillId": 27,
+          "skillName": "STAB"
+        },
+        {
+          "level": 5,
+          "skillId": 30,
+          "skillName": "BREAD SLICE"
+        },
+        {
+          "level": 7,
+          "skillId": 35,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 10,
+          "skillId": 28,
+          "skillName": "HACK AWAY"
+        },
+        {
+          "level": 12,
+          "skillId": 32,
+          "skillName": "LUCKY SLICE"
+        },
+        {
+          "level": 15,
+          "skillId": 33,
+          "skillName": "TRICK"
+        },
+        {
+          "level": 19,
+          "skillId": 44,
+          "skillName": "PAINFUL TRUTH"
+        },
+        {
+          "level": 20,
+          "skillId": 34,
+          "skillName": "SHUN"
+        },
+        {
+          "level": 25,
+          "skillId": 41,
+          "skillName": "STARE"
+        },
+        {
+          "level": 30,
+          "skillId": 36,
+          "skillName": "EXPLOIT"
+        },
+        {
+          "level": 35,
+          "skillId": 37,
+          "skillName": "FINAL STRIKE"
+        },
+        {
+          "level": 1,
+          "skillId": 46,
+          "skillName": "ATTACK AGAIN CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 49,
+          "skillName": "TRIP CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 52,
+          "skillName": "RELEASE ENERGY CHECK"
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "name": "bird 3",
+      "label": "bird 3 (Actor 99)",
+      "classId": 1,
+      "className": "OMORI",
+      "learnings": [
+        {
+          "level": 1,
+          "skillId": 2,
+          "skillName": "GUARD"
+        },
+        {
+          "level": 1,
+          "skillId": 26,
+          "skillName": "SAD POEM"
+        },
+        {
+          "level": 3,
+          "skillId": 27,
+          "skillName": "STAB"
+        },
+        {
+          "level": 5,
+          "skillId": 30,
+          "skillName": "BREAD SLICE"
+        },
+        {
+          "level": 7,
+          "skillId": 35,
+          "skillName": "MOCK"
+        },
+        {
+          "level": 10,
+          "skillId": 28,
+          "skillName": "HACK AWAY"
+        },
+        {
+          "level": 12,
+          "skillId": 32,
+          "skillName": "LUCKY SLICE"
+        },
+        {
+          "level": 15,
+          "skillId": 33,
+          "skillName": "TRICK"
+        },
+        {
+          "level": 19,
+          "skillId": 44,
+          "skillName": "PAINFUL TRUTH"
+        },
+        {
+          "level": 20,
+          "skillId": 34,
+          "skillName": "SHUN"
+        },
+        {
+          "level": 25,
+          "skillId": 41,
+          "skillName": "STARE"
+        },
+        {
+          "level": 30,
+          "skillId": 36,
+          "skillName": "EXPLOIT"
+        },
+        {
+          "level": 35,
+          "skillId": 37,
+          "skillName": "FINAL STRIKE"
+        },
+        {
+          "level": 1,
+          "skillId": 46,
+          "skillName": "ATTACK AGAIN CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 49,
+          "skillName": "TRIP CHECK"
+        },
+        {
+          "level": 1,
+          "skillId": 52,
+          "skillName": "RELEASE ENERGY CHECK"
+        }
+      ]
+    }
+  ],
+  "skills": {
+    "2": {
+      "id": 2,
+      "name": "GUARD",
+      "description": "Acts first, reducing damage taken for 1 turn.\nCost: 0",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 2,
+          "stateName": "GUARD",
+          "chance": 1
+        }
+      ]
+    },
+    "26": {
+      "id": 26,
+      "name": "SAD POEM",
+      "description": "Inflicts SAD on a friend or foe.\nCost: 5",
+      "mpCost": 5,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "27": {
+      "id": 27,
+      "name": "STAB",
+      "description": "Always deals a critical hit.<br>\nIgnores DEFENSE when OMORI is SAD. Cost: 13",
+      "mpCost": 13,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "(a.isStateAffected(10) || a.isStateAffected(11) || a.isStateAffected(12)) ? a.atk * 2 : a.atk * 1.5 - b.def;",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "28": {
+      "id": 28,
+      "name": "HACK AWAY",
+      "description": "Attacks 3 times, hitting random foes.\nCost: 30",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 5,
+      "scopeName": "3 random enemies",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "(a.isStateAffected(14) || a.isStateAffected(15) || a.isStateAffected(16)) ? a.atk * 2.25 - b.def : a.atk * 2 - b.def;",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "30": {
+      "id": 30,
+      "name": "BREAD SLICE",
+      "description": "If this skill defeats a foe, gain BREAD.\nCost: 10",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "32": {
+      "id": 32,
+      "name": "LUCKY SLICE",
+      "description": "Acts first. An attack that's stronger\nwhen OMORI is HAPPY. Cost: 15",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "(a.isStateAffected(6) || a.isStateAffected(7) || a.isStateAffected(8)) ? (a.atk + a.luk) * 2 - b.def : (a.atk + a.luk) * 1.5 - b.def;",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "33": {
+      "id": 33,
+      "name": "TRICK",
+      "description": "Deals damage. If the foe is HAPPY, greatly \nreduce its SPEED. Cost: 20",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 3 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "34": {
+      "id": 34,
+      "name": "SHUN",
+      "description": "Deals damage. If the foe is SAD, greatly \nreduce its DEFENSE. Cost: 20",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 3 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "35": {
+      "id": 35,
+      "name": "MOCK",
+      "description": "Deals damage. If the foe is ANGRY, greatly \nreduce its ATTACK. Cost: 20",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 3 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "36": {
+      "id": 36,
+      "name": "EXPLOIT",
+      "description": "Deals extra damage to a HAPPY, SAD, or<br>\nANGRY foe. Cost: 30",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "b.isAnyEmotionAffected() ? a.atk * 3.5 - b.def : a.atk * 2.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "37": {
+      "id": 37,
+      "name": "FINAL STRIKE",
+      "description": "Strikes all foes. Deals more damage if OMORI\nhas a higher stage of EMOTION. Cost: 50",
+      "mpCost": 50,
+      "tpCost": 0,
+      "scope": 2,
+      "scopeName": "all enemies",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "(a.isStateAffected(6) || a.isStateAffected(10) || a.isStateAffected(14)) ? a.atk * 4 - b.def : (a.isStateAffected(7) || a.isStateAffected(11) || a.isStateAffected(15)) ? a.atk * 5 - b.def : (a.isStateAffected(8) || a.isStateAffected(12) || a.isStateAffected(16)) ? a.atk * 6 - b.def : a.atk * 3 - b.def;",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "41": {
+      "id": 41,
+      "name": "STARE",
+      "description": "Reduces all of a foe's STATS.\nCost: 45",
+      "mpCost": 45,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "44": {
+      "id": 44,
+      "name": "PAINFUL TRUTH",
+      "description": "Deals damage to a foe. OMORI and the foe<br>\nbecome SAD. Cost: 10",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "46": {
+      "id": 46,
+      "name": "ATTACK AGAIN CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 935
+        }
+      ]
+    },
+    "49": {
+      "id": 49,
+      "name": "TRIP CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 936
+        }
+      ]
+    },
+    "52": {
+      "id": 52,
+      "name": "RELEASE ENERGY CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "68": {
+      "id": 68,
+      "name": "PEP TALK",
+      "description": "Makes a friend or foe HAPPY.\nCost: 5",
+      "mpCost": 5,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "70": {
+      "id": 70,
+      "name": "HOMERUN ",
+      "description": "Has a chance to instantly defeat a<br>\nfoe. AUBREY also takes damage. Cost: 25",
+      "mpCost": 25,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 4 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 1,
+          "stateName": "UNCONSCIOUS",
+          "chance": 0.1
+        }
+      ]
+    },
+    "71": {
+      "id": 71,
+      "name": "WIND-UP THROW",
+      "description": "Damages all foes. Deals more damage the less\nenemies there are. Cost: 20",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 2,
+      "scopeName": "all enemies",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "72": {
+      "id": 72,
+      "name": "POWER HIT",
+      "description": "An attack that ignores a foe's DEFENSE,<br>\nthen reduces the foe's DEFENSE. Cost: 20",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "73": {
+      "id": 73,
+      "name": "LAST RESORT",
+      "description": "Deals damage based on AUBREY's HEART, \nbut AUBREY becomes TOAST. Cost: 50",
+      "mpCost": 50,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.hp * 4",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "74": {
+      "id": 74,
+      "name": "COUNTER",
+      "description": "All foes target AUBREY for 1 turn.<br>\nIf AUBREY is attacked, she attacks. Cost: 5",
+      "mpCost": 5,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "a.atk * 2 - b.def",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 57,
+          "stateName": "(A) COUNTER ATTACK",
+          "chance": 1
+        },
+        {
+          "kind": "add_state",
+          "stateId": 26,
+          "stateName": "TAUNT",
+          "chance": 1
+        },
+        {
+          "kind": "add_state",
+          "stateId": 509,
+          "stateName": "(Check) Charm",
+          "chance": 1
+        }
+      ]
+    },
+    "75": {
+      "id": 75,
+      "name": "MASH",
+      "description": "If this skill defeats a foe, recover 100% JUICE. \nCost: 15",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "76": {
+      "id": 76,
+      "name": "TWIRL",
+      "description": "AUBREY attacks a foe and becomes HAPPY.\nCost: 10",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "(a.atk * 2 + a.luk)- b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "77": {
+      "id": 77,
+      "name": "MOOD WRECKER",
+      "description": "A swing that doesn't miss. Deals extra damage to\n<br>HAPPY foes. Cost: 10",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "(b.isStateAffected(6) || b.isStateAffected(7) || b.isStateAffected(8)|| b.isStateAffected(122)|| b.isStateAffected(123)|| b.isStateAffected(197)) ? a.atk * 3 - b.def : a.atk * 2.25 - b.def;",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "78": {
+      "id": 78,
+      "name": "BEATDOWN",
+      "description": "Attacks a foe 3 times.\nCost: 30",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "84": {
+      "id": 84,
+      "name": "TEAM SPIRIT",
+      "description": "Makes AUBREY and a friend HAPPY.\nCost: 10",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "86": {
+      "id": 86,
+      "name": "LOOK AT OMORI CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 938
+        }
+      ]
+    },
+    "89": {
+      "id": 89,
+      "name": "LOOK AT KEL CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 939
+        }
+      ]
+    },
+    "92": {
+      "id": 92,
+      "name": "LOOK AT HERO CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 940
+        }
+      ]
+    },
+    "107": {
+      "id": 107,
+      "name": "ANNOY",
+      "description": "Makes a friend or foe ANGRY.\nCost: 5",
+      "mpCost": 5,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "109": {
+      "id": 109,
+      "name": "REBOUND",
+      "description": "Deals damage to all foes.\nCost: 15",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 2,
+      "scopeName": "all enemies",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "111": {
+      "id": 111,
+      "name": "RALLY",
+      "description": "KEL becomes HAPPY. KEL's friends recover<br>\nsome ENERGY and JUICE. Cost: 50",
+      "mpCost": 50,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": " 30",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "113": {
+      "id": 113,
+      "name": "TICKLE",
+      "description": "All attacks on a foe will hit right<br>\nin the HEART for the turn. Cost: 55",
+      "mpCost": 55,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 24,
+          "stateName": "TICKLE",
+          "chance": 1
+        }
+      ]
+    },
+    "114": {
+      "id": 114,
+      "name": "RICOCHET",
+      "description": "Deals damage to a foe 3 times.\nCost: 30",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2 - b.def ",
+        "variance": 30,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "115": {
+      "id": 115,
+      "name": "RUN 'N GUN",
+      "description": "KEL does an attack based on his SPEED\ninstead of his ATTACK. Cost: 15",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.agi * 1.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "116": {
+      "id": 116,
+      "name": "MEGAPHONE",
+      "description": "Makes all friends ANGRY.\nCost: 45",
+      "mpCost": 45,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "117": {
+      "id": 117,
+      "name": "CAN'T CATCH ME",
+      "description": "Attracts attention and reduces all foes'\nHIT RATE for the turn. Cost: 50",
+      "mpCost": 50,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 26,
+          "stateName": "TAUNT",
+          "chance": 1
+        }
+      ]
+    },
+    "123": {
+      "id": 123,
+      "name": "CURVEBALL",
+      "description": "Makes a foe feel a random EMOTION. Deals<br>\nextra damage to foes with EMOTION. Cost: 20",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "b.isAnyEmotionAffected() ? a.atk * 3 - b.def : a.atk * 2 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "124": {
+      "id": 124,
+      "name": "COMEBACK",
+      "description": "Makes KEL HAPPY. If SAD was removed,<br>\nKEL gains FLEX. Cost: 25",
+      "mpCost": 25,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 4,
+        "typeName": "MP recover",
+        "formula": "0",
+        "variance": 0,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "126": {
+      "id": 126,
+      "name": "PASS TO OMORI CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 941
+        }
+      ]
+    },
+    "129": {
+      "id": 129,
+      "name": "PASS TO AUBREY CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 942
+        }
+      ]
+    },
+    "132": {
+      "id": 132,
+      "name": "PASS TO HERO CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 943
+        }
+      ]
+    },
+    "147": {
+      "id": 147,
+      "name": "COOK",
+      "description": "Heals a friend for 75% of their HEART.<br>\nCan be used outside of battle. Cost: 10",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 3,
+        "typeName": "HP recover",
+        "formula": "b.mhp * .75",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "148": {
+      "id": 148,
+      "name": "MASSAGE",
+      "description": "Removes a friend or foe's EMOTION.<br>\nCost: 5",
+      "mpCost": 5,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "149": {
+      "id": 149,
+      "name": "SMILE",
+      "description": "Acts first, reducing a foe's ATTACK.<br>\nCost: 25",
+      "mpCost": 25,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "153": {
+      "id": 153,
+      "name": "CHARM",
+      "description": "Acts first, a foe targets HERO for 1 turn.<br>\nCost: 10",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "154": {
+      "id": 154,
+      "name": "CAPTIVATE",
+      "description": "Acts first. All foes target HERO for 1 turn.<br>\nCost: 20",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 26,
+          "stateName": "TAUNT",
+          "chance": 1
+        },
+        {
+          "kind": "add_state",
+          "stateId": 187,
+          "stateName": "Hero Charm Text",
+          "chance": 1
+        }
+      ]
+    },
+    "155": {
+      "id": 155,
+      "name": "MESMERIZE",
+      "description": "Acts first. All foes target HERO for 1 turn.<br>\nHERO takes less damage. Cost: 30",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 2,
+          "stateName": "GUARD",
+          "chance": 1
+        },
+        {
+          "kind": "add_state",
+          "stateId": 26,
+          "stateName": "TAUNT",
+          "chance": 1
+        },
+        {
+          "kind": "add_state",
+          "stateId": 187,
+          "stateName": "Hero Charm Text",
+          "chance": 1
+        }
+      ]
+    },
+    "156": {
+      "id": 156,
+      "name": "SHARE FOOD",
+      "description": "HERO and a friend recover some HEART.<br>\nCost: 15",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "100",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "157": {
+      "id": 157,
+      "name": "FAST FOOD",
+      "description": "Acts first, healing a friend for 40% of<br>\ntheir HEART. Cost: 15",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "158": {
+      "id": 158,
+      "name": "HOMEMADE JAM",
+      "description": "Brings back a friend that is TOAST.\nCost: 40",
+      "mpCost": 40,
+      "tpCost": 0,
+      "scope": 9,
+      "scopeName": "one dead ally",
+      "damage": {
+        "type": 3,
+        "typeName": "HP recover",
+        "formula": "b.mhp * .70",
+        "variance": 0,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "remove_state",
+          "stateId": 1,
+          "stateName": "UNCONSCIOUS",
+          "chance": 1
+        }
+      ]
+    },
+    "160": {
+      "id": 160,
+      "name": "ENCHANT",
+      "description": "Acts first. A foe targets HERO for 1 turn and \nbecomes HAPPY. Cost: 15",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "161": {
+      "id": 161,
+      "name": "DAZZLE",
+      "description": "Acts first. Reduces all foes' ATTACK and\nmakes them HAPPY. Cost: 35",
+      "mpCost": 35,
+      "tpCost": 0,
+      "scope": 2,
+      "scopeName": "all enemies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "168": {
+      "id": 168,
+      "name": "CALL OMORI CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 944
+        }
+      ]
+    },
+    "171": {
+      "id": 171,
+      "name": "CALL AUBREY CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 945
+        }
+      ]
+    },
+    "174": {
+      "id": 174,
+      "name": "CALL KEL CHECK",
+      "description": "",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 946
+        }
+      ]
+    },
+    "185": {
+      "id": 185,
+      "name": "FIRST AID",
+      "description": "Heals a friend for 25% of their HEART.\nCost: 10",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 3,
+        "typeName": "HP recover",
+        "formula": "b.mhp * .25",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1474": {
+      "id": 1474,
+      "name": "SAD POEM",
+      "description": "Inflicts SAD on a friend or foe.",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1475": {
+      "id": 1475,
+      "name": "KNIFE TRICKS",
+      "description": "It looks cool, though!\nDeals damage to 4 random enemies... and yourself.",
+      "mpCost": 45,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 1.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "common_event",
+          "ceId": 277
+        }
+      ]
+    },
+    "1476": {
+      "id": 1476,
+      "name": "MOCK",
+      "description": "Deals light damage to an enemy, and decreases\nSPD/DEF/ATK based on SUNNY's EMOTION tier.",
+      "mpCost": 35,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 1.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1477": {
+      "id": 1477,
+      "name": "FOCUS",
+      "description": "SUNNY's next attack inflicts weakness, reducing\nATK/DEF and inflicting HP drain. Stacks.",
+      "mpCost": 25,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1478": {
+      "id": 1478,
+      "name": "STAREDOWN",
+      "description": "Disables all enemies' buffs for 3 turns.\nIf weakened, increases weakness level.",
+      "mpCost": 25,
+      "tpCost": 0,
+      "scope": 2,
+      "scopeName": "all enemies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1479": {
+      "id": 1479,
+      "name": "ABYSS SHRIEK",
+      "description": "You've been through a lot.\nYou should let it all out.",
+      "mpCost": 80,
+      "tpCost": 0,
+      "scope": 2,
+      "scopeName": "all enemies",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "b.isStateCategoryAffected(\"WEAK\") ? a.atk * 7 - b.def : a.atk * 6 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1480": {
+      "id": 1480,
+      "name": "CLEAVE",
+      "description": "Attacks based on SUNNY's highest stat.",
+      "mpCost": 25,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "Math.max(a.atk, (a.agi * 0.75), a.def, a.luk) * 2.75 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1481": {
+      "id": 1481,
+      "name": "STAB",
+      "description": "The greatest form of combat. Always critical,\nand ignores DEFENSE.",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "b.isStateCategoryAffected(\"WEAK\") ? a.atk * 3 : a.atk * 2",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1482": {
+      "id": 1482,
+      "name": "ANDANTE",
+      "description": "All allies become HAPPY. If they were SAD,\nremove their debuffs. 2 turn cooldown.",
+      "mpCost": 50,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1483": {
+      "id": 1483,
+      "name": "GROUP BABY",
+      "description": "Passive. SUNNY will be targeted less in battle.",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1501": {
+      "id": 1501,
+      "name": "FLIRT",
+      "description": "Inflicts an ally/enemy with CHARM,\nincreasing damage both given and received.",
+      "mpCost": 23,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "target.isActor() ? b.mhp * 0.25 : 0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1502": {
+      "id": 1502,
+      "name": "BACKHAND",
+      "description": "Damages an ally, granting them a speed boost\nand juice recovery.",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "b.mhp * 0.15",
+        "variance": 5,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1503": {
+      "id": 1503,
+      "name": "ANNOY",
+      "description": "Makes an ally or enemy ANGRY.",
+      "mpCost": 10,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1504": {
+      "id": 1504,
+      "name": "INSULT",
+      "description": "Attacks 3 times, increasing a random STAT for an ally\nwith each hit.",
+      "mpCost": 65,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1505": {
+      "id": 1505,
+      "name": "HYPER LOVE SHOT",
+      "description": "Deals damage to an enemy and increases\nall stats.",
+      "mpCost": 90,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "500 + (a.atk * 3 - b.def);",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1506": {
+      "id": 1506,
+      "name": "DONUT BOX",
+      "description": "Light SPEED-based heal to an ally. Increases\nATK/DEF/SPD based on LUCILLE's tier of happy.",
+      "mpCost": 40,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 3,
+        "typeName": "HP recover",
+        "formula": "a.agi * 0.5",
+        "variance": 10,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1507": {
+      "id": 1507,
+      "name": "MAKESHIFT COSPLAY",
+      "description": "Copies the skill of an ally or enemy.\n3 turn cooldown.",
+      "mpCost": 40,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 272,
+          "stateName": "SKILL DUPLICATION",
+          "chance": 1
+        }
+      ]
+    },
+    "1509": {
+      "id": 1509,
+      "name": "CUTE POSE",
+      "description": "Significantly increases LUCK for all allies\n...and all enemies.",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1510": {
+      "id": 1510,
+      "name": "MACE SWEEP",
+      "description": "Deals damage to an enemy based on LUCILLE's \nSPEED.",
+      "mpCost": 35,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.agi * 2 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1511": {
+      "id": 1511,
+      "name": "COMMAND",
+      "description": "CHARMED allies have a stat maximized based on EMOTION\nbut follow LUCILLE's orders this turn.",
+      "mpCost": 42,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1512": {
+      "id": 1512,
+      "name": "PROVOKE",
+      "description": "Deals light damage to all allies and makes them\nANGRY. 2 turn cooldown.",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 1.5 - b.def",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1517": {
+      "id": 1517,
+      "name": "DEEP BREATH",
+      "description": "Removes an ally/enemy's emotion. Clear debuffs\nwhen used on allies.",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "b.mmp * .75",
+        "variance": 0,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1518": {
+      "id": 1518,
+      "name": "IKO",
+      "description": "Gives an ally the butterfly, regenerating\nHEART and JUICE and reducing damage taken.",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1519": {
+      "id": 1519,
+      "name": "OKURIMONO",
+      "description": "\\n[21]'s butterfly explodes, healing HEART and JUICE\nand removing debuffs.",
+      "mpCost": 20,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1520": {
+      "id": 1520,
+      "name": "DAZZLE",
+      "description": "Acts first. All foes target \\n[21] for 1 turn.<br>\n\\n[21] takes reduced damage.",
+      "mpCost": 45,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 26,
+          "stateName": "TAUNT",
+          "chance": 1
+        },
+        {
+          "kind": "add_state",
+          "stateId": 2,
+          "stateName": "GUARD",
+          "chance": 1
+        }
+      ]
+    },
+    "1521": {
+      "id": 1521,
+      "name": "LULLABY",
+      "description": "Low chance of putting an enemy to sleep.\nChance increases with \\n[21]'s SAD tier.",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1522": {
+      "id": 1522,
+      "name": "HOMEMADE JAM",
+      "description": "Revives a friend that is TOAST, but decreases\ntheir stats.",
+      "mpCost": 70,
+      "tpCost": 0,
+      "scope": 9,
+      "scopeName": "one dead ally",
+      "damage": {
+        "type": 3,
+        "typeName": "HP recover",
+        "formula": "b.mhp * .70",
+        "variance": 0,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "remove_state",
+          "stateId": 1,
+          "stateName": "UNCONSCIOUS",
+          "chance": 1
+        }
+      ]
+    },
+    "1523": {
+      "id": 1523,
+      "name": "WARM BREW",
+      "description": "DEFENSE-based medium heal to an ally.\nIncreases DEFENSE.",
+      "mpCost": 35,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 3,
+        "typeName": "HP recover",
+        "formula": "Math.max(a.def, 60) * 2",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1524": {
+      "id": 1524,
+      "name": "BITE",
+      "description": "Deals light damage to an enemy, regaining damage\ndealt as HEART.",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 3 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1525": {
+      "id": 1525,
+      "name": "COAGULATION",
+      "description": "Deals damage and inflicts poison. Scales with\n\\n[21]'s healing throughout the battle.",
+      "mpCost": 60,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a._healCount > 0 ? a._healCount * 0.5 - b.def : 2",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1526": {
+      "id": 1526,
+      "name": "PICNIC BREAK",
+      "description": "DEFENSE-based medium heal to all allies.\nCan be used outside of battle.",
+      "mpCost": 65,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 3,
+        "typeName": "HP recover",
+        "formula": "Math.max(a.def, 60) * 2",
+        "variance": 10,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1529": {
+      "id": 1529,
+      "name": "AWKWARD SMILE",
+      "description": "Makes a friend or foe HAPPY.",
+      "mpCost": 5,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1530": {
+      "id": 1530,
+      "name": "THIRD EYE",
+      "description": "The next skill deals double damage but has\nincreased cost.",
+      "mpCost": 25,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": [
+        {
+          "kind": "add_state",
+          "stateId": 237,
+          "stateName": "POWER CHARGE",
+          "chance": 1
+        }
+      ]
+    },
+    "1531": {
+      "id": 1531,
+      "name": "HEAVY SLAM",
+      "description": "Deals huge damage to an enemy.",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 3.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1533": {
+      "id": 1533,
+      "name": "EVOCATION",
+      "description": "All allies or enemies get one tier of the\nemotion MAKOTO is feeling.",
+      "mpCost": 35,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1534": {
+      "id": 1534,
+      "name": "DEMON SHIFT",
+      "description": "MAKOTO becomes FURIOUS and has his STATS\nincreased for 3 turns.",
+      "mpCost": 40,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1535": {
+      "id": 1535,
+      "name": "BEATDOWN",
+      "description": "Deals light damage 2-5 times based on tier of\nANGRY.",
+      "mpCost": 50,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 1.25 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1536": {
+      "id": 1536,
+      "name": "LUCKY SWING",
+      "description": "Deals light damage to an enemy.\nCritical hits deal triple damage.",
+      "mpCost": 15,
+      "tpCost": 0,
+      "scope": 1,
+      "scopeName": "one enemy",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "a.atk * 2.5 - b.def",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1537": {
+      "id": 1537,
+      "name": "SPEED BLITZ",
+      "description": "Deals huge damage, split between all enemies.",
+      "mpCost": 30,
+      "tpCost": 0,
+      "scope": 2,
+      "scopeName": "all enemies",
+      "damage": {
+        "type": 1,
+        "typeName": "HP damage",
+        "formula": "(a.atk * (6 / $gameTroop.aliveMembers().length) - b.def)",
+        "variance": 20,
+        "critical": true,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1539": {
+      "id": 1539,
+      "name": "REST",
+      "description": "\\n[21] goes to sleep, restoring HEART and JUICE.\nEffectiveness decays with uses.",
+      "mpCost": 0,
+      "tpCost": 0,
+      "scope": 11,
+      "scopeName": "self",
+      "damage": {
+        "type": 3,
+        "typeName": "HP recover",
+        "formula": "user._restTimes > 0 ? b.mhp / (user._restTimes + 1) : user.mhp",
+        "variance": 0,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1540": {
+      "id": 1540,
+      "name": "UMBRA VEIL",
+      "description": "An ally is protected from damage this turn.\nMAKOTO dies if too much damage is blocked in battle.",
+      "mpCost": 25,
+      "tpCost": 0,
+      "scope": 7,
+      "scopeName": "one ally",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    },
+    "1542": {
+      "id": 1542,
+      "name": "CHEER",
+      "description": "All allies have their emotions increased.",
+      "mpCost": 55,
+      "tpCost": 0,
+      "scope": 8,
+      "scopeName": "all allies",
+      "damage": {
+        "type": 0,
+        "typeName": "none",
+        "formula": "0",
+        "variance": 20,
+        "critical": false,
+        "elementId": 0
+      },
+      "effects": []
+    }
+  },
+  "states": {
+    "1": {
+      "id": 1,
+      "name": "UNCONSCIOUS",
+      "note": "State #1 will be automatically added when\nHP reaches 0.\n\n<StateFaceIndex: 8>\n<StateBackIndex: 1>\n<StateListIndex: 1>\n\n<Custom Apply Effect>\nif($gameParty.inBattle() && target.isActor()) {\ntarget.remov",
+      "autoRemoval": "manual",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": false
+    },
+    "2": {
+      "id": 2,
+      "name": "GUARD",
+      "note": "<StateIcon: rwb_guard>",
+      "autoRemoval": "turn end",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": true
+    },
+    "24": {
+      "id": 24,
+      "name": "TICKLE",
+      "note": "<Custom Select Effect>\n// Get the current skill\nvar skill = this.item();\n// Check if the skill exists and can deal critical damage\nif (skill && skill.damage.critical) {\n  // Get the previous Critical ",
+      "autoRemoval": "turn end",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": true
+    },
+    "26": {
+      "id": 26,
+      "name": "TAUNT",
+      "note": "<Physical Taunt>\n<Magical Taunt>\n<Certain Taunt>",
+      "autoRemoval": "turn end",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": true
+    },
+    "57": {
+      "id": 57,
+      "name": "(A) COUNTER ATTACK",
+      "note": "<Hit Counter>\n<Counter Skills: 79>\n<Counter Total: +10>\n\n<Custom Respond Effect>\nlet isForOne = BattleManager._action.isForOne()\nif(user.isEnemy() && !!isForOne) {\nif(!target.isDead() && target.hp > 0",
+      "autoRemoval": "turn end",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": true
+    },
+    "187": {
+      "id": 187,
+      "name": "Hero Charm Text",
+      "note": "",
+      "autoRemoval": "manual",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": true
+    },
+    "237": {
+      "id": 237,
+      "name": "POWER CHARGE",
+      "note": "<StateIcon: rwb_charge>\n<Category: BUFF>\n\n<Custom Apply Effect>\nuser._hasAttacked = false;\n</Custom Apply Effect>\n\n<Custom Confirm Effect>\nif (this.isPhysical() && this.isHpEffect() && value > 0) {\n  ",
+      "autoRemoval": "manual",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": true
+    },
+    "272": {
+      "id": 272,
+      "name": "SKILL DUPLICATION",
+      "note": "<Custom Action Start Effect>\nvar action = user.currentAction();\nuser._lastUsedSkill = user._lastUsedSkill || 1;\nif (action && action.isSkill() && !action.item().meta.DisableCopy) {\n  var members = $ga",
+      "autoRemoval": "manual",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": false
+    },
+    "509": {
+      "id": 509,
+      "name": "(Check) Charm",
+      "note": "",
+      "autoRemoval": "turn end",
+      "minTurns": 1,
+      "maxTurns": 1,
+      "removeAtBattleEnd": true
+    }
+  }
+}

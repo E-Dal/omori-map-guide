@@ -40,7 +40,11 @@
 </head>
 <body>
 <header>
-  <h1>OMORI Skills (Vanilla)</h1>
+  <h1>OMORI Skills</h1>
+  <select class="filter" id="dataset">
+    <option value="brokendreams">Broken Dreams</option>
+    <option value="vanilla">Vanilla</option>
+  </select>
   <input type="text" class="filter" id="filter" placeholder="filter (skill name / state / formula)..." />
   <a href="index.html" style="color:#88aaff">← back to map guide</a>
 </header>
@@ -54,18 +58,36 @@
 <script>
 let data;
 
-async function init() {
-  data = await fetch('../data/skills_vanilla.json').then(r => r.json());
+const DATASETS = {
+  vanilla: '../data/skills_vanilla.json',
+  brokendreams: '../data/skills_brokendreams.json',
+};
+
+async function loadDataset(key) {
+  const url = DATASETS[key] || DATASETS.brokendreams;
+  data = await fetch(url).then(r => r.json());
   render();
-  $('filter').addEventListener('input', render);
-  // build actor nav
+  // rebuild actor nav
   const nav = $('actorNav');
+  nav.innerHTML = '';
   for (const a of data.actors) {
     const link = document.createElement('a');
     link.href = '#actor-' + a.id;
     link.textContent = a.label;
     nav.appendChild(link);
   }
+}
+
+async function init() {
+  // initial dataset from URL hash, fallback to brokendreams
+  const initial = (location.hash.match(/^#dataset=(\w+)/)?.[1]) || 'brokendreams';
+  $('dataset').value = initial;
+  await loadDataset(initial);
+  $('filter').addEventListener('input', render);
+  $('dataset').addEventListener('change', e => {
+    loadDataset(e.target.value);
+    location.hash = `dataset=${e.target.value}`;
+  });
 }
 
 const $ = id => document.getElementById(id);
