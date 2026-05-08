@@ -109,7 +109,8 @@ function costStr(s) {
   const parts = [];
   if (s.mpCost) parts.push(`${s.mpCost} MP`);
   if (s.tpCost) parts.push(`${s.tpCost} TP`);
-  return parts.join('+') || '-';
+  if (s.energyCost) parts.push(`<span style="color:#ffaa00">${s.energyCost} ⚡</span>`);
+  return parts.join(' + ') || '-';
 }
 
 function render() {

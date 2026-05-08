@@ -1250,6 +1250,7 @@
       "description": "Acts first, reducing damage taken for 1 turn.\nCost: 0",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -1275,6 +1276,7 @@
       "description": "Inflicts SAD on a friend or foe.\nCost: 5",
       "mpCost": 5,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -1293,6 +1295,7 @@
       "description": "Always deals a critical hit.<br>\nIgnores DEFENSE when OMORI is SAD. Cost: 13",
       "mpCost": 13,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1311,6 +1314,7 @@
       "description": "Attacks 3 times, hitting random foes.\nCost: 30",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 5,
       "scopeName": "3 random enemies",
       "damage": {
@@ -1329,6 +1333,7 @@
       "description": "If this skill defeats a foe, gain BREAD.\nCost: 10",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1347,6 +1352,7 @@
       "description": "Acts first. An attack that's stronger\nwhen OMORI is HAPPY. Cost: 15",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1365,6 +1371,7 @@
       "description": "Deals damage. If the foe is HAPPY, greatly \nreduce its SPEED. Cost: 20",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1383,6 +1390,7 @@
       "description": "Deals damage. If the foe is SAD, greatly \nreduce its DEFENSE. Cost: 20",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1401,6 +1409,7 @@
       "description": "Deals damage. If the foe is ANGRY, greatly \nreduce its ATTACK. Cost: 20",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1419,6 +1428,7 @@
       "description": "Deals extra damage to a HAPPY, SAD, or<br>\nANGRY foe. Cost: 30",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1437,6 +1447,7 @@
       "description": "Strikes all foes. Deals more damage if OMORI\nhas a higher stage of EMOTION. Cost: 50",
       "mpCost": 50,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 2,
       "scopeName": "all enemies",
       "damage": {
@@ -1455,6 +1466,7 @@
       "description": "Reduces all of a foe's STATS.\nCost: 45",
       "mpCost": 45,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1473,6 +1485,7 @@
       "description": "Deals damage to a foe. OMORI and the foe<br>\nbecome SAD. Cost: 10",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1491,6 +1504,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1514,6 +1528,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1537,6 +1552,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 10,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -1555,6 +1571,7 @@
       "description": "Makes a friend or foe HAPPY.\nCost: 5",
       "mpCost": 5,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -1573,6 +1590,7 @@
       "description": "Has a chance to instantly defeat a<br>\nfoe. AUBREY also takes damage. Cost: 25",
       "mpCost": 25,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1598,6 +1616,7 @@
       "description": "Damages all foes. Deals more damage the less\nenemies there are. Cost: 20",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 2,
       "scopeName": "all enemies",
       "damage": {
@@ -1616,6 +1635,7 @@
       "description": "An attack that ignores a foe's DEFENSE,<br>\nthen reduces the foe's DEFENSE. Cost: 20",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1634,6 +1654,7 @@
       "description": "Deals damage based on AUBREY's HEART, \nbut AUBREY becomes TOAST. Cost: 50",
       "mpCost": 50,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1652,6 +1673,7 @@
       "description": "All foes target AUBREY for 1 turn.<br>\nIf AUBREY is attacked, she attacks. Cost: 5",
       "mpCost": 5,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -1689,6 +1711,7 @@
       "description": "If this skill defeats a foe, recover 100% JUICE. \nCost: 15",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1707,6 +1730,7 @@
       "description": "AUBREY attacks a foe and becomes HAPPY.\nCost: 10",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1725,6 +1749,7 @@
       "description": "A swing that doesn't miss. Deals extra damage to\n<br>HAPPY foes. Cost: 10",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1743,6 +1768,7 @@
       "description": "Attacks a foe 3 times.\nCost: 30",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1761,6 +1787,7 @@
       "description": "Makes AUBREY and a friend HAPPY.\nCost: 10",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -1779,6 +1806,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1802,6 +1830,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1825,6 +1854,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1848,6 +1878,7 @@
       "description": "Makes a friend or foe ANGRY.\nCost: 5",
       "mpCost": 5,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -1866,6 +1897,7 @@
       "description": "Deals damage to all foes.\nCost: 15",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 2,
       "scopeName": "all enemies",
       "damage": {
@@ -1884,6 +1916,7 @@
       "description": "KEL becomes HAPPY. KEL's friends recover<br>\nsome ENERGY and JUICE. Cost: 50",
       "mpCost": 50,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -1902,6 +1935,7 @@
       "description": "All attacks on a foe will hit right<br>\nin the HEART for the turn. Cost: 55",
       "mpCost": 55,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1927,6 +1961,7 @@
       "description": "Deals damage to a foe 3 times.\nCost: 30",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1945,6 +1980,7 @@
       "description": "KEL does an attack based on his SPEED\ninstead of his ATTACK. Cost: 15",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -1963,6 +1999,7 @@
       "description": "Makes all friends ANGRY.\nCost: 45",
       "mpCost": 45,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -1981,6 +2018,7 @@
       "description": "Attracts attention and reduces all foes'\nHIT RATE for the turn. Cost: 50",
       "mpCost": 50,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -2006,6 +2044,7 @@
       "description": "Makes a foe feel a random EMOTION. Deals<br>\nextra damage to foes with EMOTION. Cost: 20",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2024,6 +2063,7 @@
       "description": "Makes KEL HAPPY. If SAD was removed,<br>\nKEL gains FLEX. Cost: 25",
       "mpCost": 25,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -2042,6 +2082,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2065,6 +2106,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2088,6 +2130,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2111,6 +2154,7 @@
       "description": "Heals a friend for 75% of their HEART.<br>\nCan be used outside of battle. Cost: 10",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2129,6 +2173,7 @@
       "description": "Removes a friend or foe's EMOTION.<br>\nCost: 5",
       "mpCost": 5,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2147,6 +2192,7 @@
       "description": "Acts first, reducing a foe's ATTACK.<br>\nCost: 25",
       "mpCost": 25,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2165,6 +2211,7 @@
       "description": "Acts first, a foe targets HERO for 1 turn.<br>\nCost: 10",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2183,6 +2230,7 @@
       "description": "Acts first. All foes target HERO for 1 turn.<br>\nCost: 20",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -2214,6 +2262,7 @@
       "description": "Acts first. All foes target HERO for 1 turn.<br>\nHERO takes less damage. Cost: 30",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -2251,6 +2300,7 @@
       "description": "HERO and a friend recover some HEART.<br>\nCost: 15",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2269,6 +2319,7 @@
       "description": "Acts first, healing a friend for 40% of<br>\ntheir HEART. Cost: 15",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2287,6 +2338,7 @@
       "description": "Brings back a friend that is TOAST.\nCost: 40",
       "mpCost": 40,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 9,
       "scopeName": "one dead ally",
       "damage": {
@@ -2312,6 +2364,7 @@
       "description": "Acts first. A foe targets HERO for 1 turn and \nbecomes HAPPY. Cost: 15",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2330,6 +2383,7 @@
       "description": "Acts first. Reduces all foes' ATTACK and\nmakes them HAPPY. Cost: 35",
       "mpCost": 35,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 2,
       "scopeName": "all enemies",
       "damage": {
@@ -2348,6 +2402,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2371,6 +2426,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2394,6 +2450,7 @@
       "description": "",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2417,6 +2474,7 @@
       "description": "Heals a friend for 25% of their HEART.\nCost: 10",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2435,6 +2493,7 @@
       "description": "Inflicts SAD on a friend or foe.",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2453,6 +2512,7 @@
       "description": "It looks cool, though!\nDeals damage to 4 random enemies... and yourself.",
       "mpCost": 45,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2476,6 +2536,7 @@
       "description": "Deals light damage to an enemy, and decreases\nSPD/DEF/ATK based on SUNNY's EMOTION tier.",
       "mpCost": 35,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2494,6 +2555,7 @@
       "description": "SUNNY's next attack inflicts weakness, reducing\nATK/DEF and inflicting HP drain. Stacks.",
       "mpCost": 25,
       "tpCost": 0,
+      "energyCost": 2,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -2512,6 +2574,7 @@
       "description": "Disables all enemies' buffs for 3 turns.\nIf weakened, increases weakness level.",
       "mpCost": 25,
       "tpCost": 0,
+      "energyCost": 4,
       "scope": 2,
       "scopeName": "all enemies",
       "damage": {
@@ -2530,6 +2593,7 @@
       "description": "You've been through a lot.\nYou should let it all out.",
       "mpCost": 80,
       "tpCost": 0,
+      "energyCost": 10,
       "scope": 2,
       "scopeName": "all enemies",
       "damage": {
@@ -2548,6 +2612,7 @@
       "description": "Attacks based on SUNNY's highest stat.",
       "mpCost": 25,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2566,6 +2631,7 @@
       "description": "The greatest form of combat. Always critical,\nand ignores DEFENSE.",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2584,6 +2650,7 @@
       "description": "All allies become HAPPY. If they were SAD,\nremove their debuffs. 2 turn cooldown.",
       "mpCost": 50,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -2602,6 +2669,7 @@
       "description": "Passive. SUNNY will be targeted less in battle.",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2620,6 +2688,7 @@
       "description": "Inflicts an ally/enemy with CHARM,\nincreasing damage both given and received.",
       "mpCost": 23,
       "tpCost": 0,
+      "energyCost": 2,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2638,6 +2707,7 @@
       "description": "Damages an ally, granting them a speed boost\nand juice recovery.",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2656,6 +2726,7 @@
       "description": "Makes an ally or enemy ANGRY.",
       "mpCost": 10,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2674,6 +2745,7 @@
       "description": "Attacks 3 times, increasing a random STAT for an ally\nwith each hit.",
       "mpCost": 65,
       "tpCost": 0,
+      "energyCost": 2,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2692,6 +2764,7 @@
       "description": "Deals damage to an enemy and increases\nall stats.",
       "mpCost": 90,
       "tpCost": 0,
+      "energyCost": 9,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2710,6 +2783,7 @@
       "description": "Light SPEED-based heal to an ally. Increases\nATK/DEF/SPD based on LUCILLE's tier of happy.",
       "mpCost": 40,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2728,6 +2802,7 @@
       "description": "Copies the skill of an ally or enemy.\n3 turn cooldown.",
       "mpCost": 40,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2753,6 +2828,7 @@
       "description": "Significantly increases LUCK for all allies\n...and all enemies.",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -2771,6 +2847,7 @@
       "description": "Deals damage to an enemy based on LUCILLE's \nSPEED.",
       "mpCost": 35,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2789,6 +2866,7 @@
       "description": "CHARMED allies have a stat maximized based on EMOTION\nbut follow LUCILLE's orders this turn.",
       "mpCost": 42,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -2807,6 +2885,7 @@
       "description": "Deals light damage to all allies and makes them\nANGRY. 2 turn cooldown.",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -2825,6 +2904,7 @@
       "description": "Removes an ally/enemy's emotion. Clear debuffs\nwhen used on allies.",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2843,6 +2923,7 @@
       "description": "Gives an ally the butterfly, regenerating\nHEART and JUICE and reducing damage taken.",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2861,6 +2942,7 @@
       "description": "\\n[21]'s butterfly explodes, healing HEART and JUICE\nand removing debuffs.",
       "mpCost": 20,
       "tpCost": 0,
+      "energyCost": 2,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -2879,6 +2961,7 @@
       "description": "Acts first. All foes target \\n[21] for 1 turn.<br>\n\\n[21] takes reduced damage.",
       "mpCost": 45,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -2910,6 +2993,7 @@
       "description": "Low chance of putting an enemy to sleep.\nChance increases with \\n[21]'s SAD tier.",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2928,6 +3012,7 @@
       "description": "Revives a friend that is TOAST, but decreases\ntheir stats.",
       "mpCost": 70,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 9,
       "scopeName": "one dead ally",
       "damage": {
@@ -2953,6 +3038,7 @@
       "description": "DEFENSE-based medium heal to an ally.\nIncreases DEFENSE.",
       "mpCost": 35,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -2971,6 +3057,7 @@
       "description": "Deals light damage to an enemy, regaining damage\ndealt as HEART.",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -2989,6 +3076,7 @@
       "description": "Deals damage and inflicts poison. Scales with\n\\n[21]'s healing throughout the battle.",
       "mpCost": 60,
       "tpCost": 0,
+      "energyCost": 11,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -3007,6 +3095,7 @@
       "description": "DEFENSE-based medium heal to all allies.\nCan be used outside of battle.",
       "mpCost": 65,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -3025,6 +3114,7 @@
       "description": "Makes a friend or foe HAPPY.",
       "mpCost": 5,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -3043,6 +3133,7 @@
       "description": "The next skill deals double damage but has\nincreased cost.",
       "mpCost": 25,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -3068,6 +3159,7 @@
       "description": "Deals huge damage to an enemy.",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -3086,6 +3178,7 @@
       "description": "All allies or enemies get one tier of the\nemotion MAKOTO is feeling.",
       "mpCost": 35,
       "tpCost": 0,
+      "energyCost": 3,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {
@@ -3104,6 +3197,7 @@
       "description": "MAKOTO becomes FURIOUS and has his STATS\nincreased for 3 turns.",
       "mpCost": 40,
       "tpCost": 0,
+      "energyCost": 12,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -3122,6 +3216,7 @@
       "description": "Deals light damage 2-5 times based on tier of\nANGRY.",
       "mpCost": 50,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -3140,6 +3235,7 @@
       "description": "Deals light damage to an enemy.\nCritical hits deal triple damage.",
       "mpCost": 15,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 1,
       "scopeName": "one enemy",
       "damage": {
@@ -3158,6 +3254,7 @@
       "description": "Deals huge damage, split between all enemies.",
       "mpCost": 30,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 2,
       "scopeName": "all enemies",
       "damage": {
@@ -3176,6 +3273,7 @@
       "description": "\\n[21] goes to sleep, restoring HEART and JUICE.\nEffectiveness decays with uses.",
       "mpCost": 0,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 11,
       "scopeName": "self",
       "damage": {
@@ -3194,6 +3292,7 @@
       "description": "An ally is protected from damage this turn.\nMAKOTO dies if too much damage is blocked in battle.",
       "mpCost": 25,
       "tpCost": 0,
+      "energyCost": 1,
       "scope": 7,
       "scopeName": "one ally",
       "damage": {
@@ -3212,6 +3311,7 @@
       "description": "All allies have their emotions increased.",
       "mpCost": 55,
       "tpCost": 0,
+      "energyCost": 0,
       "scope": 8,
       "scopeName": "all allies",
       "damage": {

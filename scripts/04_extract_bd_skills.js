@@ -73,6 +73,12 @@ function resolveEffect(e) {
   return { kind: `code${e.code}`, raw: e };
 }
 
+function parseEnergyCost(note) {
+  // BD stores energy cost as <EnergyCost: N> in skill notes
+  const m = (note || '').match(/<EnergyCost:\s*(\d+)\s*>/i);
+  return m ? parseInt(m[1]) : 0;
+}
+
 function cleanSkill(s) {
   if (!s || !s.name) return null;
   const dmg = s.damage || {};
@@ -82,6 +88,7 @@ function cleanSkill(s) {
     description: (s.description || '').replace(/\r/g, '').trim(),
     mpCost: s.mpCost,
     tpCost: s.tpCost,
+    energyCost: parseEnergyCost(s.note),
     scope: s.scope,
     scopeName: SCOPE[s.scope] || `scope${s.scope}`,
     damage: {
