@@ -1,0 +1,230 @@
+{
+  "152": {
+    "id": 152,
+    "name": "-- PYREFLY FOREST",
+    "width": 56,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "vf_stump"
+  },
+  "153": {
+    "id": 153,
+    "name": "-- PYREFLY I",
+    "width": 50,
+    "height": 28,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "154": {
+    "id": 154,
+    "name": "-- PYREFLY II",
+    "width": 30,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "155": {
+    "id": 155,
+    "name": "-- PYREFLY SIDE-I",
+    "width": 25,
+    "height": 23,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "156": {
+    "id": 156,
+    "name": "-- PYREFLY III",
+    "width": 23,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "157": {
+    "id": 157,
+    "name": "-- PYREFLY SIDE-II",
+    "width": 26,
+    "height": 23,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "158": {
+    "id": 158,
+    "name": "-- PYREFLY IV",
+    "width": 25,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "159": {
+    "id": 159,
+    "name": "-- PYREFLY SIDE-III",
+    "width": 24,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "160": {
+    "id": 160,
+    "name": "-- PYREFLY V",
+    "width": 34,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "161": {
+    "id": 161,
+    "name": "-- TO LOST FOREST",
+    "width": 77,
+    "height": 54,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "162": {
+    "id": 162,
+    "name": "-- LOST FOREST CLEARING",
+    "width": 30,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "163": {
+    "id": 163,
+    "name": "-- LOST FOREST END",
+    "width": 24,
+    "height": 28,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "164": {
+    "id": 164,
+    "name": "-- PYREFLY TO SM TOWN",
+    "width": 55,
+    "height": 67,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "165": {
+    "id": 165,
+    "name": "-- SPROUTMOLE TOWN 1",
+    "width": 33,
+    "height": 30,
+    "parallaxName": "Space_parallax",
+    "bgm": "sproutmole_colony"
+  },
+  "166": {
+    "id": 166,
+    "name": "-- SPROUTMOLE TOWN 2",
+    "width": 38,
+    "height": 44,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "167": {
+    "id": 167,
+    "name": "-- SPROUTMOLE TOWN 3",
+    "width": 45,
+    "height": 28,
+    "parallaxName": null,
+    "bgm": "sproutmole_colony"
+  },
+  "335": {
+    "id": 335,
+    "name": "-- SPROUTMOLE TOWN 4",
+    "width": 28,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "sproutmole_colony"
+  },
+  "336": {
+    "id": 336,
+    "name": "-- PYREFLY TO SWEETHEART",
+    "width": 41,
+    "height": 60,
+    "parallaxName": "Space_parallax",
+    "bgm": null
+  },
+  "349": {
+    "id": 349,
+    "name": "-- LOST FOREST (I)",
+    "width": 24,
+    "height": 22,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "350": {
+    "id": 350,
+    "name": "-- LOST FOREST (II)",
+    "width": 24,
+    "height": 24,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "351": {
+    "id": 351,
+    "name": "-- LOST FOREST (III)",
+    "width": 24,
+    "height": 24,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "352": {
+    "id": 352,
+    "name": "-- LOST FOREST (IV)",
+    "width": 24,
+    "height": 22,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "353": {
+    "id": 353,
+    "name": "-- LOST FOREST (V)",
+    "width": 24,
+    "height": 22,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "354": {
+    "id": 354,
+    "name": "-- LOST FOREST (VI)",
+    "width": 25,
+    "height": 25,
+    "parallaxName": null,
+    "bgm": "pyrefly_forest"
+  },
+  "433": {
+    "id": 433,
+    "name": "-- ALCOVES I",
+    "width": 70,
+    "height": 76,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "4334": {
+    "id": 4334,
+    "name": "-- ALCOVES I [alcove 4]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 11,
+    "cropY": 32,
+    "polygon": [
+      [
+        11,
+        32
+      ],
+      [
+        18,
+        32
+      ],
+      [
+        18,
+        45
+      ],
+      [
+        11,
+        45
+      ]
+    ]
+  }
+}

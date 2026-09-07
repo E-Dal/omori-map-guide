@@ -1,0 +1,525 @@
+{
+ "layout": {
+  "106": {
+   "x": -1024,
+   "y": -4032,
+   "crop": "full",
+   "zOrder": 0,
+   "groupId": "orange_oasis"
+  },
+  "107": {
+   "x": -1472,
+   "y": -4640,
+   "crop": "full",
+   "zOrder": 4,
+   "groupId": "orange_oasis"
+  },
+  "108": {
+   "x": -1536,
+   "y": -6048,
+   "crop": "full",
+   "zOrder": 5,
+   "groupId": "orange_oasis"
+  },
+  "109": {
+   "x": -1376,
+   "y": -6656,
+   "crop": "full",
+   "zOrder": 6,
+   "groupId": "orange_oasis"
+  },
+  "110": {
+   "x": -1056,
+   "y": -7136,
+   "crop": "full",
+   "zOrder": 7,
+   "groupId": "orange_oasis"
+  },
+  "111": {
+   "x": -2112,
+   "y": -3424,
+   "crop": "full",
+   "zOrder": 54,
+   "groupId": "orange_oasis"
+  },
+  "113": {
+   "x": 416,
+   "y": -4992,
+   "crop": "full",
+   "zOrder": -7,
+   "groupId": "orange_oasis"
+  },
+  "114": {
+   "x": 4992,
+   "y": -3744,
+   "crop": "full",
+   "zOrder": 10,
+   "groupId": "orange_oasis"
+  },
+  "115": {
+   "x": 2080,
+   "y": -4608,
+   "crop": "full",
+   "zOrder": 46,
+   "groupId": "orange_oasis"
+  },
+  "116": {
+   "x": 4288,
+   "y": -8032,
+   "crop": "full",
+   "zOrder": -2,
+   "groupId": "orange_oasis"
+  },
+  "122": {
+   "x": -1152,
+   "y": -7776,
+   "crop": "full",
+   "zOrder": 8,
+   "groupId": "orange_oasis"
+  },
+  "332": {
+   "x": 2208,
+   "y": -3328,
+   "crop": "full",
+   "zOrder": 2,
+   "groupId": "orange_oasis"
+  },
+  "333": {
+   "x": -320,
+   "y": -1152,
+   "crop": "full",
+   "zOrder": 9,
+   "groupId": "orange_oasis"
+  },
+  "334": {
+   "x": 4128,
+   "y": -3232,
+   "crop": "full",
+   "zOrder": 3,
+   "groupId": "orange_oasis"
+  },
+  "342": {
+   "x": 5696,
+   "y": -5888,
+   "crop": "full",
+   "zOrder": 12,
+   "groupId": "orange_oasis"
+  },
+  "343": {
+   "x": 5184,
+   "y": -3840,
+   "crop": "full",
+   "zOrder": 13,
+   "groupId": "orange_oasis"
+  },
+  "345": {
+   "x": 6272,
+   "y": -4064,
+   "crop": "full",
+   "zOrder": 14,
+   "groupId": "orange_oasis"
+  },
+  "452": {
+   "x": 672,
+   "y": -1088,
+   "crop": "full",
+   "zOrder": 45,
+   "groupId": "orange_oasis"
+  },
+  "1121": {
+   "x": 1760,
+   "y": -4384,
+   "crop": "full",
+   "zOrder": 88,
+   "groupId": "orange_oasis"
+  },
+  "1122": {
+   "x": 0,
+   "y": -4000,
+   "crop": "full",
+   "zOrder": 64,
+   "groupId": "orange_oasis"
+  },
+  "1123": {
+   "x": 1120,
+   "y": -5024,
+   "crop": "full",
+   "zOrder": -6,
+   "groupId": "orange_oasis"
+  },
+  "3441": {
+   "x": 6368,
+   "y": -2208,
+   "crop": "full",
+   "zOrder": 42,
+   "groupId": "orange_oasis"
+  },
+  "3442": {
+   "x": 6624,
+   "y": -2208,
+   "crop": "full",
+   "zOrder": 43,
+   "groupId": "orange_oasis"
+  },
+  "3443": {
+   "x": 6880,
+   "y": -2208,
+   "crop": "full",
+   "zOrder": 44,
+   "groupId": "orange_oasis"
+  }
+ },
+ "routes": [
+  {
+   "color": "#22eebb",
+   "pts": [
+    {
+     "x": 4752,
+     "y": -2704,
+     "snap": {
+      "mapId": 334,
+      "evId": 2,
+      "evName": "To Doom Entrance",
+      "ox": 624,
+      "oy": 528
+     }
+    },
+    {
+     "x": 5200,
+     "y": -2640,
+     "snap": {
+      "mapId": 114,
+      "evId": 1,
+      "evName": "To Toast Grave",
+      "ox": 208,
+      "oy": 1104
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": -464,
+     "y": -2832,
+     "snap": {
+      "mapId": 106,
+      "evId": 2,
+      "evName": "To Dinos Dig",
+      "ox": 560,
+      "oy": 1200
+     }
+    },
+    {
+     "x": -688,
+     "y": -3728,
+     "snap": {
+      "mapId": 107,
+      "evId": 1,
+      "evName": "To Orange Oasis",
+      "ox": 784,
+      "oy": 912
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 1584,
+     "y": -3792,
+     "snap": {
+      "mapId": 106,
+      "evId": 6,
+      "evName": "To Palmie's House",
+      "ox": 2608,
+      "oy": 240
+     }
+    },
+    {
+     "x": 2544,
+     "y": -3568,
+     "snap": {
+      "mapId": 115,
+      "evId": 1,
+      "evName": "To Orange Oasis",
+      "ox": 464,
+      "oy": 1040
+     }
+    }
+   ]
+  },
+  {
+   "color": "#eeaa44",
+   "pts": [
+    {
+     "x": 5680,
+     "y": -3472,
+     "snap": {
+      "mapId": 343,
+      "evId": 1,
+      "evName": "Summon Placement",
+      "ox": 496,
+      "oy": 368
+     }
+    },
+    {
+     "x": 6096,
+     "y": -5872,
+     "snap": {
+      "mapId": 342,
+      "evId": 2,
+      "evName": "time to rock",
+      "ox": 400,
+      "oy": 16
+     }
+    }
+   ]
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": 6096,
+     "y": -2160,
+     "snap": {
+      "mapId": 342,
+      "evId": 5,
+      "evName": "yump",
+      "ox": 400,
+      "oy": 3728
+     }
+    },
+    {
+     "x": 6480,
+     "y": -2032,
+     "snap": {
+      "mapId": 3441,
+      "evId": 901,
+      "evName": "Flour Pile (team landing)",
+      "ox": 112,
+      "oy": 176
+     }
+    }
+   ]
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": 6992,
+     "y": -2192,
+     "snap": {
+      "mapId": 3443,
+      "evId": 910,
+      "evName": "Exit to Baking Room",
+      "ox": 112,
+      "oy": 16
+     }
+    },
+    {
+     "x": 6864,
+     "y": -2256,
+     "snap": {
+      "mapId": 345,
+      "evId": 3,
+      "evName": "TO BAKING ROOM",
+      "ox": 592,
+      "oy": 1808
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ffcc33",
+   "pts": [
+    {
+     "x": 6608,
+     "y": -2256,
+     "snap": {
+      "mapId": 345,
+      "evId": 1,
+      "evName": "TO BAKING ROOM",
+      "ox": 336,
+      "oy": 1808
+     }
+    },
+    {
+     "x": 6480,
+     "y": -2192,
+     "snap": {
+      "mapId": 3441,
+      "evId": 910,
+      "evName": "Exit to Baking Room",
+      "ox": 112,
+      "oy": 16
+     }
+    }
+   ]
+  },
+  {
+   "color": "#22eebb",
+   "pts": [
+    {
+     "x": 624,
+     "y": -2704,
+     "snap": {
+      "mapId": 106,
+      "evId": 3,
+      "evName": "To Rain Town",
+      "ox": 1648,
+      "oy": 1328
+     }
+    },
+    {
+     "x": -1904,
+     "y": -2704,
+     "snap": {
+      "mapId": 111,
+      "evId": 1,
+      "evName": "To Orange Oasis",
+      "ox": 208,
+      "oy": 720
+     }
+    }
+   ]
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": 1104,
+     "y": -3792,
+     "snap": {
+      "mapId": 106,
+      "evId": 7,
+      "evName": "To Donut Grandma",
+      "ox": 2128,
+      "oy": 240
+     }
+    },
+    {
+     "x": 176,
+     "y": -3632,
+     "snap": {
+      "mapId": 1122,
+      "evId": 20,
+      "evName": "To Orange Oasis",
+      "ox": 176,
+      "oy": 368
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": 272,
+     "y": -784,
+     "snap": {
+      "mapId": 333,
+      "evId": 920,
+      "evName": "Train Terminal",
+      "ox": 592,
+      "oy": 368
+     }
+    },
+    {
+     "x": 1040,
+     "y": -784,
+     "snap": {
+      "mapId": 452,
+      "evId": 1,
+      "evName": "To Orange Oasis",
+      "ox": 368,
+      "oy": 304
+     }
+    }
+   ]
+  },
+  {
+   "color": "#22eebb",
+   "pts": [
+    {
+     "x": 6736,
+     "y": -2192,
+     "snap": {
+      "mapId": 3442,
+      "evId": 910,
+      "evName": "Exit to Baking Room",
+      "ox": 112,
+      "oy": 16
+     }
+    },
+    {
+     "x": 6736,
+     "y": -2256,
+     "snap": {
+      "mapId": 345,
+      "evId": 2,
+      "evName": "TO BAKING ROOM",
+      "ox": 464,
+      "oy": 1808
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff7733",
+   "pts": [
+    {
+     "x": 1328,
+     "y": -3792,
+     "snap": {
+      "mapId": 106,
+      "evId": 5,
+      "evName": "To Orange Oasis",
+      "ox": 2352,
+      "oy": 240
+     }
+    },
+    {
+     "x": 1936,
+     "y": -4080,
+     "snap": {
+      "mapId": 1121,
+      "evId": 2,
+      "evName": "To Orange Oasis",
+      "ox": 176,
+      "oy": 304
+     }
+    }
+   ]
+  },
+  {
+   "color": "#eeaa44",
+   "pts": [
+    {
+     "x": 1648,
+     "y": -3440,
+     "snap": {
+      "mapId": 106,
+      "evId": 8,
+      "evName": "To Arrow Cave",
+      "ox": 2672,
+      "oy": 592
+     }
+    },
+    {
+     "x": 6000,
+     "y": -3376,
+     "snap": {
+      "mapId": 116,
+      "evId": 901,
+      "evName": "Arrow Cave Bottom Landing",
+      "ox": 1712,
+      "oy": 4656
+     }
+    }
+   ]
+  }
+ ]
+}

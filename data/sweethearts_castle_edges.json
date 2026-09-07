@@ -1,0 +1,3932 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 168,
+        "evId": 1,
+        "evName": "To Left Hall",
+        "x": 14,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 173,
+        "x": 17,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 168,
+        "evId": 2,
+        "evName": "To Left Hall",
+        "x": 26,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 173,
+        "x": 29,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 1,
+        "evName": "To Corridor",
+        "x": 25,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 435,
+        "x": 67,
+        "y": 32
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 4,
+        "evName": "TopRightMole",
+        "x": 39,
+        "y": 17,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 14,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 25,
+        "evName": "To Sweetheart Dungeon B1",
+        "x": 3,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 185,
+        "x": 25,
+        "y": 2
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 53,
+        "evName": "To Dungeon B1",
+        "x": 5,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 183,
+        "x": 14,
+        "y": 34
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 98,
+        "evName": "To Pet Jail",
+        "x": 42,
+        "y": 54,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 438,
+        "x": 29,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 106,
+        "evName": "shrooms",
+        "x": 3,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 433,
+        "x": 36,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 170,
+        "evId": 1,
+        "evName": "To Foyer",
+        "x": 11,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 172,
+        "x": 37,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 170,
+        "evId": 1,
+        "evName": "To Foyer",
+        "x": 11,
+        "y": 41,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 172,
+        "x": 37,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 170,
+        "evId": 2,
+        "evName": "To Dungeon F1",
+        "x": 8,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 183,
+        "x": 20,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 170,
+        "evId": 3,
+        "evName": "To Foyer",
+        "x": 11,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 23,
+        "y": 34
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 6,
+        "evName": "To Shortcut",
+        "x": 7,
+        "y": 28,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 185,
+        "x": 25,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 7,
+        "evName": "Trapdoor",
+        "x": 48,
+        "y": 28,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 185,
+        "x": 25,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 7,
+        "evName": "Trapdoor",
+        "x": 48,
+        "y": 28,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 185,
+        "x": 25,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 76,
+        "evName": "Sweetheart's Quest For Heartsz",
+        "x": 11,
+        "y": 16,
+        "page": 3,
+        "hitbox": {
+          "L": 3,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 7,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 216,
+        "evName": "Lost Library",
+        "x": 56,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 187,
+        "x": 15,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 1,
+        "evName": "To Corridor",
+        "x": 35,
+        "y": 49,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 435,
+        "x": 67,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 2,
+        "evName": "To Left Hall",
+        "x": 0,
+        "y": 28,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 173,
+        "x": 56,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 3,
+        "evName": "To Bedroom Hall",
+        "x": 3,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 181,
+        "x": 11,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 4,
+        "evName": "To Left Hall",
+        "x": 74,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 177,
+        "x": 0,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 5,
+        "evName": "To Kitchen",
+        "x": 69,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 179,
+        "x": 5,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 5,
+        "evName": "To Kitchen",
+        "x": 69,
+        "y": 15,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 179,
+        "x": 5,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 7,
+        "evName": "Gate",
+        "x": 37,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 170,
+        "x": 11,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 7,
+        "evName": "Gate",
+        "x": 37,
+        "y": 10,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 170,
+        "x": 11,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 173,
+        "evId": 1,
+        "evName": "To Art Gallery",
+        "x": 30,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 175,
+        "x": 18,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 173,
+        "evId": 2,
+        "evName": "To Library",
+        "x": 4,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 176,
+        "x": 12,
+        "y": 47
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 173,
+        "evId": 2,
+        "evName": "To Library",
+        "x": 4,
+        "y": 25,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 176,
+        "x": 12,
+        "y": 47
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 173,
+        "evId": 3,
+        "evName": "To Foyer",
+        "x": 57,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 172,
+        "x": 1,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 173,
+        "evId": 10,
+        "evName": "To Left Hall",
+        "x": 16,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 168,
+        "x": 14,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 173,
+        "evId": 11,
+        "evName": "To Left Hall",
+        "x": 28,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 168,
+        "x": 26,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 173,
+        "evId": 14,
+        "evName": "To Keeper's Dungeon",
+        "x": 50,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 435,
+        "x": 28,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 174,
+        "evId": 2,
+        "evName": "Door",
+        "x": 15,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 181,
+        "x": 11,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 174,
+        "evId": 2,
+        "evName": "Door",
+        "x": 15,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 186,
+        "x": 14,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 175,
+        "evId": 1,
+        "evName": "To Left Hall",
+        "x": 17,
+        "y": 40,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 173,
+        "x": 31,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 175,
+        "evId": 9,
+        "evName": "Face Wall",
+        "x": 27,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 453,
+        "x": 33,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 176,
+        "evId": 1,
+        "evName": "To Left Hall",
+        "x": 11,
+        "y": 49,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 173,
+        "x": 5,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 176,
+        "evId": 65,
+        "evName": "To Grass Alcove",
+        "x": 20,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 433,
+        "x": 36,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 177,
+        "evId": 1,
+        "evName": "To Foyer",
+        "x": 0,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 172,
+        "x": 74,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 177,
+        "evId": 2,
+        "evName": "To Ballroom 1",
+        "x": 33,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 9,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 177,
+        "evId": 2,
+        "evName": "To Ballroom 1",
+        "x": 33,
+        "y": 19,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 9,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 177,
+        "evId": 3,
+        "evName": "To Ballroom 2",
+        "x": 39,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 15,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 177,
+        "evId": 3,
+        "evName": "To Ballroom 2",
+        "x": 39,
+        "y": 19,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 15,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 178,
+        "evId": 1,
+        "evName": "To Right Hall 1",
+        "x": 8,
+        "y": 40,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 177,
+        "x": 34,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 178,
+        "evId": 2,
+        "evName": "To Right Hall 2",
+        "x": 14,
+        "y": 40,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 177,
+        "x": 40,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 178,
+        "evId": 53,
+        "evName": "lone dancing mole",
+        "x": 16,
+        "y": 29,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 16,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 178,
+        "evId": 53,
+        "evName": "lone dancing mole",
+        "x": 16,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 16,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 178,
+        "evId": 58,
+        "evName": "To Ocean Alcove",
+        "x": 18,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 433,
+        "x": 57,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 179,
+        "evId": 1,
+        "evName": "To Kitchen",
+        "x": 4,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 172,
+        "x": 70,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 179,
+        "evId": 2,
+        "evName": "To Servants Quarters",
+        "x": 5,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 180,
+        "x": 5,
+        "y": 32
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 180,
+        "evId": 1,
+        "evName": "To Kitchen",
+        "x": 5,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 179,
+        "x": 5,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 180,
+        "evId": 15,
+        "evName": "To Junk Alcove",
+        "x": 28,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 433,
+        "x": 57,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 181,
+        "evId": 1,
+        "evName": "To Left Hall",
+        "x": 10,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 172,
+        "x": 4,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 181,
+        "evId": 2,
+        "evName": "To Sweetheart room",
+        "x": 11,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 174,
+        "x": 15,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 1,
+        "evName": "To Underground",
+        "x": 23,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 170,
+        "x": 11,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 4,
+        "evName": "To Torture Room",
+        "x": 32,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 184,
+        "x": 12,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 5,
+        "evName": "To Dungeon B1",
+        "x": 16,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 183,
+        "x": 16,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 6,
+        "evName": "To Dungeon B1",
+        "x": 30,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 183,
+        "x": 30,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 7,
+        "evName": "To Dungeon B1",
+        "x": 41,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 183,
+        "x": 41,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 8,
+        "evName": "To Dungeon B1",
+        "x": 12,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 183,
+        "x": 12,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 9,
+        "evName": "To Dungeon B1",
+        "x": 7,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 183,
+        "x": 7,
+        "y": 21
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 183,
+        "evId": 1,
+        "evName": "To Dungeon F1",
+        "x": 16,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 16,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 183,
+        "evId": 2,
+        "evName": "To Dungeon F1",
+        "x": 30,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 30,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 183,
+        "evId": 3,
+        "evName": "To Dungeon F1",
+        "x": 41,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 41,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 183,
+        "evId": 4,
+        "evName": "To Dungeon F1",
+        "x": 7,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 7,
+        "y": 23
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 183,
+        "evId": 5,
+        "evName": "To Dungeon F1",
+        "x": 12,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 12,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 183,
+        "evId": 6,
+        "evName": "To Dungeon F1",
+        "x": 14,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 5,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 183,
+        "evId": 7,
+        "evName": "To Dungeon F1",
+        "x": 20,
+        "y": 36,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 170,
+        "x": 8,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 184,
+        "evId": 1,
+        "evName": "To Dungeon F1",
+        "x": 12,
+        "y": 34,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 32,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 185,
+        "evId": 19,
+        "evName": "To Sweetheart Dungeon B1",
+        "x": 25,
+        "y": 1,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 25,
+        "y": 37
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 185,
+        "evId": 20,
+        "evName": "To Sweetheart Dungeon B1",
+        "x": 25,
+        "y": 42,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 171,
+        "x": 48,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 185,
+        "evId": 20,
+        "evName": "To Sweetheart Dungeon B1",
+        "x": 25,
+        "y": 42,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 171,
+        "x": 48,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 185,
+        "evId": 58,
+        "evName": "To Rococo's Room",
+        "x": 22,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 499,
+        "x": 16,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 186,
+        "evId": 1,
+        "evName": "To Left Hall",
+        "x": 12,
+        "y": 34,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 174,
+        "x": 15,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 186,
+        "evId": 2,
+        "evName": "sbfStatue",
+        "x": 17,
+        "y": 19,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 186,
+        "x": 14,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 186,
+        "evId": 7,
+        "evName": "To Balcony",
+        "x": 8,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 436,
+        "x": 13,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 186,
+        "evId": 8,
+        "evName": "To Rosemary Alcove",
+        "x": 5,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 433,
+        "x": 14,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 187,
+        "evId": 12,
+        "evName": "HOLE",
+        "x": 3,
+        "y": 80,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 340,
+        "x": 12,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 187,
+        "evId": 18,
+        "evName": "To Stage",
+        "x": 15,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 171,
+        "x": 56,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 340,
+        "evId": 1,
+        "evName": "TO PIANO ROOM",
+        "x": 12,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 187,
+        "x": 3,
+        "y": 81
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 340,
+        "evId": 6,
+        "evName": "Fear of Heights",
+        "x": 9,
+        "y": 7,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 441,
+        "x": 20,
+        "y": 55
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 340,
+        "evId": 7,
+        "evName": "Fear of Spiders",
+        "x": 12,
+        "y": 7,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 440,
+        "x": 16,
+        "y": 57
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 340,
+        "evId": 8,
+        "evName": "Fear of Drowning",
+        "x": 15,
+        "y": 7,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 443,
+        "x": 20,
+        "y": 56
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 2,
+        "evName": "To SW Bedroom",
+        "x": 14,
+        "y": 67,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 186,
+        "x": 5,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 3,
+        "evName": "To SW Library",
+        "x": 36,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 176,
+        "x": 20,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 4,
+        "evName": "To SW SQ",
+        "x": 57,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 180,
+        "x": 28,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 5,
+        "evName": "To SW Ballroom",
+        "x": 57,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 18,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 6,
+        "evName": "shrooms",
+        "x": 36,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 3,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 1,
+        "evName": "To Left Hall",
+        "x": 28,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 173,
+        "x": 50,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 4,
+        "evName": "To Sweetheart Garden",
+        "x": 66,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 25,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 4,
+        "evName": "To Sweetheart Garden",
+        "x": 66,
+        "y": 33,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 25,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 5,
+        "evName": "To Sweetheart Foyer",
+        "x": 67,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 172,
+        "x": 37,
+        "y": 47
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 6,
+        "evName": "Heaven and Hell",
+        "x": 41,
+        "y": 57,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 435,
+        "x": 7,
+        "y": 81
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 6,
+        "evName": "Heaven and Hell",
+        "x": 41,
+        "y": 57,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 438,
+        "x": 7,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 7,
+        "evName": "Heaven and Hell",
+        "x": 53,
+        "y": 81,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 435,
+        "x": 41,
+        "y": 57
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 436,
+        "evId": 1,
+        "evName": "To Bedroom",
+        "x": 13,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 186,
+        "x": 8,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 438,
+        "evId": 1,
+        "evName": "To Right Hall",
+        "x": 39,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 177,
+        "x": 6,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 438,
+        "evId": 2,
+        "evName": "To Garden",
+        "x": 29,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 43,
+        "y": 54
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 438,
+        "evId": 3,
+        "evName": "Heaven and Hell",
+        "x": 53,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 435,
+        "x": 41,
+        "y": 57
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 440,
+        "evId": 1,
+        "evName": "Exit",
+        "x": 16,
+        "y": 58,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 340,
+        "x": 12,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 440,
+        "evId": 8,
+        "evName": "Fear of Spiders",
+        "x": 16,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 340,
+        "x": 12,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 441,
+        "evId": 1,
+        "evName": "Exit",
+        "x": 20,
+        "y": 56,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 340,
+        "x": 9,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 441,
+        "evId": 51,
+        "evName": "Fear of Heights",
+        "x": 20,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 340,
+        "x": 9,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 443,
+        "evId": 1,
+        "evName": "Exit",
+        "x": 20,
+        "y": 57,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 340,
+        "x": 15,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 443,
+        "evId": 4,
+        "evName": "Fear of Drowning",
+        "x": 20,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 340,
+        "x": 15,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 13,
+        "evName": "To SW Gallery",
+        "x": 33,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 175,
+        "x": 27,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 499,
+        "evId": 1,
+        "evName": "To Fanmail Graveyard",
+        "x": 16,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 185,
+        "x": 22,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 1,
+        "evName": "To Corridor",
+        "x": 25,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4352,
+        "x": 3,
+        "y": 21
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 98,
+        "evName": "To Pet Jail",
+        "x": 42,
+        "y": 54,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4381,
+        "x": 22,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 106,
+        "evName": "shrooms",
+        "x": 3,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4335,
+        "x": 3,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1711,
+        "evId": 6,
+        "evName": "To Shortcut",
+        "x": 0,
+        "y": 27,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 185,
+        "x": 25,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1712,
+        "evId": 7,
+        "evName": "Trapdoor",
+        "x": 0,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 185,
+        "x": 25,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1712,
+        "evId": 7,
+        "evName": "Trapdoor",
+        "x": 0,
+        "y": 27,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 185,
+        "x": 25,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1711,
+        "evId": 76,
+        "evName": "Sweetheart's Quest For Heartsz",
+        "x": 4,
+        "y": 15,
+        "page": 3,
+        "hitbox": {
+          "L": 3,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 7,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1712,
+        "evId": 216,
+        "evName": "Lost Library",
+        "x": 8,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 187,
+        "x": 15,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 172,
+        "evId": 1,
+        "evName": "To Corridor",
+        "x": 35,
+        "y": 49,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4352,
+        "x": 3,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 173,
+        "evId": 14,
+        "evName": "To Keeper's Dungeon",
+        "x": 50,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4351,
+        "x": 18,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 175,
+        "evId": 9,
+        "evName": "Face Wall",
+        "x": 27,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4535,
+        "x": 3,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 176,
+        "evId": 65,
+        "evName": "To Grass Alcove",
+        "x": 20,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4332,
+        "x": 3,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 178,
+        "evId": 58,
+        "evName": "To Ocean Alcove",
+        "x": 18,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4338,
+        "x": 3,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 180,
+        "evId": 15,
+        "evName": "To Junk Alcove",
+        "x": 28,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4339,
+        "x": 2,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 185,
+        "evId": 20,
+        "evName": "To Sweetheart Dungeon B1",
+        "x": 25,
+        "y": 42,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1712,
+        "x": 0,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 185,
+        "evId": 20,
+        "evName": "To Sweetheart Dungeon B1",
+        "x": 25,
+        "y": 42,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1712,
+        "x": 0,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 186,
+        "evId": 8,
+        "evName": "To Rosemary Alcove",
+        "x": 5,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4337,
+        "x": 3,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 187,
+        "evId": 18,
+        "evName": "To Stage",
+        "x": 15,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1712,
+        "x": 8,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4337,
+        "evId": 2,
+        "evName": "To SW Bedroom",
+        "x": 3,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 186,
+        "x": 5,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4332,
+        "evId": 3,
+        "evName": "To SW Library",
+        "x": 3,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 176,
+        "x": 20,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4339,
+        "evId": 4,
+        "evName": "To SW SQ",
+        "x": 2,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 180,
+        "x": 28,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4338,
+        "evId": 5,
+        "evName": "To SW Ballroom",
+        "x": 3,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 18,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4335,
+        "evId": 6,
+        "evName": "shrooms",
+        "x": 3,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 3,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4351,
+        "evId": 1,
+        "evName": "To Left Hall",
+        "x": 18,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 173,
+        "x": 50,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4352,
+        "evId": 5,
+        "evName": "To Sweetheart Foyer",
+        "x": 3,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 172,
+        "x": 37,
+        "y": 47
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4351,
+        "evId": 6,
+        "evName": "Heaven and Hell",
+        "x": 31,
+        "y": 53,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 435,
+        "x": 7,
+        "y": 81
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4351,
+        "evId": 6,
+        "evName": "Heaven and Hell",
+        "x": 31,
+        "y": 53,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 438,
+        "x": 7,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 7,
+        "evName": "Heaven and Hell",
+        "x": 53,
+        "y": 81,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4351,
+        "x": 31,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4381,
+        "evId": 2,
+        "evName": "To Garden",
+        "x": 22,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 43,
+        "y": 54
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 438,
+        "evId": 3,
+        "evName": "Heaven and Hell",
+        "x": 53,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4351,
+        "x": 31,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 187,
+        "evId": 901,
+        "evName": "Light Pillar",
+        "x": 15,
+        "y": 10,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 187,
+        "x": 15,
+        "y": 10
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 902,
+        "evName": "Garden Center Trapdoor",
+        "x": 25,
+        "y": 36,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 25,
+        "y": 36
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 1711,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 7,
+        "y": 31,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 1711,
+        "x": 7,
+        "y": 31
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 1712,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 7,
+        "y": 31,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 1712,
+        "x": 7,
+        "y": 31
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4331,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 1,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4331,
+        "x": 1,
+        "y": 12
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4353,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 4,
+        "y": 10,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4353,
+        "x": 4,
+        "y": 10
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4372,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 4,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4372,
+        "x": 4,
+        "y": 12
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4375,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4375,
+        "x": 3,
+        "y": 12
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4377,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4377,
+        "x": 3,
+        "y": 12
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4378,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4378,
+        "x": 3,
+        "y": 12
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4535,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 9,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4535,
+        "x": 3,
+        "y": 9
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 903,
+        "evName": "Arrival anchor (top-left cell)",
+        "x": 7,
+        "y": 8,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 182,
+        "x": 7,
+        "y": 8
+      },
+      "kind": "anchor"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 169,
+        "evId": 87,
+        "evName": "Blackspace",
+        "x": 25,
+        "y": 57,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 394,
+        "x": 8,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 1,
+        "evName": "To Sproutmole Town",
+        "x": 12,
+        "y": 32,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 6,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 1,
+        "evName": "To Sproutmole Town",
+        "x": 12,
+        "y": 32,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 6,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 12,
+        "evName": "To Sproutmole Town",
+        "x": 53,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 6,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 12,
+        "evName": "To Sproutmole Town",
+        "x": 53,
+        "y": 33,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 6,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 77,
+        "evName": "teleport",
+        "x": 53,
+        "y": 10,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 111,
+        "evName": "Teleport/Censor",
+        "x": 55,
+        "y": 10,
+        "page": 9,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 112,
+        "evName": "singingMole (Awake)",
+        "x": 57,
+        "y": 10,
+        "page": 7,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 186,
+        "evName": "Mic/Teleport",
+        "x": 52,
+        "y": 11,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 211,
+        "evName": "teleport",
+        "x": 52,
+        "y": 9,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 171,
+        "evId": 229,
+        "evName": "Teleport",
+        "x": 56,
+        "y": 11,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 182,
+        "evId": 80,
+        "evName": "Telescope",
+        "x": 40,
+        "y": 5,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 490,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 187,
+        "evId": 1,
+        "evName": "BLACKLETTER_L",
+        "x": 26,
+        "y": 81,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 15,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 187,
+        "evId": 11,
+        "evName": "Teleport",
+        "x": 26,
+        "y": 80,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 87,
+        "x": 28,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 187,
+        "evId": 11,
+        "evName": "Teleport",
+        "x": 26,
+        "y": 80,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 87,
+        "x": 28,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 14,
+        "y": 45,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 4,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 11,
+        "evName": "To Outskirts",
+        "x": 57,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 129,
+        "x": 35,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 12,
+        "evName": "To Pyrefly",
+        "x": 14,
+        "y": 68,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 153,
+        "x": 5,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 19,
+        "evName": "To Deeper Well",
+        "x": 57,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 435,
+        "evId": 8,
+        "evName": "Keeper",
+        "x": 41,
+        "y": 45,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 6,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 1,
+        "evName": "To Frozen Forest",
+        "x": 8,
+        "y": 38,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 136,
+        "x": 14,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 2,
+        "evName": "To Molly Left 1",
+        "x": 53,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 239,
+        "x": 4,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 3,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 251,
+        "x": 35,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 4,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 59,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 223,
+        "x": 44,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 9,
+        "evName": "To Orange Oasis",
+        "x": 6,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 78,
+        "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 438,
+        "evId": 32,
+        "evName": "molehole",
+        "x": 21,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 286,
+        "x": 4,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 449,
+        "evId": 2,
+        "evName": "To Sproutmole Town",
+        "x": 12,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 6,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 21,
+        "evName": "Pluto Smash",
+        "x": 10,
+        "y": 42,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 196,
+        "x": 9,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 23,
+        "evName": "To Deeper Well / Path to Trench",
+        "x": 33,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 18,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 23,
+        "evName": "To Deeper Well / Path to Trench",
+        "x": 33,
+        "y": 15,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 53
+      },
+      "kind": "setValue"
+    }
+  ]
+}

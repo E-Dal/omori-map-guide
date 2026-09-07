@@ -7,122 +7,1185 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <style>
   body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #ddd; }
-  header { padding: 8px 16px; border-bottom: 1px solid #333; display: flex; align-items: center; gap: 16px; }
+  header { padding: 8px 16px; border-bottom: 1px solid #333; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
   header h1 { margin: 0; font-size: 18px; }
-  header select { background: #2a2a2a; color: #ddd; border: 1px solid #444; padding: 4px 8px; }
+  header select, header input[type=range] { background: #2a2a2a; color: #ddd; border: 1px solid #444; padding: 4px 8px; }
+  header label { font-size: 12px; color: #888; display: flex; align-items: center; gap: 4px; }
+  header input[type=range] { padding: 0; width: 100px; vertical-align: middle; }
+  .view-toggle { display: inline-flex; border: 1px solid #444; border-radius: 4px; overflow: hidden; }
+  .view-toggle button { background: #2a2a2a; color: #ddd; border: 0; padding: 4px 10px; cursor: pointer; font-size: 12px; }
+  .view-toggle button.active { background: #ff80c0; color: #000; }
   #map { width: 100vw; height: calc(100vh - 50px); background: #0a0a0a; }
   .leaflet-container { background: #0a0a0a; }
   .map-event-marker {
     background: #ff4080; border: 2px solid #fff; border-radius: 50%;
     width: 16px; height: 16px;
   }
+  @keyframes pinPulse { 0%, 100% { opacity: 1 } 50% { opacity: 0.08 } }
+  .melon-icon.blink, .pin.blink { animation: pinPulse 2.4s ease-in-out infinite; }
+  .melon-icon {
+    width: 24px; height: 24px;
+    background-size: contain; background-repeat: no-repeat; background-position: center;
+    filter: drop-shadow(0 0 2px #000);
+  }
+  .melon-icon.green { background-image: url('assets/watermelon.png'); }
+  .melon-icon.blue  { background-image: url('assets/watermelon_blue.png'); }
+  .leaflet-tooltip.melon-tooltip {
+    background: rgba(20,20,20,0.92); color: #fff; border: 1px solid #ff80c0;
+    font-size: 12px; padding: 4px 8px;
+  }
+  .leaflet-tooltip.melon-tooltip::before { border-right-color: #ff80c0; }
+  /* Collectible markers. Emoji rather than art so a new layer costs nothing,
+     and sized from a per-layer slider so a dense layer can be shrunk out of
+     the way without hiding it. */
+  .pin { display: flex; align-items: center; justify-content: center;
+         line-height: 1; filter: drop-shadow(0 0 2px #000) drop-shadow(0 0 4px #000); }
+  /* Sprites are 32px art; let them enlarge as pixels rather than blur. */
+  .pin img { image-rendering: pixelated; display: block; }
+  .pin.machine { cursor: pointer; transition: transform .12s ease; }
+  .pin.machine:hover { transform: scale(1.25); }
+  .pin.machine.flipped { filter: drop-shadow(0 0 3px #ffd050) drop-shadow(0 0 7px #ff8000); }
+  /* Ticked off: greyed, faded, and stamped, so a copy of a sprite still on the
+     map reads as "had it" rather than as a second one lying there. */
+  .pin.done, .melon-icon.done { filter: grayscale(1) brightness(0.65) drop-shadow(0 0 2px #000); opacity: 0.55; }
+  .pin.done::after, .melon-icon.done::after {
+                     content: '✓'; position: absolute; right: -3px; bottom: -5px;
+                     font-size: 11px; color: #7fdc7f; text-shadow: 0 0 3px #000, 0 0 3px #000; }
+  /* A ticked melon stops pulsing: a marker that is still waving for attention
+     reads as "go and get this" whatever colour it has been turned. */
+  .melon-icon.done { animation: none; }
+  .pin, .melon-icon { position: relative; }
+  .collectBubble { font-size: 12px; line-height: 1.5; }
+  .collectBubble .where { color: #888; }
+  /* What has to be true before the thing is in the world at all. Worth its own
+     colour: a marker over bare ground reads as the guide being wrong until you
+     know the item has not spawned yet. */
+  .clue { display: block; margin-top: 4px; color: #9fd4ff; font-style: italic; }
+  .needs { display: block; margin-top: 4px; color: #ffcf6a; }
+  .needs b { color: #ffd97a; }
+  .legend-note { margin-top: 8px; border-top: 1px solid #3a3a3a; padding-top: 6px;
+                 color: #8d8d8d; font-size: 10px; line-height: 1.45; max-width: 200px; }
+  .legend-note b { color: #ffcf6a; }
+  .collectBubble button { display: block; margin-top: 7px; width: 100%; cursor: pointer;
+    background: #2f7a3f; color: #fff; border: 0; border-radius: 3px; padding: 5px 8px; font-size: 12px; }
+  .collectBubble button.done { background: #555; }
+
+  #markerLegend {
+    position: absolute; top: 60px; right: 10px; z-index: 700;
+    background: rgba(18,18,20,0.88); border: 1px solid #3a3a3a; border-radius: 6px;
+    padding: 8px 10px; font-size: 12px; backdrop-filter: blur(3px);
+  }
+  #markerLegend h4 { margin: 0 0 6px; font-size: 11px; color: #888; font-weight: normal;
+                     display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+  #markerLegend h4 button { background: #2f2f2f; color: #bbb; border: 1px solid #4a4a4a;
+                            font-size: 10px; padding: 1px 6px; border-radius: 3px; cursor: pointer; }
+  #markerLegend h4 button:hover { color: #fff; border-color: #777; }
+  #markerLegend .row { display: flex; align-items: center; gap: 6px; padding: 2px 0; }
+  #markerLegend .row label { display: flex; align-items: center; gap: 5px; cursor: pointer;
+                             width: 132px; color: #ccc; }
+  #markerLegend .row.off label { color: #666; }
+  #markerLegend .row input[type=range] { width: 62px; }
+  #markerLegend .count { color: #777; font-size: 10px; min-width: 26px; text-align: right; }
+  #markerLegend .blinkBtn { background: none; border: 0; cursor: pointer; font-size: 11px;
+                            color: #555; padding: 0 1px; }
+  #markerLegend .blinkBtn.on { color: #ffd97a; }
+
+  /* Hide elements not relevant to current mode */
+  body.stitched .perMap-only { display: none; }
+  body:not(.stitched) .stitched-only { display: none; }
+  body.world .perMap-only, body.world .stitched-only { display: none; }
+  body:not(.world) .world-only { display: none; }
+
+  /* ── World view: one pane per region ── */
+  /* Regions overlap by design, so an unfocused one drops to grey and stays as
+     context. The focused one keeps its colour and rises above the pile. */
+  #markerRows .group-head { margin: 7px 0 2px; padding-top: 6px;
+                           border-top: 1px solid #333; font-size: 10px;
+                           letter-spacing: .04em; color: #999; }
+  #markerRows .group-head label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+  /* ── First-visit notice ──────────────────────────────────────────────
+     What the atlas does not do yet. Shown once per browser (localStorage),
+     reopened any time from the ⓘ button in the header. Not a Leaflet popup:
+     it has to sit above the panels, which live at z-index 700. */
+  #introBack { position: fixed; inset: 0; z-index: 1200; display: none;
+               background: rgba(0,0,0,0.62); backdrop-filter: blur(2px); }
+  body.intro-open #introBack { display: flex; align-items: center; justify-content: center; }
+  #introBox { width: min(520px, calc(100vw - 32px)); max-height: calc(100vh - 64px);
+              overflow-y: auto; background: #1d1d20; border: 1px solid #4a4a4a;
+              border-radius: 8px; padding: 18px 20px 16px;
+              box-shadow: 0 10px 40px rgba(0,0,0,0.6); font-size: 13px; line-height: 1.6; }
+  #introBox h2 { margin: 0 0 2px; font-size: 16px; color: #ffd97a; font-weight: normal; }
+  #introBox .lang { float: right; display: inline-flex; border: 1px solid #444;
+                    border-radius: 4px; overflow: hidden; margin: -2px 0 0 10px; }
+  #introBox .lang button { background: #262629; color: #999; border: 0;
+                           font-size: 11px; padding: 3px 9px; cursor: pointer; }
+  #introBox .lang button.on { background: #ffd97a; color: #1a1a1a; }
+  /* English runs longer than the Chinese, so give the box a little more room
+     and let the list breathe rather than reflowing when the language flips. */
+  #introBox[lang=en] li { margin-bottom: 10px; }
+  #introBox .sub { color: #8d8d8d; font-size: 11px; margin-bottom: 12px; }
+  #introBox ol { margin: 0; padding-left: 20px; }
+  #introBox li { margin-bottom: 9px; color: #ccc; }
+  #introBox li b { color: #fff; font-weight: 600; }
+  #introBox .k { color: #ff9ecb; }
+  #introBox a { color: #80c0ff; }
+  #introBox .foot { display: flex; align-items: center; gap: 12px;
+                    margin-top: 14px; padding-top: 12px; border-top: 1px solid #333; }
+  #introBox .foot label { font-size: 11px; color: #8d8d8d; display: flex;
+                          align-items: center; gap: 5px; cursor: pointer; }
+  #introOk { margin-left: auto; background: #2f7a3f; color: #fff; border: 0;
+             border-radius: 4px; padding: 6px 18px; font-size: 13px; cursor: pointer; }
+  #introOk:hover { background: #389049; }
+  #introBtn { background: #2a2a2a; color: #bbb; border: 1px solid #444; border-radius: 4px;
+              font-size: 12px; padding: 4px 9px; cursor: pointer; }
+  #introBtn:hover { color: #fff; border-color: #777; }
+  .lang-pick { display: inline-flex; border: 1px solid #444; border-radius: 4px; overflow: hidden; }
+  .lang-pick button { background: #2a2a2a; color: #999; border: 0; font-size: 11px;
+                      padding: 4px 8px; cursor: pointer; }
+  .lang-pick button:hover { color: #ddd; }
+  .lang-pick button.on { background: #ffd97a; color: #1a1a1a; }
+
+  /* No max-width here and the panel shrink-wraps to this one long line — the
+     rows are ~240px, the credit sentence is ~800px. Keep it boxed like .legend-note. */
+  .credits { margin-top: 9px; padding-top: 7px; border-top: 1px solid #2c2c2c;
+             max-width: 200px;
+             font-size: 9px; line-height: 1.5; color: #6d6d6d; }
+  .credits a { color: #8a8a8a; }
+  .credits a:hover { color: #bbb; }
+  #routeMode { font-size: 10px; color: #888; margin: 2px 0 6px; }
+  #routeMode select { background: #2a2a2a; color: #ddd; border: 1px solid #444;
+                      font-size: 10px; padding: 1px 3px; margin-left: 4px; }
+  #routeRows { display: flex; flex-wrap: wrap; gap: 4px; margin: 2px 0 7px; }
+  .route-btn { background: #2a2a2a; color: #bbb; border: 1px solid #444; border-radius: 3px;
+               font-size: 10px; padding: 3px 7px; cursor: pointer; white-space: nowrap; }
+  .route-btn:hover { background: #363636; color: #eee; }
+  .route-btn.on { background: #3a4a3a; border-color: #6a8a6a; color: #cfe8cf; }
+  .region-pane { transition: filter .18s ease; }
+  /* Decorations deliberately do NOT get image-rendering: pixelated, even though
+     stitcher_all.html draws them that way (.placed-deco): nearest-neighbour
+     downsampling drops texels rather than averaging them, and the field of 166
+     overlapping trees comes out speckled with hard navy holes.
+
+     This is NOT what causes the black outline people see around the Vast Forest
+     trees at anything short of 1:1, and image-rendering has nothing to do with
+     that. The trees there bridge a real 192px hole in the layout — map92 FOREST
+     PLAYGROUND ends at x=6368 and map99 PINWHEEL FOREST EAST starts at x=6560,
+     with nothing behind the gap — so what is behind the sprites is #map's own
+     background. The stitcher keeps every map and decoration in one #world div
+     and scales the lot with a single transform, so trees that touch at 1:1 keep
+     touching at every zoom. Leaflet sizes and positions each overlay on its own
+     in fractional CSS pixels, each rounds separately, hairline cracks open
+     between neighbouring sprites, and the background leaks through them.
+
+     Proof, if it ever needs re-checking: set #map's background to magenta and
+     the "outline" comes back magenta. Repainting the sprite's transparent
+     pixels changes nothing — Chrome composites premultiplied and never samples
+     RGB where alpha is 0, so 32_bleed_deco_edges.py is insurance, not a fix. */
+  .world-deco { image-rendering: auto; }
+  .region-pane.dimmed { filter: grayscale(1) brightness(0.45) contrast(0.95); }
+  .region-pane.hidden { display: none; }
+
+  #regionLegend {
+    position: absolute; top: 60px; left: 10px; z-index: 700;
+    background: rgba(18,18,20,0.88); border: 1px solid #3a3a3a; border-radius: 6px;
+    padding: 8px 10px; font-size: 12px; max-height: calc(100vh - 90px); overflow-y: auto;
+    backdrop-filter: blur(3px);
+  }
+  #regionLegend h4 { margin: 0 0 6px; font-size: 11px; color: #888; font-weight: normal;
+                     display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+  #regionLegend h4 button { background: #2f2f2f; color: #bbb; border: 1px solid #4a4a4a;
+                            font-size: 10px; padding: 1px 6px; border-radius: 3px; cursor: pointer; }
+  .rl-row { display: flex; align-items: center; gap: 6px; padding: 2px 0; color: #ccc; cursor: pointer; }
+  .rl-row:hover { color: #fff; }
+  .rl-row .sw { width: 10px; height: 10px; border-radius: 2px; flex: none; }
+  .rl-row .nm { flex: 1; white-space: nowrap; }
+  .rl-row .ct { color: #666; font-size: 10px; }
+  .rl-row.focused { color: #ffd97a; font-weight: bold; }
+  .rl-row.off .nm { color: #555; text-decoration: line-through; }
+  .rl-row .eye { background: none; border: 0; color: #777; cursor: pointer; font-size: 11px; padding: 0 2px; }
+  .rl-row .eye:hover { color: #fff; }
+  #overlapWarn { margin-top: 8px; border-top: 1px solid #3a3a3a; padding-top: 6px;
+                 color: #ffcf6a; font-size: 11px; line-height: 1.45; max-width: 210px; display: none; }
+  #overlapWarn b { color: #ffd97a; }
+
+  /* The same warning, but in the way. The panel note above is easy to miss —
+     it is 210px wide, the colour of the rest of the legend, and sits under a
+     region list long enough to scroll. Mixing routes silently draws two
+     regions on the same ground, which reads as a bug rather than as a choice,
+     so the first time a selection does it, say so where it cannot be walked
+     past. It stays until dismissed, and comes back only if the mix changes. */
+  #overlapPopup {
+    position: absolute; top: 68px; left: 50%; transform: translateX(-50%);
+    z-index: 1200; width: min(420px, calc(100vw - 40px));
+    background: rgba(26,22,16,0.97); border: 1px solid #a8792a; border-radius: 8px;
+    padding: 12px 14px; font-size: 12px; line-height: 1.5; color: #ffe9bf;
+    box-shadow: 0 10px 34px rgba(0,0,0,0.6); display: none;
+  }
+  /* Scoped to the world view: an id selector would otherwise outrank the
+     .world-only rule above and leave the popup on screen in region mode. */
+  body.world #overlapPopup.show { display: block; }
+  #overlapPopup h5 { margin: 0 0 6px; font-size: 13px; color: #ffd97a; }
+  #overlapPopup b { color: #ffd97a; }
+  #overlapPopup .routes { margin: 6px 0; padding: 6px 8px; background: rgba(0,0,0,0.3);
+                          border-radius: 4px; }
+  #overlapPopup .acts { margin-top: 10px; display: flex; gap: 8px; justify-content: flex-end; }
+  #overlapPopup button { background: #2f2a20; color: #ffd97a; border: 1px solid #6d5a2e;
+                         padding: 4px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+  #overlapPopup button:hover { background: #3d3527; }
+  #overlapPopup button.primary { background: #a8792a; color: #1a1a1a; border-color: #a8792a; }
+  #overlapPopup button.primary:hover { background: #c08f36; }
 </style>
 </head>
 <body>
 <header>
   <h1>OMORI Map Guide</h1>
-  <select id="mapSelect"></select>
+  <label><span data-i18n="region">Region</span>
+    <select id="regionSelect"></select>
+  </label>
+  <span class="view-toggle">
+    <button id="modePerMap" class="active" data-i18n="perMap">Per-Map</button>
+    <button id="modeStitched" data-i18n="stitched">Stitched</button>
+    <button id="modeWorld" data-i18n="world">🌍 World</button>
+  </span>
+  <select id="mapSelect" class="perMap-only"></select>
+  <label class="stitched-only"><span data-i18n="variant">Variant</span>
+    <select id="variantSelect"></select>
+  </label>
+  <label class="stitched-only"><span data-i18n="dot">Dot</span>
+    <input type="range" id="dotSize" min="3" max="20" value="9" />
+    <span id="dotSizeVal" style="width:24px;text-align:right">9</span>
+  </label>
+  <label class="stitched-only"><span data-i18n="line">Line</span>
+    <input type="range" id="lineWidth" min="1" max="8" value="3" />
+    <span id="lineWidthVal" style="width:24px;text-align:right">3</span>
+  </label>
   <span id="mapInfo" style="color:#888;font-size:12px"></span>
+  <span id="flipNote" style="color:#ffd050;font-size:12px"></span>
+  <span style="margin-left:auto;display:flex;align-items:center;gap:12px;font-size:13px">
+    <span class="lang-pick"><button type="button" data-lang="zh">中文</button><button type="button" data-lang="en">EN</button></span>
+    <button id="introBtn" data-i18n-title="introBtnTitle" data-i18n="introBtn">ⓘ</button>
+    <a href="stitcher_all.html" style="color:#80c0ff;font-weight:bold">★ Stitcher ↗</a>
+  </span>
 </header>
 <div id="map"></div>
+<!-- Say the limits out loud rather than letting people find them one by one.
+     The forum post is still to come; its URL goes in INTRO_TEXT below. -->
+<div id="introBack">
+  <div id="introBox">
+    <h2 id="introTitle"></h2>
+    <div class="sub" id="introSub"></div>
+    <ol id="introList"></ol>
+    <div class="foot">
+      <label><input type="checkbox" id="introAgain" /> <span id="introAgainTxt"></span></label>
+      <button id="introOk"></button>
+    </div>
+  </div>
+</div>
+<div id="markerLegend">
+  <h4><span data-i18n="markers">MARKERS</span> <button id="clearCollected" style="display:none" data-i18n="clear">clear</button></h4>
+  <div id="markerRows"></div>
+  <div class="legend-note" data-i18n-html="legendNote"></div>
+  <!-- The map images are somebody else's work and the art is OMOCAT's; the
+       README says so but nobody visiting the site reads the README. -->
+  <div class="credits" data-i18n-html="credits"></div>
+</div>
+<div id="regionLegend" class="world-only">
+  <h4><span data-i18n="regions">REGIONS</span> <button id="regionReset" data-i18n="reset">reset</button></h4>
+  <div id="routeMode"><span data-i18n="route">Route:</span>
+    <select id="routeModeSel">
+      <option value="both" data-i18n="routeBoth">both</option>
+      <option value="sunny">SUNNY</option>
+      <option value="hikikomori">HIKIKOMORI</option>
+    </select>
+  </div>
+  <div id="routeRows"></div>
+  <div id="regionRows"></div>
+  <div id="overlapWarn"></div>
+</div>
+<div id="overlapPopup" class="world-only">
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-// Tile size used by RPG Maker MV
-const TILE_PX = 32; // goats.dev rendered at 32px per tile (will verify)
+const TILE_PX = 32;
 
 let mapMeta = null;
 let edges = null;
+let highlights = null;            // { watermelons: [...] }
 let leafletMap = null;
-let currentLayer = null;
-let currentMarkers = [];
+let currentLayers = [];           // image overlay + exit markers + polylines
+let melonLayers = [];             // marker + conveyor-overlay layers (cleared as a group)
+let currentMapId = null;         // map shown in Per-Map view
+let collectibles = null;          // { layers, points } from 23_extract_collectibles.js
+let conveyors = null;             // { mapId: { groups } } from 22_extract_conveyors.js
+let pointSprites = null;          // sprite key -> [w, h], from 28_extract_point_sprites.py
+let melonArt = null;              // "<mapId>:<evId>" -> sprite rect, same script
 
-async function init() {
-  // load metadata
-  const [metaRes, edgesRes] = await Promise.all([
-    fetch('../data/faraway_maps.json'),
-    fetch('../data/faraway_edges.json'),
-  ]);
-  mapMeta = await metaRes.json();
-  edges = await edgesRes.json();
+// Every kind of pin the atlas can drop, each independently shown and sized.
+// Watermelons come from the region highlight files and the rest from
+// collectibles.json; machines come from conveyors.json and are the only ones
+// you can click. Sizes are starting points — the sliders own them after that.
+// `art` marks a layer drawn with the game's own sprite instead of an emoji.
+// 25_extract_marker_sprites.py cuts those out of the sheets. `wide` keeps the
+// machine's 2:1 frame from being squashed into a square.
+// `blink` offers a slow pulse, for finding a pin in a crowded room.
+const MARKER_LAYERS = [
+  { key: 'route',   label: { en: 'Routes', zh: '路线' },        icon: '🔗', on: true,  size: 3 },
+  { key: 'melon',   label: { en: 'Watermelons', zh: '西瓜' },   icon: '🍉', on: true,  size: 24, blink: false },
+  { key: 'machine', label: { en: 'Belt machines', zh: '传送带' }, icon: '🔧', on: true,  size: 30,
+    art: 'assets/machine.png', wide: 62 / 29 },
+  // Mari's picnic blanket is the Headspace save point — her event warps you to
+  // WHITE SPACE and back. One per map on 28 maps, so it costs almost nothing to
+  // leave on, and a save point is worth knowing about before you need it.
+  { key: 'picnic',  label: { en: 'Picnic (save)', zh: '野餐点（存档）' }, icon: '🧺', on: true,  size: 26 },
+  { key: 'hangman', label: { en: 'HANGMAN keys', zh: '吊死鬼按键' },  icon: '⌨️', on: false, size: 24, art: 'hangman' },
+  // The two NPC layers split on what the person hands over, not on who they
+  // are — key items, charms and weapons here, food and drink below — so they
+  // are named as a pair.
+  { key: 'npc',     label: { en: 'NPC (quest)', zh: 'NPC（任务）' }, icon: '🧑', on: false, size: 24 },
+  { key: 'quest',   label: { en: 'Quest items', zh: '任务道具' },   icon: '🎒', on: false, size: 24 },
+  { key: 'charm',   label: { en: 'Charms', zh: '饰品' },        icon: '🧿', on: false, size: 24 },
+  { key: 'weapon',  label: { en: 'Weapons', zh: '武器' },       icon: '🔪', on: false, size: 24 },
+  // People who hand you something for talking to them. NPCs giving a KEY item
+  // are already under NPC (quest); this is the other 61 — food, drink, bandages
+  // — including Reuben behind the CLUB SANDWICH bar.
+  { key: 'giver',   label: { en: 'NPC (item)', zh: 'NPC（物品）' }, icon: '🥤', on: false, size: 24 },
+  // Both the shells lying on the ground and the people who hand clams over.
+  // A player asking "where do I get clams" wants one answer, not two, and the
+  // popup names the event either way — CLAM, CLAM SNOWFLAKE, Hoagie, Mari.
+  // The one layer whose points can sit under another: Mari in PATH TO TRENCH
+  // is a picnic *and* 500 clams, so she carries a pin from each.
+  { key: 'clams',   label: { en: 'CLAMS', zh: '蚌币' },         icon: '🐚', on: false, size: 22 },
+  { key: 'collect', label: { en: 'Collectibles', zh: '收集品' },  icon: '🗑️', on: false, size: 20 },
+  { key: 'sparkle', label: { en: 'Sparkles', zh: '闪光' },      icon: '✨', on: false, size: 20 },
+  // Both tie to achievements and both are once-only, so they tick off like the
+  // rest. The Faraway mirrors carry no sprite of their own — their event is an
+  // invisible trigger on a mirror painted into the map art — so those six fall
+  // back to the emoji.
+  // Three pickups in one corner of DEEPERWELL FALLS, and the collection the
+  // HIKIKOMORI route is built around — worth its own toggle rather than being
+  // one of 41 things under Quest items.
+  // Grouped because they are one kind of thing: each is done once, for an
+  // achievement, and then never again — which is also why they tick off. They
+  // are *not* folded into Collectibles: that layer is the opposite case, one
+  // item found in many places (TRASH in 61 of them), where the count is the
+  // point. Sheet music only exists on the HIKIKOMORI route, so its row is not
+  // offered on the others.
+  { key: 'music',   label: { en: 'Sheet music', zh: '乐谱' },   icon: '🎼', on: false, size: 22,
+    group: 'achievement', route: 'hikikomori' },
+  { key: 'telescope', label: { en: 'Telescopes', zh: '望远镜' },  icon: '🔭', on: false, size: 22, group: 'achievement' },
+  // One bar, four doors into it, one per region — the game keeps a switch for
+  // each ("Last Resort CS", "Orange Oasis CS", "Otherworld CS", "Pyrefly CS"),
+  // so finding all four is the achievement and the four doors are the markers.
+  { key: 'clubsandwich', label: { en: 'Club Sandwich', zh: '三明治俱乐部' }, icon: '🥪', on: false, size: 24,
+    group: 'achievement' },
+  { key: 'cooler',  label: { en: 'Coolers', zh: '冰桶' },       icon: '🧊', on: false, size: 22, group: 'achievement' },
+  { key: 'mirror',  label: { en: 'Mirrors', zh: '镜子' },       icon: '🪞', on: false, size: 22, group: 'achievement' },
+  { key: 'mechanism', label: { en: 'Mechanisms', zh: '可互动物件' },  icon: '⚙️', on: false, size: 26 },
+];
+const layerCfg = key => MARKER_LAYERS.find(l => l.key === key);
+const layerLabel = cfg => cfg.label[LANG] || cfg.label.en;
 
-  // populate dropdown
-  const sel = document.getElementById('mapSelect');
-  const sortedIds = Object.keys(mapMeta).sort((a, b) => +a - +b);
-  for (const id of sortedIds) {
-    const m = mapMeta[id];
-    const opt = document.createElement('option');
-    opt.value = id;
-    opt.textContent = `Map${id}: ${m.name}`;
-    sel.appendChild(opt);
-  }
-  sel.addEventListener('change', () => loadMap(sel.value));
+// Layers you can tick off. Clicking one opens a bubble with what it is and a
+// button to mark it; a marked one goes grey with a tick on it, so the copy of
+// the sprite reads as "already had this" rather than as a second item.
+const TICKABLE = new Set(['melon', 'hangman', 'npc', 'quest', 'charm', 'weapon', 'collect',
+                          'sparkle', 'cooler', 'mirror', 'music', 'telescope',
+                          'clubsandwich', 'giver', 'clams']);
 
-  // init Leaflet with simple CRS (pixel-coordinate, not geographic)
-  leafletMap = L.map('map', {
-    crs: L.CRS.Simple,
-    minZoom: -3,
-    maxZoom: 2,
-    zoomSnap: 0.25,
-    attributionControl: false,
-  });
+// What has been ticked off, as "<layer>:<mapId>:<evId>". Kept in the browser so
+// a checklist survives a reload; it is the user's progress, not project data.
+const COLLECTED_KEY = 'omori-atlas-collected';
+let collected = new Set();
+try { collected = new Set(JSON.parse(localStorage.getItem(COLLECTED_KEY) || '[]')); } catch (e) { /* ignore */ }
+const saveCollected = () => {
+  try { localStorage.setItem(COLLECTED_KEY, JSON.stringify([...collected])); } catch (e) { /* ignore */ }
+};
+const pointKey = p => `${p.layer}:${p.mapId}:${p.evId}`;
 
-  // default: load PLAYER STREET (Map 13)
-  sel.value = '13';
-  loadMap('13');
+// ── Language ────────────────────────────────────────────────────────────────
+// The atlas is bilingual because its own data is: item names come out of an
+// English build (omori_data_decrypted) and the HANGMAN clues out of the
+// installed Simplified Chinese one, so a popup was already showing both at
+// once. data/names_zh.json pairs the two by row id — see 37_extract_zh_names.py
+// — and everything the interface says of its own accord is in UI below.
+//
+// Proper nouns are the game's translation, not mine: 辽阔森林, 焚火虫森林,
+// 深井深处, 最后度假村, 汉弗莱, 蚌币, 吊死鬼 and the rest were read out of
+// languages/sc, matched to languages/en by the key they share.
+const LANG_KEY = 'omori-atlas-lang';
+const UI = {
+  region:      { en: 'Region',            zh: '区域' },
+  perMap:      { en: 'Per-Map',           zh: '单张地图' },
+  stitched:    { en: 'Stitched',          zh: '拼接' },
+  world:       { en: '🌍 World',          zh: '🌍 世界' },
+  variant:     { en: 'Variant',           zh: '版本' },
+  dot:         { en: 'Dot',               zh: '圆点' },
+  line:        { en: 'Line',              zh: '线宽' },
+  introBtn:    { en: 'ⓘ',                 zh: 'ⓘ 说明' },
+  introBtnTitle: { en: 'Read the notice again', zh: '再看一次使用说明' },
+  markers:     { en: 'MARKERS',           zh: '标记' },
+  clear:       { en: 'clear',             zh: '清除' },
+  regions:     { en: 'REGIONS',           zh: '区域' },
+  reset:       { en: 'reset',             zh: '重置' },
+  route:       { en: 'Route:',            zh: '路线：' },
+  routeBoth:   { en: 'both',              zh: '两条都要' },
+  achievements: { en: 'ACHIEVEMENTS — once each', zh: '成就相关 —— 每个只需一次' },
+  maps:        { en: 'maps',              zh: '张地图' },
+  regionsWord: { en: 'regions',           zh: '个区域' },
+  scenery:     { en: 'scenery',           zh: '个装饰' },
+  tiles:       { en: 'tiles',             zh: '格' },
+  bgm:         { en: 'BGM: ',             zh: '音乐：' },
+  routeSuffix: { en: 'route',             zh: '路线' },
+  routes:      { en: 'routes',            zh: '条路线' },
+  none:        { en: 'none',              zh: '无' },
+  ovTitle:     { en: n => `⚠ Regions from ${n} different routes`,
+                 zh: n => `⚠ 选中的区域来自 ${n} 条不同的路线` },
+  ovWhy: {
+    en: 'Each route was stitched to sit end to end, so any one of them can be shown '
+      + 'whole. Across routes the maps land on the same ground — the one drawn on top '
+      + 'simply hides the other, and nothing in this view separates them.',
+    zh: '每条路线内部是首尾相接拼好的，所以任何一条都能完整显示。但不同路线之间，'
+      + '地图会落在同一块地方 —— 画在上面的那张直接把下面的盖住，这个视图里没有任何东西能把它们分开。',
+  },
+  ovWarn:      { en: 'What you are looking at may be two regions stacked on the same spot.',
+                 zh: '你现在看到的，可能是两个区域叠在同一个位置上。' },
+  ovTip:       { en: 'Suggestion:', zh: '建议：' },
+  ovTipText:   { en: 'stay on one route. Vast Forest belongs to all of them and can always be added.',
+                 zh: '只看一条路线。辽阔森林属于每一条路线，任何时候都可以加进来。' },
+  ovShow:      { en: 'Show it anyway',    zh: '还是显示' },
+  ovUndo:      { en: 'Undo — back to',    zh: '撤销 —— 回到' },
+  ovOne:       { en: 'Back to one route', zh: '回到单条路线' },
+  markAs:      { en: 'mark collected',    zh: '标记为已收集' },
+  marked:      { en: 'collected — unmark', zh: '已收集 —— 取消标记' },
+  needs:       { en: 'Needs',             zh: '需要先' },
+  hangmanKey:  { en: 'HANGMAN key',       zh: '吊死鬼按键' },
+  prizeItem:   { en: 'Item: ',            zh: '道具：' },
+  prizeWeapon: { en: 'Weapon: ',          zh: '武器：' },
+  prizeArmor:  { en: 'Armor: ',           zh: '饰品：' },
+  pulse:       { en: 'Pulse these markers', zh: '让这些标记闪烁' },
+  legendNote: {
+    en: 'Nothing on the map where a pin sits? Click it. A <b>🔒</b> line means the '
+      + 'item is not in the world yet — 117 pins and 14 watermelons only appear '
+      + 'once a quest or event has happened.',
+    zh: '钉子底下什么都没有？点它。带 <b>🔒</b> 的那行表示东西还没出现在世界里 —— '
+      + '有 117 个钉子和 14 个西瓜要等某个任务或事件发生之后才会有。',
+  },
+  credits: {
+    en: 'Map renders from <a href="https://goats.dev/omori/" target="_blank" rel="noopener">goats.dev</a>, '
+      + "a few rendered from the game's own data · OMORI and all its art © "
+      + '<a href="https://www.omocat-shop.com/" target="_blank" rel="noopener">OMOCAT</a> · '
+      + 'a fan project, not affiliated',
+    zh: '地图渲染来自 <a href="https://goats.dev/omori/" target="_blank" rel="noopener">goats.dev</a>，'
+      + '少数由游戏数据自行渲染 · OMORI 及其全部美术版权归 '
+      + '<a href="https://www.omocat-shop.com/" target="_blank" rel="noopener">OMOCAT</a> 所有 · '
+      + '同人项目，非官方',
+  },
+};
+let LANG = (() => {
+  try { const v = localStorage.getItem(LANG_KEY); if (v === 'zh' || v === 'en') return v; }
+  catch (e) { /* private mode */ }
+  return /^zh/i.test(navigator.language || '') ? 'zh' : 'en';
+})();
+const t = key => (UI[key] || {})[LANG] ?? (UI[key] || {}).en ?? key;
+
+// English name -> the game's Chinese name, loaded once. Missing is normal and
+// harmless: the English name is shown, which is what happened before.
+let zhNames = {};
+const itemName = n => (LANG === 'zh' && zhNames[n]) || n;
+
+// ── First-visit notice ────────────────────────────────────────────────────
+// The rest of the UI is English, but the HANGMAN clues ship in Chinese and so
+// does half the audience, so this one panel is bilingual. Only six strings, so
+// a table beats duplicating the markup; the language is picked from the
+// browser and remembered separately from whether the notice was dismissed.
+const INTRO_TEXT = {
+  zh: {
+    title: '使用说明',
+    sub: '读一次就好，右上角 ⓘ 可以随时再看',
+    again: '不再显示',
+    ok: '知道了',
+    items: [
+      '建议用 <b class="k">🌍 World</b> 模式浏览。<b>Stitched</b> 模式还没做完，Per-Map 只能一张一张看。',
+      '<b>Faraway Town</b> 的 88 张图还没拼进 World，只能在 Per-Map 里一张张看；<b>Black Space</b> 则完全还没做。',
+      '标着「ACHIEVEMENTS」的那些点<b>不是全部成就</b>，只是其中能标在地图上的一部分。',
+      '<b>有些标点的位置还不够准</b>，看到偏了的属正常，以游戏里为准。',
+      '有建议或者发现错误，欢迎反馈：<a href="https://github.com/E-Dal/omori-map-guide/issues" target="_blank" rel="noopener">GitHub issue</a>、帖子，或者邮件 '
+        + '<a href="mailto:edal54112@gmail.com">edal54112@gmail.com</a>。',
+    ],
+  },
+  en: {
+    title: 'Before you start',
+    sub: 'Read once — the ⓘ button up top brings this back any time.',
+    again: "Don't show this again",
+    ok: 'Got it',
+    items: [
+      'Browse in <b class="k">🌍 World</b> mode. <b>Stitched</b> is not finished yet, and Per-Map only ever shows one map.',
+      "<b>Faraway Town</b>'s 88 maps are not stitched into World yet — they are in Per-Map only. <b>Black Space</b> is not in the atlas at all.",
+      'The markers under <b>ACHIEVEMENTS</b> are <b>not every achievement</b>, only the ones that can be put on a map.',
+      '<b>Some pins are still a little off.</b> Where the guide and the game disagree, the game is right.',
+      'Suggestions and corrections are welcome: '
+        + '<a href="https://github.com/E-Dal/omori-map-guide/issues" target="_blank" rel="noopener">GitHub issues</a>'
+        + ', the forum post, or '
+        + '<a href="mailto:edal54112@gmail.com">edal54112@gmail.com</a>.',
+    ],
+  },
+};
+// Bump the key when the text changes materially and everyone sees it once more.
+const INTRO_KEY = 'omori-atlas-intro-v1';
+const store = {
+  get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } },
+  del(k) { try { localStorage.removeItem(k); } catch (e) { /* private mode */ } },
+};
+// The notice follows the header's language picker rather than carrying one of
+// its own — two switches for the same setting is one too many.
+function paintIntro() {
+  const x = INTRO_TEXT[LANG] || INTRO_TEXT.en;
+  document.getElementById('introTitle').textContent = x.title;
+  document.getElementById('introSub').textContent = x.sub;
+  document.getElementById('introList').innerHTML = x.items.map(i => `<li>${i}</li>`).join('');
+  document.getElementById('introAgainTxt').textContent = x.again;
+  document.getElementById('introOk').textContent = x.ok;
+  document.getElementById('introBox').lang = LANG;
 }
 
+// Everything the interface says of its own accord, repainted in one pass.
+// Only the pieces that are cheap to rebuild are rebuilt; the map layers carry
+// no words of their own, so nothing has to reload.
+function applyLang() {
+  document.documentElement.lang = LANG === 'zh' ? 'zh-CN' : 'en';
+  for (const el of document.querySelectorAll('[data-i18n]')) el.textContent = t(el.dataset.i18n);
+  for (const el of document.querySelectorAll('[data-i18n-html]')) el.innerHTML = t(el.dataset.i18nHtml);
+  for (const el of document.querySelectorAll('[data-i18n-title]')) el.title = t(el.dataset.i18nTitle);
+  for (const b of document.querySelectorAll('.lang-pick button')) {
+    b.classList.toggle('on', b.dataset.lang === LANG);
+  }
+  // The region picker is built here rather than written out in the markup so
+  // REGION_NAMES stays the only place a region is named.
+  const sel = document.getElementById('regionSelect');
+  if (sel) {
+    const keep = sel.value;
+    sel.innerHTML = ALL_REGIONS.map(r =>
+      `<option value="${r}">${regionLabel(r)}</option>`).join('');
+    if (keep) sel.value = keep;
+  }
+  paintIntro();
+}
+
+function setLang(next) {
+  if (next === LANG) return;
+  LANG = next;
+  store.set(LANG_KEY, LANG);
+  applyLang();
+  renderMarkerPanel();
+  if (currentMode === 'world') { rebuildLegend(); applySelection(); }
+  if (currentMode === 'perMap' && currentMapId) loadMap(currentMapId);
+  renderMarkers();
+}
+for (const b of document.querySelectorAll('.lang-pick button')) {
+  b.addEventListener('click', () => setLang(b.dataset.lang));
+}
+
+const introBack = document.getElementById('introBack');
+const showIntro = () => { paintIntro(); document.body.classList.add('intro-open'); };
+const hideIntro = () => {
+  document.body.classList.remove('intro-open');
+  // Unticked is the default, so closing normally leaves the notice armed for
+  // next time; ticking it is the deliberate "I have read this" .
+  if (document.getElementById('introAgain').checked) store.set(INTRO_KEY, 'seen');
+  else store.del(INTRO_KEY);
+};
+document.getElementById('introOk').addEventListener('click', hideIntro);
+document.getElementById('introBtn').addEventListener('click', showIntro);
+// Click the dim, not the card, to dismiss.
+introBack.addEventListener('click', e => { if (e.target === introBack) hideIntro(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.body.classList.contains('intro-open')) hideIntro();
+});
+if (store.get(INTRO_KEY) !== 'seen') showIntro(); else paintIntro();
+
+// Belt groups currently thrown, keyed "<mapId>:<firstEventId>".
+const flippedGroups = new Set();
+const ROUTE_DOT_RADIUS = 5;   // px, fixed — see renderWorldRoutes
+
+const REGION_DEFAULTS = {
+  faraway:             { firstMap: '13'  },
+  vast_forest:         { firstMap: '99'  },  // 93 "-- PINWHEEL FOREST" is a folder node, not a map
+  orange_oasis:        { firstMap: '106' },
+  otherworld:          { firstMap: '117' },
+  snowglobe_mountain:  { firstMap: '1322' },  // the igloo room you come in by
+  white_space:         { firstMap: '87'   },
+  junkyard:            { firstMap: '142' },
+  pyrefly_forest:      { firstMap: '152' },
+  sweethearts_castle:  { firstMap: '171' },
+  humphrey:            { firstMap: '218' },  // HUMPHREY'S UVULA — the way in
+  deep_well:           { firstMap: '188' },
+  deeper_well:         { firstMap: '215' },
+  last_resort:         { firstMap: '191' },
+  forest_playground:   { firstMap: '92'  },
+};
+
+// Stitched-mode catalog: which variants exist per region
+// 'world' is each region's share of the all-regions layout, sliced out by
+// 26_slice_world_stitch.py. Every region has one; the hand-stitched variants
+// stay listed alongside. FARAWAY and FOREST PLAYGROUND are absent because
+// neither has any map placed in that layout.
+const STITCHED_VARIANTS = {
+  faraway:             ['day', 'sunset', 'night'],
+  vast_forest:         ['world'],
+  orange_oasis:        ['world'],
+  otherworld:          ['world'],
+  snowglobe_mountain:  ['world'],
+  white_space:         ['world'],
+  junkyard:            ['', 'world'],
+  pyrefly_forest:      ['', 'world'],
+  sweethearts_castle:  ['', 'world'],
+  deep_well:           ['world'],
+  deeper_well:         ['world'],
+  last_resort:         ['world'],
+  forest_playground:   [],
+};
+
+let currentRegion = 'faraway';
+let currentMode = 'perMap';        // 'perMap' | 'stitched'
+let dotSize = 9, lineWidth = 3;     // stitched-mode overlay defaults — match stitcher baked values
+
+// ── Per-map crop helper (mirrors stitcher's cropRect for bbox calc) ──
+function cropRect(crop, meta) {
+  if (crop === 'top3')      return { y: 0,                  h: meta.height / 3 };
+  if (crop === 'mid3')      return { y: meta.height / 3,    h: meta.height / 3 };
+  if (crop === 'bot3')      return { y: meta.height * 2 / 3,h: meta.height / 3 };
+  return                          { y: 0,                  h: meta.height };
+}
+
+function clearLayers() {
+  for (const l of currentLayers) leafletMap.removeLayer(l);
+  currentLayers = [];
+  clearMelons();
+}
+function clearMelons() {
+  for (const l of melonLayers) leafletMap.removeLayer(l);
+  melonLayers = [];
+}
+
+// ── Watermelon helpers (per-map view + stitched view) ──
+function melonMarker(lat, lng, m, cfg, height) {
+  const px = height || (cfg && cfg.size) || 24;
+  // A melon is picked up once and then it is gone, same as a HANGMAN key, so it
+  // gets the same treatment: click to tick it off, and a ticked one greys out
+  // instead of going on advertising itself. The melons arrive from the region
+  // highlight files rather than collectibles.json, so the key is built here —
+  // to the same layer:map:event shape everything else in `collected` uses.
+  const key = pointKey({ layer: 'melon', mapId: m.mapId, evId: m.evId });
+  const done = collected.has(key);
+  const icon = L.divIcon({
+    className: '',
+    html: `<div class="melon-icon ${m.color || 'green'}${cfg && cfg.blink ? ' blink' : ''}` +
+          `${done ? ' done' : ''}" style="width:${px}px;height:${px}px"></div>`,
+    iconSize: [px, px], iconAnchor: [px / 2, px / 2],
+  });
+  const marker = L.marker([lat, lng], { icon });
+  // kind is the game's word for the table it came out of: Item, Weapon, Armor.
+  const prize = m.prize
+    ? `<br><b>${t('prize' + m.prize.kind)}</b>${itemName(m.prize.itemName)}` : '';
+  marker.bindTooltip(
+    `<b>${m.name}</b><br>Map${m.mapId} @ (${m.x}, ${m.y})${prize}${requiresNote(m)}`,
+    { className: 'melon-tooltip', direction: 'top', offset: [0, -8], sticky: false }
+  );
+  marker.bindPopup(collectBubble(m, key, `<b>${m.name}</b>`, prize));
+  return marker;
+}
+// ── Marker layers ──
+// A pin has to know three things: where a tile on some map lands on screen,
+// whether that map is on screen at all, and which pane to draw into. Those are
+// the only things that differ between the three views, so each view supplies
+// them and everything downstream is shared.
+function markerFrame() {
+  if (currentMode === 'world' && worldState) {
+    const { bbox, layout, visibleIds, regionOf } = worldState;
+    const org = id => layout.layout[id];
+    return {
+      has: id => visibleIds.has(String(id)) && !!org(id),
+      at: (id, x, y) => [bbox.ch - (org(id).y + y * TILE_PX + TILE_PX / 2 - bbox.minY),
+                         org(id).x + x * TILE_PX + TILE_PX / 2 - bbox.minX],
+      atPx: (id, px, py) => [bbox.ch - (org(id).y + py - bbox.minY),
+                             org(id).x + px - bbox.minX],
+      rect: (id, ox, oy, ow, oh) => {
+        const bottom = bbox.ch - (org(id).y + oy + oh - bbox.minY);
+        const left = org(id).x + ox - bbox.minX;
+        return [[bottom, left], [bottom + oh, left + ow]];
+      },
+      // A map with no region has no pane of its own; say so rather than
+      // handing back 'region-undefined', which is not a pane either.
+      pane: id => (regionOf[id] ? 'region-' + regionOf[id] : undefined),
+    };
+  }
+  if (currentMode === 'stitched' && stitchedState) {
+    const { bbox, layout } = stitchedState;
+    const org = id => layout.layout[id];
+    return {
+      has: id => !!org(id),
+      at: (id, x, y) => [bbox.ch - (org(id).y + y * TILE_PX + TILE_PX / 2 - bbox.minY),
+                         org(id).x + x * TILE_PX + TILE_PX / 2 - bbox.minX],
+      atPx: (id, px, py) => [bbox.ch - (org(id).y + py - bbox.minY),
+                             org(id).x + px - bbox.minX],
+      rect: (id, ox, oy, ow, oh) => {
+        const bottom = bbox.ch - (org(id).y + oy + oh - bbox.minY);
+        const left = org(id).x + ox - bbox.minX;
+        return [[bottom, left], [bottom + oh, left + ow]];
+      },
+      pane: () => undefined,
+    };
+  }
+  if (currentMode === 'perMap') {
+    const cur = currentMapId;
+    const h = ((mapMeta[cur] || {}).height || 0) * TILE_PX;
+    return {
+      has: id => String(id) === String(cur),
+      at: (id, x, y) => [h - (y * TILE_PX + TILE_PX / 2), x * TILE_PX + TILE_PX / 2],
+      atPx: (id, px, py) => [h - py, px],
+      rect: (id, ox, oy, ow, oh) => [[h - oy - oh, ox], [h - oy, ox + ow]],
+      pane: () => undefined,
+    };
+  }
+  return null;
+}
+
+// What has to have happened before this point exists, from 30_extract_
+// requirements.py. The switch names are the game's own labels, kept verbatim:
+// 'Q- Coffee Machine (Start)' is clearer than any paraphrase, and it is data
+// rather than a guess. 117 of 501 points and 14 watermelons carry one — the TV
+// girl's THINGAMABOB, DOOHICKEY and WHATCHAMACALLIT among them, which is why
+// three sparkles that look like every other sparkle are not where the map says
+// until you have taken her list.
+function requiresNote(p) {
+  const req = p && p.requires;
+  if (!req || !req.length) return '';
+  return `<span class="needs">🔒 <b>${t('needs')}</b> ${req.join(' + ')}</span>`;
+}
+
+// The game's own hint for a HANGMAN key, straight off the item's
+// <BlackLetterClue> notetag — see 31_blackletter_clues.py. It is in whatever
+// language the installed copy is, because that is where it was read from.
+// Five of the 26 keys are on the map at all only because the clue said which
+// event they were: A is the one beside the stump.
+function clueNote(p) {
+  if (!p || !p.clue) return '';
+  return `<span class="clue">🔎 ${p.clue}</span>`;
+}
+
+// The bubble a tickable marker opens: what it is, and the one button that
+// matters. Built as a node rather than an HTML string so the button can carry
+// its own handler instead of hunting for it in the DOM afterwards.
+function collectBubble(p, key, title, what) {
+  const box = document.createElement('div');
+  box.className = 'collectBubble';
+  const head = document.createElement('div');
+  head.innerHTML = `${title}<br><span class="where">Map${p.mapId} @ (${p.x}, ${p.y})</span>${what}` +
+                   clueNote(p) + requiresNote(p);
+  const btn = document.createElement('button');
+  const paint = () => {
+    const done = collected.has(key);
+    btn.textContent = done ? `↺ ${t('marked')}` : `✓ ${t('markAs')}`;
+    btn.className = done ? 'done' : '';
+  };
+  btn.addEventListener('click', () => {
+    if (collected.has(key)) collected.delete(key); else collected.add(key);
+    saveCollected();
+    paint();
+    // Redraw so the pin greys out; a tick later so the popup's own click is
+    // finished with the marker before it is replaced.
+    setTimeout(renderMarkers, 0);
+  });
+  paint();
+  box.append(head, btn);
+  return box;
+}
+
+function pinMarker(lat, lng, cfg, html, extra, art, aspect, height) {
+  const h = height || cfg.size, w = Math.round(h * (aspect || cfg.wide || 1));
+  const face = art
+    ? `<img src="${art}" width="${w}" height="${h}" alt="">`
+    : cfg.icon;
+  const icon = L.divIcon({
+    className: '', html: `<div class="pin ${extra || ''}" style="font-size:${h}px;` +
+      `width:${w}px;height:${h}px">${face}</div>`,
+    iconSize: [w, h], iconAnchor: [w / 2, h / 2],
+  });
+  const marker = L.marker([lat, lng], { icon });
+  marker.bindTooltip(html, { className: 'melon-tooltip', direction: 'top',
+                             offset: [0, -cfg.size / 2], sticky: false });
+  return marker;
+}
+
+// How many screen pixels one map pixel is worth right now. CRS.Simple doubles
+// per zoom level, so this is what an icon has to be scaled by to sit on the art
+// it is marking.
+function mapScale() {
+  return leafletMap && leafletMap.getZoom ? Math.pow(2, leafletMap.getZoom()) : 1;
+}
+
+// Icon height for a point: the sprite's own height at the current zoom, so it
+// lands exactly on the thing — floored by the layer's slider so a 7px sparkle
+// does not vanish when the map is zoomed out. Marker icons are sized in screen
+// pixels and do not scale themselves, which is why this has to be recomputed
+// whenever the zoom changes.
+function artHeight(cfg, art) {
+  if (!art) return cfg.size;
+  return Math.max(cfg.size, Math.round(art.h * mapScale()));
+}
+
+function renderMarkers() {
+  clearMelons();
+  const f = markerFrame();
+  if (!f) return;
+  const shown = {};
+
+  const melonCfg = layerCfg('melon');
+  const melonSrc = currentMode === 'world' && worldState ? worldState.melons
+                                                         : ((highlights || {}).watermelons || []);
+  if (melonCfg.on) {
+    for (const m of melonSrc) {
+      if (!f.has(m.mapId)) continue;
+      // On the melon, not on its tile — same rule as every other marker.
+      const mart = melonArt && melonArt[`${m.mapId}:${m.evId}`];
+      const [lat, lng] = mart
+        ? f.atPx(m.mapId, mart.x + mart.w / 2, mart.y + mart.h / 2)
+        : f.at(m.mapId, m.x, m.y);
+      melonLayers.push(melonMarker(lat, lng, m, melonCfg,
+                                   artHeight(melonCfg, mart)).addTo(leafletMap));
+      shown.melon = (shown.melon || 0) + 1;
+      if (collected.has(pointKey({ layer: 'melon', mapId: m.mapId, evId: m.evId })))
+        (shown.__done ||= {}).melon = ((shown.__done || {}).melon || 0) + 1;
+    }
+  }
+
+  for (const p of ((collectibles || {}).points || [])) {
+    const cfg = layerCfg(p.layer);
+    if (!cfg || !cfg.on || !f.has(p.mapId)) continue;
+    const [lat, lng] = f.at(p.mapId, p.x, p.y);
+    const title = p.letter ? `${t('hangmanKey')} <b>${p.letter}</b>` : `<b>${p.evName}</b>`;
+    const sep = LANG === 'zh' ? '、' : ', ';
+    const what = p.items && p.items.length ? `<br>${p.items.map(itemName).join(sep)}` : '';
+    const key = pointKey(p);
+    const done = collected.has(key);
+    let art = cfg.art === 'hangman' && p.letter ? `assets/hangman/${p.letter}.png` : null;
+    let aspect = null;
+    const dims = p.sprite && pointSprites && pointSprites[p.sprite];
+    if (!art && dims) {
+      art = `assets/points/${p.sprite.replace(/[^A-Za-z0-9_.-]/g, '_')}.png`;
+      aspect = dims[0] / dims[1];
+    }
+    // Sit it on the sprite, not on the tile. The game anchors most frames by
+    // the bottom of their drawn pixels, so a tall one — a sparkle, a lamp —
+    // reaches above the tile its event lives on.
+    const [alat, alng] = p.art
+      ? f.atPx(p.mapId, p.art.x + p.art.w / 2, p.art.y + p.art.h / 2)
+      : [lat, lng];
+    const mk = pinMarker(alat, alng, cfg,
+      `${title}<br>Map${p.mapId} @ (${p.x}, ${p.y})${what}${clueNote(p)}${requiresNote(p)}`,
+      done ? 'done' : '', art, aspect, artHeight(cfg, p.art)).addTo(leafletMap);
+    if (TICKABLE.has(p.layer)) mk.bindPopup(collectBubble(p, key, title, what));
+    melonLayers.push(mk);
+    shown[p.layer] = (shown[p.layer] || 0) + 1;
+    if (done) (shown.__done ||= {})[p.layer] = ((shown.__done || {})[p.layer] || 0) + 1;
+  }
+
+  renderConveyorMarkers(f, shown);
+  renderWorldRoutes(shown);
+  updateMarkerCounts(shown);
+  // A reversed belt run is a handful of arrows changing direction, easy to miss
+  // on a big map. Say it in words too, so a click that worked never looks like
+  // a click that did nothing.
+  const note = document.getElementById('flipNote');
+  if (note) {
+    const n = flippedGroups.size;
+    note.textContent = n ? `🔄 ${n} belt group${n > 1 ? 's' : ''} reversed` : '';
+  }
+}
+
+// The routes you drew in the stitcher. Stitched view has drawn them all along;
+// the world view never did, so the 158 routes in the all-regions layout were
+// sitting in the file unread.
+//
+// A route is shown only when every map it snaps to is on screen. Half a route
+// running off into a hidden region reads as a line to nowhere, and the point of
+// hiding a region is that its connections go quiet with it.
+function renderWorldRoutes(shown) {
+  const cfg = layerCfg('route');
+  if (currentMode !== 'world' || !cfg.on || !worldState) return;
+  const { bbox, layout, visibleIds } = worldState;
+  // The slider is line weight alone. It used to set the endpoint radius too,
+  // and a thick route turned every snap point into a disc big enough to hide
+  // the room it marks.
+  const weight = cfg.size, dot = ROUTE_DOT_RADIUS;
+  for (const r of (layout.routes || [])) {
+    if (!r.pts || r.pts.length < 2) continue;
+    if (!r.pts.every(p => !p.snap || visibleIds.has(String(p.snap.mapId)))) continue;
+    const latlngs = r.pts.map(p => [bbox.ch - (p.y - bbox.minY), p.x - bbox.minX]);
+    // How a route reads is the stitcher's call, not something to infer here.
+    // Guessing one-way from the edge tables got most of them wrong; whoever
+    // draws the route knows which way it goes, so `kind` rides along in the
+    // layout and this draws what it says.
+    const kind = r.kind || 'two';
+    const shape = kind === 'loop' ? loopCurve(latlngs[0], latlngs[latlngs.length - 1]) : latlngs;
+    melonLayers.push(L.polyline(shape, {
+      color: r.color, weight, opacity: 0.95,
+      dashArray: r.solid ? null : `${weight * 3},${weight * 2}`,
+    }).addTo(leafletMap));
+    for (const p of r.pts) {
+      const mk = L.circleMarker([bbox.ch - (p.y - bbox.minY), p.x - bbox.minX], {
+        radius: dot, color: '#fff', weight: 2, fillColor: r.color, fillOpacity: 1,
+      }).addTo(leafletMap);
+      if (p.snap) mk.bindPopup(`<b>${p.snap.evName || 'Snap'}</b><br>` +
+                               `Map${p.snap.mapId} ev${p.snap.evId}`);
+      melonLayers.push(mk);
+    }
+    // Direction is shown by a run of small chevrons along the whole line, not
+    // one arrowhead at the end. A single head says "one-way" without saying
+    // which end it starts from — you have to hunt for it, and on a short line
+    // it hides under the snap dot. Chevrons answer everywhere at once.
+    // Wrap-arounds get none: the curve already says which way it goes.
+    if (kind === 'one') {
+      melonLayers.push(L.polyline(chevrons(shape), {
+        color: r.color, weight: Math.max(2, weight * 0.9), opacity: 1,
+      }).addTo(leafletMap));
+    }
+    shown.route = (shown.route || 0) + 1;
+  }
+}
+
+// A wrap-around — walk off one edge, come back in at the other. Drawn as one
+// long flat loop rather than a straight line, because a straight line reads as
+// "there is a path through here" when the whole point is that there isn't.
+//
+// Cubic Bezier whose handles run *outward* from each end, away from the other,
+// so the curve leaves and arrives almost parallel to the line joining them and
+// then bows to one side. REACH is how far the handles run and BOW how far it
+// bulges, both as a fraction of end-to-end distance; at 1.20/0.12 the curve
+// leaves within 6 degrees of parallel and is about twice the straight length.
+const LOOP_REACH = 1.20, LOOP_BOW = 0.12, LOOP_STEPS = 48;
+function loopCurve(p0, p3) {
+  const dy = p3[0] - p0[0], dx = p3[1] - p0[1];
+  const span = Math.hypot(dy, dx) || 1;
+  const u = [dy / span, dx / span], perp = [-u[1], u[0]];
+  const reach = span * LOOP_REACH, bow = span * LOOP_BOW;
+  const c1 = [p0[0] - u[0] * reach + perp[0] * bow, p0[1] - u[1] * reach + perp[1] * bow];
+  const c2 = [p3[0] + u[0] * reach + perp[0] * bow, p3[1] + u[1] * reach + perp[1] * bow];
+  const out = [];
+  for (let i = 0; i <= LOOP_STEPS; i++) {
+    const t = i / LOOP_STEPS, v = 1 - t;
+    out.push([v*v*v*p0[0] + 3*v*v*t*c1[0] + 3*v*t*t*c2[0] + t*t*t*p3[0],
+              v*v*v*p0[1] + 3*v*v*t*c1[1] + 3*v*t*t*c2[1] + t*t*t*p3[1]]);
+  }
+  return out;
+}
+
+// Chevrons spaced along a polyline, returned as a multi-segment polyline so
+// Leaflet draws them all as one layer. Same shape and spacing the stitcher
+// uses, so a route looks the same in both.
+const CHEVRON_GAP = 26, CHEVRON_LEN = 7, CHEVRON_SPREAD = 5;
+function chevrons(pts) {
+  const out = [];
+  let carry = CHEVRON_GAP / 2;
+  for (let i = 1; i < pts.length; i++) {
+    const [y0, x0] = pts[i - 1], [y1, x1] = pts[i];
+    const dy = y1 - y0, dx = x1 - x0;
+    const len = Math.hypot(dy, dx);
+    if (!len) continue;
+    const uy = dy / len, ux = dx / len;
+    for (let d = carry; d < len; d += CHEVRON_GAP) {
+      const cy = y0 + uy * d, cx = x0 + ux * d;
+      const by = cy - uy * CHEVRON_LEN, bx = cx - ux * CHEVRON_LEN;
+      const py = -ux * CHEVRON_SPREAD, px = uy * CHEVRON_SPREAD;
+      out.push([[by + py, bx + px], [cy, cx], [by - py, bx - px]]);
+    }
+    carry = ((carry - len) % CHEVRON_GAP + CHEVRON_GAP) % CHEVRON_GAP;
+  }
+  return out;
+}
+
+// Each machine drives its own run of belts, so each gets its own button. The
+// overlay holds only that group's belts in their reversed state and sits in the
+// map's own pane, which keeps the world view's dimming and gradients applying
+// to it exactly as they apply to the map underneath.
+function renderConveyorMarkers(f, shown) {
+  if (!conveyors) return;
+  const cfg = layerCfg('machine');
+  for (const [mapId, data] of Object.entries(conveyors)) {
+    if (!f.has(mapId)) continue;
+    for (const g of data.groups) {
+      const key = `${mapId}:${g.evRange[0]}`;
+      const flipped = flippedGroups.has(key);
+      if (flipped) {
+        const o = g.overlay;
+        const url = `../data/conveyors/${o.file}${CACHE_BUST}`;
+        // Only name a pane when there is one. Leaflet copies whatever options
+        // object it is given over its defaults, so passing `pane: undefined`
+        // does not fall back to 'overlayPane' — it replaces it with undefined,
+        // getPane() returns nothing and appendChild throws. That threw inside
+        // renderMarkers, which is why clicking a machine in Per-Map view did
+        // nothing at all: no overlay, and no marker rebuilt behind it either.
+        const pane = f.pane(mapId);
+        const layer = L.imageOverlay(url, f.rect(mapId, o.x, o.y, o.w, o.h),
+                                     pane ? { pane } : {}).addTo(leafletMap);
+        // Say so loudly if the reversed-belt image cannot be fetched, rather
+        // than leaving a click that silently appears to do nothing.
+        layer.on('error', () => console.error(`conveyor overlay failed to load: ${url}`));
+        melonLayers.push(layer);
+      }
+      if (!cfg.on) continue;
+      for (const m of g.machines) {
+        // Sit the marker on the machine, wearing the machine's own frame. The
+        // pink one and the blue one are different frames, and the frame is
+        // anchored by its top-left rather than centred on its tile, so a pin
+        // placed at the tile centre sat up and to the left of what it labels.
+        const art = m.art;
+        const [lat, lng] = art
+          ? f.atPx(mapId, art.x + art.w / 2, art.y + art.h / 2)
+          : f.at(mapId, m.x, m.y);
+        const src = art && pointSprites && pointSprites[art.sprite]
+          ? `assets/points/${art.sprite.replace(/[^A-Za-z0-9_.-]/g, '_')}.png` : cfg.art;
+        const mk = pinMarker(lat, lng, cfg,
+          `<b>${m.name}</b><br>drives ${g.belts.length} belt(s)<br>` +
+          `<i>click to reverse them</i>`, 'machine' + (flipped ? ' flipped' : ''),
+          src, art ? art.w / art.h : null, artHeight(cfg, art));
+        mk.on('click', () => {
+          if (flippedGroups.has(key)) flippedGroups.delete(key); else flippedGroups.add(key);
+          console.log(`belt machine ${m.name} (map${mapId}) -> ` +
+                      `${flippedGroups.has(key) ? 'reversed' : 'default'}; ` +
+                      `${g.belts.length} belt(s)`);
+          // Redrawing from inside the click handler tears down the marker that
+          // is still dispatching it, and Leaflet finishes the dispatch against
+          // a marker whose icon is already gone — the throw lands mid-teardown,
+          // so the old pins are removed and the new ones never get added. One
+          // tick later the dispatch is over and the swap is safe.
+          setTimeout(renderMarkers, 0);
+        });
+        melonLayers.push(mk.addTo(leafletMap));
+        shown.machine = (shown.machine || 0) + 1;
+      }
+    }
+  }
+}
+
+const groupLabel = g => (g === 'achievement' ? t('achievements') : g);
+
+function renderMarkerPanel() {
+  const rows = document.getElementById('markerRows');
+  rows.innerHTML = '';
+  let openGroup = null;
+  for (const cfg of MARKER_LAYERS) {
+    // A layer tied to a route is only offered while that route is being played;
+    // it also goes off, so it cannot stay on the map after the route changes.
+    if (cfg.route && cfg.route !== routeMode) { cfg.on = false; continue; }
+    if (cfg.group !== openGroup) {
+      openGroup = cfg.group;
+      if (openGroup) {
+        // Bind the name here. `openGroup` is reassigned as the loop walks the
+        // rest of the layers, so a handler closing over the variable would act
+        // on whatever group happened to be last — which is none of them.
+        const group = openGroup;
+        const head = document.createElement('div');
+        head.className = 'group-head';
+        head.innerHTML = `<label><input type="checkbox">${groupLabel(group)}</label>`;
+        const box = head.querySelector('input');
+        const members = () => MARKER_LAYERS.filter(l => l.group === group &&
+                                                       (!l.route || l.route === routeMode));
+        box.checked = members().every(l => l.on);
+        box.addEventListener('change', e => {
+          for (const l of members()) l.on = e.target.checked;
+          renderMarkerPanel();
+          renderMarkers();
+        });
+        rows.appendChild(head);
+      }
+    }
+    const row = document.createElement('div');
+    row.className = 'row' + (cfg.on ? '' : ' off');
+    const range = cfg.key === 'route' ? 'min="1" max="10"' : 'min="10" max="48"';
+    row.innerHTML =
+      `<label><input type="checkbox" ${cfg.on ? 'checked' : ''}>${cfg.icon} ${layerLabel(cfg)}</label>` +
+      `<input type="range" ${range} value="${cfg.size}">` +
+      (cfg.blink === undefined ? ''
+        : `<button class="blinkBtn${cfg.blink ? ' on' : ''}" title="${t('pulse')}">✦</button>`) +
+      `<span class="count" data-count="${cfg.key}"></span>`;
+    row.querySelector('input[type=checkbox]').addEventListener('change', e => {
+      cfg.on = e.target.checked;
+      row.classList.toggle('off', !cfg.on);
+      renderMarkers();
+    });
+    row.querySelector('input[type=range]').addEventListener('input', e => {
+      cfg.size = +e.target.value;
+      renderMarkers();
+    });
+    const blinkBtn = row.querySelector('.blinkBtn');
+    if (blinkBtn) blinkBtn.addEventListener('click', () => {
+      cfg.blink = !cfg.blink;
+      blinkBtn.classList.toggle('on', cfg.blink);
+      renderMarkers();
+    });
+    rows.appendChild(row);
+  }
+}
+
+function updateMarkerCounts(shown) {
+  const done = (shown || {}).__done || {};
+  for (const cfg of MARKER_LAYERS) {
+    const el = document.querySelector(`[data-count="${cfg.key}"]`);
+    if (!el) continue;
+    const n = (shown || {})[cfg.key] || 0;
+    // Tickable layers read as progress; the rest are just a count.
+    el.textContent = !cfg.on ? '' : (TICKABLE.has(cfg.key) ? `${done[cfg.key] || 0}/${n}` : n);
+  }
+  const btn = document.getElementById('clearCollected');
+  if (btn) {
+    btn.style.display = collected.size ? '' : 'none';
+    btn.textContent = `clear ${collected.size} ✓`;
+  }
+}
+
+
+// ─────────────────────────── Per-Map view ───────────────────────────
 function loadMap(mapId) {
   const meta = mapMeta[mapId];
   if (!meta) return;
+  // Markers key off this rather than the dropdown, which has not necessarily
+  // caught up when loadMap is called directly.
+  currentMapId = String(mapId);
   document.getElementById('mapInfo').textContent =
-    `${meta.width}×${meta.height} tiles · BGM: ${meta.bgm || 'none'}`;
+    `${meta.width}×${meta.height} ${t('tiles')} · ${t('bgm')}${meta.bgm || t('none')}`;
+  clearLayers();
 
-  // remove old layer + markers
-  if (currentLayer) leafletMap.removeLayer(currentLayer);
-  for (const m of currentMarkers) leafletMap.removeLayer(m);
-  currentMarkers = [];
-
-  // image overlay (Leaflet uses [y, x] for L.latLng with CRS.Simple)
-  const imgUrl = `../data/raw_pngs/map${mapId}.png`;
+  const imgUrl = mapImageUrl(mapId, meta);
   const w = meta.width * TILE_PX;
   const h = meta.height * TILE_PX;
-  const bounds = [[0, 0], [h, w]]; // [y, x]
-  currentLayer = L.imageOverlay(imgUrl, bounds).addTo(leafletMap);
+  const bounds = [[0, 0], [h, w]];
+  const layer = L.imageOverlay(imgUrl, bounds).addTo(leafletMap);
+  currentLayers.push(layer);
   leafletMap.fitBounds(bounds);
 
-  // add markers for outgoing transfers from this map
   const exits = (edges.internal || []).filter(e => String(e.from.mapId) === String(mapId));
   for (const e of exits) {
     const fy = e.from.y * TILE_PX + TILE_PX / 2;
     const fx = e.from.x * TILE_PX + TILE_PX / 2;
-    // Note: Leaflet uses [lat, lng] = [y, x] but with CRS.Simple, y goes UP from origin.
-    // We want screen y (down). Image is placed with bounds [[0,0],[h,w]] — top of image at lat=h.
-    // L.latLng(lat, lng) — lat=h-screenY for screen-Y convention.
-    const lat = h - fy;
-    const lng = fx;
+    const lat = h - fy, lng = fx;
     const dst = mapMeta[e.to.mapId];
     const dstName = dst ? dst.name : `Map${e.to.mapId}`;
     const marker = L.circleMarker([lat, lng], {
-      radius: 6,
-      color: '#fff',
-      weight: 1.5,
-      fillColor: '#ff4080',
-      fillOpacity: 0.85,
+      radius: 6, color: '#fff', weight: 1.5,
+      fillColor: '#ff4080', fillOpacity: 0.85,
     }).addTo(leafletMap);
     marker.bindPopup(
-      `<b>${e.from.evName}</b><br>` +
-      `(${e.from.x},${e.from.y}) → Map${e.to.mapId}<br>` +
+      `<b>${e.from.evName}</b><br>(${e.from.x},${e.from.y}) → Map${e.to.mapId}<br>` +
       `<i>${dstName}</i> @(${e.to.x},${e.to.y})<br>` +
-      `<a href="#" data-mid="${e.to.mapId}" class="goto">→ go</a>`
-    );
-    currentMarkers.push(marker);
+      `<a href="#" data-mid="${e.to.mapId}" class="goto">→ go</a>`);
+    currentLayers.push(marker);
   }
-
-  // delegate click on "go" links
   setTimeout(() => {
     document.querySelectorAll('.leaflet-popup .goto').forEach(a => {
-      a.addEventListener('click', (ev) => {
+      a.addEventListener('click', ev => {
         ev.preventDefault();
         const mid = ev.target.dataset.mid;
         document.getElementById('mapSelect').value = mid;
@@ -130,6 +1193,945 @@ function loadMap(mapId) {
       });
     });
   }, 50);
+  renderMarkers();
+}
+
+// ─────────────────────────── Stitched view ───────────────────────────
+let stitchedState = null;  // { layout, routes, bbox } — needed for live slider redraw
+
+async function loadStitched(region, variant) {
+  clearLayers();
+  const suffix = variant ? `_${variant}` : '';
+  const layoutPath = `../data/stitched/${region}_layout${suffix}.json`;
+  const pngPath    = `../data/stitched/stitched_${region}${suffix}.png${CACHE_BUST}`;
+  let layout;
+  try {
+    layout = await (await fetchData(layoutPath)).json();
+  } catch (err) {
+    document.getElementById('mapInfo').textContent = `No stitched layout for ${region}${suffix ? '/' + variant : ''}`;
+    return;
+  }
+
+  // Compute bbox same as stitcher's exportPNG (line 906-918 of stitcher_junkyard.html)
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  for (const id of Object.keys(layout.layout)) {
+    const pos = layout.layout[id];
+    const m = mapMeta[id];
+    if (!m) continue;
+    const cr = cropRect(pos.crop || 'full', m);
+    const w = m.width * TILE_PX;
+    const cropH = cr.h * TILE_PX;
+    minX = Math.min(minX, pos.x);
+    minY = Math.min(minY, pos.y);
+    maxX = Math.max(maxX, pos.x + w);
+    maxY = Math.max(maxY, pos.y + cropH);
+  }
+  const cw = maxX - minX, ch = maxY - minY;
+  document.getElementById('mapInfo').textContent =
+    `${Object.keys(layout.layout).length} ${t('maps')} · ` +
+    `${layout.routes?.length || 0} ${t('routes')} · ${cw}×${ch}px`;
+
+  const bounds = [[0, 0], [ch, cw]];
+  const layer = L.imageOverlay(pngPath, bounds).addTo(leafletMap);
+  currentLayers.push(layer);
+  leafletMap.fitBounds(bounds);
+
+  stitchedState = { layout, bbox: { minX, minY, cw, ch } };
+  renderRoutesOverlay();
+  renderMarkers();
+}
+
+function renderRoutesOverlay() {
+  if (!stitchedState) return;
+  // Remove previous overlay layers (keep image overlay = first one)
+  for (let i = currentLayers.length - 1; i >= 1; i--) {
+    leafletMap.removeLayer(currentLayers[i]);
+    currentLayers.splice(i, 1);
+  }
+  const { layout, bbox } = stitchedState;
+  for (const r of (layout.routes || [])) {
+    if (!r.pts || r.pts.length < 2) continue;
+    // Convert world coords → PNG pixel coords → leaflet latLng (lat = ch - y)
+    const latlngs = r.pts.map(p => [bbox.ch - (p.y - bbox.minY), p.x - bbox.minX]);
+    const line = L.polyline(latlngs, {
+      color: r.color, weight: lineWidth, opacity: 0.95,
+      dashArray: `${lineWidth * 3},${lineWidth * 2}`,
+    }).addTo(leafletMap);
+    currentLayers.push(line);
+    for (const p of r.pts) {
+      const lat = bbox.ch - (p.y - bbox.minY);
+      const lng = p.x - bbox.minX;
+      const dot = L.circleMarker([lat, lng], {
+        radius: dotSize, color: '#fff', weight: 2,
+        fillColor: r.color, fillOpacity: 1,
+      }).addTo(leafletMap);
+      const sn = p.snap;
+      if (sn) dot.bindPopup(`<b>${sn.evName || 'Snap'}</b><br>Map${sn.mapId} ev${sn.evId}`);
+      currentLayers.push(dot);
+    }
+  }
+}
+
+// ─────────────────────────── World view ───────────────────────────
+// Every region on one canvas, each in its own Leaflet pane so it can be
+// greyed, hidden or lifted as a unit. Regions overlap on purpose here, which
+// is exactly why a flat stitch doesn't work: whichever map was drawn last
+// wins and there is no way to read one region out of the pile.
+
+// Order matters: the first region to claim a map keeps it. Snowglobe Mountain
+// comes before Otherworld because Map132 is listed by both — Otherworld holds
+// the uncut igloo, Snowglobe Mountain the four rooms cut out of it, and it is
+// the rooms that are actually drawn. Deeper Well comes before Inside Humphrey
+// for the same reason: ALCOVES II (437) is a reward room both open onto, Deeper
+// Well keeps it, and that is why Humphrey shows 16 of its 31 watermelons here.
+const ALL_REGIONS = ['faraway', 'vast_forest', 'orange_oasis', 'snowglobe_mountain',
+  'otherworld', 'junkyard', 'pyrefly_forest', 'sweethearts_castle', 'deep_well',
+  'deeper_well', 'humphrey', 'last_resort', 'white_space', 'forest_playground'];
+// The Chinese column is the game's own, lifted out of languages/sc by matching
+// the key each line shares with languages/en — 辽阔森林 rather than a literal
+// "广袤森林", 最后度假村 rather than "最后的度假胜地", and 汉弗莱 (the enemy
+// entry in the Chinese build) rather than the 亨弗莱 you would guess.
+const REGION_NAMES = {
+  faraway:            { en: 'Faraway Town',       zh: '遥远镇' },
+  vast_forest:        { en: 'Vast Forest',        zh: '辽阔森林' },
+  orange_oasis:       { en: 'Orange Oasis',       zh: '橙子绿洲' },
+  otherworld:         { en: 'Otherworld',         zh: '异世界' },
+  junkyard:           { en: 'Junkyard',           zh: '垃圾场' },
+  pyrefly_forest:     { en: 'Pyrefly Forest',     zh: '焚火虫森林' },
+  sweethearts_castle: { en: 'Sweethearts Castle', zh: '甜心城堡' },
+  deep_well:          { en: 'Deep Well',          zh: '深井' },
+  deeper_well:        { en: 'Deeper Well',        zh: '深井深处' },
+  last_resort:        { en: 'Last Resort',        zh: '最后度假村' },
+  forest_playground:  { en: 'Forest Playground',  zh: '森林游乐场' },
+  snowglobe_mountain: { en: 'Snowglobe Mountain', zh: '雪花球山' },
+  white_space:        { en: 'White Space',        zh: '白色空间' },
+  humphrey:           { en: 'Inside Humphrey',    zh: '汉弗莱体内' },
+};
+const regionLabel = r => (REGION_NAMES[r] || {})[LANG] || (REGION_NAMES[r] || {}).en || r;
+
+// The legend used to sort by how many maps a region holds, which put DEEPER
+// WELL at the top and buried the two places you actually navigate from. This is
+// the order you meet them in: WHITE SPACE, the hub you always come back to,
+// then VAST FOREST, which every route leaves from, then the routes themselves,
+// with FARAWAY last because it is the waking world and shares no ground with
+// any of them. A region missing from here falls to the bottom, alphabetically.
+const REGION_ORDER = ['white_space', 'vast_forest', 'forest_playground', 'otherworld',
+  'junkyard', 'pyrefly_forest', 'sweethearts_castle', 'orange_oasis',
+  'snowglobe_mountain', 'deep_well', 'deeper_well', 'humphrey', 'last_resort', 'faraway'];
+const regionRank = r => {
+  const i = REGION_ORDER.indexOf(r);
+  return i === -1 ? REGION_ORDER.length : i;
+};
+// Swatches only label the legend — the maps keep their own art.
+const REGION_COLORS = {
+  faraway: '#ff9db0', vast_forest: '#7fd18a', orange_oasis: '#ffb45e',
+  otherworld: '#8fb7ff', junkyard: '#c9a26d', pyrefly_forest: '#b98cff',
+  sweethearts_castle: '#ff8ad0', deep_well: '#5fd5d5', deeper_well: '#4f8ae0',
+  last_resort: '#e0605f', forest_playground: '#9fe07f',
+  snowglobe_mountain: '#cfe6ff', white_space: '#dddddd', humphrey: '#7f6bd8',
+};
+
+// Edge fades, entirely by hand. There used to be an automatic pass that pulled
+// in whatever maps a region's doors opened onto and dissolved them radially,
+// but it could find *which* maps, never which way they should fade, so it fell
+// back to a fade from the centre outward. On DEEP WELL that dragged in LAST
+// RESORT and left it as a black smear: dark art, mostly masked away, over a
+// near-black page. A region now shows the maps it owns, plus exactly the
+// neighbours named here.
+//
+// A map listed here need not belong to another region: NORTH COAST is Vast
+// Forest's own, faded upward so the sea reads as continuing past it.
+const EDGE_FADE = {
+  vast_forest: {
+    '152': 'left',       // PYREFLY FOREST — solid at its right, transparent at its left
+    '117': 'right',      // OTHERWORLD LADDER — solid left, transparent right
+    '90':  'top|deep_well',
+                         // NORTH COAST — trails off into the foggy sea until
+                         // Deep Well, whose NORTH LAKE butts straight onto it,
+                         // is shown as well
+    '105': 'top|orange_oasis',
+                         // TRAIN STATION WAITING AREA — the train line trails off
+                         // northward until Orange Oasis, where it goes, is shown too
+  },
+};
+
+// A map's region in the extractor is where it sits in the game's map tree, and
+// that is not always where it belongs on a world view. The train line's forest
+// half — the waiting area and the train itself — is filed under Vast Forest
+// because the station stands in the forest, but it exists to reach Orange
+// Oasis, whose own half of the line (TRAIN STATION, TRAIN INTERIOR) is already
+// there. Leaving it in Vast Forest also made it collide with PYREFLY I
+// whenever both were shown, for 627 of the 687 tiles those two overlap in.
+const REGION_OVERRIDE = {
+  '327': 'orange_oasis',   // TRAIN STATION TRAIN — the ride belongs to where it goes
+};
+
+// A fade is written as a side, optionally with the point it finishes at:
+// 'top' — the side that goes transparent. On its own it takes the shared
+//   pixel geometry below, which is what every edge should normally use.
+// 'top:30' — the first 30% of the map stays fully opaque before the fade
+//   starts, as a percentage of the map's own length along that axis.
+// 'top:30@50' — and it is fully transparent halfway across rather than at the
+//   far edge. Finishing early is what clears an overlap outright: Map105 covers
+//   PYREFLY I across its top 39%, so being gone by 50% removes the clash.
+// 'top|orange_oasis' — and it only fades while that region is hidden.
+//
+// Percentages are the override, not the default, because the same percentage
+// is a different distance on every map: 30% is 518px down Map105 and 1254px
+// across PYREFLY FOREST, so one edge read as a defined soft border and the
+// other as a haze over half the map. Reach for one only when an edge has to
+// clear a particular overlap rather than merely look right.
+//
+// A fade says "the map carries on past here, but you aren't showing it". Once
+// the region on the other side is displayed, the continuation is really there,
+// so the fade has to go: showing Orange Oasis should make the train line solid
+// all the way through, not leave Vast Forest's half of it ghosted.
+//
+// With no region named, a borrowed map faces the region that owns it, and a
+// map the selected region owns faces nothing and always fades — NORTH COAST
+// dissolves into open sea, which is scenery rather than a region to reveal.
+function parseFade(spec) {
+  const [head, facing] = String(spec).split('|');
+  const [range, end] = head.split('@');
+  const [side, solid] = range.split(':');
+  return {
+    side,
+    solid: solid === undefined ? null : +solid,
+    end: end ? +end : 100,
+    facing: facing || null,
+  };
+}
+
+// Both distances are measured inward from the fading edge, in the map's own
+// pixels, so every faded edge looks the same however long the map behind it
+// is. The figures are Map105's: the train line's fade had to be cut short so
+// it would stop covering PYREFLY I, and it is the one that already looked
+// right.
+//
+// They are turned into percentages here, against the map's size in tiles.
+// Writing them straight into the gradient as `calc(100% - 864px)` does not
+// work and fails silently: the mask applies to the Leaflet overlay element,
+// whose 100% is the map *as currently scaled on screen*, not its 1728px of
+// artwork. Zoomed out to a few hundred pixels the subtraction goes negative
+// and the whole map turns transparent — which is exactly what happened.
+const FADE_CLEAR_PX = 864;   // 27 tiles: gone entirely at the fading edge
+const FADE_BAND_PX  = 352;   // 11 tiles: the gradient, before the map is solid
+
+function fadeMask(spec, meta) {
+  const { side, solid, end } = parseFade(spec);
+  // A hand-written percentage still wins — see the note on parseFade above.
+  if (solid !== null || end !== 100) {
+    return `linear-gradient(to ${side}, #000 ${solid === null ? 0 : solid}%, transparent ${end}%)`;
+  }
+  // The gradient runs from the far edge (0%) to the fading edge (100%), so
+  // both distances count backwards from 100.
+  const axis = (side === 'left' || side === 'right' ? meta.width : meta.height) * TILE_PX;
+  const clamp = v => Math.max(0, Math.min(100, v));
+  const clearPct = clamp(100 - (FADE_CLEAR_PX / axis) * 100);
+  const solidPct = clamp(100 - ((FADE_CLEAR_PX + FADE_BAND_PX) / axis) * 100);
+  return `linear-gradient(to ${side}, #000 ${solidPct.toFixed(2)}%, transparent ${clearPct.toFixed(2)}%)`;
+}
+
+// Scenery saved out of the ALL stitcher — trees that fill the gaps the maps
+// leave between them. They share the maps' z scale, so one can be tucked
+// behind a map as easily as laid over it. Sizes are the source PNGs' own and
+// must match DECORATIONS in stitcher_all.html: a wrong size here would stretch
+// every scaled copy.
+const DECO_ART = {
+  tree_part:  { src: 'assets/decorations/tree_part.png',  w: 61, h: 65 },
+  tree_full:  { src: 'assets/decorations/tree_full.png',  w: 61, h: 60 },
+  pinwheel:   { src: 'assets/decorations/pinwheel.png',   w: 59, h: 59 },
+  pinwheel_2: { src: 'assets/decorations/pinwheel_2.png', w: 68, h: 69 },
+  pinwheel_3: { src: 'assets/decorations/pinwheel_3.png', w: 57, h: 56 },
+};
+
+// A decoration carries no region of its own — it is scenery dropped on the
+// world plane. Give it the region of the map it stands nearest, so it comes
+// and goes with the ground it was placed to dress. Nearest rather than
+// underneath: most of them fill the void *between* maps and stand on none.
+function nearestMapTo(cx, cy, placed) {
+  let best = null, bestD = Infinity;
+  for (const it of placed) {
+    const dx = Math.max(it.pos.x - cx, 0, cx - (it.pos.x + it.w));
+    const dy = Math.max(it.pos.y - cy, 0, cy - (it.pos.y + it.h));
+    const d = dx * dx + dy * dy;
+    if (d < bestD) { bestD = d; best = it; }
+  }
+  return best;
+}
+
+// Leaflet positions an image overlay with a CSS transform, so a flipped
+// decoration cannot just carry a scaleX(-1) of its own — the two would fight
+// over the same property and the tree would land somewhere else entirely.
+// Mirror the art itself instead, once per kind.
+const flippedArt = {};
+function flippedSrc(art) {
+  if (!flippedArt[art.src]) {
+    flippedArt[art.src] = new Promise(res => {
+      const img = new Image();
+      img.onload = () => {
+        const c = document.createElement('canvas');
+        c.width = img.width; c.height = img.height;
+        const ctx = c.getContext('2d');
+        ctx.imageSmoothingEnabled = false;
+        ctx.translate(img.width, 0); ctx.scale(-1, 1);
+        ctx.drawImage(img, 0, 0);
+        res(c.toDataURL());
+      };
+      // Better a tree facing the wrong way than no tree and a hole.
+      img.onerror = () => { console.warn(`decoration art failed: ${art.src}`); res(art.src); };
+      img.src = art.src + CACHE_BUST;
+    });
+  }
+  return flippedArt[art.src];
+}
+
+
+// One overlay per sprite is still what happens when the manifest does not
+// match the layout, and ?deco=plain forces it — the only way to see what the
+// bake is for without deleting the manifest.
+const DECO_MODE = new URLSearchParams(location.search).get('deco') || 'baked';
+
+// ── Baked decoration clusters ───────────────────────────────────────────────
+// The trees bridge holes in the layout, so what sits behind them is #map's own
+// background. Leaflet sizes and positions each overlay separately in fractional
+// CSS pixels, they round separately, and at any zoom short of 1:1 hairline
+// cracks open between neighbouring sprites and let that background through —
+// which reads as a black outline around every tree. stitcher_all.html never
+// shows it because it scales one container instead of 179 images.
+//
+// One image cannot crack against itself, so scripts/36_bake_deco_clusters.py
+// composites each contiguous run into a single PNG and this swaps them in.
+// See the .world-deco comment for how to re-check the diagnosis.
+//
+// The manifest is only trusted if it still describes the layout in hand: every
+// uid has to name a decoration that is still where it was baked, and the
+// clusters together have to account for all of them. A stale manifest — the
+// layout re-exported without re-running 36 — falls back to one overlay per
+// sprite, which is the old picture, cracks and all, rather than a wrong one.
+async function bakedDecos(decos) {
+  let manifest;
+  try {
+    manifest = await fetchData('../data/stitched/deco_clusters.json').then(r => {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    });
+  } catch (e) {
+    return null;                       // never baked, or the file is gone
+  }
+  const byUid = new Map();
+  for (const it of decos) {
+    if (it.deco.uid === undefined) return null;
+    byUid.set(it.deco.uid, it);
+  }
+  const seen = new Set();
+  const out = [];
+  for (const c of (manifest.clusters || [])) {
+    let region = null;
+    for (const uid of c.uids) {
+      const it = byUid.get(uid);
+      if (!it) return stale(`uid ${uid} is not in the layout`);
+      if (seen.has(uid)) return stale(`uid ${uid} is in two clusters`);
+      if (region === null) region = it.region;
+      else if (it.region !== region) return stale(`cluster ${c.file} spans two regions`);
+      // A sprite that moved keeps its uid, so check the geometry too.
+      if (it.pos.x < c.x || it.pos.y < c.y ||
+          it.pos.x + it.w > c.x + c.w || it.pos.y + it.h > c.y + c.h) {
+        return stale(`uid ${uid} has moved outside ${c.file}`);
+      }
+      seen.add(uid);
+    }
+    if (!c.uids.length) continue;
+    out.push({ deco: c, w: c.w, h: c.h, region,
+               pos: { x: c.x, y: c.y, zOrder: c.zOrder },
+               url: c.file + CACHE_BUST });
+  }
+  if (seen.size !== decos.length) {
+    return stale(`covers ${seen.size} of ${decos.length} decorations`);
+  }
+  console.log(`Decorations: ${decos.length} sprites drawn as ${out.length} baked image(s).`);
+  return out;
+}
+function stale(why) {
+  console.warn(`deco_clusters.json is out of date (${why}) — drawing decorations ` +
+               `one by one. Re-run scripts/36_bake_deco_clusters.py.`);
+  return null;
+}
+
+let worldState = null;      // { bbox, byRegion, panes, placed, visibleIds }
+const DEFAULT_WORLD_REGION = 'vast_forest';
+const selectedRegions = new Set([DEFAULT_WORLD_REGION]);
+
+async function loadWorld() {
+  clearLayers();
+  if (worldState) {
+    // Coming back from another mode: clearLayers() pulled the overlays off the
+    // map but the panes and geometry are still good, so just put them back.
+    // Re-add in the order they were first laid down, not region by region:
+    // stacking inside a pane is DOM order, so putting every map back before
+    // every decoration would float the trees above the maps they were placed
+    // behind.
+    for (const it of worldState.drawOrder) {
+      if (!it.layer) continue;
+      it.layer.addTo(leafletMap);
+      currentLayers.push(it.layer);
+    }
+    applySelection();
+    return;
+  }
+
+  let layout;
+  try {
+    layout = await (await fetchData('../data/stitched/all_regions_layout.json')).json();
+  } catch (err) {
+    document.getElementById('mapInfo').textContent =
+      'No all_regions_layout.json — save one from the ALL stitcher into data/stitched/.';
+    return;
+  }
+
+  // Region metadata for every map at once; also remember which region each
+  // map came from, since a map can be listed under more than one.
+  const metaAll = {}, regionOf = {}, melons = [];
+  await Promise.all(ALL_REGIONS.map(async r => {
+    const [m, h] = await Promise.all([
+      fetchData(`../data/${r}_maps.json`).then(x => x.json()),
+      fetchData(`../data/${r}_highlights.json`).then(x => x.json()).catch(() => ({})),
+    ]);
+    // First region to claim a map keeps it. FOREST PLAYGROUND is its own
+    // single-map region in the extractor *and* sits in Vast Forest's extraMaps;
+    // last-wins handed Map92 to the one-map region, so Vast Forest lost the
+    // playground and a region appeared holding nothing but a map it borrowed.
+    for (const [id, v] of Object.entries(m)) {
+      metaAll[id] = v;
+      if (!(id in regionOf)) regionOf[id] = REGION_OVERRIDE[id] || r;
+    }
+    for (const w of (h.watermelons || [])) melons.push({ ...w, region: r });
+  }));
+
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  const placed = [];
+  for (const [id, pos] of Object.entries(layout.layout || {})) {
+    const m = metaAll[id];
+    if (!m) continue;
+    const cr = cropRect(pos.crop || 'full', m);
+    const w = m.width * TILE_PX, h = cr.h * TILE_PX;
+    placed.push({ id, pos, m, cr, w, h, region: regionOf[id] || '' });
+    minX = Math.min(minX, pos.x); minY = Math.min(minY, pos.y);
+    maxX = Math.max(maxX, pos.x + w); maxY = Math.max(maxY, pos.y + h);
+  }
+  if (!placed.length) {
+    document.getElementById('mapInfo').textContent = 'Layout has no maps this build knows about.';
+    return;
+  }
+  const bbox = { minX, minY, cw: maxX - minX, ch: maxY - minY };
+
+  // One pane per region. Panes stack by zIndex, so focusing is just a bump.
+  const panes = {}, byRegion = {};
+  for (const r of ALL_REGIONS) {
+    const p = leafletMap.createPane('region-' + r);
+    p.classList.add('region-pane');
+    p.style.zIndex = 300;
+    panes[r] = p;
+    byRegion[r] = [];
+  }
+  // Decorations go through the same sort as the maps, for the same reason the
+  // stitcher interleaves them: a tree the layout put *behind* a map would
+  // otherwise be appended after every map and could only ever sit on top.
+  const decos = [], unknownKinds = new Set();
+  for (const d of (layout.decorations || [])) {
+    const art = DECO_ART[d.kind];
+    if (!art) { unknownKinds.add(d.kind); continue; }
+    const w = art.w * (d.scale ?? 1), h = art.h * (d.scale ?? 1);
+    const near = nearestMapTo(d.x + w / 2, d.y + h / 2, placed);
+    if (!near) continue;
+    decos.push({ deco: d, art, w, h, region: near.region, nearId: String(near.id),
+                 pos: { x: d.x, y: d.y, zOrder: d.zOrder ?? 0 },
+                 url: d.flip ? await flippedSrc(art) : art.src + CACHE_BUST });
+  }
+  if (unknownKinds.size) {
+    console.warn(`loadWorld: layout has decoration kind(s) this build has no art ` +
+                 `for — ${[...unknownKinds].join(', ')}. Add them to DECO_ART.`);
+  }
+  const drawnDecos = DECO_MODE === 'baked'
+    ? (await bakedDecos(decos) || decos)
+    : decos;
+  if (DECO_MODE !== 'baked') {
+    console.log(`Decorations: ?deco=${DECO_MODE} — ${decos.length} sprites, `
+                + `one overlay each.`);
+  }
+
+  // Draw in the stitcher's z-order, not map-id order. Leaflet stacks overlays
+  // in the order they are added within a pane, and object keys that look like
+  // integers iterate numerically — so without this the maps land in id order
+  // and a neighbour's black filler paints over the map that should be on top
+  // (PINWHEEL FOREST EAST under TRAIN STATION TRAIN, LOST LIBRARY 3 over 2, …).
+  // Cross-region stacking stays a pane concern; applySelection bumps the
+  // focused region's pane above the rest.
+  const drawOrder = [...placed, ...drawnDecos].sort(
+    (a, b) => (a.pos.zOrder ?? 0) - (b.pos.zOrder ?? 0));
+  for (const it of drawOrder) {
+    if (!panes[it.region]) continue;
+    const lat = bbox.ch - (it.pos.y - bbox.minY);
+    const lng = it.pos.x - bbox.minX;
+    const layer = L.imageOverlay(it.deco ? it.url : mapImageUrl(it.id, it.m),
+                                 [[lat - it.h, lng], [lat, lng + it.w]],
+                                 { pane: 'region-' + it.region,
+                                   className: it.deco ? 'world-deco' : '' });
+    layer.addTo(leafletMap);
+    currentLayers.push(layer);
+    it.layer = layer;
+    // byRegion drives the region legend's counts, so only maps go in it — a
+    // region has no business being reported as holding 91 more maps than it has.
+    if (!it.deco) byRegion[it.region].push(it);
+  }
+
+  worldState = { bbox, byRegion, panes, layout, melons, regionOf, metaAll, placed,
+                 decos, drawnDecos, drawOrder, visibleIds: new Set() };
+  leafletMap.fitBounds([[0, 0], [bbox.ch, bbox.cw]]);
+  document.getElementById('mapInfo').textContent =
+    `${placed.length} ${t('maps')} · ${bbox.cw}×${bbox.ch}px · ` +
+    `${Object.values(byRegion).filter(v => v.length).length} ${t('regionsWord')}` +
+    (decos.length ? ` · ${decos.length} ${t('scenery')}` : '');
+
+  // Element styling needs the <img> nodes to exist, which happens a tick after
+  // the overlays are added.
+  setTimeout(applySelection, 0);
+}
+
+// Everything under data/ is regenerated by the pipeline and re-exported from
+// the stitcher, often several times an hour, and `python3 -m http.server` sends
+// no Cache-Control at all — so the browser falls back to heuristic caching and
+// can sit on a layout for hours without ever asking whether it changed. That is
+// exactly what happened to a freshly saved all_regions_layout.json: the file on
+// disk had the trees and the corrected z-order, the page kept drawing the copy
+// it had cached that morning, and no amount of ordinary reloading shifted it.
+// `no-cache` still uses the cache — it just always revalidates first, so an
+// unchanged file costs one 304 and nothing more.
+function fetchData(url, opts) {
+  return fetch(url, { cache: 'no-cache', ...(opts || {}) });
+}
+
+// Add ?fresh to the page URL to force every map image to reload. The PNGs get
+// rewritten often, and the browser holds on to them: the file on disk can be
+// right, the one served can be right, and the page still shows last week's.
+// Hard refresh does not reliably reach images Leaflet puts in an <img>.
+const CACHE_BUST = /(^|[?&])fresh(=|&|$)/.test(location.search) ? `?v=${Date.now()}` : '';
+
+// Each render's own modification time, out of data/raw_pngs/manifest.json.
+// Without it a rewritten PNG keeps being drawn from cache — SOLAR SYSTEM was
+// re-rendered from black-and-white to the real thing and the page went on
+// showing the old bytes. Stamping the URL means an unchanged file still comes
+// from cache and a changed one cannot. `?fresh` still overrides the lot.
+let pngVersion = {};
+const stampPng = file => CACHE_BUST || (pngVersion[file] ? `?v=${pngVersion[file]}` : '');
+
+function mapImageUrl(id, m) {
+  const file = (m && m.image) || `map${id}.png`;
+  return `../data/raw_pngs/${file}${stampPng(file)}`;
+}
+
+// Only one region is shown at a time. Everything overlaps in this layout, so
+// drawing them all at once is unreadable no matter how they are tinted — the
+// answer is to show one and let the ways out of it fade.
+//
+// A region's gateway maps — the maps its doors actually lead to — are drawn
+// too, fading outward, so you can see where the region connects without the
+// neighbour's whole sprawl arriving with it. Vast Forest's are OTHERWORLD
+// LADDER, PYREFLY FOREST, NORTH LAKE and TRAIN STATION.
+function applySelection() {
+  if (!worldState) return;
+  const { placed, panes } = worldState;
+
+  // Work out, across every selected region, which maps are shown and which of
+  // them fade. An explicit EDGE_FADE entry always fades, even for a map the
+  // selected region owns — NORTH COAST dissolves into the sea, not into a
+  // neighbour. A gateway borrowed from another region stops fading once that
+  // region is selected too, since then it is being shown in its own right.
+  const shown = new Set(), fadeSide = {}, selfFade = new Set();
+  for (const r of selectedRegions) {
+    const fades = EDGE_FADE[r];
+    if (fades) {
+      for (const [id, side] of Object.entries(fades)) {
+        shown.add(id); fadeSide[id] = side;
+        if (worldState.regionOf[id] === r) selfFade.add(id);
+      }
+    }
+  }
+
+  // A pin belongs to a map, not to the world, so it has no business outliving
+  // the map it sits on. Recording what is actually on screen here means every
+  // marker layer gets the region filtering for free.
+  worldState.visibleIds = new Set();
+  const fading = new Set();
+  for (const it of placed) {
+    const el = it.layer.getElement && it.layer.getElement();
+    if (!el) continue;
+    const id = String(it.id);
+    const ownSelected = selectedRegions.has(it.region);
+    const onScreen = (ownSelected || shown.has(id)) && !offRoute(id, it.region);
+    el.style.display = onScreen ? '' : 'none';
+    if (onScreen) worldState.visibleIds.add(id);
+    const side = fadeSide[id];
+    // Fade while the side it faces is still hidden. A named region wins; with
+    // none, a borrowed map faces its owner and a self-owned one faces nothing.
+    const facing = side ? (parseFade(side).facing || (selfFade.has(id) ? null : it.region)) : null;
+    const fades = side && (facing === null ? true : !selectedRegions.has(facing));
+    const meta = worldState.metaAll[id];
+    if (fades && meta) {
+      fading.add(id);
+      el.style.webkitMaskImage = el.style.maskImage = fadeMask(side, meta);
+      el.style.filter = '';
+    } else {
+      el.style.webkitMaskImage = el.style.maskImage = '';
+      el.style.filter = '';
+    }
+  }
+
+  // A tree is dressing for the ground beside one particular map: when that map
+  // is off screen there is nothing left for it to dress. It goes when the map
+  // it stands nearest goes, and also when that map is fading at a region edge —
+  // a tree standing solid over an edge busy dissolving reads worse than the
+  // gap it was hiding.
+  for (const it of (worldState.decos || [])) {
+    const el = it.layer && it.layer.getElement && it.layer.getElement();
+    if (!el) continue;
+    el.style.display = (worldState.visibleIds.has(it.nearId) && !fading.has(it.nearId))
+      ? '' : 'none';
+  }
+
+  for (const [r, pane] of Object.entries(panes)) {
+    pane.style.zIndex = selectedRegions.has(r) ? 340 : 300;
+  }
+  rebuildLegend();
+  updateOverlapWarning();
+  renderMarkers();
+}
+
+// One button per route. Ticking regions one at a time is the slow way to see a
+// route, and it walks you through states the overlap warning has to complain
+// about; a route is the unit that was stitched to fit together, so it should be
+// the unit you can ask for.
+function rebuildRoutes() {
+  const box = document.getElementById('routeRows');
+  if (!box || !worldState) return;
+  box.innerHTML = '';
+  REGION_ROUTES.forEach((route, i) => {
+    // Only the regions this build actually has maps for.
+    const have = route.filter(r => (worldState.byRegion[r] || []).length);
+    if (!have.length) return;
+    const on = have.every(r => selectedRegions.has(r)) && selectedRegions.size === have.length;
+    const b = document.createElement('button');
+    b.className = 'route-btn' + (on ? ' on' : '');
+    b.textContent = routeLabel(i);
+    b.title = have.map(regionLabel).join(' · ');
+    b.onclick = () => {
+      selectedRegions.clear();
+      for (const r of have) selectedRegions.add(r);
+      applySelection();
+    };
+    box.appendChild(b);
+  });
+}
+
+function rebuildLegend() {
+  rebuildRoutes();
+  const rows = document.getElementById('regionRows');
+  if (!rows || !worldState) return;
+  rows.innerHTML = '';
+  const entries = Object.entries(worldState.byRegion)
+    .filter(([, v]) => v.length)
+    .sort((a, b) => regionRank(a[0]) - regionRank(b[0]) || a[0].localeCompare(b[0]));
+  for (const [r, items] of entries) {
+    const on = selectedRegions.has(r);
+    const extra = (EDGE_FADE[r] ? Object.keys(EDGE_FADE[r]).length
+                                : 0);
+    const row = document.createElement('div');
+    row.className = 'rl-row' + (on ? ' focused' : '');
+    row.innerHTML = `<span class="sw" style="background:${REGION_COLORS[r] || '#888'}"></span>` +
+      `<span class="nm">${on ? '☑' : '☐'} ${regionLabel(r)}</span>` +
+      `<span class="ct">${items.length}${extra ? ' +' + extra : ''}</span>`;
+    row.title = extra ? `${items.length} maps, ${extra} fading at the edge` : `${items.length} maps`;
+    row.onclick = () => {
+      if (selectedRegions.has(r)) selectedRegions.delete(r); else selectedRegions.add(r);
+      applySelection();
+    };
+    rows.appendChild(row);
+  }
+}
+
+// The layout stitches every region into one plane, and the regions were never
+// all laid out to sit side by side — but they were not laid out at random
+// either. They form routes out of Vast Forest, and everything along one route
+// was placed to butt against its neighbour, so a whole route can be shown at
+// once without anything colliding. Two regions from *different* routes occupy
+// the same ground, and no amount of pane ordering fixes that.
+//
+// Vast Forest is the hub, so it sits on every route and always pairs cleanly.
+// Regions absent here (Faraway, Forest Playground) have no maps in the layout
+// and cannot collide with anything.
+// Which maps belong to only one playthrough. The two routes diverge late and
+// the difference is not cosmetic: someone on SUNNY will never see the LOST
+// LIBRARY, and someone on HIKIKOMORI will never see the ABYSS or BOSS RUSH, so
+// a marker there is a place they cannot go. `both` is the default and hides
+// nothing.
+//
+// This is a hand-written list, because nothing in the game data says which
+// route a map belongs to — extend it as you find more. Item-level differences
+// are not covered yet: that needs a list of which pickups exist on which route,
+// and there is no way to derive one.
+// Everything here is extra content only the HIKIKOMORI route reaches, so it is
+// SUNNY that has things hidden from it, not the other way round.
+const ROUTE_ONLY = {
+  hikikomori: new Set([
+    '440', '441', '443',                                  // LOST LIBRARY 1-3
+    '201', '253', '254', '255', '256', '257', '258',      // ENTRANCE TO ABYSS, THE ABYSS, ABYSS LOWER 1-4, ABYSS FINAL
+    '244',                                                // BOSS RUSH LOBBY
+  ]),
+};
+const ROUTE_ONLY_REGIONS = { hikikomori: new Set(['snowglobe_mountain']) };
+let routeMode = 'both';       // 'both' | 'sunny' | 'hikikomori'
+
+// True when this map exists on some route other than the one being played.
+function offRoute(id, region) {
+  if (routeMode === 'both') return false;
+  for (const route of Object.keys(ROUTE_ONLY)) {
+    if (route === routeMode) continue;
+    if (ROUTE_ONLY[route].has(String(id))) return true;
+    if ((ROUTE_ONLY_REGIONS[route] || new Set()).has(region)) return true;
+  }
+  return false;
+}
+
+const REGION_ROUTES = [
+  ['vast_forest', 'otherworld', 'junkyard', 'snowglobe_mountain'],
+  ['vast_forest', 'deep_well', 'last_resort', 'deeper_well', 'humphrey', 'white_space'],
+  ['vast_forest', 'pyrefly_forest', 'sweethearts_castle'],
+  ['vast_forest', 'orange_oasis'],
+];
+// Named after the region each route runs out to, so they follow REGION_NAMES.
+const ROUTE_ANCHORS = ['otherworld', 'deep_well', 'pyrefly_forest', 'orange_oasis'];
+const routeLabel = i => i === 3 ? regionLabel(ROUTE_ANCHORS[3])
+  : (LANG === 'zh' ? regionLabel(ROUTE_ANCHORS[i]) + t('routeSuffix')
+                   : regionLabel(ROUTE_ANCHORS[i]) + ' ' + t('routeSuffix'));
+
+// Which mix is on screen, as a stable string. The popup reappears when this
+// changes and not merely when applySelection() runs again — every marker
+// toggle and every fade recalculation goes through here, and a dialog that
+// came back each time would be unusable.
+let lastOverlapKey = null;
+// The last selection that sat inside a single route. "Back to one route" used
+// to throw the lot away and leave you on Vast Forest alone, so a mis-click cost
+// you every region you had built up; now it just undoes the one that clashed.
+let lastGoodRegions = null;
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') document.getElementById('overlapPopup')?.classList.remove('show');
+});
+
+function updateOverlapWarning() {
+  const box = document.getElementById('overlapWarn');
+  const popup = document.getElementById('overlapPopup');
+  if (!box) return;
+  const sel = [...selectedRegions];
+  const label = r => (document.querySelector(`#regionSelect option[value="${r}"]`) || {}).textContent || r;
+  // Fine as long as some one route contains everything selected.
+  const fits = REGION_ROUTES.some(route => sel.every(r => route.includes(r)));
+  const known = new Set(REGION_ROUTES.flat());
+  if (fits || sel.every(r => !known.has(r))) {
+    box.style.display = 'none';
+    if (popup) popup.classList.remove('show');
+    lastOverlapKey = null;
+    lastGoodRegions = new Set(selectedRegions);
+    return;
+  }
+
+  // Name the routes being mixed, so the fix is obvious.
+  const involved = REGION_ROUTES
+    .map((route, i) => [ROUTE_LABELS[i], sel.filter(r => r !== 'vast_forest' && route.includes(r))])
+    .filter(([, rs]) => rs.length);
+  const routeList = involved
+    .map(([name, rs]) => `<b>${name}:</b> ${rs.map(label).join(', ')}`).join('<br>');
+  const why = t('ovWhy');
+
+  box.style.display = '';
+  box.innerHTML =
+    `<b>${t('ovTitle')(involved.length)}</b><br>${routeList}<br>${why}` +
+    `<br><b>${t('ovTip')}</b> ${t('ovTipText')}`;
+
+  if (!popup) return;
+  const key = involved.map(([name, rs]) => name + ':' + rs.slice().sort().join(',')).join('|');
+  if (key === lastOverlapKey) return;   // same mix, already answered for
+  lastOverlapKey = key;
+  popup.innerHTML =
+    `<h5>${t('ovTitle')(involved.length)}</h5>` +
+    `<div class="routes">${routeList}</div>` +
+    `<div>${why} <b>${t('ovWarn')}</b></div>` +
+    `<div class="acts">` +
+      `<button class="primary" data-act="dismiss">${t('ovShow')}</button>` +
+      `<button data-act="reset">${lastGoodRegions && lastGoodRegions.size
+        ? t('ovUndo') + ' ' + [...lastGoodRegions].map(label).join(LANG === 'zh' ? '、' : ', ')
+        : t('ovOne')}</button>` +
+    `</div>`;
+  popup.classList.add('show');
+  popup.querySelector('[data-act="dismiss"]').onclick = () => popup.classList.remove('show');
+  popup.querySelector('[data-act="reset"]').onclick = () => {
+    popup.classList.remove('show');
+    if (lastGoodRegions && lastGoodRegions.size) {
+      selectedRegions.clear();
+      for (const r of lastGoodRegions) selectedRegions.add(r);
+      applySelection();
+    } else {
+      resetWorldLayers();
+    }
+  };
+}
+
+function resetWorldLayers() {
+  selectedRegions.clear();
+  selectedRegions.add(DEFAULT_WORLD_REGION);
+  applySelection();
+}
+
+// Wheel behaviour copied from the stitcher: swipe to pan, pinch or cmd-wheel
+// to zoom around the pointer, 1.08x per notch. Leaflet zoom levels are a log2
+// scale, so that factor is log2(1.08) of a level.
+const ZOOM_STEP = Math.log2(1.08);
+function setupStitcherStyleWheel() {
+  const el = leafletMap.getContainer();
+  el.addEventListener('wheel', e => {
+    e.preventDefault();
+    if (e.ctrlKey || e.metaKey) {
+      const at = leafletMap.containerPointToLatLng(leafletMap.mouseEventToContainerPoint(e));
+      const z = leafletMap.getZoom() + (e.deltaY < 0 ? ZOOM_STEP : -ZOOM_STEP);
+      leafletMap.setZoomAround(at, z, { animate: false });
+    } else {
+      leafletMap.panBy([e.deltaX, e.deltaY], { animate: false });
+    }
+  }, { passive: false });
+}
+
+// ─────────────────────────── Region / mode ───────────────────────────
+async function loadRegion(region) {
+  currentRegion = region;
+
+  const [metaRes, edgesRes, hlRes] = await Promise.all([
+    fetchData(`../data/${region}_maps.json`),
+    fetchData(`../data/${region}_edges.json`),
+    fetchData(`../data/${region}_highlights.json`).catch(() => null),
+  ]);
+  mapMeta = await metaRes.json();
+  edges = await edgesRes.json();
+  highlights = hlRes && hlRes.ok ? await hlRes.json() : { watermelons: [] };
+
+  // Per-map dropdown
+  const sel = document.getElementById('mapSelect');
+  sel.innerHTML = '';
+  const sortedIds = Object.keys(mapMeta).sort((a, b) => +a - +b);
+  for (const id of sortedIds) {
+    const opt = document.createElement('option');
+    opt.value = id; opt.textContent = `Map${id}: ${mapMeta[id].name}`;
+    sel.appendChild(opt);
+  }
+  // Variant dropdown for stitched mode
+  const vsel = document.getElementById('variantSelect');
+  vsel.innerHTML = '';
+  const variants = STITCHED_VARIANTS[region] || [];
+  for (const v of variants) {
+    const opt = document.createElement('option');
+    opt.value = v; opt.textContent = v || '(default)';
+    vsel.appendChild(opt);
+  }
+
+  if (currentMode === 'perMap') {
+    sel.value = REGION_DEFAULTS[region]?.firstMap || sortedIds[0];
+    loadMap(sel.value);
+  } else {
+    if (variants.length) loadStitched(region, variants[0]);
+    else {
+      clearLayers();
+      document.getElementById('mapInfo').textContent = `No stitched layout for ${region} yet — use the stitcher to make one.`;
+    }
+  }
+}
+
+function setMode(mode) {
+  currentMode = mode;
+  document.body.classList.toggle('stitched', mode === 'stitched');
+  document.body.classList.toggle('world', mode === 'world');
+  document.getElementById('modePerMap').classList.toggle('active', mode === 'perMap');
+  document.getElementById('modeStitched').classList.toggle('active', mode === 'stitched');
+  document.getElementById('modeWorld').classList.toggle('active', mode === 'world');
+  if (mode === 'world') loadWorld();
+  else loadRegion(currentRegion);
+}
+
+async function init() {
+  // First thing, and from inside init() rather than beside the table itself:
+  // applyLang() reads ALL_REGIONS and regionLabel, which are declared further
+  // down the file and would still be in the temporal dead zone up there.
+  applyLang();
+  leafletMap = L.map('map', {
+    crs: L.CRS.Simple, minZoom: -7, maxZoom: 3, attributionControl: false,
+    // Continuous zoom, and the wheel handled below rather than by Leaflet, so
+    // this behaves like the stitcher: a two-finger swipe pans and only a pinch
+    // or cmd-wheel zooms. Leaflet's default turns every swipe into a zoom,
+    // which fights you the moment the world is bigger than the screen.
+    zoomSnap: 0, zoomDelta: 0.25, scrollWheelZoom: false,
+  });
+  setupStitcherStyleWheel();
+  // Icon sizes are tied to the zoom, so they have to be rebuilt when it moves.
+  leafletMap.on('zoomend', () => renderMarkers());
+
+  // Both files cover the whole game rather than one region, so they load once
+  // and stay. A missing file just means those layers stay empty.
+  let pngManifest, names;
+  [collectibles, conveyors, pointSprites, melonArt, pngManifest, names] = await Promise.all([
+    fetchData('../data/collectibles.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetchData('../data/conveyors.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetchData('../data/point_sprites.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetchData('../data/melon_art.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetchData('../data/raw_pngs/manifest.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetchData('../data/names_zh.json').then(r => r.ok ? r.json() : null).catch(() => null),
+  ]);
+  pngVersion = pngManifest || {};
+  zhNames = (names || {}).names || {};
+  renderMarkerPanel();
+
+  document.getElementById('mapSelect').addEventListener('change', e => loadMap(e.target.value));
+  document.getElementById('regionSelect').addEventListener('change', e => loadRegion(e.target.value));
+  document.getElementById('variantSelect').addEventListener('change', e => loadStitched(currentRegion, e.target.value));
+  document.getElementById('modePerMap').addEventListener('click', () => setMode('perMap'));
+  document.getElementById('modeStitched').addEventListener('click', () => setMode('stitched'));
+  document.getElementById('modeWorld').addEventListener('click', () => setMode('world'));
+  document.getElementById('regionReset').addEventListener('click', resetWorldLayers);
+  document.getElementById('routeModeSel').addEventListener('change', e => {
+    routeMode = e.target.value;
+    renderMarkerPanel();
+    applySelection();
+  });
+  // The header button is a shortcut to the watermelon row in the marker panel;
+  // both drive the same flag, so they cannot disagree.
+  document.getElementById('clearCollected').addEventListener('click', () => {
+    if (!collected.size) return;
+    if (!confirm(LANG === 'zh' ? `清除全部 ${collected.size} 个已收集标记？`
+                               : `Clear all ${collected.size} collected marks?`)) return;
+    collected.clear(); saveCollected(); renderMarkers();
+  });
+  // Sliders — re-render route overlay on input (cheap, only the overlay layers)
+  const dot = document.getElementById('dotSize');
+  const line = document.getElementById('lineWidth');
+  dot.addEventListener('input', () => {
+    dotSize = +dot.value; document.getElementById('dotSizeVal').textContent = dotSize;
+    renderRoutesOverlay();
+  });
+  line.addEventListener('input', () => {
+    lineWidth = +line.value; document.getElementById('lineWidthVal').textContent = lineWidth;
+    renderRoutesOverlay();
+  });
+
+  const hash = location.hash.replace('#', '');
+  const region = REGION_DEFAULTS[hash] ? hash : 'faraway';
+  document.getElementById('regionSelect').value = region;
+  await loadRegion(region);
 }
 
 init();

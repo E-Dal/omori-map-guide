@@ -1,0 +1,88 @@
+{
+  "version": 2,
+  "layout": {
+    "165": {
+      "x": 3104,
+      "y": -5376,
+      "crop": "full",
+      "zOrder": 0
+    },
+    "166": {
+      "x": 2752,
+      "y": -3520,
+      "crop": "full",
+      "zOrder": 1
+    },
+    "167": {
+      "x": 2944,
+      "y": -4416,
+      "crop": "full",
+      "zOrder": 2
+    },
+    "335": {
+      "x": 3936,
+      "y": -3424,
+      "crop": "full",
+      "zOrder": 3
+    }
+  },
+  "routes": [
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 4144,
+          "y": -3536,
+          "snap": {
+            "mapId": 167,
+            "evId": 2,
+            "evName": "To Sprout Mole 2"
+          }
+        },
+        {
+          "x": 4496,
+          "y": -3408,
+          "snap": {
+            "mapId": 335,
+            "evId": 1,
+            "evName": "To Sprout Mole 2"
+          }
+        }
+      ]
+    }
+  ],
+  "maps": {
+    "165": {
+      "id": 165,
+      "name": "-- SPROUTMOLE TOWN 1",
+      "width": 33,
+      "height": 30,
+      "parallaxName": "Space_parallax",
+      "bgm": "sproutmole_colony"
+    },
+    "166": {
+      "id": 166,
+      "name": "-- SPROUTMOLE TOWN 2",
+      "width": 38,
+      "height": 44,
+      "parallaxName": null,
+      "bgm": null
+    },
+    "167": {
+      "id": 167,
+      "name": "-- SPROUTMOLE TOWN 3",
+      "width": 45,
+      "height": 28,
+      "parallaxName": null,
+      "bgm": "sproutmole_colony"
+    },
+    "335": {
+      "id": 335,
+      "name": "-- SPROUTMOLE TOWN 4",
+      "width": 28,
+      "height": 32,
+      "parallaxName": null,
+      "bgm": "sproutmole_colony"
+    }
+  }
+}

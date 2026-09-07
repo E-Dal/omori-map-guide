@@ -1,0 +1,709 @@
+{
+ "layout": {
+  "91": {
+   "x": 5280,
+   "y": -2528,
+   "crop": "full",
+   "zOrder": 55,
+   "groupId": "gmsig12n5"
+  },
+  "189": {
+   "x": 3936,
+   "y": -11104,
+   "crop": "full",
+   "zOrder": 61,
+   "groupId": "deep_well"
+  },
+  "190": {
+   "x": 5472,
+   "y": -10912,
+   "crop": "full",
+   "zOrder": 60,
+   "groupId": "deep_well"
+  },
+  "199": {
+   "x": -2752,
+   "y": -8448,
+   "crop": "full",
+   "zOrder": 67,
+   "groupId": "deep_well"
+  },
+  "200": {
+   "x": -2304,
+   "y": -8512,
+   "crop": "full",
+   "zOrder": -9,
+   "groupId": "deep_well"
+  },
+  "203": {
+   "x": -3904,
+   "y": -9248,
+   "crop": "full",
+   "zOrder": 66,
+   "groupId": "deep_well"
+  },
+  "204": {
+   "x": 32,
+   "y": -10464,
+   "crop": "full",
+   "zOrder": 126,
+   "groupId": "deep_well"
+  },
+  "205": {
+   "x": -1824,
+   "y": -11328,
+   "crop": "full",
+   "zOrder": 136,
+   "groupId": "deep_well"
+  },
+  "206": {
+   "x": -3840,
+   "y": -10496,
+   "crop": "full",
+   "zOrder": 130,
+   "groupId": "deep_well"
+  },
+  "207": {
+   "x": 960,
+   "y": -10656,
+   "crop": "full",
+   "zOrder": 128,
+   "groupId": "deep_well"
+  },
+  "208": {
+   "x": 5312,
+   "y": -6880,
+   "crop": "full",
+   "zOrder": 57,
+   "groupId": "deep_well"
+  },
+  "209": {
+   "x": 4576,
+   "y": -10048,
+   "crop": "full",
+   "zOrder": 149,
+   "groupId": "deep_well"
+  },
+  "211": {
+   "x": 1888,
+   "y": -10112,
+   "crop": "full",
+   "zOrder": 65,
+   "groupId": "deep_well"
+  },
+  "214": {
+   "x": -2176,
+   "y": -9824,
+   "crop": "full",
+   "zOrder": 93,
+   "groupId": "deep_well"
+  },
+  "260": {
+   "x": -896,
+   "y": -8640,
+   "crop": "full",
+   "zOrder": -11,
+   "groupId": "deep_well"
+  },
+  "261": {
+   "x": -1664,
+   "y": -11456,
+   "crop": "full",
+   "zOrder": 135,
+   "groupId": "deep_well"
+  },
+  "338": {
+   "x": 6432,
+   "y": -7008,
+   "crop": "full",
+   "zOrder": 110,
+   "groupId": "deep_well"
+  },
+  "339": {
+   "x": 4864,
+   "y": -5728,
+   "crop": "full",
+   "zOrder": 56,
+   "groupId": "gmsig12n5"
+  },
+  "359": {
+   "x": 4160,
+   "y": -4768,
+   "crop": "full",
+   "zOrder": 62,
+   "groupId": "deep_well"
+  },
+  "430": {
+   "x": 704,
+   "y": -8512,
+   "crop": "full",
+   "zOrder": -10,
+   "groupId": "deep_well"
+  },
+  "4211": {
+   "x": 6720,
+   "y": -5440,
+   "crop": "full",
+   "zOrder": 69,
+   "groupId": "deep_well"
+  },
+  "4212": {
+   "x": 6656,
+   "y": -5152,
+   "crop": "full",
+   "zOrder": 70,
+   "groupId": "deep_well"
+  }
+ },
+ "routes": [
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 4752,
+     "y": -4144,
+     "snap": {
+      "mapId": 359,
+      "evId": 920,
+      "evName": "Teleport",
+      "ox": 592,
+      "oy": 624
+     }
+    },
+    {
+     "x": 5072,
+     "y": -4144,
+     "snap": {
+      "mapId": 339,
+      "evId": 38,
+      "evName": "Teleport",
+      "ox": 208,
+      "oy": 1584
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 6832,
+     "y": -5200,
+     "snap": {
+      "mapId": 4211,
+      "evId": 3,
+      "evName": "Teleport",
+      "ox": 112,
+      "oy": 240
+     }
+    },
+    {
+     "x": 6832,
+     "y": -4880,
+     "snap": {
+      "mapId": 4212,
+      "evId": 2,
+      "evName": "Teleport",
+      "ox": 176,
+      "oy": 272
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 5872,
+     "y": -10576,
+     "snap": {
+      "mapId": 190,
+      "evId": 1,
+      "evName": "Teleport -- LADDER",
+      "ox": 400,
+      "oy": 336
+     }
+    },
+    {
+     "x": 4272,
+     "y": -11088,
+     "snap": {
+      "mapId": 189,
+      "evId": 1,
+      "evName": "Teleport -- WELL",
+      "ox": 336,
+      "oy": 16
+     }
+    }
+   ]
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": 5776,
+     "y": -2512,
+     "snap": {
+      "mapId": 91,
+      "evId": 2,
+      "evName": "To Main Currents",
+      "ox": 496,
+      "oy": 16
+     }
+    },
+    {
+     "x": 5776,
+     "y": -2544,
+     "snap": {
+      "mapId": 339,
+      "evId": 69,
+      "evName": "To North Lake",
+      "ox": 912,
+      "oy": 3184
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 6352,
+     "y": -5072,
+     "snap": {
+      "mapId": 339,
+      "evId": 47,
+      "evName": "Teleport",
+      "ox": 1488,
+      "oy": 656
+     }
+    },
+    {
+     "x": 6832,
+     "y": -4720,
+     "snap": {
+      "mapId": 4212,
+      "evId": 900,
+      "evName": "Exit stem (south)",
+      "ox": 176,
+      "oy": 432
+     }
+    }
+   ]
+  },
+  {
+   "color": "#22eebb",
+   "pts": [
+    {
+     "x": -176,
+     "y": -10640,
+     "snap": {
+      "mapId": 205,
+      "evId": 1,
+      "evName": "Teleport",
+      "ox": 1648,
+      "oy": 688
+     }
+    },
+    {
+     "x": 144,
+     "y": -9808,
+     "snap": {
+      "mapId": 204,
+      "evId": 15,
+      "evName": "To Underwater Highwya",
+      "ox": 112,
+      "oy": 656
+     }
+    }
+   ]
+  },
+  {
+   "color": "#eeaa44",
+   "pts": [
+    {
+     "x": -944,
+     "y": -9072,
+     "snap": {
+      "mapId": 203,
+      "evId": 15,
+      "evName": "To Underwater Highwya",
+      "ox": 2960,
+      "oy": 176
+     }
+    },
+    {
+     "x": -496,
+     "y": -9680,
+     "snap": {
+      "mapId": 205,
+      "evId": 2,
+      "evName": "Teleport",
+      "ox": 1328,
+      "oy": 1648
+     }
+    }
+   ]
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": -2896,
+     "y": -9232,
+     "snap": {
+      "mapId": 203,
+      "evId": 14,
+      "evName": "To Construction",
+      "ox": 1008,
+      "oy": 16
+     }
+    },
+    {
+     "x": -2576,
+     "y": -9328,
+     "snap": {
+      "mapId": 206,
+      "evId": 1,
+      "evName": "Teleport",
+      "ox": 1264,
+      "oy": 1168
+     }
+    }
+   ]
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": 1520,
+     "y": -9520,
+     "snap": {
+      "mapId": 204,
+      "evId": 16,
+      "evName": "To Pearl Cave",
+      "ox": 1488,
+      "oy": 944
+     }
+    },
+    {
+     "x": 1328,
+     "y": -10032,
+     "snap": {
+      "mapId": 207,
+      "evId": 1,
+      "evName": "To Construction",
+      "ox": 368,
+      "oy": 624
+     }
+    }
+   ]
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": 5744,
+     "y": -6864,
+     "snap": {
+      "mapId": 208,
+      "evId": 2,
+      "evName": "Teleport",
+      "ox": 432,
+      "oy": 16
+     }
+    },
+    {
+     "x": 5744,
+     "y": -7024,
+     "snap": {
+      "mapId": 209,
+      "evId": 8,
+      "evName": "Teleport",
+      "ox": 1168,
+      "oy": 3024
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": 2256,
+     "y": -9072,
+     "snap": {
+      "mapId": 211,
+      "evId": 3,
+      "evName": "Teleport",
+      "ox": 368,
+      "oy": 1040
+     }
+    },
+    {
+     "x": 4208,
+     "y": -7216,
+     "snap": {
+      "mapId": 189,
+      "evId": 2,
+      "evName": "Teleport -- to Deep Reef",
+      "ox": 272,
+      "oy": 3888
+     }
+    }
+   ]
+  },
+  {
+   "color": "#22eebb",
+   "pts": [
+    {
+     "x": -2096,
+     "y": -9040,
+     "snap": {
+      "mapId": 203,
+      "evId": 12,
+      "evName": "Teleport",
+      "ox": 1808,
+      "oy": 208
+     }
+    },
+    {
+     "x": -1680,
+     "y": -9296,
+     "snap": {
+      "mapId": 214,
+      "evId": 1,
+      "evName": "Teleport",
+      "ox": 496,
+      "oy": 528
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": -2288,
+     "y": -8112,
+     "snap": {
+      "mapId": 199,
+      "evId": 2,
+      "evName": "Teleport",
+      "ox": 464,
+      "oy": 336
+     }
+    },
+    {
+     "x": -1808,
+     "y": -7760,
+     "snap": {
+      "mapId": 200,
+      "evId": 1,
+      "evName": "Teleport",
+      "ox": 496,
+      "oy": 752
+     }
+    }
+   ],
+   "kind": "two"
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": -2352,
+     "y": -10064,
+     "snap": {
+      "mapId": 206,
+      "evId": 3,
+      "evName": "To Puzzle Cave",
+      "ox": 1488,
+      "oy": 432
+     }
+    },
+    {
+     "x": -1712,
+     "y": -10672,
+     "snap": {
+      "mapId": 205,
+      "evId": 3,
+      "evName": "To Broken Bridge",
+      "ox": 112,
+      "oy": 656
+     }
+    }
+   ],
+   "kind": "two"
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": -400,
+     "y": -8080,
+     "snap": {
+      "mapId": 260,
+      "evId": 1,
+      "evName": "To Underwater Highwya",
+      "ox": 496,
+      "oy": 560
+     }
+    },
+    {
+     "x": -368,
+     "y": -8720,
+     "snap": {
+      "mapId": 203,
+      "evId": 28,
+      "evName": "To Fishboy's Cave",
+      "ox": 3536,
+      "oy": 528
+     }
+    }
+   ],
+   "kind": "two"
+  },
+  {
+   "color": "#ffcc33",
+   "pts": [
+    {
+     "x": 720,
+     "y": -7888,
+     "snap": {
+      "mapId": 430,
+      "evId": 4,
+      "evName": "Teleport",
+      "ox": 16,
+      "oy": 624
+     }
+    },
+    {
+     "x": 3760,
+     "y": -7888,
+     "snap": {
+      "mapId": 430,
+      "evId": 3,
+      "evName": "Teleport",
+      "ox": 3056,
+      "oy": 624
+     }
+    }
+   ],
+   "kind": "loop",
+   "solid": true
+  },
+  {
+   "color": "#eeaa44",
+   "pts": [
+    {
+     "x": 2640,
+     "y": -8848,
+     "snap": {
+      "mapId": 211,
+      "evId": 2,
+      "evName": "Teleport",
+      "ox": 752,
+      "oy": 1264
+     }
+    },
+    {
+     "x": 720,
+     "y": -7856,
+     "snap": {
+      "mapId": 430,
+      "evId": 4,
+      "evName": "Teleport",
+      "ox": 16,
+      "oy": 656
+     }
+    }
+   ],
+   "kind": "one"
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": 1904,
+     "y": -8848,
+     "snap": {
+      "mapId": 211,
+      "evId": 4,
+      "evName": "Teleport",
+      "ox": 16,
+      "oy": 1264
+     }
+    },
+    {
+     "x": 3760,
+     "y": -7856,
+     "snap": {
+      "mapId": 430,
+      "evId": 3,
+      "evName": "Teleport",
+      "ox": 3056,
+      "oy": 656
+     }
+    }
+   ],
+   "kind": "one"
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 976,
+     "y": -7920,
+     "snap": {
+      "mapId": 430,
+      "evId": 1,
+      "evName": "LAST RESORT",
+      "ox": 272,
+      "oy": 592
+     }
+    },
+    {
+     "x": 2576,
+     "y": -8784,
+     "snap": {
+      "mapId": 211,
+      "evId": 1,
+      "evName": "LAST RESORT",
+      "ox": 688,
+      "oy": 1328
+     }
+    }
+   ],
+   "kind": "one"
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": 5328,
+     "y": -6192,
+     "snap": {
+      "mapId": 208,
+      "evId": 9,
+      "evName": "Teleport",
+      "ox": 16,
+      "oy": 688
+     }
+    },
+    {
+     "x": 11216,
+     "y": -6192,
+     "snap": {
+      "mapId": 338,
+      "evId": 13,
+      "evName": "Teleport",
+      "ox": 4784,
+      "oy": 816
+     }
+    }
+   ],
+   "kind": "loop"
+  }
+ ]
+}

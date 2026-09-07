@@ -1,0 +1,106 @@
+{
+  "version": 2,
+  "layout": {
+    "172": {
+      "x": 864,
+      "y": -64,
+      "crop": "full",
+      "zOrder": 5
+    },
+    "173": {
+      "x": -928,
+      "y": 512,
+      "crop": "full",
+      "zOrder": 0
+    },
+    "176": {
+      "x": -352,
+      "y": -1024,
+      "crop": "full",
+      "zOrder": 2
+    },
+    "177": {
+      "x": 3264,
+      "y": 512,
+      "crop": "full",
+      "zOrder": 1
+    },
+    "180": {
+      "x": 1440,
+      "y": -448,
+      "crop": "full",
+      "zOrder": 3
+    },
+    "181": {
+      "x": 608,
+      "y": -1248,
+      "crop": "full",
+      "zOrder": 6
+    },
+    "186": {
+      "x": 544,
+      "y": -2368,
+      "crop": "full",
+      "zOrder": 7
+    }
+  },
+  "routes": [],
+  "maps": {
+    "172": {
+      "id": 172,
+      "name": "-- FOYER",
+      "width": 75,
+      "height": 50,
+      "parallaxName": "Space_parallax",
+      "bgm": "sw_castle"
+    },
+    "173": {
+      "id": 173,
+      "name": "-- LEFT HALL",
+      "width": 58,
+      "height": 35,
+      "parallaxName": "Space_parallax",
+      "bgm": "sw_castle"
+    },
+    "176": {
+      "id": 176,
+      "name": "-- LIBRARY (GUEST LIST)",
+      "width": 25,
+      "height": 50,
+      "parallaxName": "Space_parallax",
+      "bgm": "sw_room"
+    },
+    "177": {
+      "id": 177,
+      "name": "-- RIGHT HALL",
+      "width": 57,
+      "height": 32,
+      "parallaxName": "Space_parallax",
+      "bgm": null
+    },
+    "180": {
+      "id": 180,
+      "name": "-- SERVANT'S QUARTER",
+      "width": 33,
+      "height": 35,
+      "parallaxName": "Space_parallax",
+      "bgm": "sw_room"
+    },
+    "181": {
+      "id": 181,
+      "name": "-- PATH TO BEDROOM",
+      "width": 25,
+      "height": 44,
+      "parallaxName": "Space_parallax",
+      "bgm": "sw_castle"
+    },
+    "186": {
+      "id": 186,
+      "name": "-- BEDROOM",
+      "width": 28,
+      "height": 36,
+      "parallaxName": "Space_parallax",
+      "bgm": "sw_room"
+    }
+  }
+}

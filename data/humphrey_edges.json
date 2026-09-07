@@ -1,0 +1,2734 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 218,
+        "evId": 2,
+        "evName": "Battle",
+        "x": 16,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 217,
+        "x": 8,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 219,
+        "evId": 1,
+        "evName": "To Marina Entryway",
+        "x": 14,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 220,
+        "x": 15,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 219,
+        "evId": 2,
+        "evName": "To Marina Entryway",
+        "x": 28,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 228,
+        "x": 1,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 219,
+        "evId": 18,
+        "evName": "elevator full",
+        "x": 15,
+        "y": 16,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 249,
+        "x": 14,
+        "y": 81
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 219,
+        "evId": 20,
+        "evName": "To Medusa Boss",
+        "x": 18,
+        "y": 16,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 234,
+        "x": 8,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 219,
+        "evId": 21,
+        "evName": "To Marina Boss",
+        "x": 15,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 227,
+        "x": 10,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 219,
+        "evId": 22,
+        "evName": "To Molly Boss",
+        "x": 12,
+        "y": 16,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 248,
+        "x": 23,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 219,
+        "evId": 24,
+        "evName": "To Marina Entryway",
+        "x": 2,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 235,
+        "x": 47,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 220,
+        "evId": 1,
+        "evName": "To Tongue",
+        "x": 14,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 15,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 220,
+        "evId": 2,
+        "evName": "To Marina Room 1",
+        "x": 15,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 221,
+        "x": 16,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 221,
+        "evId": 1,
+        "evName": "To Entry",
+        "x": 16,
+        "y": 36,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 220,
+        "x": 15,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 221,
+        "evId": 2,
+        "evName": "To Marina Room 2",
+        "x": 16,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 222,
+        "x": 7,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 222,
+        "evId": 1,
+        "evName": "To Marina Room 1",
+        "x": 7,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 221,
+        "x": 16,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 222,
+        "evId": 2,
+        "evName": "To Marina ROom 3",
+        "x": 40,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 223,
+        "x": 1,
+        "y": 41
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 223,
+        "evId": 1,
+        "evName": "To Marina Room 4",
+        "x": 38,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 224,
+        "x": 37,
+        "y": 36
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 223,
+        "evId": 2,
+        "evName": "To Marina Room 2",
+        "x": 0,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 222,
+        "x": 39,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 223,
+        "evId": 54,
+        "evName": "Face Wall",
+        "x": 44,
+        "y": 21,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 437,
+        "x": 53,
+        "y": 58
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 224,
+        "evId": 1,
+        "evName": "To Marina Room 3",
+        "x": 37,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 223,
+        "x": 38,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 224,
+        "evId": 2,
+        "evName": "To Marina Maze",
+        "x": 8,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 225,
+        "x": 21,
+        "y": 74
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 224,
+        "evId": 2,
+        "evName": "To Marina Maze",
+        "x": 8,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 225,
+        "x": 21,
+        "y": 73
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 225,
+        "evId": 1,
+        "evName": "To Marina Room 4",
+        "x": 20,
+        "y": 74,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 224,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 225,
+        "evId": 1,
+        "evName": "To Marina Room 4",
+        "x": 20,
+        "y": 74,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 224,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 225,
+        "evId": 2,
+        "evName": "To Marina Hall to Boss",
+        "x": 24,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 226,
+        "x": 14,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 225,
+        "evId": 2,
+        "evName": "To Marina Hall to Boss",
+        "x": 24,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 226,
+        "x": 14,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 225,
+        "evId": 21,
+        "evName": "chimera",
+        "x": 21,
+        "y": 45,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 224,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 225,
+        "evId": 21,
+        "evName": "chimera",
+        "x": 21,
+        "y": 45,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 225,
+        "x": 21,
+        "y": 48
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 226,
+        "evId": 1,
+        "evName": "To Marina Maze",
+        "x": 13,
+        "y": 34,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 225,
+        "x": 25,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 226,
+        "evId": 2,
+        "evName": "To Marina Boss",
+        "x": 14,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 227,
+        "x": 9,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 227,
+        "evId": 1,
+        "evName": "To Marina Hall to Boss",
+        "x": 9,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 226,
+        "x": 14,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 227,
+        "evId": 2,
+        "evName": "vent",
+        "x": 10,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 15,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 227,
+        "evId": 10,
+        "evName": "Humphrey Boss Room",
+        "x": 18,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 249,
+        "x": 14,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 228,
+        "evId": 1,
+        "evName": "To SG Entrance",
+        "x": 0,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 27,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 228,
+        "evId": 2,
+        "evName": "To Medusa Maze 1",
+        "x": 77,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 250,
+        "x": 0,
+        "y": 63
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 229,
+        "evId": 2,
+        "evName": "To Medusa River 3",
+        "x": 0,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 233,
+        "x": 21,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 229,
+        "evId": 23,
+        "evName": "To Medusa Water Slide",
+        "x": 38,
+        "y": 24,
+        "page": 1,
+        "hitbox": {
+          "L": 1,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 230,
+        "x": 24,
+        "y": 2
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 230,
+        "evId": 1,
+        "evName": "To Medusa Room to Boss",
+        "x": 14,
+        "y": 64,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 231,
+        "x": 14,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 230,
+        "evId": 2,
+        "evName": "To Medusa Room to Boss",
+        "x": 17,
+        "y": 64,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 231,
+        "x": 18,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 230,
+        "evId": 3,
+        "evName": "To Medusa Room to Boss",
+        "x": 22,
+        "y": 64,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 231,
+        "x": 22,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 230,
+        "evId": 4,
+        "evName": "To Medusa Room to Boss",
+        "x": 25,
+        "y": 64,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 231,
+        "x": 26,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 231,
+        "evId": 1,
+        "evName": "To Medusa Boss",
+        "x": 45,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 234,
+        "x": 7,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 231,
+        "evId": 2,
+        "evName": "To Medusa River 4",
+        "x": 4,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 229,
+        "x": 8,
+        "y": 34
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 232,
+        "evId": 1,
+        "evName": "To Medusa Maze 2",
+        "x": 8,
+        "y": 49,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 250,
+        "x": 63,
+        "y": 34
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 232,
+        "evId": 2,
+        "evName": "To Medusa River 3",
+        "x": 3,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 233,
+        "x": 5,
+        "y": 48
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 232,
+        "evId": 3,
+        "evName": "To Medusa River 3",
+        "x": 12,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 233,
+        "x": 15,
+        "y": 48
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 233,
+        "evId": 1,
+        "evName": "To Medusa River 2",
+        "x": 3,
+        "y": 49,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 232,
+        "x": 5,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 233,
+        "evId": 2,
+        "evName": "To Medusa River 2",
+        "x": 11,
+        "y": 49,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 7,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 232,
+        "x": 14,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 233,
+        "evId": 3,
+        "evName": "To Medusa River 4",
+        "x": 21,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 229,
+        "x": 1,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 234,
+        "evId": 1,
+        "evName": "To Marina Entryway",
+        "x": 7,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 231,
+        "x": 45,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 234,
+        "evId": 2,
+        "evName": "vent",
+        "x": 8,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 18,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 234,
+        "evId": 12,
+        "evName": "Humphrey Boss Room",
+        "x": 19,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 249,
+        "x": 25,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 235,
+        "evId": 1,
+        "evName": "Molly Entrance",
+        "x": 16,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 235,
+        "x": 6,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 235,
+        "evId": 2,
+        "evName": "To Marina Entryway",
+        "x": 6,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 17,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 235,
+        "evId": 2,
+        "evName": "To Marina Entryway",
+        "x": 6,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 17,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 235,
+        "evId": 4,
+        "evName": "Molly Entrance",
+        "x": 6,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 235,
+        "x": 16,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 235,
+        "evId": 16,
+        "evName": "To Marina Entryway",
+        "x": 48,
+        "y": 18,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 3,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 1,
+        "evName": "To Marina Entryway",
+        "x": 17,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 235,
+        "x": 6,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 2,
+        "evName": "To Molly Room Right 1",
+        "x": 5,
+        "y": 40,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 237,
+        "x": 2,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 2,
+        "evName": "To Molly Room Right 1",
+        "x": 5,
+        "y": 40,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 237,
+        "x": 2,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 3,
+        "evName": "To Molly Room Left 2",
+        "x": 15,
+        "y": 40,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 240,
+        "x": 5,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 3,
+        "evName": "To Molly Room Left 2",
+        "x": 15,
+        "y": 40,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 240,
+        "x": 5,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 4,
+        "evName": "To Molly Lost Room 1",
+        "x": 10,
+        "y": 40,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 4,
+        "evName": "To Molly Lost Room 1",
+        "x": 10,
+        "y": 40,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 6,
+        "evName": "bombcollision",
+        "x": 10,
+        "y": 15,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 24,
+        "evName": "redwire",
+        "x": 8,
+        "y": 22,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 25,
+        "evName": "bluewire",
+        "x": 9,
+        "y": 22,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 26,
+        "evName": "whitewire",
+        "x": 11,
+        "y": 22,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 27,
+        "evName": "greenwire",
+        "x": 12,
+        "y": 22,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 29,
+        "evName": "To Molly Boss Room",
+        "x": 10,
+        "y": 8,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 248,
+        "x": 24,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 236,
+        "evId": 48,
+        "evName": "To Molly Main Room",
+        "x": 3,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 244,
+        "x": 3,
+        "y": 2
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 237,
+        "evId": 1,
+        "evName": "To Marina Entryway",
+        "x": 2,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 5,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 237,
+        "evId": 2,
+        "evName": "To Marina Entryway",
+        "x": 26,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 238,
+        "x": 1,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 238,
+        "evId": 1,
+        "evName": "To Marina Entryway",
+        "x": 0,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 237,
+        "x": 25,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 238,
+        "evId": 2,
+        "evName": "To Molly Main Room",
+        "x": 74,
+        "y": 26,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 5,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 238,
+        "evId": 5,
+        "evName": "puzzle3",
+        "x": 47,
+        "y": 23,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 238,
+        "x": 47,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 238,
+        "evId": 8,
+        "evName": "To Molly Main Room",
+        "x": 11,
+        "y": 18,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 238,
+        "x": 11,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 238,
+        "evId": 9,
+        "evName": "To Molly Main Room",
+        "x": 11,
+        "y": 8,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 238,
+        "x": 11,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 239,
+        "evId": 1,
+        "evName": "To Molly Main Room",
+        "x": 6,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 240,
+        "x": 5,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 239,
+        "evId": 2,
+        "evName": "Molly Room Left 1",
+        "x": 23,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 240,
+        "x": 37,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 239,
+        "evId": 3,
+        "evName": "To Marina Entryway",
+        "x": 6,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 240,
+        "x": 23,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 239,
+        "evId": 4,
+        "evName": "Molly Room Left 1",
+        "x": 2,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 15,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 239,
+        "evId": 129,
+        "evName": "Face Wall",
+        "x": 4,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 437,
+        "x": 53,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 240,
+        "evId": 1,
+        "evName": "Molly Room Left 2",
+        "x": 34,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 240,
+        "x": 5,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 240,
+        "evId": 2,
+        "evName": "To Molly Room Left 1",
+        "x": 23,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 239,
+        "x": 6,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 240,
+        "evId": 3,
+        "evName": "To Molly Main Room",
+        "x": 5,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 15,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 240,
+        "evId": 24,
+        "evName": "Molly Room Left 2",
+        "x": 37,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 239,
+        "x": 23,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 240,
+        "evId": 28,
+        "evName": "Molly Room Left 2",
+        "x": 7,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 240,
+        "x": 26,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 240,
+        "evId": 84,
+        "evName": "Molly Room Left 2",
+        "x": 5,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 239,
+        "x": 6,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 240,
+        "evId": 87,
+        "evName": "Molly Room Left 2",
+        "x": 26,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 240,
+        "x": 7,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 241,
+        "evId": 1,
+        "evName": "BACK TO MOLLY ROOM 1",
+        "x": 10,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 241,
+        "evId": 2,
+        "evName": "CORRECT TELEPORT",
+        "x": 10,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 243,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 241,
+        "evId": 3,
+        "evName": "BACK TO BEGINNING",
+        "x": 3,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 241,
+        "evId": 4,
+        "evName": "BACK TO BEGINNING",
+        "x": 17,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 243,
+        "evId": 1,
+        "evName": "BACK TO MOLLY ROOM 1",
+        "x": 10,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 243,
+        "evId": 2,
+        "evName": "BACK TO BEGINNING",
+        "x": 3,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 243,
+        "evId": 3,
+        "evName": "CORRECT PATH",
+        "x": 17,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 245,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 243,
+        "evId": 4,
+        "evName": "BACK TO BEGINNING",
+        "x": 10,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 244,
+        "evId": 1,
+        "evName": "TO BOSS RUSH BATTLE",
+        "x": 35,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 242,
+        "x": 10,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 244,
+        "evId": 18,
+        "evName": "To Molly Main Room",
+        "x": 3,
+        "y": 11,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 3,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 245,
+        "evId": 1,
+        "evName": "BACK TO MOLLY ROOM 1",
+        "x": 10,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 245,
+        "evId": 2,
+        "evName": "BACK TO BEGINNING",
+        "x": 17,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 245,
+        "evId": 3,
+        "evName": "CORRECT PATH",
+        "x": 3,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 247,
+        "x": 10,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 245,
+        "evId": 6,
+        "evName": "BACK TO BEGINNING",
+        "x": 10,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 247,
+        "evId": 1,
+        "evName": "BACK TO MOLLY ROOM 1",
+        "x": 10,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 247,
+        "evId": 2,
+        "evName": "Return",
+        "x": 10,
+        "y": 18,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 241,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 248,
+        "evId": 1,
+        "evName": "To main room",
+        "x": 24,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 236,
+        "x": 10,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 248,
+        "evId": 2,
+        "evName": "vent",
+        "x": 23,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 12,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 248,
+        "evId": 11,
+        "evName": "Humphrey Boss Room",
+        "x": 12,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 249,
+        "x": 3,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 249,
+        "evId": 1,
+        "evName": "elevator",
+        "x": 14,
+        "y": 81,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 15,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 249,
+        "evId": 21,
+        "evName": "Tumor Control",
+        "x": 12,
+        "y": 75,
+        "page": 9,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 218,
+        "x": 17,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 249,
+        "evId": 50,
+        "evName": "Molly's Room",
+        "x": 3,
+        "y": 17,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 248,
+        "x": 12,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 249,
+        "evId": 51,
+        "evName": "Marina's Room",
+        "x": 14,
+        "y": 7,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 227,
+        "x": 18,
+        "y": 21
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 249,
+        "evId": 52,
+        "evName": "Medusa's Room",
+        "x": 25,
+        "y": 17,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 234,
+        "x": 19,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 250,
+        "evId": 1,
+        "evName": "To Medusa Entryway",
+        "x": 0,
+        "y": 62,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 228,
+        "x": 77,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 250,
+        "evId": 2,
+        "evName": "To Medusa Maze 2",
+        "x": 44,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 251,
+        "x": 29,
+        "y": 47
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 250,
+        "evId": 20,
+        "evName": "To Medusa River 2",
+        "x": 61,
+        "y": 31,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 232,
+        "x": 10,
+        "y": 48
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 251,
+        "evId": 1,
+        "evName": "To Medusa Maze 1",
+        "x": 29,
+        "y": 48,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 7,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 250,
+        "x": 44,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 251,
+        "evId": 38,
+        "evName": "Face Wall",
+        "x": 35,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 437,
+        "x": 53,
+        "y": 36
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 2,
+        "evName": "To Molly Left 1",
+        "x": 53,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 239,
+        "x": 4,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 3,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 251,
+        "x": 35,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 4,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 59,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 223,
+        "x": 44,
+        "y": 22
+      },
+      "kind": "setValue"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 217,
+        "evId": 1,
+        "evName": "HUMPHREY SPIT",
+        "x": 8,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 216,
+        "x": 10,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 219,
+        "evId": 4,
+        "evName": "To Humphrey Cave",
+        "x": 14,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 216,
+        "x": 9,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 1,
+        "evName": "To Frozen Forest",
+        "x": 8,
+        "y": 38,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 136,
+        "x": 14,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 9,
+        "evName": "To Orange Oasis",
+        "x": 6,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 78,
+        "y": 59
+      },
+      "kind": "setValue"
+    }
+  ]
+}

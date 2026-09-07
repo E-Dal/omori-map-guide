@@ -1,0 +1,336 @@
+{
+ "layout": {
+  "89": {
+   "x": 5408,
+   "y": -64,
+   "crop": "full",
+   "zOrder": 12,
+   "groupId": "vast_forest"
+  },
+  "90": {
+   "x": 5440,
+   "y": -1888,
+   "crop": "full",
+   "zOrder": 53,
+   "groupId": "vast_forest"
+  },
+  "92": {
+   "x": 5024,
+   "y": 704,
+   "crop": "full",
+   "zOrder": 40,
+   "groupId": "forest_playground"
+  },
+  "95": {
+   "x": 4960,
+   "y": 2176,
+   "crop": "full",
+   "zOrder": 0,
+   "groupId": "vast_forest"
+  },
+  "96": {
+   "x": 5408,
+   "y": 4736,
+   "crop": "full",
+   "zOrder": 1,
+   "groupId": "vast_forest"
+  },
+  "97": {
+   "x": 6208,
+   "y": 5760,
+   "crop": "full",
+   "zOrder": 49,
+   "groupId": "vast_forest"
+  },
+  "99": {
+   "x": 6560,
+   "y": 1184,
+   "crop": "full",
+   "zOrder": 6,
+   "groupId": "vast_forest"
+  },
+  "100": {
+   "x": 8640,
+   "y": -1376,
+   "crop": "full",
+   "zOrder": 10,
+   "groupId": "vast_forest"
+  },
+  "101": {
+   "x": 10304,
+   "y": 1984,
+   "crop": "full",
+   "zOrder": 8,
+   "groupId": "vast_forest"
+  },
+  "102": {
+   "x": 1216,
+   "y": 1792,
+   "crop": "full",
+   "zOrder": 3,
+   "groupId": "vast_forest"
+  },
+  "103": {
+   "x": 2176,
+   "y": 992,
+   "crop": "full",
+   "zOrder": 4,
+   "groupId": "vast_forest"
+  },
+  "104": {
+   "x": 9344,
+   "y": 1984,
+   "crop": "full",
+   "zOrder": 5,
+   "groupId": "vast_forest"
+  },
+  "105": {
+   "x": 2304,
+   "y": -512,
+   "crop": "full",
+   "zOrder": 41,
+   "groupId": "vast_forest"
+  },
+  "326": {
+   "x": 12096,
+   "y": 704,
+   "crop": "full",
+   "zOrder": 9,
+   "groupId": "vast_forest"
+  },
+  "327": {
+   "x": 2272,
+   "y": -1184,
+   "crop": "full",
+   "zOrder": 11,
+   "groupId": "vast_forest"
+  },
+  "981": {
+   "x": 6432,
+   "y": 5312,
+   "crop": "full",
+   "zOrder": 81,
+   "groupId": "vast_forest"
+  },
+  "4261": {
+   "x": 9376,
+   "y": 1536,
+   "crop": "full",
+   "zOrder": 84,
+   "groupId": "vast_forest"
+  },
+  "4262": {
+   "x": 7776,
+   "y": 640,
+   "crop": "full",
+   "zOrder": 82,
+   "groupId": "vast_forest"
+  },
+  "4263": {
+   "x": 1920,
+   "y": 2464,
+   "crop": "full",
+   "zOrder": 83,
+   "groupId": "vast_forest"
+  },
+  "4264": {
+   "x": 1632,
+   "y": 1344,
+   "crop": "full",
+   "zOrder": 97,
+   "groupId": "vast_forest"
+  }
+ },
+ "routes": [
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 5744,
+     "y": 6832,
+     "snap": {
+      "mapId": 96,
+      "evId": 2,
+      "evName": "Old Shoe Entrance",
+      "ox": 336,
+      "oy": 2096
+     }
+    },
+    {
+     "x": 6544,
+     "y": 6800,
+     "snap": {
+      "mapId": 97,
+      "evId": 13,
+      "evName": "South",
+      "ox": 336,
+      "oy": 1040
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 7056,
+     "y": 1584,
+     "snap": {
+      "mapId": 99,
+      "evId": 15,
+      "evName": "Forest Alcoves: 426",
+      "ox": 496,
+      "oy": 400
+     }
+    },
+    {
+     "x": 7888,
+     "y": 1040,
+     "snap": {
+      "mapId": 4262,
+      "evId": 900,
+      "evName": "Path stem (south)",
+      "ox": 112,
+      "oy": 400
+     }
+    }
+   ]
+  },
+  {
+   "color": "#eeaa44",
+   "pts": [
+    {
+     "x": 1744,
+     "y": 1872,
+     "snap": {
+      "mapId": 102,
+      "evId": 5,
+      "evName": "Forest Alcoves: 426",
+      "ox": 528,
+      "oy": 80
+     }
+    },
+    {
+     "x": 1744,
+     "y": 1744,
+     "snap": {
+      "mapId": 4264,
+      "evId": 900,
+      "evName": "Exit stem (south)",
+      "ox": 112,
+      "oy": 400
+     }
+    }
+   ]
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": 6576,
+     "y": 5712,
+     "snap": {
+      "mapId": 981,
+      "evId": 900,
+      "evName": "Door (south)",
+      "ox": 144,
+      "oy": 400
+     }
+    },
+    {
+     "x": 6576,
+     "y": 6128,
+     "snap": {
+      "mapId": 97,
+      "evId": 12,
+      "evName": "BASIL",
+      "ox": 368,
+      "oy": 368
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 9040,
+     "y": 2000,
+     "snap": {
+      "mapId": 99,
+      "evId": 16,
+      "evName": "Forest Alcoves: 426",
+      "ox": 2480,
+      "oy": 816
+     }
+    },
+    {
+     "x": 9424,
+     "y": 1936,
+     "snap": {
+      "mapId": 4261,
+      "evId": 900,
+      "evName": "Exit stem (south)",
+      "ox": 48,
+      "oy": 400
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 2032,
+     "y": 3056,
+     "snap": {
+      "mapId": 4263,
+      "evId": 900,
+      "evName": "Exit stem (south)",
+      "ox": 112,
+      "oy": 592
+     }
+    },
+    {
+     "x": 2704,
+     "y": 2384,
+     "snap": {
+      "mapId": 103,
+      "evId": 15,
+      "evName": "Forest Alcoves: 426",
+      "ox": 528,
+      "oy": 1392
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff7733",
+   "pts": [
+    {
+     "x": 1232,
+     "y": 2160,
+     "snap": {
+      "mapId": 102,
+      "evId": 2,
+      "evName": "Bridge",
+      "ox": 16,
+      "oy": 368
+     }
+    },
+    {
+     "x": 15088,
+     "y": 2352,
+     "snap": {
+      "mapId": 101,
+      "evId": 2,
+      "evName": "Bridge",
+      "ox": 4784,
+      "oy": 368
+     }
+    }
+   ],
+   "kind": "loop"
+  }
+ ]
+}

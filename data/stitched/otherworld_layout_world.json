@@ -1,0 +1,411 @@
+{
+ "layout": {
+  "117": {
+   "x": 6080,
+   "y": -800,
+   "crop": "full",
+   "zOrder": 106,
+   "groupId": "otherworld"
+  },
+  "118": {
+   "x": 6720,
+   "y": -7584,
+   "crop": "full",
+   "zOrder": 4,
+   "groupId": "otherworld"
+  },
+  "119": {
+   "x": 3424,
+   "y": -8672,
+   "crop": "full",
+   "zOrder": 5,
+   "groupId": "otherworld"
+  },
+  "120": {
+   "x": 6304,
+   "y": -7168,
+   "crop": "full",
+   "zOrder": 2,
+   "groupId": "otherworld"
+  },
+  "121": {
+   "x": 4704,
+   "y": -7168,
+   "crop": "full",
+   "zOrder": 3,
+   "groupId": "otherworld"
+  },
+  "123": {
+   "x": 9728,
+   "y": -9536,
+   "crop": "full",
+   "zOrder": 9,
+   "groupId": "otherworld"
+  },
+  "124": {
+   "x": 6592,
+   "y": -9888,
+   "crop": "full",
+   "zOrder": 6,
+   "groupId": "otherworld"
+  },
+  "126": {
+   "x": 6560,
+   "y": -10976,
+   "crop": "full",
+   "zOrder": 47,
+   "groupId": "otherworld"
+  },
+  "129": {
+   "x": 7680,
+   "y": -9632,
+   "crop": "full",
+   "zOrder": 7,
+   "groupId": "otherworld"
+  },
+  "130": {
+   "x": 8864,
+   "y": -10176,
+   "crop": "full",
+   "zOrder": 52,
+   "groupId": "otherworld"
+  },
+  "131": {
+   "x": 10592,
+   "y": -8000,
+   "crop": "full",
+   "zOrder": 10,
+   "groupId": "otherworld"
+  },
+  "325": {
+   "x": 6656,
+   "y": -4608,
+   "crop": "full",
+   "zOrder": 1,
+   "groupId": "otherworld"
+  },
+  "329": {
+   "x": 2752,
+   "y": -8032,
+   "crop": "full",
+   "zOrder": 95,
+   "groupId": "otherworld"
+  },
+  "331": {
+   "x": 9696,
+   "y": -8000,
+   "crop": "full",
+   "zOrder": 8,
+   "groupId": "otherworld"
+  },
+  "348": {
+   "x": 9792,
+   "y": -10112,
+   "crop": "full",
+   "zOrder": 85,
+   "groupId": "otherworld"
+  },
+  "1251": {
+   "x": 5760,
+   "y": -9600,
+   "crop": "full",
+   "zOrder": 75,
+   "groupId": "otherworld"
+  },
+  "1252": {
+   "x": 6176,
+   "y": -9056,
+   "crop": "full",
+   "zOrder": 74,
+   "groupId": "otherworld"
+  },
+  "1253": {
+   "x": 5760,
+   "y": -9120,
+   "crop": "full",
+   "zOrder": 73,
+   "groupId": "otherworld"
+  },
+  "1254": {
+   "x": 7712,
+   "y": -8064,
+   "crop": "full",
+   "zOrder": 87,
+   "groupId": "otherworld"
+  }
+ },
+ "routes": [
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 6576,
+     "y": -7280,
+     "snap": {
+      "mapId": 119,
+      "evId": 1,
+      "evName": "TELEPORT",
+      "ox": 3152,
+      "oy": 1392
+     }
+    },
+    {
+     "x": 6736,
+     "y": -7248,
+     "snap": {
+      "mapId": 118,
+      "evId": 3,
+      "evName": "Ladder",
+      "ox": 16,
+      "oy": 336
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 10352,
+     "y": -7664,
+     "snap": {
+      "mapId": 331,
+      "evId": 2,
+      "evName": "TELEPORT",
+      "ox": 656,
+      "oy": 336
+     }
+    },
+    {
+     "x": 10608,
+     "y": -7408,
+     "snap": {
+      "mapId": 131,
+      "evId": 2,
+      "evName": "TELEPORT",
+      "ox": 16,
+      "oy": 592
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff7733",
+   "pts": [
+    {
+     "x": 4112,
+     "y": -8144,
+     "snap": {
+      "mapId": 119,
+      "evId": 18,
+      "evName": "To SPROUT MOLE COLONY",
+      "ox": 688,
+      "oy": 528
+     }
+    },
+    {
+     "x": 5488,
+     "y": -6768,
+     "snap": {
+      "mapId": 121,
+      "evId": 1,
+      "evName": "Teleport",
+      "ox": 784,
+      "oy": 400
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": 7120,
+     "y": -6736,
+     "snap": {
+      "mapId": 120,
+      "evId": 1,
+      "evName": "Ladder",
+      "ox": 816,
+      "oy": 432
+     }
+    },
+    {
+     "x": 7120,
+     "y": -7248,
+     "snap": {
+      "mapId": 118,
+      "evId": 10,
+      "evName": "Crater",
+      "ox": 400,
+      "oy": 336
+     }
+    }
+   ]
+  },
+  {
+   "color": "#22eebb",
+   "pts": [
+    {
+     "x": 7152,
+     "y": -9520,
+     "snap": {
+      "mapId": 124,
+      "evId": 3,
+      "evName": "teleport",
+      "ox": 560,
+      "oy": 368
+     }
+    },
+    {
+     "x": 7152,
+     "y": -9744,
+     "snap": {
+      "mapId": 126,
+      "evId": 10,
+      "evName": "Teleport (10)",
+      "ox": 592,
+      "oy": 1232
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 10224,
+     "y": -9072,
+     "snap": {
+      "mapId": 123,
+      "evId": 6,
+      "evName": "roof",
+      "ox": 496,
+      "oy": 464
+     }
+    },
+    {
+     "x": 10224,
+     "y": -9360,
+     "snap": {
+      "mapId": 348,
+      "evId": 1,
+      "evName": "TELEPORT",
+      "ox": 432,
+      "oy": 752
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 9200,
+     "y": -9680,
+     "snap": {
+      "mapId": 130,
+      "evId": 1,
+      "evName": "Teleport",
+      "ox": 336,
+      "oy": 496
+     }
+    },
+    {
+     "x": 9200,
+     "y": -9456,
+     "snap": {
+      "mapId": 129,
+      "evId": 4,
+      "evName": "Teleport",
+      "ox": 1520,
+      "oy": 176
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 3216,
+     "y": -7280,
+     "snap": {
+      "mapId": 329,
+      "evId": 1,
+      "evName": "TELEPORT",
+      "ox": 464,
+      "oy": 752
+     }
+    },
+    {
+     "x": 3664,
+     "y": -7280,
+     "snap": {
+      "mapId": 329,
+      "evId": 1,
+      "evName": "TELEPORT",
+      "ox": 912,
+      "oy": 752
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": 4720,
+     "y": -6032,
+     "snap": {
+      "mapId": 121,
+      "evId": 2,
+      "evName": "Teleport",
+      "ox": 16,
+      "oy": 1136
+     }
+    },
+    {
+     "x": 7888,
+     "y": -6032,
+     "snap": {
+      "mapId": 120,
+      "evId": 2,
+      "evName": "Teleport",
+      "ox": 1584,
+      "oy": 1136
+     }
+    }
+   ],
+   "kind": "loop"
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 3440,
+     "y": -8176,
+     "snap": {
+      "mapId": 119,
+      "evId": 2,
+      "evName": "TELEPORT",
+      "ox": 16,
+      "oy": 496
+     }
+    },
+    {
+     "x": 11024,
+     "y": -8912,
+     "snap": {
+      "mapId": 123,
+      "evId": 1,
+      "evName": "TELEPORT",
+      "ox": 1296,
+      "oy": 624
+     }
+    }
+   ],
+   "kind": "loop"
+  }
+ ]
+}

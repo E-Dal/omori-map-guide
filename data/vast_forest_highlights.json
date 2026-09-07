@@ -1,0 +1,389 @@
+{
+ "watermelons": [
+  {
+   "mapId": 98,
+   "evId": 32,
+   "name": "melonGLAD",
+   "x": 13,
+   "y": 10,
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "GLADIOLUS HAIRBAND"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "mapId": 98,
+   "evId": 34,
+   "name": "melonROSE",
+   "x": 6,
+   "y": 7,
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "ROSE HAIRCLIP"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "mapId": 98,
+   "evId": 35,
+   "name": "melonCACTUS",
+   "x": 8,
+   "y": 10,
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "CACTUS HAIRCLIP"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "mapId": 99,
+   "evId": 8,
+   "name": "melonCopy",
+   "x": 13,
+   "y": 15,
+   "color": "green",
+   "prize": {
+    "template": "melonJacks",
+    "kind": "Item",
+    "itemName": "JACKS"
+   }
+  },
+  {
+   "mapId": 99,
+   "evId": 11,
+   "name": "melonCopy",
+   "x": 82,
+   "y": 25,
+   "color": "green",
+   "prize": {
+    "template": "melonCandy",
+    "kind": "Item",
+    "itemName": "CANDY"
+   }
+  },
+  {
+   "mapId": 99,
+   "evId": 21,
+   "name": "melonCopy",
+   "x": 46,
+   "y": 37,
+   "color": "green",
+   "prize": {
+    "template": "melonDandelion",
+    "kind": "Item",
+    "itemName": "DANDELION"
+   }
+  },
+  {
+   "mapId": 99,
+   "evId": 23,
+   "name": "melonCopy",
+   "x": 50,
+   "y": 19,
+   "color": "green",
+   "prize": {
+    "template": "melonAppleJuice",
+    "kind": "Item",
+    "itemName": "APPLE JUICE"
+   }
+  },
+  {
+   "mapId": 100,
+   "evId": 12,
+   "name": "melonSpaghetti",
+   "x": 21,
+   "y": 31,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   },
+   "requires": [
+    "Q- Pinwheel Kite(Throw)"
+   ]
+  },
+  {
+   "mapId": 102,
+   "evId": 6,
+   "name": "melonCopy",
+   "x": 11,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": "melonPlumJuice",
+    "kind": "Item",
+    "itemName": "PLUM JUICE"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 1,
+   "name": "melonCopy",
+   "x": 62,
+   "y": 39,
+   "color": "blue",
+   "prize": {
+    "template": "melonBracelet",
+    "kind": "Armor",
+    "itemName": "BRACELET"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 7,
+   "name": "melonCopy",
+   "x": 51,
+   "y": 17,
+   "color": "blue",
+   "prize": {
+    "template": "melon3LeafClover",
+    "kind": "Armor",
+    "itemName": "3-LEAF CLOVER"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 12,
+   "name": "melonCopy",
+   "x": 34,
+   "y": 41,
+   "color": "green",
+   "prize": {
+    "template": "melonPoetryBook",
+    "kind": "Item",
+    "itemName": "POETRY BOOK"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 21,
+   "name": "melonCopy",
+   "x": 64,
+   "y": 23,
+   "color": "green",
+   "prize": {
+    "template": "melonCandy",
+    "kind": "Item",
+    "itemName": "CANDY"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 22,
+   "name": "melonCopy",
+   "x": 53,
+   "y": 51,
+   "color": "green",
+   "prize": {
+    "template": "melonJacks",
+    "kind": "Item",
+    "itemName": "JACKS"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 23,
+   "name": "melonCopy",
+   "x": 46,
+   "y": 29,
+   "color": "green",
+   "prize": {
+    "template": "melonTofu",
+    "kind": "Item",
+    "itemName": "TOFU"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 24,
+   "name": "melonCopy",
+   "x": 39,
+   "y": 26,
+   "color": "green",
+   "prize": {
+    "template": "melonLifeJam",
+    "kind": "Item",
+    "itemName": "LIFE JAM"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 25,
+   "name": "melonCopy",
+   "x": 41,
+   "y": 13,
+   "color": "green",
+   "prize": {
+    "template": "melonChocolate",
+    "kind": "Item",
+    "itemName": "CHOCOLATE"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 26,
+   "name": "melonCopy",
+   "x": 36,
+   "y": 20,
+   "color": "green",
+   "prize": {
+    "template": "melonCherrySoda",
+    "kind": "Item",
+    "itemName": "CHERRY SODA"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 27,
+   "name": "melonCopy",
+   "x": 50,
+   "y": 12,
+   "color": "green",
+   "prize": {
+    "template": "melonBananaSmoothie",
+    "kind": "Item",
+    "itemName": "BANANA SMOOTHIE"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 28,
+   "name": "melonCopy",
+   "x": 50,
+   "y": 21,
+   "color": "green",
+   "prize": {
+    "template": "melonSparkler",
+    "kind": "Item",
+    "itemName": "SPARKLER"
+   }
+  },
+  {
+   "mapId": 103,
+   "evId": 29,
+   "name": "melonCopy",
+   "x": 27,
+   "y": 33,
+   "color": "green",
+   "prize": {
+    "template": "melonAppleJuice",
+    "kind": "Item",
+    "itemName": "APPLE JUICE"
+   }
+  },
+  {
+   "mapId": 104,
+   "evId": 4,
+   "name": "melonCopy",
+   "x": 17,
+   "y": 2,
+   "color": "green",
+   "prize": {
+    "template": "melonWaterBottle",
+    "kind": "Item",
+    "itemName": "GLASS BOTTLE"
+   }
+  },
+  {
+   "mapId": 105,
+   "evId": 10,
+   "name": "melonCopy",
+   "x": 24,
+   "y": 24,
+   "color": "green",
+   "prize": {
+    "template": "melonSparkler",
+    "kind": "Item",
+    "itemName": "SPARKLER"
+   }
+  },
+  {
+   "mapId": 105,
+   "evId": 18,
+   "name": "melonCopy",
+   "x": 22,
+   "y": 18,
+   "color": "green",
+   "prize": {
+    "template": "melonPlumJuice",
+    "kind": "Item",
+    "itemName": "PLUM JUICE"
+   }
+  },
+  {
+   "mapId": 105,
+   "evId": 19,
+   "name": "melonCopy",
+   "x": 20,
+   "y": 31,
+   "color": "green",
+   "prize": {
+    "template": "melonPopcorn",
+    "kind": "Item",
+    "itemName": "POPCORN"
+   }
+  },
+  {
+   "mapId": 981,
+   "evId": 32,
+   "name": "melonGLAD",
+   "x": 7,
+   "y": 10,
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "GLADIOLUS HAIRBAND"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "mapId": 981,
+   "evId": 34,
+   "name": "melonROSE",
+   "x": 0,
+   "y": 7,
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "ROSE HAIRCLIP"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "mapId": 981,
+   "evId": 35,
+   "name": "melonCACTUS",
+   "x": 2,
+   "y": 10,
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "CACTUS HAIRCLIP"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  }
+ ]
+}

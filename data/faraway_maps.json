@@ -1,12 +1,4 @@
 {
-  "12": {
-    "id": 12,
-    "name": "-- FARAWAY TOWN (DAY + SUNSET)",
-    "width": 17,
-    "height": 13,
-    "parallaxName": null,
-    "bgm": null
-  },
   "13": {
     "id": 13,
     "name": "-- PLAYER STREET",
@@ -227,7 +219,7 @@
     "id": 40,
     "name": "-- CHURCH (DAY)",
     "width": 20,
-    "height": 30,
+    "height": 32,
     "parallaxName": "!polaroidBG_FA_day",
     "bgm": "fat_overworld"
   },
@@ -251,7 +243,7 @@
     "id": 43,
     "name": "-- CHURCH (SUNSET)",
     "width": 20,
-    "height": 30,
+    "height": 32,
     "parallaxName": "sunset_sky",
     "bgm": "fat_sunset"
   },
@@ -338,8 +330,8 @@
   "54": {
     "id": 54,
     "name": "-- PARK + THAT PLACE",
-    "width": 17,
-    "height": 13,
+    "width": 31,
+    "height": 44,
     "parallaxName": null,
     "bgm": null
   },
@@ -379,7 +371,7 @@
     "id": 59,
     "name": "-- FIXIT (DAY)",
     "width": 21,
-    "height": 38,
+    "height": 42,
     "parallaxName": null,
     "bgm": "fat_hardware_store"
   },
@@ -419,7 +411,7 @@
     "id": 64,
     "name": "-- SECRET LAKE (DAY)",
     "width": 31,
-    "height": 45,
+    "height": 44,
     "parallaxName": null,
     "bgm": null
   },
@@ -442,7 +434,7 @@
   "67": {
     "id": 67,
     "name": "-- GINOS DINER (SUNSET)",
-    "width": 23,
+    "width": 21,
     "height": 22,
     "parallaxName": null,
     "bgm": "room_carefree"
@@ -459,7 +451,7 @@
     "id": 69,
     "name": "-- FIXIT (SUNSET)",
     "width": 21,
-    "height": 38,
+    "height": 42,
     "parallaxName": null,
     "bgm": "fat_hardware_store"
   },
@@ -499,7 +491,7 @@
     "id": 74,
     "name": "-- SECRET LAKE (SUNSET)",
     "width": 31,
-    "height": 45,
+    "height": 44,
     "parallaxName": null,
     "bgm": null
   },
@@ -519,6 +511,78 @@
     "parallaxName": null,
     "bgm": "fat_sunset"
   },
+  "78": {
+    "id": 78,
+    "name": "-- PLAYER'S HOME (NIGHT)",
+    "width": 90,
+    "height": 80,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "79": {
+    "id": 79,
+    "name": "-- KEL AND HERO'S HOME (NIGHT)",
+    "width": 90,
+    "height": 80,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "80": {
+    "id": 80,
+    "name": "-- BASIL'S HOME (NIGHT)",
+    "width": 90,
+    "height": 64,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "81": {
+    "id": 81,
+    "name": "-- SHOPPING CENTER (NIGHT)",
+    "width": 45,
+    "height": 44,
+    "parallaxName": "FA_sky_night",
+    "bgm": null
+  },
+  "82": {
+    "id": 82,
+    "name": "-- HOBBEEZ (NIGHT)",
+    "width": 21,
+    "height": 19,
+    "parallaxName": null,
+    "bgm": "fat_hobby_shop"
+  },
+  "83": {
+    "id": 83,
+    "name": "-- PARK (NIGHT)",
+    "width": 54,
+    "height": 42,
+    "parallaxName": "FA_sky_night",
+    "bgm": null
+  },
+  "84": {
+    "id": 84,
+    "name": "-- SECRET LAKE (NIGHT)",
+    "width": 31,
+    "height": 44,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "85": {
+    "id": 85,
+    "name": "-- CHURCH (NIGHT)",
+    "width": 20,
+    "height": 32,
+    "parallaxName": "FA_sky_night",
+    "bgm": null
+  },
+  "320": {
+    "id": 320,
+    "name": "-- CROSSROADS (NIGHT)",
+    "width": 21,
+    "height": 53,
+    "parallaxName": null,
+    "bgm": null
+  },
   "341": {
     "id": 341,
     "name": "-- RECYCULTIST HQ",
@@ -526,14 +590,6 @@
     "height": 80,
     "parallaxName": null,
     "bgm": "fat_recycultist_tower"
-  },
-  "361": {
-    "id": 361,
-    "name": "-- MINIGAMES",
-    "width": 17,
-    "height": 13,
-    "parallaxName": null,
-    "bgm": null
   },
   "362": {
     "id": 362,
@@ -551,43 +607,11 @@
     "parallaxName": "sunset_sky",
     "bgm": null
   },
-  "364": {
-    "id": 364,
-    "name": "-- DELIVERY 1-3",
-    "width": 17,
-    "height": 13,
-    "parallaxName": null,
-    "bgm": null
-  },
-  "365": {
-    "id": 365,
-    "name": "-- DELIVERY 2-1",
-    "width": 17,
-    "height": 13,
-    "parallaxName": null,
-    "bgm": null
-  },
-  "366": {
-    "id": 366,
-    "name": "-- DELIVERY 2-2",
-    "width": 17,
-    "height": 13,
-    "parallaxName": null,
-    "bgm": null
-  },
-  "367": {
-    "id": 367,
-    "name": "-- DELIVERY 2-3",
-    "width": 17,
-    "height": 13,
-    "parallaxName": null,
-    "bgm": null
-  },
   "368": {
     "id": 368,
     "name": "-- DELIVERY 3-1",
-    "width": 17,
-    "height": 13,
+    "width": 24,
+    "height": 30,
     "parallaxName": null,
     "bgm": null
   },
@@ -606,5 +630,197 @@
     "height": 18,
     "parallaxName": "sunset_sky",
     "bgm": null
+  },
+  "450": {
+    "id": 450,
+    "name": "-- night outside",
+    "width": 28,
+    "height": 44,
+    "parallaxName": "FA_sky_night",
+    "bgm": null
+  },
+  "1031": {
+    "id": 1031,
+    "name": "-- AUBREY STREET [VANILLA RENDER]",
+    "width": 58,
+    "height": 90,
+    "parallaxName": null,
+    "bgm": "fat_overworld"
+  },
+  "1040": {
+    "id": 1040,
+    "name": "-- CHURCH (DAY) [VANILLA RENDER]",
+    "width": 20,
+    "height": 32,
+    "parallaxName": "!polaroidBG_FA_day",
+    "bgm": "fat_overworld"
+  },
+  "3411": {
+    "id": 3411,
+    "name": "-- RECYCULTIST HQ [upper west — hammer wall]",
+    "width": 11,
+    "height": 16,
+    "parallaxName": null,
+    "bgm": "fat_recycultist_tower",
+    "cropX": 14,
+    "cropY": 13,
+    "polygon": [
+      [
+        14,
+        13
+      ],
+      [
+        25,
+        13
+      ],
+      [
+        25,
+        29
+      ],
+      [
+        14,
+        29
+      ]
+    ]
+  },
+  "3412": {
+    "id": 3412,
+    "name": "-- RECYCULTIST HQ [boss chamber]",
+    "width": 9,
+    "height": 14,
+    "parallaxName": null,
+    "bgm": "fat_recycultist_tower",
+    "cropX": 55,
+    "cropY": 22,
+    "polygon": [
+      [
+        55,
+        22
+      ],
+      [
+        64,
+        22
+      ],
+      [
+        64,
+        36
+      ],
+      [
+        55,
+        36
+      ]
+    ]
+  },
+  "3413": {
+    "id": 3413,
+    "name": "-- RECYCULTIST HQ [mid — congregation]",
+    "width": 11,
+    "height": 14,
+    "parallaxName": null,
+    "bgm": "fat_recycultist_tower",
+    "cropX": 31,
+    "cropY": 28,
+    "polygon": [
+      [
+        31,
+        28
+      ],
+      [
+        42,
+        28
+      ],
+      [
+        42,
+        42
+      ],
+      [
+        31,
+        42
+      ]
+    ]
+  },
+  "3414": {
+    "id": 3414,
+    "name": "-- RECYCULTIST HQ [lower west — kel throw]",
+    "width": 12,
+    "height": 18,
+    "parallaxName": null,
+    "bgm": "fat_recycultist_tower",
+    "cropX": 14,
+    "cropY": 50,
+    "polygon": [
+      [
+        14,
+        50
+      ],
+      [
+        26,
+        50
+      ],
+      [
+        26,
+        68
+      ],
+      [
+        14,
+        68
+      ]
+    ]
+  },
+  "3415": {
+    "id": 3415,
+    "name": "-- RECYCULTIST HQ [lower centre]",
+    "width": 14,
+    "height": 14,
+    "parallaxName": null,
+    "bgm": "fat_recycultist_tower",
+    "cropX": 37,
+    "cropY": 54,
+    "polygon": [
+      [
+        37,
+        54
+      ],
+      [
+        51,
+        54
+      ],
+      [
+        51,
+        68
+      ],
+      [
+        37,
+        68
+      ]
+    ]
+  },
+  "3416": {
+    "id": 3416,
+    "name": "-- RECYCULTIST HQ [entrance from park]",
+    "width": 11,
+    "height": 14,
+    "parallaxName": null,
+    "bgm": "fat_recycultist_tower",
+    "cropX": 60,
+    "cropY": 54,
+    "polygon": [
+      [
+        60,
+        54
+      ],
+      [
+        71,
+        54
+      ],
+      [
+        71,
+        68
+      ],
+      [
+        60,
+        68
+      ]
+    ]
   }
 }

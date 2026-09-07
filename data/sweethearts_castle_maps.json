@@ -1,0 +1,734 @@
+{
+  "168": {
+    "id": 168,
+    "name": "-- THEATER",
+    "width": 40,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "sw_room"
+  },
+  "169": {
+    "id": 169,
+    "name": "-- GARDEN",
+    "width": 51,
+    "height": 60,
+    "parallaxName": null,
+    "bgm": "sw_garden"
+  },
+  "170": {
+    "id": 170,
+    "name": "-- UNDERGROUND PASSAGE",
+    "width": 23,
+    "height": 43,
+    "parallaxName": null,
+    "bgm": "sw_dungeon"
+  },
+  "171": {
+    "id": 171,
+    "name": "-- SWEETHEART'S CASTLE STAGE",
+    "width": 70,
+    "height": 34,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "172": {
+    "id": 172,
+    "name": "-- FOYER",
+    "width": 75,
+    "height": 50,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_castle"
+  },
+  "173": {
+    "id": 173,
+    "name": "-- LEFT HALL",
+    "width": 60,
+    "height": 35,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_castle"
+  },
+  "174": {
+    "id": 174,
+    "name": "-- ELEVATOR",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "xx_bugspray"
+  },
+  "175": {
+    "id": 175,
+    "name": "-- ART GALLERY",
+    "width": 37,
+    "height": 42,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_room"
+  },
+  "176": {
+    "id": 176,
+    "name": "-- LIBRARY (GUEST LIST)",
+    "width": 25,
+    "height": 50,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_room"
+  },
+  "177": {
+    "id": 177,
+    "name": "-- RIGHT HALL",
+    "width": 57,
+    "height": 32,
+    "parallaxName": "Space_parallax",
+    "bgm": null
+  },
+  "178": {
+    "id": 178,
+    "name": "-- BALLROOM (CHOIR TOMATO)",
+    "width": 25,
+    "height": 43,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_room"
+  },
+  "179": {
+    "id": 179,
+    "name": "-- KITCHEN",
+    "width": 26,
+    "height": 29,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_room"
+  },
+  "180": {
+    "id": 180,
+    "name": "-- SERVANT'S QUARTER",
+    "width": 33,
+    "height": 35,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_room"
+  },
+  "181": {
+    "id": 181,
+    "name": "-- PATH TO BEDROOM",
+    "width": 23,
+    "height": 46,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_castle"
+  },
+  "182": {
+    "id": 182,
+    "name": "-- SWEETHEART DUNGEON 1",
+    "width": 47,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "sw_dungeon"
+  },
+  "183": {
+    "id": 183,
+    "name": "-- UNDERGROUND DUNGEON",
+    "width": 47,
+    "height": 45,
+    "parallaxName": null,
+    "bgm": "sw_dungeon"
+  },
+  "184": {
+    "id": 184,
+    "name": "-- TORTURE ROOM",
+    "width": 25,
+    "height": 36,
+    "parallaxName": null,
+    "bgm": "sw_dungeon"
+  },
+  "185": {
+    "id": 185,
+    "name": "-- FANMAIL GRAVEYARD",
+    "width": 51,
+    "height": 50,
+    "parallaxName": null,
+    "bgm": "sw_garden"
+  },
+  "186": {
+    "id": 186,
+    "name": "-- BEDROOM",
+    "width": 28,
+    "height": 35,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_room"
+  },
+  "187": {
+    "id": 187,
+    "name": "-- HIDDEN LIBRARY",
+    "width": 32,
+    "height": 95,
+    "parallaxName": null,
+    "bgm": "lost_library"
+  },
+  "340": {
+    "id": 340,
+    "name": "-- HIDDEN LIBRARY PIANO",
+    "width": 25,
+    "height": 24,
+    "parallaxName": null,
+    "bgm": "lost_library"
+  },
+  "433": {
+    "id": 433,
+    "name": "-- ALCOVES I",
+    "width": 70,
+    "height": 76,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "435": {
+    "id": 435,
+    "name": "-- SWEETHEART DUNGEON 2",
+    "width": 80,
+    "height": 90,
+    "parallaxName": "parallax_stump_red",
+    "bgm": "xx_ambient_loop"
+  },
+  "436": {
+    "id": 436,
+    "name": "-- SWEETHEART BALCONY",
+    "width": 28,
+    "height": 23,
+    "parallaxName": "Space_parallax",
+    "bgm": "sw_room"
+  },
+  "437": {
+    "id": 437,
+    "name": "-- ALCOVES II",
+    "width": 62,
+    "height": 70,
+    "parallaxName": null,
+    "bgm": "fat_sunset"
+  },
+  "438": {
+    "id": 438,
+    "name": "-- SWEETHEART DUNGEON 3",
+    "width": 60,
+    "height": 50,
+    "parallaxName": "!parallax_mountain",
+    "bgm": "xx_ambient_loop"
+  },
+  "440": {
+    "id": 440,
+    "name": "-- LOST LIBRARY 1",
+    "width": 32,
+    "height": 64,
+    "parallaxName": null,
+    "bgm": "theme_basil"
+  },
+  "441": {
+    "id": 441,
+    "name": "-- LOST LIBRARY 2",
+    "width": 40,
+    "height": 64,
+    "parallaxName": null,
+    "bgm": "fat_omori_house"
+  },
+  "443": {
+    "id": 443,
+    "name": "-- LOST LIBRARY 3",
+    "width": 40,
+    "height": 64,
+    "parallaxName": null,
+    "bgm": "fat_cemetary"
+  },
+  "449": {
+    "id": 449,
+    "name": "-- BORING ROOM",
+    "width": 22,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "453": {
+    "id": 453,
+    "name": "-- CLUB SANDWICH",
+    "width": 66,
+    "height": 50,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2"
+  },
+  "499": {
+    "id": 499,
+    "name": "-- ROCOCO'S ROOM",
+    "width": 33,
+    "height": 34,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "1711": {
+    "id": 1711,
+    "name": "-- SWEETHEART'S CASTLE STAGE [stage left]",
+    "width": 15,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 7,
+    "cropY": 1,
+    "polygon": [
+      [
+        7,
+        1
+      ],
+      [
+        22,
+        1
+      ],
+      [
+        22,
+        33
+      ],
+      [
+        7,
+        33
+      ]
+    ]
+  },
+  "1712": {
+    "id": 1712,
+    "name": "-- SWEETHEART'S CASTLE STAGE [stage right]",
+    "width": 15,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 48,
+    "cropY": 1,
+    "polygon": [
+      [
+        48,
+        1
+      ],
+      [
+        63,
+        1
+      ],
+      [
+        63,
+        33
+      ],
+      [
+        48,
+        33
+      ]
+    ]
+  },
+  "4331": {
+    "id": 4331,
+    "name": "-- ALCOVES I [alcove 1]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 11,
+    "cropY": 10,
+    "polygon": [
+      [
+        11,
+        10
+      ],
+      [
+        18,
+        10
+      ],
+      [
+        18,
+        23
+      ],
+      [
+        11,
+        23
+      ]
+    ]
+  },
+  "4332": {
+    "id": 4332,
+    "name": "-- ALCOVES I [alcove 2]",
+    "width": 7,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 33,
+    "cropY": 10,
+    "polygon": [
+      [
+        33,
+        10
+      ],
+      [
+        40,
+        10
+      ],
+      [
+        40,
+        22
+      ],
+      [
+        33,
+        22
+      ]
+    ]
+  },
+  "4335": {
+    "id": 4335,
+    "name": "-- ALCOVES I [alcove 5]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 33,
+    "cropY": 32,
+    "polygon": [
+      [
+        33,
+        32
+      ],
+      [
+        40,
+        32
+      ],
+      [
+        40,
+        45
+      ],
+      [
+        33,
+        45
+      ]
+    ]
+  },
+  "4337": {
+    "id": 4337,
+    "name": "-- ALCOVES I [alcove 7]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 11,
+    "cropY": 55,
+    "polygon": [
+      [
+        11,
+        55
+      ],
+      [
+        18,
+        55
+      ],
+      [
+        18,
+        68
+      ],
+      [
+        11,
+        68
+      ]
+    ]
+  },
+  "4338": {
+    "id": 4338,
+    "name": "-- ALCOVES I [ocean alcove — via ballroom]",
+    "width": 6,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 54,
+    "cropY": 32,
+    "polygon": [
+      [
+        54,
+        32
+      ],
+      [
+        60,
+        32
+      ],
+      [
+        60,
+        44
+      ],
+      [
+        54,
+        44
+      ]
+    ]
+  },
+  "4339": {
+    "id": 4339,
+    "name": "-- ALCOVES I [junk alcove — via servant's quarter]",
+    "width": 5,
+    "height": 11,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 55,
+    "cropY": 11,
+    "polygon": [
+      [
+        55,
+        11
+      ],
+      [
+        60,
+        11
+      ],
+      [
+        60,
+        22
+      ],
+      [
+        55,
+        22
+      ]
+    ]
+  },
+  "4351": {
+    "id": 4351,
+    "name": "-- SWEETHEART DUNGEON 2 [dungeon main]",
+    "width": 35,
+    "height": 58,
+    "parallaxName": "parallax_stump_red",
+    "bgm": "xx_ambient_loop",
+    "cropX": 10,
+    "cropY": 4,
+    "polygon": [
+      [
+        10,
+        4
+      ],
+      [
+        45,
+        4
+      ],
+      [
+        45,
+        62
+      ],
+      [
+        10,
+        62
+      ]
+    ]
+  },
+  "4352": {
+    "id": 4352,
+    "name": "-- SWEETHEART DUNGEON 2 [right corridor]",
+    "width": 7,
+    "height": 22,
+    "parallaxName": "parallax_stump_red",
+    "bgm": "xx_ambient_loop",
+    "cropX": 64,
+    "cropY": 11,
+    "polygon": [
+      [
+        64,
+        11
+      ],
+      [
+        71,
+        11
+      ],
+      [
+        71,
+        33
+      ],
+      [
+        64,
+        33
+      ]
+    ]
+  },
+  "4353": {
+    "id": 4353,
+    "name": "-- SWEETHEART DUNGEON 2 [bottom small]",
+    "width": 9,
+    "height": 11,
+    "parallaxName": "parallax_stump_red",
+    "bgm": "xx_ambient_loop",
+    "cropX": 37,
+    "cropY": 38,
+    "polygon": [
+      [
+        37,
+        38
+      ],
+      [
+        46,
+        38
+      ],
+      [
+        46,
+        49
+      ],
+      [
+        37,
+        49
+      ]
+    ]
+  },
+  "4372": {
+    "id": 4372,
+    "name": "-- ALCOVES II [alcove 2]",
+    "width": 8,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 26,
+    "cropY": 3,
+    "polygon": [
+      [
+        26,
+        3
+      ],
+      [
+        34,
+        3
+      ],
+      [
+        34,
+        16
+      ],
+      [
+        26,
+        16
+      ]
+    ]
+  },
+  "4375": {
+    "id": 4375,
+    "name": "-- ALCOVES II [alcove 5]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 27,
+    "cropY": 25,
+    "polygon": [
+      [
+        27,
+        25
+      ],
+      [
+        34,
+        25
+      ],
+      [
+        34,
+        38
+      ],
+      [
+        27,
+        38
+      ]
+    ]
+  },
+  "4377": {
+    "id": 4377,
+    "name": "-- ALCOVES II [alcove 8]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 5,
+    "cropY": 48,
+    "polygon": [
+      [
+        5,
+        48
+      ],
+      [
+        12,
+        48
+      ],
+      [
+        12,
+        61
+      ],
+      [
+        5,
+        61
+      ]
+    ]
+  },
+  "4378": {
+    "id": 4378,
+    "name": "-- ALCOVES II [alcove 9]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 27,
+    "cropY": 48,
+    "polygon": [
+      [
+        27,
+        48
+      ],
+      [
+        34,
+        48
+      ],
+      [
+        34,
+        61
+      ],
+      [
+        27,
+        61
+      ]
+    ]
+  },
+  "4381": {
+    "id": 4381,
+    "name": "-- SWEETHEART DUNGEON 3 [main room]",
+    "width": 23,
+    "height": 11,
+    "parallaxName": "!parallax_mountain",
+    "bgm": "xx_ambient_loop",
+    "cropX": 7,
+    "cropY": 6,
+    "polygon": [
+      [
+        7,
+        6
+      ],
+      [
+        30,
+        6
+      ],
+      [
+        30,
+        17
+      ],
+      [
+        7,
+        17
+      ]
+    ]
+  },
+  "4535": {
+    "id": 4535,
+    "name": "-- CLUB SANDWICH [jam packets room]",
+    "width": 7,
+    "height": 10,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2",
+    "cropX": 30,
+    "cropY": 31,
+    "polygon": [
+      [
+        30,
+        31
+      ],
+      [
+        37,
+        31
+      ],
+      [
+        37,
+        41
+      ],
+      [
+        30,
+        41
+      ]
+    ]
+  }
+}

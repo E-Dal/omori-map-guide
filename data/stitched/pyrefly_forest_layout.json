@@ -1,0 +1,427 @@
+{
+  "version": 2,
+  "layout": {
+    "152": {
+      "x": 32,
+      "y": 64,
+      "crop": "full",
+      "zOrder": 23
+    },
+    "153": {
+      "x": -832,
+      "y": -832,
+      "crop": "full",
+      "zOrder": 22
+    },
+    "154": {
+      "x": 64,
+      "y": -1472,
+      "crop": "full",
+      "zOrder": 20
+    },
+    "155": {
+      "x": -736,
+      "y": -1440,
+      "crop": "full",
+      "zOrder": 24
+    },
+    "156": {
+      "x": 288,
+      "y": -2112,
+      "crop": "full",
+      "zOrder": 17
+    },
+    "157": {
+      "x": 1024,
+      "y": -1920,
+      "crop": "full",
+      "zOrder": 25
+    },
+    "158": {
+      "x": -512,
+      "y": -2112,
+      "crop": "full",
+      "zOrder": 26
+    },
+    "159": {
+      "x": -1280,
+      "y": -2528,
+      "crop": "full",
+      "zOrder": 27
+    },
+    "160": {
+      "x": -512,
+      "y": -2752,
+      "crop": "full",
+      "zOrder": 28
+    },
+    "161": {
+      "x": 1056,
+      "y": -3680,
+      "crop": "full",
+      "zOrder": 31
+    },
+    "162": {
+      "x": 3520,
+      "y": -4000,
+      "crop": "full",
+      "zOrder": 32
+    },
+    "163": {
+      "x": 5088,
+      "y": -6176,
+      "crop": "full",
+      "zOrder": 39
+    },
+    "164": {
+      "x": -224,
+      "y": -6528,
+      "crop": "full",
+      "zOrder": 0
+    },
+    "336": {
+      "x": -480,
+      "y": -4672,
+      "crop": "full",
+      "zOrder": 29
+    },
+    "349": {
+      "x": 3872,
+      "y": -4576,
+      "crop": "full",
+      "zOrder": 33
+    },
+    "350": {
+      "x": 3456,
+      "y": -5248,
+      "crop": "full",
+      "zOrder": 34
+    },
+    "351": {
+      "x": 4224,
+      "y": -5568,
+      "crop": "full",
+      "zOrder": 35
+    },
+    "352": {
+      "x": 4800,
+      "y": -6944,
+      "crop": "full",
+      "zOrder": 36
+    },
+    "353": {
+      "x": 6080,
+      "y": -5248,
+      "crop": "full",
+      "zOrder": 37
+    },
+    "354": {
+      "x": 5280,
+      "y": -5280,
+      "crop": "full",
+      "zOrder": 38
+    }
+  },
+  "routes": [
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 560,
+          "y": -2480,
+          "snap": {
+            "mapId": 160,
+            "evId": 3,
+            "evName": "Pyrefly Forest"
+          }
+        },
+        {
+          "x": 1072,
+          "y": -3216,
+          "snap": {
+            "mapId": 161,
+            "evId": 1,
+            "evName": "Pyrefly Forest"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 3248,
+          "y": -2896,
+          "snap": {
+            "mapId": 161,
+            "evId": 2,
+            "evName": "Pyrefly Forest"
+          }
+        },
+        {
+          "x": 3984,
+          "y": -3056,
+          "snap": {
+            "mapId": 162,
+            "evId": 1,
+            "evName": "Pyrefly Forest"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 3824,
+          "y": -4496,
+          "snap": {
+            "mapId": 350,
+            "evId": 1,
+            "evName": "Pyrefly Forest"
+          }
+        },
+        {
+          "x": 3888,
+          "y": -4432,
+          "snap": {
+            "mapId": 349,
+            "evId": 4,
+            "evName": "Pyrefly Forest"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 4208,
+          "y": -4720,
+          "snap": {
+            "mapId": 350,
+            "evId": 5,
+            "evName": "Correct"
+          }
+        },
+        {
+          "x": 4304,
+          "y": -4816,
+          "snap": {
+            "mapId": 351,
+            "evId": 3,
+            "evName": "Pyrefly Forest"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 4272,
+          "y": -5552,
+          "snap": {
+            "mapId": 351,
+            "evId": 2,
+            "evName": "Pyrefly Forest"
+          }
+        },
+        {
+          "x": 4880,
+          "y": -6256,
+          "snap": {
+            "mapId": 352,
+            "evId": 5,
+            "evName": "Correct"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 5360,
+          "y": -6256,
+          "snap": {
+            "mapId": 352,
+            "evId": 5,
+            "evName": "Correct"
+          }
+        },
+        {
+          "x": 6608,
+          "y": -5232,
+          "snap": {
+            "mapId": 353,
+            "evId": 3,
+            "evName": "Pyrefly Forest"
+          }
+        }
+      ]
+    }
+  ],
+  "maps": {
+    "152": {
+      "id": 152,
+      "name": "-- PYREFLY FOREST",
+      "width": 56,
+      "height": 20,
+      "parallaxName": null,
+      "bgm": "vf_stump"
+    },
+    "153": {
+      "id": 153,
+      "name": "-- PYREFLY I",
+      "width": 50,
+      "height": 28,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "154": {
+      "id": 154,
+      "name": "-- PYREFLY II",
+      "width": 30,
+      "height": 20,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "155": {
+      "id": 155,
+      "name": "-- PYREFLY SIDE-I",
+      "width": 25,
+      "height": 23,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "156": {
+      "id": 156,
+      "name": "-- PYREFLY III",
+      "width": 23,
+      "height": 20,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "157": {
+      "id": 157,
+      "name": "-- PYREFLY SIDE-II",
+      "width": 26,
+      "height": 23,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "158": {
+      "id": 158,
+      "name": "-- PYREFLY IV",
+      "width": 25,
+      "height": 20,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "159": {
+      "id": 159,
+      "name": "-- PYREFLY SIDE-III",
+      "width": 24,
+      "height": 32,
+      "parallaxName": null,
+      "bgm": null
+    },
+    "160": {
+      "id": 160,
+      "name": "-- PYREFLY V",
+      "width": 34,
+      "height": 20,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "161": {
+      "id": 161,
+      "name": "-- TO LOST FOREST",
+      "width": 77,
+      "height": 54,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "162": {
+      "id": 162,
+      "name": "-- LOST FOREST CLEARING",
+      "width": 30,
+      "height": 30,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "163": {
+      "id": 163,
+      "name": "-- LOST FOREST END",
+      "width": 24,
+      "height": 28,
+      "parallaxName": null,
+      "bgm": null
+    },
+    "164": {
+      "id": 164,
+      "name": "-- PYREFLY TO SM TOWN",
+      "width": 55,
+      "height": 67,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "336": {
+      "id": 336,
+      "name": "-- PYREFLY TO SWEETHEART",
+      "width": 41,
+      "height": 60,
+      "parallaxName": "Space_parallax",
+      "bgm": null
+    },
+    "349": {
+      "id": 349,
+      "name": "-- LOST FOREST (I)",
+      "width": 24,
+      "height": 22,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "350": {
+      "id": 350,
+      "name": "-- LOST FOREST (II)",
+      "width": 24,
+      "height": 24,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "351": {
+      "id": 351,
+      "name": "-- LOST FOREST (III)",
+      "width": 24,
+      "height": 24,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "352": {
+      "id": 352,
+      "name": "-- LOST FOREST (IV)",
+      "width": 24,
+      "height": 22,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "353": {
+      "id": 353,
+      "name": "-- LOST FOREST (V)",
+      "width": 24,
+      "height": 22,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    },
+    "354": {
+      "id": 354,
+      "name": "-- LOST FOREST (VI)",
+      "width": 25,
+      "height": 25,
+      "parallaxName": null,
+      "bgm": "pyrefly_forest"
+    }
+  }
+}

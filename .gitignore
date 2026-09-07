@@ -14,6 +14,12 @@ package-lock.json
 dist/
 .cache/
 
-# Local-only data dumps (we'll gitignore the bulk PNGs and only commit a manifest)
-data/raw_pngs/
+# The map images ARE the site — index.html fetches data/raw_pngs/*.png and
+# data/stitched/*.png directly — so they ship. About 140 MB across 636 + 17
+# files; well inside GitHub Pages' limits, and there is no site without them.
+data/stitched/*.bak-*
+
+# The game's decryption keys. Read at run time instead — see scripts/_keys.py.
+scripts/omori_keys.json
+
 *.log

@@ -1,0 +1,402 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 2,
+        "evName": "The Door",
+        "x": 26,
+        "y": 23,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 2,
+        "evName": "The Door",
+        "x": 26,
+        "y": 23,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": null,
+        "y": null
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 2,
+        "evName": "The Door",
+        "x": 26,
+        "y": 23,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 2,
+        "evName": "The Door",
+        "x": 26,
+        "y": 23,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 2,
+        "evName": "The Door",
+        "x": 26,
+        "y": 23,
+        "page": 7,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 2,
+        "evName": "The Door",
+        "x": 26,
+        "y": 23,
+        "page": 8,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 2,
+        "evName": "The Door",
+        "x": 26,
+        "y": 23,
+        "page": 9,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 2,
+        "evName": "The Door",
+        "x": 26,
+        "y": 23,
+        "page": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 6,
+        "evName": "TELEPORT TO WHITESPACE",
+        "x": 15,
+        "y": 23,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 87,
+        "x": 26,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 6,
+        "evName": "TELEPORT TO WHITESPACE",
+        "x": 15,
+        "y": 23,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 87,
+        "x": 26,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 6,
+        "evName": "TELEPORT TO WHITESPACE",
+        "x": 15,
+        "y": 23,
+        "page": 6,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 87,
+        "x": 26,
+        "y": 24
+      },
+      "kind": "setValue"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 87,
+        "evId": 3,
+        "evName": "LAPTOP",
+        "x": 27,
+        "y": 26,
+        "page": 6,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 264,
+        "x": 31,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 7,
+        "evName": "Teleport -- STUMP",
+        "x": 19,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 7,
+        "evName": "Teleport -- STUMP",
+        "x": 19,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 7,
+        "evName": "Teleport -- STUMP",
+        "x": 19,
+        "y": 10,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 7,
+        "evName": "Teleport -- STUMP",
+        "x": 19,
+        "y": 10,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 10,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 7,
+        "evName": "Teleport -- STUMP",
+        "x": 19,
+        "y": 10,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 390,
+        "x": 93,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 88,
+        "evId": 12,
+        "evName": "EYE ON SHELF",
+        "x": 11,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 259,
+        "x": 11,
+        "y": 6
+      },
+      "kind": "setValue"
+    }
+  ]
+}

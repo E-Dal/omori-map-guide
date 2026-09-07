@@ -1,0 +1,182 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 10,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 45,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 92,
+        "x": 23,
+        "y": 44
+      },
+      "kind": "setValue"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 10,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 45,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 25,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 10,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 45,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 25,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 10,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 45,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 25,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 11,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 7,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 10,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 34,
+        "evName": "SHAWN",
+        "x": 9,
+        "y": 38,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 490,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 34,
+        "evName": "SHAWN",
+        "x": 9,
+        "y": 38,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 490,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 34,
+        "evName": "SHAWN",
+        "x": 9,
+        "y": 38,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 490,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    }
+  ]
+}

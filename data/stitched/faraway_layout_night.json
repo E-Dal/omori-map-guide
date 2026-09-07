@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "layout": {
+    "13": {
+      "x": -32,
+      "y": 32,
+      "crop": "bot3",
+      "zOrder": 3
+    },
+    "22": {
+      "x": 2880,
+      "y": 32,
+      "crop": "bot3",
+      "zOrder": 10
+    },
+    "31": {
+      "x": 352,
+      "y": 992,
+      "crop": "bot3",
+      "zOrder": 8
+    },
+    "45": {
+      "x": 2880,
+      "y": 960,
+      "crop": "bot3",
+      "zOrder": 7
+    },
+    "81": {
+      "x": 3232,
+      "y": -1376,
+      "crop": "full",
+      "zOrder": 1
+    },
+    "83": {
+      "x": 1504,
+      "y": -1248,
+      "crop": "full",
+      "zOrder": 9
+    },
+    "84": {
+      "x": 2432,
+      "y": -2464,
+      "crop": "full",
+      "zOrder": 0
+    },
+    "85": {
+      "x": -288,
+      "y": 768,
+      "crop": "full",
+      "zOrder": 6
+    },
+    "320": {
+      "x": 2208,
+      "y": 96,
+      "crop": "full",
+      "zOrder": 5
+    }
+  },
+  "maps": {
+    "13": {
+      "id": 13,
+      "name": "-- PLAYER STREET",
+      "width": 70,
+      "height": 90,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    },
+    "22": {
+      "id": 22,
+      "name": "-- OTHER STREET",
+      "width": 69,
+      "height": 90,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    },
+    "31": {
+      "id": 31,
+      "name": "-- AUBREY STREET",
+      "width": 58,
+      "height": 90,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    },
+    "45": {
+      "id": 45,
+      "name": "-- BASIL STREET",
+      "width": 60,
+      "height": 90,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    },
+    "81": {
+      "id": 81,
+      "name": "-- SHOPPING CENTER (NIGHT)",
+      "width": 45,
+      "height": 44,
+      "parallaxName": "FA_sky_night",
+      "bgm": null
+    },
+    "83": {
+      "id": 83,
+      "name": "-- PARK (NIGHT)",
+      "width": 54,
+      "height": 42,
+      "parallaxName": "FA_sky_night",
+      "bgm": null
+    },
+    "84": {
+      "id": 84,
+      "name": "-- SECRET LAKE (NIGHT)",
+      "width": 31,
+      "height": 44,
+      "parallaxName": null,
+      "bgm": null
+    },
+    "85": {
+      "id": 85,
+      "name": "-- CHURCH (NIGHT)",
+      "width": 20,
+      "height": 32,
+      "parallaxName": "FA_sky_night",
+      "bgm": null
+    },
+    "320": {
+      "id": 320,
+      "name": "-- CROSSROADS (NIGHT)",
+      "width": 21,
+      "height": 53,
+      "parallaxName": null,
+      "bgm": null
+    }
+  }
+}

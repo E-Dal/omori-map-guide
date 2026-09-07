@@ -1,0 +1,2421 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 91,
+        "evId": 2,
+        "evName": "To Main Currents",
+        "x": 15,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 339,
+        "x": 28,
+        "y": 98
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 91,
+        "evId": 2,
+        "evName": "To Main Currents",
+        "x": 15,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 339,
+        "x": 28,
+        "y": 98
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 91,
+        "evId": 2,
+        "evName": "To Main Currents",
+        "x": 15,
+        "y": 0,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 330,
+        "x": 15,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 91,
+        "evId": 2,
+        "evName": "To Main Currents",
+        "x": 15,
+        "y": 0,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 330,
+        "x": 15,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 189,
+        "evId": 1,
+        "evName": "Teleport -- WELL",
+        "x": 10,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 190,
+        "x": 12,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 189,
+        "evId": 1,
+        "evName": "Teleport -- WELL",
+        "x": 10,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 330,
+        "x": 16,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 189,
+        "evId": 1,
+        "evName": "Teleport -- WELL",
+        "x": 10,
+        "y": 0,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 330,
+        "x": 16,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 189,
+        "evId": 2,
+        "evName": "Teleport -- to Deep Reef",
+        "x": 8,
+        "y": 121,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 211,
+        "x": 11,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 189,
+        "evId": 2,
+        "evName": "Teleport -- to Deep Reef",
+        "x": 8,
+        "y": 121,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 211,
+        "x": 11,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 190,
+        "evId": 1,
+        "evName": "Teleport -- LADDER",
+        "x": 12,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 189,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 199,
+        "evId": 1,
+        "evName": "Teleport",
+        "x": 3,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 7,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 41,
+        "y": 23
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 199,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 14,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 200,
+        "x": 15,
+        "y": 23
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 200,
+        "evId": 1,
+        "evName": "Teleport",
+        "x": 15,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 199,
+        "x": 14,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 12,
+        "evName": "Teleport",
+        "x": 56,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 214,
+        "x": 15,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 13,
+        "evName": "Teleport",
+        "x": 174,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 211,
+        "x": 1,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 14,
+        "evName": "To Construction",
+        "x": 142,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 204,
+        "x": 22,
+        "y": 36
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 15,
+        "evName": "To Underwater Highwya",
+        "x": 92,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 205,
+        "x": 41,
+        "y": 50
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 16,
+        "evName": "To Broken Bridge",
+        "x": 31,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 206,
+        "x": 39,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 27,
+        "evName": "To Seacow Farm",
+        "x": 39,
+        "y": 24,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 8,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 199,
+        "x": 6,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 28,
+        "evName": "To Fishboy's Cave",
+        "x": 110,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 260,
+        "x": 15,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 37,
+        "evName": "Telescope",
+        "x": 103,
+        "y": 4,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 493,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 204,
+        "evId": 14,
+        "evName": "To Underwater Highway",
+        "x": 20,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 144,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 204,
+        "evId": 15,
+        "evName": "To Underwater Highwya",
+        "x": 3,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 205,
+        "x": 51,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 204,
+        "evId": 16,
+        "evName": "To Pearl Cave",
+        "x": 46,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 207,
+        "x": 11,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 205,
+        "evId": 1,
+        "evName": "Teleport",
+        "x": 51,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 204,
+        "x": 3,
+        "y": 21
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 205,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 41,
+        "y": 51,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 92,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 205,
+        "evId": 3,
+        "evName": "To Broken Bridge",
+        "x": 3,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 206,
+        "x": 46,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 205,
+        "evId": 3,
+        "evName": "To Broken Bridge",
+        "x": 3,
+        "y": 20,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 206,
+        "x": 46,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 205,
+        "evId": 3,
+        "evName": "To Broken Bridge",
+        "x": 3,
+        "y": 20,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 206,
+        "x": 46,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 205,
+        "evId": 3,
+        "evName": "To Broken Bridge",
+        "x": 3,
+        "y": 20,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 206,
+        "x": 46,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 205,
+        "evId": 4,
+        "evName": "To Musical Clam Cave",
+        "x": 18,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 261,
+        "x": 15,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 206,
+        "evId": 1,
+        "evName": "Teleport",
+        "x": 38,
+        "y": 36,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 31,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 206,
+        "evId": 3,
+        "evName": "To Puzzle Cave",
+        "x": 46,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 205,
+        "x": 3,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 207,
+        "evId": 1,
+        "evName": "To Construction",
+        "x": 11,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 204,
+        "x": 46,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 208,
+        "evId": 1,
+        "evName": "Teleport",
+        "x": 19,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 339,
+        "x": 33,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 208,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 13,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 209,
+        "x": 36,
+        "y": 93
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 208,
+        "evId": 9,
+        "evName": "Teleport",
+        "x": 0,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 338,
+        "x": 148,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 208,
+        "evId": 10,
+        "evName": "Teleport",
+        "x": 34,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 338,
+        "x": 1,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 209,
+        "evId": 8,
+        "evName": "Teleport",
+        "x": 36,
+        "y": 94,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 208,
+        "x": 13,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 209,
+        "evId": 9,
+        "evName": "Mari's Window",
+        "x": 36,
+        "y": 42,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 190,
+        "x": 12,
+        "y": 21
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 209,
+        "evId": 9,
+        "evName": "Mari's Window",
+        "x": 36,
+        "y": 42,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 190,
+        "x": 12,
+        "y": 21
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 209,
+        "evId": 43,
+        "evName": "Fear",
+        "x": 36,
+        "y": 40,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 189,
+        "x": 10,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 211,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 23,
+        "y": 34,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 430,
+        "x": 1,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 211,
+        "evId": 3,
+        "evName": "Teleport",
+        "x": 11,
+        "y": 32,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 189,
+        "x": 8,
+        "y": 120
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 211,
+        "evId": 4,
+        "evName": "Teleport",
+        "x": 0,
+        "y": 34,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 173,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 211,
+        "evId": 4,
+        "evName": "Teleport",
+        "x": 0,
+        "y": 34,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 173,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 214,
+        "evId": 1,
+        "evName": "Teleport",
+        "x": 15,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 56,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 260,
+        "evId": 1,
+        "evName": "To Underwater Highwya",
+        "x": 15,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 110,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 261,
+        "evId": 1,
+        "evName": "To Puzzle Cave",
+        "x": 15,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 205,
+        "x": 18,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 330,
+        "evId": 1,
+        "evName": "To North Coast",
+        "x": 15,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 26,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 91,
+        "x": 15,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 330,
+        "evId": 2,
+        "evName": "Teleport -- LADDER",
+        "x": 16,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 189,
+        "x": 10,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 338,
+        "evId": 12,
+        "evName": "Teleport",
+        "x": 0,
+        "y": 24,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 208,
+        "x": 33,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 338,
+        "evId": 13,
+        "evName": "Teleport",
+        "x": 149,
+        "y": 24,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 208,
+        "x": 1,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 339,
+        "evId": 38,
+        "evName": "Teleport",
+        "x": 6,
+        "y": 49,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 359,
+        "x": 18,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 339,
+        "evId": 47,
+        "evName": "Teleport",
+        "x": 46,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 421,
+        "x": 13,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 339,
+        "evId": 67,
+        "evName": "Teleport",
+        "x": 33,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 208,
+        "x": 19,
+        "y": 34
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 339,
+        "evId": 69,
+        "evName": "To North Lake",
+        "x": 28,
+        "y": 99,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 91,
+        "x": 15,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 421,
+        "evId": 1,
+        "evName": "Teleport",
+        "x": 13,
+        "y": 39,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 339,
+        "x": 46,
+        "y": 21
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 421,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 13,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 421,
+        "x": 13,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 421,
+        "evId": 3,
+        "evName": "Teleport",
+        "x": 13,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 421,
+        "x": 13,
+        "y": 34
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 421,
+        "evId": 3,
+        "evName": "Teleport",
+        "x": 13,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 421,
+        "x": 13,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 421,
+        "evId": 4,
+        "evName": "Telescope",
+        "x": 11,
+        "y": 6,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 399,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 1,
+        "evName": "LAST RESORT",
+        "x": 8,
+        "y": 18,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 211,
+        "x": 21,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 1,
+        "evName": "LAST RESORT",
+        "x": 8,
+        "y": 18,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 211,
+        "x": 21,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 1,
+        "evName": "LAST RESORT",
+        "x": 8,
+        "y": 18,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 211,
+        "x": 21,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 3,
+        "evName": "Teleport",
+        "x": 95,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 430,
+        "x": 1,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 4,
+        "evName": "Teleport",
+        "x": 0,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 430,
+        "x": 94,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 502,
+        "evId": 1,
+        "evName": "Sea",
+        "x": 0,
+        "y": 31,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 20,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 501,
+        "x": 10,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 339,
+        "evId": 47,
+        "evName": "Teleport",
+        "x": 46,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4212,
+        "x": 5,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4212,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 5,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4211,
+        "x": 3,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4211,
+        "evId": 3,
+        "evName": "Teleport",
+        "x": 3,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4212,
+        "x": 5,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4211,
+        "evId": 3,
+        "evName": "Teleport",
+        "x": 3,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4212,
+        "x": 5,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4211,
+        "evId": 4,
+        "evName": "Telescope",
+        "x": 1,
+        "y": 2,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 399,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 339,
+        "evId": 906,
+        "evName": "Left edge (slides)",
+        "x": 0,
+        "y": 49,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 1,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 339,
+        "x": 0,
+        "y": 49
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 339,
+        "evId": 907,
+        "evName": "Right edge (slides)",
+        "x": 54,
+        "y": 49,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 1,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 339,
+        "x": 54,
+        "y": 49
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 359,
+        "evId": 920,
+        "evName": "Teleport",
+        "x": 18,
+        "y": 19,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 359,
+        "x": 18,
+        "y": 19
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 206,
+        "evId": 907,
+        "evName": "To Path to Trench",
+        "x": 0,
+        "y": 19,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 206,
+        "x": 0,
+        "y": 19
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 4212,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 13,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4212,
+        "x": 5,
+        "y": 13
+      },
+      "kind": "exitStem"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 91,
+        "evId": 1,
+        "evName": "To North Coast",
+        "x": 15,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 90,
+        "x": 9,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 189,
+        "evId": 1,
+        "evName": "Teleport -- WELL",
+        "x": 10,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 508,
+        "x": 31,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 17,
+        "evName": "To Underwater Highway",
+        "x": 0,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 18,
+        "y": 51
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 50,
+        "evName": "LAST RESORT",
+        "x": 12,
+        "y": 15,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 50,
+        "evName": "LAST RESORT",
+        "x": 12,
+        "y": 15,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 50,
+        "evName": "LAST RESORT",
+        "x": 12,
+        "y": 15,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 203,
+        "evId": 50,
+        "evName": "LAST RESORT",
+        "x": 12,
+        "y": 15,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 206,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 0,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 18,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 211,
+        "evId": 1,
+        "evName": "LAST RESORT",
+        "x": 21,
+        "y": 41,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 211,
+        "evId": 1,
+        "evName": "LAST RESORT",
+        "x": 21,
+        "y": 41,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 211,
+        "evId": 1,
+        "evName": "LAST RESORT",
+        "x": 21,
+        "y": 41,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 211,
+        "evId": 1,
+        "evName": "LAST RESORT",
+        "x": 21,
+        "y": 41,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 2,
+        "evName": "LAST RESORT",
+        "x": 41,
+        "y": 21,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 2,
+        "evName": "LAST RESORT",
+        "x": 41,
+        "y": 21,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 2,
+        "evName": "LAST RESORT",
+        "x": 41,
+        "y": 21,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 2,
+        "evName": "LAST RESORT",
+        "x": 41,
+        "y": 21,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 7,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 430,
+        "evId": 48,
+        "evName": "Black Car",
+        "x": 78,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 505,
+        "x": 48,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 14,
+        "y": 45,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 4,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 2,
+        "evName": "To SW Bedroom",
+        "x": 14,
+        "y": 67,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 186,
+        "x": 5,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 3,
+        "evName": "To SW Library",
+        "x": 36,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 176,
+        "x": 20,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 4,
+        "evName": "To SW SQ",
+        "x": 57,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 180,
+        "x": 28,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 5,
+        "evName": "To SW Ballroom",
+        "x": 57,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 18,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 6,
+        "evName": "shrooms",
+        "x": 36,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 3,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 11,
+        "evName": "To Outskirts",
+        "x": 57,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 129,
+        "x": 35,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 12,
+        "evName": "To Pyrefly",
+        "x": 14,
+        "y": 68,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 153,
+        "x": 5,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 19,
+        "evName": "To Deeper Well",
+        "x": 57,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 1,
+        "evName": "To Frozen Forest",
+        "x": 8,
+        "y": 38,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 136,
+        "x": 14,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 2,
+        "evName": "To Molly Left 1",
+        "x": 53,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 239,
+        "x": 4,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 3,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 251,
+        "x": 35,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 4,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 59,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 223,
+        "x": 44,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 9,
+        "evName": "To Orange Oasis",
+        "x": 6,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 78,
+        "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 501,
+        "evId": 5,
+        "evName": "???",
+        "x": 10,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 289,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    }
+  ]
+}

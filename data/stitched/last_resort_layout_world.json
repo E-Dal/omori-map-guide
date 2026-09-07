@@ -1,0 +1,666 @@
+{
+ "layout": {
+  "191": {
+   "x": 2848,
+   "y": -10880,
+   "crop": "full",
+   "zOrder": 90,
+   "groupId": "last_resort"
+  },
+  "194": {
+   "x": 2496,
+   "y": -12544,
+   "crop": "full",
+   "zOrder": 91,
+   "groupId": "last_resort"
+  },
+  "195": {
+   "x": 4320,
+   "y": -14816,
+   "crop": "full",
+   "zOrder": 99,
+   "groupId": "last_resort"
+  },
+  "197": {
+   "x": 2240,
+   "y": -15904,
+   "crop": "full",
+   "zOrder": 154,
+   "groupId": "last_resort"
+  },
+  "198": {
+   "x": 1696,
+   "y": -11392,
+   "crop": "full",
+   "zOrder": 98,
+   "groupId": "last_resort"
+  },
+  "202": {
+   "x": 2880,
+   "y": -13184,
+   "crop": "full",
+   "zOrder": 92,
+   "groupId": "last_resort"
+  },
+  "1921": {
+   "x": 3488,
+   "y": -12832,
+   "crop": "full",
+   "zOrder": 112,
+   "groupId": "last_resort"
+  },
+  "1922": {
+   "x": 2304,
+   "y": -12960,
+   "crop": "full",
+   "zOrder": 113,
+   "groupId": "last_resort"
+  },
+  "1923": {
+   "x": 2304,
+   "y": -14016,
+   "crop": "full",
+   "zOrder": 119,
+   "groupId": "last_resort"
+  },
+  "1924": {
+   "x": 2304,
+   "y": -13504,
+   "crop": "full",
+   "zOrder": 116,
+   "groupId": "last_resort"
+  },
+  "1925": {
+   "x": 3488,
+   "y": -13152,
+   "crop": "full",
+   "zOrder": 122,
+   "groupId": "last_resort"
+  },
+  "1931": {
+   "x": 2368,
+   "y": -13696,
+   "crop": "full",
+   "zOrder": 118,
+   "groupId": "last_resort"
+  },
+  "1932": {
+   "x": 4640,
+   "y": -13472,
+   "crop": "full",
+   "zOrder": 125,
+   "groupId": "last_resort"
+  },
+  "1933": {
+   "x": 2592,
+   "y": -13696,
+   "crop": "full",
+   "zOrder": 117,
+   "groupId": "last_resort"
+  },
+  "1934": {
+   "x": 2336,
+   "y": -14240,
+   "crop": "full",
+   "zOrder": 120,
+   "groupId": "last_resort"
+  },
+  "1935": {
+   "x": 2464,
+   "y": -12256,
+   "crop": "full",
+   "zOrder": 123,
+   "groupId": "last_resort"
+  },
+  "1936": {
+   "x": 2592,
+   "y": -13152,
+   "crop": "full",
+   "zOrder": 114,
+   "groupId": "last_resort"
+  },
+  "1937": {
+   "x": 2624,
+   "y": -14240,
+   "crop": "full",
+   "zOrder": 121,
+   "groupId": "last_resort"
+  },
+  "1938": {
+   "x": 4064,
+   "y": -12224,
+   "crop": "full",
+   "zOrder": 124,
+   "groupId": "last_resort"
+  },
+  "1939": {
+   "x": 2368,
+   "y": -13152,
+   "crop": "full",
+   "zOrder": 115,
+   "groupId": "last_resort"
+  },
+  "4534": {
+   "x": 4448,
+   "y": -15168,
+   "crop": "full",
+   "zOrder": 153,
+   "groupId": "last_resort"
+  }
+ },
+ "routes": [
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -10512,
+     "snap": {
+      "mapId": 191,
+      "evId": 7,
+      "evName": "To Casino",
+      "ox": 528,
+      "oy": 368
+     }
+    },
+    {
+     "x": 3376,
+     "y": -10928,
+     "snap": {
+      "mapId": 194,
+      "evId": 5,
+      "evName": "To Outside",
+      "ox": 880,
+      "oy": 1616
+     }
+    }
+   ]
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": 3280,
+     "y": -12400,
+     "snap": {
+      "mapId": 194,
+      "evId": 3,
+      "evName": "Elevator",
+      "ox": 784,
+      "oy": 144
+     }
+    },
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 3472,
+     "y": -12400,
+     "snap": {
+      "mapId": 194,
+      "evId": 4,
+      "evName": "Elevator",
+      "ox": 976,
+      "oy": 144
+     }
+    },
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 3760,
+     "y": -10384,
+     "snap": {
+      "mapId": 191,
+      "evId": 18,
+      "evName": "Last Resort",
+      "ox": 912,
+      "oy": 496
+     }
+    },
+    {
+     "x": 2128,
+     "y": -11024,
+     "snap": {
+      "mapId": 198,
+      "evId": 15,
+      "evName": "Last Resort",
+      "ox": 432,
+      "oy": 368
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ffcc33",
+   "pts": [
+    {
+     "x": 3728,
+     "y": -12752,
+     "snap": {
+      "mapId": 1921,
+      "evId": 3,
+      "evName": "Elevator",
+      "ox": 240,
+      "oy": 80
+     }
+    },
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff7733",
+   "pts": [
+    {
+     "x": 3824,
+     "y": -12752,
+     "snap": {
+      "mapId": 1921,
+      "evId": 10,
+      "evName": "Elevator",
+      "ox": 336,
+      "oy": 80
+     }
+    },
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    },
+    {
+     "x": 3088,
+     "y": -12848,
+     "snap": {
+      "mapId": 1922,
+      "evId": 2,
+      "evName": "Elevator",
+      "ox": 784,
+      "oy": 112
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    },
+    {
+     "x": 3184,
+     "y": -12848,
+     "snap": {
+      "mapId": 1922,
+      "evId": 16,
+      "evName": "Elevator",
+      "ox": 880,
+      "oy": 112
+     }
+    }
+   ]
+  },
+  {
+   "color": "#22eebb",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    },
+    {
+     "x": 3088,
+     "y": -13392,
+     "snap": {
+      "mapId": 1924,
+      "evId": 5,
+      "evName": "Elevator",
+      "ox": 784,
+      "oy": 112
+     }
+    }
+   ]
+  },
+  {
+   "color": "#eeaa44",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    },
+    {
+     "x": 3184,
+     "y": -13392,
+     "snap": {
+      "mapId": 1924,
+      "evId": 7,
+      "evName": "Elevator",
+      "ox": 880,
+      "oy": 112
+     }
+    }
+   ]
+  },
+  {
+   "color": "#88ddff",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    },
+    {
+     "x": 3088,
+     "y": -13936,
+     "snap": {
+      "mapId": 1923,
+      "evId": 4,
+      "evName": "Elevator",
+      "ox": 784,
+      "oy": 80
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    },
+    {
+     "x": 3184,
+     "y": -13936,
+     "snap": {
+      "mapId": 1923,
+      "evId": 9,
+      "evName": "Elevator",
+      "ox": 880,
+      "oy": 80
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    },
+    {
+     "x": 3568,
+     "y": -13072,
+     "snap": {
+      "mapId": 1925,
+      "evId": 6,
+      "evName": "Elevator",
+      "ox": 80,
+      "oy": 80
+     }
+    }
+   ]
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": 3376,
+     "y": -12688,
+     "snap": {
+      "mapId": 202,
+      "evId": 5,
+      "evName": "Door",
+      "ox": 496,
+      "oy": 496
+     }
+    },
+    {
+     "x": 3664,
+     "y": -13072,
+     "snap": {
+      "mapId": 1925,
+      "evId": 8,
+      "evName": "Elevator",
+      "ox": 176,
+      "oy": 80
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ffcc33",
+   "pts": [
+    {
+     "x": 4688,
+     "y": -13072,
+     "snap": {
+      "mapId": 1925,
+      "evId": 17,
+      "evName": "To Manager",
+      "ox": 1200,
+      "oy": 80
+     }
+    },
+    {
+     "x": 4688,
+     "y": -13328,
+     "snap": {
+      "mapId": 1932,
+      "evId": 19,
+      "evName": "Door",
+      "ox": 48,
+      "oy": 144
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff7733",
+   "pts": [
+    {
+     "x": 3440,
+     "y": -12016,
+     "snap": {
+      "mapId": 194,
+      "evId": 2,
+      "evName": "To Bathroom Mens",
+      "ox": 944,
+      "oy": 528
+     }
+    },
+    {
+     "x": 4176,
+     "y": -12016,
+     "snap": {
+      "mapId": 1938,
+      "evId": 2,
+      "evName": "To Casino",
+      "ox": 112,
+      "oy": 208
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": 2576,
+     "y": -12016,
+     "snap": {
+      "mapId": 1935,
+      "evId": 1,
+      "evName": "To Casino",
+      "ox": 112,
+      "oy": 240
+     }
+    },
+    {
+     "x": 3312,
+     "y": -12016,
+     "snap": {
+      "mapId": 194,
+      "evId": 1,
+      "evName": "To Bathroom Womens",
+      "ox": 816,
+      "oy": 528
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 4688,
+     "y": -13488,
+     "snap": {
+      "mapId": 195,
+      "evId": 6,
+      "evName": "To Floor 1",
+      "ox": 368,
+      "oy": 1328
+     }
+    },
+    {
+     "x": 4688,
+     "y": -13328,
+     "snap": {
+      "mapId": 1932,
+      "evId": 19,
+      "evName": "Door",
+      "ox": 48,
+      "oy": 144
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 4560,
+     "y": -14608,
+     "snap": {
+      "mapId": 195,
+      "evId": 7,
+      "evName": "JAWSUM'S OFFICE",
+      "ox": 240,
+      "oy": 208
+     }
+    },
+    {
+     "x": 4560,
+     "y": -14800,
+     "snap": {
+      "mapId": 4534,
+      "evId": 900,
+      "evName": "Exit stem (south)",
+      "ox": 112,
+      "oy": 368
+     }
+    }
+   ]
+  }
+ ]
+}

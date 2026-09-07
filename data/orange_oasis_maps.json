@@ -1,0 +1,402 @@
+{
+  "106": {
+    "id": 106,
+    "name": "-- ORANGE OASIS",
+    "width": 90,
+    "height": 90,
+    "parallaxName": "Space_parallax",
+    "bgm": "oo_overworld"
+  },
+  "107": {
+    "id": 107,
+    "name": "-- DINO'S DIG",
+    "width": 53,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": "dinos_dig"
+  },
+  "108": {
+    "id": 108,
+    "name": "-- EXCAVATION SITE (GRAINS)",
+    "width": 55,
+    "height": 55,
+    "parallaxName": null,
+    "bgm": "dinos_adventure"
+  },
+  "109": {
+    "id": 109,
+    "name": "-- EXCAVATION SITE (FRUITS & VEGETABLES)",
+    "width": 42,
+    "height": 42,
+    "parallaxName": null,
+    "bgm": "dinos_adventure"
+  },
+  "110": {
+    "id": 110,
+    "name": "-- EXCAVATION SITE (MEAT)",
+    "width": 23,
+    "height": 22,
+    "parallaxName": null,
+    "bgm": "dinos_adventure"
+  },
+  "111": {
+    "id": 111,
+    "name": "-- RAIN TOWN",
+    "width": 31,
+    "height": 51,
+    "parallaxName": null,
+    "bgm": "event_puddles"
+  },
+  "112": {
+    "id": 112,
+    "name": "-- OASIS INTERIORS",
+    "width": 64,
+    "height": 64,
+    "parallaxName": null,
+    "bgm": "oo_overworld"
+  },
+  "113": {
+    "id": 113,
+    "name": "-- ORANGE JOE'S CLIFF",
+    "width": 29,
+    "height": 30,
+    "parallaxName": "Space_parallax",
+    "bgm": "oo_overworld"
+  },
+  "114": {
+    "id": 114,
+    "name": "-- DOOM ENTRANCE",
+    "width": 20,
+    "height": 45,
+    "parallaxName": null,
+    "bgm": "oo_overworld"
+  },
+  "115": {
+    "id": 115,
+    "name": "-- PALMIE'S HOUSE",
+    "width": 32,
+    "height": 36,
+    "parallaxName": null,
+    "bgm": "oo_overworld"
+  },
+  "116": {
+    "id": 116,
+    "name": "-- ARROW CAVE",
+    "width": 88,
+    "height": 150,
+    "parallaxName": null,
+    "bgm": "goofy"
+  },
+  "122": {
+    "id": 122,
+    "name": "-- EXCAVATION SITE (DESSERT)",
+    "width": 29,
+    "height": 22,
+    "parallaxName": "Space_parallax",
+    "bgm": null
+  },
+  "328": {
+    "id": 328,
+    "name": "-- TRAIN INTERIOR (MOVE)",
+    "width": 46,
+    "height": 21,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "332": {
+    "id": 332,
+    "name": "-- PATH TO TOAST GRAVE",
+    "width": 60,
+    "height": 24,
+    "parallaxName": "Space_parallax",
+    "bgm": "oo_overworld"
+  },
+  "333": {
+    "id": 333,
+    "name": "-- TRAIN STATION",
+    "width": 28,
+    "height": 24,
+    "parallaxName": null,
+    "bgm": "oo_overworld"
+  },
+  "334": {
+    "id": 334,
+    "name": "-- TOAST GRAVE",
+    "width": 25,
+    "height": 25,
+    "parallaxName": "Space_parallax",
+    "bgm": "oo_overworld"
+  },
+  "342": {
+    "id": 342,
+    "name": "-- ROLLING STONE MAP",
+    "width": 25,
+    "height": 120,
+    "parallaxName": null,
+    "bgm": "uat_texture1"
+  },
+  "343": {
+    "id": 343,
+    "name": "-- SUMMONING CIRCLE MAP",
+    "width": 32,
+    "height": 53,
+    "parallaxName": null,
+    "bgm": "dough_dungeon"
+  },
+  "344": {
+    "id": 344,
+    "name": "-- PANTRY",
+    "width": 72,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "dough_dungeon"
+  },
+  "345": {
+    "id": 345,
+    "name": "-- BAKING ROOM",
+    "width": 29,
+    "height": 62,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "437": {
+    "id": 437,
+    "name": "-- ALCOVES II",
+    "width": 62,
+    "height": 70,
+    "parallaxName": null,
+    "bgm": "fat_sunset"
+  },
+  "452": {
+    "id": 452,
+    "name": "-- TRAIN INTERIOR (STILL)",
+    "width": 46,
+    "height": 21,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "1121": {
+    "id": 1121,
+    "name": "-- OASIS INTERIORS [top-L Mina]",
+    "width": 11,
+    "height": 10,
+    "parallaxName": null,
+    "bgm": "oo_overworld",
+    "cropX": 11,
+    "cropY": 11,
+    "polygon": [
+      [
+        11,
+        11
+      ],
+      [
+        22,
+        11
+      ],
+      [
+        22,
+        21
+      ],
+      [
+        11,
+        21
+      ]
+    ]
+  },
+  "1122": {
+    "id": 1122,
+    "name": "-- OASIS INTERIORS [top-R Donut]",
+    "width": 12,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "oo_overworld",
+    "cropX": 42,
+    "cropY": 10,
+    "polygon": [
+      [
+        42,
+        10
+      ],
+      [
+        54,
+        10
+      ],
+      [
+        54,
+        22
+      ],
+      [
+        42,
+        22
+      ]
+    ]
+  },
+  "1123": {
+    "id": 1123,
+    "name": "-- OASIS INTERIORS [bot-L orange]",
+    "width": 7,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "oo_overworld",
+    "cropX": 13,
+    "cropY": 43,
+    "polygon": [
+      [
+        13,
+        43
+      ],
+      [
+        20,
+        43
+      ],
+      [
+        20,
+        55
+      ],
+      [
+        13,
+        55
+      ]
+    ]
+  },
+  "1124": {
+    "id": 1124,
+    "name": "-- OASIS INTERIORS [bot-R orange]",
+    "width": 7,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "oo_overworld",
+    "cropX": 44,
+    "cropY": 43,
+    "polygon": [
+      [
+        44,
+        43
+      ],
+      [
+        51,
+        43
+      ],
+      [
+        51,
+        55
+      ],
+      [
+        44,
+        55
+      ]
+    ]
+  },
+  "3441": {
+    "id": 3441,
+    "name": "-- PANTRY [pantry 1]",
+    "width": 7,
+    "height": 9,
+    "parallaxName": null,
+    "bgm": "dough_dungeon",
+    "cropX": 11,
+    "cropY": 11,
+    "polygon": [
+      [
+        11,
+        11
+      ],
+      [
+        18,
+        11
+      ],
+      [
+        18,
+        20
+      ],
+      [
+        11,
+        20
+      ]
+    ]
+  },
+  "3442": {
+    "id": 3442,
+    "name": "-- PANTRY [pantry 2]",
+    "width": 7,
+    "height": 9,
+    "parallaxName": null,
+    "bgm": "dough_dungeon",
+    "cropX": 31,
+    "cropY": 11,
+    "polygon": [
+      [
+        31,
+        11
+      ],
+      [
+        38,
+        11
+      ],
+      [
+        38,
+        20
+      ],
+      [
+        31,
+        20
+      ]
+    ]
+  },
+  "3443": {
+    "id": 3443,
+    "name": "-- PANTRY [pantry 3]",
+    "width": 7,
+    "height": 9,
+    "parallaxName": null,
+    "bgm": "dough_dungeon",
+    "cropX": 50,
+    "cropY": 11,
+    "polygon": [
+      [
+        50,
+        11
+      ],
+      [
+        57,
+        11
+      ],
+      [
+        57,
+        20
+      ],
+      [
+        50,
+        20
+      ]
+    ]
+  },
+  "4371": {
+    "id": 4371,
+    "name": "-- ALCOVES II [alcove 1]",
+    "width": 9,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 3,
+    "cropY": 4,
+    "polygon": [
+      [
+        3,
+        4
+      ],
+      [
+        12,
+        4
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        3,
+        16
+      ]
+    ]
+  }
+}

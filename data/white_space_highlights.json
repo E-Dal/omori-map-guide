@@ -1,0 +1,17 @@
+{
+ "watermelons": [
+  {
+   "mapId": 88,
+   "evId": 9,
+   "name": "WATERMELON - EGGPLANT",
+   "x": 8,
+   "y": 22,
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Weapon",
+    "itemName": "STUFFED TOY"
+   }
+  }
+ ]
+}

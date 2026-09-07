@@ -1,0 +1,410 @@
+{
+ "layout": {
+  "133": {
+   "x": 13152,
+   "y": -10848,
+   "crop": "full",
+   "zOrder": 7,
+   "groupId": "gmsigak47"
+  },
+  "134": {
+   "x": 9696,
+   "y": -6304,
+   "crop": "full",
+   "zOrder": 51,
+   "groupId": "gmsigak47"
+  },
+  "135": {
+   "x": 12096,
+   "y": -10112,
+   "crop": "full",
+   "zOrder": 0,
+   "groupId": "gmsigak47"
+  },
+  "136": {
+   "x": 12992,
+   "y": -13760,
+   "crop": "full",
+   "zOrder": 8,
+   "groupId": "gmsigak47"
+  },
+  "137": {
+   "x": 12864,
+   "y": -17664,
+   "crop": "full",
+   "zOrder": 10,
+   "groupId": "gmsigak47"
+  },
+  "138": {
+   "x": 11328,
+   "y": -9376,
+   "crop": "full",
+   "zOrder": 4,
+   "groupId": "gmsigak47"
+  },
+  "139": {
+   "x": 13248,
+   "y": -18752,
+   "crop": "full",
+   "zOrder": 11,
+   "groupId": "gmsigak47"
+  },
+  "140": {
+   "x": 13024,
+   "y": -12992,
+   "crop": "full",
+   "zOrder": 6,
+   "groupId": "gmsigak47"
+  },
+  "141": {
+   "x": 13152,
+   "y": -16608,
+   "crop": "full",
+   "zOrder": 9,
+   "groupId": "gmsigak47"
+  },
+  "347": {
+   "x": 13280,
+   "y": -20896,
+   "crop": "full",
+   "zOrder": 12,
+   "groupId": "gmsigak47"
+  },
+  "1321": {
+   "x": 11104,
+   "y": -6944,
+   "crop": "full",
+   "zOrder": 76,
+   "groupId": "gmsigak47"
+  },
+  "1322": {
+   "x": 10848,
+   "y": -6848,
+   "crop": "full",
+   "zOrder": 77,
+   "groupId": "gmsigak47"
+  },
+  "1323": {
+   "x": 11360,
+   "y": -6880,
+   "crop": "full",
+   "zOrder": 78,
+   "groupId": "gmsigak47"
+  },
+  "1324": {
+   "x": 11616,
+   "y": -6880,
+   "crop": "full",
+   "zOrder": 79,
+   "groupId": "gmsigak47"
+  },
+  "3472": {
+   "x": 12704,
+   "y": -11520,
+   "crop": "full",
+   "zOrder": 80,
+   "groupId": "gmsigak47"
+  }
+ },
+ "routes": [
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 11792,
+     "y": -8208,
+     "snap": {
+      "mapId": 138,
+      "evId": 1,
+      "evName": "To Frozen Forest II",
+      "ox": 464,
+      "oy": 1168
+     }
+    },
+    {
+     "x": 12432,
+     "y": -8208,
+     "snap": {
+      "mapId": 135,
+      "evId": 24,
+      "evName": "To Frozen Forest V",
+      "ox": 336,
+      "oy": 1904
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 13744,
+     "y": -10640,
+     "snap": {
+      "mapId": 133,
+      "evId": 8,
+      "evName": "To Frozen Forest III",
+      "ox": 592,
+      "oy": 208
+     }
+    },
+    {
+     "x": 13616,
+     "y": -11152,
+     "snap": {
+      "mapId": 140,
+      "evId": 1,
+      "evName": "To Frozen Forest III",
+      "ox": 592,
+      "oy": 1840
+     }
+    }
+   ]
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": 13680,
+     "y": -13584,
+     "snap": {
+      "mapId": 136,
+      "evId": 1,
+      "evName": "To Frozen Forest VII",
+      "ox": 688,
+      "oy": 176
+     }
+    },
+    {
+     "x": 13680,
+     "y": -14128,
+     "snap": {
+      "mapId": 141,
+      "evId": 1,
+      "evName": "To Frozen Forest IV",
+      "ox": 528,
+      "oy": 2480
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ffcc33",
+   "pts": [
+    {
+     "x": 13680,
+     "y": -17392,
+     "snap": {
+      "mapId": 137,
+      "evId": 3,
+      "evName": "To Frozen Forest VIII",
+      "ox": 816,
+      "oy": 272
+     }
+    },
+    {
+     "x": 13680,
+     "y": -17552,
+     "snap": {
+      "mapId": 139,
+      "evId": 1,
+      "evName": "To Frozen Forest VIII",
+      "ox": 432,
+      "oy": 1200
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff7733",
+   "pts": [
+    {
+     "x": 13680,
+     "y": -18576,
+     "snap": {
+      "mapId": 139,
+      "evId": 2,
+      "evName": "To Frozen Forest IX",
+      "ox": 432,
+      "oy": 176
+     }
+    },
+    {
+     "x": 13680,
+     "y": -18832,
+     "snap": {
+      "mapId": 347,
+      "evId": 1,
+      "evName": "TELEPORT",
+      "ox": 400,
+      "oy": 2064
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 11216,
+     "y": -6672,
+     "snap": {
+      "mapId": 1321,
+      "evId": 5,
+      "evName": "TELEPORT",
+      "ox": 112,
+      "oy": 272
+     }
+    },
+    {
+     "x": 11472,
+     "y": -6672,
+     "snap": {
+      "mapId": 1323,
+      "evId": 4,
+      "evName": "TELEPORT",
+      "ox": 112,
+      "oy": 208
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 11472,
+     "y": -6864,
+     "snap": {
+      "mapId": 1323,
+      "evId": 3,
+      "evName": "TELEPORT",
+      "ox": 112,
+      "oy": 16
+     }
+    },
+    {
+     "x": 11728,
+     "y": -6768,
+     "snap": {
+      "mapId": 1324,
+      "evId": 17,
+      "evName": "Trap Door",
+      "ox": 112,
+      "oy": 112
+     }
+    }
+   ]
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": 10960,
+     "y": -6768,
+     "snap": {
+      "mapId": 1322,
+      "evId": 7,
+      "evName": "Trap Door",
+      "ox": 112,
+      "oy": 80
+     }
+    },
+    {
+     "x": 11216,
+     "y": -6928,
+     "snap": {
+      "mapId": 1321,
+      "evId": 6,
+      "evName": "TELEPORT",
+      "ox": 112,
+      "oy": 16
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 11728,
+     "y": -6576,
+     "snap": {
+      "mapId": 1324,
+      "evId": 900,
+      "evName": "Exit stem (south)",
+      "ox": 112,
+      "oy": 304
+     }
+    },
+    {
+     "x": 12112,
+     "y": -3856,
+     "snap": {
+      "mapId": 134,
+      "evId": 2,
+      "evName": "TELEPORT",
+      "ox": 2416,
+      "oy": 2448
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": 9712,
+     "y": -3856,
+     "snap": {
+      "mapId": 134,
+      "evId": 7,
+      "evName": "To Frozen Forest I",
+      "ox": 16,
+      "oy": 2448
+     }
+    },
+    {
+     "x": 14480,
+     "y": -3856,
+     "snap": {
+      "mapId": 134,
+      "evId": 6,
+      "evName": "To Frozen Forest I",
+      "ox": 4784,
+      "oy": 2448
+     }
+    }
+   ],
+   "kind": "loop"
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 12144,
+     "y": -1520,
+     "snap": {
+      "mapId": 134,
+      "evId": 5,
+      "evName": "To Frozen Forest I",
+      "ox": 2448,
+      "oy": 4784
+     }
+    },
+    {
+     "x": 12144,
+     "y": -6288,
+     "snap": {
+      "mapId": 134,
+      "evId": 4,
+      "evName": "To Frozen Forest I",
+      "ox": 2448,
+      "oy": 16
+     }
+    }
+   ],
+   "kind": "loop"
+  }
+ ]
+}

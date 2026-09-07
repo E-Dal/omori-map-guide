@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "layout": {
+    "13": {
+      "x": -32,
+      "y": 96,
+      "crop": "top3",
+      "zOrder": 3
+    },
+    "22": {
+      "x": 2880,
+      "y": 160,
+      "crop": "top3",
+      "zOrder": 10
+    },
+    "31": {
+      "x": 352,
+      "y": 1056,
+      "crop": "top3",
+      "zOrder": 8
+    },
+    "40": {
+      "x": -288,
+      "y": 768,
+      "crop": "full",
+      "zOrder": 15
+    },
+    "45": {
+      "x": 2880,
+      "y": 1056,
+      "crop": "top3",
+      "zOrder": 7
+    },
+    "55": {
+      "x": 3232,
+      "y": -1376,
+      "crop": "full",
+      "zOrder": 13
+    },
+    "63": {
+      "x": 1504,
+      "y": -1248,
+      "crop": "full",
+      "zOrder": 12
+    },
+    "64": {
+      "x": 2432,
+      "y": -2464,
+      "crop": "full",
+      "zOrder": 11
+    },
+    "75": {
+      "x": 2208,
+      "y": 96,
+      "crop": "full",
+      "zOrder": 14
+    }
+  },
+  "maps": {
+    "13": {
+      "id": 13,
+      "name": "-- PLAYER STREET",
+      "width": 70,
+      "height": 90,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    },
+    "22": {
+      "id": 22,
+      "name": "-- OTHER STREET",
+      "width": 69,
+      "height": 90,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    },
+    "31": {
+      "id": 31,
+      "name": "-- AUBREY STREET",
+      "width": 58,
+      "height": 90,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    },
+    "40": {
+      "id": 40,
+      "name": "-- CHURCH (DAY)",
+      "width": 20,
+      "height": 32,
+      "parallaxName": "!polaroidBG_FA_day",
+      "bgm": "fat_overworld"
+    },
+    "45": {
+      "id": 45,
+      "name": "-- BASIL STREET",
+      "width": 60,
+      "height": 90,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    },
+    "55": {
+      "id": 55,
+      "name": "-- SHOPPING CENTER (DAY)",
+      "width": 45,
+      "height": 44,
+      "parallaxName": "!polaroidBG_FA_day",
+      "bgm": "fat_overworld"
+    },
+    "63": {
+      "id": 63,
+      "name": "-- PARK (DAY)",
+      "width": 54,
+      "height": 42,
+      "parallaxName": "!polaroidBG_FA_day",
+      "bgm": "fat_playground"
+    },
+    "64": {
+      "id": 64,
+      "name": "-- SECRET LAKE (DAY)",
+      "width": 31,
+      "height": 44,
+      "parallaxName": null,
+      "bgm": null
+    },
+    "75": {
+      "id": 75,
+      "name": "-- CROSSROADS (DAY)",
+      "width": 21,
+      "height": 53,
+      "parallaxName": null,
+      "bgm": "fat_overworld"
+    }
+  }
+}

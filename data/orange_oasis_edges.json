@@ -1,0 +1,2239 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 1,
+        "evName": "To Train Station",
+        "x": 15,
+        "y": 89,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 7,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 333,
+        "x": 6,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 2,
+        "evName": "To Dinos Dig",
+        "x": 17,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 107,
+        "x": 24,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 3,
+        "evName": "To Rain Town",
+        "x": 51,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 111,
+        "x": 6,
+        "y": 23
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 3,
+        "evName": "To Rain Town",
+        "x": 51,
+        "y": 41,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 111,
+        "x": 6,
+        "y": 23
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 3,
+        "evName": "To Rain Town",
+        "x": 51,
+        "y": 41,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 111,
+        "x": 6,
+        "y": 23
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 4,
+        "evName": "To Orange Joe's Cliff",
+        "x": 58,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 113,
+        "x": 14,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 5,
+        "evName": "To Orange Oasis",
+        "x": 73,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 112,
+        "x": 16,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 6,
+        "evName": "To Palmie's House",
+        "x": 81,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 115,
+        "x": 15,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 7,
+        "evName": "To Donut Grandma",
+        "x": 66,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 112,
+        "x": 47,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 8,
+        "evName": "To Arrow Cave",
+        "x": 83,
+        "y": 18,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 116,
+        "x": 53,
+        "y": 145
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 9,
+        "evName": "Path to Toast Grave",
+        "x": 89,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 332,
+        "x": 1,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 28,
+        "evName": "Face Wall",
+        "x": 78,
+        "y": 58,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 437,
+        "x": 6,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 62,
+        "evName": "Arrow Cave Exit",
+        "x": 78,
+        "y": 9,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 116,
+        "x": 42,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 107,
+        "evId": 1,
+        "evName": "To Orange Oasis",
+        "x": 24,
+        "y": 28,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 17,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 107,
+        "evId": 1,
+        "evName": "To Orange Oasis",
+        "x": 24,
+        "y": 28,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 17,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 107,
+        "evId": 2,
+        "evName": "To Excavation",
+        "x": 22,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 108,
+        "x": 26,
+        "y": 46
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 108,
+        "evId": 2,
+        "evName": "To Dinos Dig",
+        "x": 25,
+        "y": 47,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 107,
+        "x": 24,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 108,
+        "evId": 2,
+        "evName": "To Dinos Dig",
+        "x": 25,
+        "y": 47,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 107,
+        "x": 24,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 108,
+        "evId": 36,
+        "evName": "To Dinos Dig",
+        "x": 25,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 109,
+        "x": 21,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 109,
+        "evId": 3,
+        "evName": "To Dinos Dig",
+        "x": 20,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 110,
+        "x": 11,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 109,
+        "evId": 4,
+        "evName": "To Dinos Dig",
+        "x": 20,
+        "y": 30,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 108,
+        "x": 26,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 110,
+        "evId": 1,
+        "evName": "To Dinos Dig",
+        "x": 10,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 109,
+        "x": 21,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 110,
+        "evId": 13,
+        "evName": "To Dinos Dig",
+        "x": 10,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 122,
+        "x": 14,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 111,
+        "evId": 1,
+        "evName": "To Orange Oasis",
+        "x": 6,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 51,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 111,
+        "evId": 6,
+        "evName": "Valve",
+        "x": 26,
+        "y": 19,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 51,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 112,
+        "evId": 1,
+        "evName": "To Excavation",
+        "x": 16,
+        "y": 54,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 113,
+        "x": 14,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 112,
+        "evId": 2,
+        "evName": "To Orange Oasis",
+        "x": 16,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 73,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 112,
+        "evId": 3,
+        "evName": "To Excavation",
+        "x": 47,
+        "y": 54,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 113,
+        "x": 14,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 112,
+        "evId": 20,
+        "evName": "To Orange Oasis",
+        "x": 47,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 66,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 113,
+        "evId": 1,
+        "evName": "To Oasis Interiors",
+        "x": 14,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 112,
+        "x": 16,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 113,
+        "evId": 1,
+        "evName": "To Oasis Interiors",
+        "x": 14,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 112,
+        "x": 47,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 113,
+        "evId": 2,
+        "evName": "To Orange Oasis",
+        "x": 12,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 59,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 114,
+        "evId": 1,
+        "evName": "To Toast Grave",
+        "x": 6,
+        "y": 34,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 334,
+        "x": 19,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 114,
+        "evId": 2,
+        "evName": "To Dough Dungeon",
+        "x": 9,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 343,
+        "x": 15,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 115,
+        "evId": 1,
+        "evName": "To Orange Oasis",
+        "x": 14,
+        "y": 32,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 81,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 116,
+        "evId": 1,
+        "evName": "To Orange Oasis",
+        "x": 42,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 79,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 122,
+        "evId": 1,
+        "evName": "To Dinos Dig",
+        "x": 13,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 110,
+        "x": 11,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 328,
+        "evId": 1,
+        "evName": "INITIALIZE",
+        "x": 0,
+        "y": 6,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 328,
+        "x": 10,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 328,
+        "evId": 2,
+        "evName": "something (dorothi)",
+        "x": 36,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 452,
+        "x": null,
+        "y": null
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 328,
+        "evId": 20,
+        "evName": "To Orange Oasis",
+        "x": 34,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 333,
+        "x": 18,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 328,
+        "evId": 21,
+        "evName": "To Orange Oasis",
+        "x": 11,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 333,
+        "x": 18,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 332,
+        "evId": 1,
+        "evName": "To Orange Oasis",
+        "x": 0,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 88,
+        "y": 40
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 332,
+        "evId": 2,
+        "evName": "To Toast Grave",
+        "x": 59,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 334,
+        "x": 1,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 333,
+        "evId": 2,
+        "evName": "To Oasis",
+        "x": 4,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 17,
+        "y": 88
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 333,
+        "evId": 2,
+        "evName": "To Oasis",
+        "x": 4,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 17,
+        "y": 88
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 334,
+        "evId": 1,
+        "evName": "Path to Toast Grave",
+        "x": 0,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 332,
+        "x": 58,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 334,
+        "evId": 2,
+        "evName": "To Doom Entrance",
+        "x": 19,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 114,
+        "x": 6,
+        "y": 34
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 334,
+        "evId": 2,
+        "evName": "To Doom Entrance",
+        "x": 19,
+        "y": 16,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 343,
+        "x": 15,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 342,
+        "evId": 2,
+        "evName": "time to rock",
+        "x": 12,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 344,
+        "x": 14,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 342,
+        "evId": 5,
+        "evName": "yump",
+        "x": 11,
+        "y": 116,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 344,
+        "x": 14,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 1,
+        "evName": "Summon Placement",
+        "x": 15,
+        "y": 11,
+        "page": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 342,
+        "x": 12,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 10,
+        "evName": "actual mole",
+        "x": 15,
+        "y": 15,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 334,
+        "x": 19,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 10,
+        "evName": "actual mole",
+        "x": 15,
+        "y": 15,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 334,
+        "x": 19,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 10,
+        "evName": "actual mole",
+        "x": 15,
+        "y": 15,
+        "page": 6,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 334,
+        "x": 19,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 18,
+        "evName": "Bowl",
+        "x": 0,
+        "y": 1,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 344,
+        "x": 14,
+        "y": 2
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 18,
+        "evName": "Bowl",
+        "x": 0,
+        "y": 1,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 344,
+        "x": 34,
+        "y": 2
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 18,
+        "evName": "Bowl",
+        "x": 0,
+        "y": 1,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 344,
+        "x": 53,
+        "y": 2
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 344,
+        "evId": 1,
+        "evName": "TO BAKING ROOM",
+        "x": 14,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 345,
+        "x": 10,
+        "y": 55
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 344,
+        "evId": 2,
+        "evName": "TO BAKING ROOM",
+        "x": 34,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 345,
+        "x": 14,
+        "y": 55
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 344,
+        "evId": 3,
+        "evName": "TO BAKING ROOM",
+        "x": 53,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 345,
+        "x": 18,
+        "y": 55
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 345,
+        "evId": 1,
+        "evName": "TO BAKING ROOM",
+        "x": 10,
+        "y": 56,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 344,
+        "x": 14,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 345,
+        "evId": 2,
+        "evName": "TO BAKING ROOM",
+        "x": 14,
+        "y": 56,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 344,
+        "x": 34,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 345,
+        "evId": 3,
+        "evName": "TO BAKING ROOM",
+        "x": 18,
+        "y": 56,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 344,
+        "x": 53,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 345,
+        "evId": 7,
+        "evName": "Exit",
+        "x": 14,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 334,
+        "x": 5,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 9,
+        "evName": "To Orange Oasis",
+        "x": 6,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 78,
+        "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 452,
+        "evId": 1,
+        "evName": "To Orange Oasis",
+        "x": 11,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 333,
+        "x": 18,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 452,
+        "evId": 2,
+        "evName": "To Orange Oasis",
+        "x": 34,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 333,
+        "x": 18,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 5,
+        "evName": "To Orange Oasis",
+        "x": 73,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1121,
+        "x": 5,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 7,
+        "evName": "To Donut Grandma",
+        "x": 66,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1122,
+        "x": 5,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 28,
+        "evName": "Face Wall",
+        "x": 78,
+        "y": 58,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4371,
+        "x": 3,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1123,
+        "evId": 1,
+        "evName": "To Excavation",
+        "x": 3,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 113,
+        "x": 14,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1121,
+        "evId": 2,
+        "evName": "To Orange Oasis",
+        "x": 5,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 73,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1124,
+        "evId": 3,
+        "evName": "To Excavation",
+        "x": 3,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 113,
+        "x": 14,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1122,
+        "evId": 20,
+        "evName": "To Orange Oasis",
+        "x": 5,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 66,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 113,
+        "evId": 1,
+        "evName": "To Oasis Interiors",
+        "x": 14,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1123,
+        "x": 3,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 113,
+        "evId": 1,
+        "evName": "To Oasis Interiors",
+        "x": 14,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1124,
+        "x": 3,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 342,
+        "evId": 2,
+        "evName": "time to rock",
+        "x": 12,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3441,
+        "x": 3,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 342,
+        "evId": 5,
+        "evName": "yump",
+        "x": 11,
+        "y": 116,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3441,
+        "x": 3,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 345,
+        "evId": 1,
+        "evName": "TO BAKING ROOM",
+        "x": 10,
+        "y": 56,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3441,
+        "x": 3,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 345,
+        "evId": 2,
+        "evName": "TO BAKING ROOM",
+        "x": 14,
+        "y": 56,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3442,
+        "x": 3,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 345,
+        "evId": 3,
+        "evName": "TO BAKING ROOM",
+        "x": 18,
+        "y": 56,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3443,
+        "x": 3,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 900,
+        "evName": "Summoning Circle (center)",
+        "x": 15,
+        "y": 13,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 343,
+        "x": 15,
+        "y": 13
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 3441,
+        "evId": 901,
+        "evName": "Flour Pile (team landing)",
+        "x": 3,
+        "y": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3441,
+        "x": 3,
+        "y": 5
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 3442,
+        "evId": 902,
+        "evName": "Flour Pile",
+        "x": 3,
+        "y": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3442,
+        "x": 3,
+        "y": 5
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 3443,
+        "evId": 903,
+        "evName": "Flour Pile",
+        "x": 3,
+        "y": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3443,
+        "x": 3,
+        "y": 5
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 3441,
+        "evId": 910,
+        "evName": "Exit to Baking Room",
+        "x": 3,
+        "y": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 345,
+        "x": 10,
+        "y": 55
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 3442,
+        "evId": 910,
+        "evName": "Exit to Baking Room",
+        "x": 3,
+        "y": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 345,
+        "x": 14,
+        "y": 55
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 3443,
+        "evId": 910,
+        "evName": "Exit to Baking Room",
+        "x": 3,
+        "y": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 345,
+        "x": 18,
+        "y": 55
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 116,
+        "evId": 901,
+        "evName": "Arrow Cave Bottom Landing",
+        "x": 53,
+        "y": 145,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 116,
+        "x": 53,
+        "y": 145
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 343,
+        "evId": 920,
+        "evName": "Flour Pile (bottom)",
+        "x": 15,
+        "y": 47,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 343,
+        "x": 15,
+        "y": 47
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 333,
+        "evId": 920,
+        "evName": "Train Terminal",
+        "x": 18,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 333,
+        "x": 18,
+        "y": 11
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 4371,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 4,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4371,
+        "x": 4,
+        "y": 11
+      },
+      "kind": "exitStem"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 106,
+        "evId": 47,
+        "evName": "Telescope",
+        "x": 17,
+        "y": 13,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 491,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 328,
+        "evId": 20,
+        "evName": "To Orange Oasis",
+        "x": 34,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 327,
+        "x": 19,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 328,
+        "evId": 21,
+        "evName": "To Orange Oasis",
+        "x": 11,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 327,
+        "x": 19,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 333,
+        "evId": 1,
+        "evName": "To Train Station",
+        "x": 18,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 327,
+        "x": 19,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 1,
+        "evName": "To Frozen Forest",
+        "x": 8,
+        "y": 38,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 136,
+        "x": 14,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 2,
+        "evName": "To Molly Left 1",
+        "x": 53,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 239,
+        "x": 4,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 3,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 251,
+        "x": 35,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 4,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 59,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 223,
+        "x": 44,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 452,
+        "evId": 1,
+        "evName": "To Orange Oasis",
+        "x": 11,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 327,
+        "x": 19,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 452,
+        "evId": 2,
+        "evName": "To Orange Oasis",
+        "x": 34,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 327,
+        "x": 19,
+        "y": 11
+      },
+      "kind": "setValue"
+    }
+  ]
+}

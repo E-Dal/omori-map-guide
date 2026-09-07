@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Belt machine self-test</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  body { margin:0; font-family: system-ui, sans-serif; background:#1a1a1a; color:#ddd; }
+  #log { padding:10px 14px; font-size:13px; line-height:1.6; }
+  #log div { font-family: ui-monospace, monospace; }
+  .ok   { color:#7fdc7f }
+  .bad  { color:#ff7676; font-weight:bold }
+  .note { color:#999 }
+  #map { width:100vw; height:60vh; background:#0a0a0a; border-top:1px solid #333; }
+  .pin { display:flex; align-items:center; justify-content:center;
+         filter: drop-shadow(0 0 2px #000) drop-shadow(0 0 4px #000); cursor:pointer; }
+  .pin img { image-rendering: pixelated; display:block; }
+  h2 { margin:10px 14px 0; font-size:15px; }
+</style>
+</head>
+<body>
+<h2>Belt machine self-test</h2>
+<div id="log"></div>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+// A standalone check of everything the belt-machine flip depends on, printed
+// on the page so it can be read without opening devtools. Each step says what
+// it tried and what happened; the first red line is the fault.
+const log = document.getElementById('log');
+const say = (cls, msg) => {
+  const d = document.createElement('div');
+  d.className = cls; d.textContent = msg; log.appendChild(d);
+};
+const ok = m => say('ok', '✓ ' + m);
+const bad = m => say('bad', '✗ ' + m);
+const note = m => say('note', '  ' + m);
+
+window.addEventListener('error', e => bad(`uncaught error: ${e.message}`));
+
+const V = `?v=${Date.now()}`;   // always bypass the cache here
+const TILE = 32;
+
+(async function main() {
+  say('note', `leaflet ${L.version}`);
+
+  // 1 — the data
+  let conv;
+  try {
+    const r = await fetch('../data/conveyors.json' + V);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    conv = await r.json();
+    const groups = Object.values(conv).reduce((n, d) => n + d.groups.length, 0);
+    ok(`conveyors.json loaded — ${Object.keys(conv).length} map(s), ${groups} belt group(s)`);
+  } catch (e) { bad(`conveyors.json: ${e.message}`); return; }
+
+  const g = conv['240'] && conv['240'].groups[0];
+  if (!g) { bad('no belt group on map240'); return; }
+  note(`testing map240 group ev${g.evRange[0]}-${g.evRange[1]}, ` +
+       `${g.belts.length} belt(s), machine "${g.machines[0].name}" at (${g.machines[0].x},${g.machines[0].y})`);
+
+  // 2 — the images
+  const load = src => new Promise(res => {
+    const i = new Image();
+    i.onload = () => res({ ok: true, w: i.width, h: i.height });
+    i.onerror = () => res({ ok: false });
+    i.src = src;
+  });
+  const base = await load('../data/raw_pngs/map240.png' + V);
+  base.ok ? ok(`map240.png loaded — ${base.w}x${base.h}`) : bad('map240.png did NOT load');
+  const ov = await load(`../data/conveyors/${g.overlay.file}${V}`);
+  ov.ok ? ok(`${g.overlay.file} loaded — ${ov.w}x${ov.h}`)
+        : bad(`${g.overlay.file} did NOT load — this alone would make the flip invisible`);
+  const mach = await load('assets/machine.png' + V);
+  mach.ok ? ok(`machine.png loaded — ${mach.w}x${mach.h}`) : bad('machine.png did NOT load');
+  if (!base.ok) return;
+
+  // 3 — the map, exactly as Per-Map view builds it
+  const map = L.map('map', { crs: L.CRS.Simple, minZoom: -4, maxZoom: 3, attributionControl: false });
+  const h = base.h, w = base.w;
+  L.imageOverlay('../data/raw_pngs/map240.png' + V, [[0, 0], [h, w]]).addTo(map);
+  ok('base map added');
+
+  // 4 — the overlay, added and removed the way a flip does it
+  let overlay = null;
+  const o = g.overlay;
+  const bounds = [[h - o.y - o.h, o.x], [h - o.y, o.x + o.w]];
+  note(`overlay bounds ${JSON.stringify(bounds)} (map is ${w}x${h}px)`);
+  try {
+    overlay = L.imageOverlay(`../data/conveyors/${o.file}${V}`, bounds);
+    overlay.addTo(map);
+    ok('overlay added to the map');
+    overlay.remove();
+    ok('overlay removed again — starting in the default state');
+  } catch (e) { bad(`adding the overlay threw: ${e.message}`); }
+
+  // 5 — a clickable machine marker, same construction as the atlas
+  const m = g.machines[0];
+  const px = 30, pw = Math.round(px * mach.w / mach.h);
+  const marker = L.marker([h - (m.y * TILE + TILE / 2), m.x * TILE + TILE / 2], {
+    icon: L.divIcon({
+      className: '',
+      html: `<div class="pin"><img src="assets/machine.png${V}" width="${pw}" height="${px}"></div>`,
+      iconSize: [pw, px], iconAnchor: [pw / 2, px / 2],
+    }),
+  }).addTo(map);
+  ok('machine marker added — click it on the map below');
+
+  let clicks = 0, shown = false;
+  marker.on('click', () => {
+    clicks++;
+    shown = !shown;
+    try {
+      if (shown) overlay.addTo(map); else overlay.remove();
+      ok(`click ${clicks}: belts now ${shown ? 'REVERSED' : 'default'}` +
+         ` — watch the arrows around (${m.x},${m.y})`);
+    } catch (e) { bad(`click ${clicks}: ${e.message}`); }
+  });
+
+  map.fitBounds([[h - 22 * TILE, 10 * TILE], [h - 4 * TILE, 42 * TILE]]);
+  say('note', '— if no green "click 1" line appears when you click the machine, the click never reaches it —');
+})();
+</script>
+</body>
+</html>

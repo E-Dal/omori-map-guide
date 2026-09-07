@@ -1,0 +1,316 @@
+{
+ "watermelons": [
+  {
+   "mapId": 128,
+   "evId": 6,
+   "name": "melonCopy",
+   "x": 34,
+   "y": 25,
+   "color": "blue",
+   "prize": {
+    "template": "melonBackpack",
+    "kind": "Armor",
+    "itemName": "BACKPACK"
+   }
+  },
+  {
+   "mapId": 142,
+   "evId": 4,
+   "name": "melonCopy",
+   "x": 8,
+   "y": 6,
+   "color": "green",
+   "prize": {
+    "template": "melonRubberband",
+    "kind": "Item",
+    "itemName": "RUBBER BAND"
+   }
+  },
+  {
+   "mapId": 142,
+   "evId": 20,
+   "name": "melonCopy",
+   "x": 1,
+   "y": 11,
+   "color": "green",
+   "prize": {
+    "template": "melonGranolaBar",
+    "kind": "Item",
+    "itemName": "GRANOLA BAR"
+   }
+  },
+  {
+   "mapId": 142,
+   "evId": 21,
+   "name": "melonCheapGoldWatch",
+   "x": 15,
+   "y": 2,
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "\"GOLD\" WATCH"
+   }
+  },
+  {
+   "mapId": 143,
+   "evId": 7,
+   "name": "melonCopy",
+   "x": 26,
+   "y": 8,
+   "color": "green",
+   "prize": {
+    "template": "melonAirHorn",
+    "kind": "Item",
+    "itemName": "AIR HORN"
+   }
+  },
+  {
+   "mapId": 144,
+   "evId": 113,
+   "name": "melonCopy",
+   "x": 15,
+   "y": 32,
+   "color": "green",
+   "prize": {
+    "template": "melonChocolate",
+    "kind": "Item",
+    "itemName": "CHOCOLATE"
+   }
+  },
+  {
+   "mapId": 144,
+   "evId": 114,
+   "name": "melonCopy",
+   "x": 29,
+   "y": 21,
+   "color": "blue",
+   "prize": {
+    "template": "melonCometHammer",
+    "kind": "Weapon",
+    "itemName": "COMET HAMMER"
+   }
+  },
+  {
+   "mapId": 145,
+   "evId": 8,
+   "name": "melonCopy",
+   "x": 14,
+   "y": 21,
+   "color": "green",
+   "prize": {
+    "template": "melonStarFruitSoda",
+    "kind": "Item",
+    "itemName": "STAR FRUIT SODA"
+   }
+  },
+  {
+   "mapId": 147,
+   "evId": 2,
+   "name": "melonPoetryBook",
+   "x": 18,
+   "y": 39,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "POETRY BOOK"
+   }
+  },
+  {
+   "mapId": 147,
+   "evId": 6,
+   "name": "melonCopy",
+   "x": 33,
+   "y": 49,
+   "color": "green",
+   "prize": {
+    "template": "melonRubberband",
+    "kind": "Item",
+    "itemName": "RUBBER BAND"
+   }
+  },
+  {
+   "mapId": 147,
+   "evId": 13,
+   "name": "melonCopy",
+   "x": 27,
+   "y": 56,
+   "color": "green",
+   "prize": {
+    "template": "melonWaterBottle",
+    "kind": "Item",
+    "itemName": "GLASS BOTTLE"
+   }
+  },
+  {
+   "mapId": 147,
+   "evId": 41,
+   "name": "melonCopy",
+   "x": 9,
+   "y": 55,
+   "color": "green",
+   "prize": {
+    "template": "melonConfetti",
+    "kind": "Item",
+    "itemName": "CONFETTI"
+   }
+  },
+  {
+   "mapId": 147,
+   "evId": 43,
+   "name": "melonCopy",
+   "x": 21,
+   "y": 34,
+   "color": "blue",
+   "prize": {
+    "template": "melonMeteorBall",
+    "kind": "Weapon",
+    "itemName": "METEOR BALL"
+   }
+  },
+  {
+   "mapId": 147,
+   "evId": 44,
+   "name": "melonCopy",
+   "x": 4,
+   "y": 29,
+   "color": "green",
+   "prize": {
+    "template": "melonLifeJam",
+    "kind": "Item",
+    "itemName": "LIFE JAM"
+   }
+  },
+  {
+   "mapId": 147,
+   "evId": 47,
+   "name": "melonCopy",
+   "x": 28,
+   "y": 30,
+   "color": "green",
+   "prize": {
+    "template": "melonHotdog",
+    "kind": "Item",
+    "itemName": "HOT DOG"
+   }
+  },
+  {
+   "mapId": 149,
+   "evId": 4,
+   "name": "melonCopy",
+   "x": 10,
+   "y": 14,
+   "color": "green",
+   "prize": {
+    "template": "melonButtPeachSoda",
+    "kind": "Item",
+    "itemName": "BUTT PEACH SODA"
+   }
+  },
+  {
+   "mapId": 149,
+   "evId": 5,
+   "name": "melonCopy",
+   "x": 9,
+   "y": 7,
+   "color": "green",
+   "prize": {
+    "template": "melonLifeJam",
+    "kind": "Item",
+    "itemName": "LIFE JAM"
+   }
+  },
+  {
+   "mapId": 149,
+   "evId": 6,
+   "name": "melonCopy",
+   "x": 7,
+   "y": 23,
+   "color": "green",
+   "prize": {
+    "template": "melonRubberBand",
+    "kind": "Item",
+    "itemName": "RUBBER BAND"
+   }
+  },
+  {
+   "mapId": 149,
+   "evId": 7,
+   "name": "melonCopy",
+   "x": 22,
+   "y": 22,
+   "color": "green",
+   "prize": {
+    "template": "melonHotDog",
+    "kind": "Item",
+    "itemName": "HOT DOG"
+   }
+  },
+  {
+   "mapId": 149,
+   "evId": 8,
+   "name": "melonCopy",
+   "x": 1,
+   "y": 23,
+   "color": "green",
+   "prize": {
+    "template": "melonStarFruitSoda",
+    "kind": "Item",
+    "itemName": "STAR FRUIT SODA"
+   }
+  },
+  {
+   "mapId": 149,
+   "evId": 9,
+   "name": "melonCopy",
+   "x": 10,
+   "y": 8,
+   "color": "green",
+   "prize": {
+    "template": "melonDonut",
+    "kind": "Item",
+    "itemName": "DONUT"
+   }
+  },
+  {
+   "mapId": 150,
+   "evId": 4,
+   "name": "melonCopy",
+   "x": 33,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": "melonRainCloud",
+    "kind": "Item",
+    "itemName": "RAIN CLOUD"
+   }
+  },
+  {
+   "mapId": 150,
+   "evId": 10,
+   "name": "melonCopy",
+   "x": 27,
+   "y": 33,
+   "color": "blue",
+   "prize": {
+    "template": "melonBakingPan",
+    "kind": "Weapon",
+    "itemName": "BAKING PAN"
+   }
+  },
+  {
+   "mapId": 429,
+   "evId": 7,
+   "name": "melonCopy",
+   "x": 37,
+   "y": 16,
+   "color": "green",
+   "prize": {
+    "template": "melonLemonade",
+    "kind": "Item",
+    "itemName": "LEMONADE"
+   }
+  }
+ ]
+}

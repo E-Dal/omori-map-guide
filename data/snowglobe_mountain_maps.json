@@ -1,0 +1,258 @@
+{
+  "132": {
+    "id": 132,
+    "name": "-- IGLOO INTERIOR",
+    "width": 44,
+    "height": 44,
+    "parallaxName": null,
+    "bgm": "snow_forest"
+  },
+  "133": {
+    "id": 133,
+    "name": "-- FROZEN FOREST ENTRANCE",
+    "width": 30,
+    "height": 27,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "134": {
+    "id": 134,
+    "name": "-- FROZEN FOREST (I)",
+    "width": 150,
+    "height": 150,
+    "parallaxName": null,
+    "bgm": "snow_forest_field"
+  },
+  "135": {
+    "id": 135,
+    "name": "-- FROZEN FOREST (II)",
+    "width": 60,
+    "height": 96,
+    "parallaxName": "!parallax_mountain",
+    "bgm": "snow_forest_field"
+  },
+  "136": {
+    "id": 136,
+    "name": "-- FROZEN FOREST (III)",
+    "width": 30,
+    "height": 27,
+    "parallaxName": null,
+    "bgm": "snow_forest_field"
+  },
+  "137": {
+    "id": 137,
+    "name": "-- FROZEN FOREST (IV)",
+    "width": 35,
+    "height": 35,
+    "parallaxName": null,
+    "bgm": "snow_forest_field"
+  },
+  "138": {
+    "id": 138,
+    "name": "-- FROZEN FOREST (V)",
+    "width": 25,
+    "height": 38,
+    "parallaxName": null,
+    "bgm": "snow_forest_field"
+  },
+  "139": {
+    "id": 139,
+    "name": "-- FROZEN FOREST (VI)",
+    "width": 30,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "snow_forest_field"
+  },
+  "140": {
+    "id": 140,
+    "name": "-- FROZEN FOREST (VII)",
+    "width": 50,
+    "height": 70,
+    "parallaxName": "!parallax_mountain",
+    "bgm": "snow_forest_field"
+  },
+  "141": {
+    "id": 141,
+    "name": "-- FROZEN FOREST (VIII)",
+    "width": 40,
+    "height": 90,
+    "parallaxName": "!parallax_mountain",
+    "bgm": "snow_forest_top"
+  },
+  "347": {
+    "id": 347,
+    "name": "-- FROZEN FOREST (IX)",
+    "width": 28,
+    "height": 70,
+    "parallaxName": "!parallax_mountain",
+    "bgm": "snow_forest_top"
+  },
+  "1321": {
+    "id": 1321,
+    "name": "-- IGLOO INTERIOR [top-L]",
+    "width": 7,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "snow_forest",
+    "cropX": 8,
+    "cropY": 4,
+    "polygon": [
+      [
+        8,
+        4
+      ],
+      [
+        15,
+        4
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        8,
+        16
+      ]
+    ]
+  },
+  "1322": {
+    "id": 1322,
+    "name": "-- IGLOO INTERIOR [top-R]",
+    "width": 7,
+    "height": 9,
+    "parallaxName": null,
+    "bgm": "snow_forest",
+    "cropX": 28,
+    "cropY": 7,
+    "polygon": [
+      [
+        28,
+        7
+      ],
+      [
+        35,
+        7
+      ],
+      [
+        35,
+        16
+      ],
+      [
+        28,
+        16
+      ]
+    ]
+  },
+  "1323": {
+    "id": 1323,
+    "name": "-- IGLOO INTERIOR [bot-L]",
+    "width": 7,
+    "height": 10,
+    "parallaxName": null,
+    "bgm": "snow_forest",
+    "cropX": 8,
+    "cropY": 26,
+    "polygon": [
+      [
+        8,
+        26
+      ],
+      [
+        15,
+        26
+      ],
+      [
+        15,
+        36
+      ],
+      [
+        8,
+        36
+      ]
+    ]
+  },
+  "1324": {
+    "id": 1324,
+    "name": "-- IGLOO INTERIOR [bot-R]",
+    "width": 7,
+    "height": 10,
+    "parallaxName": null,
+    "bgm": "snow_forest",
+    "cropX": 28,
+    "cropY": 26,
+    "polygon": [
+      [
+        28,
+        26
+      ],
+      [
+        35,
+        26
+      ],
+      [
+        35,
+        36
+      ],
+      [
+        28,
+        36
+      ]
+    ]
+  },
+  "3471": {
+    "id": 3471,
+    "name": "-- FROZEN FOREST (IX) [main corridor]",
+    "width": 12,
+    "height": 64,
+    "parallaxName": "!parallax_mountain",
+    "bgm": "snow_forest_top",
+    "cropX": 6,
+    "cropY": 6,
+    "polygon": [
+      [
+        6,
+        6
+      ],
+      [
+        18,
+        6
+      ],
+      [
+        18,
+        70
+      ],
+      [
+        6,
+        70
+      ]
+    ]
+  },
+  "3472": {
+    "id": 3472,
+    "name": "-- FROZEN FOREST (IX) [side branch]",
+    "width": 6,
+    "height": 16,
+    "parallaxName": "!parallax_mountain",
+    "bgm": "snow_forest_top",
+    "cropX": 20,
+    "cropY": 31,
+    "polygon": [
+      [
+        20,
+        31
+      ],
+      [
+        26,
+        31
+      ],
+      [
+        26,
+        47
+      ],
+      [
+        20,
+        47
+      ]
+    ]
+  }
+}

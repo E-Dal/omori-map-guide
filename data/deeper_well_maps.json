@@ -1,0 +1,498 @@
+{
+  "201": {
+    "id": 201,
+    "name": "-- ENTRANCE TO ABYSS",
+    "width": 20,
+    "height": 68,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "210": {
+    "id": 210,
+    "name": "-- WHIRLPOOLS 1",
+    "width": 75,
+    "height": 75,
+    "parallaxName": null,
+    "bgm": "bs_aquifer"
+  },
+  "212": {
+    "id": 212,
+    "name": "-- TRENCH",
+    "width": 22,
+    "height": 64,
+    "parallaxName": "parallax_dw_2",
+    "bgm": "dw_depths"
+  },
+  "215": {
+    "id": 215,
+    "name": "-- PATH TO TRENCH",
+    "width": 20,
+    "height": 58,
+    "parallaxName": "parallax_dw_2",
+    "bgm": "dw_overworld"
+  },
+  "216": {
+    "id": 216,
+    "name": "-- HUMPHREY'S CAVE",
+    "width": 23,
+    "height": 48,
+    "parallaxName": null,
+    "bgm": "dw_depths"
+  },
+  "253": {
+    "id": 253,
+    "name": "-- THE ABYSS",
+    "width": 40,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "dw_abyss"
+  },
+  "254": {
+    "id": 254,
+    "name": "-- ABYSS LOWER 1",
+    "width": 40,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "dw_abyss"
+  },
+  "255": {
+    "id": 255,
+    "name": "-- ABYSS LOWER 2",
+    "width": 40,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "dw_abyss"
+  },
+  "256": {
+    "id": 256,
+    "name": "-- ABYSS LOWER 3",
+    "width": 40,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "dw_abyss"
+  },
+  "257": {
+    "id": 257,
+    "name": "-- ABYSS LOWER 4",
+    "width": 55,
+    "height": 55,
+    "parallaxName": null,
+    "bgm": "dw_abyss"
+  },
+  "258": {
+    "id": 258,
+    "name": "-- ABYSS FINAL",
+    "width": 82,
+    "height": 25,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "259": {
+    "id": 259,
+    "name": "-- MAP OF TRUTH",
+    "width": 23,
+    "height": 80,
+    "parallaxName": null,
+    "bgm": "bs_numbered"
+  },
+  "433": {
+    "id": 433,
+    "name": "-- ALCOVES I",
+    "width": 70,
+    "height": 76,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "437": {
+    "id": 437,
+    "name": "-- ALCOVES II",
+    "width": 62,
+    "height": 70,
+    "parallaxName": null,
+    "bgm": "fat_sunset"
+  },
+  "446": {
+    "id": 446,
+    "name": "-- DEEPERWELL PATH",
+    "width": 30,
+    "height": 80,
+    "parallaxName": null,
+    "bgm": "bs_aquifer"
+  },
+  "447": {
+    "id": 447,
+    "name": "-- WHIRLPOOLS 2",
+    "width": 75,
+    "height": 75,
+    "parallaxName": null,
+    "bgm": "bs_aquifer"
+  },
+  "453": {
+    "id": 453,
+    "name": "-- CLUB SANDWICH",
+    "width": 66,
+    "height": 50,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2"
+  },
+  "495": {
+    "id": 495,
+    "name": "-- DEEPERWELL FALLS",
+    "width": 80,
+    "height": 80,
+    "parallaxName": "parallax_dw_2",
+    "bgm": "bs_aquifer"
+  },
+  "2101": {
+    "id": 2101,
+    "name": "-- WHIRLPOOLS 1 [pool C-D room]",
+    "width": 27,
+    "height": 23,
+    "parallaxName": null,
+    "bgm": "bs_aquifer",
+    "cropX": 2,
+    "cropY": 0,
+    "polygon": [
+      [
+        2,
+        0
+      ],
+      [
+        29,
+        0
+      ],
+      [
+        29,
+        23
+      ],
+      [
+        2,
+        23
+      ]
+    ]
+  },
+  "2102": {
+    "id": 2102,
+    "name": "-- WHIRLPOOLS 1 [pool E-Q room]",
+    "width": 22,
+    "height": 28,
+    "parallaxName": null,
+    "bgm": "bs_aquifer",
+    "cropX": 46,
+    "cropY": 0,
+    "polygon": [
+      [
+        46,
+        0
+      ],
+      [
+        68,
+        0
+      ],
+      [
+        68,
+        28
+      ],
+      [
+        46,
+        28
+      ]
+    ]
+  },
+  "2103": {
+    "id": 2103,
+    "name": "-- WHIRLPOOLS 1 [pool H-I-L room]",
+    "width": 27,
+    "height": 33,
+    "parallaxName": null,
+    "bgm": "bs_aquifer",
+    "cropX": 6,
+    "cropY": 37,
+    "polygon": [
+      [
+        6,
+        37
+      ],
+      [
+        33,
+        37
+      ],
+      [
+        33,
+        70
+      ],
+      [
+        6,
+        70
+      ]
+    ]
+  },
+  "2104": {
+    "id": 2104,
+    "name": "-- WHIRLPOOLS 1 [pool A-B room]",
+    "width": 18,
+    "height": 25,
+    "parallaxName": null,
+    "bgm": "bs_aquifer",
+    "cropX": 53,
+    "cropY": 36,
+    "polygon": [
+      [
+        53,
+        36
+      ],
+      [
+        71,
+        36
+      ],
+      [
+        71,
+        61
+      ],
+      [
+        53,
+        61
+      ]
+    ]
+  },
+  "4336": {
+    "id": 4336,
+    "name": "-- ALCOVES I [ocean alcove — via deeper well]",
+    "width": 6,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 54,
+    "cropY": 32,
+    "polygon": [
+      [
+        54,
+        32
+      ],
+      [
+        60,
+        32
+      ],
+      [
+        60,
+        44
+      ],
+      [
+        54,
+        44
+      ]
+    ]
+  },
+  "4373": {
+    "id": 4373,
+    "name": "-- ALCOVES II [alcove 3]",
+    "width": 10,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 48,
+    "cropY": 3,
+    "polygon": [
+      [
+        48,
+        3
+      ],
+      [
+        58,
+        3
+      ],
+      [
+        58,
+        15
+      ],
+      [
+        48,
+        15
+      ]
+    ]
+  },
+  "4376": {
+    "id": 4376,
+    "name": "-- ALCOVES II [alcove 6]",
+    "width": 10,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 48,
+    "cropY": 25,
+    "polygon": [
+      [
+        48,
+        25
+      ],
+      [
+        58,
+        25
+      ],
+      [
+        58,
+        37
+      ],
+      [
+        48,
+        37
+      ]
+    ]
+  },
+  "4379": {
+    "id": 4379,
+    "name": "-- ALCOVES II [alcove 10]",
+    "width": 10,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 48,
+    "cropY": 47,
+    "polygon": [
+      [
+        48,
+        47
+      ],
+      [
+        58,
+        47
+      ],
+      [
+        58,
+        59
+      ],
+      [
+        48,
+        59
+      ]
+    ]
+  },
+  "4471": {
+    "id": 4471,
+    "name": "-- WHIRLPOOLS 2 [pool S-T room]",
+    "width": 13,
+    "height": 28,
+    "parallaxName": null,
+    "bgm": "bs_aquifer",
+    "cropX": 57,
+    "cropY": 5,
+    "polygon": [
+      [
+        57,
+        5
+      ],
+      [
+        70,
+        5
+      ],
+      [
+        70,
+        33
+      ],
+      [
+        57,
+        33
+      ]
+    ]
+  },
+  "4472": {
+    "id": 4472,
+    "name": "-- WHIRLPOOLS 2 [branch coral room]",
+    "width": 9,
+    "height": 16,
+    "parallaxName": null,
+    "bgm": "bs_aquifer",
+    "cropX": 40,
+    "cropY": 50,
+    "polygon": [
+      [
+        40,
+        50
+      ],
+      [
+        49,
+        50
+      ],
+      [
+        49,
+        66
+      ],
+      [
+        40,
+        66
+      ]
+    ]
+  },
+  "4473": {
+    "id": 4473,
+    "name": "-- WHIRLPOOLS 2 [main path — pools F & G]",
+    "width": 44,
+    "height": 73,
+    "parallaxName": null,
+    "bgm": "bs_aquifer",
+    "cropX": 4,
+    "cropY": 0,
+    "polygon": [
+      [
+        4,
+        0
+      ],
+      [
+        48,
+        0
+      ],
+      [
+        48,
+        35
+      ],
+      [
+        24,
+        35
+      ],
+      [
+        24,
+        73
+      ],
+      [
+        14,
+        73
+      ],
+      [
+        14,
+        35
+      ],
+      [
+        4,
+        35
+      ]
+    ]
+  },
+  "4532": {
+    "id": 4532,
+    "name": "-- CLUB SANDWICH [bounce shroom room]",
+    "width": 9,
+    "height": 12,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2",
+    "cropX": 29,
+    "cropY": 3,
+    "polygon": [
+      [
+        29,
+        3
+      ],
+      [
+        38,
+        3
+      ],
+      [
+        38,
+        15
+      ],
+      [
+        29,
+        15
+      ]
+    ]
+  }
+}

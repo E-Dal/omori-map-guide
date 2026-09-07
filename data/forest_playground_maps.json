@@ -1,0 +1,10 @@
+{
+  "92": {
+    "id": 92,
+    "name": "-- FOREST PLAYGROUND",
+    "width": 42,
+    "height": 46,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_playground"
+  }
+}

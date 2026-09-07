@@ -1,0 +1,523 @@
+{
+  "version": 2,
+  "layout": {
+    "128": {
+      "x": 992,
+      "y": 1440,
+      "crop": "full",
+      "zOrder": 1
+    },
+    "142": {
+      "x": 1280,
+      "y": 512,
+      "crop": "full",
+      "zOrder": 2
+    },
+    "143": {
+      "x": 2208,
+      "y": 256,
+      "crop": "full",
+      "zOrder": 3
+    },
+    "144": {
+      "x": 3584,
+      "y": -544,
+      "crop": "full",
+      "zOrder": 4
+    },
+    "145": {
+      "x": 4992,
+      "y": -3328,
+      "crop": "full",
+      "zOrder": 15
+    },
+    "147": {
+      "x": 3232,
+      "y": -4384,
+      "crop": "full",
+      "zOrder": 8
+    },
+    "149": {
+      "x": 352,
+      "y": -1920,
+      "crop": "full",
+      "zOrder": 7
+    },
+    "150": {
+      "x": 1248,
+      "y": -1728,
+      "crop": "full",
+      "zOrder": 6
+    },
+    "151": {
+      "x": 1056,
+      "y": -448,
+      "crop": "full",
+      "zOrder": 5
+    },
+    "427": {
+      "x": 2720,
+      "y": -6304,
+      "crop": "full",
+      "zOrder": 14
+    },
+    "429": {
+      "x": 4416,
+      "y": -1536,
+      "crop": "full",
+      "zOrder": 11
+    },
+    "4281": {
+      "x": 3616,
+      "y": -1600,
+      "crop": "full",
+      "zOrder": 12
+    },
+    "4283": {
+      "x": 5536,
+      "y": -1760,
+      "crop": "full",
+      "zOrder": 13
+    }
+  },
+  "routes": [
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 3728,
+          "y": -432,
+          "snap": {
+            "mapId": 144,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 3728,
+          "y": -688,
+          "snap": {
+            "mapId": 4281,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 4560,
+          "y": -1200,
+          "snap": {
+            "mapId": 4281,
+            "evId": 2,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 4560,
+          "y": -1040,
+          "snap": {
+            "mapId": 429,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 5648,
+          "y": -720,
+          "snap": {
+            "mapId": 429,
+            "evId": 4,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 5648,
+          "y": -1104,
+          "snap": {
+            "mapId": 4283,
+            "evId": 3,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 5648,
+          "y": -1616,
+          "snap": {
+            "mapId": 4283,
+            "evId": 4,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 5648,
+          "y": -1744,
+          "snap": {
+            "mapId": 145,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 5584,
+          "y": -2928,
+          "snap": {
+            "mapId": 145,
+            "evId": 2,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 4208,
+          "y": -2544,
+          "snap": {
+            "mapId": 147,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 5200,
+          "y": -2896,
+          "snap": {
+            "mapId": 145,
+            "evId": 12,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 3664,
+          "y": -2544,
+          "snap": {
+            "mapId": 147,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 528,
+          "y": -1904,
+          "snap": {
+            "mapId": 149,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 3376,
+          "y": -2544,
+          "snap": {
+            "mapId": 147,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 3440,
+          "y": -3216,
+          "snap": {
+            "mapId": 147,
+            "evId": 29,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 3088,
+          "y": -4496,
+          "snap": {
+            "mapId": 427,
+            "evId": 6,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 3760,
+          "y": -3216,
+          "snap": {
+            "mapId": 147,
+            "evId": 26,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 3920,
+          "y": -4496,
+          "snap": {
+            "mapId": 427,
+            "evId": 1,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 3568,
+          "y": -3472,
+          "snap": {
+            "mapId": 147,
+            "evId": 28,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 3408,
+          "y": -5392,
+          "snap": {
+            "mapId": 427,
+            "evId": 4,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 3888,
+          "y": -3600,
+          "snap": {
+            "mapId": 147,
+            "evId": 37,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 4080,
+          "y": -5808,
+          "snap": {
+            "mapId": 427,
+            "evId": 3,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 4080,
+          "y": -3472,
+          "snap": {
+            "mapId": 147,
+            "evId": 27,
+            "evName": "Teleport"
+          }
+        },
+        {
+          "x": 4720,
+          "y": -5232,
+          "snap": {
+            "mapId": 427,
+            "evId": 2,
+            "evName": "Teleport"
+          }
+        }
+      ]
+    }
+  ],
+  "maps": {
+    "128": {
+      "id": 128,
+      "name": "-- JUNKYARD ENTRANCE",
+      "width": 41,
+      "height": 41,
+      "parallaxName": null,
+      "bgm": "ow_outskirts"
+    },
+    "142": {
+      "id": 142,
+      "name": "-- JUNKYARD (I)",
+      "width": 29,
+      "height": 30,
+      "parallaxName": null,
+      "bgm": "ow_junkyard"
+    },
+    "143": {
+      "id": 143,
+      "name": "-- JUNKYARD (II)",
+      "width": 43,
+      "height": 30,
+      "parallaxName": "Space_parallax",
+      "bgm": "ow_junkyard"
+    },
+    "144": {
+      "id": 144,
+      "name": "-- JUNKYARD (III)",
+      "width": 40,
+      "height": 42,
+      "parallaxName": null,
+      "bgm": "ow_junkyard"
+    },
+    "145": {
+      "id": 145,
+      "name": "-- JUNKYARD (IV)",
+      "width": 31,
+      "height": 50,
+      "parallaxName": "Space_parallax",
+      "bgm": "ow_junkyard"
+    },
+    "147": {
+      "id": 147,
+      "name": "-- JUNKYARD (VI)",
+      "width": 38,
+      "height": 58,
+      "parallaxName": "Space_parallax",
+      "bgm": "ow_junkyard"
+    },
+    "149": {
+      "id": 149,
+      "name": "-- JUNKYARD (VIII)",
+      "width": 28,
+      "height": 30,
+      "parallaxName": null,
+      "bgm": "ow_junkyard"
+    },
+    "150": {
+      "id": 150,
+      "name": "-- JUNKYARD (IX)",
+      "width": 36,
+      "height": 40,
+      "parallaxName": null,
+      "bgm": "ow_junkyard"
+    },
+    "151": {
+      "id": 151,
+      "name": "-- JUNKYARD (X)",
+      "width": 25,
+      "height": 30,
+      "parallaxName": null,
+      "bgm": null
+    },
+    "427": {
+      "id": 427,
+      "name": "-- JUNKYARD TUNNELS 1",
+      "width": 70,
+      "height": 60,
+      "parallaxName": null,
+      "bgm": "ow_junkyard"
+    },
+    "429": {
+      "id": 429,
+      "name": "-- JUNKYARD EXTRA",
+      "width": 43,
+      "height": 30,
+      "parallaxName": "Space_parallax",
+      "bgm": "ow_junkyard"
+    },
+    "4281": {
+      "id": 4281,
+      "name": "-- JUNKYARD TUNNELS 2 [part 1 / L w/ bump]",
+      "width": 33,
+      "height": 30,
+      "parallaxName": null,
+      "bgm": "ow_junkyard",
+      "cropX": 4,
+      "cropY": 0,
+      "polygon": [
+        [
+          4,
+          0
+        ],
+        [
+          37,
+          0
+        ],
+        [
+          37,
+          14
+        ],
+        [
+          31,
+          14
+        ],
+        [
+          31,
+          10
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          11,
+          30
+        ],
+        [
+          4,
+          30
+        ]
+      ]
+    },
+    "4283": {
+      "id": 4283,
+      "name": "-- JUNKYARD TUNNELS 2 [part 3 / right vertical]",
+      "width": 7,
+      "height": 22,
+      "parallaxName": null,
+      "bgm": "ow_junkyard",
+      "cropX": 48,
+      "cropY": 0,
+      "polygon": [
+        [
+          48,
+          0
+        ],
+        [
+          55,
+          0
+        ],
+        [
+          55,
+          22
+        ],
+        [
+          48,
+          22
+        ]
+      ]
+    }
+  }
+}

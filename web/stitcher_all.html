@@ -1,0 +1,2858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>OMORI ALL-REGION Stitcher</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, sans-serif; background: #1a1a1a; color: #ddd;
+         display: grid; grid-template-columns: 240px 1fr; height: 100vh; }
+
+  /* Sidebar */
+  aside { background: #222; border-right: 1px solid #444; overflow-y: auto; padding: 8px; }
+  aside h2 { margin: 4px 0 8px; font-size: 14px; color: #aaa; }
+  .map-thumb { display: flex; gap: 8px; padding: 6px; margin-bottom: 4px;
+               background: #2a2a2a; border-radius: 4px; cursor: grab; align-items: center; }
+  .map-thumb:hover { background: #333; }
+  .map-thumb.placed { opacity: 0.4; }
+  .map-thumb img { width: 40px; height: 40px; object-fit: contain; background: #111; flex-shrink: 0; }
+  .map-thumb .meta { font-size: 11px; line-height: 1.3; min-width: 0; }
+  .map-thumb .meta .id { color: #ff80c0; font-weight: bold; }
+  .map-thumb .meta .name { color: #aaa; word-break: break-word; }
+  /* Collapsible house groups */
+  .house-group { margin-top: 6px; }
+  .house-group > summary {
+    cursor: pointer; padding: 6px 8px; background: #2a2a2a;
+    border-radius: 3px; font-size: 12px; color: #ffea7a;
+    user-select: none; list-style: none;
+  }
+  .house-group > summary::before { content: '▶ '; font-size: 9px; }
+  .house-group[open] > summary::before { content: '▼ '; }
+  .house-group > summary:hover { background: #333; }
+  .house-group .phase-group { margin: 4px 0 6px 12px; }
+  .house-group .phase-group > summary {
+    cursor: pointer; padding: 3px 6px; background: #252525;
+    border-radius: 3px; font-size: 11px; color: #aac;
+    user-select: none; list-style: none;
+  }
+  .house-group .phase-group > summary::before { content: '▶ '; font-size: 9px; }
+  .house-group .phase-group[open] > summary::before { content: '▼ '; }
+  .house-group .map-thumb { margin-left: 12px; padding: 4px; }
+  .house-group .map-thumb img { width: 32px; height: 32px; }
+
+  /* Toolbar */
+  /* The bar holds more than fits at 1440, so it has to give somewhere. Letting
+     each control break its own label is the worst of the choices: "Save layout
+     (JSON)" becomes two lines, the hint text at the end becomes seven, and the
+     bar stood 97px tall — 84px of it that one crushed hint — then grew again
+     whenever the text changed, which is what made selecting a decoration shove
+     the canvas down. Labels stay on one line and the bar wraps in whole rows
+     instead, so its height only depends on how many controls there are. */
+  .toolbar { padding: 6px; border-bottom: 1px solid #333; background: #1a1a1a;
+             display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+             font-size: 12px; }
+  .toolbar > * { flex: 0 0 auto; }
+  .toolbar button { background: #2a2a2a; color: #ddd; border: 1px solid #444; padding: 4px 10px; cursor: pointer;
+                    white-space: nowrap; }
+  .toolbar button:hover { background: #333; }
+  .toolbar input { background: #2a2a2a; color: #ddd; border: 1px solid #444; padding: 4px; }
+  /* Kept to one line and cut off rather than wrapped: its text changes as you
+     select things, and a bar whose height answers to its own status text moves
+     the canvas out from under the cursor. What gets cut is the tail of the
+     shortcut reminder, which is also on the button tooltips. */
+  .toolbar .info { color: #888; margin-left: auto; font-family: monospace;
+                   flex: 1 1 0; min-width: 0; white-space: nowrap;
+                   overflow: hidden; text-overflow: ellipsis; }
+
+  /* Canvas viewport */
+  main { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+  #viewport { flex: 1; overflow: hidden; position: relative;
+              background: #0a0a0a;
+              background-image:
+                linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+              background-size: 32px 32px;
+              cursor: grab; }
+  #viewport.panning { cursor: grabbing; }
+  #world { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  /* Suppress browser-native text/image selection in the canvas area —
+     that's what produced the dark blue tint over selected maps. */
+  #viewport, #world, .placed-map, .marquee {
+    user-select: none; -webkit-user-select: none; -moz-user-select: none;
+    -webkit-user-drag: none;
+  }
+  #viewport ::selection { background: transparent; }
+  .placed-map { position: absolute; cursor: move;
+                background-repeat: no-repeat; }
+  /* Selection outline does NOT scale with world zoom — uses --zoom CSS var
+     set in applyTransform() so the indicator stays visible at any zoom level. */
+  .placed-map.selected { outline: calc(3px / var(--zoom, 1)) solid #ffeb3b;
+                         outline-offset: calc(-1px / var(--zoom, 1));
+                         box-shadow: 0 0 calc(12px / var(--zoom, 1)) rgba(255,235,59,0.7);
+                         z-index: 100; }
+  .placed-map.selected.grouped { outline-color: #6ee7ff;
+                                 box-shadow: 0 0 calc(12px / var(--zoom, 1)) rgba(110,231,255,0.7); }
+  .marquee { position: absolute; pointer-events: none;
+             border: 1.5px dashed #80c0ff;
+             background: rgba(128,192,255,0.10);
+             z-index: 9999; }
+  .placed-map .label { position: absolute; left: 4px; top: 4px;
+                        background: rgba(0,0,0,0.7); color: #fff;
+                        padding: 2px 6px; font-size: 11px; border-radius: 3px;
+                        pointer-events: none; }
+  .placed-map .ctrl-bar { position: absolute; right: 4px; top: 4px;
+                          background: rgba(0,0,0,0.8); border-radius: 3px;
+                          display: flex; gap: 0; padding: 1px;
+                          font-size: 10px; }
+  .placed-map .ctrl-bar button { background: #444; color: #ddd; border: none;
+                                 padding: 2px 6px; cursor: pointer; }
+  .placed-map .ctrl-bar button:hover { background: #666; }
+  .placed-map .ctrl-bar button.active { background: #ff80c0; color: #000; }
+  .placed-map .ctrl-bar .sep { width: 1px; background: #222; margin: 0 2px; }
+
+  /* ── Decorations ── */
+  /* Loose art dropped on the canvas: scenery that is not a map. Same drag,
+     selection, z-order and undo machinery as a placed map, so it stacks
+     between maps rather than always sitting on top. The outline is green
+     instead of yellow so it is obvious which of the two you grabbed.
+     Controls live in the toolbar, not on the sprite — a 61px tree has no
+     room for a button bar, and one drawn inside it would shrink with zoom. */
+  .placed-deco { position: absolute; cursor: move;
+                 background-repeat: no-repeat; background-size: 100% 100%;
+                 image-rendering: pixelated; }
+  .placed-deco.selected { outline: calc(3px / var(--zoom, 1)) solid #6eff9e;
+                          outline-offset: calc(-1px / var(--zoom, 1));
+                          box-shadow: 0 0 calc(12px / var(--zoom, 1)) rgba(110,255,158,0.7);
+                          z-index: 100; }
+  .placed-deco.flipped { transform: scaleX(-1); }
+
+  .deco-menu { position: relative; display: inline-flex; }
+  .deco-menu > #decoMenu { display: none; position: absolute; left: 0; top: 100%;
+                           margin-top: 4px; z-index: 5000; min-width: 172px;
+                           background: #242424; border: 1px solid #4a4a4a;
+                           border-radius: 4px; padding: 4px;
+                           box-shadow: 0 6px 18px rgba(0,0,0,0.55); }
+  .deco-menu.open > #decoMenu { display: block; }
+  .deco-menu #decoMenu button { display: flex; width: 100%; align-items: center; gap: 8px;
+                                background: transparent; border: none; color: #ddd;
+                                padding: 5px 6px; text-align: left; border-radius: 3px; }
+  .deco-menu #decoMenu button:hover { background: #383838; }
+  .deco-menu #decoMenu img { width: 26px; height: 26px; object-fit: contain;
+                             image-rendering: pixelated; flex-shrink: 0; }
+  .deco-menu #decoMenu .dim { color: #777; font-size: 10px; }
+  /* Floats over the canvas rather than living in the toolbar. The toolbar is a
+     plain flex row with no wrap rule, so anything appearing in it squeezes the
+     buttons until their labels break over several lines: revealing this strip
+     there took the bar from 97px to 181px and shoved 84px of canvas off the
+     bottom every time a tree was clicked. Down here it costs the canvas
+     nothing, and it is still not *on* the sprite — a 61px tree has no room for
+     a button bar, which is why these were put in the toolbar to begin with. */
+  #decoCtrl { position: absolute; left: 10px; bottom: 10px; z-index: 400;
+              display: inline-flex; gap: 2px; align-items: center;
+              background: rgba(26,26,26,0.94); border: 1px solid #3a3a3a;
+              border-radius: 4px; padding: 4px 6px; font-size: 12px;
+              box-shadow: 0 3px 12px rgba(0,0,0,0.5); }
+  #decoCtrl button { background: #2a2a2a; color: #ddd; border: 1px solid #444;
+                     padding: 4px 10px; cursor: pointer; }
+  #decoCtrl button:hover { background: #333; }
+  #decoCtrl #decoSize { color: #6eff9e; font-family: monospace; min-width: 40px;
+                        text-align: center; font-size: 11px; }
+
+  /* Watermelon overlays — pulse + thick bright glow */
+  .watermelon-overlay { position: absolute; width: 32px; height: 32px;
+                        background-size: contain; image-rendering: pixelated;
+                        background-repeat: no-repeat;
+                        animation: melon-pulse 1.4s ease-in-out infinite;
+                        pointer-events: none; z-index: 200; }
+  .watermelon-overlay.green { background-image: url('assets/watermelon.png');
+                              filter: drop-shadow(0 0 10px #6cff33)
+                                      drop-shadow(0 0 22px #6cff33)
+                                      drop-shadow(0 0 34px #6cff33); }
+  .watermelon-overlay.blue  { background-image: url('assets/watermelon_blue.png');
+                              filter: drop-shadow(0 0 10px #33ccff)
+                                      drop-shadow(0 0 22px #33ccff)
+                                      drop-shadow(0 0 34px #33ccff); }
+  @keyframes melon-pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+  .watermelons-off .watermelon-overlay { display: none; }
+
+  /* ── Region layers ── */
+  .layer-hidden { display: none !important; }
+  /* Dimmed regions stay legible as context but read as background. */
+  .layer-dimmed { filter: grayscale(1) brightness(0.5) contrast(0.9); }
+  /* The focused region lifts over the maps it overlaps, but has to stay under
+     the overlays: watermelons 200, routes 250, route dots 260, selection 100. */
+  .layer-focus { z-index: 50; }
+
+  #layerPanel { margin: 10px 0 8px; border-top: 1px solid #444; padding-top: 8px; }
+  #layerPanel h3 { margin: 0 0 6px; font-size: 12px; color: #aaa; font-weight: normal;
+                   display: flex; justify-content: space-between; align-items: center; }
+  #layerPanel h3 button { background: #333; color: #bbb; border: 1px solid #4a4a4a;
+                          font-size: 10px; padding: 1px 6px; cursor: pointer; border-radius: 3px; }
+  #layerPanel h3 button:hover { background: #444; color: #fff; }
+  #overlapWarn { margin-top: 8px; border-top: 1px solid #3a3a3a; padding-top: 6px;
+                 color: #ffcf6a; font-size: 11px; line-height: 1.45; display: none; }
+  #overlapWarn b { color: #ffd97a; }
+  .layer-row { display: flex; align-items: center; gap: 4px; font-size: 11px;
+               padding: 2px 0; color: #ccc; }
+  .layer-row .nm { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .layer-row .ct { color: #666; font-size: 10px; }
+  .layer-row button { background: #2f2f2f; color: #999; border: 1px solid #454545;
+                      cursor: pointer; border-radius: 3px; font-size: 11px;
+                      width: 22px; height: 20px; line-height: 1; padding: 0; }
+  .layer-row button:hover { background: #3d3d3d; color: #fff; }
+  .layer-row button.on { background: #ff80c0; color: #000; border-color: #ff80c0; }
+  .layer-row.off .nm { color: #5a5a5a; text-decoration: line-through; }
+
+  /* Route annotations: pair of dots + dashed line, draggable + snappable.
+     The wrapper has an enlarged hit area for easy clicking. */
+  #routesSvg { position: absolute; left: 0; top: 0; pointer-events: none; z-index: 250; overflow: visible; }
+  .route-dot { position: absolute; width: 40px; height: 40px; border-radius: 50%;
+               cursor: grab; z-index: 260;
+               display: flex; align-items: center; justify-content: center;
+               background: transparent; }
+  .route-dot:active { cursor: grabbing; }
+  .route-dot::before { content: ''; width: 18px; height: 18px; border-radius: 50%;
+                       background: var(--col); border: 2px solid #fff;
+                       box-shadow: 0 0 8px var(--col), 0 0 16px var(--col); }
+  .route-kind { display: inline-flex; gap: 2px; }
+  .route-kind button.on { background: #ff66d9; color: #000; }
+  .route-dot.snapped::before { width: 22px; height: 22px; border-width: 3px; }
+  .route-dot.selected::before { box-shadow: 0 0 0 3px #fff, 0 0 18px var(--col); }
+  .route-dot.snapped::after { content: '✓'; position: absolute; color: #fff;
+                              font-size: 11px; font-weight: bold; text-shadow: 0 0 3px var(--col); }
+</style>
+</head>
+<body>
+
+<aside>
+  <h2>ALL MAPS</h2>
+  <select id="regionFilter" style="width:100%;margin-bottom:8px;background:#2a2a2a;color:#ddd;border:1px solid #444;padding:4px;font-size:12px">
+    <option value="">— All regions —</option>
+    <option value="faraway">Faraway Town</option>
+    <option value="vast_forest">Vast Forest</option>
+    <option value="orange_oasis">Orange Oasis</option>
+    <option value="otherworld">Otherworld</option>
+    <option value="junkyard">Junkyard</option>
+    <option value="pyrefly_forest">Pyrefly Forest</option>
+    <option value="sweethearts_castle">Sweethearts Castle</option>
+    <option value="deep_well">Deep Well</option>
+    <option value="deeper_well">Deeper Well</option>
+    <option value="humphrey">Inside Humphrey</option>
+    <option value="last_resort">Last Resort</option>
+    <option value="forest_playground">Forest Playground</option>
+  </select>
+  <div id="layerPanel">
+    <h3>LAYERS <button id="layerResetBtn" title="Show every region, clear focus">reset</button></h3>
+    <div id="layerRows"></div>
+    <div id="overlapWarn"></div>
+  </div>
+  <div id="thumbList"></div>
+</aside>
+
+<main>
+  <div class="toolbar">
+    <button id="saveBtn">Save layout (JSON)</button>
+    <button id="loadBtn">Load layout</button>
+    <input type="file" id="loadFile" accept=".json" style="display:none" />
+    <button id="exportBtn">Export PNG</button>
+    <button id="autoBtn">⚡ Auto-Place</button>
+    <button id="clearBtn">Clear all</button>
+    <button id="resetBtn">Reset view</button>
+    <button id="melonBtn">🍉 Watermelons</button>
+    <span class="deco-menu" id="decoMenuWrap">
+      <button id="decoBtn" title="Drop a decoration on the canvas">🌳 Decoration ▾</button>
+      <div id="decoMenu"></div>
+    </span>
+    <button id="addRouteBtn">+ Route</button>
+    <span class="route-kind">
+      <button id="kindTwo"  disabled title="Two-way: plain line (default)">— 2-way</button>
+      <button id="kindOne"  disabled title="One-way: arrow from first dot to second">→ 1-way</button>
+      <button id="kindLoop" disabled title="Wrap-around: leave one edge, arrive at the other">↻ wrap</button>
+      <button id="kindFlip" disabled title="Swap which end is the start">⇄</button>
+      <button id="kindDash" disabled title="Solid / dashed line">┄</button>
+    </span>
+    <button id="snapBtn" title="Route dot snapping (S). Hold Alt while dragging to bypass.">🧲 Snap ✓</button>
+    <button id="groupBtn" disabled>Group</button>
+    <button id="ungroupBtn" disabled>Ungroup</button>
+    <span class="info">
+      zoom: <span id="zoomLabel">100%</span>
+      &nbsp;|&nbsp;
+      placed: <span id="placedLabel">0/0</span>
+      <span id="selInfo" style="color:#ffeb3b;margin-left:8px"></span>
+      &nbsp;|&nbsp;
+      <span style="color:#666">drag · ←↑↓→ nudge · [ / ] back/front · Shift-click multi · Delete</span>
+      &nbsp;|&nbsp;
+      <span style="color:#666">maps from <a href="https://goats.dev/omori/" target="_blank"
+        rel="noopener" style="color:#7a7a7a">goats.dev</a> · art © OMOCAT</span>
+    </span>
+  </div>
+  <div id="viewport">
+    <div id="world">
+      <svg id="routesSvg"></svg>
+    </div>
+    <span id="decoCtrl" style="display:none">
+      <button data-deco="smaller" title="Shrink (−25%)">−</button>
+      <span id="decoSize">100%</span>
+      <button data-deco="bigger" title="Grow (+25%)">+</button>
+      <button data-deco="flip" title="Flip horizontally">⇄</button>
+      <button data-deco="back" title="Send to back">↓</button>
+      <button data-deco="front" title="Bring to front">↑</button>
+      <span id="decoSnapHint" style="color:#777;font-size:10px;margin-left:6px"></span>
+      <button data-deco="del" title="Delete (or press Delete)">✕</button>
+    </span>
+  </div>
+</main>
+
+<script>
+const TILE_PX = 32;
+
+// All-region map IDs (auto-generated from 11 regions).
+// Every numeric map id, filled in from the region files at load time. This was
+// a hand-maintained list and had drifted badly: 76 maps existed in the data but
+// never appeared in the thumbnail list (the whole Molly wing, every sliced room
+// from the hotel, whirlpools and club sandwich), while 10 entries pointed at
+// editor folder nodes that extraction now drops. Sliced house rooms carry
+// string ids and are listed separately by renderThumbs.
+let MAP_IDS = [];
+const REGION_OF_MAP = {
+  12: "faraway",
+  13: "faraway",
+  14: "faraway",
+  15: "faraway",
+  16: "faraway",
+  17: "faraway",
+  18: "faraway",
+  19: "faraway",
+  20: "faraway",
+  21: "faraway",
+  22: "faraway",
+  23: "faraway",
+  24: "faraway",
+  25: "faraway",
+  26: "faraway",
+  27: "faraway",
+  28: "faraway",
+  29: "faraway",
+  30: "faraway",
+  31: "faraway",
+  32: "faraway",
+  33: "faraway",
+  34: "faraway",
+  35: "faraway",
+  36: "faraway",
+  37: "faraway",
+  38: "faraway",
+  39: "faraway",
+  40: "faraway",
+  41: "faraway",
+  42: "faraway",
+  43: "faraway",
+  44: "faraway",
+  45: "faraway",
+  46: "faraway",
+  47: "faraway",
+  48: "faraway",
+  49: "faraway",
+  50: "faraway",
+  51: "faraway",
+  52: "faraway",
+  53: "faraway",
+  54: "faraway",
+  55: "faraway",
+  56: "faraway",
+  57: "faraway",
+  58: "faraway",
+  59: "faraway",
+  60: "faraway",
+  61: "faraway",
+  62: "faraway",
+  63: "faraway",
+  64: "faraway",
+  65: "faraway",
+  66: "faraway",
+  67: "faraway",
+  68: "faraway",
+  69: "faraway",
+  70: "faraway",
+  71: "faraway",
+  72: "faraway",
+  73: "faraway",
+  74: "faraway",
+  75: "faraway",
+  76: "faraway",
+  77: "faraway",
+  78: "faraway",
+  79: "faraway",
+  80: "faraway",
+  81: "faraway",
+  82: "faraway",
+  83: "faraway",
+  84: "faraway",
+  85: "faraway",
+  89: "vast_forest",
+  90: "vast_forest",
+  92: "vast_forest",
+  93: "vast_forest",
+  94: "vast_forest",
+  95: "vast_forest",
+  96: "vast_forest",
+  97: "vast_forest",
+  98: "vast_forest",
+  99: "vast_forest",
+  100: "vast_forest",
+  101: "vast_forest",
+  102: "vast_forest",
+  103: "vast_forest",
+  104: "vast_forest",
+  105: "vast_forest",
+  106: "orange_oasis",
+  107: "orange_oasis",
+  108: "orange_oasis",
+  109: "orange_oasis",
+  110: "orange_oasis",
+  111: "orange_oasis",
+  112: "orange_oasis",
+  113: "orange_oasis",
+  114: "orange_oasis",
+  115: "orange_oasis",
+  116: "orange_oasis",
+  117: "otherworld",
+  118: "otherworld",
+  119: "otherworld",
+  120: "otherworld",
+  121: "otherworld",
+  122: "orange_oasis",
+  123: "otherworld",
+  124: "otherworld",
+  125: "otherworld",
+  126: "otherworld",
+  127: "otherworld",
+  128: "junkyard",
+  129: "otherworld",
+  130: "otherworld",
+  131: "otherworld",
+  132: "otherworld",
+  133: "otherworld",
+  134: "otherworld",
+  135: "otherworld",
+  136: "otherworld",
+  137: "otherworld",
+  138: "otherworld",
+  139: "otherworld",
+  140: "otherworld",
+  141: "otherworld",
+  142: "junkyard",
+  143: "junkyard",
+  144: "junkyard",
+  145: "junkyard",
+  147: "junkyard",
+  149: "junkyard",
+  150: "junkyard",
+  151: "junkyard",
+  152: "pyrefly_forest",
+  153: "pyrefly_forest",
+  154: "pyrefly_forest",
+  155: "pyrefly_forest",
+  156: "pyrefly_forest",
+  157: "pyrefly_forest",
+  158: "pyrefly_forest",
+  159: "pyrefly_forest",
+  160: "pyrefly_forest",
+  161: "pyrefly_forest",
+  162: "pyrefly_forest",
+  163: "pyrefly_forest",
+  164: "pyrefly_forest",
+  165: "pyrefly_forest",
+  166: "pyrefly_forest",
+  167: "pyrefly_forest",
+  168: "sweethearts_castle",
+  169: "sweethearts_castle",
+  170: "sweethearts_castle",
+  171: "sweethearts_castle",
+  172: "sweethearts_castle",
+  173: "sweethearts_castle",
+  174: "sweethearts_castle",
+  175: "sweethearts_castle",
+  176: "sweethearts_castle",
+  177: "sweethearts_castle",
+  178: "sweethearts_castle",
+  179: "sweethearts_castle",
+  180: "sweethearts_castle",
+  181: "sweethearts_castle",
+  182: "sweethearts_castle",
+  183: "sweethearts_castle",
+  184: "sweethearts_castle",
+  185: "sweethearts_castle",
+  186: "sweethearts_castle",
+  187: "sweethearts_castle",
+  91: "deep_well", 188: "deep_well", 330: "deep_well",
+  199: "deep_well", 200: "deep_well", 203: "deep_well", 211: "deep_well",
+  493: "deep_well", 501: "deep_well", 502: "deep_well",
+  189: "deep_well",
+  190: "deep_well",
+  191: "last_resort",
+  192: "last_resort",
+  193: "last_resort",
+  194: "last_resort",
+  195: "last_resort",
+  196: "last_resort",
+  197: "last_resort",
+  198: "last_resort",
+  202: "last_resort",
+  208: "deep_well",
+  209: "deep_well",
+  210: "deeper_well",
+  212: "deeper_well",
+  213: "otherworld",
+  214: "deep_well",
+  215: "deeper_well",
+  216: "deeper_well",
+  217: "humphrey", 218: "humphrey", 219: "humphrey", 220: "humphrey",
+  221: "humphrey", 222: "humphrey", 223: "humphrey", 224: "humphrey",
+  225: "humphrey", 226: "humphrey", 227: "humphrey", 228: "humphrey",
+  229: "humphrey", 230: "humphrey", 231: "humphrey", 232: "humphrey",
+  233: "humphrey", 234: "humphrey", 235: "humphrey", 236: "humphrey",
+  237: "humphrey", 238: "humphrey", 239: "humphrey", 240: "humphrey",
+  241: "humphrey", 242: "humphrey", 243: "humphrey", 244: "humphrey",
+  245: "humphrey", 247: "humphrey", 248: "humphrey", 249: "humphrey",
+  250: "humphrey", 258: "deeper_well",
+  252: "last_resort",
+  259: "deeper_well",
+  298: "last_resort",
+  320: "faraway",
+  325: "otherworld",
+  326: "vast_forest",
+  327: "vast_forest",
+  328: "orange_oasis",
+  329: "otherworld",
+  331: "otherworld",
+  332: "orange_oasis",
+  333: "orange_oasis",
+  334: "orange_oasis",
+  335: "pyrefly_forest",
+  336: "pyrefly_forest",
+  338: "deep_well",
+  339: "deep_well",
+  340: "sweethearts_castle",
+  341: "faraway",
+  342: "orange_oasis",
+  343: "orange_oasis",
+  344: "orange_oasis",
+  3441: "orange_oasis", 3442: "orange_oasis", 3443: "orange_oasis",
+  1121: "orange_oasis", 1122: "orange_oasis", 1123: "orange_oasis", 1124: "orange_oasis",
+  4211: "deep_well", 4212: "deep_well",
+  981: "vast_forest", 982: "vast_forest",
+  4261: "vast_forest", 4262: "vast_forest", 4263: "vast_forest", 4264: "vast_forest",
+  1251: "otherworld", 1252: "otherworld", 1253: "otherworld", 1254: "otherworld",
+  1321: "otherworld", 1322: "otherworld", 1323: "otherworld", 1324: "otherworld",
+  3471: "otherworld", 3472: "otherworld",
+  345: "orange_oasis",
+  347: "otherworld",
+  348: "otherworld",
+  349: "pyrefly_forest",
+  350: "pyrefly_forest",
+  351: "pyrefly_forest",
+  352: "pyrefly_forest",
+  353: "pyrefly_forest",
+  354: "pyrefly_forest",
+  357: "vast_forest",
+  358: "vast_forest",
+  359: "deep_well",
+  360: "vast_forest",
+  361: "faraway",
+  362: "faraway",
+  363: "faraway",
+  364: "faraway",
+  365: "faraway",
+  366: "faraway",
+  367: "faraway",
+  368: "faraway",
+  391: "faraway",
+  393: "faraway",
+  399: "deep_well",
+  421: "deep_well",
+  426: "vast_forest",
+  427: "junkyard",
+  428: "junkyard",
+  429: "junkyard",
+  431: "vast_forest",
+  432: "vast_forest",
+  433: "otherworld",
+  434: "vast_forest",
+  435: "sweethearts_castle",
+  436: "sweethearts_castle",
+  437: "orange_oasis",
+  438: "sweethearts_castle",
+  440: "sweethearts_castle",
+  441: "sweethearts_castle",
+  443: "sweethearts_castle",
+  446: "deeper_well",
+  447: "deeper_well",
+  449: "sweethearts_castle",
+  450: "faraway",
+  452: "orange_oasis",
+  453: "otherworld",
+  495: "deeper_well",
+  497: "vast_forest",
+  499: "sweethearts_castle",
+  1031: "faraway",
+  1040: "faraway",
+  1711: "sweethearts_castle",
+  1712: "sweethearts_castle",
+  4281: "junkyard",
+  4282: "junkyard",
+  4283: "junkyard",
+  4331: "sweethearts_castle",
+  4332: "sweethearts_castle",
+  4333: "sweethearts_castle",
+  4334: "sweethearts_castle",
+  4335: "sweethearts_castle",
+  4336: "sweethearts_castle",
+  4337: "sweethearts_castle",
+  4351: "sweethearts_castle",
+  4352: "sweethearts_castle",
+  4353: "sweethearts_castle",
+  4371: "sweethearts_castle",
+  4372: "sweethearts_castle",
+  4373: "sweethearts_castle",
+  4374: "sweethearts_castle",
+  4375: "sweethearts_castle",
+  4376: "sweethearts_castle",
+  4377: "sweethearts_castle",
+  4378: "sweethearts_castle",
+  4379: "sweethearts_castle",
+  4381: "sweethearts_castle",
+};
+
+// Manual nudges applied AFTER auto-place. Add per-map { dx, dy } as needed.
+const MANUAL_NUDGES = {
+  // (empty — fill in after first auto-place run if some maps are off)
+};
+
+// State
+let mapMeta = null;
+let housesData = null;  // sliced room metadata, loaded in init()
+
+// Returns the image URL for a map ID. House rooms (synthetic IDs like 'r15_0')
+// use their pre-cropped PNG; regular maps use the standard raw_pngs path.
+// ?fresh in the page URL forces every map image past the browser cache — see
+// the same constant in index.html for why that is worth having.
+const CACHE_BUST = /(^|[?&])fresh(=|&|$)/.test(location.search) ? `?v=${Date.now()}` : '';
+
+// Each render's own modification time, out of data/raw_pngs/manifest.json, so a
+// re-rendered map cannot keep being drawn from cache. `?fresh` still wins.
+let pngVersion = {};
+const stampPng = file => CACHE_BUST || (pngVersion[file] ? `?v=${pngVersion[file]}` : '');
+
+function mapImageUrl(id) {
+  const m = mapMeta?.[id];
+  const file = (m && m.image) || `map${id}.png`;
+  return `../data/raw_pngs/${file}${stampPng(file)}`;
+}
+let placed = {}; // mapId -> {x, y, crop}  (crop is 'full' | 'top3' | 'mid3' | 'bot3')
+
+// ====== Decorations ======
+// Scenery dropped on the canvas that is not a map. Add one here and it shows
+// up in the dropdown; nothing else needs touching. `w`/`h` are the PNG's own
+// pixel size, which is also scale 1 — the art is drawn at the same 32px-tile
+// resolution as the maps, so native size is the size that matches them.
+// The pinwheels are the three animation frames of `$DW_Pinwheel`, trimmed out
+// of the character sheet. Map100 has eleven poles standing with no heads —
+// the head is an event sprite and that map's PNG has no event sprites drawn on
+// it at all — and three angles is enough that eleven of them do not read as
+// eleven copies of one picture. Drop one so its middle sits on a pole's tip.
+const DECORATIONS = [
+  { key: 'tree_part',  label: 'Tree (partial)',  src: 'assets/decorations/tree_part.png',  w: 61, h: 65 },
+  { key: 'tree_full',  label: 'Tree (full)',     src: 'assets/decorations/tree_full.png',  w: 61, h: 60 },
+  { key: 'pinwheel',   label: 'Pinwheel',        src: 'assets/decorations/pinwheel.png',   w: 59, h: 59 },
+  { key: 'pinwheel_2', label: 'Pinwheel (turn 2)', src: 'assets/decorations/pinwheel_2.png', w: 68, h: 69 },
+  { key: 'pinwheel_3', label: 'Pinwheel (turn 3)', src: 'assets/decorations/pinwheel_3.png', w: 57, h: 56 },
+];
+const decoDef = key => DECORATIONS.find(d => d.key === key);
+// [{uid, kind, x, y, zOrder, scale, flip}] — uid is a stable handle for the
+// DOM node, because deleting one would otherwise renumber every index after it.
+let decorations = [];
+let decoSeq = 0;
+const DECO_SCALE_STEP = 0.25, DECO_SCALE_MIN = 0.25, DECO_SCALE_MAX = 6;
+// What ⌥ snaps a decoration to, per kind. An axis with a `phase` is absolute:
+// it rounds onto the lane n·step + phase, wherever the sprite happened to be.
+// An axis without one is relative: whole steps from where the sprite already
+// is, so its own alignment survives untouched.
+//
+// The two kinds want opposite things. A pinwheel is a single object that has
+// to land on one particular pole, and every pole on KITE KID stands at
+// x ≡ 20 (mod 32) — so x is a lane, while y stays relative because the eight
+// of them sit at five deliberate heights above their poles. Trees are the
+// opposite: 166 of them in a dense lattice at x ≡ 1 (mod 32), where nothing
+// matters except that the lattice stays a lattice, so both axes are relative
+// and a whole tile at a time.
+const DECO_SNAP = {
+  pinwheel:   { x: { step: TILE_PX, phase: 20 }, y: { step: TILE_PX / 2 } },
+  pinwheel_2: { x: { step: TILE_PX, phase: 20 }, y: { step: TILE_PX / 2 } },
+  pinwheel_3: { x: { step: TILE_PX, phase: 20 }, y: { step: TILE_PX / 2 } },
+};
+const DECO_SNAP_DEFAULT = { x: { step: TILE_PX }, y: { step: TILE_PX } };
+const decoSnap = kind => DECO_SNAP[kind] || DECO_SNAP_DEFAULT;
+const snapAxis = (rule, origin, delta) => rule.phase === undefined
+  ? origin + Math.round(delta / rule.step) * rule.step
+  : Math.round((origin + delta - rule.phase) / rule.step) * rule.step + rule.phase;
+let zoom = 0.5;
+let panX = 0, panY = 0;
+
+// Faraway's four street maps are 3 stripes stacked in one image (day / sunset /
+// night), each stripe padded with black bands that must be trimmed off so the
+// stripes butt up against their neighbours. [rows trimmed from top, from bottom]
+// Values mirror stitcher_faraway.html — keep the two in sync.
+const STREET_BLACK_BAND = {
+  13:   { top3: [0,5], mid3: [1,1], bot3: [2,1] },  // PLAYER STREET
+  22:   { top3: [0,7], mid3: [2,2], bot3: [3,0] },  // OTHER STREET
+  31:   { top3: [0,8], mid3: [2,1], bot3: [5,1] },  // AUBREY STREET
+  45:   { top3: [0,8], mid3: [2,1], bot3: [4,1] },  // BASIL STREET
+  1031: { top3: [0,8], mid3: [2,1], bot3: [5,1] },  // AUBREY STREET [VANILLA RENDER] — same geometry as 31
+};
+
+// Only the maps above are 3-phase stripes. Detecting them by shape instead
+// (height >= 60 and a multiple of 30, as the per-region stitchers do) also
+// catches 11 ordinary tall maps — ORANGE OASIS 90x90, FROZEN FOREST 150x150,
+// PHOTO FRAME 22x120 — and would slice each into thirds.
+function isStripe(mapId) {
+  return Object.prototype.hasOwnProperty.call(STREET_BLACK_BAND, String(mapId));
+}
+
+function defaultCrop(meta, id) {
+  return isStripe(id) ? 'top3' : 'full';
+}
+
+function cropRect(crop, meta, id) {
+  // Returns {y, h} in tiles for the crop window (top-left + height)
+  let r;
+  if (crop === 'top3')      r = { y: 0,                     h: meta.height / 3 };
+  else if (crop === 'mid3') r = { y: meta.height / 3,       h: meta.height / 3 };
+  else if (crop === 'bot3') r = { y: meta.height * 2 / 3,   h: meta.height / 3 };
+  else                      r = { y: 0,                     h: meta.height };
+  // Trim street black bands (top + bottom)
+  const band = STREET_BLACK_BAND[id]?.[crop];
+  if (band) { r.y += band[0]; r.h -= band[0] + band[1]; }
+  return r;
+}
+
+// Z-order helpers
+function allZOrders() {
+  // Decorations share one z scale with the maps so a tree can be tucked behind
+  // a map instead of always floating above the whole stack.
+  return [...Object.values(placed), ...decorations].map(p => p.zOrder ?? 0);
+}
+function nextZOrder() {
+  const zs = allZOrders();
+  return zs.length === 0 ? 0 : Math.max(...zs) + 1;
+}
+function prevZOrder() {
+  const zs = allZOrders();
+  return zs.length === 0 ? 0 : Math.min(...zs) - 1;
+}
+function bringToFront(id) {
+  if (!placed[id]) return;
+  placed[id].zOrder = nextZOrder();
+  renderPlaced();
+  // restore selected highlight
+  const el = world.querySelector(`.placed-map[data-id="${id}"]`);
+  if (el) el.classList.add('selected');
+}
+function sendToBack(id) {
+  if (!placed[id]) return;
+  placed[id].zOrder = prevZOrder();
+  renderPlaced();
+  const el = world.querySelector(`.placed-map[data-id="${id}"]`);
+  if (el) el.classList.add('selected');
+}
+
+const $ = id => document.getElementById(id);
+const world = $('world');
+const viewport = $('viewport');
+
+let edges = null;
+
+let highlights = { watermelons: [] };
+
+// Route annotations: list of { color, pts: [{x, y, snap: {mapId,evId}|null}, ...] }
+// Stored in WORLD coordinates (canvas pixels) — match map placements.
+let routes = [];
+const ROUTE_COLORS = ['#ff66d9', '#33ccff', '#66ff66', '#ffcc33', '#ff7733',
+                     '#bb88ff', '#ff5566', '#22eebb', '#eeaa44', '#88ddff'];
+const SNAP_RADIUS = 48; // px — drag dot within this of transfer center → snap
+let snapEnabled = true; // 🧲 toggle / S key; Alt bypasses for one drag
+
+// Topmost placed map covering a world point, or null. Overlapping regions are
+// the normal state here, so "nearest snap target" alone would happily grab an
+// event on a map buried three layers down. Whatever is drawn on top at the
+// cursor is what the user is aiming at.
+function topMapAt(wx, wy) {
+  let topId = null, topZ = -Infinity;
+  for (const id of Object.keys(placed)) {
+    const m = mapMeta[id];
+    if (!m) continue;
+    const pos = placed[id];
+    const cr = cropRect(pos.crop || 'full', m, id);
+    if (wx < pos.x || wx >= pos.x + m.width * TILE_PX) continue;
+    if (wy < pos.y || wy >= pos.y + cr.h * TILE_PX) continue;
+    const z = pos.zOrder ?? 0;
+    if (z >= topZ) { topZ = z; topId = id; }
+  }
+  return topId;
+}
+
+async function init() {
+  const REGIONS = ["faraway", "junkyard", "orange_oasis", "snowglobe_mountain", "white_space", "otherworld", "pyrefly_forest", "sweethearts_castle", "vast_forest", "deep_well", "deeper_well", "humphrey", "last_resort", "forest_playground"];
+  // no-cache on the manifest, not on the images: the point is to always know
+  // the current mtimes so the image URLs themselves can be cached hard.
+  pngVersion = await fetch('../data/raw_pngs/manifest.json', { cache: 'no-cache' })
+    .then(r => r.ok ? r.json() : {}).catch(() => ({}));
+
+  const responses = await Promise.all(REGIONS.flatMap(r => [
+    fetch(`../data/${r}_maps.json`, { cache: 'no-cache' }),
+    fetch(`../data/${r}_edges.json`, { cache: 'no-cache' }),
+    fetch(`../data/${r}_highlights.json`, { cache: 'no-cache' }),
+  ]));
+  mapMeta = {}; edges = { internal: [], external: [] }; highlights = { watermelons: [] };
+  for (let i = 0; i < REGIONS.length; i++) {
+    const meta = await responses[i*3].json();
+    Object.assign(mapMeta, meta);
+    // Region per map, straight from the file each map arrived in. The static
+    // REGION_OF_MAP below predates several sliced sub-maps (1322, 4212, the
+    // CLUB SANDWICH rooms), which left them unfiltered in the thumbnail list
+    // and ungrouped on import.
+    for (const id of Object.keys(meta)) REGION_OF_MAP[id] = REGIONS[i];
+    const eg = await responses[i*3+1].json();
+    edges.internal.push(...(eg.internal || []));
+    edges.external.push(...(eg.external || []));
+    try { const hl = await responses[i*3+2].json();
+      highlights.watermelons.push(...(hl.watermelons || []));
+    } catch(e) {}
+  }
+  MAP_IDS = Object.keys(mapMeta).filter(k => /^\d+$/.test(k))
+                                .map(Number).sort((a, b) => a - b);
+  console.log(`Loaded ${Object.keys(mapMeta).length} maps, ${edges.internal.length} edges, ${highlights.watermelons.length} watermelons`);
+
+  // Load sliced house interiors (Faraway). Each room becomes a synthetic map
+  // entry with id like 'r15_0' (map15 room 0). The dropdown UI groups them.
+  try {
+    housesData = await fetch('../data/faraway_houses_sliced.json').then(r => r.json());
+    for (const [houseName, phases] of Object.entries(housesData.houses)) {
+      for (const [phase, info] of Object.entries(phases)) {
+        for (const room of info.rooms) {
+          const rid = `r${info.mapId}_${room.roomIdx}`;
+          mapMeta[rid] = {
+            name: `${houseName} (${phase}) — Room ${room.roomIdx}`,
+            width: room.tw,
+            height: room.th,
+            image: room.file,
+            _house: houseName,
+            _phase: phase,
+            _parentMapId: info.mapId,
+            _roomIdx: room.roomIdx,
+          };
+          // Sliced house rooms carry string ids, so they miss the per-region
+          // pass above; they are all Faraway interiors.
+          REGION_OF_MAP[rid] = 'faraway';
+        }
+      }
+    }
+    const nRooms = Object.values(mapMeta).filter(m => m.image).length;
+    console.log(`Loaded ${nRooms} house room images across ${Object.keys(housesData.houses).length} houses`);
+
+    // Remap transfer events from each sliced parent map to its room rids,
+    // so route snapping works on placed rooms. An event at tile (x,y) in the
+    // parent map belongs to whichever room's bbox contains (x,y).
+    const slicedMapToRooms = {};
+    for (const phases of Object.values(housesData.houses)) {
+      for (const info of Object.values(phases)) {
+        slicedMapToRooms[String(info.mapId)] = info.rooms;
+      }
+    }
+    const synthetic = [];
+    // Doorway events often sit 1 tile outside the visible room interior
+    // (the threshold is the floor pixel bbox; the teleport tile is on the wall).
+    // So: first try strict containment; if none, fall back to nearest room within
+    // a 2-tile tolerance, and clamp the local coord onto the room edge.
+    const TOL = 2;
+    for (const e of edges.internal) {
+      const rooms = slicedMapToRooms[String(e.from.mapId)];
+      if (!rooms) continue;
+      let room = rooms.find(r =>
+        e.from.x >= r.tx && e.from.x < r.tx + r.tw &&
+        e.from.y >= r.ty && e.from.y < r.ty + r.th);
+      if (!room) {
+        let best = null, bestD = Infinity;
+        for (const r of rooms) {
+          const dx = Math.max(r.tx - e.from.x, 0, e.from.x - (r.tx + r.tw - 1));
+          const dy = Math.max(r.ty - e.from.y, 0, e.from.y - (r.ty + r.th - 1));
+          const d = Math.max(dx, dy);
+          if (d <= TOL && d < bestD) { bestD = d; best = r; }
+        }
+        room = best;
+      }
+      if (!room) continue;
+      const lx = Math.max(0, Math.min(room.tw - 1, e.from.x - room.tx));
+      const ly = Math.max(0, Math.min(room.th - 1, e.from.y - room.ty));
+      synthetic.push({
+        ...e,
+        from: { ...e.from, mapId: `r${e.from.mapId}_${room.roomIdx}`,
+                x: lx, y: ly },
+      });
+    }
+    edges.internal.push(...synthetic);
+    console.log(`Added ${synthetic.length} remapped events for house rooms`);
+  } catch (e) { console.warn('No faraway houses data:', e.message); }
+
+  // Session restore is disabled — see the note below.
+  // if (restoreSession()) { renderPlaced(); renderRoutes(); renderWatermelons(); }
+  renderThumbs();
+  applyTransform();
+  updatePlacedLabel();
+
+  // Autosave is disabled on purpose: the session key is shared across tabs, so
+  // two stitcher tabs open at once would overwrite each other's state. Saving
+  // is manual via Save Layout. To re-enable, uncomment the three lines below
+  // (and the restoreSession() block above) — but key the storage per tab first.
+  // lastSessionSig = JSON.stringify(placed) + '|' + JSON.stringify(routes);
+  // setInterval(autosaveTick, 2000);
+  // window.addEventListener('beforeunload', autosaveTick);
+
+  setupViewportPan();
+  setupViewportZoom();
+  setupGlobalKeys();
+
+  $('saveBtn').onclick = saveLayout;
+  $('loadBtn').onclick = () => $('loadFile').click();
+  $('loadFile').onchange = loadLayout;
+  // Region filter — refresh thumbs when changed
+  $('regionFilter').addEventListener('change', renderThumbs);
+  $('exportBtn').onclick = exportPNG;
+  $('resetBtn').onclick = resetView;
+  $('autoBtn').onclick = autoPlace;
+  $('clearBtn').onclick = clearAll;
+  $('melonBtn').onclick = () => {
+    world.classList.toggle('watermelons-off');
+    $('melonBtn').textContent =
+      world.classList.contains('watermelons-off') ? '🍉 Watermelons' : '🍉 ✓';
+  };
+  // Default: show watermelons (toggle off = hidden)
+  $('melonBtn').textContent = '🍉 ✓';
+  $('addRouteBtn').onclick = addRoute;
+  $('kindTwo').onclick  = () => setRouteKind('two');
+  $('kindOne').onclick  = () => setRouteKind('one');
+  $('kindLoop').onclick = () => setRouteKind('loop');
+  $('kindFlip').onclick = flipRoute;
+  $('kindDash').onclick = toggleRouteDash;
+  $('snapBtn').onclick = toggleSnap;
+  setupDecoMenu();
+  $('layerResetBtn').onclick = resetLayers;
+  $('groupBtn').onclick = groupSelected;
+  $('ungroupBtn').onclick = ungroupSelected;
+}
+
+// ====== Route annotations ======
+function toggleSnap() {
+  snapEnabled = !snapEnabled;
+  const b = $('snapBtn');
+  if (b) b.textContent = snapEnabled ? '🧲 Snap ✓' : '🧲 Snap ✗';
+}
+
+// Which routes have both their dots selected — those are the ones the kind
+// buttons act on.
+function selectedRouteIdxs() {
+  const per = {};
+  for (const d of world.querySelectorAll('.route-dot.selected')) {
+    const ri = +d.dataset.routeIdx;
+    per[ri] = (per[ri] || 0) + 1;
+  }
+  return Object.keys(per).map(Number);
+}
+
+// A route is two-way unless said otherwise. `kind` is 'two' | 'one' | 'loop',
+// and `solid` swaps the dashes off; both ride along in the saved layout, and
+// the map guide draws whatever it finds. This used to be inferred from the
+// edge tables instead, which got most of them wrong — the person drawing the
+// route is the one who knows.
+function updateRouteKindButtons() {
+  const sel = selectedRouteIdxs();
+  const kinds = new Set(sel.map(ri => routes[ri] && (routes[ri].kind || 'two')));
+  const solid = sel.length && sel.every(ri => routes[ri] && routes[ri].solid);
+  for (const [id, k] of [['kindTwo','two'], ['kindOne','one'], ['kindLoop','loop']]) {
+    const b = $(id);
+    b.disabled = !sel.length;
+    b.classList.toggle('on', kinds.size === 1 && kinds.has(k));
+  }
+  $('kindFlip').disabled = !sel.length;
+  $('kindDash').disabled = !sel.length;
+  $('kindDash').classList.toggle('on', !!solid);
+}
+
+function setRouteKind(kind) {
+  const sel = selectedRouteIdxs();
+  if (!sel.length) return;
+  pushHistory();
+  for (const ri of sel) routes[ri].kind = kind;
+  renderRoutes(); updateRouteKindButtons();
+}
+
+function flipRoute() {
+  const sel = selectedRouteIdxs();
+  if (!sel.length) return;
+  pushHistory();
+  for (const ri of sel) routes[ri].pts.reverse();
+  renderRoutes(); updateRouteKindButtons();
+}
+
+function toggleRouteDash() {
+  const sel = selectedRouteIdxs();
+  if (!sel.length) return;
+  pushHistory();
+  const on = !sel.every(ri => routes[ri].solid);
+  for (const ri of sel) routes[ri].solid = on;
+  renderRoutes(); updateRouteKindButtons();
+}
+
+function addRoute() {
+  pushHistory();
+  // Place near viewport center
+  const cx = (-panX + viewport.clientWidth / 2) / zoom;
+  const cy = (-panY + viewport.clientHeight / 2) / zoom;
+  const color = ROUTE_COLORS[routes.length % ROUTE_COLORS.length];
+  routes.push({
+    color,
+    pts: [{ x: cx - 60, y: cy, snap: null }, { x: cx + 60, y: cy, snap: null }],
+  });
+  renderRoutes();
+}
+
+// Clear snap state on any route dot pointing to a map that's no longer placed.
+// The dot stays at its current world coords (just becomes un-snapped visually)
+// so it doesn't drift to some other event in the next mousemove.
+function clearStaleSnaps() {
+  let cleared = 0;
+  for (const r of routes) {
+    for (const p of r.pts) {
+      if (p.snap && !placed[p.snap.mapId]) {
+        p.snap = null;
+        cleared++;
+      }
+    }
+  }
+  if (cleared) console.log(`Cleared ${cleared} dangling route snaps`);
+}
+
+// When any of the given map IDs has moved, re-position route endpoints
+// whose snap.mapId is in that set, based on the new map position + snapped tile.
+function updateRoutesForMovedMaps(movedMapIds) {
+  let any = false;
+  const touched = new Set();
+  for (const [ri, r] of routes.entries()) {
+    for (const p of r.pts) {
+      const sn = p.snap;
+      if (!sn) continue;
+      if (!movedMapIds.has(String(sn.mapId))) continue;
+      const mapPos = placed[sn.mapId];
+      if (!mapPos) continue;
+      // Carry the dot rigidly with its map using the offset stored at snap time.
+      // Recomputing from the event tile instead would throw away where along a
+      // door the user placed the dot, snapping it back to the tile centre.
+      if (Number.isFinite(sn.ox) && Number.isFinite(sn.oy)) {
+        p.x = mapPos.x + sn.ox;
+        p.y = mapPos.y + sn.oy;
+        any = true; touched.add(ri);
+        continue;
+      }
+      // Layout saved before offsets were recorded: adopt the dot's current
+      // position as the offset rather than snapping it to the event tile.
+      sn.ox = p.x - mapPos.x;
+      sn.oy = p.y - mapPos.y;
+      any = true; touched.add(ri);
+    }
+  }
+  if (any) for (const ri of touched) updateRouteGeometry(ri);
+}
+
+// Move one route's existing nodes instead of rebuilding every route's.
+// renderRoutes() tears down 326 dot divs and 163 SVG nodes and rebinds a drag
+// handler to each; doing that from a mousemove — which is what dragging a map
+// used to do, once per pixel — is what made the canvas crawl.
+function updateRouteGeometry(ri) {
+  const r = routes[ri], e = routeNodes[ri];
+  if (!r || !e) return;
+  const OFFSET = 2000;
+  const kind = r.kind || 'two';
+  const a = [r.pts[0].x + OFFSET, r.pts[0].y + OFFSET];
+  const b = [r.pts[1].x + OFFSET, r.pts[1].y + OFFSET];
+  const pts = kind === 'loop' ? loopCurvePts(a, b) : [a, b];
+  e.line.setAttribute('d', 'M' + pts.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join('L'));
+  if (e.chev) e.chev.setAttribute('d', chevronPath(pts));
+  for (let pi = 0; pi < 2; pi++) {
+    const dot = e.dots[pi], p = r.pts[pi];
+    if (!dot || !p) continue;
+    dot.style.left = (p.x - 20) + 'px';
+    dot.style.top  = (p.y - 20) + 'px';
+  }
+}
+
+// Compute snap targets: world positions of all transfer-event source tiles
+// from currently-placed maps. Returns [{x, y, mapId, evId, evName}].
+// Build snap targets. For exits at the map BOUNDARY, snapping is along a LINE:
+// the boundary axis is fixed (= event coord), the other axis is free — user
+// can snap to any tile center along the boundary (matches how exits are
+// "door-like": fixed at the edge, slidable along the door's perpendicular).
+// For interior events: point-snap at event tile center.
+// Snap targets depend only on which maps are placed and where, so they are
+// built once and kept until that changes. They used to be rebuilt inside the
+// drag handler, which meant walking all 2069 edges and allocating a fresh
+// target object for each one on every single mousemove — the main reason
+// dragging a route dot had turned to treacle.
+let snapTargetCache = null;
+function invalidateSnapTargets() { snapTargetCache = null; }
+
+function computeSnapTargets() {
+  if (snapTargetCache) return snapTargetCache;
+  const out = snapTargetCache = [];
+  // External edges count too. They are exits like any other — the split is
+  // about where the door *leads*, not about the door — and leaving them out
+  // meant a map whose only ways out cross a region border had nothing to snap
+  // to. LAST RESORT's taxi and its two shore teleports are all in `external`,
+  // which is why its bottom edge felt dead.
+  for (const e of [...(edges?.internal || []), ...(edges?.external || [])]) {
+    const pos = placed[e.from.mapId];
+    if (!pos) continue;
+    const meta = mapMeta[e.from.mapId];
+    if (!meta) continue;
+    // Determine if this is a boundary exit and which axis is fixed.
+    //   At x=0           → west exit  → fixed axis = X
+    //   At x=width-1     → east exit  → fixed axis = X
+    //   At y=0           → north exit → fixed axis = Y
+    //   At y=height-1    → south exit → fixed axis = Y
+    //   Else (interior)  → point snap
+    let fixedAxis = null;
+    // First: hitbox tells us the door's natural slide direction.
+    //   Horizontal hitbox (L+R > 0) → door spans X → user slides X → fix Y
+    //   Vertical   hitbox (T+B > 0) → door spans Y → user slides Y → fix X
+    const hb = e.from.hitbox || {L:0,R:0,T:0,B:0};
+    if ((hb.L|0) + (hb.R|0) > 0) fixedAxis = 'Y';
+    else if ((hb.T|0) + (hb.B|0) > 0) fixedAxis = 'X';
+    // Fallback: 1-tile tolerance for canvas-edge events (no hitbox info).
+    if (!fixedAxis) {
+      if (e.from.x <= 1 || e.from.x >= meta.width - 2)  fixedAxis = 'X';
+      else if (e.from.y <= 1 || e.from.y >= meta.height - 2) fixedAxis = 'Y';
+    }
+    out.push({
+      // event tile center in world coords
+      x: pos.x + (e.from.x + 0.5) * TILE_PX,
+      y: pos.y + (e.from.y + 0.5) * TILE_PX,
+      mapId: e.from.mapId,
+      evId: e.from.evId,
+      evName: e.from.evName,
+      fixedAxis,                     // 'X' / 'Y' / null
+      mapPos: pos,                   // for free-axis tile snapping
+      mapW: meta.width, mapH: meta.height,
+      evX: e.from.x, evY: e.from.y,
+    });
+  }
+  return out;
+}
+
+// Given a snap target and current drag position, return the snapped (x, y).
+// Returns null if no snap (too far).
+function snapToTarget(target, nx, ny) {
+  if (!target.fixedAxis) {
+    // Point snap (interior event)
+    const d = Math.hypot(nx - target.x, ny - target.y);
+    if (d < SNAP_RADIUS) return { x: target.x, y: target.y };
+    return null;
+  }
+  // Line snap: distance perpendicular to the boundary line
+  if (target.fixedAxis === 'X') {
+    // x fixed, y free (snap free axis to nearest tile center within map height)
+    if (Math.abs(nx - target.x) > SNAP_RADIUS) return null;
+    const localY = (ny - target.mapPos.y) / TILE_PX;
+    const clampedY = Math.max(0.5, Math.min(target.mapH - 0.5, Math.round(localY - 0.5) + 0.5));
+    return { x: target.x, y: target.mapPos.y + clampedY * TILE_PX };
+  } else {
+    // y fixed, x free
+    if (Math.abs(ny - target.y) > SNAP_RADIUS) return null;
+    const localX = (nx - target.mapPos.x) / TILE_PX;
+    const clampedX = Math.max(0.5, Math.min(target.mapW - 0.5, Math.round(localX - 0.5) + 0.5));
+    return { x: target.mapPos.x + clampedX * TILE_PX, y: target.y };
+  }
+}
+
+// Same curve the map guide draws (see loopCurve there): handles run outward
+// from each end so the loop leaves almost parallel and bows to one side.
+const LOOP_REACH = 1.20, LOOP_BOW = 0.12, LOOP_STEPS = 48;
+function loopCurvePts(p0, p3) {
+  const dx = p3[0] - p0[0], dy = p3[1] - p0[1];
+  const span = Math.hypot(dx, dy) || 1;
+  const u = [dx / span, dy / span], perp = [-u[1], u[0]];
+  const reach = span * LOOP_REACH, bow = span * LOOP_BOW;
+  const c1 = [p0[0] - u[0] * reach + perp[0] * bow, p0[1] - u[1] * reach + perp[1] * bow];
+  const c2 = [p3[0] + u[0] * reach + perp[0] * bow, p3[1] + u[1] * reach + perp[1] * bow];
+  const out = [];
+  for (let i = 0; i <= LOOP_STEPS; i++) {
+    const t = i / LOOP_STEPS, v = 1 - t;
+    out.push([v*v*v*p0[0] + 3*v*v*t*c1[0] + 3*v*t*t*c2[0] + t*t*t*p3[0],
+              v*v*v*p0[1] + 3*v*v*t*c1[1] + 3*v*t*t*c2[1] + t*t*t*p3[1]]);
+  }
+  return out;
+}
+
+// Direction is shown by a run of small chevrons along the line rather than one
+// triangle at the end. A single arrowhead tells you a route is one-way but not
+// which end it starts from — you have to find the head, and on a short line
+// under a snap dot you often can't. Chevrons repeat the answer everywhere.
+const CHEVRON_GAP = 26;   // px between chevrons, in world units
+const CHEVRON_LEN = 7;    // how far back each arm reaches
+const CHEVRON_SPREAD = 5; // and how far to the side
+function chevronPath(pts) {
+  // Walk the polyline at a fixed spacing so spacing stays even round a curve.
+  const segs = [];
+  let carry = CHEVRON_GAP / 2;
+  for (let i = 1; i < pts.length; i++) {
+    const [x0, y0] = pts[i - 1], [x1, y1] = pts[i];
+    const dx = x1 - x0, dy = y1 - y0;
+    const len = Math.hypot(dx, dy);
+    if (!len) continue;
+    const ux = dx / len, uy = dy / len;
+    for (let d = carry; d < len; d += CHEVRON_GAP) {
+      const cx = x0 + ux * d, cy = y0 + uy * d;
+      const bx = cx - ux * CHEVRON_LEN, by = cy - uy * CHEVRON_LEN;
+      const px = -uy * CHEVRON_SPREAD, py = ux * CHEVRON_SPREAD;
+      segs.push(`M${(bx+px).toFixed(1)},${(by+py).toFixed(1)}` +
+                `L${cx.toFixed(1)},${cy.toFixed(1)}` +
+                `L${(bx-px).toFixed(1)},${(by-py).toFixed(1)}`);
+    }
+    carry = ((carry - len) % CHEVRON_GAP + CHEVRON_GAP) % CHEVRON_GAP;
+  }
+  return segs.join('');
+}
+
+function svgChevrons(pts, color) {
+  const el = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  el.setAttribute('d', chevronPath(pts));
+  el.setAttribute('fill', 'none');
+  el.setAttribute('stroke', color);
+  el.setAttribute('stroke-width', '2.5');
+  el.setAttribute('stroke-linecap', 'round');
+  el.setAttribute('stroke-linejoin', 'round');
+  return el;
+}
+
+// ri -> the nodes that route owns. Held directly rather than looked up by
+// attribute: index-into-svg.children broke the moment a route could own two
+// nodes, and a querySelector round-trip on every mousemove is work for nothing.
+let routeNodes = [];
+
+function renderRoutes() {
+  routeNodes = [];
+  // Remove old dots
+  world.querySelectorAll('.route-dot').forEach(n => n.remove());
+  const svg = document.getElementById('routesSvg');
+  if (!svg) return;
+  svg.innerHTML = '';
+  // Compute bounding box so SVG covers world. We'll just set its width/height generously.
+  svg.setAttribute('width', '10000');
+  svg.setAttribute('height', '10000');
+  svg.style.left = '-2000px';
+  svg.style.top = '-2000px';
+  // Offset coords because svg origin is at (-2000,-2000) within world
+  const OFFSET = 2000;
+
+  for (let ri = 0; ri < routes.length; ri++) {
+    const r = routes[ri];
+    const kind = r.kind || 'two';
+    const a = [r.pts[0].x + OFFSET, r.pts[0].y + OFFSET];
+    const b = [r.pts[1].x + OFFSET, r.pts[1].y + OFFSET];
+    // A wrap-around bows into a long flat loop; the other kinds are straight.
+    // Drawn as one <path> either way so applyLayers can keep addressing
+    // svg.children[i] as "the line for route i".
+    const pts = kind === 'loop' ? loopCurvePts(a, b) : [a, b];
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    line.setAttribute('d', 'M' + pts.map(p => p[0].toFixed(1) + ',' + p[1].toFixed(1)).join('L'));
+    line.setAttribute('fill', 'none');
+    line.setAttribute('stroke', r.color);
+    line.setAttribute('stroke-width', '3');
+    if (!r.solid) line.setAttribute('stroke-dasharray', '8 6');
+    line.setAttribute('opacity', '0.85');
+    line.dataset.routeIdx = ri;
+    svg.appendChild(line);
+    const entry = routeNodes[ri] = { line, chev: null, dots: [] };
+    // Chevrons only on one-way. A wrap-around already reads as directional
+    // from its shape, and arrows on the curve just clutter it.
+    if (kind === 'one') {
+      const chev = svgChevrons(pts, r.color);
+      chev.dataset.routeIdx = ri;
+      svg.appendChild(chev);
+      entry.chev = chev;
+    }
+    // Dots
+    for (let pi = 0; pi < 2; pi++) {
+      const dot = document.createElement('div');
+      dot.className = 'route-dot' + (r.pts[pi].snap ? ' snapped' : '');
+      dot.style.setProperty('--col', r.color);
+      // 40×40 hit area centered on point
+      dot.style.left = (r.pts[pi].x - 20) + 'px';
+      dot.style.top  = (r.pts[pi].y - 20) + 'px';
+      dot.dataset.routeIdx = ri;
+      dot.dataset.ptIdx = pi;
+      entry.dots[pi] = dot;
+      dot.title = r.pts[pi].snap
+        ? `Route ${ri+1}: ${r.pts[pi].snap.evName} on Map${r.pts[pi].snap.mapId}`
+        : `Route ${ri+1} pt ${pi+1} (drag to a transfer point to snap)`;
+      setupRouteDotDrag(dot);
+      world.appendChild(dot);
+    }
+  }
+  applyLayers();
+}
+
+function setupRouteDotDrag(el) {
+  let dragging = false, sx, sy, ox, oy, ri, pi, dragGroup = [], moved = false;
+  el.addEventListener('mousedown', e => {
+    if (e.button !== 0) return;
+    e.stopPropagation();
+    e.preventDefault();
+    ri = +el.dataset.routeIdx;
+    pi = +el.dataset.ptIdx;
+    if (e.shiftKey) {
+      el.classList.toggle('selected');
+      return;
+    }
+    const wasSelected = el.classList.contains('selected');
+    if (!wasSelected) {
+      clearSelection();
+      // Select only THIS dot. Delete still removes the whole route because
+      // its handler dedupes by routeIdx, so one dot suffices.
+      el.classList.add('selected');
+    }
+    dragging = true;
+    moved = false;
+    sx = e.clientX; sy = e.clientY;
+    ox = routes[ri].pts[pi].x; oy = routes[ri].pts[pi].y;
+    dragGroup = collectDragGroup();
+  }, true);
+  window.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    const dx = (e.clientX - sx) / zoom;
+    const dy = (e.clientY - sy) / zoom;
+    if (!moved && (Math.abs(dx) > 0 || Math.abs(dy) > 0)) { pushHistory(); moved = true; }
+    // Move ANCHOR (this dot) first w/ snap detection, then carry others by same delta
+    let nx = ox + dx, ny = oy + dy;
+    const cands = [];
+    if (snapEnabled && !e.altKey) {
+      for (const s of computeSnapTargets()) {
+        const sp = snapToTarget(s, nx, ny);
+        if (!sp) continue;
+        cands.push({ s, sp, d: Math.hypot(nx - sp.x, ny - sp.y) });
+      }
+    }
+    // Confine the choice to the map drawn on top at the cursor when that map
+    // offers any target at all; only fall back to the whole pile when it
+    // doesn't. Without this, overlapping regions steal each other's snaps.
+    const topId = topMapAt(nx, ny);
+    const onTop = topId === null ? []
+      : cands.filter(c => String(c.s.mapId) === String(topId));
+    const pool = onTop.length ? onTop : cands;
+    let best = null, bestSnap = null, bestD = Infinity;
+    for (const c of pool) {
+      if (c.d < bestD) { best = c.s; bestSnap = c.sp; bestD = c.d; }
+    }
+    if (best) {
+      nx = bestSnap.x; ny = bestSnap.y;
+      // Record where on the map the dot actually landed, not just which event it
+      // snapped to. Door-like exits snap along a LINE (see snapToTarget), so the
+      // dot can sit anywhere along the door — that slide is the user's choice and
+      // is not recoverable from the event's tile alone.
+      routes[ri].pts[pi].snap = {
+        mapId: best.mapId, evId: best.evId, evName: best.evName,
+        ox: nx - best.mapPos.x, oy: ny - best.mapPos.y,
+      };
+      el.classList.add('snapped');
+    } else {
+      routes[ri].pts[pi].snap = null;
+      el.classList.remove('snapped');
+    }
+    const ddx = nx - ox, ddy = ny - oy;
+    const movedMapIds = new Set();
+    for (const g of dragGroup) moveDragItem(g, g.ox + ddx, g.oy + ddy, movedMapIds);
+    if (movedMapIds.size) updateRoutesForMovedMaps(movedMapIds);
+  });
+  window.addEventListener('mouseup', () => {
+    // Positions moved without going through renderPlaced, so the cached
+    // targets are stale from here on.
+    if (dragging) invalidateSnapTargets();
+    dragging = false; dragGroup = [];
+  });
+}
+
+function renderWatermelons() {
+  world.querySelectorAll('.watermelon-overlay').forEach(n => n.remove());
+  for (const m of highlights.watermelons || []) {
+    const pos = placed[m.mapId];
+    if (!pos) continue;
+    const el = document.createElement('div');
+    el.className = 'watermelon-overlay ' + (m.color || 'green');
+    el.dataset.mapId = m.mapId;  // tag for fast lookup on drag
+    el.dataset.region = REGION_OF_MAP[m.mapId] || '';
+    el.style.left = (pos.x + m.x * TILE_PX) + 'px';
+    el.style.top  = (pos.y + m.y * TILE_PX) + 'px';
+    el.dataset.localX = m.x * TILE_PX;
+    el.dataset.localY = m.y * TILE_PX;
+    el.title = `${m.color || 'green'} watermelon @ Map${m.mapId} (${m.x}, ${m.y}) — ${m.name}`;
+    world.appendChild(el);
+  }
+  applyLayers();
+}
+
+// Move watermelons belonging to one map (used by drag / nudge — avoids full rerender)
+function updateWatermelonsForMap(mapId) {
+  const pos = placed[mapId];
+  if (!pos) return;
+  world.querySelectorAll(`.watermelon-overlay[data-map-id="${mapId}"]`).forEach(el => {
+    el.style.left = (pos.x + (+el.dataset.localX)) + 'px';
+    el.style.top  = (pos.y + (+el.dataset.localY)) + 'px';
+  });
+}
+
+// ====== Region layers ======
+// Overlapping regions are the point of this layout, which makes any one of
+// them hard to read. Treat each region as a layer: hide it, or focus it so it
+// lifts above the pile in colour while everything else drops to grey.
+const hiddenRegions = new Set();
+let focusRegion = null;
+
+// Region display names, falling back to the raw key for anything new.
+const REGION_LABELS = {
+  faraway: 'Faraway Town', vast_forest: 'Vast Forest', orange_oasis: 'Orange Oasis',
+  otherworld: 'Otherworld', junkyard: 'Junkyard', pyrefly_forest: 'Pyrefly Forest',
+  sweethearts_castle: "Sweethearts Castle", deep_well: 'Deep Well',
+  deeper_well: 'Deeper Well', last_resort: 'Last Resort',
+  forest_playground: 'Forest Playground',
+};
+const regionLabel = r => REGION_LABELS[r] || r || '(no region)';
+
+function placedCountsByRegion() {
+  const counts = {};
+  for (const id of Object.keys(placed)) {
+    const r = REGION_OF_MAP[id] || '';
+    counts[r] = (counts[r] || 0) + 1;
+  }
+  return counts;
+}
+
+// Region a route endpoint belongs to, or null when it is snapped to nothing.
+function regionOfPoint(pt) {
+  return pt && pt.snap ? (REGION_OF_MAP[pt.snap.mapId] || '') : null;
+}
+
+function applyLayers() {
+  for (const el of world.querySelectorAll('.placed-map, .watermelon-overlay')) {
+    const r = el.dataset.region || '';
+    el.classList.toggle('layer-hidden', hiddenRegions.has(r));
+    el.classList.toggle('layer-dimmed', !!focusRegion && r !== focusRegion);
+    el.classList.toggle('layer-focus', !!focusRegion && r === focusRegion);
+  }
+  // A dot snapped to a hidden map has nothing left to point at, so it goes too
+  // — otherwise hiding everything leaves the routes hanging in empty space.
+  // Free-floating dots aren't tied to a region and stay put.
+  for (const el of world.querySelectorAll('.route-dot')) {
+    const pt = routes[+el.dataset.routeIdx]?.pts[+el.dataset.ptIdx];
+    const r = regionOfPoint(pt);
+    el.classList.toggle('layer-hidden', r !== null && hiddenRegions.has(r));
+    el.classList.toggle('layer-dimmed', !!focusRegion && r !== null && r !== focusRegion);
+  }
+  const svg = document.getElementById('routesSvg');
+  if (!svg) return;
+  // A route may own more than one SVG node now (its line, plus an arrowhead for
+  // one-way and wrap-around), so match on the tag rather than on child order.
+  for (const el of svg.children) {
+    const i = +el.dataset.routeIdx;
+    if (!routes[i]) continue;
+    const regs = (routes[i].pts || []).map(regionOfPoint);
+    // Either end hidden and the line is dangling, so drop the whole thing.
+    const hidden = regs.some(r => r !== null && hiddenRegions.has(r));
+    const dimmed = !!focusRegion && regs.every(r => r !== focusRegion);
+    el.classList.toggle('layer-hidden', hidden);
+    el.classList.toggle('layer-dimmed', dimmed);
+  }
+}
+
+// Same routes the map guide warns about — see REGION_ROUTES there. Regions
+// along one route were stitched to butt against each other and can all be
+// shown at once; regions from different routes land on the same ground.
+const REGION_ROUTES = [
+  ['vast_forest', 'otherworld', 'junkyard', 'snowglobe_mountain'],
+  ['vast_forest', 'deep_well', 'last_resort', 'deeper_well', 'white_space'],
+  ['vast_forest', 'pyrefly_forest', 'sweethearts_castle'],
+  ['vast_forest', 'orange_oasis'],
+];
+const ROUTE_LABELS = ['Otherworld route', 'Deep Well route', 'Pyrefly route', 'Orange Oasis'];
+
+// Here it is the *shown* regions that matter — this panel hides rather than
+// selects — so the check runs over what is placed and not hidden.
+function updateOverlapWarning() {
+  const box = $('overlapWarn');
+  if (!box) return;
+  const shown = Object.keys(placedCountsByRegion()).filter(r => !hiddenRegions.has(r));
+  const known = new Set(REGION_ROUTES.flat());
+  const fits = REGION_ROUTES.some(route => shown.every(r => route.includes(r)));
+  if (fits || shown.every(r => !known.has(r))) { box.style.display = 'none'; return; }
+  const involved = REGION_ROUTES
+    .map((route, i) => [ROUTE_LABELS[i], shown.filter(r => r !== 'vast_forest' && route.includes(r))])
+    .filter(([, rs]) => rs.length);
+  box.style.display = '';
+  box.innerHTML =
+    `⚠ <b>${involved.length} routes shown at once</b><br>` +
+    involved.map(([name, rs]) => `<b>${name}:</b> ${rs.map(regionLabel).join(', ')}`).join('<br>') +
+    `<br>Maps from different routes sit on the same ground, so what you see ` +
+    `stacked here is not how they relate. Hide all but one route to lay it out.`;
+}
+
+function renderLayerPanel() {
+  const rows = $('layerRows');
+  if (!rows) return;
+  const counts = placedCountsByRegion();
+  const keys = Object.keys(counts).sort((a, b) => counts[b] - counts[a]);
+  if (!keys.length) {
+    rows.innerHTML = '<div style="color:#666;font-size:11px">nothing placed yet</div>';
+    return;
+  }
+  rows.innerHTML = '';
+  for (const r of keys) {
+    const row = document.createElement('div');
+    row.className = 'layer-row' + (hiddenRegions.has(r) ? ' off' : '');
+    row.innerHTML =
+      `<button data-act="eye" title="Show / hide">${hiddenRegions.has(r) ? '🚫' : '👁'}</button>` +
+      `<button data-act="focus" class="${focusRegion === r ? 'on' : ''}" ` +
+      `title="Focus: this region in colour on top, the rest grey">◉</button>` +
+      `<span class="nm">${regionLabel(r)}</span><span class="ct">${counts[r]}</span>`;
+    row.querySelector('[data-act=eye]').onclick = () => {
+      if (hiddenRegions.has(r)) hiddenRegions.delete(r); else hiddenRegions.add(r);
+      applyLayers(); renderLayerPanel();
+    };
+    row.querySelector('[data-act=focus]').onclick = () => {
+      focusRegion = focusRegion === r ? null : r;
+      applyLayers(); renderLayerPanel();
+    };
+    rows.appendChild(row);
+  }
+  updateOverlapWarning();
+}
+
+function resetLayers() {
+  hiddenRegions.clear();
+  focusRegion = null;
+  applyLayers();
+  renderLayerPanel();
+}
+
+function clearAll() {
+  if (Object.keys(placed).length === 0 && routes.length === 0 && decorations.length === 0) return;
+  if (!confirm('Clear all placed maps, routes and decorations?')) return;
+  pushHistory();
+  for (const k in placed) delete placed[k];
+  routes.length = 0;
+  decorations.length = 0;
+  renderPlaced();
+  renderRoutes();
+  renderThumbs();
+  updatePlacedLabel();
+  updateDecoControls();
+}
+
+// ====== Session persistence ======
+// All state lived in memory, so a reload threw away every placement and route.
+// Mirror it into localStorage instead and restore on load; Save Layout stays
+// the way to keep a named copy, this is only the crash/refresh net.
+const SESSION_KEY = 'omori-stitcher-all-session';
+
+function saveSession() {
+  try {
+    localStorage.setItem(SESSION_KEY, JSON.stringify({
+      savedAt: Date.now(), placed, routes, decorations,
+      view: { zoom, panX, panY },
+    }));
+  } catch (err) {
+    console.warn('Autosave failed (storage full or blocked):', err);
+  }
+}
+
+function restoreSession() {
+  let s;
+  try {
+    s = JSON.parse(localStorage.getItem(SESSION_KEY) || 'null');
+  } catch (err) { return false; }
+  if (!s || !s.placed || !Object.keys(s.placed).length) return false;
+  Object.assign(placed, s.placed);
+  if (Array.isArray(s.routes)) routes.push(...s.routes);
+  for (const d of (s.decorations || [])) {
+    decorations.push({ scale: 1, flip: false, ...d, uid: ++decoSeq });
+  }
+  if (s.view) { zoom = s.view.zoom ?? zoom; panX = s.view.panX ?? panX; panY = s.view.panY ?? panY; }
+  const mins = Math.round((Date.now() - (s.savedAt || Date.now())) / 60000);
+  console.log(`Restored autosave: ${Object.keys(s.placed).length} maps, ` +
+              `${(s.routes || []).length} routes (${mins} min ago)`);
+  return true;
+}
+
+// State changes come from many paths (drag, nudge, undo, import, delete), so
+// poll a cheap signature rather than trying to hook each one.
+let lastSessionSig = '';
+function autosaveTick() {
+  const sig = JSON.stringify(placed) + '|' + JSON.stringify(routes) + '|' + JSON.stringify(decorations);
+  if (sig === lastSessionSig) return;
+  lastSessionSig = sig;
+  saveSession();
+}
+
+// 3-stripe street maps store Day/Sunset/Night vertically: 0-29 / 30-59 / 60-89.
+// isStripe is defined next to STREET_BLACK_BAND above.
+
+// Crop offset (rows) for a map at given phase, accounting for STREET_BLACK_BAND
+// top trim. This is what BFS uses to align transfer tiles in the cropped view.
+function cropOffsetRows(mapId, phase) {
+  if (!isStripe(mapId)) return 0;
+  const cropKey = phase === 'sunset' ? 'mid3' : phase === 'night' ? 'bot3' : 'top3';
+  const baseY = phase === 'sunset' ? 30 : phase === 'night' ? 60 : 0;
+  const band = STREET_BLACK_BAND[mapId]?.[cropKey];
+  return baseY + (band ? band[0] : 0);
+}
+
+function cropName(mapId, phase) {
+  if (!isStripe(mapId)) return 'full';
+  if (phase === 'sunset') return 'mid3';
+  if (phase === 'night')  return 'bot3';
+  return 'top3';
+}
+
+// Does this transfer endpoint belong to the given phase?
+function endpointMatchesPhase(mapId, y, phase) {
+  const m = mapMeta[mapId]; if (!m) return false;
+  if (isStripe(mapId)) {
+    if (phase === 'day')    return y < 30;
+    if (phase === 'sunset') return y >= 30 && y < 60;
+    if (phase === 'night')  return y >= 60;
+  }
+  // Single-phase maps: classify by name suffix
+  const name = m.name;
+  if (phase === 'sunset') return /\(SUNSET\)/i.test(name);
+  if (phase === 'night')  return /\(NIGHT\)/i.test(name);
+  // 'day' = explicit (DAY) OR no phase suffix at all
+  return /\(DAY\)/i.test(name) || !/\((SUNSET|NIGHT)\)/i.test(name);
+}
+
+// Auto-place reachable maps by BFS using transfer offsets.
+function autoPlace() {
+  if (!edges) { alert('Edges not loaded yet.'); return; }
+  pushHistory();
+  // Sweethearts Castle has no phases — use a fixed marker so cropOffsetRows returns 0.
+  const phase = 'day';
+
+  // Filter edges to MAP_IDS only.
+  const phaseEdges = (edges.internal || []).filter(e =>
+    MAP_IDS.includes(e.from.mapId) && MAP_IDS.includes(e.to.mapId)
+  );
+
+  // Build adjacency. For an edge A(ax, ay) → B(bx, by) with crop offsets coA/coB,
+  // place B at A's pos + (ax - bx, (ay - coA) - (by - coB)) tiles so the two
+  // transfer tiles overlap in world coordinates.
+  //
+  // Each transfer edge is added in BOTH traversal directions so BFS can pick
+  // either map as the "approach" side. We tag each entry with `dataFromIsTo`
+  // (true when the edge in data has from=neighbor map): RPG MV has 1-tile
+  // exit-vs-arrival asymmetry, and using the neighbor's forward edge (the one
+  // describing entry INTO the current map) gives more natural alignment.
+  const adj = {};
+  for (const e of phaseEdges) {
+    const a = e.from.mapId, b = e.to.mapId;
+    const coA = cropOffsetRows(a, phase);
+    const coB = cropOffsetRows(b, phase);
+    const dx = e.from.x - e.to.x;
+    const dy = (e.from.y - coA) - (e.to.y - coB);
+    // Forward (BFS at A reaches B via A→B edge): dataFromIsTo = false (A is from)
+    (adj[a] = adj[a] || []).push({ to: b, dx, dy, dataFromIsTo: false });
+    // Reverse (BFS at B reaches A via the SAME edge): dataFromIsTo = true (A is from, but we're at B)
+    (adj[b] = adj[b] || []).push({ to: a, dx: -dx, dy: -dy, dataFromIsTo: true });
+  }
+  // Sort each adj[A] to prefer entries where the data's `from` is the neighbor
+  // (dataFromIsTo === true), i.e., the neighbor's forward direction.
+  for (const id in adj) {
+    adj[id].sort((p, q) => (q.dataFromIsTo ? 1 : 0) - (p.dataFromIsTo ? 1 : 0));
+  }
+
+  // Anchor: first currently-placed map, else Map 171 (SWEETHEART'S CASTLE STAGE) at origin.
+  let anchorId;
+  if (Object.keys(placed).length > 0) {
+    anchorId = +Object.keys(placed)[0];
+  } else {
+    anchorId = 12;
+    placed[anchorId] = { x: 0, y: 0, crop: 'full', zOrder: 0 };
+  }
+
+  const queue = [anchorId];
+  const visited = new Set([anchorId]);
+  let added = 0;
+  while (queue.length) {
+    const cur = queue.shift();
+    if (!adj[cur]) continue;
+    const curPos = placed[cur];
+    for (const e of adj[cur]) {
+      if (visited.has(e.to)) continue;
+      visited.add(e.to);
+      if (placed[e.to]) { queue.push(e.to); continue; }
+      placed[e.to] = {
+        x: curPos.x + e.dx * TILE_PX,
+        y: curPos.y + e.dy * TILE_PX,
+        crop: cropName(e.to, phase),
+        zOrder: nextZOrder(),
+      };
+      added++;
+      queue.push(e.to);
+    }
+  }
+
+  // Apply manual nudges to fix maps where transfer alignment differs from
+  // desired visual layout (e.g., Lake covered too much by Park).
+  for (const id of Object.keys(placed)) {
+    const nudge = MANUAL_NUDGES[id];
+    if (!nudge) continue;
+    placed[id].x += (nudge.dx || 0) * TILE_PX;
+    placed[id].y += (nudge.dy || 0) * TILE_PX;
+  }
+
+  // Reassign z-order so maps further south (larger y) render on top. This makes
+  // Park cover Lake's southern edge, Shopping cover Lake's east edge, etc.
+  const ids = Object.keys(placed).sort((a, b) =>
+    (placed[a].y - placed[b].y) || (placed[a].x - placed[b].x)
+  );
+  ids.forEach((id, i) => { placed[id].zOrder = i; });
+
+  renderPlaced();
+  renderThumbs();
+  updatePlacedLabel();
+  alert(`Auto-placed ${added} new map(s). Anchor: Map ${anchorId}.`);
+}
+
+// Build one thumbnail node. Used by both the main list and house dropdowns.
+function buildThumb(id, opts = {}) {
+  const m = mapMeta[id];
+  const div = document.createElement('div');
+  div.className = 'map-thumb';
+  div.dataset.id = id;
+  const label = opts.shortLabel || `Map ${id}`;
+  div.innerHTML = `
+    <img src="${mapImageUrl(id)}" />
+    <div class="meta">
+      <div class="id">${label}</div>
+      <div class="name">${m.name.replace(/^[- ]+/, '')}</div>
+      <div style="color:#666">${m.width}×${m.height}</div>
+    </div>`;
+  div.draggable = true;
+  div.addEventListener('dragstart', e => {
+    e.dataTransfer.setData('mapId', id);
+    e.dataTransfer.effectAllowed = 'move';
+  });
+  div.addEventListener('click', () => {
+    pushHistory();
+    if (placed[id]) {
+      delete placed[id];
+      clearStaleSnaps();
+    } else {
+      const cx = (-panX + viewport.clientWidth / 2) / zoom;
+      const cy = (-panY + viewport.clientHeight / 2) / zoom;
+      const crop = defaultCrop(m, id);
+      const cropH = cropRect(crop, m, id).h;
+      placed[id] = {
+        x: Math.round((cx - m.width * TILE_PX / 2) / TILE_PX) * TILE_PX,
+        y: Math.round((cy - cropH * TILE_PX / 2) / TILE_PX) * TILE_PX,
+        crop,
+        zOrder: nextZOrder(),
+      };
+    }
+    renderPlaced();
+    renderThumbs();
+    updatePlacedLabel();
+  });
+  if (placed[id]) div.classList.add('placed');
+  return div;
+}
+
+// Persistent open-state for collapsible house/phase dropdowns, so renderThumbs()
+// re-renders don't snap everything closed when a map is placed.
+const openDetails = new Set();
+
+function renderThumbs() {
+  const list = $('thumbList');
+  list.innerHTML = '';
+  const regionFilter = ($('regionFilter')?.value || '');
+
+  // House IDs whose 90x80 full image has been sliced — skip them in the main
+  // list (rooms section below covers them).
+  //
+  // A house that sliced into a single room is a different case: CHURCH
+  // INTERIOR and TREEHOUSE INTERIOR are one room each, so the "slice" is just
+  // a tighter crop of the whole map. Burying those under three levels of
+  // collapsed <details> among sixteen residential houses hid them completely —
+  // the church read as missing. List the room itself in the main list instead,
+  // in map-id order where it belongs.
+  const slicedFullMaps = new Set();
+  const soloRoomOf = {};       // mapId → room id, for single-room houses
+  if (housesData) {
+    for (const phases of Object.values(housesData.houses)) {
+      for (const info of Object.values(phases)) {
+        slicedFullMaps.add(info.mapId);
+        if (info.rooms.length === 1) {
+          soloRoomOf[info.mapId] = `r${info.mapId}_${info.rooms[0].roomIdx}`;
+        }
+      }
+    }
+  }
+  const soloHouse = phases => Object.values(phases).every(p => p.rooms.length === 1);
+
+  // Faraway house interiors — placed at the TOP so they're findable.
+  if (housesData && (!regionFilter || regionFilter === 'faraway')) {
+    const wrap = document.createElement('div');
+    wrap.style.marginBottom = '10px';
+    wrap.style.paddingBottom = '8px';
+    wrap.style.borderBottom = '1px solid #444';
+    const multiRoom = Object.entries(housesData.houses).filter(([, ph]) => !soloHouse(ph));
+    wrap.innerHTML = `<div style="color:#ffea7a;font-size:12px;font-weight:bold;margin-bottom:6px">🏠 House Interiors (${multiRoom.length})</div>`;
+    for (const [houseName, phases] of multiRoom) {
+      const houseKey = `h:${houseName}`;
+      const houseEl = document.createElement('details');
+      houseEl.className = 'house-group';
+      houseEl.dataset.key = houseKey;
+      if (openDetails.has(houseKey)) houseEl.open = true;
+      houseEl.addEventListener('toggle', () => {
+        if (houseEl.open) openDetails.add(houseKey);
+        else openDetails.delete(houseKey);
+      });
+      const phasesCount = Object.keys(phases).length;
+      const totalRooms = Object.values(phases).reduce((s, p) => s + p.rooms.length, 0);
+      houseEl.innerHTML = `<summary>${houseName} <span style="color:#666;font-size:10px">(${phasesCount}p · ${totalRooms}r)</span></summary>`;
+      for (const [phase, info] of Object.entries(phases)) {
+        const phaseKey = `p:${houseName}:${phase}`;
+        const phaseEl = document.createElement('details');
+        phaseEl.className = 'phase-group';
+        phaseEl.dataset.key = phaseKey;
+        if (openDetails.has(phaseKey)) phaseEl.open = true;
+        phaseEl.addEventListener('toggle', () => {
+          if (phaseEl.open) openDetails.add(phaseKey);
+          else openDetails.delete(phaseKey);
+        });
+        phaseEl.innerHTML = `<summary>${phase} (Map ${info.mapId})</summary>`;
+        for (const room of info.rooms) {
+          const rid = `r${info.mapId}_${room.roomIdx}`;
+          phaseEl.appendChild(buildThumb(rid, { shortLabel: `Room ${room.roomIdx}` }));
+        }
+        houseEl.appendChild(phaseEl);
+      }
+      wrap.appendChild(houseEl);
+    }
+    list.appendChild(wrap);
+  }
+
+  for (const id of MAP_IDS) {
+    const m = mapMeta[id];
+    if (!m) continue;
+    if (regionFilter && REGION_OF_MAP[id] !== regionFilter) continue;
+    if (soloRoomOf[id]) { list.appendChild(buildThumb(soloRoomOf[id])); continue; }
+    if (slicedFullMaps.has(id)) continue;  // hide whole-house maps; rooms used instead
+    list.appendChild(buildThumb(id));
+  }
+}
+
+// Draw every placed map. Anything the layout names but this build has no
+// metadata for is skipped rather than allowed to abort the pass.
+function renderPlaced() {
+  invalidateSnapTargets();     // placement changed, so the targets did too
+  // remove all .placed-map / .placed-deco nodes
+  world.querySelectorAll('.placed-map, .placed-deco').forEach(n => n.remove());
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  // sort by zOrder ascending — last-rendered = on top. Maps and decorations go
+  // through the one sort so they interleave; stacking here is DOM order, so a
+  // decoration appended after every map could only ever sit above all of them.
+  const items = [
+    ...Object.keys(placed).map(id => ({ deco: null, id, z: placed[id].zOrder ?? 0 })),
+    ...decorations.map(d => ({ deco: d, id: null, z: d.zOrder ?? 0 })),
+  ].sort((a, b) => a.z - b.z);
+  const unknown = [];
+  for (const it of items) {
+    if (it.deco) {
+      const box = renderDecoNode(it.deco);
+      if (box) {
+        minX = Math.min(minX, box.x); minY = Math.min(minY, box.y);
+        maxX = Math.max(maxX, box.x + box.w); maxY = Math.max(maxY, box.y + box.h);
+      }
+      continue;
+    }
+    const id = it.id;
+    const m = mapMeta[id];
+    // A layout can name a map this build knows nothing about — that is what
+    // happened when SNOWGLOBE MOUNTAIN was split out of Otherworld and this
+    // file's region list had not caught up. Reading m.width threw partway
+    // through the sorted list, so every map above it in z-order went undrawn
+    // and renderRoutes() never ran at all: the canvas came back short a pile
+    // of maps and missing every route. Skip and say so instead.
+    if (!m) { unknown.push(id); continue; }
+    const pos = placed[id];
+    const crop = pos.crop || 'full';
+    const cr = cropRect(crop, m, id);
+    const w = m.width * TILE_PX;
+    const fullH = m.height * TILE_PX;
+    const cropH = cr.h * TILE_PX;
+    const cropOffsetY = cr.y * TILE_PX;
+    const div = document.createElement('div');
+    div.className = 'placed-map' + (pos.groupId ? ' grouped' : '');
+    div.style.left = pos.x + 'px';
+    div.style.top = pos.y + 'px';
+    div.style.width = w + 'px';
+    div.style.height = cropH + 'px';
+    div.style.backgroundImage = `url(${mapImageUrl(id)})`;
+    div.style.backgroundSize = `${w}px ${fullH}px`;
+    div.style.backgroundPosition = `0 -${cropOffsetY}px`;
+    div.dataset.id = id;
+    div.dataset.region = REGION_OF_MAP[id] || '';
+
+    // ctrl bar = order buttons + (optional) crop buttons
+    const showCropBar = m.height >= 60;
+    const cropBtns = showCropBar
+      ? `<button data-crop="top3" class="${crop==='top3'?'active':''}">Day</button>
+         <button data-crop="mid3" class="${crop==='mid3'?'active':''}">Sunset</button>
+         <button data-crop="bot3" class="${crop==='bot3'?'active':''}">Night</button>
+         <button data-crop="full" class="${crop==='full'?'active':''}">Full</button>
+         <span class="sep"></span>`
+      : '';
+    const ctrlBar = `<div class="ctrl-bar">
+        ${cropBtns}
+        <button data-order="back" title="Send to back">↓</button>
+        <button data-order="front" title="Bring to front">↑</button>
+      </div>`;
+
+    div.innerHTML = `<div class="label">Map ${id}: ${m.name.replace(/^[- ]+/, '')} @ (${pos.x}, ${pos.y}) ${crop !== 'full' ? '['+crop+']' : ''}</div>${ctrlBar}`;
+    setupDrag(div, id);
+    setupCtrlButtons(div, id);
+    world.appendChild(div);
+    minX = Math.min(minX, pos.x); minY = Math.min(minY, pos.y);
+    maxX = Math.max(maxX, pos.x + w); maxY = Math.max(maxY, pos.y + cropH);
+  }
+  world.dataset.minX = minX === Infinity ? 0 : minX;
+  world.dataset.minY = minY === Infinity ? 0 : minY;
+  world.dataset.maxX = maxX === -Infinity ? 0 : maxX;
+  world.dataset.maxY = maxY === -Infinity ? 0 : maxY;
+  if (unknown.length) {
+    console.warn(`renderPlaced: ${unknown.length} map(s) in the layout have no metadata and ` +
+                 `were skipped — ${unknown.join(', ')}. ` +
+                 `Is their region missing from REGIONS at the top of this file?`);
+  }
+  applyLayers();
+  renderWatermelons();
+  renderRoutes();
+}
+
+// ====== Decorations ======
+const decoByUid = uid => decorations.find(d => d.uid === +uid);
+const selectedDecoNodes = () => [...world.querySelectorAll('.placed-deco.selected')];
+const selectedDecos = () => selectedDecoNodes().map(n => decoByUid(n.dataset.uid)).filter(Boolean);
+
+// One node per entry in `decorations`. Returns its world-space box so
+// renderPlaced() can fold it into the canvas bounds — a tree hung off the edge
+// of the stitch should still be inside the exported PNG.
+function renderDecoNode(d) {
+  const def = decoDef(d.kind);
+  if (!def) {
+    console.warn(`renderDecoNode: layout names decoration "${d.kind}", which this build has no art for — skipped.`);
+    return null;
+  }
+  const w = Math.round(def.w * (d.scale ?? 1));
+  const h = Math.round(def.h * (d.scale ?? 1));
+  const div = document.createElement('div');
+  div.className = 'placed-deco' + (d.flip ? ' flipped' : '');
+  div.style.left = d.x + 'px';
+  div.style.top = d.y + 'px';
+  div.style.width = w + 'px';
+  div.style.height = h + 'px';
+  div.style.backgroundImage = `url(${def.src}${CACHE_BUST})`;
+  div.dataset.uid = d.uid;
+  div.title = `${def.label} @ (${d.x}, ${d.y})`;
+  setupDecoDrag(div);
+  world.appendChild(div);
+  return { x: d.x, y: d.y, w, h };
+}
+
+function addDecoration(key) {
+  const def = decoDef(key);
+  if (!def) return;
+  pushHistory();
+  // Drop it in the middle of what the user is looking at. The world is tens of
+  // thousands of pixels across and (0,0) is usually nowhere near the view, so
+  // one placed at the origin would look like nothing happened.
+  const cx = (viewport.clientWidth / 2 - panX) / zoom;
+  const cy = (viewport.clientHeight / 2 - panY) / zoom;
+  const d = {
+    uid: ++decoSeq, kind: key,
+    x: Math.round(cx - def.w / 2), y: Math.round(cy - def.h / 2),
+    zOrder: nextZOrder(), scale: 1, flip: false,
+  };
+  decorations.push(d);
+  renderPlaced();
+  updatePlacedLabel();
+  // Land it selected, so it can be dragged, scaled or deleted straight away.
+  world.querySelector(`.placed-deco[data-uid="${d.uid}"]`)?.classList.add('selected');
+}
+
+function setupDecoDrag(el) {
+  el.addEventListener('mousedown', e => {
+    if (e.button !== 0) return;
+    e.stopPropagation();
+    e.preventDefault();
+    if (e.shiftKey) { el.classList.toggle('selected'); return; }
+    if (!el.classList.contains('selected')) {
+      clearSelection();
+      el.classList.add('selected');
+    }
+    beginDecoDrag(e);
+  });
+}
+
+// Drag started from a decoration. Same shape as setupDrag's — a decoration
+// moves a pixel at a time, because scenery is placed by eye rather than by
+// tile, but a map dragged along with it still has to land on the grid, so a
+// map in the selection takes the anchor and its 32px step back.
+let decoDrag = null;
+function beginDecoDrag(e) {
+  const group = collectDragGroup();
+  if (!group.length) return;
+  const anchor = group.find(g => g.kind === 'map') || group[0];
+  decoDrag = { sx: e.clientX, sy: e.clientY, group, anchor, moved: false };
+}
+window.addEventListener('mousemove', e => {
+  if (!decoDrag) return;
+  const dx = (e.clientX - decoDrag.sx) / zoom;
+  const dy = (e.clientY - decoDrag.sy) / zoom;
+  const a = decoDrag.anchor;
+  let nx0, ny0;
+  if (a.kind === 'map') {
+    nx0 = Math.round((a.ox + dx) / TILE_PX) * TILE_PX;
+    ny0 = Math.round((a.oy + dy) / TILE_PX) * TILE_PX;
+  } else if (e.altKey) {
+    // Scenery is placed by eye, a pixel at a time; ⌥ puts it on a grid — but
+    // not the maps' own, because scenery is not lined up against the tiles, it
+    // is lined up against what is drawn on them. See DECO_SNAP. A route dot
+    // dragged as the anchor has no kind of its own and takes the default.
+    const rule = decoSnap(a.d && a.d.kind);
+    nx0 = snapAxis(rule.x, a.ox, dx);
+    ny0 = snapAxis(rule.y, a.oy, dy);
+  } else {
+    nx0 = Math.round(a.ox + dx);
+    ny0 = Math.round(a.oy + dy);
+  }
+  const ddx = nx0 - decoDrag.anchor.ox, ddy = ny0 - decoDrag.anchor.oy;
+  if (!decoDrag.moved && (ddx !== 0 || ddy !== 0)) { pushHistory(); decoDrag.moved = true; }
+  const movedMapIds = new Set();
+  for (const g of decoDrag.group) moveDragItem(g, g.ox + ddx, g.oy + ddy, movedMapIds);
+  if (movedMapIds.size) updateRoutesForMovedMaps(movedMapIds);
+});
+window.addEventListener('mouseup', () => { decoDrag = null; });
+
+// Toolbar strip shown while a decoration is selected. It lives up there rather
+// than on the sprite: the art is ~60px across, so a button bar drawn inside it
+// would be wider than the tree and would shrink away as you zoom out.
+function updateDecoControls() {
+  const bar = $('decoCtrl'); if (!bar) return;
+  const sel = selectedDecos();
+  bar.style.display = sel.length ? '' : 'none';
+  if (!sel.length) return;
+  const scales = new Set(sel.map(d => d.scale ?? 1));
+  $('decoSize').textContent = scales.size === 1
+    ? Math.round([...scales][0] * 100) + '%'
+    : '– –';
+  // What ⌥ would do to *this* selection — the rule is per kind, so a fixed
+  // caption would be wrong half the time.
+  const hint = $('decoSnapHint');
+  if (hint) {
+    const kinds = new Set(sel.map(d => d.kind));
+    const say = r => r.phase === undefined
+      ? (r.step === TILE_PX ? '1 tile' : `${r.step}px`)
+      : `lane +${r.phase}`;
+    if (kinds.size === 1) {
+      const r = decoSnap([...kinds][0]);
+      hint.textContent = `⌥ snap: x ${say(r.x)} · y ${say(r.y)}`;
+      hint.title = r.x.phase === undefined
+        ? 'Hold ⌥ while dragging: moves in whole steps from where it is now, keeping its current alignment'
+        : `Hold ⌥ while dragging: x lands on the lane x ≡ ${r.x.phase} (mod ${r.x.step}); y steps from where it is now`;
+    } else {
+      hint.textContent = '⌥ snap: mixed kinds';
+      hint.title = 'The selection holds more than one kind of decoration; ⌥ follows the one you drag from.';
+    }
+  }
+}
+
+function decoAction(what) {
+  const sel = selectedDecos();
+  if (!sel.length) return;
+  pushHistory();
+  for (const d of sel) {
+    if (what === 'bigger' || what === 'smaller') {
+      const from = d.scale ?? 1;
+      const step = what === 'bigger' ? DECO_SCALE_STEP : -DECO_SCALE_STEP;
+      const to = Math.min(DECO_SCALE_MAX, Math.max(DECO_SCALE_MIN,
+        Math.round((from + step) / DECO_SCALE_STEP) * DECO_SCALE_STEP));
+      // Grow about the middle. Scaling from the top-left corner walks the
+      // sprite off whatever it was lined up with, which is the whole point of
+      // having placed it there.
+      const def = decoDef(d.kind);
+      if (def) {
+        d.x = Math.round(d.x + def.w * (from - to) / 2);
+        d.y = Math.round(d.y + def.h * (from - to) / 2);
+      }
+      d.scale = to;
+    } else if (what === 'flip')  { d.flip = !d.flip; }
+    else if (what === 'front')   { d.zOrder = nextZOrder(); }
+    else if (what === 'back')    { d.zOrder = prevZOrder(); }
+  }
+  const keep = what === 'del' ? [] : sel.map(d => d.uid);
+  if (what === 'del') {
+    // Spliced rather than reassigned, so undo's in-place restore and this stay
+    // on the same array.
+    const gone = new Set(sel.map(d => d.uid));
+    for (let i = decorations.length - 1; i >= 0; i--) {
+      if (gone.has(decorations[i].uid)) decorations.splice(i, 1);
+    }
+  }
+  renderPlaced();
+  for (const uid of keep) {
+    world.querySelector(`.placed-deco[data-uid="${uid}"]`)?.classList.add('selected');
+  }
+  updatePlacedLabel();
+  updateDecoControls();
+}
+
+function renderDecoMenu() {
+  const menu = $('decoMenu'); if (!menu) return;
+  menu.innerHTML = '';
+  for (const def of DECORATIONS) {
+    const b = document.createElement('button');
+    b.innerHTML = `<img src="${def.src}${CACHE_BUST}" alt="" />` +
+                  `<span>${def.label}<br><span class="dim">${def.w}×${def.h}px</span></span>`;
+    b.onclick = () => { $('decoMenuWrap').classList.remove('open'); addDecoration(def.key); };
+    menu.appendChild(b);
+  }
+}
+
+function setupDecoMenu() {
+  const wrap = $('decoMenuWrap');
+  renderDecoMenu();
+  $('decoBtn').onclick = e => { e.stopPropagation(); wrap.classList.toggle('open'); };
+  // Anywhere else closes it, including a click on the canvas.
+  document.addEventListener('mousedown', e => {
+    if (!wrap.contains(e.target)) wrap.classList.remove('open');
+  });
+  // The strip floats inside #viewport now, so a press on it would otherwise
+  // reach the viewport's own handlers — clearing the selection the buttons act
+  // on, and starting a marquee from under the cursor.
+  $('decoCtrl').addEventListener('mousedown', e => e.stopPropagation());
+  $('decoCtrl').querySelectorAll('button').forEach(btn => {
+    btn.onclick = e => { e.stopPropagation(); decoAction(btn.dataset.deco); };
+  });
+}
+
+function setupCtrlButtons(el, id) {
+  el.querySelectorAll('.ctrl-bar button').forEach(btn => {
+    btn.addEventListener('mousedown', e => e.stopPropagation()); // don't start drag
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      if (btn.dataset.crop) {
+        pushHistory();
+        placed[id].crop = btn.dataset.crop;
+        renderPlaced();
+      } else if (btn.dataset.order === 'front') {
+        pushHistory();
+        bringToFront(id);
+      } else if (btn.dataset.order === 'back') {
+        pushHistory();
+        sendToBack(id);
+      }
+    });
+  });
+}
+
+function setupDrag(el, id) {
+  let dragging = false, sx, sy, ox, oy, shiftHeld = false, dragGroup = [], moved = false;
+  el.addEventListener('mousedown', e => {
+    if (e.button !== 0) return;
+    e.stopPropagation();
+    // Selection logic: shift = toggle, plain click on already-selected = keep selection,
+    // plain click on unselected = select only this (or this map's group)
+    const wasSelected = el.classList.contains('selected');
+    if (e.shiftKey) {
+      el.classList.toggle('selected');
+      return;  // selection-only, don't start drag on shift+click
+    } else if (!wasSelected) {
+      clearSelection();
+      // If part of an imported group, select whole group (unless Alt to break)
+      const groupId = placed[id].groupId;
+      if (groupId && !e.altKey) {
+        Object.keys(placed).filter(gid => placed[gid].groupId === groupId).forEach(gid => {
+          world.querySelector(`.placed-map[data-id="${gid}"]`)?.classList.add('selected');
+        });
+      } else {
+        el.classList.add('selected');
+      }
+    }
+    // Begin drag of ALL currently-selected items (maps + route dots + decorations)
+    dragging = true;
+    moved = false;
+    sx = e.clientX; sy = e.clientY;
+    dragGroup = collectDragGroup();
+  });
+  window.addEventListener('mousemove', e => {
+    if (!dragging) return;
+    const dx = (e.clientX - sx) / zoom;
+    const dy = (e.clientY - sy) / zoom;
+    // Tile-snap based on the first map item; if first is a route dot use 1px
+    const anchor = dragGroup[0];
+    const snap = anchor.kind === 'map' ? TILE_PX : 1;
+    const nx0 = Math.round((anchor.ox + dx) / snap) * snap;
+    const ny0 = Math.round((anchor.oy + dy) / snap) * snap;
+    const ddx = nx0 - anchor.ox, ddy = ny0 - anchor.oy;
+    if (!moved && (ddx !== 0 || ddy !== 0)) { pushHistory(); moved = true; }
+    const movedMapIds = new Set();
+    for (const g of dragGroup) moveDragItem(g, g.ox + ddx, g.oy + ddy, movedMapIds);
+    if (movedMapIds.size) updateRoutesForMovedMaps(movedMapIds);
+  });
+  window.addEventListener('mouseup', () => { dragging = false; dragGroup = []; });
+}
+
+// A selection can hold maps, route dots and decorations at once, and a drag
+// begun on any one of them carries the whole lot. Collecting and moving them
+// lives here so the three drag handlers cannot drift apart.
+const SELECTED_SEL = '.placed-map.selected, .route-dot.selected, .placed-deco.selected';
+function clearSelection() {
+  document.querySelectorAll(SELECTED_SEL).forEach(n => n.classList.remove('selected'));
+}
+
+function collectDragGroup() {
+  const g = [];
+  document.querySelectorAll('.placed-map.selected').forEach(n => {
+    const id = n.dataset.id;
+    g.push({ kind: 'map', id, ox: placed[id].x, oy: placed[id].y, el: n });
+  });
+  document.querySelectorAll('.route-dot.selected').forEach(n => {
+    const ri = +n.dataset.routeIdx, pi = +n.dataset.ptIdx;
+    g.push({ kind: 'dot', ri, pi, ox: routes[ri].pts[pi].x, oy: routes[ri].pts[pi].y, el: n });
+  });
+  document.querySelectorAll('.placed-deco.selected').forEach(n => {
+    const d = decoByUid(n.dataset.uid);
+    if (d) g.push({ kind: 'deco', d, ox: d.x, oy: d.y, el: n });
+  });
+  return g;
+}
+
+function moveDragItem(g, nx, ny, movedMapIds) {
+  if (g.kind === 'map') {
+    placed[g.id].x = nx; placed[g.id].y = ny;
+    if (g.el) {
+      g.el.style.left = nx + 'px'; g.el.style.top = ny + 'px';
+      const cropTag = (placed[g.id].crop && placed[g.id].crop !== 'full') ? ` [${placed[g.id].crop}]` : '';
+      g.el.querySelector('.label').textContent =
+        `Map ${g.id}: ${mapMeta[g.id].name.replace(/^[- ]+/,'')} @ (${nx}, ${ny})${cropTag}`;
+    }
+    updateWatermelonsForMap(g.id);
+    movedMapIds.add(String(g.id));
+  } else if (g.kind === 'dot') {
+    routes[g.ri].pts[g.pi].x = nx; routes[g.ri].pts[g.pi].y = ny;
+    if (g.el) { g.el.style.left = (nx-20)+'px'; g.el.style.top = (ny-20)+'px'; }
+    // Redraw just this route. Reaching for svg.children[g.ri] was only ever
+    // right while each route owned exactly one node; one-way and wrap-around
+    // routes own an arrowhead too, which shifted every index past them.
+    updateRouteGeometry(g.ri);
+  } else if (g.kind === 'deco') {
+    g.d.x = nx; g.d.y = ny;
+    if (g.el) {
+      g.el.style.left = nx + 'px'; g.el.style.top = ny + 'px';
+      g.el.title = `${decoDef(g.d.kind)?.label || g.d.kind} @ (${nx}, ${ny})`;
+    }
+  }
+}
+
+// macOS-style: two-finger trackpad swipe = pan (wheel without ctrl/cmd),
+// pinch / cmd-wheel = zoom. Mouse click-drag on empty area = marquee multi-select.
+// ----- Undo / Redo -----
+// Snapshot-based: every state-mutating action calls pushHistory() BEFORE the
+// mutation. undo() restores the most recent snapshot; redo() reapplies.
+const HISTORY_CAP = 100;
+let history = [], future = [];
+function snapshotState() {
+  return JSON.stringify({ placed, routes, decorations });
+}
+function restoreState(snap) {
+  const s = JSON.parse(snap);
+  // mutate in place to preserve references held by other modules
+  for (const k in placed) delete placed[k];
+  Object.assign(placed, s.placed);
+  routes.length = 0;
+  routes.push(...s.routes);
+  decorations.length = 0;
+  decorations.push(...(s.decorations || []));
+  renderPlaced();
+  renderRoutes();
+  renderThumbs();
+  updatePlacedLabel();
+  updateSelectionInfo();
+  updateGroupButtons();
+  updateDecoControls();
+}
+function pushHistory() {
+  history.push(snapshotState());
+  if (history.length > HISTORY_CAP) history.shift();
+  future.length = 0;
+}
+function undo() {
+  if (!history.length) return;
+  future.push(snapshotState());
+  restoreState(history.pop());
+}
+function redo() {
+  if (!future.length) return;
+  history.push(snapshotState());
+  restoreState(future.pop());
+}
+
+// ----- Group / Ungroup -----
+// A group = a set of placed maps that share the same `groupId`. Selecting
+// any member auto-selects all members on plain click (Alt to break out).
+function selectedMapIds() {
+  return [...world.querySelectorAll('.placed-map.selected')].map(n => n.dataset.id);
+}
+function groupSelected() {
+  const ids = selectedMapIds();
+  if (ids.length < 2) return;
+  pushHistory();
+  const gid = 'g' + Date.now().toString(36);
+  for (const id of ids) placed[id].groupId = gid;
+  renderPlacedKeepingSelection();
+}
+function ungroupSelected() {
+  const ids = selectedMapIds();
+  if (!ids.length) return;
+  pushHistory();
+  // Remove groupId from EVERY map in any group touched by the selection,
+  // so "ungroup" feels like dissolving the whole group, not detaching one.
+  const targetGroups = new Set(ids.map(id => placed[id].groupId).filter(Boolean));
+  for (const id in placed) {
+    if (placed[id].groupId && targetGroups.has(placed[id].groupId)) {
+      delete placed[id].groupId;
+    }
+  }
+  renderPlacedKeepingSelection();
+}
+// renderPlaced() wipes .selected state because it re-creates the DOM nodes.
+// This helper preserves the selection across a re-render.
+function renderPlacedKeepingSelection() {
+  const selIds = selectedMapIds();
+  const selUids = selectedDecos().map(d => d.uid);
+  renderPlaced();
+  for (const id of selIds) {
+    world.querySelector(`.placed-map[data-id="${id}"]`)?.classList.add('selected');
+  }
+  for (const uid of selUids) {
+    world.querySelector(`.placed-deco[data-uid="${uid}"]`)?.classList.add('selected');
+  }
+  updateGroupButtons();
+  updateSelectionInfo();
+  updateDecoControls();
+}
+function updateGroupButtons() {
+  const ids = selectedMapIds();
+  const gids = new Set(ids.map(id => placed[id]?.groupId).filter(Boolean));
+  // Group: needs ≥2 selected, and they're not already all in a single group
+  const canGroup = ids.length >= 2 && !(gids.size === 1 && ids.every(id => placed[id].groupId));
+  // Ungroup: any selected map is part of a group
+  const canUngroup = gids.size >= 1;
+  const gb = $('groupBtn'), ub = $('ungroupBtn');
+  if (gb) gb.disabled = !canGroup;
+  if (ub) ub.disabled = !canUngroup;
+}
+
+function setupViewportPan() {
+  // Marquee selection: track start on mousedown, only create the visible div
+  // once the mouse actually moves — this avoids leaving orphan divs from clicks.
+  let pendingStart = null;  // { sx, sy, addMode } before drag begins
+  let marquee = null;       // { sx, sy, el, addMode } once dragging
+  function killMarquee() {
+    viewport.querySelectorAll('.marquee').forEach(n => n.remove());
+    pendingStart = null;
+    marquee = null;
+  }
+  viewport.addEventListener('mousedown', e => {
+    if (e.target !== viewport && e.target !== world) return;
+    if (e.button !== 0) return;
+    killMarquee();  // clean any orphan from earlier
+    if (!e.shiftKey) {
+      clearSelection();
+      updateGroupButtons();
+    }
+    const rect = viewport.getBoundingClientRect();
+    pendingStart = { sx: e.clientX - rect.left, sy: e.clientY - rect.top, addMode: e.shiftKey };
+  });
+  window.addEventListener('mousemove', e => {
+    if (!pendingStart && !marquee) return;
+    const rect = viewport.getBoundingClientRect();
+    const ex = e.clientX - rect.left, ey = e.clientY - rect.top;
+    if (!marquee) {
+      // Only materialize once we've actually moved >2px
+      const dx = ex - pendingStart.sx, dy = ey - pendingStart.sy;
+      if (dx*dx + dy*dy < 4) return;
+      const div = document.createElement('div');
+      div.className = 'marquee';
+      viewport.appendChild(div);
+      marquee = { ...pendingStart, el: div };
+      pendingStart = null;
+    }
+    const x0 = Math.min(marquee.sx, ex), y0 = Math.min(marquee.sy, ey);
+    const w = Math.abs(ex - marquee.sx), h = Math.abs(ey - marquee.sy);
+    Object.assign(marquee.el.style, { left: x0+'px', top: y0+'px', width: w+'px', height: h+'px' });
+    // Convert marquee rect to world coords
+    const wx0 = (x0 - panX) / zoom, wy0 = (y0 - panY) / zoom;
+    const wx1 = wx0 + w / zoom, wy1 = wy0 + h / zoom;
+    // Maps: select if their bbox intersects marquee. One sweep of the DOM,
+    // indexed by id — the loop used to run a querySelector per map, so a
+    // marquee over 234 maps cost 234 DOM searches on every mousemove.
+    const els = {};
+    for (const el of world.querySelectorAll('.placed-map')) els[el.dataset.id] = el;
+    for (const id in placed) {
+      const m = mapMeta[id]; if (!m) continue;
+      const el = els[id]; if (!el) continue;
+      const p = placed[id];
+      const mw = m.width * TILE_PX, mh = m.height * TILE_PX;
+      const hit = !(p.x+mw < wx0 || p.x > wx1 || p.y+mh < wy0 || p.y > wy1);
+      if (hit) el.classList.add('selected');
+      else if (!marquee.addMode) el.classList.remove('selected');
+    }
+    // Decorations: same bbox test as the maps, against the drawn (scaled) size
+    for (const el of world.querySelectorAll('.placed-deco')) {
+      const d = decoByUid(el.dataset.uid); if (!d) continue;
+      const def = decoDef(d.kind); if (!def) continue;
+      const dw = def.w * (d.scale ?? 1), dh = def.h * (d.scale ?? 1);
+      const hit = !(d.x+dw < wx0 || d.x > wx1 || d.y+dh < wy0 || d.y > wy1);
+      if (hit) el.classList.add('selected');
+      else if (!marquee.addMode) el.classList.remove('selected');
+    }
+    // Route dots: same hit test
+    document.querySelectorAll('.route-dot').forEach(dot => {
+      const ri = +dot.dataset.routeIdx, pi = +dot.dataset.ptIdx;
+      const r = routes[ri]; if (!r) return;
+      const px = r.pts[pi].x, py = r.pts[pi].y;
+      const hit = px >= wx0 && px <= wx1 && py >= wy0 && py <= wy1;
+      if (hit) dot.classList.add('selected');
+      else if (!marquee.addMode) dot.classList.remove('selected');
+    });
+  });
+  window.addEventListener('mouseup', () => {
+    pendingStart = null;
+    if (marquee) { marquee.el.remove(); marquee = null; }
+  });
+}
+
+function setupViewportZoom() {
+  // Wheel: trackpad two-finger swipe = pan; pinch (ctrlKey true) or cmd+wheel = zoom.
+  viewport.addEventListener('wheel', e => {
+    e.preventDefault();
+    if (e.ctrlKey || e.metaKey) {
+      // ZOOM
+      const rect = viewport.getBoundingClientRect();
+      const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+      const wx = (mx - panX) / zoom, wy = (my - panY) / zoom;
+      const factor = e.deltaY < 0 ? 1.08 : 1 / 1.08;
+      zoom = Math.max(0.05, Math.min(8, zoom * factor));
+      panX = mx - wx * zoom; panY = my - wy * zoom;
+    } else {
+      // PAN
+      panX -= e.deltaX;
+      panY -= e.deltaY;
+    }
+    applyTransform();
+  }, { passive: false });
+}
+
+function setupGlobalKeys() {
+  window.addEventListener('keydown', e => {
+    const cmd = e.metaKey || e.ctrlKey;
+    // Cmd+G group, Cmd+Shift+G ungroup
+    if (cmd && (e.key === 'g' || e.key === 'G')) {
+      e.preventDefault();
+      if (e.shiftKey) ungroupSelected(); else groupSelected();
+      return;
+    }
+    // Cmd+Z undo, Cmd+Shift+Z (or Cmd+Y) redo
+    if (cmd && (e.key === 'z' || e.key === 'Z')) {
+      e.preventDefault();
+      if (e.shiftKey) redo(); else undo();
+      return;
+    }
+    if (cmd && (e.key === 'y' || e.key === 'Y')) {
+      e.preventDefault(); redo(); return;
+    }
+    if (!cmd && (e.key === 's' || e.key === 'S')) {
+      e.preventDefault(); toggleSnap(); return;
+    }
+    // Delete selected
+    if (e.key === 'Delete' || e.key === 'Backspace') {
+      // Collect all selected items
+      const selDots = [...world.querySelectorAll('.route-dot.selected')];
+      const selMaps = [...world.querySelectorAll('.placed-map.selected')];
+      const selDeco = selectedDecos();
+      if (!selDots.length && !selMaps.length && !selDeco.length) return;
+      pushHistory();
+      if (selDeco.length) {
+        const gone = new Set(selDeco.map(d => d.uid));
+        for (let i = decorations.length - 1; i >= 0; i--) {
+          if (gone.has(decorations[i].uid)) decorations.splice(i, 1);
+        }
+      }
+      // Routes: unique route indices (each route has 2 dots), delete from highest idx first
+      const routeIdxsToDelete = [...new Set(selDots.map(d => +d.dataset.routeIdx))].sort((a,b)=>b-a);
+      for (const ri of routeIdxsToDelete) routes.splice(ri, 1);
+      // Maps
+      for (const el of selMaps) delete placed[el.dataset.id];
+      clearStaleSnaps();
+      renderPlaced(); renderRoutes(); renderThumbs(); updatePlacedLabel();
+      updateDecoControls();
+      return;
+    }
+    if (e.key === '0') { resetView(); return; }
+
+    const sel = world.querySelector('.placed-map.selected');
+    if (!sel) return;
+    const id = sel.dataset.id;
+
+    // Z-order shortcuts
+    if (e.key === ']') { e.preventDefault(); pushHistory(); bringToFront(id); return; }
+    if (e.key === '[') { e.preventDefault(); pushHistory(); sendToBack(id); return; }
+
+    // Arrow keys: nudge ALL selected maps by 1 tile
+    const step = TILE_PX;
+    let dx = 0, dy = 0;
+    if (e.key === 'ArrowLeft')  dx = -step;
+    else if (e.key === 'ArrowRight') dx = step;
+    else if (e.key === 'ArrowUp')    dy = -step;
+    else if (e.key === 'ArrowDown')  dy = step;
+    else return;
+    e.preventDefault();
+    pushHistory();
+    const movedMapIds = new Set();
+    document.querySelectorAll('.placed-map.selected').forEach(n => {
+      const gid = n.dataset.id;
+      placed[gid].x += dx; placed[gid].y += dy;
+      n.style.left = placed[gid].x + 'px'; n.style.top = placed[gid].y + 'px';
+      const cropTag = (placed[gid].crop && placed[gid].crop !== 'full') ? ` [${placed[gid].crop}]` : '';
+      n.querySelector('.label').textContent =
+        `Map ${gid}: ${mapMeta[gid].name.replace(/^[- ]+/,'')} @ (${placed[gid].x}, ${placed[gid].y})${cropTag}`;
+      updateWatermelonsForMap(gid);
+      movedMapIds.add(String(gid));
+    });
+    if (movedMapIds.size) updateRoutesForMovedMaps(movedMapIds);
+  });
+}
+
+function applyTransform() {
+  world.style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+  world.style.setProperty('--zoom', zoom);
+  const zl = $('zoomLabel'); if (zl) zl.textContent = Math.round(zoom * 100) + '%';
+}
+
+// Update the "Selected: X maps + Y routes" status label.
+function updateSelectionInfo() {
+  // Every path that changes the selection ends up here, so this is the one
+  // place the route-kind buttons need to be refreshed from.
+  updateRouteKindButtons();
+  const el = $('selInfo'); if (!el) return;
+  const nMaps = world.querySelectorAll('.placed-map.selected').length;
+  const dots  = world.querySelectorAll('.route-dot.selected');
+  const nRoutes = new Set([...dots].map(d => d.dataset.routeIdx)).size;
+  const nDeco = world.querySelectorAll('.placed-deco.selected').length;
+  if (!nMaps && !nRoutes && !nDeco) { el.textContent = ''; return; }
+  const parts = [];
+  if (nMaps) parts.push(`${nMaps} map${nMaps>1?'s':''}`);
+  if (nRoutes) parts.push(`${nRoutes} route${nRoutes>1?'s':''}`);
+  if (nDeco) parts.push(`${nDeco} decoration${nDeco>1?'s':''}`);
+  el.textContent = `· selected: ${parts.join(' + ')}`;
+}
+// Whenever .selected is toggled anywhere, refresh the info bar and group buttons.
+new MutationObserver(() => { updateSelectionInfo(); updateGroupButtons(); updateDecoControls(); })
+  .observe(document.body, { attributes: true, attributeFilter: ['class'], subtree: true });
+
+function resetView() {
+  // fit all placed maps
+  if (Object.keys(placed).length === 0) {
+    panX = 0; panY = 0; zoom = 0.5;
+  } else {
+    const minX = +world.dataset.minX, minY = +world.dataset.minY;
+    const maxX = +world.dataset.maxX, maxY = +world.dataset.maxY;
+    const w = maxX - minX, h = maxY - minY;
+    const vw = viewport.clientWidth, vh = viewport.clientHeight;
+    zoom = Math.min(vw / w, vh / h) * 0.9;
+    panX = vw / 2 - (minX + w / 2) * zoom;
+    panY = vh / 2 - (minY + h / 2) * zoom;
+  }
+  applyTransform();
+}
+
+function updatePlacedLabel() {
+  $('placedLabel').textContent = `${Object.keys(placed).length}/${MAP_IDS.length}`;
+  renderLayerPanel();
+}
+
+function saveLayout() {
+  const data = {
+    version: 2,
+    layout: placed,
+    routes,  // route annotations (dots + dashed lines)
+    decorations,  // loose scenery — empty on layouts saved before it existed
+    maps: Object.fromEntries(
+      Object.keys(placed).map(id => [id, mapMeta[id]])
+    ),
+  };
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'all_regions_layout.json';
+  a.click();
+}
+
+function loadLayout(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    const data = JSON.parse(reader.result);
+    pushHistory();
+    // Each import = one GROUP. Tag every map in this layout with groupId = filename.
+    // Dragging any map in the group moves all maps in that group together.
+    const groupId = file.name.replace(/\.json$/i, '').replace(/_layout.*$/, '');
+    const wasEmpty = Object.keys(placed).length === 0;
+    for (const [id, info] of Object.entries(data.layout || {})) {
+      // Keep regions draggable as separate units. A full all-regions save
+      // would otherwise collapse into one giant group where dragging any map
+      // drags the whole world. Priority: the group the map was saved in, else
+      // its own region, else the filename.
+      placed[id] = { ...info, groupId: info.groupId || REGION_OF_MAP[id] || groupId };
+    }
+    if (data.routes) {
+      // Layouts saved before snap offsets existed carry only {mapId, evId,
+      // evName}. Their dot positions are correct as saved, so adopt those as
+      // the offsets now — otherwise the first drag of this group would pull
+      // every door dot back to its event tile centre.
+      for (const r of data.routes) {
+        for (const p of (r.pts || [])) {
+          const sn = p.snap;
+          if (!sn || Number.isFinite(sn.ox)) continue;
+          const mapPos = placed[sn.mapId];
+          if (!mapPos) continue;
+          sn.ox = p.x - mapPos.x;
+          sn.oy = p.y - mapPos.y;
+        }
+      }
+      routes.push(...data.routes);
+    }
+    // uids are handles for this session's DOM only, so they are reissued on
+    // import — two layouts loaded in a row would otherwise both claim uid 1.
+    for (const d of (data.decorations || [])) {
+      decorations.push({ scale: 1, flip: false, ...d, uid: ++decoSeq });
+    }
+    renderPlaced();
+    renderThumbs();
+    renderRoutes();
+    updatePlacedLabel();
+    if (wasEmpty) resetView();
+    console.log(`Imported group "${groupId}": ${Object.keys(data.layout||{}).length} maps`);
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+// Decoration art for the export canvas. Loaded once per kind — a layout can
+// hold many copies of the same tree and each would otherwise be its own fetch.
+const _decoImgCache = {};
+function decoImage(def) {
+  if (!_decoImgCache[def.key]) {
+    const img = new Image();
+    img.src = def.src + CACHE_BUST;
+    _decoImgCache[def.key] = new Promise(r => {
+      img.onload = () => r(img);
+      img.onerror = () => r(null);
+    });
+  }
+  return _decoImgCache[def.key];
+}
+
+async function drawDecoOnCanvas(ctx, d, minX, minY) {
+  const def = decoDef(d.kind);
+  if (!def) return false;
+  const img = await decoImage(def);
+  if (!img) { console.warn(`Export: decoration image failed (${def.src})`); return false; }
+  const w = def.w * (d.scale ?? 1), h = def.h * (d.scale ?? 1);
+  const x = d.x - minX, y = d.y - minY;
+  ctx.save();
+  // Pixel art: a tree at 175% would come out soft next to maps drawn 1:1.
+  ctx.imageSmoothingEnabled = false;
+  if (d.flip) {
+    ctx.translate(x + w, y);
+    ctx.scale(-1, 1);
+    ctx.drawImage(img, 0, 0, w, h);
+  } else {
+    ctx.drawImage(img, x, y, w, h);
+  }
+  ctx.restore();
+  return true;
+}
+
+async function exportPNG() {
+  if (Object.keys(placed).length === 0 && decorations.length === 0) {
+    alert('Place at least one map first.');
+    return;
+  }
+
+  // Filter to only placed maps that have valid metadata. Stale `placed` entries
+  // (referencing IDs that no longer exist in mapMeta) would crash bounds calc.
+  const validIds = Object.keys(placed).filter(id => mapMeta[id]);
+  const skippedMeta = Object.keys(placed).length - validIds.length;
+  if (skippedMeta) console.warn(`Export: skipping ${skippedMeta} placed maps with no metadata`);
+  if (validIds.length === 0 && decorations.length === 0) {
+    alert('No placed maps have valid metadata.'); return;
+  }
+
+  // Recompute bounds fresh from current placed state (world.dataset may be
+  // stale if user moved maps via drag/arrow keys).
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  for (const id of validIds) {
+    const m = mapMeta[id];
+    const pos = placed[id];
+    const cr = cropRect(pos.crop || 'full', m, id);
+    const w = m.width * TILE_PX;
+    const cropH = cr.h * TILE_PX;
+    minX = Math.min(minX, pos.x);
+    minY = Math.min(minY, pos.y);
+    maxX = Math.max(maxX, pos.x + w);
+    maxY = Math.max(maxY, pos.y + cropH);
+  }
+  // Decorations count towards the bounds too, so one hung off the edge of the
+  // stitch is inside the PNG rather than cropped away at its border.
+  for (const d of decorations) {
+    const def = decoDef(d.kind); if (!def) continue;
+    const dw = def.w * (d.scale ?? 1), dh = def.h * (d.scale ?? 1);
+    minX = Math.min(minX, d.x); minY = Math.min(minY, d.y);
+    maxX = Math.max(maxX, d.x + dw); maxY = Math.max(maxY, d.y + dh);
+  }
+  const cw = maxX - minX, ch = maxY - minY;
+  // Browsers have hard limits on canvas dimensions (e.g. Safari ~16384px per side,
+  // and total area ~268M pixels). Warn + offer to downscale if oversize.
+  const MAX_DIM = 16000;
+  const MAX_AREA = 250 * 1024 * 1024;  // 250M px
+  let scale = 1;
+  if (cw > MAX_DIM || ch > MAX_DIM || cw * ch > MAX_AREA) {
+    const byDim = Math.min(MAX_DIM / cw, MAX_DIM / ch);
+    const byArea = Math.sqrt(MAX_AREA / (cw * ch));
+    scale = Math.min(byDim, byArea, 1);
+    if (!confirm(`Layout is ${cw}×${ch}px (${(cw*ch/1e6).toFixed(0)}M pixels) — too large for a single canvas.\n\nDownscale to ${(cw*scale)|0}×${(ch*scale)|0} (${(scale*100).toFixed(0)}%) and export?`)) {
+      return;
+    }
+  }
+
+  const canvas = document.createElement('canvas');
+  canvas.width = Math.floor(cw * scale);
+  canvas.height = Math.floor(ch * scale);
+  const ctx = canvas.getContext('2d');
+  if (scale !== 1) ctx.scale(scale, scale);
+
+  // Sort by zOrder ascending so higher zOrder renders on top (matches editor).
+  // Maps and decorations share the sort for the same reason renderPlaced()
+  // interleaves them: a decoration can be under a map, not only over it.
+  const drawOrder = [
+    ...validIds.map(id => ({ deco: null, id, z: placed[id].zOrder ?? 0 })),
+    ...decorations.map(d => ({ deco: d, id: null, z: d.zOrder ?? 0 })),
+  ].sort((a, b) => a.z - b.z);
+  let nDrawn = 0, nSkippedImg = 0, nDeco = 0;
+  for (const it of drawOrder) {
+    if (it.deco) {
+      if (await drawDecoOnCanvas(ctx, it.deco, minX, minY)) nDeco++;
+      else nSkippedImg++;
+      continue;
+    }
+    const id = it.id;
+    const pos = placed[id];
+    const m = mapMeta[id];
+    const cr = cropRect(pos.crop || 'full', m, id);
+    const img = new Image();
+    img.src = mapImageUrl(id);
+    const loaded = await new Promise(r => {
+      img.onload = () => r(true);
+      img.onerror = () => r(false);
+    });
+    if (!loaded || !img.width || !img.height) {
+      nSkippedImg++;
+      console.warn(`Export: image failed for map${id} (${mapImageUrl(id)})`);
+      continue;
+    }
+    // Some PNGs from goats.dev don't match meta dims exactly (e.g. map64 LAKE
+    // is 1408px tall but meta says 1440px). Match the preview's CSS
+    // `backgroundSize: w × fullH` behavior by scaling source to meta dims.
+    const expH = m.height * TILE_PX;
+    const syScale = img.height / expH;
+    try {
+      ctx.drawImage(
+        img,
+        0, cr.y * TILE_PX * syScale, img.width, cr.h * TILE_PX * syScale,
+        pos.x - minX, pos.y - minY, m.width * TILE_PX, cr.h * TILE_PX
+      );
+      nDrawn++;
+    } catch (e) {
+      console.warn(`Export: drawImage failed for map${id}: ${e.message}`);
+      nSkippedImg++;
+    }
+  }
+  console.log(`Export: drew ${nDrawn} maps + ${nDeco} decoration(s), ` +
+              `skipped ${nSkippedImg} (image load/draw fail)`);
+
+  // ----- Render route annotations (dashed lines + colored dots) -----
+  for (const r of routes) {
+    ctx.strokeStyle = r.color;
+    ctx.lineWidth = 3;
+    ctx.setLineDash([8, 6]);
+    ctx.beginPath();
+    ctx.moveTo(r.pts[0].x - minX, r.pts[0].y - minY);
+    ctx.lineTo(r.pts[1].x - minX, r.pts[1].y - minY);
+    ctx.stroke();
+    ctx.setLineDash([]);
+    for (const p of r.pts) {
+      ctx.beginPath();
+      ctx.fillStyle = r.color;
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 2;
+      ctx.arc(p.x - minX, p.y - minY, 9, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
+    }
+  }
+
+  canvas.toBlob(blob => {
+    if (!blob) {
+      alert('Export failed: canvas.toBlob returned null (likely tainted by cross-origin image, or canvas too large).');
+      return;
+    }
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'stitched_all.png';
+    a.click();
+  });
+}
+
+init();
+</script>
+</body>
+</html>

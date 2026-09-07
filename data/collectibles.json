@@ -1,0 +1,11800 @@
+{
+ "layers": [
+  {
+   "key": "hangman",
+   "label": "HANGMAN keys",
+   "icon": "\u2328\ufe0f"
+  },
+  {
+   "key": "npc",
+   "label": "NPC (quest)",
+   "icon": "\ud83e\uddd1"
+  },
+  {
+   "key": "quest",
+   "label": "Quest items",
+   "icon": "\ud83c\udf92"
+  },
+  {
+   "key": "charm",
+   "label": "Charms",
+   "icon": "\ud83e\uddff"
+  },
+  {
+   "key": "weapon",
+   "label": "Weapons",
+   "icon": "\ud83d\udd2a"
+  },
+  {
+   "key": "collect",
+   "label": "Collectibles",
+   "icon": "\ud83d\uddd1\ufe0f"
+  },
+  {
+   "key": "sparkle",
+   "label": "Sparkles",
+   "icon": "\u2728"
+  },
+  {
+   "key": "picnic",
+   "label": "Picnic (save)",
+   "icon": "\ud83e\uddfa"
+  },
+  {
+   "key": "music",
+   "label": "Sheet music",
+   "icon": "\ud83c\udfbc"
+  },
+  {
+   "key": "telescope",
+   "label": "Telescopes",
+   "icon": "\ud83d\udd2d"
+  },
+  {
+   "key": "clubsandwich",
+   "label": "Club Sandwich",
+   "icon": "\ud83e\udd6a"
+  },
+  {
+   "key": "giver",
+   "label": "NPC (item)",
+   "icon": "\ud83e\udd64"
+  },
+  {
+   "key": "clams",
+   "label": "CLAMS",
+   "icon": "\ud83d\udc1a"
+  },
+  {
+   "key": "cooler",
+   "label": "Coolers",
+   "icon": "\ud83e\uddca"
+  },
+  {
+   "key": "mirror",
+   "label": "Mirrors",
+   "icon": "\ud83e\ude9e"
+  },
+  {
+   "key": "mechanism",
+   "label": "Mechanisms",
+   "icon": "\u2699\ufe0f"
+  }
+ ],
+ "points": [
+  {
+   "layer": "weapon",
+   "mapId": "13",
+   "x": 10,
+   "y": 74,
+   "evId": 12,
+   "evName": "PLAYER HOME (NIGHT)",
+   "sprite": "!objects_fa_night_doors|0|2|1",
+   "prio": 1,
+   "items": [
+    "HANDS"
+   ],
+   "art": {
+    "x": 321,
+    "y": 2364,
+    "w": 30,
+    "h": 36,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "13",
+   "x": 65,
+   "y": 46,
+   "evId": 105,
+   "evName": "Dollar",
+   "sprite": "!FA_OBJECTS_2|3|8|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 2087,
+    "y": 1484,
+    "w": 18,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "14",
+   "x": 24,
+   "y": 66,
+   "evId": 99,
+   "evName": "Bed (99)",
+   "sprite": "FA_TV|7|6|2",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 770,
+    "y": 2114,
+    "w": 28,
+    "h": 25,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mirror",
+   "mapId": "14",
+   "x": 48,
+   "y": 43,
+   "evId": 103,
+   "evName": "Mirror",
+   "items": []
+  },
+  {
+   "layer": "giver",
+   "mapId": "16",
+   "x": 48,
+   "y": 22,
+   "evId": 48,
+   "evName": "CRISDAD1D",
+   "sprite": "FA_AVERAGE|4|2|1",
+   "prio": 1,
+   "items": [
+    "ORANGE JOE"
+   ],
+   "art": {
+    "x": 1548,
+    "y": 705,
+    "w": 20,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "16",
+   "x": 23,
+   "y": 44,
+   "evId": 49,
+   "evName": "CrisMom1D",
+   "sprite": "FA_AVERAGE|2|8|1",
+   "prio": 1,
+   "items": [
+    "PIE"
+   ],
+   "art": {
+    "x": 742,
+    "y": 1404,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "16",
+   "x": 22,
+   "y": 66,
+   "evId": 79,
+   "evName": "CRIS1D",
+   "sprite": "FA_AVERAGE|1|8|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL NECKLACE",
+    "SEASHELL NECKLACE"
+   ],
+   "art": {
+    "x": 710,
+    "y": 2109,
+    "w": 20,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "16",
+   "x": 48,
+   "y": 24,
+   "evId": 81,
+   "evName": "CRISDAD1D_2",
+   "sprite": "Objects_FA|0|4|1",
+   "prio": 0,
+   "items": [
+    "TV REMOTE"
+   ],
+   "art": {
+    "x": 1548,
+    "y": 773,
+    "w": 9,
+    "h": 6,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "16",
+   "x": 21,
+   "y": 45,
+   "evId": 82,
+   "evName": "CRISDAD1D_4",
+   "sprite": "Objects_FA|0|4|2",
+   "prio": 1,
+   "items": [
+    "TV REMOTE"
+   ],
+   "art": {
+    "x": 680,
+    "y": 1441,
+    "w": 17,
+    "h": 16,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast",
+    "Q- Remote 2 (End)"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "16",
+   "x": 50,
+   "y": 45,
+   "evId": 83,
+   "evName": "CRISDAD1D_3",
+   "sprite": "Objects_FA|0|4|1",
+   "prio": 0,
+   "items": [
+    "TV REMOTE"
+   ],
+   "art": {
+    "x": 1612,
+    "y": 1445,
+    "w": 9,
+    "h": 6,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SunFA2 - Too Far",
+    "Q- Remote 1 (End)"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "16",
+   "x": 50,
+   "y": 22,
+   "evId": 85,
+   "evName": "EV085",
+   "sprite": "!FA_OBJECTS_2|3|6|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1603,
+    "y": 704,
+    "w": 26,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "17",
+   "x": 17,
+   "y": 18,
+   "evId": 22,
+   "evName": "hide-rug",
+   "sprite": "DW_PuzzleObjects6|1|8|2",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 545,
+    "y": 577,
+    "w": 30,
+    "h": 18,
+    "artFit": "rule"
+   },
+   "requires": [
+    "FA_HideAndSeek \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "17",
+   "x": 51,
+   "y": 19,
+   "evId": 25,
+   "evName": "hide-curtain",
+   "sprite": "DW_PuzzleObjects6|6|2|2",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1636,
+    "y": 602,
+    "w": 23,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "FA_HideAndSeek \u2265 1"
+   ]
+  },
+  {
+   "layer": "mirror",
+   "mapId": "18",
+   "x": 48,
+   "y": 43,
+   "evId": 81,
+   "evName": "Mirror",
+   "items": []
+  },
+  {
+   "layer": "quest",
+   "mapId": "19",
+   "x": 71,
+   "y": 22,
+   "evId": 108,
+   "evName": "EV108",
+   "sprite": "!FA_OBJECTS_2|5|6|1",
+   "prio": 1,
+   "items": [
+    "HOMECOOKED MEAL"
+   ],
+   "art": {
+    "x": 2272,
+    "y": 707,
+    "w": 32,
+    "h": 27,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SunFA2 - Drop off Basil"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "20",
+   "x": 22,
+   "y": 66,
+   "evId": 43,
+   "evName": "CRIS1D",
+   "sprite": "FA_AVERAGE|1|8|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL NECKLACE",
+    "SEASHELL NECKLACE",
+    "SEASHELL NECKLACE"
+   ],
+   "art": {
+    "x": 710,
+    "y": 2109,
+    "w": 20,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "20",
+   "x": 48,
+   "y": 22,
+   "evId": 48,
+   "evName": "CRISDAD1D",
+   "sprite": "FA_AVERAGE|4|2|1",
+   "prio": 1,
+   "items": [
+    "ORANGE JOE"
+   ],
+   "art": {
+    "x": 1548,
+    "y": 705,
+    "w": 20,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "20",
+   "x": 50,
+   "y": 45,
+   "evId": 67,
+   "evName": "CRISDAD1D_3",
+   "sprite": "Objects_FA|0|4|1",
+   "prio": 0,
+   "items": [
+    "TV REMOTE"
+   ],
+   "art": {
+    "x": 1612,
+    "y": 1445,
+    "w": 9,
+    "h": 6,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SunFA2 - Too Far",
+    "Q- Remote 1 (End)"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "20",
+   "x": 48,
+   "y": 24,
+   "evId": 82,
+   "evName": "CRISDAD1D_2",
+   "sprite": "Objects_FA|0|4|1",
+   "prio": 0,
+   "items": [
+    "TV REMOTE"
+   ],
+   "art": {
+    "x": 1548,
+    "y": 773,
+    "w": 9,
+    "h": 6,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "20",
+   "x": 50,
+   "y": 22,
+   "evId": 87,
+   "evName": "EV087",
+   "sprite": "!FA_OBJECTS_2|3|6|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1603,
+    "y": 704,
+    "w": 26,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "20",
+   "x": 21,
+   "y": 45,
+   "evId": 88,
+   "evName": "CRISDAD1D_4",
+   "sprite": "Objects_FA|0|4|2",
+   "prio": 1,
+   "items": [
+    "TV REMOTE"
+   ],
+   "art": {
+    "x": 680,
+    "y": 1441,
+    "w": 17,
+    "h": 16,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast",
+    "Q- Remote 2 (End)"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "20",
+   "x": 23,
+   "y": 44,
+   "evId": 89,
+   "evName": "CrisMom1D",
+   "sprite": "FA_AVERAGE|2|8|1",
+   "prio": 1,
+   "items": [
+    "PIE"
+   ],
+   "art": {
+    "x": 742,
+    "y": 1404,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "21",
+   "x": 17,
+   "y": 18,
+   "evId": 22,
+   "evName": "hide-rug",
+   "sprite": "DW_PuzzleObjects6|1|8|2",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 545,
+    "y": 577,
+    "w": 30,
+    "h": 18,
+    "artFit": "rule"
+   },
+   "requires": [
+    "FA_HideAndSeek \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "21",
+   "x": 51,
+   "y": 19,
+   "evId": 25,
+   "evName": "hide-curtain",
+   "sprite": "DW_PuzzleObjects6|6|2|2",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1636,
+    "y": 602,
+    "w": 23,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "FA_HideAndSeek \u2265 1"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "22",
+   "x": 58,
+   "y": 9,
+   "evId": 50,
+   "evName": "BunLady1D",
+   "sprite": "FA_charlies_mom|0|2|1",
+   "prio": 1,
+   "items": [
+    "PRESCRIPTION",
+    "ID CARD"
+   ],
+   "art": {
+    "x": 1862,
+    "y": 283,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day1FA - Hobbeez"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "22",
+   "x": 58,
+   "y": 44,
+   "evId": 51,
+   "evName": "BunLady1D",
+   "sprite": "FA_charlies_mom|0|2|1",
+   "prio": 1,
+   "items": [
+    "PRESCRIPTION",
+    "ID CARD"
+   ],
+   "art": {
+    "x": 1862,
+    "y": 1403,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day1FA - Hobbeez"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "22",
+   "x": 44,
+   "y": 12,
+   "evId": 54,
+   "evName": "EV054",
+   "sprite": "!FA_OBJECTS_2|3|8|0",
+   "prio": 1,
+   "items": [
+    "COIN"
+   ],
+   "art": {
+    "x": 1419,
+    "y": 398,
+    "w": 10,
+    "h": 7,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "22",
+   "x": 27,
+   "y": 10,
+   "evId": 61,
+   "evName": "Dollar",
+   "sprite": "!FA_OBJECTS_2|3|8|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 871,
+    "y": 332,
+    "w": 18,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "22",
+   "x": 7,
+   "y": 15,
+   "evId": 62,
+   "evName": "KimsMom1D_3",
+   "sprite": "!FA_PLAYERHOUSE_OBJ|1|8|1",
+   "prio": 1,
+   "items": [
+    "GARDEN SHEARS"
+   ],
+   "art": {
+    "x": 230,
+    "y": 485,
+    "w": 18,
+    "h": 20,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Missing Shears(Start)"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "25",
+   "x": 22,
+   "y": 45,
+   "evId": 93,
+   "evName": "JOYSDAD3D",
+   "sprite": "FA_joysdad|0|8|1",
+   "prio": 1,
+   "items": [
+    "LUNCHBOX"
+   ],
+   "art": {
+    "x": 710,
+    "y": 1435,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "26",
+   "x": 45,
+   "y": 66,
+   "evId": 91,
+   "evName": "TUCKER1D",
+   "sprite": "FA_tucker|0|8|1",
+   "prio": 1,
+   "items": [
+    "FEDORA"
+   ],
+   "art": {
+    "x": 1445,
+    "y": 2109,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "26",
+   "x": 48,
+   "y": 67,
+   "evId": 95,
+   "evName": "EV095",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1541,
+    "y": 2144,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "29",
+   "x": 72,
+   "y": 22,
+   "evId": 93,
+   "evName": "JOYSDAD3D",
+   "sprite": "FA_Sitting|0|8|1",
+   "prio": 1,
+   "items": [
+    "LUNCHBOX"
+   ],
+   "art": {
+    "x": 2312,
+    "y": 698,
+    "w": 18,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "30",
+   "x": 45,
+   "y": 66,
+   "evId": 92,
+   "evName": "TUCKER1D",
+   "sprite": "FA_tucker|0|8|1",
+   "prio": 1,
+   "items": [
+    "FEDORA"
+   ],
+   "art": {
+    "x": 1445,
+    "y": 2109,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "30",
+   "x": 48,
+   "y": 67,
+   "evId": 96,
+   "evName": "EV096",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1541,
+    "y": 2144,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "31",
+   "x": 45,
+   "y": 48,
+   "evId": 92,
+   "evName": "PHOTO ALBUM",
+   "sprite": "FA_KEL_dig|0|2|0",
+   "prio": 1,
+   "items": [
+    "Faraway Album (Hidden)",
+    "PHOTO ALBUM"
+   ],
+   "art": {
+    "x": 1427,
+    "y": 1530,
+    "w": 26,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "31",
+   "x": 52,
+   "y": 45,
+   "evId": 123,
+   "evName": "EV123",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1669,
+    "y": 1440,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "31",
+   "x": 52,
+   "y": 8,
+   "evId": 124,
+   "evName": "EV124",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1669,
+    "y": 256,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "31",
+   "x": 33,
+   "y": 48,
+   "evId": 125,
+   "evName": "EV125",
+   "sprite": "!FA_OBJECTS_2|3|8|0",
+   "prio": 1,
+   "items": [
+    "COIN"
+   ],
+   "art": {
+    "x": 1067,
+    "y": 1550,
+    "w": 10,
+    "h": 7,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "31",
+   "x": 12,
+   "y": 51,
+   "evId": 126,
+   "evName": "Dollar",
+   "sprite": "!FA_OBJECTS_2|3|8|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 391,
+    "y": 1644,
+    "w": 18,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "32",
+   "x": 54,
+   "y": 20,
+   "evId": 50,
+   "evName": "EV050",
+   "sprite": "!FA_PLAYERHOUSE_OBJ|2|6|1",
+   "prio": 0,
+   "items": [
+    "SEASHELL"
+   ],
+   "art": {
+    "x": 1734,
+    "y": 640,
+    "w": 20,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Vances dad"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "32",
+   "x": 54,
+   "y": 21,
+   "evId": 51,
+   "evName": "VANCEDAD1D_3",
+   "sprite": "FA_Residents1|2|2|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1734,
+    "y": 667,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Vance Fixpipe(Start)"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "32",
+   "x": 54,
+   "y": 21,
+   "evId": 51,
+   "evName": "VANCEDAD1D_3",
+   "sprite": "FA_Residents1|2|2|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL",
+    "GHOULISH CD"
+   ],
+   "art": {
+    "x": 1734,
+    "y": 667,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Vance Fixpipe(Start)"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "32",
+   "x": 43,
+   "y": 24,
+   "evId": 60,
+   "evName": "EV060",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1381,
+    "y": 768,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "32",
+   "x": 45,
+   "y": 21,
+   "evId": 61,
+   "evName": "EV061",
+   "sprite": "!FA_OBJECTS_2|3|6|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1443,
+    "y": 672,
+    "w": 26,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "35",
+   "x": 17,
+   "y": 26,
+   "evId": 53,
+   "evName": "EV053",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 549,
+    "y": 832,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "35",
+   "x": 45,
+   "y": 22,
+   "evId": 54,
+   "evName": "EV054",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1445,
+    "y": 704,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "35",
+   "x": 52,
+   "y": 25,
+   "evId": 55,
+   "evName": "EV055",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1669,
+    "y": 800,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "36",
+   "x": 54,
+   "y": 20,
+   "evId": 50,
+   "evName": "EV050",
+   "sprite": "!FA_PLAYERHOUSE_OBJ|2|6|1",
+   "prio": 0,
+   "items": [
+    "SEASHELL"
+   ],
+   "art": {
+    "x": 1734,
+    "y": 640,
+    "w": 20,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Vances dad"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "36",
+   "x": 54,
+   "y": 21,
+   "evId": 51,
+   "evName": "VANCEDAD___1D_3",
+   "sprite": "FA_Residents1|2|2|1",
+   "prio": 1,
+   "items": [
+    "10 CLAMS"
+   ],
+   "art": {
+    "x": 1734,
+    "y": 667,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Vance Fixpipe(Start)"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "36",
+   "x": 54,
+   "y": 21,
+   "evId": 51,
+   "evName": "VANCEDAD___1D_3",
+   "sprite": "FA_Residents1|2|2|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL",
+    "GHOULISH CD"
+   ],
+   "art": {
+    "x": 1734,
+    "y": 667,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Vance Fixpipe(Start)"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "36",
+   "x": 43,
+   "y": 24,
+   "evId": 59,
+   "evName": "EV059",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1381,
+    "y": 768,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "36",
+   "x": 45,
+   "y": 21,
+   "evId": 60,
+   "evName": "EV060",
+   "sprite": "!FA_OBJECTS_2|3|6|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1443,
+    "y": 672,
+    "w": 26,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "38",
+   "x": 44,
+   "y": 21,
+   "evId": 51,
+   "evName": "SarahsDad2S_2",
+   "sprite": "fa_sarah|0|6|1",
+   "prio": 1,
+   "items": [
+    "PIZZA SLICE"
+   ],
+   "art": {
+    "x": 1415,
+    "y": 668,
+    "w": 18,
+    "h": 30,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- AnniversaryPizza(Middle)",
+    "Q- Anniversary choco (End)"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "38",
+   "x": 46,
+   "y": 21,
+   "evId": 52,
+   "evName": "SarahsMom2S_2",
+   "sprite": "fa_sarah|1|4|1",
+   "prio": 1,
+   "items": [
+    "PIZZA SLICE"
+   ],
+   "art": {
+    "x": 1479,
+    "y": 667,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- AnniversaryPizza(Middle)",
+    "Q- Anniversary choco (End)"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "38",
+   "x": 52,
+   "y": 21,
+   "evId": 54,
+   "evName": "Sarah event",
+   "sprite": "fa_sarah|2|2|1",
+   "prio": 1,
+   "items": [
+    "PIZZA SLICE"
+   ],
+   "art": {
+    "x": 1670,
+    "y": 668,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- AnniversaryPizza(Middle)",
+    "Q- Anniversary choco (End)"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "38",
+   "x": 51,
+   "y": 22,
+   "evId": 57,
+   "evName": "KEL",
+   "sprite": "FA_BREAKTIME|2|2|1",
+   "prio": 1,
+   "items": [
+    "PIZZA SLICE"
+   ],
+   "art": {
+    "x": 1636,
+    "y": 708,
+    "w": 25,
+    "h": 22,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "40",
+   "x": 8,
+   "y": 17,
+   "evId": 11,
+   "evName": "EV011",
+   "sprite": "!FA_OBJECTS_2|3|8|0",
+   "prio": 1,
+   "items": [
+    "COIN"
+   ],
+   "art": {
+    "x": 267,
+    "y": 558,
+    "w": 10,
+    "h": 7,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "40",
+   "x": 12,
+   "y": 21,
+   "evId": 12,
+   "evName": "Dollar",
+   "sprite": "!FA_OBJECTS_2|3|8|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 391,
+    "y": 684,
+    "w": 18,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "44",
+   "x": 6,
+   "y": 8,
+   "evId": 92,
+   "evName": "CLAUS3D",
+   "sprite": "fa_pets|0|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH",
+    "BUBBLE WRAP",
+    "ARCADE PIECE",
+    "SEASHELL",
+    "TRANQUIL CD"
+   ],
+   "art": {
+    "x": 195,
+    "y": 262,
+    "w": 25,
+    "h": 17,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "45",
+   "x": 28,
+   "y": 45,
+   "evId": 113,
+   "evName": "EV113",
+   "sprite": "!FA_OBJECTS_2|3|8|0",
+   "prio": 1,
+   "items": [
+    "COIN"
+   ],
+   "art": {
+    "x": 907,
+    "y": 1454,
+    "w": 10,
+    "h": 7,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "mirror",
+   "mapId": "46",
+   "x": 48,
+   "y": 43,
+   "evId": 27,
+   "evName": "Mirror",
+   "items": []
+  },
+  {
+   "layer": "npc",
+   "mapId": "49",
+   "x": 52,
+   "y": 21,
+   "evId": 53,
+   "evName": "ARTIST1D",
+   "sprite": "FA_artist_painting|0|8|1",
+   "prio": 1,
+   "items": [
+    "RARE CARD"
+   ],
+   "art": {
+    "x": 1670,
+    "y": 667,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "49",
+   "x": 48,
+   "y": 23,
+   "evId": 54,
+   "evName": "ARTIST2D_2",
+   "sprite": "FA_artist_painting|0|2|1",
+   "prio": 1,
+   "items": [
+    "PAINT BRUSH"
+   ],
+   "art": {
+    "x": 1542,
+    "y": 731,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Lost Lucas (Lucas found)"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "49",
+   "x": 48,
+   "y": 24,
+   "evId": 58,
+   "evName": "Lucas2D_2",
+   "sprite": "fa_pets|1|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1536,
+    "y": 766,
+    "w": 32,
+    "h": 27,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Lost Lucas (Lucas found)"
+   ]
+  },
+  {
+   "layer": "mirror",
+   "mapId": "50",
+   "x": 48,
+   "y": 43,
+   "evId": 27,
+   "evName": "Mirror",
+   "items": []
+  },
+  {
+   "layer": "giver",
+   "mapId": "51",
+   "x": 44,
+   "y": 23,
+   "evId": 50,
+   "evName": "JESSESDAD2S",
+   "sprite": "fa_jesses_dad|0|2|1",
+   "prio": 1,
+   "items": [
+    "SLICE OF CAKE"
+   ],
+   "art": {
+    "x": 1414,
+    "y": 731,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SunFA2 - Too Far"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "53",
+   "x": 52,
+   "y": 21,
+   "evId": 55,
+   "evName": "ARTIST1D",
+   "sprite": "FA_artist_painting|0|8|1",
+   "prio": 1,
+   "items": [
+    "RARE CARD"
+   ],
+   "art": {
+    "x": 1670,
+    "y": 667,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "53",
+   "x": 48,
+   "y": 24,
+   "evId": 58,
+   "evName": "Lucas2S",
+   "sprite": "fa_pets|1|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1536,
+    "y": 766,
+    "w": 32,
+    "h": 27,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SunFA2 - Too Far"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "53",
+   "x": 48,
+   "y": 23,
+   "evId": 61,
+   "evName": "ARTIST2D_2",
+   "sprite": "FA_artist_painting|0|2|1",
+   "prio": 1,
+   "items": [
+    "PAINT BRUSH"
+   ],
+   "art": {
+    "x": 1542,
+    "y": 731,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Lost Lucas (Lucas found)"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "55",
+   "x": 18,
+   "y": 18,
+   "evId": 39,
+   "evName": "MICHAEL1D",
+   "sprite": "FA_michael|0|2|1",
+   "prio": 1,
+   "items": [
+    "LETTER FOR DAD",
+    "SECRET CD"
+   ],
+   "art": {
+    "x": 582,
+    "y": 572,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "55",
+   "x": 29,
+   "y": 19,
+   "evId": 41,
+   "evName": "BRAYDENALLDAYS",
+   "sprite": "FA_fruitseller_brayen|0|2|1",
+   "prio": 1,
+   "items": [
+    "ORANGE HEADBAND"
+   ],
+   "art": {
+    "x": 934,
+    "y": 603,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "55",
+   "x": 39,
+   "y": 15,
+   "evId": 60,
+   "evName": "EV060",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1253,
+    "y": 480,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "55",
+   "x": 40,
+   "y": 16,
+   "evId": 61,
+   "evName": "EV061",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1285,
+    "y": 512,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "55",
+   "x": 40,
+   "y": 26,
+   "evId": 62,
+   "evName": "EV062",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1285,
+    "y": 832,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "55",
+   "x": 31,
+   "y": 23,
+   "evId": 63,
+   "evName": "EV063",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 997,
+    "y": 736,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "55",
+   "x": 19,
+   "y": 31,
+   "evId": 64,
+   "evName": "EV064",
+   "sprite": "!FA_OBJECTS_2|3|8|0",
+   "prio": 1,
+   "items": [
+    "COIN"
+   ],
+   "art": {
+    "x": 619,
+    "y": 1006,
+    "w": 10,
+    "h": 7,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "56",
+   "x": 3,
+   "y": 9,
+   "evId": 71,
+   "evName": "PRINCIPAL1D",
+   "sprite": "Objects_FA|4|2|2",
+   "prio": 1,
+   "items": [
+    "GREEN FLYER"
+   ],
+   "art": {
+    "x": 101,
+    "y": 288,
+    "w": 21,
+    "h": 23,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "56",
+   "x": 4,
+   "y": 9,
+   "evId": 72,
+   "evName": "JOY1D_1",
+   "sprite": "Objects_FA|0|8|2",
+   "prio": 1,
+   "items": [
+    "BLUE FLYER"
+   ],
+   "art": {
+    "x": 133,
+    "y": 288,
+    "w": 21,
+    "h": 23,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "56",
+   "x": 17,
+   "y": 9,
+   "evId": 101,
+   "evName": "DAY",
+   "sprite": "!objects_fa_doors_2|0|2|2",
+   "prio": 1,
+   "items": [
+    "20 CLAMS"
+   ],
+   "art": {
+    "x": 547,
+    "y": 281,
+    "w": 25,
+    "h": 39,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "56",
+   "x": 17,
+   "y": 9,
+   "evId": 101,
+   "evName": "DAY",
+   "sprite": "!objects_fa_doors_2|0|2|2",
+   "prio": 1,
+   "items": [
+    "FLY SWATTER",
+    "FLY SWATTER",
+    "FLY SWATTER"
+   ],
+   "art": {
+    "x": 547,
+    "y": 281,
+    "w": 25,
+    "h": 39,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "57",
+   "x": 16,
+   "y": 6,
+   "evId": 29,
+   "evName": "GINO2D",
+   "sprite": "FA_Residents1|7|8|1",
+   "prio": 1,
+   "items": [
+    "DEVILISH CD"
+   ],
+   "art": {
+    "x": 518,
+    "y": 188,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "60",
+   "x": 6,
+   "y": 6,
+   "evId": 30,
+   "evName": "CHARLIE3D",
+   "sprite": "FA_CHARLIE|0|8|1",
+   "prio": 1,
+   "items": [
+    "FLOWER CLIP"
+   ],
+   "art": {
+    "x": 198,
+    "y": 187,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "60",
+   "x": 15,
+   "y": 6,
+   "evId": 34,
+   "evName": "EV034",
+   "sprite": "!FA_OBJECTS_2|6|2|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL"
+   ],
+   "art": {
+    "x": 484,
+    "y": 199,
+    "w": 25,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "63",
+   "x": 46,
+   "y": 20,
+   "evId": 43,
+   "evName": "CRIS2D",
+   "sprite": "FA_AVERAGE|1|6|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL NECKLACE"
+   ],
+   "art": {
+    "x": 1479,
+    "y": 637,
+    "w": 18,
+    "h": 28,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "63",
+   "x": 24,
+   "y": 11,
+   "evId": 47,
+   "evName": "JESSESDAD2S",
+   "sprite": "fa_jesses_dad|0|2|1",
+   "prio": 1,
+   "items": [
+    "SLICE OF CAKE"
+   ],
+   "art": {
+    "x": 774,
+    "y": 347,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SunFA2 - Too Far"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "63",
+   "x": 45,
+   "y": 21,
+   "evId": 52,
+   "evName": "KelsDad3D",
+   "sprite": "FA_KELS_DAD|0|2|1",
+   "prio": 1,
+   "items": [
+    "20 CLAMS"
+   ],
+   "art": {
+    "x": 1446,
+    "y": 667,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "63",
+   "x": 26,
+   "y": 14,
+   "evId": 57,
+   "evName": "PB1D",
+   "sprite": "FA_Residents1|0|2|1",
+   "prio": 1,
+   "items": [
+    "BANDAGE"
+   ],
+   "art": {
+    "x": 836,
+    "y": 445,
+    "w": 23,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "63",
+   "x": 37,
+   "y": 14,
+   "evId": 61,
+   "evName": "ADRIANALLDAYS",
+   "sprite": "FA_fruitseller_mango|0|2|1",
+   "prio": 1,
+   "items": [
+    "RED HEADBAND"
+   ],
+   "art": {
+    "x": 1190,
+    "y": 443,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "63",
+   "x": 48,
+   "y": 15,
+   "evId": 63,
+   "evName": "OLDHOBO1D",
+   "sprite": "FA_Residents1|6|4|1",
+   "prio": 1,
+   "items": [
+    "? CLAMS"
+   ],
+   "art": {
+    "x": 1538,
+    "y": 482,
+    "w": 25,
+    "h": 24,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "63",
+   "x": 27,
+   "y": 10,
+   "evId": 64,
+   "evName": "OLDLADY1D",
+   "sprite": "$fa_old_lady|0|2|1",
+   "prio": 1,
+   "items": [
+    "? CLAMS"
+   ],
+   "art": {
+    "x": 870,
+    "y": 315,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "63",
+   "x": 27,
+   "y": 10,
+   "evId": 64,
+   "evName": "OLDLADY1D",
+   "sprite": "$fa_old_lady|0|2|1",
+   "prio": 1,
+   "items": [
+    "ETHEREAL CD"
+   ],
+   "art": {
+    "x": 870,
+    "y": 315,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "63",
+   "x": 13,
+   "y": 11,
+   "evId": 65,
+   "evName": "SMELLYHOBO1D",
+   "sprite": "$fa_hobo_smelly|0|2|1",
+   "prio": 1,
+   "items": [
+    "GOLD WATCH",
+    "\"GOLD\" WATCH"
+   ],
+   "art": {
+    "x": 420,
+    "y": 347,
+    "w": 24,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 47,
+   "y": 16,
+   "evId": 96,
+   "evName": "EV096",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1509,
+    "y": 512,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 36,
+   "y": 12,
+   "evId": 106,
+   "evName": "EV106",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1157,
+    "y": 384,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 14,
+   "y": 11,
+   "evId": 108,
+   "evName": "EV108",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 453,
+    "y": 352,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 5,
+   "y": 28,
+   "evId": 109,
+   "evName": "EV109",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 165,
+    "y": 896,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 14,
+   "y": 14,
+   "evId": 110,
+   "evName": "EV110",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 453,
+    "y": 448,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 17,
+   "y": 25,
+   "evId": 111,
+   "evName": "EV111",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 549,
+    "y": 800,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 10,
+   "y": 10,
+   "evId": 112,
+   "evName": "EV112",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 325,
+    "y": 320,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "NiFA2 - Sleepover"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 39,
+   "y": 16,
+   "evId": 113,
+   "evName": "EV113",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1253,
+    "y": 512,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 49,
+   "y": 16,
+   "evId": 114,
+   "evName": "EV114",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1573,
+    "y": 512,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 5,
+   "y": 11,
+   "evId": 115,
+   "evName": "EV115",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 165,
+    "y": 352,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 21,
+   "y": 8,
+   "evId": 116,
+   "evName": "EV116",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 677,
+    "y": 256,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "NiFA2 - Sleepover"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "63",
+   "x": 41,
+   "y": 25,
+   "evId": 117,
+   "evName": "EV117",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1317,
+    "y": 800,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "NiFA2 - Sleepover"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "64",
+   "x": 18,
+   "y": 35,
+   "evId": 2,
+   "evName": "CLAUS3D",
+   "sprite": "fa_pets|0|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH",
+    "BUBBLE WRAP",
+    "ARCADE PIECE",
+    "SEASHELL"
+   ],
+   "art": {
+    "x": 579,
+    "y": 1126,
+    "w": 25,
+    "h": 17,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "64",
+   "x": 18,
+   "y": 6,
+   "evId": 31,
+   "evName": "EV031",
+   "sprite": "!FA_OBJECTS_2|6|2|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL"
+   ],
+   "art": {
+    "x": 580,
+    "y": 199,
+    "w": 25,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "65",
+   "x": 40,
+   "y": 16,
+   "evId": 2,
+   "evName": "EV002",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1285,
+    "y": 512,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "65",
+   "x": 6,
+   "y": 17,
+   "evId": 28,
+   "evName": "Fountain",
+   "sprite": "DW_IMPORTANTOBJ|7|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 198,
+    "y": 546,
+    "w": 21,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "65",
+   "x": 29,
+   "y": 19,
+   "evId": 35,
+   "evName": "BRAYDENALLDAYS",
+   "sprite": "FA_fruitseller_brayen|0|2|1",
+   "prio": 1,
+   "items": [
+    "ORANGE HEADBAND"
+   ],
+   "art": {
+    "x": 934,
+    "y": 603,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "65",
+   "x": 18,
+   "y": 18,
+   "evId": 36,
+   "evName": "MICHAEL1D",
+   "sprite": "FA_michael|0|2|1",
+   "prio": 1,
+   "items": [
+    "LETTER FOR DAD",
+    "SECRET CD"
+   ],
+   "art": {
+    "x": 582,
+    "y": 572,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "65",
+   "x": 39,
+   "y": 15,
+   "evId": 51,
+   "evName": "EV051",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1253,
+    "y": 480,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "65",
+   "x": 40,
+   "y": 26,
+   "evId": 52,
+   "evName": "EV052",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1285,
+    "y": 832,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "65",
+   "x": 31,
+   "y": 23,
+   "evId": 53,
+   "evName": "EV053",
+   "sprite": "!FA_OBJECTS_2|3|4|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 997,
+    "y": 736,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "65",
+   "x": 36,
+   "y": 27,
+   "evId": 54,
+   "evName": "Dollar",
+   "sprite": "!FA_OBJECTS_2|3|8|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1159,
+    "y": 876,
+    "w": 18,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "66",
+   "x": 3,
+   "y": 9,
+   "evId": 73,
+   "evName": "PRINCIPAL1D",
+   "sprite": "Objects_FA|4|2|2",
+   "prio": 1,
+   "items": [
+    "GREEN FLYER"
+   ],
+   "art": {
+    "x": 101,
+    "y": 288,
+    "w": 21,
+    "h": 23,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "66",
+   "x": 4,
+   "y": 9,
+   "evId": 75,
+   "evName": "JOY1D_1",
+   "sprite": "Objects_FA|0|8|2",
+   "prio": 1,
+   "items": [
+    "BLUE FLYER"
+   ],
+   "art": {
+    "x": 133,
+    "y": 288,
+    "w": 21,
+    "h": 23,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "66",
+   "x": 17,
+   "y": 9,
+   "evId": 92,
+   "evName": "SUNSET",
+   "sprite": "!objects_fa_doors_2|0|2|2",
+   "prio": 1,
+   "items": [
+    "20 CLAMS"
+   ],
+   "art": {
+    "x": 547,
+    "y": 281,
+    "w": 25,
+    "h": 39,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "66",
+   "x": 17,
+   "y": 9,
+   "evId": 92,
+   "evName": "SUNSET",
+   "sprite": "!objects_fa_doors_2|0|2|2",
+   "prio": 1,
+   "items": [
+    "FLY SWATTER",
+    "FLY SWATTER",
+    "FLY SWATTER"
+   ],
+   "art": {
+    "x": 547,
+    "y": 281,
+    "w": 25,
+    "h": 39,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "67",
+   "x": 16,
+   "y": 6,
+   "evId": 23,
+   "evName": "GINO2D-S",
+   "sprite": "FA_Residents1|7|8|1",
+   "prio": 1,
+   "items": [
+    "DEVILISH CD"
+   ],
+   "art": {
+    "x": 518,
+    "y": 188,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "68",
+   "x": 10,
+   "y": 13,
+   "evId": 26,
+   "evName": "JESSESDAD1S",
+   "sprite": "fa_jesses_dad|0|8|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL"
+   ],
+   "art": {
+    "x": 326,
+    "y": 411,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SunFA1 - Aubrey leaves Church"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "69",
+   "x": 6,
+   "y": 17,
+   "evId": 40,
+   "evName": "BILLY2S",
+   "sprite": "FA_PRIMADONAS|2|8|1",
+   "prio": 1,
+   "items": [
+    "50 CLAMS"
+   ],
+   "art": {
+    "x": 198,
+    "y": 539,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Billy Hardware (start)"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "70",
+   "x": 8,
+   "y": 11,
+   "evId": 32,
+   "evName": "CHARLIE3D",
+   "sprite": "FA_CHARLIE|0|8|1",
+   "prio": 1,
+   "items": [
+    "FLOWER CLIP"
+   ],
+   "art": {
+    "x": 262,
+    "y": 347,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "70",
+   "x": 15,
+   "y": 6,
+   "evId": 34,
+   "evName": "EV034",
+   "sprite": "!FA_OBJECTS_2|6|2|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL"
+   ],
+   "art": {
+    "x": 484,
+    "y": 199,
+    "w": 25,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "73",
+   "x": 13,
+   "y": 11,
+   "evId": 9,
+   "evName": "SMELLYHOBO1D",
+   "sprite": "$fa_hobo_smelly|0|2|1",
+   "prio": 1,
+   "items": [
+    "GOLD WATCH",
+    "\"GOLD\" WATCH"
+   ],
+   "art": {
+    "x": 420,
+    "y": 347,
+    "w": 24,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "73",
+   "x": 46,
+   "y": 20,
+   "evId": 40,
+   "evName": "KelsDad3S",
+   "sprite": "FA_KELS_DAD|0|2|1",
+   "prio": 1,
+   "items": [
+    "HAMBURGER"
+   ],
+   "art": {
+    "x": 1478,
+    "y": 635,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "73",
+   "x": 25,
+   "y": 14,
+   "evId": 42,
+   "evName": "MINCY3S",
+   "sprite": "FA_mincy|0|2|1",
+   "prio": 1,
+   "items": [
+    "SMALL SKETCH"
+   ],
+   "art": {
+    "x": 806,
+    "y": 443,
+    "w": 21,
+    "h": 31,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast",
+    "IS IT SUNSET",
+    "\u2265 5"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "73",
+   "x": 48,
+   "y": 15,
+   "evId": 49,
+   "evName": "OLDHOBO1D",
+   "sprite": "FA_Residents1|6|4|1",
+   "prio": 1,
+   "items": [
+    "? CLAMS"
+   ],
+   "art": {
+    "x": 1538,
+    "y": 482,
+    "w": 25,
+    "h": 24,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "73",
+   "x": 27,
+   "y": 10,
+   "evId": 50,
+   "evName": "OLDLADY1D",
+   "sprite": "$fa_old_lady|0|2|1",
+   "prio": 1,
+   "items": [
+    "? CLAMS"
+   ],
+   "art": {
+    "x": 870,
+    "y": 315,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "73",
+   "x": 27,
+   "y": 10,
+   "evId": 50,
+   "evName": "OLDLADY1D",
+   "sprite": "$fa_old_lady|0|2|1",
+   "prio": 1,
+   "items": [
+    "ETHEREAL CD"
+   ],
+   "art": {
+    "x": 870,
+    "y": 315,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "73",
+   "x": 37,
+   "y": 14,
+   "evId": 51,
+   "evName": "ADRIANALLDAYS",
+   "sprite": "FA_fruitseller_mango|0|2|1",
+   "prio": 1,
+   "items": [
+    "RED HEADBAND"
+   ],
+   "art": {
+    "x": 1190,
+    "y": 443,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "73",
+   "x": 39,
+   "y": 27,
+   "evId": 52,
+   "evName": "PB1D",
+   "sprite": "FA_Residents1|0|8|1",
+   "prio": 1,
+   "items": [
+    "BANDAGE"
+   ],
+   "art": {
+    "x": 1253,
+    "y": 861,
+    "w": 23,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 36,
+   "y": 12,
+   "evId": 55,
+   "evName": "EV055",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1157,
+    "y": 384,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 14,
+   "y": 14,
+   "evId": 61,
+   "evName": "EV061",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 453,
+    "y": 448,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 14,
+   "y": 11,
+   "evId": 65,
+   "evName": "EV065",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 453,
+    "y": 352,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 5,
+   "y": 28,
+   "evId": 66,
+   "evName": "EV066",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 165,
+    "y": 896,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 47,
+   "y": 16,
+   "evId": 67,
+   "evName": "EV067",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1509,
+    "y": 512,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 17,
+   "y": 25,
+   "evId": 68,
+   "evName": "EV068",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 549,
+    "y": 800,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 39,
+   "y": 16,
+   "evId": 69,
+   "evName": "EV069",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1253,
+    "y": 512,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 49,
+   "y": 16,
+   "evId": 70,
+   "evName": "EV070",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1573,
+    "y": 512,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 5,
+   "y": 11,
+   "evId": 71,
+   "evName": "EV071",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 165,
+    "y": 352,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2FA - Errand List"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 10,
+   "y": 10,
+   "evId": 72,
+   "evName": "EV072",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 325,
+    "y": 320,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "NiFA2 - Sleepover"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 21,
+   "y": 8,
+   "evId": 73,
+   "evName": "EV073",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 677,
+    "y": 256,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "NiFA2 - Sleepover"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 41,
+   "y": 25,
+   "evId": 74,
+   "evName": "EV074",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1317,
+    "y": 800,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "NiFA2 - Sleepover"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "73",
+   "x": 40,
+   "y": 22,
+   "evId": 79,
+   "evName": "EV079",
+   "sprite": "!FA_OBJECTS_2|3|8|0",
+   "prio": 1,
+   "items": [
+    "COIN"
+   ],
+   "art": {
+    "x": 1291,
+    "y": 718,
+    "w": 10,
+    "h": 7,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day3FA - Hero's Breakfast"
+   ]
+  },
+  {
+   "layer": "collect",
+   "mapId": "74",
+   "x": 18,
+   "y": 6,
+   "evId": 54,
+   "evName": "EV054",
+   "sprite": "!FA_OBJECTS_2|6|2|1",
+   "prio": 1,
+   "items": [
+    "SEASHELL"
+   ],
+   "art": {
+    "x": 580,
+    "y": 199,
+    "w": 25,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "75",
+   "x": 15,
+   "y": 35,
+   "evId": 22,
+   "evName": "Dollar",
+   "sprite": "!FA_OBJECTS_2|3|8|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 487,
+    "y": 1132,
+    "w": 18,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "78",
+   "x": 25,
+   "y": 15,
+   "evId": 2,
+   "evName": "PLAYER HOME (NIGHT)",
+   "sprite": "!objects_fa_night_doors|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 801,
+    "y": 476,
+    "w": 30,
+    "h": 36,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "78",
+   "x": 15,
+   "y": 15,
+   "evId": 3,
+   "evName": "PLAYER HOME (NIGHT)",
+   "sprite": "!objects_fa_night_doors|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 481,
+    "y": 476,
+    "w": 30,
+    "h": 36,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "78",
+   "x": 24,
+   "y": 43,
+   "evId": 21,
+   "evName": "REFRIGERATOR",
+   "sprite": "FA_TV|3|4|1",
+   "prio": 1,
+   "items": [
+    "COLD STEAK"
+   ],
+   "art": {
+    "x": 769,
+    "y": 1363,
+    "w": 30,
+    "h": 54,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "78",
+   "x": 19,
+   "y": 43,
+   "evId": 22,
+   "evName": "MICROWAVE",
+   "sprite": "FA_TV|3|2|1",
+   "prio": 1,
+   "items": [
+    "MICROWAVED STEAK"
+   ],
+   "art": {
+    "x": 611,
+    "y": 1368,
+    "w": 25,
+    "h": 24,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "78",
+   "x": 21,
+   "y": 43,
+   "evId": 23,
+   "evName": "STEAK KNIFE",
+   "sprite": "!FA_OBJECTS_2|2|4|0",
+   "prio": 1,
+   "items": [
+    "STEAK KNIFE"
+   ],
+   "art": {
+    "x": 678,
+    "y": 1389,
+    "w": 21,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "78",
+   "x": 19,
+   "y": 45,
+   "evId": 24,
+   "evName": "EAT HERE",
+   "sprite": "OBJ_SW_OBJ|2|6|1",
+   "prio": 2,
+   "items": [
+    "STEAK KNIFE"
+   ],
+   "art": {
+    "x": 618,
+    "y": 1435,
+    "w": 14,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Temporary Variable #1 \u2265 2"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "78",
+   "x": 24,
+   "y": 66,
+   "evId": 27,
+   "evName": "BED (27)",
+   "sprite": "FA_OMORI_3|5|8|0",
+   "prio": 1,
+   "items": [
+    "? CLAMS"
+   ],
+   "art": {
+    "x": 774,
+    "y": 2107,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0DW-Basil and Mari"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "78",
+   "x": 24,
+   "y": 66,
+   "evId": 27,
+   "evName": "BED (27)",
+   "sprite": "FA_OMORI_3|5|8|0",
+   "prio": 1,
+   "items": [
+    "DULL KNIFE",
+    "DULL KNIFE"
+   ],
+   "art": {
+    "x": 774,
+    "y": 2107,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0DW-Basil and Mari"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "78",
+   "x": 15,
+   "y": 23,
+   "evId": 59,
+   "evName": "Closet Door",
+   "sprite": "!objects_fa_doors_bs|1|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 481,
+    "y": 732,
+    "w": 30,
+    "h": 36,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0DW-FearofDrowning",
+    "Stayed_Home \u2265 1"
+   ]
+  },
+  {
+   "layer": "mirror",
+   "mapId": "78",
+   "x": 48,
+   "y": 43,
+   "evId": 67,
+   "evName": "Mirror",
+   "items": []
+  },
+  {
+   "layer": "mirror",
+   "mapId": "80",
+   "x": 48,
+   "y": 43,
+   "evId": 33,
+   "evName": "Mirror",
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "81",
+   "x": 6,
+   "y": 17,
+   "evId": 8,
+   "evName": "Fountain",
+   "sprite": "DW_IMPORTANTOBJ|7|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 198,
+    "y": 546,
+    "w": 21,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "83",
+   "x": 48,
+   "y": 15,
+   "evId": 10,
+   "evName": "OLDHOBO1D",
+   "sprite": "$fa_hobo_socrates|0|8|0",
+   "prio": 1,
+   "items": [
+    "? CLAMS"
+   ],
+   "art": {
+    "x": 1538,
+    "y": 482,
+    "w": 25,
+    "h": 24,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "83",
+   "x": 13,
+   "y": 11,
+   "evId": 11,
+   "evName": "SMELLYHOBO1D",
+   "sprite": "$fa_hobo_smelly2|0|2|1",
+   "prio": 1,
+   "items": [
+    "GOLD WATCH",
+    "\"GOLD\" WATCH"
+   ],
+   "art": {
+    "x": 420,
+    "y": 347,
+    "w": 24,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "87",
+   "x": 27,
+   "y": 26,
+   "evId": 3,
+   "evName": "LAPTOP",
+   "sprite": "DW_OBJECTS_WSNB|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 871,
+    "y": 835,
+    "w": 18,
+    "h": 22,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "87",
+   "x": 0,
+   "y": 0,
+   "evId": 8,
+   "evName": "INITIALIZE + KNIFE",
+   "sprite": "DW_OBJECTS_WSNB|4|2|1",
+   "prio": 1,
+   "items": [
+    "SHINY KNIFE"
+   ],
+   "art": {
+    "x": 7,
+    "y": 7,
+    "w": 21,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "88",
+   "x": 15,
+   "y": 18,
+   "evId": 10,
+   "evName": "CARDS -- BASE",
+   "sprite": "DW_NEIGHBOURSROOM|7|2|1",
+   "prio": 0,
+   "items": [],
+   "art": {
+    "x": 489,
+    "y": 585,
+    "w": 11,
+    "h": 13,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "88",
+   "x": 9,
+   "y": 22,
+   "evId": 20,
+   "evName": "TENTACLE",
+   "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+   "prio": 1,
+   "items": [
+    "BASEBALL BAT"
+   ],
+   "art": {
+    "x": 288,
+    "y": 704,
+    "w": 32,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mirror",
+   "mapId": "92",
+   "x": 20,
+   "y": 28,
+   "evId": 8,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 645,
+    "y": 864,
+    "w": 21,
+    "h": 58,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0FA - Throw Up"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "92",
+   "x": 5,
+   "y": 28,
+   "evId": 31,
+   "evName": "DAISY",
+   "sprite": "DW_NPC_PLAYGROUND|4|2|1",
+   "prio": 1,
+   "items": [
+    "DAISY",
+    "DAISY"
+   ],
+   "art": {
+    "x": 167,
+    "y": 893,
+    "w": 18,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "92",
+   "x": 14,
+   "y": 15,
+   "evId": 50,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 452,
+    "y": 474,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Break_Time_Start"
+   ]
+  },
+  {
+   "layer": "npc",
+   "mapId": "95",
+   "x": 13,
+   "y": 24,
+   "evId": 9,
+   "evName": "Angry Mole",
+   "sprite": "DW_SPRM_1|0|2|1",
+   "prio": 1,
+   "items": [
+    "FOE FACTS!"
+   ],
+   "art": {
+    "x": 422,
+    "y": 766,
+    "w": 21,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "95",
+   "x": 40,
+   "y": 40,
+   "evId": 13,
+   "evName": "Happy Mole",
+   "sprite": "DW_SPRM_1|0|2|1",
+   "prio": 1,
+   "items": [
+    "EMOTION CHART"
+   ],
+   "art": {
+    "x": 1286,
+    "y": 1278,
+    "w": 21,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "96",
+   "x": 10,
+   "y": 68,
+   "evId": 3,
+   "evName": "BOSS FIGHT",
+   "sprite": "DW_NPC_15|1|8|1",
+   "prio": 1,
+   "items": [
+    "SELF-HELP GUIDE"
+   ],
+   "art": {
+    "x": 306,
+    "y": 2140,
+    "w": 61,
+    "h": 62,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "96",
+   "x": 11,
+   "y": 24,
+   "evId": 10,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 358,
+    "y": 763,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "96",
+   "x": 12,
+   "y": 23,
+   "evId": 17,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 388,
+    "y": 730,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Break_Time_Start"
+   ]
+  },
+  {
+   "layer": "charm",
+   "mapId": "98",
+   "x": 10,
+   "y": 6,
+   "evId": 9,
+   "evName": "CAMERA - melonTULIP",
+   "sprite": "DW_IMPORTANTOBJ_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TULIP HAIRSTICK"
+   ],
+   "art": {
+    "x": 325,
+    "y": 190,
+    "w": 22,
+    "h": 28,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "layer": "hangman",
+   "mapId": "100",
+   "x": 16,
+   "y": 27,
+   "evId": 1,
+   "evName": "BLACKLETTER_C",
+   "letter": "C",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|0|6|0",
+   "prio": 2,
+   "items": [
+    "Blackletter C"
+   ],
+   "art": {
+    "x": 512,
+    "y": 858,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u5728\u5de8\u5927\u7684\u98ce\u8f66\u4e4b\u95f4"
+  },
+  {
+   "layer": "mirror",
+   "mapId": "100",
+   "x": 21,
+   "y": 9,
+   "evId": 9,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 677,
+    "y": 256,
+    "w": 21,
+    "h": 58,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "100",
+   "x": 14,
+   "y": 11,
+   "evId": 15,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 454,
+    "y": 347,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "100",
+   "x": 15,
+   "y": 10,
+   "evId": 18,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 484,
+    "y": 314,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "102",
+   "x": 13,
+   "y": 15,
+   "evId": 4,
+   "evName": "TENTACLE",
+   "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+   "prio": 1,
+   "items": [
+    "BASKETBALL"
+   ],
+   "art": {
+    "x": 416,
+    "y": 480,
+    "w": 32,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "105",
+   "x": 14,
+   "y": 38,
+   "evId": 5,
+   "evName": "LEAFY_1",
+   "sprite": "DW_NPC_3|1|2|1",
+   "prio": 1,
+   "items": [
+    "COTTON BALL",
+    "BUNNY EARS",
+    "RABBIT FOOT"
+   ],
+   "art": {
+    "x": 460,
+    "y": 1218,
+    "w": 9,
+    "h": 13,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "105",
+   "x": 7,
+   "y": 40,
+   "evId": 6,
+   "evName": "HOTDOG_1",
+   "sprite": "DW_NPC_16|0|6|1",
+   "prio": 1,
+   "items": [
+    "HOT DOG"
+   ],
+   "art": {
+    "x": 194,
+    "y": 1282,
+    "w": 93,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "105",
+   "x": 7,
+   "y": 34,
+   "evId": 24,
+   "evName": "EV024",
+   "sprite": "DW_NPC_25|0|8|1",
+   "prio": 1,
+   "items": [
+    "100 CLAMS"
+   ],
+   "art": {
+    "x": 224,
+    "y": 1083,
+    "w": 31,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "105",
+   "x": 5,
+   "y": 37,
+   "evId": 28,
+   "evName": "EV028",
+   "sprite": "DW_NPC_27|5|2|1",
+   "prio": 1,
+   "items": [
+    "4-LEAF CLOVER"
+   ],
+   "art": {
+    "x": 146,
+    "y": 1151,
+    "w": 62,
+    "h": 57,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clubsandwich",
+   "mapId": "106",
+   "x": 83,
+   "y": 29,
+   "evId": 29,
+   "evName": "Club Sandwich",
+   "sprite": "$DW_club_sandwich_door|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 2656,
+    "y": 910,
+    "w": 32,
+    "h": 44,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "charm",
+   "mapId": "106",
+   "x": 4,
+   "y": 40,
+   "evId": 40,
+   "evName": "TENTACLE",
+   "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+   "prio": 1,
+   "items": [
+    "CHEF'S HAT"
+   ],
+   "art": {
+    "x": 128,
+    "y": 1280,
+    "w": 32,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "telescope",
+   "mapId": "106",
+   "x": 17,
+   "y": 13,
+   "evId": 47,
+   "evName": "Telescope",
+   "items": []
+  },
+  {
+   "layer": "mirror",
+   "mapId": "106",
+   "x": 42,
+   "y": 19,
+   "evId": 48,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1349,
+    "y": 582,
+    "w": 21,
+    "h": 58,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "106",
+   "x": 52,
+   "y": 51,
+   "evId": 53,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1670,
+    "y": 1627,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "106",
+   "x": 53,
+   "y": 50,
+   "evId": 55,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1700,
+    "y": 1594,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "106",
+   "x": 25,
+   "y": 48,
+   "evId": 61,
+   "evName": "Tofu Conconnaisseur",
+   "sprite": "DW_SPRM_3|5|6|1",
+   "prio": 1,
+   "items": [
+    "GRANOLA BAR",
+    "BREAD",
+    "NACHOS",
+    "CHICKEN WING",
+    "WAFFLE",
+    "PANCAKE",
+    "PIZZA SLICE",
+    "CHOCOLATE",
+    "DONUT",
+    "RAMEN",
+    "SPAGHETTI",
+    "POPCORN",
+    "FRIES",
+    "CHEESEBURGER",
+    "FISH TACO",
+    "CHEESE WHEEL",
+    "WHOLE CHICKEN",
+    "WHOLE PIZZA"
+   ],
+   "art": {
+    "x": 804,
+    "y": 1534,
+    "w": 21,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "106",
+   "x": 35,
+   "y": 21,
+   "evId": 79,
+   "evName": "TREASURE MAP",
+   "sprite": "DW_IMPORTANTOBJ_2|4|6|1",
+   "prio": 1,
+   "items": [
+    "TREASURE MAP"
+   ],
+   "art": {
+    "x": 1123,
+    "y": 670,
+    "w": 26,
+    "h": 24,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "106",
+   "x": 13,
+   "y": 41,
+   "evId": 81,
+   "evName": "EV081",
+   "sprite": "DW_NPC_24|3|8|1",
+   "prio": 1,
+   "items": [
+    "CHEESE WHEEL"
+   ],
+   "art": {
+    "x": 416,
+    "y": 1307,
+    "w": 28,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "108",
+   "x": 26,
+   "y": 40,
+   "evId": 1,
+   "evName": "DINO",
+   "sprite": "$DW_Dino|0|2|0",
+   "prio": 1,
+   "items": [
+    "POTATO SPOON",
+    "PLASTIC SPOON"
+   ],
+   "art": {
+    "x": 818,
+    "y": 1243,
+    "w": 60,
+    "h": 63,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "charm",
+   "mapId": "108",
+   "x": 39,
+   "y": 24,
+   "evId": 15,
+   "evName": "HECTOR",
+   "sprite": "DW_PuzzleObjects4|1|6|0",
+   "prio": 1,
+   "items": [
+    "HECTOR JR"
+   ],
+   "art": {
+    "x": 1249,
+    "y": 776,
+    "w": 30,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "charm",
+   "mapId": "108",
+   "x": 0,
+   "y": 5,
+   "evId": 31,
+   "evName": "backup",
+   "sprite": "DW_PuzzleObjects4|1|6|2",
+   "prio": 1,
+   "items": [
+    "HECTOR JR"
+   ],
+   "art": {
+    "x": 4,
+    "y": 165,
+    "w": 25,
+    "h": 20,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "108",
+   "x": 20,
+   "y": 24,
+   "evId": 37,
+   "evName": "ANCIENT CODE",
+   "sprite": "DW_PuzzleObjects4|1|6|0",
+   "prio": 1,
+   "items": [
+    "ANCIENT CODE"
+   ],
+   "art": {
+    "x": 641,
+    "y": 776,
+    "w": 30,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "110",
+   "x": 19,
+   "y": 15,
+   "evId": 11,
+   "evName": "BLACKLETTER_X",
+   "letter": "X",
+   "sprite": "DW_PuzzleObjects4|5|2|0",
+   "prio": 1,
+   "items": [
+    "Blackletter X"
+   ],
+   "art": {
+    "x": 609,
+    "y": 488,
+    "w": 30,
+    "h": 18,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u5730\u56fe\u7684\u5c3d\u5934"
+  },
+  {
+   "layer": "quest",
+   "mapId": "110",
+   "x": 3,
+   "y": 15,
+   "evId": 14,
+   "evName": "FOSSILIZED THANK YOU CARD",
+   "sprite": "DW_PuzzleObjects4|5|2|0",
+   "prio": 1,
+   "items": [
+    "THANK-YOU FOSSIL"
+   ],
+   "art": {
+    "x": 97,
+    "y": 488,
+    "w": 30,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "111",
+   "x": 16,
+   "y": 35,
+   "evId": 7,
+   "evName": "PotatoGirl",
+   "sprite": "DW_NPC_5|4|2|1",
+   "prio": 1,
+   "items": [
+    "VEGGIE KID"
+   ],
+   "art": {
+    "x": 520,
+    "y": 1118,
+    "w": 16,
+    "h": 23,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "111",
+   "x": 22,
+   "y": 22,
+   "evId": 53,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 710,
+    "y": 699,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "111",
+   "x": 23,
+   "y": 21,
+   "evId": 55,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 740,
+    "y": 666,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "112",
+   "x": 17,
+   "y": 14,
+   "evId": 22,
+   "evName": "MINA",
+   "sprite": "DW_NPC_6|7|2|0",
+   "prio": 1,
+   "items": [
+    "WAFFLE"
+   ],
+   "art": {
+    "x": 547,
+    "y": 443,
+    "w": 26,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "113",
+   "x": 10,
+   "y": 11,
+   "evId": 4,
+   "evName": "ORANGEJOE",
+   "sprite": "DW_DD_ORANGES|6|2|1",
+   "prio": 1,
+   "items": [
+    "ORANGE CREST"
+   ],
+   "art": {
+    "x": 320,
+    "y": 327,
+    "w": 31,
+    "h": 47,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "115",
+   "x": 18,
+   "y": 23,
+   "evId": 3,
+   "evName": "JELLY",
+   "sprite": "DW_NPC_6|4|2|1",
+   "prio": 1,
+   "items": [
+    "SNO-CONE TICKET"
+   ],
+   "art": {
+    "x": 583,
+    "y": 732,
+    "w": 24,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "charm",
+   "mapId": "119",
+   "x": 68,
+   "y": 38,
+   "evId": 24,
+   "evName": "5-Leaf Clover",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "5-LEAF CLOVER"
+   ],
+   "art": {
+    "x": 2188,
+    "y": 1223,
+    "w": 7,
+    "h": 7,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Crow (End)"
+   ]
+  },
+  {
+   "layer": "charm",
+   "mapId": "119",
+   "x": 90,
+   "y": 42,
+   "evId": 25,
+   "evName": "TENTACLE",
+   "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+   "prio": 1,
+   "items": [
+    "HEADBAND"
+   ],
+   "art": {
+    "x": 2880,
+    "y": 1344,
+    "w": 32,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "120",
+   "x": 10,
+   "y": 36,
+   "evId": 7,
+   "evName": "DELIVER2N_2",
+   "sprite": "DW_SPRM_1|2|2|1",
+   "prio": 1,
+   "items": [
+    "LIFE JAM"
+   ],
+   "art": {
+    "x": 326,
+    "y": 1150,
+    "w": 21,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "121",
+   "x": 13,
+   "y": 21,
+   "evId": 5,
+   "evName": "EV005",
+   "sprite": "DW_NPC_24|3|6|1",
+   "prio": 1,
+   "items": [
+    "BUTT PEACH SODA"
+   ],
+   "art": {
+    "x": 416,
+    "y": 670,
+    "w": 31,
+    "h": 22,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "121",
+   "x": 4,
+   "y": 21,
+   "evId": 19,
+   "evName": "EV019",
+   "sprite": "$DW_SPRM_BIG|0|2|1",
+   "prio": 1,
+   "items": [
+    "HOT DOG"
+   ],
+   "art": {
+    "x": 79,
+    "y": 492,
+    "w": 130,
+    "h": 205,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SGL_GreatMole",
+    "SGL_Chimera"
+   ]
+  },
+  {
+   "layer": "telescope",
+   "mapId": "123",
+   "x": 25,
+   "y": 9,
+   "evId": 23,
+   "evName": "Telescope",
+   "sprite": "DW_PuzzleObjects6|3|8|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 807,
+    "y": 282,
+    "w": 20,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "124",
+   "x": 25,
+   "y": 65,
+   "evId": 14,
+   "evName": "TELEPORT",
+   "sprite": "$dw_sg_whaley_burp|0|6|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 725,
+    "y": 2029,
+    "w": 50,
+    "h": 71,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Humphrey_Battle"
+   ]
+  },
+  {
+   "layer": "cooler",
+   "mapId": "124",
+   "x": 20,
+   "y": 46,
+   "evId": 32,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 644,
+    "y": 1466,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "124",
+   "x": 19,
+   "y": 47,
+   "evId": 33,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 614,
+    "y": 1499,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "124",
+   "x": 17,
+   "y": 23,
+   "evId": 72,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "CAN"
+   ],
+   "art": {
+    "x": 556,
+    "y": 743,
+    "w": 7,
+    "h": 7,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mirror",
+   "mapId": "124",
+   "x": 12,
+   "y": 42,
+   "evId": 73,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 389,
+    "y": 1312,
+    "w": 21,
+    "h": 58,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "125",
+   "x": 36,
+   "y": 37,
+   "evId": 5,
+   "evName": "COFFEE_1N2",
+   "sprite": "DW_OT_tvgirl_sit|3|2|1",
+   "prio": 1,
+   "items": [
+    "STRANGE LIST"
+   ],
+   "art": {
+    "x": 1154,
+    "y": 1168,
+    "w": 24,
+    "h": 42,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "125",
+   "x": 11,
+   "y": 37,
+   "evId": 9,
+   "evName": "Duck Father",
+   "sprite": "DW_NPC_OTHERWORLD|1|2|1",
+   "prio": 1,
+   "items": [
+    "DANDELION"
+   ],
+   "art": {
+    "x": 358,
+    "y": 1179,
+    "w": 22,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "125",
+   "x": 36,
+   "y": 13,
+   "evId": 31,
+   "evName": "SMOL",
+   "sprite": "DW_NPC_4|4|2|1",
+   "prio": 1,
+   "items": [
+    "FRIENDSHIP BRACELET"
+   ],
+   "art": {
+    "x": 1155,
+    "y": 413,
+    "w": 25,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "126",
+   "x": 19,
+   "y": 14,
+   "evId": 18,
+   "evName": "BLACKLETTER_E",
+   "letter": "E",
+   "sprite": "DW_OBJECTS_2|7|2|1",
+   "prio": 1,
+   "items": [
+    "Blackletter E"
+   ],
+   "art": {
+    "x": 608,
+    "y": 444,
+    "w": 30,
+    "h": 30,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0DW - Capt. Spaceboy"
+   ],
+   "clue": "\u5728\u6e7f\u6795\u5934\u5e95\u4e0b"
+  },
+  {
+   "layer": "quest",
+   "mapId": "126",
+   "x": 22,
+   "y": 15,
+   "evId": 19,
+   "evName": "PINKBEARD4N2_3",
+   "sprite": "DW_OBJECTS_2|6|2|1",
+   "prio": 1,
+   "items": [
+    "BATTERIES"
+   ],
+   "art": {
+    "x": 710,
+    "y": 488,
+    "w": 18,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "129",
+   "x": 50,
+   "y": 36,
+   "evId": 23,
+   "evName": "LONE MOLE",
+   "sprite": "DW_SPRM_1|1|2|1",
+   "prio": 1,
+   "items": [
+    "DONUT"
+   ],
+   "art": {
+    "x": 1606,
+    "y": 1150,
+    "w": 21,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "131",
+   "x": 12,
+   "y": 9,
+   "evId": 10,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 390,
+    "y": 289,
+    "w": 20,
+    "h": 30,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "131",
+   "x": 20,
+   "y": 22,
+   "evId": 15,
+   "evName": "prize",
+   "sprite": "DW_BREAKTIME_FISHING|0|6|1",
+   "prio": 2,
+   "items": [
+    "TASTY SODA",
+    "TOFU",
+    "LIFE JAM"
+   ],
+   "art": {
+    "x": 659,
+    "y": 688,
+    "w": 1,
+    "h": 31,
+    "artFit": "measured"
+   },
+   "requires": [
+    "Secondary_Camera_View",
+    "Break_Time_Fishing \u2265 2"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "131",
+   "x": 23,
+   "y": 9,
+   "evId": 28,
+   "evName": "",
+   "sprite": "DW_SBF_BED|3|2|2",
+   "prio": 1,
+   "items": [
+    "SNO-CONE"
+   ],
+   "art": {
+    "x": 720,
+    "y": 256,
+    "w": 58,
+    "h": 61,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "131",
+   "x": 13,
+   "y": 8,
+   "evId": 34,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 420,
+    "y": 256,
+    "w": 27,
+    "h": 32,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "132",
+   "x": 31,
+   "y": 9,
+   "evId": 7,
+   "evName": "Trap Door",
+   "sprite": "DW_TrapDoor|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 997,
+    "y": 285,
+    "w": 22,
+    "h": 22,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "132",
+   "x": 29,
+   "y": 29,
+   "evId": 10,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 932,
+    "y": 935,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "132",
+   "x": 30,
+   "y": 28,
+   "evId": 11,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 964,
+    "y": 903,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "132",
+   "x": 28,
+   "y": 30,
+   "evId": 12,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 900,
+    "y": 967,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "132",
+   "x": 32,
+   "y": 28,
+   "evId": 13,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1028,
+    "y": 903,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "132",
+   "x": 33,
+   "y": 29,
+   "evId": 14,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1060,
+    "y": 935,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "132",
+   "x": 34,
+   "y": 30,
+   "evId": 15,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1092,
+    "y": 967,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "133",
+   "x": 8,
+   "y": 14,
+   "evId": 4,
+   "evName": "CLAM SNOWFLAKE",
+   "sprite": "DW_PuzzleObjects4|5|4|1",
+   "prio": 1,
+   "items": [
+    "5 CLAMS"
+   ],
+   "art": {
+    "x": 258,
+    "y": 452,
+    "w": 30,
+    "h": 27,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "135",
+   "x": 38,
+   "y": 4,
+   "evId": 12,
+   "evName": "",
+   "sprite": "DW_SBF_BED|3|2|2",
+   "prio": 1,
+   "items": [
+    "SNO-CONE"
+   ],
+   "art": {
+    "x": 1200,
+    "y": 96,
+    "w": 58,
+    "h": 61,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "135",
+   "x": 37,
+   "y": 4,
+   "evId": 29,
+   "evName": "CLAM SNOWFLAKE",
+   "sprite": "DW_PuzzleObjects4|5|4|1",
+   "prio": 1,
+   "items": [
+    "5 CLAMS"
+   ],
+   "art": {
+    "x": 1186,
+    "y": 126,
+    "w": 30,
+    "h": 27,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "136",
+   "x": 25,
+   "y": 10,
+   "evId": 7,
+   "evName": "CLAM SNOWFLAKE",
+   "sprite": "DW_PuzzleObjects4|5|4|1",
+   "prio": 1,
+   "items": [
+    "5 CLAMS"
+   ],
+   "art": {
+    "x": 802,
+    "y": 324,
+    "w": 30,
+    "h": 27,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "137",
+   "x": 12,
+   "y": 16,
+   "evId": 8,
+   "evName": "CLAM SNOWFLAKE",
+   "sprite": "DW_PuzzleObjects4|5|4|1",
+   "prio": 1,
+   "items": [
+    "5 CLAMS"
+   ],
+   "art": {
+    "x": 386,
+    "y": 516,
+    "w": 30,
+    "h": 27,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "137",
+   "x": 28,
+   "y": 22,
+   "evId": 9,
+   "evName": "CLAM SNOWFLAKE",
+   "sprite": "DW_PuzzleObjects4|5|4|1",
+   "prio": 1,
+   "items": [
+    "5 CLAMS"
+   ],
+   "art": {
+    "x": 898,
+    "y": 708,
+    "w": 30,
+    "h": 27,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "139",
+   "x": 9,
+   "y": 31,
+   "evId": 12,
+   "evName": "CLAM SNOWFLAKE",
+   "sprite": "DW_PuzzleObjects4|5|4|1",
+   "prio": 1,
+   "items": [
+    "5 CLAMS"
+   ],
+   "art": {
+    "x": 290,
+    "y": 996,
+    "w": 30,
+    "h": 27,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "charm",
+   "mapId": "140",
+   "x": 29,
+   "y": 55,
+   "evId": 3,
+   "evName": "TENTACLE",
+   "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+   "prio": 1,
+   "items": [
+    "PRETTY BOW"
+   ],
+   "art": {
+    "x": 928,
+    "y": 1760,
+    "w": 32,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mirror",
+   "mapId": "140",
+   "x": 5,
+   "y": 12,
+   "evId": 12,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 165,
+    "y": 358,
+    "w": 21,
+    "h": 58,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "telescope",
+   "mapId": "140",
+   "x": 29,
+   "y": 6,
+   "evId": 21,
+   "evName": "Telescope",
+   "sprite": "DW_PuzzleObjects6|3|8|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 935,
+    "y": 192,
+    "w": 20,
+    "h": 32,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "140",
+   "x": 14,
+   "y": 40,
+   "evId": 23,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 452,
+    "y": 1280,
+    "w": 27,
+    "h": 32,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "140",
+   "x": 13,
+   "y": 41,
+   "evId": 24,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 422,
+    "y": 1313,
+    "w": 20,
+    "h": 30,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "143",
+   "x": 32,
+   "y": 24,
+   "evId": 8,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "THINGAMABOB"
+   ],
+   "art": {
+    "x": 1036,
+    "y": 775,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   },
+   "requires": [
+    "Q- Coffee Machine (Start)"
+   ]
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "143",
+   "x": 9,
+   "y": 11,
+   "evId": 12,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "GLASS BOTTLE"
+   ],
+   "art": {
+    "x": 300,
+    "y": 359,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "143",
+   "x": 21,
+   "y": 11,
+   "evId": 18,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "CARDBOARD"
+   ],
+   "art": {
+    "x": 684,
+    "y": 359,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "144",
+   "x": 19,
+   "y": 20,
+   "evId": 107,
+   "evName": "CYANKEY",
+   "sprite": "DW_IMPORTANTOBJ|4|2|1",
+   "prio": 1,
+   "items": [
+    "JUNKYARD KEY"
+   ],
+   "art": {
+    "x": 618,
+    "y": 642,
+    "w": 11,
+    "h": 20,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "144",
+   "x": 10,
+   "y": 18,
+   "evId": 112,
+   "evName": "SPARKLE - FLOWER PUZZLE",
+   "sprite": "DW_IMPORTANTOBJ_2|0|2|0",
+   "prio": 1,
+   "items": [
+    "FLOWER PUZZLE"
+   ],
+   "art": {
+    "x": 327,
+    "y": 576,
+    "w": 22,
+    "h": 22,
+    "artFit": "measured"
+   },
+   "requires": [
+    "Q- Flower Puzzle (Start)"
+   ]
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "144",
+   "x": 3,
+   "y": 24,
+   "evId": 116,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "GLASS BOTTLE"
+   ],
+   "art": {
+    "x": 108,
+    "y": 775,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "144",
+   "x": 10,
+   "y": 30,
+   "evId": 121,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "CAN"
+   ],
+   "art": {
+    "x": 332,
+    "y": 967,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "145",
+   "x": 14,
+   "y": 37,
+   "evId": 19,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "CAN"
+   ],
+   "art": {
+    "x": 460,
+    "y": 1191,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "145",
+   "x": 15,
+   "y": 43,
+   "evId": 23,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 486,
+    "y": 1371,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "145",
+   "x": 26,
+   "y": 9,
+   "evId": 25,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "BUBBLE WRAP"
+   ],
+   "art": {
+    "x": 844,
+    "y": 295,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "145",
+   "x": 24,
+   "y": 25,
+   "evId": 26,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "DEAD BATTERIES"
+   ],
+   "art": {
+    "x": 780,
+    "y": 807,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "145",
+   "x": 3,
+   "y": 23,
+   "evId": 27,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "COMPUTER PART"
+   ],
+   "art": {
+    "x": 108,
+    "y": 743,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "145",
+   "x": 9,
+   "y": 11,
+   "evId": 28,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "GLASS BOTTLE"
+   ],
+   "art": {
+    "x": 300,
+    "y": 359,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "145",
+   "x": 16,
+   "y": 42,
+   "evId": 31,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 516,
+    "y": 1338,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "147",
+   "x": 18,
+   "y": 48,
+   "evId": 5,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "CAN"
+   ],
+   "art": {
+    "x": 588,
+    "y": 1543,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "147",
+   "x": 7,
+   "y": 50,
+   "evId": 17,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "DOOHICKEY"
+   ],
+   "art": {
+    "x": 236,
+    "y": 1607,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   },
+   "requires": [
+    "Q- Coffee Machine (Start)"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "149",
+   "x": 16,
+   "y": 18,
+   "evId": 56,
+   "evName": "CHEESE",
+   "sprite": "$objects_dw_cheese|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 481,
+    "y": 542,
+    "w": 93,
+    "h": 55,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "150",
+   "x": 6,
+   "y": 21,
+   "evId": 8,
+   "evName": "Smash",
+   "sprite": "!TAG_AUBREY_HAMMER|4|2|0",
+   "prio": 2,
+   "items": [],
+   "art": {
+    "x": 184,
+    "y": 641,
+    "w": 49,
+    "h": 62,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "150",
+   "x": 10,
+   "y": 23,
+   "evId": 11,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "COMPUTER PART"
+   ],
+   "art": {
+    "x": 332,
+    "y": 743,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "150",
+   "x": 20,
+   "y": 25,
+   "evId": 15,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "WHATCHAMACALLIT"
+   ],
+   "art": {
+    "x": 652,
+    "y": 807,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   },
+   "requires": [
+    "Q- Coffee Machine (Start)"
+   ]
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "150",
+   "x": 17,
+   "y": 3,
+   "evId": 16,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "CAN"
+   ],
+   "art": {
+    "x": 556,
+    "y": 103,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "150",
+   "x": 12,
+   "y": 26,
+   "evId": 20,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 390,
+    "y": 827,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "150",
+   "x": 23,
+   "y": 14,
+   "evId": 24,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "TV REMOTE"
+   ],
+   "art": {
+    "x": 748,
+    "y": 455,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "155",
+   "x": 12,
+   "y": 16,
+   "evId": 4,
+   "evName": "Candle",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 390,
+    "y": 503,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "155",
+   "x": 6,
+   "y": 5,
+   "evId": 6,
+   "evName": "MINE TRACK",
+   "sprite": "objects_pf_minecart|2|6|2",
+   "prio": 1,
+   "items": [
+    "WOODEN TRACK"
+   ],
+   "art": {
+    "x": 192,
+    "y": 159,
+    "w": 32,
+    "h": 19,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "155",
+   "x": 1,
+   "y": 14,
+   "evId": 7,
+   "evName": "DEMONBOY2N",
+   "sprite": "DW_NPC_8|0|8|1",
+   "prio": 1,
+   "items": [
+    "DEEP POETRY BOOK"
+   ],
+   "art": {
+    "x": 38,
+    "y": 444,
+    "w": 20,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "156",
+   "x": 18,
+   "y": 5,
+   "evId": 9,
+   "evName": "MATCHBOX - ITEM",
+   "sprite": "DW_PuzzleObjects6|2|8|1",
+   "prio": 1,
+   "items": [
+    "MATCHBOX"
+   ],
+   "art": {
+    "x": 585,
+    "y": 164,
+    "w": 15,
+    "h": 14,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "157",
+   "x": 15,
+   "y": 19,
+   "evId": 2,
+   "evName": "MINE TRACK",
+   "sprite": "objects_pf_minecart|2|6|2",
+   "prio": 1,
+   "items": [
+    "WOODEN TRACK"
+   ],
+   "art": {
+    "x": 480,
+    "y": 607,
+    "w": 32,
+    "h": 19,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "157",
+   "x": 22,
+   "y": 4,
+   "evId": 3,
+   "evName": "CANDLIE",
+   "sprite": "DW_NPC_7|7|2|1",
+   "prio": 1,
+   "items": [
+    "RUBBER DUCK"
+   ],
+   "art": {
+    "x": 709,
+    "y": 128,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "157",
+   "x": 15,
+   "y": 3,
+   "evId": 4,
+   "evName": "Candle",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 486,
+    "y": 87,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mirror",
+   "mapId": "158",
+   "x": 5,
+   "y": 9,
+   "evId": 14,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 165,
+    "y": 256,
+    "w": 21,
+    "h": 58,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "158",
+   "x": 19,
+   "y": 13,
+   "evId": 17,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 612,
+    "y": 410,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "158",
+   "x": 18,
+   "y": 14,
+   "evId": 18,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 582,
+    "y": 443,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "159",
+   "x": 12,
+   "y": 5,
+   "evId": 2,
+   "evName": "MINE TRACK",
+   "sprite": "objects_pf_minecart|2|6|2",
+   "prio": 1,
+   "items": [
+    "WOODEN TRACK"
+   ],
+   "art": {
+    "x": 384,
+    "y": 159,
+    "w": 32,
+    "h": 19,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "159",
+   "x": 12,
+   "y": 21,
+   "evId": 4,
+   "evName": "Candle",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 390,
+    "y": 663,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 44,
+   "y": 4,
+   "evId": 10,
+   "evName": "Candle1",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1414,
+    "y": 119,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 42,
+   "y": 24,
+   "evId": 11,
+   "evName": "Candle2",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1350,
+    "y": 759,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 22,
+   "y": 26,
+   "evId": 12,
+   "evName": "Candle3",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 710,
+    "y": 823,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 22,
+   "y": 40,
+   "evId": 13,
+   "evName": "Candle4",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 710,
+    "y": 1271,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 45,
+   "y": 28,
+   "evId": 14,
+   "evName": "Candle5",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1446,
+    "y": 887,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 40,
+   "y": 43,
+   "evId": 15,
+   "evName": "Candle6",
+   "sprite": "DW_PuzzleObjects5|2|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1286,
+    "y": 1367,
+    "w": 21,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 41,
+   "y": 8,
+   "evId": 16,
+   "evName": "spidercat1",
+   "sprite": "DW_OBJECTS_WSNB|2|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1313,
+    "y": 263,
+    "w": 26,
+    "h": 16,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 46,
+   "y": 23,
+   "evId": 17,
+   "evName": "spidercat2",
+   "sprite": "DW_OBJECTS_WSNB|2|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1473,
+    "y": 743,
+    "w": 26,
+    "h": 16,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 29,
+   "y": 29,
+   "evId": 18,
+   "evName": "spidercat3",
+   "sprite": "DW_OBJECTS_WSNB|2|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 929,
+    "y": 935,
+    "w": 26,
+    "h": 16,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 23,
+   "y": 42,
+   "evId": 19,
+   "evName": "spidercat4",
+   "sprite": "DW_OBJECTS_WSNB|2|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 737,
+    "y": 1351,
+    "w": 26,
+    "h": 16,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 39,
+   "y": 29,
+   "evId": 20,
+   "evName": "spidercat5",
+   "sprite": "DW_OBJECTS_WSNB|2|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1249,
+    "y": 935,
+    "w": 26,
+    "h": 16,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "161",
+   "x": 41,
+   "y": 46,
+   "evId": 21,
+   "evName": "spidercat6",
+   "sprite": "DW_OBJECTS_WSNB|2|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1313,
+    "y": 1479,
+    "w": 26,
+    "h": 16,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "163",
+   "x": 12,
+   "y": 10,
+   "evId": 2,
+   "evName": "BLACKLETTER_H",
+   "letter": "H",
+   "sprite": "$DW_PF_FIRE|0|2|1",
+   "prio": 0,
+   "items": [
+    "Blackletter H"
+   ],
+   "art": {
+    "x": 360,
+    "y": 263,
+    "w": 85,
+    "h": 89,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u8ff7\u5931\u7684\u711a\u706b\u4e2d"
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "164",
+   "x": 12,
+   "y": 60,
+   "evId": 12,
+   "evName": "MINE CART",
+   "sprite": "objects_pf_minecart|7|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 388,
+    "y": 1916,
+    "w": 24,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "PF_Cart_Destination"
+   ]
+  },
+  {
+   "layer": "cooler",
+   "mapId": "164",
+   "x": 46,
+   "y": 59,
+   "evId": 14,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1476,
+    "y": 1882,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "164",
+   "x": 45,
+   "y": 60,
+   "evId": 15,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1446,
+    "y": 1915,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "165",
+   "x": 25,
+   "y": 24,
+   "evId": 6,
+   "evName": "BANDITOMOLE3N",
+   "sprite": "$dw_sm_bandito_mole|0|8|1",
+   "prio": 1,
+   "items": [
+    "BLACKMAIL"
+   ],
+   "art": {
+    "x": 804,
+    "y": 766,
+    "w": 23,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "165",
+   "x": 23,
+   "y": 15,
+   "evId": 12,
+   "evName": "DELIVER2N_1",
+   "sprite": "DW_SPRM_1|2|2|1",
+   "prio": 1,
+   "items": [
+    "CARE PACKAGE"
+   ],
+   "art": {
+    "x": 742,
+    "y": 478,
+    "w": 21,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "165",
+   "x": 16,
+   "y": 24,
+   "evId": 13,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [
+    "TOFU"
+   ],
+   "art": {
+    "x": 518,
+    "y": 763,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "165",
+   "x": 7,
+   "y": 13,
+   "evId": 18,
+   "evName": "PESSI",
+   "sprite": "$DW_Pessi|0|4|1",
+   "prio": 1,
+   "items": [
+    "SWEETHEART BUST"
+   ],
+   "art": {
+    "x": 229,
+    "y": 409,
+    "w": 24,
+    "h": 33,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day1DW - SW Wedding"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "166",
+   "x": 26,
+   "y": 17,
+   "evId": 3,
+   "evName": "BOX MOLE",
+   "sprite": "DW_SPRM_2|7|2|1",
+   "prio": 1,
+   "items": [
+    "SNO-CONE"
+   ],
+   "art": {
+    "x": 838,
+    "y": 541,
+    "w": 21,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "166",
+   "x": 33,
+   "y": 9,
+   "evId": 4,
+   "evName": "SPORTYMOLE3N",
+   "sprite": "DW_SPRM_1|3|6|1",
+   "prio": 1,
+   "items": [
+    "BIG AIRHORN"
+   ],
+   "art": {
+    "x": 1065,
+    "y": 283,
+    "w": 14,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "166",
+   "x": 6,
+   "y": 9,
+   "evId": 28,
+   "evName": "SPRINGMOLE_1",
+   "sprite": "DW_SPRM_4|6|2|1",
+   "prio": 1,
+   "items": [
+    "WATERING PAIL"
+   ],
+   "art": {
+    "x": 198,
+    "y": 281,
+    "w": 21,
+    "h": 33,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "166",
+   "x": 7,
+   "y": 9,
+   "evId": 33,
+   "evName": "SUMMERMOLE_1",
+   "sprite": "DW_SPRM_4|0|2|1",
+   "prio": 1,
+   "items": [
+    "SUNSCREEN"
+   ],
+   "art": {
+    "x": 230,
+    "y": 279,
+    "w": 21,
+    "h": 35,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "166",
+   "x": 9,
+   "y": 9,
+   "evId": 34,
+   "evName": "WINTERMOLE_1",
+   "sprite": "DW_SPRM_1|7|2|1",
+   "prio": 1,
+   "items": [
+    "SCARF"
+   ],
+   "art": {
+    "x": 296,
+    "y": 289,
+    "w": 16,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "166",
+   "x": 8,
+   "y": 9,
+   "evId": 35,
+   "evName": "FALLMOLE_1",
+   "sprite": "DW_SPRM_1|6|2|1",
+   "prio": 1,
+   "items": [
+    "RAKE"
+   ],
+   "art": {
+    "x": 262,
+    "y": 286,
+    "w": 18,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mirror",
+   "mapId": "166",
+   "x": 3,
+   "y": 33,
+   "evId": 36,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR_SM|0|2|0",
+   "prio": 0,
+   "items": [],
+   "art": {
+    "x": 101,
+    "y": 1030,
+    "w": 21,
+    "h": 45,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "166",
+   "x": 13,
+   "y": 21,
+   "evId": 48,
+   "evName": "ROSA",
+   "sprite": "DW_SM_ROSA|0|2|1",
+   "prio": 1,
+   "items": [
+    "PESSI'S THING"
+   ],
+   "art": {
+    "x": 424,
+    "y": 670,
+    "w": 17,
+    "h": 28,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2DW - Swim"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "166",
+   "x": 25,
+   "y": 18,
+   "evId": 50,
+   "evName": "Tree",
+   "sprite": "[SF]Christmas_Tree|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 787,
+    "y": 533,
+    "w": 58,
+    "h": 69,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "167",
+   "x": 12,
+   "y": 13,
+   "evId": 10,
+   "evName": "Tofu Jash",
+   "sprite": "DW_ASH_1|1|2|1",
+   "prio": 1,
+   "items": [
+    "SALES TAG"
+   ],
+   "art": {
+    "x": 389,
+    "y": 409,
+    "w": 22,
+    "h": 33,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "168",
+   "x": 18,
+   "y": 24,
+   "evId": 4,
+   "evName": "Popcorn Girl",
+   "sprite": "$popcorngirl|0|2|1",
+   "prio": 1,
+   "items": [
+    "POPCORN"
+   ],
+   "art": {
+    "x": 582,
+    "y": 763,
+    "w": 20,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 25,
+   "y": 36,
+   "evId": 6,
+   "evName": "Statue",
+   "sprite": "$OBJ_Sw_Sculpture|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 789,
+    "y": 1089,
+    "w": 56,
+    "h": 86,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 10,
+   "y": 14,
+   "evId": 7,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "SW_Laser \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 42,
+   "y": 23,
+   "evId": 8,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "SW_Laser \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 8,
+   "y": 27,
+   "evId": 9,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "SW_Laser \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 40,
+   "y": 32,
+   "evId": 10,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "SW_Laser \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 6,
+   "y": 43,
+   "evId": 11,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "SW_Laser \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 9,
+   "y": 50,
+   "evId": 12,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "SW_Laser \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 44,
+   "y": 45,
+   "evId": 13,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "SW_Laser \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 39,
+   "y": 54,
+   "evId": 14,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "SW_Laser \u2265 1"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 7,
+   "y": 0,
+   "evId": 37,
+   "evName": "KEL TAG NORMAL",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "169",
+   "x": 8,
+   "y": 0,
+   "evId": 81,
+   "evName": "KEL TAG DOUBLE",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "172",
+   "x": 36,
+   "y": 33,
+   "evId": 85,
+   "evName": "Fountain",
+   "sprite": "DW_IMPORTANTOBJ|7|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1158,
+    "y": 1058,
+    "w": 21,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "175",
+   "x": 23,
+   "y": 12,
+   "evId": 8,
+   "evName": "BLACKLETTER_K",
+   "letter": "K",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|1|4|1",
+   "prio": 2,
+   "items": [
+    "Blackletter K"
+   ],
+   "art": {
+    "x": 736,
+    "y": 378,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u6846\u7740\u9762\u5bb9\u7684\u753b\u5eca\u4e2d"
+  },
+  {
+   "layer": "giver",
+   "mapId": "175",
+   "x": 12,
+   "y": 15,
+   "evId": 32,
+   "evName": "EV032",
+   "sprite": "DW_NPC_25|1|2|1",
+   "prio": 1,
+   "items": [
+    "MANGO SMOOTHIE"
+   ],
+   "art": {
+    "x": 386,
+    "y": 475,
+    "w": 28,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "175",
+   "x": 17,
+   "y": 33,
+   "evId": 36,
+   "evName": "EV036",
+   "sprite": "DW_SPRM_2|2|2|1",
+   "prio": 1,
+   "items": [
+    "TOFU"
+   ],
+   "art": {
+    "x": 548,
+    "y": 1054,
+    "w": 24,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "175",
+   "x": 19,
+   "y": 33,
+   "evId": 51,
+   "evName": "EV051",
+   "sprite": "DW_SPRM_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TOFU"
+   ],
+   "art": {
+    "x": 616,
+    "y": 1054,
+    "w": 17,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "176",
+   "x": 6,
+   "y": 6,
+   "evId": 62,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_OBJECTS_2|7|8|1",
+   "prio": 1,
+   "items": [
+    "BOOK"
+   ],
+   "art": {
+    "x": 198,
+    "y": 191,
+    "w": 21,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "176",
+   "x": 19,
+   "y": 34,
+   "evId": 63,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_OBJECTS_2|7|8|1",
+   "prio": 1,
+   "items": [
+    "POETRY BOOK"
+   ],
+   "art": {
+    "x": 614,
+    "y": 1087,
+    "w": 21,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "176",
+   "x": 21,
+   "y": 19,
+   "evId": 71,
+   "evName": "DEMONBOY2N_2",
+   "sprite": "DW_OBJECTS_2|7|8|1",
+   "prio": 1,
+   "items": [
+    "INTERESTING BOOK"
+   ],
+   "art": {
+    "x": 678,
+    "y": 607,
+    "w": 21,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 21,
+   "y": 12,
+   "evId": 10,
+   "evName": "EGG",
+   "sprite": "OBJ_SW_OBJ|1|6|0",
+   "prio": 1,
+   "items": [
+    "EGG"
+   ],
+   "art": {
+    "x": 679,
+    "y": 386,
+    "w": 18,
+    "h": 16,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 9,
+   "y": 12,
+   "evId": 12,
+   "evName": "FLOUR",
+   "sprite": "OBJ_SW_OBJ|0|2|0",
+   "prio": 1,
+   "items": [
+    "ALL-PURPOSE FLOUR"
+   ],
+   "art": {
+    "x": 290,
+    "y": 387,
+    "w": 25,
+    "h": 20,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 8,
+   "y": 12,
+   "evId": 13,
+   "evName": "SUGAR",
+   "sprite": "OBJ_SW_OBJ|4|2|1",
+   "prio": 1,
+   "items": [
+    "SUGAR"
+   ],
+   "art": {
+    "x": 258,
+    "y": 392,
+    "w": 25,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 8,
+   "y": 14,
+   "evId": 15,
+   "evName": "STRAWBERRY",
+   "sprite": "OBJ_SW_OBJ|2|2|1",
+   "prio": 1,
+   "items": [
+    "STRAWBERRIES"
+   ],
+   "art": {
+    "x": 258,
+    "y": 456,
+    "w": 28,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 21,
+   "y": 10,
+   "evId": 17,
+   "evName": "BUTTER",
+   "sprite": "OBJ_SW_OBJ|2|4|2",
+   "prio": 1,
+   "items": [
+    "STICK OF BUTTER"
+   ],
+   "art": {
+    "x": 676,
+    "y": 329,
+    "w": 24,
+    "h": 14,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 23,
+   "y": 12,
+   "evId": 18,
+   "evName": "ROAST CHICKEN",
+   "sprite": "OBJ_SW_OBJ|0|6|0",
+   "prio": 1,
+   "items": [
+    "ROAST CHICKEN"
+   ],
+   "art": {
+    "x": 737,
+    "y": 380,
+    "w": 30,
+    "h": 27,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 22,
+   "y": 10,
+   "evId": 19,
+   "evName": "PICKLE",
+   "sprite": "OBJ_SW_OBJ|0|6|1",
+   "prio": 1,
+   "items": [
+    "JAR OF PICKLES"
+   ],
+   "art": {
+    "x": 714,
+    "y": 322,
+    "w": 13,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 10,
+   "y": 14,
+   "evId": 20,
+   "evName": "FRUIT JUICE",
+   "sprite": "OBJ_SW_OBJ|0|6|2",
+   "prio": 1,
+   "items": [
+    "BOTTLES OF FRUIT JUICE"
+   ],
+   "art": {
+    "x": 325,
+    "y": 446,
+    "w": 21,
+    "h": 20,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 23,
+   "y": 10,
+   "evId": 21,
+   "evName": "FISH",
+   "sprite": "OBJ_SW_OBJ|0|8|0",
+   "prio": 1,
+   "items": [
+    "BLUE FISH"
+   ],
+   "art": {
+    "x": 739,
+    "y": 322,
+    "w": 26,
+    "h": 16,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 22,
+   "y": 12,
+   "evId": 22,
+   "evName": "SHOE",
+   "sprite": "OBJ_SW_OBJ|0|8|1",
+   "prio": 1,
+   "items": [
+    "LEATHER SHOE"
+   ],
+   "art": {
+    "x": 713,
+    "y": 387,
+    "w": 14,
+    "h": 14,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 10,
+   "y": 12,
+   "evId": 27,
+   "evName": "GARDEN SOIL",
+   "sprite": "OBJ_SW_OBJ|1|6|2",
+   "prio": 1,
+   "items": [
+    "GARDEN SOIL"
+   ],
+   "art": {
+    "x": 324,
+    "y": 387,
+    "w": 25,
+    "h": 20,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "179",
+   "x": 9,
+   "y": 14,
+   "evId": 28,
+   "evName": "PINEBERRIES",
+   "sprite": "OBJ_SW_OBJ|2|4|0",
+   "prio": 1,
+   "items": [
+    "PINEBERRIES"
+   ],
+   "art": {
+    "x": 290,
+    "y": 456,
+    "w": 28,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "179",
+   "x": 15,
+   "y": 6,
+   "evId": 42,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|7|8|1",
+   "prio": 1,
+   "items": [
+    "FRYING PAN"
+   ],
+   "art": {
+    "x": 485,
+    "y": 195,
+    "w": 22,
+    "h": 20,
+    "artFit": "rule"
+   },
+   "requires": [
+    "YOU DONE BAKE"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "180",
+   "x": 2,
+   "y": 8,
+   "evId": 4,
+   "evName": "aubreyPots",
+   "sprite": "DW_PuzzleObjects6|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 68,
+    "y": 256,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "180",
+   "x": 3,
+   "y": 8,
+   "evId": 5,
+   "evName": "aubreyPots",
+   "sprite": "DW_PuzzleObjects6|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 100,
+    "y": 256,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "180",
+   "x": 6,
+   "y": 7,
+   "evId": 6,
+   "evName": "aubreyPots",
+   "sprite": "DW_PuzzleObjects6|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 196,
+    "y": 224,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "180",
+   "x": 3,
+   "y": 7,
+   "evId": 20,
+   "evName": "aubreyPots",
+   "sprite": "DW_PuzzleObjects6|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 100,
+    "y": 224,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "180",
+   "x": 5,
+   "y": 7,
+   "evId": 21,
+   "evName": "aubreyPots",
+   "sprite": "DW_PuzzleObjects6|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 164,
+    "y": 224,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "180",
+   "x": 6,
+   "y": 6,
+   "evId": 22,
+   "evName": "aubreyPots",
+   "sprite": "DW_PuzzleObjects6|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 196,
+    "y": 192,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "180",
+   "x": 5,
+   "y": 8,
+   "evId": 23,
+   "evName": "aubreyPots",
+   "sprite": "DW_PuzzleObjects6|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 164,
+    "y": 256,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "180",
+   "x": 6,
+   "y": 8,
+   "evId": 24,
+   "evName": "aubreyPots",
+   "sprite": "DW_PuzzleObjects6|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 196,
+    "y": 256,
+    "w": 23,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "180",
+   "x": 16,
+   "y": 7,
+   "evId": 26,
+   "evName": "BLACKLETTER_J",
+   "letter": "J",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|3|2|1",
+   "prio": 2,
+   "items": [
+    "Blackletter J"
+   ],
+   "art": {
+    "x": 512,
+    "y": 218,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "clue": "\u56f0\u5728\u7c89\u8272\u7684\u7b3c\u5b50\u4e2d"
+  },
+  {
+   "layer": "mirror",
+   "mapId": "180",
+   "x": 27,
+   "y": 21,
+   "evId": 29,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 869,
+    "y": 640,
+    "w": 21,
+    "h": 58,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day1DW - SW Wedding"
+   ]
+  },
+  {
+   "layer": "picnic",
+   "mapId": "180",
+   "x": 12,
+   "y": 22,
+   "evId": 33,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 390,
+    "y": 699,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "180",
+   "x": 3,
+   "y": 14,
+   "evId": 36,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|7|8|1",
+   "prio": 1,
+   "items": [
+    "BOW-TIE"
+   ],
+   "art": {
+    "x": 101,
+    "y": 451,
+    "w": 22,
+    "h": 20,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "182",
+   "x": 32,
+   "y": 23,
+   "evId": 47,
+   "evName": "BLACKLETTER_I",
+   "letter": "I",
+   "items": [],
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u8eba\u5728\u9ed1\u6697\u7684\u5730\u7262\u4e2d"
+  },
+  {
+   "layer": "telescope",
+   "mapId": "182",
+   "x": 40,
+   "y": 5,
+   "evId": 80,
+   "evName": "Telescope",
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "182",
+   "x": 23,
+   "y": 8,
+   "evId": 81,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "telescope",
+   "mapId": "182",
+   "x": 37,
+   "y": 5,
+   "evId": 93,
+   "evName": "Telescope",
+   "items": []
+  },
+  {
+   "layer": "telescope",
+   "mapId": "182",
+   "x": 41,
+   "y": 5,
+   "evId": 94,
+   "evName": "Telescope",
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "183",
+   "x": 7,
+   "y": 8,
+   "evId": 12,
+   "evName": "KEL TAG A (12)",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "183",
+   "x": 28,
+   "y": 24,
+   "evId": 32,
+   "evName": "KEL TAG B (32)",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "183",
+   "x": 6,
+   "y": 31,
+   "evId": 36,
+   "evName": "Switch C (36)",
+   "sprite": "DW_PuzzleObjects4|1|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 194,
+    "y": 987,
+    "w": 30,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "183",
+   "x": 15,
+   "y": 27,
+   "evId": 51,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 484,
+    "y": 858,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "183",
+   "x": 14,
+   "y": 28,
+   "evId": 52,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 454,
+    "y": 891,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "184",
+   "x": 3,
+   "y": 15,
+   "evId": 17,
+   "evName": "TENTACLE",
+   "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+   "prio": 1,
+   "items": [
+    "RED KNIFE"
+   ],
+   "art": {
+    "x": 96,
+    "y": 480,
+    "w": 32,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "185",
+   "x": 31,
+   "y": 32,
+   "evId": 22,
+   "evName": "LOSTRAREBEAR_2",
+   "sprite": "[SF]Teddy|0|2|1",
+   "prio": 1,
+   "items": [
+    "TEDDY BEAR"
+   ],
+   "art": {
+    "x": 994,
+    "y": 1008,
+    "w": 30,
+    "h": 42,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "186",
+   "x": 17,
+   "y": 19,
+   "evId": 2,
+   "evName": "sbfStatue",
+   "sprite": "$objects_spbf_statue|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 535,
+    "y": 544,
+    "w": 52,
+    "h": 82,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "186",
+   "x": 13,
+   "y": 14,
+   "evId": 10,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|7|2|1",
+   "prio": 1,
+   "items": [
+    "BODY PILLOW"
+   ],
+   "art": {
+    "x": 422,
+    "y": 450,
+    "w": 21,
+    "h": 21,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "187",
+   "x": 26,
+   "y": 83,
+   "evId": 1,
+   "evName": "BLACKLETTER_L",
+   "letter": "L",
+   "sprite": "DW_BLACKLETTERS|0|8|0",
+   "prio": 1,
+   "items": [
+    "Blackletter L"
+   ],
+   "art": {
+    "x": 833,
+    "y": 2650,
+    "w": 29,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u5927\u821e\u53f0\u7684\u4e0b\u65b9\u6df1\u5904"
+  },
+  {
+   "layer": "hangman",
+   "mapId": "189",
+   "x": 9,
+   "y": 116,
+   "evId": 10,
+   "evName": "BLACKLETTER_M",
+   "letter": "M",
+   "items": [],
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u4e0e\u9752\u86d9\u5171\u5ea6\u65f6\u5149"
+  },
+  {
+   "layer": "cooler",
+   "mapId": "191",
+   "x": 7,
+   "y": 22,
+   "evId": 19,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 228,
+    "y": 698,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "191",
+   "x": 6,
+   "y": 23,
+   "evId": 20,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 198,
+    "y": 731,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "191",
+   "x": 16,
+   "y": 50,
+   "evId": 44,
+   "evName": "SHADYMOLE",
+   "sprite": "$dw_sm_bandito_mole|0|2|1",
+   "prio": 1,
+   "items": [
+    "CLEMS"
+   ],
+   "art": {
+    "x": 518,
+    "y": 1598,
+    "w": 22,
+    "h": 28,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Shady Mole",
+    "Day2DW - JawsumReq"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "191",
+   "x": 11,
+   "y": 50,
+   "evId": 45,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 357,
+    "y": 1604,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "191",
+   "x": 19,
+   "y": 33,
+   "evId": 46,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 613,
+    "y": 1060,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "191",
+   "x": 30,
+   "y": 25,
+   "evId": 47,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 965,
+    "y": 804,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "191",
+   "x": 2,
+   "y": 14,
+   "evId": 48,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 69,
+    "y": 452,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "191",
+   "x": 24,
+   "y": 15,
+   "evId": 49,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 773,
+    "y": 484,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "191",
+   "x": 20,
+   "y": 40,
+   "evId": 50,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 645,
+    "y": 1284,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "191",
+   "x": 13,
+   "y": 41,
+   "evId": 68,
+   "evName": "Slime",
+   "sprite": "DW_NPC_13|4|2|1",
+   "prio": 1,
+   "items": [
+    "PEACH SODA"
+   ],
+   "art": {
+    "x": 421,
+    "y": 1287,
+    "w": 20,
+    "h": 48,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "191",
+   "x": 19,
+   "y": 29,
+   "evId": 71,
+   "evName": "Slime",
+   "sprite": "DW_NPC_13|4|2|1",
+   "prio": 1,
+   "items": [
+    "DYNAMITE"
+   ],
+   "art": {
+    "x": 613,
+    "y": 903,
+    "w": 20,
+    "h": 48,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "191",
+   "x": 13,
+   "y": 49,
+   "evId": 72,
+   "evName": "Slime",
+   "sprite": "DW_NPC_13|4|2|1",
+   "prio": 1,
+   "items": [
+    "ROTTEN MILK"
+   ],
+   "art": {
+    "x": 421,
+    "y": 1543,
+    "w": 20,
+    "h": 48,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "192",
+   "x": 57,
+   "y": 11,
+   "evId": 20,
+   "evName": "DAISY 2",
+   "sprite": "DW_NPC_PLAYGROUND|4|8|1",
+   "prio": 1,
+   "items": [
+    "DAISY"
+   ],
+   "art": {
+    "x": 1831,
+    "y": 349,
+    "w": 18,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "193",
+   "x": 37,
+   "y": 52,
+   "evId": 7,
+   "evName": "BLACKLETTER_P",
+   "letter": "P",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|1|6|1",
+   "prio": 2,
+   "items": [
+    "Blackletter P"
+   ],
+   "art": {
+    "x": 1184,
+    "y": 1658,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u62bd\u6c34\u9a6c\u6876\u91cc\u9762"
+  },
+  {
+   "layer": "hangman",
+   "mapId": "193",
+   "x": 34,
+   "y": 16,
+   "evId": 8,
+   "evName": "BLACKLETTER_Q",
+   "letter": "Q",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|3|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1088,
+    "y": 506,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u5728\u5c0f\u5c0f\u7684\u4f1a\u52a8\u7684\u623f\u95f4\u91cc"
+  },
+  {
+   "layer": "clams",
+   "mapId": "193",
+   "x": 53,
+   "y": 17,
+   "evId": 16,
+   "evName": "WOLF",
+   "sprite": "DW_DeepReef2|1|4|1",
+   "prio": 1,
+   "items": [
+    "143 CLAMS"
+   ],
+   "art": {
+    "x": 1701,
+    "y": 533,
+    "w": 24,
+    "h": 36,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "193",
+   "x": 51,
+   "y": 34,
+   "evId": 31,
+   "evName": "Card",
+   "sprite": "DW_OBJECTS|2|8|1",
+   "prio": 1,
+   "items": [
+    "COOL KEY CARD"
+   ],
+   "art": {
+    "x": 1635,
+    "y": 1089,
+    "w": 24,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "193",
+   "x": 16,
+   "y": 15,
+   "evId": 58,
+   "evName": "Life Jam Guy",
+   "sprite": "$DW_Lifejam_Guy|0|2|1",
+   "prio": 1,
+   "items": [
+    "LIFE JAM"
+   ],
+   "art": {
+    "x": 502,
+    "y": 460,
+    "w": 53,
+    "h": 45,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "194",
+   "x": 17,
+   "y": 30,
+   "evId": 11,
+   "evName": "BLACKLETTER_N",
+   "letter": "N",
+   "items": [],
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u5728\u8f6e\u76d8\u8d4c\u7684\u9644\u8fd1"
+  },
+  {
+   "layer": "giver",
+   "mapId": "194",
+   "x": 12,
+   "y": 6,
+   "evId": 21,
+   "evName": "HOTDOG GUY",
+   "sprite": "DW_DeepReef2|4|2|1",
+   "prio": 1,
+   "items": [
+    "HOT DOG"
+   ],
+   "art": {
+    "x": 385,
+    "y": 180,
+    "w": 30,
+    "h": 37,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mirror",
+   "mapId": "194",
+   "x": 27,
+   "y": 17,
+   "evId": 29,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 869,
+    "y": 512,
+    "w": 21,
+    "h": 58,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clubsandwich",
+   "mapId": "194",
+   "x": 45,
+   "y": 5,
+   "evId": 35,
+   "evName": "Club Sandwich",
+   "sprite": "$DW_club_sandwich_door|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1440,
+    "y": 142,
+    "w": 32,
+    "h": 44,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "194",
+   "x": 37,
+   "y": 26,
+   "evId": 42,
+   "evName": "EV042",
+   "sprite": "DW_ManOnFire|4|4|1",
+   "prio": 1,
+   "items": [
+    "440 CLAMS"
+   ],
+   "art": {
+    "x": 1187,
+    "y": 797,
+    "w": 24,
+    "h": 61,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "194",
+   "x": 12,
+   "y": 38,
+   "evId": 58,
+   "evName": "GATOR GUY",
+   "sprite": "DW_NPC_GATOR|7|2|1",
+   "prio": 1,
+   "items": [
+    "RUBBER BAND"
+   ],
+   "art": {
+    "x": 383,
+    "y": 1189,
+    "w": 32,
+    "h": 53,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2DW - JawsumReq"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "194",
+   "x": 43,
+   "y": 16,
+   "evId": 86,
+   "evName": "EV086",
+   "sprite": "DW_NPC_24|5|4|1",
+   "prio": 1,
+   "items": [
+    "CONFETTI"
+   ],
+   "art": {
+    "x": 1376,
+    "y": 507,
+    "w": 28,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "194",
+   "x": 16,
+   "y": 23,
+   "evId": 87,
+   "evName": "EV087",
+   "sprite": "DW_NPC_25|1|2|1",
+   "prio": 1,
+   "items": [
+    "100 / 500 / 1000 / 2000 CLAMS"
+   ],
+   "art": {
+    "x": 514,
+    "y": 731,
+    "w": 28,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "194",
+   "x": 36,
+   "y": 39,
+   "evId": 106,
+   "evName": "EV106",
+   "sprite": "DW_NPC_24|6|4|1",
+   "prio": 1,
+   "items": [
+    "NERDY GLASSES"
+   ],
+   "art": {
+    "x": 1157,
+    "y": 1245,
+    "w": 20,
+    "h": 27,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "195",
+   "x": 7,
+   "y": 30,
+   "evId": 21,
+   "evName": "EV021",
+   "sprite": "DW_NPC_27|3|2|1",
+   "prio": 1,
+   "items": [
+    "WATERMELON JUICE"
+   ],
+   "art": {
+    "x": 215,
+    "y": 926,
+    "w": 47,
+    "h": 58,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "195",
+   "x": 15,
+   "y": 23,
+   "evId": 23,
+   "evName": "EV023",
+   "sprite": "DW_ManOnFire|3|2|1",
+   "prio": 1,
+   "items": [
+    "DYNAMITE"
+   ],
+   "art": {
+    "x": 483,
+    "y": 706,
+    "w": 23,
+    "h": 54,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "196",
+   "x": 15,
+   "y": 13,
+   "evId": 5,
+   "evName": "Jawsum",
+   "sprite": "DW_jawsum|1|2|1",
+   "prio": 1,
+   "items": [
+    "GIANT CHECK"
+   ],
+   "art": {
+    "x": 466,
+    "y": 370,
+    "w": 57,
+    "h": 60,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "197",
+   "x": 18,
+   "y": 41,
+   "evId": 14,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 580,
+    "y": 1306,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2DW - JawsumReq"
+   ]
+  },
+  {
+   "layer": "picnic",
+   "mapId": "197",
+   "x": 17,
+   "y": 42,
+   "evId": 15,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 550,
+    "y": 1339,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "198",
+   "x": 14,
+   "y": 29,
+   "evId": 2,
+   "evName": "BEARDGHOST2",
+   "sprite": "DW_GHOSTPARTY|0|2|1",
+   "prio": 2,
+   "items": [
+    "WAFFLE"
+   ],
+   "art": {
+    "x": 458,
+    "y": 938,
+    "w": 12,
+    "h": 16,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Ghost_Dance \u2265 2"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "198",
+   "x": 12,
+   "y": 27,
+   "evId": 3,
+   "evName": "PRINCESSGHOST2",
+   "sprite": "DW_GHOSTPARTY|4|2|1",
+   "prio": 2,
+   "items": [
+    "PRESENT"
+   ],
+   "art": {
+    "x": 390,
+    "y": 856,
+    "w": 20,
+    "h": 34,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Ghost_Dance \u2265 2"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "198",
+   "x": 16,
+   "y": 24,
+   "evId": 4,
+   "evName": "PROPELLORGHOST2",
+   "sprite": "DW_GHOSTPARTY|3|2|1",
+   "prio": 2,
+   "items": [
+    "BIG RUBBER BAND"
+   ],
+   "art": {
+    "x": 519,
+    "y": 758,
+    "w": 18,
+    "h": 36,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Ghost_Dance \u2265 2"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "198",
+   "x": 18,
+   "y": 27,
+   "evId": 5,
+   "evName": "SUNHATGHOST2",
+   "sprite": "DW_GHOSTPARTY|2|2|1",
+   "prio": 2,
+   "items": [
+    "LIFE JAM"
+   ],
+   "art": {
+    "x": 580,
+    "y": 857,
+    "w": 24,
+    "h": 33,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Ghost_Dance \u2265 2"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "198",
+   "x": 14,
+   "y": 24,
+   "evId": 6,
+   "evName": "MUSTACHEGHOST2",
+   "sprite": "DW_GHOSTPARTY|5|2|1",
+   "prio": 2,
+   "items": [
+    "FRUIT JUICE?"
+   ],
+   "art": {
+    "x": 457,
+    "y": 772,
+    "w": 14,
+    "h": 22,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Ghost_Dance \u2265 2"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "198",
+   "x": 16,
+   "y": 29,
+   "evId": 7,
+   "evName": "GLASSESGHOST2",
+   "sprite": "DW_GHOSTPARTY|6|2|1",
+   "prio": 2,
+   "items": [
+    "DEAD BATTERIES"
+   ],
+   "art": {
+    "x": 521,
+    "y": 933,
+    "w": 14,
+    "h": 21,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Ghost_Dance \u2265 2"
+   ]
+  },
+  {
+   "layer": "hangman",
+   "mapId": "198",
+   "x": 4,
+   "y": 29,
+   "evId": 14,
+   "evName": "BLACKLETTER_O",
+   "letter": "O",
+   "items": [],
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u6df7\u5728\u522b\u7684O\u4e4b\u4e2d"
+  },
+  {
+   "layer": "giver",
+   "mapId": "200",
+   "x": 18,
+   "y": 19,
+   "evId": 3,
+   "evName": "SEACOW",
+   "sprite": "DW_DeepReef1|1|2|1",
+   "prio": 1,
+   "items": [
+    "COMBO MEAL"
+   ],
+   "art": {
+    "x": 576,
+    "y": 609,
+    "w": 31,
+    "h": 24,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "200",
+   "x": 16,
+   "y": 17,
+   "evId": 5,
+   "evName": "SEACOWFARMER",
+   "sprite": "DW_DeepReef2|0|2|1",
+   "prio": 1,
+   "items": [
+    "500 CLAMS"
+   ],
+   "art": {
+    "x": 512,
+    "y": 532,
+    "w": 28,
+    "h": 36,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "201",
+   "x": 12,
+   "y": 40,
+   "evId": 1,
+   "evName": "BLACKLETTER_Z",
+   "letter": "Z",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|7|2|0",
+   "prio": 2,
+   "items": [
+    "Blackletter Z"
+   ],
+   "art": {
+    "x": 384,
+    "y": 1274,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "clue": "\u8d8a\u8fc7\u516c\u8def\u7684\u5c3d\u5934"
+  },
+  {
+   "layer": "picnic",
+   "mapId": "202",
+   "x": 15,
+   "y": 18,
+   "evId": 4,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|8|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 486,
+    "y": 571,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "203",
+   "x": 12,
+   "y": 5,
+   "evId": 10,
+   "evName": "BLACKLETTER_S",
+   "letter": "S",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|5|2|1",
+   "prio": 2,
+   "items": [
+    "Blackletter S"
+   ],
+   "art": {
+    "x": 384,
+    "y": 154,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u6d3b\u8d1d\u58f3\u7684\u4f53\u5185"
+  },
+  {
+   "layer": "mirror",
+   "mapId": "203",
+   "x": 122,
+   "y": 8,
+   "evId": 30,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 3909,
+    "y": 224,
+    "w": 21,
+    "h": 58,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "203",
+   "x": 10,
+   "y": 7,
+   "evId": 33,
+   "evName": "TENTACLE",
+   "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+   "prio": 1,
+   "items": [
+    "OL' RELIABLE"
+   ],
+   "art": {
+    "x": 320,
+    "y": 224,
+    "w": 32,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "telescope",
+   "mapId": "203",
+   "x": 103,
+   "y": 4,
+   "evId": 37,
+   "evName": "Telescope",
+   "sprite": "DW_PuzzleObjects6|3|8|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 3303,
+    "y": 122,
+    "w": 20,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "203",
+   "x": 42,
+   "y": 8,
+   "evId": 87,
+   "evName": "EV087",
+   "sprite": "DW_NPC_18|1|4|1",
+   "prio": 1,
+   "items": [
+    "COOL GLASSES"
+   ],
+   "art": {
+    "x": 1345,
+    "y": 237,
+    "w": 34,
+    "h": 43,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "203",
+   "x": 48,
+   "y": 7,
+   "evId": 88,
+   "evName": "EV088",
+   "sprite": "DW_NPC_18|1|6|1",
+   "prio": 1,
+   "items": [
+    "MILK"
+   ],
+   "art": {
+    "x": 1535,
+    "y": 205,
+    "w": 36,
+    "h": 42,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "203",
+   "x": 43,
+   "y": 6,
+   "evId": 89,
+   "evName": "EV089",
+   "sprite": "DW_NPC_18|1|8|1",
+   "prio": 1,
+   "items": [
+    "POETRY BOOK"
+   ],
+   "art": {
+    "x": 1369,
+    "y": 162,
+    "w": 47,
+    "h": 51,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "203",
+   "x": 45,
+   "y": 5,
+   "evId": 90,
+   "evName": "EV090",
+   "sprite": "DW_NPC_18|2|2|1",
+   "prio": 1,
+   "items": [
+    "WHOLE CHICKEN"
+   ],
+   "art": {
+    "x": 1426,
+    "y": 118,
+    "w": 60,
+    "h": 63,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "203",
+   "x": 152,
+   "y": 8,
+   "evId": 93,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 4869,
+    "y": 260,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "203",
+   "x": 123,
+   "y": 6,
+   "evId": 94,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 3941,
+    "y": 196,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "203",
+   "x": 90,
+   "y": 7,
+   "evId": 95,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 2885,
+    "y": 228,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "203",
+   "x": 146,
+   "y": 18,
+   "evId": 96,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 4677,
+    "y": 580,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "203",
+   "x": 30,
+   "y": 17,
+   "evId": 98,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 965,
+    "y": 548,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "204",
+   "x": 9,
+   "y": 27,
+   "evId": 20,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 293,
+    "y": 868,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "204",
+   "x": 5,
+   "y": 21,
+   "evId": 57,
+   "evName": "EV057",
+   "sprite": "DW_Snaley|0|2|1",
+   "prio": 1,
+   "items": [
+    "COFFEE"
+   ],
+   "art": {
+    "x": 164,
+    "y": 668,
+    "w": 26,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 32,
+   "y": 16,
+   "evId": 22,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1029,
+    "y": 516,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 45,
+   "y": 17,
+   "evId": 29,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1445,
+    "y": 548,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 28,
+   "y": 40,
+   "evId": 30,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 901,
+    "y": 1284,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 23,
+   "y": 49,
+   "evId": 31,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 741,
+    "y": 1572,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 21,
+   "y": 5,
+   "evId": 32,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 677,
+    "y": 164,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 8,
+   "y": 46,
+   "evId": 33,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 261,
+    "y": 1476,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 37,
+   "y": 46,
+   "evId": 34,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1189,
+    "y": 1476,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 40,
+   "y": 8,
+   "evId": 35,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1285,
+    "y": 260,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 18,
+   "y": 20,
+   "evId": 36,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 581,
+    "y": 644,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 17,
+   "y": 41,
+   "evId": 37,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 549,
+    "y": 1316,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "205",
+   "x": 3,
+   "y": 15,
+   "evId": 38,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 101,
+    "y": 484,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "206",
+   "x": 38,
+   "y": 22,
+   "evId": 13,
+   "evName": "EV013",
+   "sprite": "DW_Snaley|0|2|1",
+   "prio": 1,
+   "items": [
+    "COFFEE"
+   ],
+   "art": {
+    "x": 1220,
+    "y": 700,
+    "w": 26,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SNALEY HIGHWAY 2"
+   ]
+  },
+  {
+   "layer": "clams",
+   "mapId": "206",
+   "x": 48,
+   "y": 25,
+   "evId": 39,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1541,
+    "y": 804,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "206",
+   "x": 43,
+   "y": 14,
+   "evId": 40,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1381,
+    "y": 452,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "207",
+   "x": 12,
+   "y": 12,
+   "evId": 7,
+   "evName": "SHADYMOLE",
+   "sprite": "$dw_sm_bandito_mole|0|8|1",
+   "prio": 1,
+   "items": [
+    "? CLAMS"
+   ],
+   "art": {
+    "x": 388,
+    "y": 382,
+    "w": 23,
+    "h": 28,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Shadymole last resort"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "211",
+   "x": 1,
+   "y": 41,
+   "evId": 6,
+   "evName": "snake gate",
+   "sprite": "$OBJ_TOLLGATE|0|8|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": -8,
+    "y": 829,
+    "w": 116,
+    "h": 509,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "213",
+   "x": 10,
+   "y": 17,
+   "evId": 5,
+   "evName": "BLACKLETTER_F",
+   "letter": "F",
+   "sprite": "DW_BLACKLETTERS|5|6|0",
+   "prio": 1,
+   "items": [
+    "Blackletter F"
+   ],
+   "art": {
+    "x": 321,
+    "y": 538,
+    "w": 30,
+    "h": 29,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u5de8\u5927\u7684\u753b\u6846\u5185"
+  },
+  {
+   "layer": "cooler",
+   "mapId": "215",
+   "x": 9,
+   "y": 31,
+   "evId": 10,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 292,
+    "y": 986,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "215",
+   "x": 8,
+   "y": 32,
+   "evId": 11,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [
+    "500 CLAMS"
+   ],
+   "art": {
+    "x": 262,
+    "y": 1019,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "215",
+   "x": 8,
+   "y": 32,
+   "evId": 11,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 262,
+    "y": 1019,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "215",
+   "x": 17,
+   "y": 34,
+   "evId": 14,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 549,
+    "y": 1092,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "215",
+   "x": 1,
+   "y": 25,
+   "evId": 15,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 37,
+    "y": 804,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "215",
+   "x": 13,
+   "y": 14,
+   "evId": 16,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 421,
+    "y": 452,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "215",
+   "x": 9,
+   "y": 29,
+   "evId": 17,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 293,
+    "y": 932,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "216",
+   "x": 4,
+   "y": 0,
+   "evId": 27,
+   "evName": "BLACKLETTER_W (27)",
+   "letter": "W",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|5|4|1",
+   "prio": 2,
+   "items": [
+    "Blackletter W"
+   ],
+   "art": {
+    "x": 128,
+    "y": -6,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SGL_FinalBoss \u2265 17"
+   ],
+   "clue": "\u5728\u9cb8\u9c7c\u7684\u809a\u5b50\u91cc"
+  },
+  {
+   "layer": "hangman",
+   "mapId": "216",
+   "x": 5,
+   "y": 0,
+   "evId": 30,
+   "evName": "BLACKLETTER_T (30)",
+   "letter": "T",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|4|4|0",
+   "prio": 2,
+   "items": [
+    "Blackletter T"
+   ],
+   "art": {
+    "x": 160,
+    "y": -6,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "SGL_FinalBoss \u2265 17"
+   ],
+   "clue": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d"
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "219",
+   "x": 15,
+   "y": 16,
+   "evId": 18,
+   "evName": "elevator full",
+   "sprite": "HumphreyElevator|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 462,
+    "y": 461,
+    "w": 67,
+    "h": 73,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "222",
+   "x": 4,
+   "y": 9,
+   "evId": 4,
+   "evName": "bridge smash",
+   "sprite": "$sgl_humphrey_blob|0|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 131,
+    "y": 286,
+    "w": 26,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "223",
+   "x": 46,
+   "y": 31,
+   "evId": 7,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1478,
+    "y": 987,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "223",
+   "x": 47,
+   "y": 30,
+   "evId": 53,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1508,
+    "y": 954,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "224",
+   "x": 10,
+   "y": 15,
+   "evId": 5,
+   "evName": "BLACKLETTER_T",
+   "letter": "T",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|4|4|1",
+   "prio": 2,
+   "items": [
+    "Blackletter T"
+   ],
+   "art": {
+    "x": 320,
+    "y": 474,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d"
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "225",
+   "x": 20,
+   "y": 22,
+   "evId": 4,
+   "evName": "bridge smash 2",
+   "sprite": "$sgl_humphrey_blob|0|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 643,
+    "y": 702,
+    "w": 26,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "225",
+   "x": 29,
+   "y": 42,
+   "evId": 6,
+   "evName": "bridge smash 1",
+   "sprite": "$sgl_humphrey_blob|0|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 931,
+    "y": 1342,
+    "w": 26,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "225",
+   "x": 21,
+   "y": 45,
+   "evId": 21,
+   "evName": "chimera",
+   "sprite": "$sgl_chimera_tube|0|2|0",
+   "prio": 2,
+   "items": [],
+   "art": {
+    "x": 658,
+    "y": 1339,
+    "w": 58,
+    "h": 126,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "225",
+   "x": 21,
+   "y": 44,
+   "evId": 25,
+   "evName": "Tube",
+   "sprite": "$sgl_chimera_tube|0|6|2",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 658,
+    "y": 1307,
+    "w": 58,
+    "h": 126,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "225",
+   "x": 27,
+   "y": 24,
+   "evId": 28,
+   "evName": "BLACKLETTER_T",
+   "letter": "T",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|4|4|0",
+   "prio": 1,
+   "items": [
+    "Blackletter T"
+   ],
+   "art": {
+    "x": 864,
+    "y": 762,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d"
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "225",
+   "x": 27,
+   "y": 25,
+   "evId": 30,
+   "evName": "Case",
+   "sprite": "DW_SG_perfect_heart|0|8|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 864,
+    "y": 793,
+    "w": 32,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "226",
+   "x": 14,
+   "y": 16,
+   "evId": 5,
+   "evName": "Fall",
+   "sprite": "$DW_SPRM_BIG|0|2|1",
+   "prio": 1,
+   "items": [
+    "HOT DOG"
+   ],
+   "art": {
+    "x": 399,
+    "y": 332,
+    "w": 130,
+    "h": 205,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "227",
+   "x": 10,
+   "y": 17,
+   "evId": 2,
+   "evName": "vent",
+   "sprite": "DW_TrapDoor|0|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 325,
+    "y": 535,
+    "w": 22,
+    "h": 41,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "227",
+   "x": 16,
+   "y": 16,
+   "evId": 8,
+   "evName": "Card",
+   "sprite": "DW_PuzzleObjects4|5|6|1",
+   "prio": 1,
+   "items": [
+    "SLIMY KEY CARD"
+   ],
+   "art": {
+    "x": 515,
+    "y": 511,
+    "w": 24,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "227",
+   "x": 15,
+   "y": 9,
+   "evId": 9,
+   "evName": "MARINA_1",
+   "sprite": "DW_NPC_10|5|8|1",
+   "prio": 0,
+   "items": [
+    "FINGER"
+   ],
+   "art": {
+    "x": 483,
+    "y": 295,
+    "w": 24,
+    "h": 23,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Feed Humphrey (Start)"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "229",
+   "x": 11,
+   "y": 8,
+   "evId": 1,
+   "evName": "KEL TAG-X1",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "229",
+   "x": 25,
+   "y": 8,
+   "evId": 4,
+   "evName": "KEL TAG-X1",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "229",
+   "x": 7,
+   "y": 4,
+   "evId": 5,
+   "evName": "humphreytarget1",
+   "sprite": "DW_SG_Humphrey_effects1|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 225,
+    "y": 122,
+    "w": 30,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "229",
+   "x": 11,
+   "y": 2,
+   "evId": 7,
+   "evName": "humphreytarget2",
+   "sprite": "DW_SG_Humphrey_effects1|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 353,
+    "y": 58,
+    "w": 30,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "229",
+   "x": 15,
+   "y": 4,
+   "evId": 8,
+   "evName": "humphreytarget3",
+   "sprite": "DW_SG_Humphrey_effects1|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 481,
+    "y": 122,
+    "w": 30,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "229",
+   "x": 21,
+   "y": 4,
+   "evId": 9,
+   "evName": "humphreytarget4",
+   "sprite": "DW_SG_Humphrey_effects1|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 673,
+    "y": 122,
+    "w": 30,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "229",
+   "x": 25,
+   "y": 2,
+   "evId": 10,
+   "evName": "humphreytarget5",
+   "sprite": "DW_SG_Humphrey_effects1|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 801,
+    "y": 58,
+    "w": 30,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "229",
+   "x": 29,
+   "y": 4,
+   "evId": 11,
+   "evName": "humphreytarget6",
+   "sprite": "DW_SG_Humphrey_effects1|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 929,
+    "y": 122,
+    "w": 30,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "231",
+   "x": 16,
+   "y": 7,
+   "evId": 21,
+   "evName": "BLACKLETTER_U",
+   "letter": "U",
+   "sprite": "DW_BLACKLETTERS|3|6|0",
+   "prio": 1,
+   "items": [
+    "Blackletter U"
+   ],
+   "art": {
+    "x": 513,
+    "y": 219,
+    "w": 30,
+    "h": 28,
+    "artFit": "rule"
+   },
+   "clue": "\u88ab\u7c98\u6db2\u6240\u5305\u56f4"
+  },
+  {
+   "layer": "charm",
+   "mapId": "231",
+   "x": 24,
+   "y": 7,
+   "evId": 26,
+   "evName": "Item",
+   "sprite": "DW_IMPORTANTOBJ_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "APPENDIX"
+   ],
+   "art": {
+    "x": 773,
+    "y": 222,
+    "w": 22,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "234",
+   "x": 8,
+   "y": 14,
+   "evId": 2,
+   "evName": "vent",
+   "sprite": "DW_TrapDoor|0|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 261,
+    "y": 439,
+    "w": 22,
+    "h": 41,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "234",
+   "x": 10,
+   "y": 13,
+   "evId": 10,
+   "evName": "Card",
+   "sprite": "DW_PuzzleObjects4|5|6|1",
+   "prio": 1,
+   "items": [
+    "SLIMY KEY CARD"
+   ],
+   "art": {
+    "x": 323,
+    "y": 415,
+    "w": 24,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "234",
+   "x": 19,
+   "y": 18,
+   "evId": 11,
+   "evName": "MEDUSA_1",
+   "sprite": "DW_NPC_10|6|2|1",
+   "prio": 0,
+   "items": [
+    "MYSTERY POTION"
+   ],
+   "art": {
+    "x": 611,
+    "y": 585,
+    "w": 27,
+    "h": 21,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Feed Humphrey (Start)"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "236",
+   "x": 9,
+   "y": 17,
+   "evId": 7,
+   "evName": "bombpuzzle1",
+   "sprite": "DW_SlimegirlBomb|0|6|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": -656,
+    "y": -712,
+    "w": 1600,
+    "h": 961,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "236",
+   "x": 11,
+   "y": 17,
+   "evId": 8,
+   "evName": "bombpuzzle3",
+   "sprite": "DW_SlimegirlBomb|4|2|2",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": -592,
+    "y": -712,
+    "w": 1600,
+    "h": 961,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "236",
+   "x": 10,
+   "y": 17,
+   "evId": 9,
+   "evName": "bombpuzzle2",
+   "sprite": "DW_SlimegirlBomb|0|8|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": -624,
+    "y": -712,
+    "w": 1600,
+    "h": 961,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "236",
+   "x": 9,
+   "y": 32,
+   "evId": 37,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 292,
+    "y": 1018,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "236",
+   "x": 8,
+   "y": 33,
+   "evId": 38,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 262,
+    "y": 1051,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mirror",
+   "mapId": "236",
+   "x": 14,
+   "y": 31,
+   "evId": 42,
+   "evName": "MIRROR",
+   "sprite": "DW_MIRROR|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 453,
+    "y": 960,
+    "w": 21,
+    "h": 58,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "238",
+   "x": 47,
+   "y": 23,
+   "evId": 5,
+   "evName": "puzzle3",
+   "sprite": "DW_SG_Humphrey_2|0|8|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1507,
+    "y": 732,
+    "w": 26,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "238",
+   "x": 47,
+   "y": 22,
+   "evId": 25,
+   "evName": "console",
+   "sprite": "DW_SlimegirlBomb|0|6|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 560,
+    "y": -552,
+    "w": 1600,
+    "h": 961,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "238",
+   "x": 49,
+   "y": 14,
+   "evId": 26,
+   "evName": "finalspike",
+   "sprite": "DW_PuzzleObjects4|4|2|0",
+   "prio": 0,
+   "items": [],
+   "art": {
+    "x": 1571,
+    "y": 453,
+    "w": 27,
+    "h": 23,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "239",
+   "x": 15,
+   "y": 14,
+   "evId": 130,
+   "evName": "Camera",
+   "sprite": "DW_OBJECTS_2|1|6|1",
+   "prio": 2,
+   "items": [],
+   "art": {
+    "x": 487,
+    "y": 451,
+    "w": 19,
+    "h": 29,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "240",
+   "x": 16,
+   "y": 6,
+   "evId": 54,
+   "evName": "BLACKLETTER_V",
+   "letter": "V",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|2|8|0",
+   "prio": 2,
+   "items": [
+    "Blackletter V"
+   ],
+   "art": {
+    "x": 512,
+    "y": 186,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u88ab\u94c1\u5236\u673a\u5173\u6355\u83b7"
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "241",
+   "x": 10,
+   "y": 15,
+   "evId": 1,
+   "evName": "BACK TO MOLLY ROOM 1",
+   "sprite": "DW_PuzzleObjects5|4|8|1",
+   "prio": 0,
+   "items": [],
+   "art": {
+    "x": 321,
+    "y": 487,
+    "w": 30,
+    "h": 25,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "241",
+   "x": 10,
+   "y": 7,
+   "evId": 2,
+   "evName": "CORRECT TELEPORT",
+   "sprite": "DW_PuzzleObjects5|4|8|1",
+   "prio": 0,
+   "items": [],
+   "art": {
+    "x": 321,
+    "y": 231,
+    "w": 30,
+    "h": 25,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "241",
+   "x": 3,
+   "y": 12,
+   "evId": 3,
+   "evName": "BACK TO BEGINNING",
+   "sprite": "DW_PuzzleObjects5|4|8|1",
+   "prio": 0,
+   "items": [],
+   "art": {
+    "x": 97,
+    "y": 391,
+    "w": 30,
+    "h": 25,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "241",
+   "x": 17,
+   "y": 12,
+   "evId": 4,
+   "evName": "BACK TO BEGINNING",
+   "sprite": "DW_PuzzleObjects5|4|8|1",
+   "prio": 0,
+   "items": [],
+   "art": {
+    "x": 545,
+    "y": 391,
+    "w": 30,
+    "h": 25,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "244",
+   "x": 2,
+   "y": 17,
+   "evId": 14,
+   "evName": "EV014",
+   "sprite": "DW_MARI|2|2|2",
+   "prio": 1,
+   "items": [
+    "MARI'S COOKIE"
+   ],
+   "art": {
+    "x": 69,
+    "y": 540,
+    "w": 19,
+    "h": 27,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "248",
+   "x": 24,
+   "y": 16,
+   "evId": 1,
+   "evName": "To main room",
+   "sprite": "DW_PuzzleObjects5|7|8|1",
+   "prio": 0,
+   "items": [],
+   "art": {
+    "x": 769,
+    "y": 519,
+    "w": 30,
+    "h": 25,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "248",
+   "x": 23,
+   "y": 14,
+   "evId": 2,
+   "evName": "vent",
+   "sprite": "DW_TrapDoor|0|6|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 741,
+    "y": 439,
+    "w": 22,
+    "h": 41,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "248",
+   "x": 20,
+   "y": 13,
+   "evId": 9,
+   "evName": "Card",
+   "sprite": "DW_PuzzleObjects4|5|6|1",
+   "prio": 1,
+   "items": [
+    "SLIMY KEY CARD"
+   ],
+   "art": {
+    "x": 643,
+    "y": 415,
+    "w": 24,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "248",
+   "x": 14,
+   "y": 9,
+   "evId": 10,
+   "evName": "MOLLY_1",
+   "sprite": "DW_SLIMEGIRLS|4|2|1",
+   "prio": 0,
+   "items": [
+    "HIGH HEELS"
+   ],
+   "art": {
+    "x": 449,
+    "y": 295,
+    "w": 30,
+    "h": 24,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Q- Feed Humphrey (Start)"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "249",
+   "x": 14,
+   "y": 81,
+   "evId": 1,
+   "evName": "elevator",
+   "sprite": "HumphreyElevator|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 430,
+    "y": 2541,
+    "w": 67,
+    "h": 73,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "250",
+   "x": 13,
+   "y": 18,
+   "evId": 9,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "picnic",
+   "mapId": "250",
+   "x": 38,
+   "y": 43,
+   "evId": 67,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1222,
+    "y": 1371,
+    "w": 20,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "250",
+   "x": 39,
+   "y": 42,
+   "evId": 69,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1252,
+    "y": 1338,
+    "w": 27,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "258",
+   "x": 38,
+   "y": 18,
+   "evId": 2,
+   "evName": "ABBY_1",
+   "sprite": "DW_NPC_20|0|4|2",
+   "prio": 1,
+   "items": [
+    "ABBI'S EYE"
+   ],
+   "art": {
+    "x": 1181,
+    "y": 542,
+    "w": 109,
+    "h": 60,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "326",
+   "x": 22,
+   "y": 12,
+   "evId": 4,
+   "evName": "BLACKLETTER_R",
+   "letter": "R",
+   "items": [],
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u5728\u6728\u677f\u7684\u5c3d\u5934"
+  },
+  {
+   "layer": "charm",
+   "mapId": "334",
+   "x": 13,
+   "y": 18,
+   "evId": 21,
+   "evName": "Tomb Prize",
+   "sprite": "DW_IMPORTANTOBJ_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "BREADPHONES"
+   ],
+   "art": {
+    "x": 421,
+    "y": 580,
+    "w": 22,
+    "h": 28,
+    "artFit": "measured"
+   },
+   "requires": [
+    "BreadTwins WIN"
+   ]
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "335",
+   "x": 15,
+   "y": 8,
+   "evId": 7,
+   "evName": "Rope",
+   "sprite": "DW_OBJECTS|2|4|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 493,
+    "y": 253,
+    "w": 6,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "341",
+   "x": 18,
+   "y": 62,
+   "evId": 35,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "341",
+   "x": 19,
+   "y": 21,
+   "evId": 37,
+   "evName": "aubreySmash",
+   "sprite": "!TAG_AUBREY_HAMMER|4|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 600,
+    "y": 641,
+    "w": 49,
+    "h": 62,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "341",
+   "x": 45,
+   "y": 64,
+   "evId": 57,
+   "evName": "EV057",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1445,
+    "y": 2048,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "341",
+   "x": 14,
+   "y": 61,
+   "evId": 58,
+   "evName": "EV058",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 453,
+    "y": 1952,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "341",
+   "x": 38,
+   "y": 37,
+   "evId": 59,
+   "evName": "EV059",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1221,
+    "y": 1184,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "341",
+   "x": 63,
+   "y": 64,
+   "evId": 60,
+   "evName": "EV060",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 2021,
+    "y": 2048,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "341",
+   "x": 16,
+   "y": 19,
+   "evId": 61,
+   "evName": "EV061",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 517,
+    "y": 608,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "341",
+   "x": 39,
+   "y": 39,
+   "evId": 62,
+   "evName": "EV062",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 1253,
+    "y": 1248,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "341",
+   "x": 19,
+   "y": 17,
+   "evId": 63,
+   "evName": "EV063",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 613,
+    "y": 544,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "341",
+   "x": 22,
+   "y": 58,
+   "evId": 64,
+   "evName": "EV064",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 709,
+    "y": 1856,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "341",
+   "x": 66,
+   "y": 65,
+   "evId": 66,
+   "evName": "STEAK KNIFE",
+   "sprite": "!FA_OBJECTS_2|1|4|2",
+   "prio": 1,
+   "items": [
+    "STEAK KNIFE"
+   ],
+   "art": {
+    "x": 2119,
+    "y": 2093,
+    "w": 21,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "343",
+   "x": 15,
+   "y": 15,
+   "evId": 10,
+   "evName": "actual mole",
+   "sprite": "DW_NPC_8|5|2|1",
+   "prio": 1,
+   "items": [
+    "ACTUAL MOLE"
+   ],
+   "art": {
+    "x": 483,
+    "y": 479,
+    "w": 26,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "343",
+   "x": 11,
+   "y": 5,
+   "evId": 20,
+   "evName": "Safe",
+   "sprite": "DW_IMPORTANTOBJ_2|4|2|0",
+   "prio": 1,
+   "items": [
+    "RECIPE 4 DISASTER"
+   ],
+   "art": {
+    "x": 354,
+    "y": 154,
+    "w": 28,
+    "h": 28,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "347",
+   "x": 11,
+   "y": 38,
+   "evId": 12,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 356,
+    "y": 1216,
+    "w": 27,
+    "h": 32,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "347",
+   "x": 10,
+   "y": 39,
+   "evId": 13,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 326,
+    "y": 1249,
+    "w": 20,
+    "h": 30,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "clubsandwich",
+   "mapId": "348",
+   "x": 16,
+   "y": 12,
+   "evId": 3,
+   "evName": "Club Sandwich",
+   "sprite": "$DW_club_sandwich_door|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 512,
+    "y": 372,
+    "w": 32,
+    "h": 44,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "telescope",
+   "mapId": "399",
+   "x": 50,
+   "y": 49,
+   "evId": 2,
+   "evName": "Telescope",
+   "items": []
+  },
+  {
+   "layer": "telescope",
+   "mapId": "421",
+   "x": 11,
+   "y": 6,
+   "evId": 4,
+   "evName": "Telescope",
+   "items": []
+  },
+  {
+   "layer": "giver",
+   "mapId": "426",
+   "x": 30,
+   "y": 30,
+   "evId": 7,
+   "evName": "Budgirl",
+   "sprite": "$DW_VF_budgirl|0|2|0",
+   "prio": 1,
+   "items": [
+    "MANGO SMOOTHIE",
+    "MELON SMOOTHIE",
+    "BERRY SMOOTHIE",
+    "S.BERRY SMOOTHIE"
+   ],
+   "art": {
+    "x": 970,
+    "y": 966,
+    "w": 11,
+    "h": 19,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 22,
+   "y": 41,
+   "evId": 5,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "RUBBER BAND"
+   ],
+   "art": {
+    "x": 717,
+    "y": 1317,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 19,
+   "y": 22,
+   "evId": 8,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "CANDY"
+   ],
+   "art": {
+    "x": 621,
+    "y": 709,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 12,
+   "y": 30,
+   "evId": 9,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "JACKS"
+   ],
+   "art": {
+    "x": 397,
+    "y": 965,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 14,
+   "y": 38,
+   "evId": 10,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "DONUT"
+   ],
+   "art": {
+    "x": 461,
+    "y": 1221,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 34,
+   "y": 39,
+   "evId": 11,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "PLUM JUICE"
+   ],
+   "art": {
+    "x": 1101,
+    "y": 1253,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 40,
+   "y": 28,
+   "evId": 12,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "POPCORN"
+   ],
+   "art": {
+    "x": 1293,
+    "y": 901,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 56,
+   "y": 22,
+   "evId": 13,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "BANANA SMOOTHIE"
+   ],
+   "art": {
+    "x": 1805,
+    "y": 709,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 54,
+   "y": 10,
+   "evId": 14,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "BINOCULARS"
+   ],
+   "art": {
+    "x": 1741,
+    "y": 325,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "427",
+   "x": 46,
+   "y": 10,
+   "evId": 15,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "SPARKLER"
+   ],
+   "art": {
+    "x": 1485,
+    "y": 325,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "428",
+   "x": 22,
+   "y": 23,
+   "evId": 5,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "Junkyard kel tag"
+   ]
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "428",
+   "x": 30,
+   "y": 5,
+   "evId": 12,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "LIFE JAM"
+   ],
+   "art": {
+    "x": 970,
+    "y": 165,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "430",
+   "x": 35,
+   "y": 25,
+   "evId": 7,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 1125,
+    "y": 804,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "430",
+   "x": 64,
+   "y": 14,
+   "evId": 8,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 2053,
+    "y": 452,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "430",
+   "x": 90,
+   "y": 24,
+   "evId": 9,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 2885,
+    "y": 772,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "430",
+   "x": 7,
+   "y": 15,
+   "evId": 10,
+   "evName": "CLAM",
+   "sprite": "DW_IMPORTANTOBJ_2|1|4|1",
+   "prio": 1,
+   "items": [
+    "1 CLAMS"
+   ],
+   "art": {
+    "x": 229,
+    "y": 484,
+    "w": 20,
+    "h": 15,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "433",
+   "x": 36,
+   "y": 40,
+   "evId": 7,
+   "evName": "Mushroom Rise",
+   "sprite": "$DW_mushroom_jump|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 1129,
+    "y": 1267,
+    "w": 78,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clubsandwich",
+   "mapId": "433",
+   "x": 14,
+   "y": 35,
+   "evId": 10,
+   "evName": "Club Sandwich",
+   "sprite": "$DW_club_sandwich_door|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 448,
+    "y": 1108,
+    "w": 32,
+    "h": 44,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "441",
+   "x": 20,
+   "y": 14,
+   "evId": 51,
+   "evName": "Fear of Heights",
+   "sprite": "!objects_fa_night_doors|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 641,
+    "y": 444,
+    "w": 30,
+    "h": 36,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "453",
+   "x": 7,
+   "y": 6,
+   "evId": 1,
+   "evName": "Reuben",
+   "sprite": "$DW_Club_Sandwich|0|2|1",
+   "prio": 1,
+   "items": [
+    "GRAPE SODA"
+   ],
+   "art": {
+    "x": 208,
+    "y": 157,
+    "w": 64,
+    "h": 61,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "453",
+   "x": 10,
+   "y": 12,
+   "evId": 2,
+   "evName": "Hoagie",
+   "sprite": "$DW_Club_Sandwich|0|4|1",
+   "prio": 1,
+   "items": [
+    "5000 CLAMS"
+   ],
+   "art": {
+    "x": 309,
+    "y": 349,
+    "w": 54,
+    "h": 61,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "music",
+   "mapId": "495",
+   "x": 55,
+   "y": 38,
+   "evId": 24,
+   "evName": "EV024",
+   "sprite": "DW_IMPORTANTOBJ_2|4|4|1",
+   "prio": 1,
+   "items": [
+    "SHEET MUSIC"
+   ],
+   "art": {
+    "x": 1767,
+    "y": 1214,
+    "w": 19,
+    "h": 26,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "layer": "music",
+   "mapId": "495",
+   "x": 67,
+   "y": 32,
+   "evId": 25,
+   "evName": "EV025",
+   "sprite": "DW_IMPORTANTOBJ_2|4|4|1",
+   "prio": 1,
+   "items": [
+    "SHEET MUSIC"
+   ],
+   "art": {
+    "x": 2151,
+    "y": 1022,
+    "w": 19,
+    "h": 26,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "layer": "music",
+   "mapId": "495",
+   "x": 51,
+   "y": 19,
+   "evId": 26,
+   "evName": "EV026",
+   "sprite": "DW_IMPORTANTOBJ_2|4|4|1",
+   "prio": 1,
+   "items": [
+    "SHEET MUSIC"
+   ],
+   "art": {
+    "x": 1639,
+    "y": 606,
+    "w": 19,
+    "h": 26,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "layer": "charm",
+   "mapId": "981",
+   "x": 4,
+   "y": 6,
+   "evId": 9,
+   "evName": "CAMERA - melonTULIP",
+   "sprite": "DW_IMPORTANTOBJ_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TULIP HAIRSTICK"
+   ],
+   "art": {
+    "x": 133,
+    "y": 190,
+    "w": 22,
+    "h": 28,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day2DW - Saved Basil?"
+   ]
+  },
+  {
+   "layer": "giver",
+   "mapId": "1121",
+   "x": 6,
+   "y": 3,
+   "evId": 22,
+   "evName": "MINA",
+   "sprite": "DW_NPC_6|7|2|0",
+   "prio": 1,
+   "items": [
+    "WAFFLE"
+   ],
+   "art": {
+    "x": 195,
+    "y": 91,
+    "w": 26,
+    "h": 30,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "1254",
+   "x": 3,
+   "y": 6,
+   "evId": 5,
+   "evName": "COFFEE_1N2",
+   "sprite": "DW_OT_tvgirl_sit|3|2|1",
+   "prio": 1,
+   "items": [
+    "STRANGE LIST"
+   ],
+   "art": {
+    "x": 98,
+    "y": 176,
+    "w": 24,
+    "h": 42,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "1253",
+   "x": 1,
+   "y": 6,
+   "evId": 9,
+   "evName": "Duck Father",
+   "sprite": "DW_NPC_OTHERWORLD|1|2|1",
+   "prio": 1,
+   "items": [
+    "DANDELION"
+   ],
+   "art": {
+    "x": 38,
+    "y": 187,
+    "w": 22,
+    "h": 31,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "1252",
+   "x": 5,
+   "y": 3,
+   "evId": 31,
+   "evName": "SMOL",
+   "sprite": "DW_NPC_4|4|2|1",
+   "prio": 1,
+   "items": [
+    "FRIENDSHIP BRACELET"
+   ],
+   "art": {
+    "x": 163,
+    "y": 93,
+    "w": 25,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "1322",
+   "x": 3,
+   "y": 2,
+   "evId": 7,
+   "evName": "Trap Door",
+   "sprite": "DW_TrapDoor|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 101,
+    "y": 61,
+    "w": 22,
+    "h": 22,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "1324",
+   "x": 1,
+   "y": 3,
+   "evId": 10,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 36,
+    "y": 103,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "1324",
+   "x": 2,
+   "y": 2,
+   "evId": 11,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 68,
+    "y": 71,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "1324",
+   "x": 0,
+   "y": 4,
+   "evId": 12,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 4,
+    "y": 135,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "1324",
+   "x": 4,
+   "y": 2,
+   "evId": 13,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 132,
+    "y": 71,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "1324",
+   "x": 5,
+   "y": 3,
+   "evId": 14,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 164,
+    "y": 103,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "1324",
+   "x": 6,
+   "y": 4,
+   "evId": 15,
+   "evName": "Bass",
+   "sprite": "$objects_dw_singing_bass_2|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 196,
+    "y": 135,
+    "w": 25,
+    "h": 17,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "1922",
+   "x": 9,
+   "y": 4,
+   "evId": 20,
+   "evName": "DAISY 2",
+   "sprite": "DW_NPC_PLAYGROUND|4|8|1",
+   "prio": 1,
+   "items": [
+    "DAISY"
+   ],
+   "art": {
+    "x": 295,
+    "y": 125,
+    "w": 18,
+    "h": 25,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "1938",
+   "x": 6,
+   "y": 4,
+   "evId": 7,
+   "evName": "BLACKLETTER_P",
+   "letter": "P",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|1|6|1",
+   "prio": 2,
+   "items": [
+    "Blackletter P"
+   ],
+   "art": {
+    "x": 192,
+    "y": 122,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "clue": "\u5728\u62bd\u6c34\u9a6c\u6876\u91cc\u9762"
+  },
+  {
+   "layer": "hangman",
+   "mapId": "1932",
+   "x": 1,
+   "y": 6,
+   "evId": 8,
+   "evName": "BLACKLETTER_Q",
+   "letter": "Q",
+   "sprite": "DW_BLACKLETTERS_BLUR_LIGHT|3|4|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 32,
+    "y": 186,
+    "w": 32,
+    "h": 32,
+    "artFit": "rule"
+   },
+   "requires": [
+    "Day0DW - Basil is Missing"
+   ],
+   "clue": "\u5728\u5c0f\u5c0f\u7684\u4f1a\u52a8\u7684\u623f\u95f4\u91cc"
+  },
+  {
+   "layer": "clams",
+   "mapId": "1933",
+   "x": 4,
+   "y": 4,
+   "evId": 16,
+   "evName": "WOLF",
+   "sprite": "DW_DeepReef2|1|4|1",
+   "prio": 1,
+   "items": [
+    "143 CLAMS"
+   ],
+   "art": {
+    "x": 133,
+    "y": 117,
+    "w": 24,
+    "h": 36,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "quest",
+   "mapId": "1936",
+   "x": 2,
+   "y": 2,
+   "evId": 31,
+   "evName": "Card",
+   "sprite": "DW_OBJECTS|2|8|1",
+   "prio": 1,
+   "items": [
+    "COOL KEY CARD"
+   ],
+   "art": {
+    "x": 67,
+    "y": 65,
+    "w": 24,
+    "h": 18,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "1931",
+   "x": 4,
+   "y": 2,
+   "evId": 58,
+   "evName": "Life Jam Guy",
+   "sprite": "$DW_Lifejam_Guy|0|2|1",
+   "prio": 1,
+   "items": [
+    "LIFE JAM"
+   ],
+   "art": {
+    "x": 118,
+    "y": 44,
+    "w": 53,
+    "h": 45,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "npc",
+   "mapId": "1961",
+   "x": 8,
+   "y": 9,
+   "evId": 5,
+   "evName": "Jawsum",
+   "sprite": "DW_jawsum|1|2|1",
+   "prio": 1,
+   "items": [
+    "GIANT CHECK"
+   ],
+   "art": {
+    "x": 242,
+    "y": 242,
+    "w": 57,
+    "h": 60,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "3414",
+   "x": 4,
+   "y": 12,
+   "evId": 35,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": []
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "3411",
+   "x": 5,
+   "y": 8,
+   "evId": 37,
+   "evName": "aubreySmash",
+   "sprite": "!TAG_AUBREY_HAMMER|4|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 152,
+    "y": 225,
+    "w": 49,
+    "h": 62,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "3415",
+   "x": 8,
+   "y": 10,
+   "evId": 57,
+   "evName": "EV057",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 261,
+    "y": 320,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "3414",
+   "x": 0,
+   "y": 11,
+   "evId": 58,
+   "evName": "EV058",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 5,
+    "y": 352,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "3413",
+   "x": 7,
+   "y": 9,
+   "evId": 59,
+   "evName": "EV059",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 229,
+    "y": 288,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "3416",
+   "x": 3,
+   "y": 10,
+   "evId": 60,
+   "evName": "EV060",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 101,
+    "y": 320,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "3411",
+   "x": 2,
+   "y": 6,
+   "evId": 61,
+   "evName": "EV061",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 69,
+    "y": 192,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "3413",
+   "x": 8,
+   "y": 11,
+   "evId": 62,
+   "evName": "EV062",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 261,
+    "y": 352,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "3411",
+   "x": 5,
+   "y": 4,
+   "evId": 63,
+   "evName": "EV063",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 165,
+    "y": 128,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "collect",
+   "mapId": "3414",
+   "x": 8,
+   "y": 8,
+   "evId": 64,
+   "evName": "EV064",
+   "sprite": "!FA_OBJECTS_2|3|2|1",
+   "prio": 1,
+   "items": [
+    "TRASH"
+   ],
+   "art": {
+    "x": 261,
+    "y": 256,
+    "w": 22,
+    "h": 29,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "weapon",
+   "mapId": "3416",
+   "x": 6,
+   "y": 11,
+   "evId": 66,
+   "evName": "STEAK KNIFE",
+   "sprite": "!FA_OBJECTS_2|1|4|2",
+   "prio": 1,
+   "items": [
+    "STEAK KNIFE"
+   ],
+   "art": {
+    "x": 199,
+    "y": 365,
+    "w": 21,
+    "h": 10,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "cooler",
+   "mapId": "3471",
+   "x": 5,
+   "y": 32,
+   "evId": 12,
+   "evName": "Cooler",
+   "sprite": "DW_IMPORTANTOBJ_2|1|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 164,
+    "y": 1024,
+    "w": 27,
+    "h": 32,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "picnic",
+   "mapId": "3471",
+   "x": 4,
+   "y": 33,
+   "evId": 13,
+   "evName": "Mari",
+   "sprite": "DW_MARI|0|2|1",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 134,
+    "y": 1057,
+    "w": 20,
+    "h": 30,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "telescope",
+   "mapId": "4211",
+   "x": 1,
+   "y": 2,
+   "evId": 4,
+   "evName": "Telescope",
+   "items": []
+  },
+  {
+   "layer": "giver",
+   "mapId": "4263",
+   "x": 3,
+   "y": 5,
+   "evId": 7,
+   "evName": "Budgirl",
+   "sprite": "$DW_VF_budgirl|0|2|0",
+   "prio": 1,
+   "items": [
+    "MANGO SMOOTHIE",
+    "MELON SMOOTHIE",
+    "BERRY SMOOTHIE",
+    "S.BERRY SMOOTHIE"
+   ],
+   "art": {
+    "x": 106,
+    "y": 166,
+    "w": 11,
+    "h": 19,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "4281",
+   "x": 18,
+   "y": 23,
+   "evId": 5,
+   "evName": "KEL TAG",
+   "sprite": "DW_PuzzleObjects_1|4|6|2",
+   "prio": 0,
+   "items": [],
+   "requires": [
+    "Junkyard kel tag"
+   ]
+  },
+  {
+   "layer": "sparkle",
+   "mapId": "4281",
+   "x": 26,
+   "y": 5,
+   "evId": 12,
+   "evName": "SPARKLE - ITEM",
+   "sprite": "DW_IMPORTANTOBJ|1|2|1",
+   "prio": 1,
+   "items": [
+    "LIFE JAM"
+   ],
+   "art": {
+    "x": 842,
+    "y": 165,
+    "w": 7,
+    "h": 7,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "mechanism",
+   "mapId": "4335",
+   "x": 3,
+   "y": 8,
+   "evId": 7,
+   "evName": "Mushroom Rise",
+   "sprite": "$DW_mushroom_jump|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 73,
+    "y": 243,
+    "w": 78,
+    "h": 32,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clubsandwich",
+   "mapId": "4334",
+   "x": 3,
+   "y": 3,
+   "evId": 10,
+   "evName": "Club Sandwich",
+   "sprite": "$DW_club_sandwich_door|0|2|0",
+   "prio": 1,
+   "items": [],
+   "art": {
+    "x": 96,
+    "y": 84,
+    "w": 32,
+    "h": 44,
+    "artFit": "measured"
+   }
+  },
+  {
+   "layer": "giver",
+   "mapId": "4531",
+   "x": 3,
+   "y": 5,
+   "evId": 1,
+   "evName": "Reuben",
+   "sprite": "$DW_Club_Sandwich|0|2|1",
+   "prio": 1,
+   "items": [
+    "GRAPE SODA"
+   ],
+   "art": {
+    "x": 80,
+    "y": 125,
+    "w": 64,
+    "h": 61,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "clams",
+   "mapId": "4531",
+   "x": 6,
+   "y": 11,
+   "evId": 2,
+   "evName": "Hoagie",
+   "sprite": "$DW_Club_Sandwich|0|4|1",
+   "prio": 1,
+   "items": [
+    "5000 CLAMS"
+   ],
+   "art": {
+    "x": 181,
+    "y": 317,
+    "w": 54,
+    "h": 61,
+    "artFit": "rule"
+   }
+  },
+  {
+   "layer": "hangman",
+   "mapId": "89",
+   "x": 10,
+   "y": 24,
+   "evId": 7,
+   "evName": "BLACKLETTER",
+   "letter": "A",
+   "sprite": "DEV_TEST|3|8|1",
+   "prio": 1,
+   "items": [
+    "Blackletter A"
+   ],
+   "placedFrom": "clue",
+   "clue": "\u5728\u6811\u6869\u65c1\u8fb9\u7684\u8349\u4e1b\u4e2d"
+  },
+  {
+   "layer": "hangman",
+   "mapId": "101",
+   "x": 18,
+   "y": 11,
+   "evId": 3,
+   "evName": "BLACKLETTER",
+   "letter": "B",
+   "sprite": "DW_BLACKLETTERS|0|4|1",
+   "prio": 1,
+   "items": [
+    "Blackletter B"
+   ],
+   "placedFrom": "clue",
+   "clue": "\u5728\u4e00\u5ea7\u82e5\u9690\u82e5\u73b0\u7684\u8001\u6865\u4e0a"
+  },
+  {
+   "layer": "hangman",
+   "mapId": "147",
+   "x": 7,
+   "y": 25,
+   "evId": 4,
+   "evName": "BLACKLETTER",
+   "letter": "D",
+   "sprite": "DEV_TEST|3|8|1",
+   "prio": 1,
+   "items": [
+    "Blackletter D"
+   ],
+   "placedFrom": "clue",
+   "clue": "\u5728\u5e9f\u5f03\u7684\u5bb9\u5668\u9644\u8fd1"
+  },
+  {
+   "layer": "hangman",
+   "mapId": "132",
+   "x": 11,
+   "y": 15,
+   "evId": 21,
+   "evName": "BLACKLETTER",
+   "letter": "G",
+   "sprite": "DW_BLACKLETTERS|4|8|1",
+   "prio": 1,
+   "items": [
+    "Blackletter G"
+   ],
+   "placedFrom": "clue",
+   "clue": "\u5728\u6d3b\u677f\u95e8\u5e95\u4e0b"
+  },
+  {
+   "layer": "hangman",
+   "mapId": "134",
+   "x": 118,
+   "y": 28,
+   "evId": 16,
+   "evName": "BLACKLETTER",
+   "letter": "Y",
+   "sprite": "DW_BLACKLETTERS|6|2|1",
+   "prio": 1,
+   "items": [
+    "Blackletter Y"
+   ],
+   "placedFrom": "clue",
+   "clue": "\u5728\u767d\u96ea\u7684\u539f\u91ce\u4e2d"
+  }
+ ]
+}

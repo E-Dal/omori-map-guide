@@ -1,0 +1,2723 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 2,
+        "evName": "NORTH COAST",
+        "x": 9,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 90,
+        "x": 10,
+        "y": 55
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 2,
+        "evName": "NORTH COAST",
+        "x": 9,
+        "y": 0,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 90,
+        "x": 10,
+        "y": 55
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 2,
+        "evName": "NORTH COAST",
+        "x": 9,
+        "y": 0,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 90,
+        "x": 10,
+        "y": 55
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 3,
+        "evName": "Otherworld Ladder",
+        "x": 20,
+        "y": 14,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 19,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 13,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 1,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 6,
+        "evName": "PLAYGROUND",
+        "x": 9,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 92,
+        "x": 21,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 6,
+        "evName": "PLAYGROUND",
+        "x": 9,
+        "y": 29,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 92,
+        "x": 21,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 90,
+        "evId": 1,
+        "evName": "MAP TELEPORT",
+        "x": 8,
+        "y": 56,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 10,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 45,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 25,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 10,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 45,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 25,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 10,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 45,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 92,
+        "x": 23,
+        "y": 44
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 10,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 45,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 25,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 11,
+        "evName": "MAP TELEPORT",
+        "x": 21,
+        "y": 7,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 10,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 1,
+        "evName": "West",
+        "x": 0,
+        "y": 3,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 103,
+        "x": 85,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 1,
+        "evName": "West",
+        "x": 0,
+        "y": 3,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 103,
+        "x": 85,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 1,
+        "evName": "West",
+        "x": 0,
+        "y": 3,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 103,
+        "x": 85,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 2,
+        "evName": "West",
+        "x": 49,
+        "y": 7,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 99,
+        "x": 1,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 2,
+        "evName": "West",
+        "x": 49,
+        "y": 7,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 99,
+        "x": 1,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 2,
+        "evName": "West",
+        "x": 49,
+        "y": 7,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 99,
+        "x": 1,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 5,
+        "evName": "Path to Basil II",
+        "x": 23,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 92,
+        "x": 23,
+        "y": 44
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 15,
+        "evName": "Path to Basil II",
+        "x": 22,
+        "y": 79,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 96,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 15,
+        "evName": "Path to Basil II",
+        "x": 22,
+        "y": 79,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 497,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 15,
+        "evName": "Path to Basil II",
+        "x": 22,
+        "y": 79,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 497,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 95,
+        "evId": 15,
+        "evName": "Path to Basil II",
+        "x": 22,
+        "y": 79,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 96,
+        "x": 10,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 96,
+        "evId": 1,
+        "evName": "Path to Basil I",
+        "x": 14,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 24,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 96,
+        "evId": 1,
+        "evName": "Path to Basil I",
+        "x": 14,
+        "y": 0,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 24,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 96,
+        "evId": 2,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 65,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 97,
+        "x": 11,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 96,
+        "evId": 2,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 65,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 97,
+        "x": 11,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 96,
+        "evId": 2,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 65,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 357,
+        "x": 11,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 96,
+        "evId": 2,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 65,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 97,
+        "x": 11,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 97,
+        "evId": 12,
+        "evName": "BASIL",
+        "x": 11,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 98,
+        "x": 10,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 97,
+        "evId": 12,
+        "evName": "BASIL",
+        "x": 11,
+        "y": 11,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 98,
+        "x": 10,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 97,
+        "evId": 13,
+        "evName": "South",
+        "x": 10,
+        "y": 32,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 96,
+        "x": 10,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 98,
+        "evId": 10,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 97,
+        "x": 11,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 99,
+        "evId": 1,
+        "evName": "Otherworld Ladder",
+        "x": 0,
+        "y": 38,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 48,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 99,
+        "evId": 2,
+        "evName": "Otherworld Ladder",
+        "x": 86,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 104,
+        "x": 0,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 99,
+        "evId": 3,
+        "evName": "Otherworld Ladder",
+        "x": 77,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 100,
+        "x": 12,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 99,
+        "evId": 14,
+        "evName": "Playground",
+        "x": 0,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 92,
+        "x": 41,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 99,
+        "evId": 15,
+        "evName": "Forest Alcoves: 426",
+        "x": 15,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 426,
+        "x": 28,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 99,
+        "evId": 16,
+        "evName": "Forest Alcoves: 426",
+        "x": 77,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 426,
+        "x": 6,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 100,
+        "evId": 2,
+        "evName": "Otherworld Ladder",
+        "x": 12,
+        "y": 79,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 99,
+        "x": 77,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 101,
+        "evId": 1,
+        "evName": "Bridge",
+        "x": 0,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 104,
+        "x": 29,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 101,
+        "evId": 2,
+        "evName": "Bridge",
+        "x": 149,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 102,
+        "x": 0,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 101,
+        "evId": 4,
+        "evName": "Bridge",
+        "x": 73,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 326,
+        "x": 17,
+        "y": 39
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 102,
+        "evId": 1,
+        "evName": "Bridge",
+        "x": 29,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 103,
+        "x": 1,
+        "y": 37
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 102,
+        "evId": 1,
+        "evName": "Bridge",
+        "x": 29,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 103,
+        "x": 1,
+        "y": 37
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 102,
+        "evId": 2,
+        "evName": "Bridge",
+        "x": 0,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 101,
+        "x": 148,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 102,
+        "evId": 2,
+        "evName": "Bridge",
+        "x": 0,
+        "y": 11,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 101,
+        "x": 148,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 102,
+        "evId": 5,
+        "evName": "Forest Alcoves: 426",
+        "x": 16,
+        "y": 2,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 426,
+        "x": 8,
+        "y": 42
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 103,
+        "evId": 2,
+        "evName": "Bridge",
+        "x": 0,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 102,
+        "x": 28,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 103,
+        "evId": 3,
+        "evName": "To Train Station",
+        "x": 17,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 105,
+        "x": 14,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 103,
+        "evId": 5,
+        "evName": "Bridge",
+        "x": 86,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 1,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 103,
+        "evId": 15,
+        "evName": "Forest Alcoves: 426",
+        "x": 16,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 426,
+        "x": 30,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 104,
+        "evId": 1,
+        "evName": "Bridge",
+        "x": 29,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 101,
+        "x": 0,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 104,
+        "evId": 1,
+        "evName": "Bridge",
+        "x": 29,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 101,
+        "x": 0,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 104,
+        "evId": 2,
+        "evName": "East Coast",
+        "x": 0,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 99,
+        "x": 86,
+        "y": 37
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 104,
+        "evId": 2,
+        "evName": "East Coast",
+        "x": 0,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 99,
+        "x": 86,
+        "y": 37
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 105,
+        "evId": 1,
+        "evName": "To Pinwheel West",
+        "x": 12,
+        "y": 53,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 3,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 103,
+        "x": 17,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 105,
+        "evId": 2,
+        "evName": "To Train Station",
+        "x": 13,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 327,
+        "x": 14,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 326,
+        "evId": 1,
+        "evName": "Bridge",
+        "x": 17,
+        "y": 39,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 101,
+        "x": 73,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 327,
+        "evId": 1,
+        "evName": "To Train Station",
+        "x": 12,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 105,
+        "x": 14,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 357,
+        "evId": 1,
+        "evName": "BASIL",
+        "x": 11,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 431,
+        "x": 10,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 357,
+        "evId": 1,
+        "evName": "BASIL",
+        "x": 11,
+        "y": 11,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 432,
+        "x": 11,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 357,
+        "evId": 2,
+        "evName": "South",
+        "x": 10,
+        "y": 32,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 96,
+        "x": 10,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 358,
+        "evId": 1,
+        "evName": "BASIL",
+        "x": 11,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 432,
+        "x": 11,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 358,
+        "evId": 1,
+        "evName": "BASIL",
+        "x": 11,
+        "y": 11,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 434,
+        "x": 11,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 358,
+        "evId": 2,
+        "evName": "South",
+        "x": 10,
+        "y": 32,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 96,
+        "x": 10,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 358,
+        "evId": 2,
+        "evName": "South",
+        "x": 10,
+        "y": 32,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 96,
+        "x": 10,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 358,
+        "evId": 2,
+        "evName": "South",
+        "x": 10,
+        "y": 32,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 497,
+        "x": 10,
+        "y": 186
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 426,
+        "evId": 2,
+        "evName": "East Coast: 102",
+        "x": 8,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 102,
+        "x": 17,
+        "y": 3
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 426,
+        "evId": 3,
+        "evName": "Pinwheel Forest West: 103",
+        "x": 30,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 103,
+        "x": 17,
+        "y": 44
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 426,
+        "evId": 4,
+        "evName": "Pinwheel Forest East: 99",
+        "x": 28,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 99,
+        "x": 16,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 426,
+        "evId": 5,
+        "evName": "Pinwheel Forest East: 99",
+        "x": 6,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 99,
+        "x": 78,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 431,
+        "evId": 1,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 97,
+        "x": 11,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 431,
+        "evId": 1,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 357,
+        "x": 11,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 432,
+        "evId": 1,
+        "evName": "Old Shoe Entrance",
+        "x": 11,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 357,
+        "x": 11,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 434,
+        "evId": 1,
+        "evName": "TELEPORT",
+        "x": 11,
+        "y": 16,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 358,
+        "x": 11,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 497,
+        "evId": 7,
+        "evName": "Path to Basil I",
+        "x": 14,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 24,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 497,
+        "evId": 7,
+        "evName": "Path to Basil I",
+        "x": 14,
+        "y": 0,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 24,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 497,
+        "evId": 7,
+        "evName": "Path to Basil I",
+        "x": 14,
+        "y": 0,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 95,
+        "x": 24,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 497,
+        "evId": 9,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 185,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 358,
+        "x": 11,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 497,
+        "evId": 9,
+        "evName": "Old Shoe Entrance",
+        "x": 10,
+        "y": 185,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 97,
+        "x": 11,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 97,
+        "evId": 12,
+        "evName": "BASIL",
+        "x": 11,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 981,
+        "x": 4,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 97,
+        "evId": 12,
+        "evName": "BASIL",
+        "x": 11,
+        "y": 11,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 981,
+        "x": 4,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 981,
+        "evId": 10,
+        "evName": "Old Shoe Entrance",
+        "x": 4,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 97,
+        "x": 11,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 99,
+        "evId": 15,
+        "evName": "Forest Alcoves: 426",
+        "x": 15,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4262,
+        "x": 1,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 99,
+        "evId": 16,
+        "evName": "Forest Alcoves: 426",
+        "x": 77,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4261,
+        "x": 1,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 102,
+        "evId": 5,
+        "evName": "Forest Alcoves: 426",
+        "x": 16,
+        "y": 2,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4264,
+        "x": 3,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 103,
+        "evId": 15,
+        "evName": "Forest Alcoves: 426",
+        "x": 16,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4263,
+        "x": 3,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 327,
+        "evId": 902,
+        "evName": "Train Door (other dest)",
+        "x": 19,
+        "y": 10,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 327,
+        "x": 19,
+        "y": 10
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 326,
+        "evId": 903,
+        "evName": "Ladder (to Construction)",
+        "x": 19,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 326,
+        "x": 19,
+        "y": 11
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 90,
+        "evId": 900,
+        "evName": "To North Lake",
+        "x": 3,
+        "y": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 91,
+        "x": 15,
+        "y": 19
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 91,
+        "evId": 900,
+        "evName": "To North Coast",
+        "x": 15,
+        "y": 19,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 90,
+        "x": 8,
+        "y": 56
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 90,
+        "evId": 901,
+        "evName": "To Vast Forest (south)",
+        "x": 8,
+        "y": 56,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 90,
+        "x": 8,
+        "y": 56
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 981,
+        "evId": 900,
+        "evName": "Door (south)",
+        "x": 4,
+        "y": 13,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 981,
+        "x": 4,
+        "y": 13
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 982,
+        "evId": 900,
+        "evName": "Door (south)",
+        "x": 2,
+        "y": 9,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 982,
+        "x": 2,
+        "y": 9
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 4261,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 1,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4261,
+        "x": 1,
+        "y": 12
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4262,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 1,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4262,
+        "x": 1,
+        "y": 12
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4263,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 18,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4263,
+        "x": 3,
+        "y": 18
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4264,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4264,
+        "x": 3,
+        "y": 12
+      },
+      "kind": "exitStem"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 1,
+        "evName": "NEIGHBOUR'S ROOM",
+        "x": 10,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 19,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 1,
+        "evName": "NEIGHBOUR'S ROOM",
+        "x": 10,
+        "y": 14,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 19,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 3,
+        "evName": "Otherworld Ladder",
+        "x": 20,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 117,
+        "x": 1,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 3,
+        "evName": "Otherworld Ladder",
+        "x": 20,
+        "y": 14,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 117,
+        "x": 1,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 3,
+        "evName": "Otherworld Ladder",
+        "x": 20,
+        "y": 14,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 117,
+        "x": 1,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 3,
+        "evName": "Otherworld Ladder",
+        "x": 20,
+        "y": 14,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 117,
+        "x": 1,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 3,
+        "evName": "Otherworld Ladder",
+        "x": 20,
+        "y": 14,
+        "page": 6,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 117,
+        "x": 1,
+        "y": 38
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 152,
+        "x": 55,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 13,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 152,
+        "x": 55,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 13,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 152,
+        "x": 55,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 13,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 152,
+        "x": 55,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 89,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 13,
+        "page": 6,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 152,
+        "x": 55,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 90,
+        "evId": 3,
+        "evName": "To North Lake",
+        "x": 3,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 15,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 91,
+        "x": 15,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 34,
+        "evName": "SHAWN",
+        "x": 9,
+        "y": 38,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 490,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 34,
+        "evName": "SHAWN",
+        "x": 9,
+        "y": 38,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 490,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 92,
+        "evId": 34,
+        "evName": "SHAWN",
+        "x": 9,
+        "y": 38,
+        "page": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 490,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 96,
+        "evId": 10,
+        "evName": "Mari",
+        "x": 11,
+        "y": 24,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 87,
+        "x": 28,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 98,
+        "evId": 1,
+        "evName": "INITIALIZE",
+        "x": 0,
+        "y": 0,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 87,
+        "x": 28,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 98,
+        "evId": 7,
+        "evName": "BASIL_SOMETHING",
+        "x": 10,
+        "y": 8,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 326,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 19,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 197,
+        "x": 43,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 327,
+        "evId": 2,
+        "evName": "To Train Station",
+        "x": 19,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 328,
+        "x": 34,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 327,
+        "evId": 2,
+        "evName": "To Train Station",
+        "x": 19,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 333,
+        "x": 18,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 434,
+        "evId": 2,
+        "evName": "HOLE",
+        "x": 8,
+        "y": 12,
+        "page": 4,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 434,
+        "evId": 5,
+        "evName": "Shadow Basil",
+        "x": 11,
+        "y": 13,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 148,
+        "x": 14,
+        "y": 13
+      },
+      "kind": "setValue"
+    }
+  ]
+}

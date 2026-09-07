@@ -1,0 +1,478 @@
+{
+ "layout": {
+  "152": {
+   "x": 3616,
+   "y": 224,
+   "crop": "full",
+   "zOrder": 23,
+   "groupId": "pyrefly_forest"
+  },
+  "153": {
+   "x": 2752,
+   "y": -672,
+   "crop": "full",
+   "zOrder": 147,
+   "groupId": "pyrefly_forest"
+  },
+  "154": {
+   "x": 3648,
+   "y": -1472,
+   "crop": "full",
+   "zOrder": 20,
+   "groupId": "pyrefly_forest"
+  },
+  "155": {
+   "x": 2848,
+   "y": -1440,
+   "crop": "full",
+   "zOrder": 24,
+   "groupId": "pyrefly_forest"
+  },
+  "156": {
+   "x": 3872,
+   "y": -2112,
+   "crop": "full",
+   "zOrder": 17,
+   "groupId": "pyrefly_forest"
+  },
+  "157": {
+   "x": 4608,
+   "y": -1920,
+   "crop": "full",
+   "zOrder": 25,
+   "groupId": "pyrefly_forest"
+  },
+  "158": {
+   "x": 3072,
+   "y": -2112,
+   "crop": "full",
+   "zOrder": 26,
+   "groupId": "pyrefly_forest"
+  },
+  "159": {
+   "x": 2304,
+   "y": -2528,
+   "crop": "full",
+   "zOrder": 27,
+   "groupId": "pyrefly_forest"
+  },
+  "160": {
+   "x": 3072,
+   "y": -2752,
+   "crop": "full",
+   "zOrder": 28,
+   "groupId": "pyrefly_forest"
+  },
+  "161": {
+   "x": 4192,
+   "y": -3872,
+   "crop": "full",
+   "zOrder": 104,
+   "groupId": "pyrefly_forest"
+  },
+  "162": {
+   "x": 6784,
+   "y": -4032,
+   "crop": "full",
+   "zOrder": 107,
+   "groupId": "pyrefly_forest"
+  },
+  "163": {
+   "x": 8320,
+   "y": -5888,
+   "crop": "full",
+   "zOrder": 165,
+   "groupId": "pyrefly_forest"
+  },
+  "164": {
+   "x": 3104,
+   "y": -6688,
+   "crop": "full",
+   "zOrder": 105,
+   "groupId": "pyrefly_forest"
+  },
+  "165": {
+   "x": 1056,
+   "y": -6304,
+   "crop": "full",
+   "zOrder": 102,
+   "groupId": "pyrefly_forest"
+  },
+  "166": {
+   "x": 352,
+   "y": -4448,
+   "crop": "full",
+   "zOrder": 148,
+   "groupId": "pyrefly_forest"
+  },
+  "167": {
+   "x": 896,
+   "y": -5344,
+   "crop": "full",
+   "zOrder": 2,
+   "groupId": "pyrefly_forest"
+  },
+  "335": {
+   "x": 1888,
+   "y": -4352,
+   "crop": "full",
+   "zOrder": 103,
+   "groupId": "pyrefly_forest"
+  },
+  "336": {
+   "x": 2848,
+   "y": -4736,
+   "crop": "full",
+   "zOrder": 29,
+   "groupId": "pyrefly_forest"
+  },
+  "349": {
+   "x": 7104,
+   "y": -4736,
+   "crop": "full",
+   "zOrder": 33,
+   "groupId": "pyrefly_forest"
+  },
+  "350": {
+   "x": 6720,
+   "y": -5504,
+   "crop": "full",
+   "zOrder": 34,
+   "groupId": "pyrefly_forest"
+  },
+  "351": {
+   "x": 7520,
+   "y": -5824,
+   "crop": "full",
+   "zOrder": 164,
+   "groupId": "pyrefly_forest"
+  },
+  "352": {
+   "x": 8384,
+   "y": -6624,
+   "crop": "full",
+   "zOrder": 36,
+   "groupId": "pyrefly_forest"
+  },
+  "353": {
+   "x": 9312,
+   "y": -4960,
+   "crop": "full",
+   "zOrder": 111,
+   "groupId": "pyrefly_forest"
+  },
+  "354": {
+   "x": 8512,
+   "y": -4992,
+   "crop": "full",
+   "zOrder": 38,
+   "groupId": "pyrefly_forest"
+  },
+  "4334": {
+   "x": 2592,
+   "y": -3008,
+   "crop": "full",
+   "zOrder": 50,
+   "groupId": "pyrefly_forest"
+  }
+ },
+ "routes": [
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 4144,
+     "y": -2544,
+     "snap": {
+      "mapId": 160,
+      "evId": 3,
+      "evName": "Pyrefly Forest",
+      "ox": 1072,
+      "oy": 208
+     }
+    },
+    {
+     "x": 4208,
+     "y": -3472,
+     "snap": {
+      "mapId": 161,
+      "evId": 1,
+      "evName": "Pyrefly Forest",
+      "ox": 16,
+      "oy": 400
+     }
+    }
+   ]
+  },
+  {
+   "color": "#33ccff",
+   "pts": [
+    {
+     "x": 6384,
+     "y": -3088,
+     "snap": {
+      "mapId": 161,
+      "evId": 2,
+      "evName": "Pyrefly Forest",
+      "ox": 2192,
+      "oy": 784
+     }
+    },
+    {
+     "x": 7248,
+     "y": -3088,
+     "snap": {
+      "mapId": 162,
+      "evId": 1,
+      "evName": "Pyrefly Forest",
+      "ox": 464,
+      "oy": 944
+     }
+    }
+   ]
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": 7088,
+     "y": -4752,
+     "snap": {
+      "mapId": 350,
+      "evId": 1,
+      "evName": "Pyrefly Forest",
+      "ox": 368,
+      "oy": 752
+     }
+    },
+    {
+     "x": 7120,
+     "y": -4592,
+     "snap": {
+      "mapId": 349,
+      "evId": 4,
+      "evName": "Pyrefly Forest",
+      "ox": 16,
+      "oy": 144
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ffcc33",
+   "pts": [
+    {
+     "x": 7472,
+     "y": -5072,
+     "snap": {
+      "mapId": 350,
+      "evId": 5,
+      "evName": "Correct",
+      "ox": 752,
+      "oy": 432
+     }
+    },
+    {
+     "x": 8112,
+     "y": -5072,
+     "snap": {
+      "mapId": 351,
+      "evId": 3,
+      "evName": "Pyrefly Forest",
+      "ox": 592,
+      "oy": 752
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff7733",
+   "pts": [
+    {
+     "x": 7792,
+     "y": -5808,
+     "snap": {
+      "mapId": 351,
+      "evId": 2,
+      "evName": "Pyrefly Forest",
+      "ox": 272,
+      "oy": 16
+     }
+    },
+    {
+     "x": 8464,
+     "y": -5936,
+     "snap": {
+      "mapId": 352,
+      "evId": 1,
+      "evName": "Pyrefly Forest",
+      "ox": 80,
+      "oy": 688
+     }
+    }
+   ]
+  },
+  {
+   "color": "#bb88ff",
+   "pts": [
+    {
+     "x": 8944,
+     "y": -5936,
+     "snap": {
+      "mapId": 352,
+      "evId": 1,
+      "evName": "Pyrefly Forest",
+      "ox": 560,
+      "oy": 688
+     }
+    },
+    {
+     "x": 9840,
+     "y": -4944,
+     "snap": {
+      "mapId": 353,
+      "evId": 3,
+      "evName": "Pyrefly Forest",
+      "ox": 528,
+      "oy": 16
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff5566",
+   "pts": [
+    {
+     "x": 3952,
+     "y": -848,
+     "snap": {
+      "mapId": 154,
+      "evId": 1,
+      "evName": "Pyrefly Forest",
+      "ox": 304,
+      "oy": 624
+     }
+    },
+    {
+     "x": 3952,
+     "y": -656,
+     "snap": {
+      "mapId": 153,
+      "evId": 2,
+      "evName": "Pyrefly Forest",
+      "ox": 1200,
+      "oy": 16
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff66d9",
+   "pts": [
+    {
+     "x": 1520,
+     "y": -4464,
+     "snap": {
+      "mapId": 167,
+      "evId": 2,
+      "evName": "To Sprout Mole 2",
+      "ox": 624,
+      "oy": 880
+     }
+    },
+    {
+     "x": 2448,
+     "y": -4336,
+     "snap": {
+      "mapId": 335,
+      "evId": 1,
+      "evName": "To Sprout Mole 2",
+      "ox": 560,
+      "oy": 16
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ffcc33",
+   "pts": [
+    {
+     "x": 1520,
+     "y": -6192,
+     "snap": {
+      "mapId": 165,
+      "evId": 1,
+      "evName": "Pyrefly Forest",
+      "ox": 464,
+      "oy": 112
+     }
+    },
+    {
+     "x": 4240,
+     "y": -6448,
+     "snap": {
+      "mapId": 164,
+      "evId": 2,
+      "evName": "To Sprout Mole Colony",
+      "ox": 1136,
+      "oy": 240
+     }
+    }
+   ]
+  },
+  {
+   "color": "#ff7733",
+   "pts": [
+    {
+     "x": 3504,
+     "y": -2832,
+     "snap": {
+      "mapId": 336,
+      "evId": 1,
+      "evName": "Pyrefly Forest",
+      "ox": 656,
+      "oy": 1904
+     }
+    },
+    {
+     "x": 3760,
+     "y": -2736,
+     "snap": {
+      "mapId": 160,
+      "evId": 2,
+      "evName": "Pyrefly Forest",
+      "ox": 688,
+      "oy": 16
+     }
+    }
+   ]
+  },
+  {
+   "color": "#66ff66",
+   "pts": [
+    {
+     "x": 2704,
+     "y": -2608,
+     "snap": {
+      "mapId": 4334,
+      "evId": 900,
+      "evName": "Exit stem (south)",
+      "ox": 112,
+      "oy": 400
+     }
+    },
+    {
+     "x": 3216,
+     "y": -2640,
+     "snap": {
+      "mapId": 160,
+      "evId": 17,
+      "evName": "Pyrefly Forest",
+      "ox": 144,
+      "oy": 112
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,290 @@
+{
+  "91": {
+    "id": 91,
+    "name": "-- NORTH LAKE",
+    "width": 30,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "188": {
+    "id": 188,
+    "name": "-- NORTH LAKE → DEEP WELL",
+    "width": 17,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "189": {
+    "id": 189,
+    "name": "-- DEEP WELL LADDER",
+    "width": 21,
+    "height": 125,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "190": {
+    "id": 190,
+    "name": "-- DEEP WELL ENTRANCE",
+    "width": 25,
+    "height": 27,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "199": {
+    "id": 199,
+    "name": "-- SEACOW FARM",
+    "width": 20,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "room_rustic"
+  },
+  "200": {
+    "id": 200,
+    "name": "-- SEACOW BARN",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "room_rustic"
+  },
+  "203": {
+    "id": 203,
+    "name": "-- UNDERWATER HIGHWAY",
+    "width": 175,
+    "height": 25,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "dw_overworld"
+  },
+  "204": {
+    "id": 204,
+    "name": "-- CONSTRUCTION",
+    "width": 50,
+    "height": 38,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "dw_overworld"
+  },
+  "205": {
+    "id": 205,
+    "name": "-- PUZZLE CAVE",
+    "width": 55,
+    "height": 55,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "206": {
+    "id": 206,
+    "name": "-- BROKEN BRIDGE",
+    "width": 51,
+    "height": 37,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "207": {
+    "id": 207,
+    "name": "-- PEARL CAVE",
+    "width": 25,
+    "height": 25,
+    "parallaxName": null,
+    "bgm": "dw_overworld"
+  },
+  "208": {
+    "id": 208,
+    "name": "-- NORTHLAKE CURRENT",
+    "width": 35,
+    "height": 36,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "209": {
+    "id": 209,
+    "name": "-- MAIN PIER",
+    "width": 80,
+    "height": 95,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "211": {
+    "id": 211,
+    "name": "-- UNDERWATER HIGHWAY",
+    "width": 24,
+    "height": 50,
+    "parallaxName": "parallax_dw_1",
+    "bgm": null
+  },
+  "214": {
+    "id": 214,
+    "name": "-- PITSTOP INTERIOR",
+    "width": 20,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "event_oldlove"
+  },
+  "260": {
+    "id": 260,
+    "name": "-- FISHBOY'S CAVE",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "dw_overworld"
+  },
+  "261": {
+    "id": 261,
+    "name": "-- MUSIC 'O' CLAM CAVE",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "dw_overworld"
+  },
+  "330": {
+    "id": 330,
+    "name": "-- NORTH LAKE (ALT)",
+    "width": 30,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "338": {
+    "id": 338,
+    "name": "-- CURRENT MAP",
+    "width": 150,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "339": {
+    "id": 339,
+    "name": "-- MAIN CURRENTS",
+    "width": 55,
+    "height": 100,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "359": {
+    "id": 359,
+    "name": "-- ABANDONED HOUSE INTERIOR",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "399": {
+    "id": 399,
+    "name": "-- FOGGY SEA",
+    "width": 100,
+    "height": 100,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "421": {
+    "id": 421,
+    "name": "-- LIGHTHOUSE",
+    "width": 28,
+    "height": 42,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "430": {
+    "id": 430,
+    "name": "-- ENDLESS HIGHWAY",
+    "width": 96,
+    "height": 30,
+    "parallaxName": "parallax_dw_1",
+    "bgm": null
+  },
+  "433": {
+    "id": 433,
+    "name": "-- ALCOVES I",
+    "width": 70,
+    "height": 76,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "437": {
+    "id": 437,
+    "name": "-- ALCOVES II",
+    "width": 62,
+    "height": 70,
+    "parallaxName": null,
+    "bgm": "fat_sunset"
+  },
+  "493": {
+    "id": 493,
+    "name": "-- VIEW: DEEP WELL",
+    "width": 35,
+    "height": 45,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "501": {
+    "id": 501,
+    "name": "-- LOST AT SEA II",
+    "width": 20,
+    "height": 75,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "502": {
+    "id": 502,
+    "name": "-- LOST AT SEA I",
+    "width": 20,
+    "height": 75,
+    "parallaxName": null,
+    "bgm": "SE_lighthouse_foghorn"
+  },
+  "4211": {
+    "id": 4211,
+    "name": "-- LIGHTHOUSE [top room]",
+    "width": 6,
+    "height": 8,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 10,
+    "cropY": 4,
+    "polygon": [
+      [
+        10,
+        4
+      ],
+      [
+        16,
+        4
+      ],
+      [
+        16,
+        12
+      ],
+      [
+        10,
+        12
+      ]
+    ]
+  },
+  "4212": {
+    "id": 4212,
+    "name": "-- LIGHTHOUSE [main room]",
+    "width": 11,
+    "height": 14,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 8,
+    "cropY": 25,
+    "polygon": [
+      [
+        8,
+        25
+      ],
+      [
+        19,
+        25
+      ],
+      [
+        19,
+        39
+      ],
+      [
+        8,
+        39
+      ]
+    ]
+  }
+}

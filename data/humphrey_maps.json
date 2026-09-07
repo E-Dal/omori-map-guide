@@ -1,0 +1,282 @@
+{
+  "217": {
+    "id": 217,
+    "name": "-- SLIME GIRL'S LAIR",
+    "width": 17,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "218": {
+    "id": 218,
+    "name": "-- HUMPHREY'S UVULA",
+    "width": 33,
+    "height": 33,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "219": {
+    "id": 219,
+    "name": "-- SLIME GIRL ENTRANCE",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "dw_lair"
+  },
+  "220": {
+    "id": 220,
+    "name": "-- MARINA HALLWAY",
+    "width": 32,
+    "height": 45,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "221": {
+    "id": 221,
+    "name": "-- MARINA ROOM 1",
+    "width": 33,
+    "height": 38,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "222": {
+    "id": 222,
+    "name": "-- MARINA ROOM 2",
+    "width": 40,
+    "height": 22,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "223": {
+    "id": 223,
+    "name": "-- MARINA ROOM 3",
+    "width": 51,
+    "height": 51,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "224": {
+    "id": 224,
+    "name": "-- MARINA ROOM 4",
+    "width": 45,
+    "height": 38,
+    "parallaxName": null,
+    "bgm": "dw_lair"
+  },
+  "225": {
+    "id": 225,
+    "name": "-- MARINA MAZE",
+    "width": 50,
+    "height": 75,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "226": {
+    "id": 226,
+    "name": "-- MARINA HALL TO BOSS",
+    "width": 29,
+    "height": 35,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "227": {
+    "id": 227,
+    "name": "-- MARINA BOSS ROOM",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "dw_lair"
+  },
+  "228": {
+    "id": 228,
+    "name": "-- MEDUSA RIVER 1",
+    "width": 78,
+    "height": 18,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "229": {
+    "id": 229,
+    "name": "-- MEDUSA RIVER 4",
+    "width": 50,
+    "height": 35,
+    "parallaxName": null,
+    "bgm": "dw_lair"
+  },
+  "230": {
+    "id": 230,
+    "name": "-- MEDUSA WATER SLIDE",
+    "width": 50,
+    "height": 65,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "231": {
+    "id": 231,
+    "name": "-- MEDUSA ROOM TO BOSS",
+    "width": 65,
+    "height": 50,
+    "parallaxName": null,
+    "bgm": "dw_lair"
+  },
+  "232": {
+    "id": 232,
+    "name": "-- MEDUSA RIVER 2",
+    "width": 21,
+    "height": 50,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "233": {
+    "id": 233,
+    "name": "-- MEDUSA RIVER 3",
+    "width": 22,
+    "height": 50,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "234": {
+    "id": 234,
+    "name": "-- MEDUSA BOSS ROOM",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "dw_lair2"
+  },
+  "235": {
+    "id": 235,
+    "name": "-- MOLLY ENTRANCE",
+    "width": 50,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "236": {
+    "id": 236,
+    "name": "-- MOLLY MAIN ROOM",
+    "width": 21,
+    "height": 44,
+    "parallaxName": null,
+    "bgm": "dw_lair2"
+  },
+  "237": {
+    "id": 237,
+    "name": "-- MOLLY ROOM RIGHT 1",
+    "width": 27,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "dw_lair2"
+  },
+  "238": {
+    "id": 238,
+    "name": "-- MOLLY ROOM RIGHT 2",
+    "width": 77,
+    "height": 36,
+    "parallaxName": null,
+    "bgm": "dw_lair2"
+  },
+  "239": {
+    "id": 239,
+    "name": "-- MOLLY ROOM LEFT 1",
+    "width": 31,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "dw_lair2"
+  },
+  "240": {
+    "id": 240,
+    "name": "-- MOLLY ROOM LEFT 2",
+    "width": 44,
+    "height": 29,
+    "parallaxName": null,
+    "bgm": "dw_lair2"
+  },
+  "241": {
+    "id": 241,
+    "name": "-- MOLLY LOST ROOM 1",
+    "width": 21,
+    "height": 19,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "242": {
+    "id": 242,
+    "name": "-- BOSH RUSH BATTLE ROOM",
+    "width": 21,
+    "height": 34,
+    "parallaxName": null,
+    "bgm": "battle_lab"
+  },
+  "243": {
+    "id": 243,
+    "name": "-- MOLLY LOST ROOM 3",
+    "width": 21,
+    "height": 19,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "244": {
+    "id": 244,
+    "name": "-- BOSS RUSH LOBBY",
+    "width": 39,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "room_sleek"
+  },
+  "245": {
+    "id": 245,
+    "name": "-- MOLLY LOST ROOM 5",
+    "width": 21,
+    "height": 19,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "247": {
+    "id": 247,
+    "name": "-- MOLLY LOST ROOM 7",
+    "width": 21,
+    "height": 22,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "248": {
+    "id": 248,
+    "name": "-- MOLLY BOSS ROOM",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "dw_lair2"
+  },
+  "249": {
+    "id": 249,
+    "name": "-- HUMPHREY BOSS ROOM",
+    "width": 29,
+    "height": 92,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "250": {
+    "id": 250,
+    "name": "-- MEDUSA MAZE 1",
+    "width": 77,
+    "height": 77,
+    "parallaxName": null,
+    "bgm": "dw_lair"
+  },
+  "251": {
+    "id": 251,
+    "name": "-- MEDUSA MAZE 2",
+    "width": 61,
+    "height": 50,
+    "parallaxName": null,
+    "bgm": "dw_lair2"
+  },
+  "437": {
+    "id": 437,
+    "name": "-- ALCOVES II",
+    "width": 62,
+    "height": 70,
+    "parallaxName": null,
+    "bgm": "fat_sunset"
+  }
+}

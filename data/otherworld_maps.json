@@ -1,0 +1,338 @@
+{
+  "117": {
+    "id": 117,
+    "name": "-- OTHERWORLD LADDER",
+    "width": 50,
+    "height": 50,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_stump"
+  },
+  "118": {
+    "id": 118,
+    "name": "-- CATTAIL FIELD ENTRANCE",
+    "width": 24,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "ow_cattail_fields"
+  },
+  "119": {
+    "id": 119,
+    "name": "-- CATTAIL FIELD",
+    "width": 99,
+    "height": 55,
+    "parallaxName": "Space_parallax",
+    "bgm": "ow_cattail_fields"
+  },
+  "120": {
+    "id": 120,
+    "name": "-- SPROUT MOLE COLONY",
+    "width": 50,
+    "height": 80,
+    "parallaxName": "Space_parallax",
+    "bgm": "sproutmole_colony"
+  },
+  "121": {
+    "id": 121,
+    "name": "-- EAST",
+    "width": 50,
+    "height": 50,
+    "parallaxName": "Space_parallax",
+    "bgm": "sproutmole_colony"
+  },
+  "123": {
+    "id": 123,
+    "name": "-- OTHERWORLD LAKE",
+    "width": 41,
+    "height": 48,
+    "parallaxName": "Space_parallax",
+    "bgm": "ow_outskirts"
+  },
+  "124": {
+    "id": 124,
+    "name": "-- OTHERWORLD CAMPSITE",
+    "width": 34,
+    "height": 72,
+    "parallaxName": "Space_parallax",
+    "bgm": "ow_town"
+  },
+  "125": {
+    "id": 125,
+    "name": "-- OTHERWORLD INTERIORS",
+    "width": 50,
+    "height": 50,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "126": {
+    "id": 126,
+    "name": "-- SPACE BOYFRIEND'S HOUSE",
+    "width": 38,
+    "height": 40,
+    "parallaxName": "Space_parallax",
+    "bgm": "event_sbf_lovesick"
+  },
+  "127": {
+    "id": 127,
+    "name": "-- SOLAR SYSTEM",
+    "width": 54,
+    "height": 22,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_ladder"
+  },
+  "129": {
+    "id": 129,
+    "name": "-- OUTSKIRTS",
+    "width": 64,
+    "height": 44,
+    "parallaxName": null,
+    "bgm": "ow_outskirts"
+  },
+  "130": {
+    "id": 130,
+    "name": "-- JJ'S TENT",
+    "width": 20,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "ow_outskirts"
+  },
+  "131": {
+    "id": 131,
+    "name": "-- FROZEN LAKE",
+    "width": 33,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "snow_forest"
+  },
+  "132": {
+    "id": 132,
+    "name": "-- IGLOO INTERIOR",
+    "width": 44,
+    "height": 44,
+    "parallaxName": null,
+    "bgm": "snow_forest"
+  },
+  "213": {
+    "id": 213,
+    "name": "-- PHOTO FRAME",
+    "width": 22,
+    "height": 120,
+    "parallaxName": null,
+    "bgm": "dw_overworld"
+  },
+  "325": {
+    "id": 325,
+    "name": "-- OTHERWORLD LADDER II",
+    "width": 29,
+    "height": 119,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_ladder"
+  },
+  "329": {
+    "id": 329,
+    "name": "-- CATTAIL BARN",
+    "width": 32,
+    "height": 32,
+    "parallaxName": null,
+    "bgm": "ow_cattail_fields"
+  },
+  "331": {
+    "id": 331,
+    "name": "-- PATH TO FROZEN LAKE",
+    "width": 21,
+    "height": 18,
+    "parallaxName": null,
+    "bgm": "ow_outskirts"
+  },
+  "348": {
+    "id": 348,
+    "name": "-- MOONWALK MAP",
+    "width": 30,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": "ow_outskirts"
+  },
+  "433": {
+    "id": 433,
+    "name": "-- ALCOVES I",
+    "width": 70,
+    "height": 76,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "437": {
+    "id": 437,
+    "name": "-- ALCOVES II",
+    "width": 62,
+    "height": 70,
+    "parallaxName": null,
+    "bgm": "fat_sunset"
+  },
+  "1251": {
+    "id": 1251,
+    "name": "-- OTHERWORLD INTERIORS [top-L]",
+    "width": 8,
+    "height": 14,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 9,
+    "cropY": 8,
+    "polygon": [
+      [
+        9,
+        8
+      ],
+      [
+        17,
+        8
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        9,
+        22
+      ]
+    ]
+  },
+  "1252": {
+    "id": 1252,
+    "name": "-- OTHERWORLD INTERIORS [top-R]",
+    "width": 11,
+    "height": 10,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 31,
+    "cropY": 10,
+    "polygon": [
+      [
+        31,
+        10
+      ],
+      [
+        42,
+        10
+      ],
+      [
+        42,
+        20
+      ],
+      [
+        31,
+        20
+      ]
+    ]
+  },
+  "1253": {
+    "id": 1253,
+    "name": "-- OTHERWORLD INTERIORS [bot-L]",
+    "width": 7,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 10,
+    "cropY": 31,
+    "polygon": [
+      [
+        10,
+        31
+      ],
+      [
+        17,
+        31
+      ],
+      [
+        17,
+        43
+      ],
+      [
+        10,
+        43
+      ]
+    ]
+  },
+  "1254": {
+    "id": 1254,
+    "name": "-- OTHERWORLD INTERIORS [bot-R]",
+    "width": 7,
+    "height": 11,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 33,
+    "cropY": 31,
+    "polygon": [
+      [
+        33,
+        31
+      ],
+      [
+        40,
+        31
+      ],
+      [
+        40,
+        42
+      ],
+      [
+        33,
+        42
+      ]
+    ]
+  },
+  "4333": {
+    "id": 4333,
+    "name": "-- ALCOVES I [junk alcove — via outskirts]",
+    "width": 5,
+    "height": 11,
+    "parallaxName": null,
+    "bgm": null,
+    "cropX": 55,
+    "cropY": 11,
+    "polygon": [
+      [
+        55,
+        11
+      ],
+      [
+        60,
+        11
+      ],
+      [
+        60,
+        22
+      ],
+      [
+        55,
+        22
+      ]
+    ]
+  },
+  "4374": {
+    "id": 4374,
+    "name": "-- ALCOVES II [alcove 4]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 5,
+    "cropY": 25,
+    "polygon": [
+      [
+        5,
+        25
+      ],
+      [
+        12,
+        25
+      ],
+      [
+        12,
+        38
+      ],
+      [
+        5,
+        38
+      ]
+    ]
+  }
+}

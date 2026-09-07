@@ -1,0 +1,673 @@
+{
+ "watermelons": [
+  {
+   "mapId": 210,
+   "evId": 9,
+   "name": "WATERMELON - ITEM",
+   "x": 16,
+   "y": 67,
+   "color": "green",
+   "prize": {
+    "template": "melonRainCloud",
+    "kind": "Item",
+    "itemName": "RAIN CLOUD"
+   }
+  },
+  {
+   "mapId": 253,
+   "evId": 4,
+   "name": "melonCopy",
+   "x": 19,
+   "y": 19,
+   "color": "green",
+   "prize": {
+    "template": "melonWatermelonJuice",
+    "kind": "Item",
+    "itemName": "WATERMELON JUICE"
+   }
+  },
+  {
+   "mapId": 253,
+   "evId": 5,
+   "name": "melonCopy",
+   "x": 32,
+   "y": 9,
+   "color": "green",
+   "prize": {
+    "template": "melonCheeseBurger",
+    "kind": "Item",
+    "itemName": "CHEESEBURGER"
+   }
+  },
+  {
+   "mapId": 253,
+   "evId": 7,
+   "name": "melonCopy",
+   "x": 27,
+   "y": 27,
+   "color": "green",
+   "prize": {
+    "template": "melonRainCloud",
+    "kind": "Item",
+    "itemName": "RAIN CLOUD"
+   }
+  },
+  {
+   "mapId": 253,
+   "evId": 8,
+   "name": "melonCopy",
+   "x": 9,
+   "y": 19,
+   "color": "green",
+   "prize": {
+    "template": "melonWholePizza",
+    "kind": "Item",
+    "itemName": "WHOLE PIZZA"
+   }
+  },
+  {
+   "mapId": 254,
+   "evId": 6,
+   "name": "melonCopy",
+   "x": 10,
+   "y": 13,
+   "color": "green",
+   "prize": {
+    "template": "melonAirhorn",
+    "kind": "Item",
+    "itemName": "AIR HORN"
+   }
+  },
+  {
+   "mapId": 254,
+   "evId": 7,
+   "name": "melonCopy",
+   "x": 14,
+   "y": 34,
+   "color": "green",
+   "prize": {
+    "template": "melonConfetti",
+    "kind": "Item",
+    "itemName": "CONFETTI"
+   }
+  },
+  {
+   "mapId": 255,
+   "evId": 7,
+   "name": "melonCopy",
+   "x": 16,
+   "y": 32,
+   "color": "green",
+   "prize": {
+    "template": "melonComboMeal",
+    "kind": "Item",
+    "itemName": "COMBO MEAL"
+   }
+  },
+  {
+   "mapId": 256,
+   "evId": 6,
+   "name": "melonCopy",
+   "x": 28,
+   "y": 26,
+   "color": "green",
+   "prize": {
+    "template": "melonStrawberrySmoothie",
+    "kind": "Item",
+    "itemName": "S.BERRY SMOOTHIE"
+   }
+  },
+  {
+   "mapId": 256,
+   "evId": 9,
+   "name": "melonCopy",
+   "x": 34,
+   "y": 14,
+   "color": "green",
+   "prize": {
+    "template": "melonLifeJam",
+    "kind": "Item",
+    "itemName": "LIFE JAM"
+   }
+  },
+  {
+   "mapId": 256,
+   "evId": 10,
+   "name": "melonCopy",
+   "x": 24,
+   "y": 32,
+   "color": "green",
+   "prize": {
+    "template": "melonSpaghetti",
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 257,
+   "evId": 25,
+   "name": "melonCopy",
+   "x": 39,
+   "y": 15,
+   "color": "green",
+   "prize": {
+    "template": "melonWatermelonJuice",
+    "kind": "Item",
+    "itemName": "WATERMELON JUICE"
+   }
+  },
+  {
+   "mapId": 257,
+   "evId": 27,
+   "name": "melonCopy",
+   "x": 51,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": "melonSnowCone",
+    "kind": "Item",
+    "itemName": "SNO-CONE"
+   }
+  },
+  {
+   "mapId": 257,
+   "evId": 32,
+   "name": "melonCopy",
+   "x": 29,
+   "y": 48,
+   "color": "blue",
+   "prize": {
+    "template": "melonPaperBag",
+    "kind": "Armor",
+    "itemName": "PAPER BAG"
+   }
+  },
+  {
+   "mapId": 257,
+   "evId": 36,
+   "name": "melonCopy",
+   "x": 14,
+   "y": 37,
+   "color": "blue",
+   "prize": {
+    "template": "melonBaseballCap",
+    "kind": "Armor",
+    "itemName": "BASEBALL CAP"
+   }
+  },
+  {
+   "mapId": 433,
+   "evId": 13,
+   "name": "melonJamPackets",
+   "x": 14,
+   "y": 61,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 433,
+   "evId": 14,
+   "name": "melonJamPackets",
+   "x": 36,
+   "y": 34,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 433,
+   "evId": 15,
+   "name": "melonJamPackets",
+   "x": 57,
+   "y": 17,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 433,
+   "evId": 16,
+   "name": "melonJamPackets",
+   "x": 57,
+   "y": 37,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 433,
+   "evId": 18,
+   "name": "melonJamPackets",
+   "x": 14,
+   "y": 15,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 5,
+   "name": "melonJamPackets",
+   "x": 52,
+   "y": 8,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 6,
+   "name": "melonJamPackets",
+   "x": 52,
+   "y": 30,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 7,
+   "name": "melonJamPackets",
+   "x": 8,
+   "y": 31,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 8,
+   "name": "melonJamPackets",
+   "x": 52,
+   "y": 52,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 10,
+   "name": "melonJamPackets",
+   "x": 8,
+   "y": 54,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 11,
+   "name": "melonJamPackets",
+   "x": 30,
+   "y": 50,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 12,
+   "name": "melonJamPackets",
+   "x": 30,
+   "y": 29,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 13,
+   "name": "melonJamPackets",
+   "x": 7,
+   "y": 9,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 14,
+   "name": "melonJamPackets",
+   "x": 30,
+   "y": 9,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 15,
+   "name": "melonSpaghetti",
+   "x": 51,
+   "y": 7,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 16,
+   "name": "melonSpaghetti",
+   "x": 54,
+   "y": 7,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 17,
+   "name": "melonSpaghetti",
+   "x": 52,
+   "y": 10,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 18,
+   "name": "melonSpaghetti",
+   "x": 54,
+   "y": 9,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 19,
+   "name": "melonSpaghetti",
+   "x": 50,
+   "y": 9,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 437,
+   "evId": 20,
+   "name": "melonSpaghetti",
+   "x": 55,
+   "y": 10,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 453,
+   "evId": 16,
+   "name": "melonJamPackets",
+   "x": 33,
+   "y": 36,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 453,
+   "evId": 37,
+   "name": "melonLifeJam",
+   "x": 33,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 453,
+   "evId": 41,
+   "name": "melonLifeJam",
+   "x": 33,
+   "y": 4,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   },
+   "requires": [
+    "Alternate_Room"
+   ]
+  },
+  {
+   "mapId": 2103,
+   "evId": 9,
+   "name": "WATERMELON - ITEM",
+   "x": 10,
+   "y": 30,
+   "color": "green",
+   "prize": {
+    "template": "melonRainCloud",
+    "kind": "Item",
+    "itemName": "RAIN CLOUD"
+   }
+  },
+  {
+   "mapId": 4336,
+   "evId": 16,
+   "name": "melonJamPackets",
+   "x": 3,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 4373,
+   "evId": 5,
+   "name": "melonJamPackets",
+   "x": 4,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 4376,
+   "evId": 6,
+   "name": "melonJamPackets",
+   "x": 4,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 4379,
+   "evId": 8,
+   "name": "melonJamPackets",
+   "x": 4,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 4373,
+   "evId": 15,
+   "name": "melonSpaghetti",
+   "x": 3,
+   "y": 4,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 4373,
+   "evId": 16,
+   "name": "melonSpaghetti",
+   "x": 6,
+   "y": 4,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 4373,
+   "evId": 17,
+   "name": "melonSpaghetti",
+   "x": 4,
+   "y": 7,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 4373,
+   "evId": 18,
+   "name": "melonSpaghetti",
+   "x": 6,
+   "y": 6,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 4373,
+   "evId": 19,
+   "name": "melonSpaghetti",
+   "x": 2,
+   "y": 6,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 4373,
+   "evId": 20,
+   "name": "melonSpaghetti",
+   "x": 7,
+   "y": 7,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SPAGHETTI"
+   }
+  },
+  {
+   "mapId": 4532,
+   "evId": 37,
+   "name": "melonLifeJam",
+   "x": 4,
+   "y": 2,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 4532,
+   "evId": 41,
+   "name": "melonLifeJam",
+   "x": 4,
+   "y": 1,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   },
+   "requires": [
+    "Alternate_Room"
+   ]
+  }
+ ]
+}

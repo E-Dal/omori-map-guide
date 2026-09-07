@@ -1,0 +1,202 @@
+{
+ "watermelons": [
+  {
+   "mapId": 133,
+   "evId": 2,
+   "name": "melonCopy",
+   "x": 21,
+   "y": 8,
+   "color": "green",
+   "prize": {
+    "template": "melonPineappleJuice",
+    "kind": "Item",
+    "itemName": "PINEAPPLE JUICE"
+   }
+  },
+  {
+   "mapId": 133,
+   "evId": 3,
+   "name": "melonCopy",
+   "x": 19,
+   "y": 15,
+   "color": "green",
+   "prize": {
+    "template": "melonWaterBottle",
+    "kind": "Item",
+    "itemName": "GLASS BOTTLE"
+   }
+  },
+  {
+   "mapId": 134,
+   "evId": 17,
+   "name": "Running Melon",
+   "x": 105,
+   "y": 79,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "TOFU"
+   },
+   "requires": [
+    "WTF \u2265 7"
+   ]
+  },
+  {
+   "mapId": 134,
+   "evId": 18,
+   "name": "melonSno-coneTicket",
+   "x": 41,
+   "y": 42,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SNO-CONE TICKET"
+   }
+  },
+  {
+   "mapId": 135,
+   "evId": 13,
+   "name": "melonSno-coneTicket",
+   "x": 55,
+   "y": 4,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SNO-CONE TICKET"
+   }
+  },
+  {
+   "mapId": 135,
+   "evId": 20,
+   "name": "melonCopy",
+   "x": 26,
+   "y": 38,
+   "color": "green",
+   "prize": {
+    "template": "melonLifeJam",
+    "kind": "Item",
+    "itemName": "LIFE JAM"
+   }
+  },
+  {
+   "mapId": 135,
+   "evId": 23,
+   "name": "melonCopy",
+   "x": 35,
+   "y": 36,
+   "color": "blue",
+   "prize": {
+    "template": "melonSnowball",
+    "kind": "Weapon",
+    "itemName": "SNOWBALL"
+   }
+  },
+  {
+   "mapId": 136,
+   "evId": 4,
+   "name": "melonCopy",
+   "x": 22,
+   "y": 17,
+   "color": "green",
+   "prize": {
+    "template": "melonComputerPart",
+    "kind": "Item",
+    "itemName": "COMPUTER PART"
+   }
+  },
+  {
+   "mapId": 138,
+   "evId": 2,
+   "name": "melonCopy",
+   "x": 13,
+   "y": 10,
+   "color": "blue",
+   "prize": {
+    "template": "melonTenderizer",
+    "kind": "Weapon",
+    "itemName": "TENDERIZER"
+   }
+  },
+  {
+   "mapId": 140,
+   "evId": 9,
+   "name": "melonSno-coneTicket",
+   "x": 34,
+   "y": 56,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SNO-CONE TICKET"
+   }
+  },
+  {
+   "mapId": 140,
+   "evId": 10,
+   "name": "melonCopy",
+   "x": 41,
+   "y": 20,
+   "color": "green",
+   "prize": {
+    "template": "melonRainCloud",
+    "kind": "Item",
+    "itemName": "RAIN CLOUD"
+   }
+  },
+  {
+   "mapId": 140,
+   "evId": 15,
+   "name": "melonCopy",
+   "x": 38,
+   "y": 32,
+   "color": "green",
+   "prize": {
+    "template": "melonHoneyDewSmoothie",
+    "kind": "Item",
+    "itemName": "MELON SMOOTHIE"
+   }
+  },
+  {
+   "mapId": 141,
+   "evId": 3,
+   "name": "melonCopy",
+   "x": 0,
+   "y": 48,
+   "color": "green",
+   "prize": {
+    "template": "melonComboMeal",
+    "kind": "Item",
+    "itemName": "COMBO MEAL"
+   }
+  },
+  {
+   "mapId": 141,
+   "evId": 4,
+   "name": "melonCopy",
+   "x": 27,
+   "y": 21,
+   "color": "green",
+   "prize": {
+    "template": "melonDynamite",
+    "kind": "Item",
+    "itemName": "DYNAMITE"
+   }
+  },
+  {
+   "mapId": 141,
+   "evId": 7,
+   "name": "melonSno-coneTicket",
+   "x": 14,
+   "y": 35,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "SNO-CONE TICKET"
+   }
+  }
+ ]
+}

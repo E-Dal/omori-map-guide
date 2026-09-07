@@ -1,0 +1,198 @@
+{
+  "128": {
+    "id": 128,
+    "name": "-- JUNKYARD ENTRANCE",
+    "width": 41,
+    "height": 41,
+    "parallaxName": null,
+    "bgm": "ow_outskirts"
+  },
+  "142": {
+    "id": 142,
+    "name": "-- JUNKYARD (I)",
+    "width": 29,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": "ow_junkyard"
+  },
+  "143": {
+    "id": 143,
+    "name": "-- JUNKYARD (II)",
+    "width": 43,
+    "height": 30,
+    "parallaxName": "Space_parallax",
+    "bgm": "ow_junkyard"
+  },
+  "144": {
+    "id": 144,
+    "name": "-- JUNKYARD (III)",
+    "width": 40,
+    "height": 42,
+    "parallaxName": null,
+    "bgm": "ow_junkyard"
+  },
+  "145": {
+    "id": 145,
+    "name": "-- JUNKYARD (IV)",
+    "width": 31,
+    "height": 50,
+    "parallaxName": "Space_parallax",
+    "bgm": "ow_junkyard"
+  },
+  "147": {
+    "id": 147,
+    "name": "-- JUNKYARD (VI)",
+    "width": 38,
+    "height": 58,
+    "parallaxName": "Space_parallax",
+    "bgm": "ow_junkyard"
+  },
+  "149": {
+    "id": 149,
+    "name": "-- JUNKYARD (VIII)",
+    "width": 28,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": "ow_junkyard"
+  },
+  "150": {
+    "id": 150,
+    "name": "-- JUNKYARD (IX)",
+    "width": 36,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "ow_junkyard"
+  },
+  "151": {
+    "id": 151,
+    "name": "-- JUNKYARD (X)",
+    "width": 25,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "427": {
+    "id": 427,
+    "name": "-- JUNKYARD TUNNELS 1",
+    "width": 70,
+    "height": 60,
+    "parallaxName": null,
+    "bgm": "ow_junkyard"
+  },
+  "428": {
+    "id": 428,
+    "name": "-- JUNKYARD TUNNELS 2",
+    "width": 60,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": "ow_junkyard"
+  },
+  "429": {
+    "id": 429,
+    "name": "-- JUNKYARD EXTRA",
+    "width": 43,
+    "height": 30,
+    "parallaxName": "Space_parallax",
+    "bgm": "ow_junkyard"
+  },
+  "4281": {
+    "id": 4281,
+    "name": "-- JUNKYARD TUNNELS 2 [part 1 / L w/ bump]",
+    "width": 33,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": "ow_junkyard",
+    "cropX": 4,
+    "cropY": 0,
+    "polygon": [
+      [
+        4,
+        0
+      ],
+      [
+        37,
+        0
+      ],
+      [
+        37,
+        14
+      ],
+      [
+        31,
+        14
+      ],
+      [
+        31,
+        10
+      ],
+      [
+        11,
+        10
+      ],
+      [
+        11,
+        30
+      ],
+      [
+        4,
+        30
+      ]
+    ]
+  },
+  "4282": {
+    "id": 4282,
+    "name": "-- JUNKYARD TUNNELS 2 [part 2 / bottom island]",
+    "width": 9,
+    "height": 15,
+    "parallaxName": null,
+    "bgm": "ow_junkyard",
+    "cropX": 18,
+    "cropY": 15,
+    "polygon": [
+      [
+        18,
+        15
+      ],
+      [
+        27,
+        15
+      ],
+      [
+        27,
+        30
+      ],
+      [
+        18,
+        30
+      ]
+    ]
+  },
+  "4283": {
+    "id": 4283,
+    "name": "-- JUNKYARD TUNNELS 2 [part 3 / right vertical]",
+    "width": 7,
+    "height": 22,
+    "parallaxName": null,
+    "bgm": "ow_junkyard",
+    "cropX": 48,
+    "cropY": 0,
+    "polygon": [
+      [
+        48,
+        0
+      ],
+      [
+        55,
+        0
+      ],
+      [
+        55,
+        22
+      ],
+      [
+        48,
+        22
+      ]
+    ]
+  }
+}

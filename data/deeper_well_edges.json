@@ -1,0 +1,3252 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 201,
+        "evId": 28,
+        "evName": "HITCHHIKER",
+        "x": 10,
+        "y": 57,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 5,
+        "y": 50
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 201,
+        "evId": 33,
+        "evName": "To Abyss",
+        "x": 10,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 253,
+        "x": 4,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 1,
+        "evName": "Pool A (A-B)",
+        "x": 57,
+        "y": 58,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 40,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 2,
+        "evName": "Pool B (A-B)",
+        "x": 65,
+        "y": 48,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 35,
+        "y": 52
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 5,
+        "evName": "Pool C (C-D)",
+        "x": 25,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 32,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 6,
+        "evName": "Pool D (C-D)",
+        "x": 6,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 23,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 7,
+        "evName": "Pool E (E-Q)",
+        "x": 62,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 54,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 8,
+        "evName": "Pool Q (E-Q)",
+        "x": 50,
+        "y": 18,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 42,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 14,
+        "evName": "Pool H (H-I-L)",
+        "x": 10,
+        "y": 51,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 45,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 15,
+        "evName": "Pool I (H-I-L)",
+        "x": 30,
+        "y": 53,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 62,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 210,
+        "evId": 16,
+        "evName": "Pool L (H-I-L)",
+        "x": 15,
+        "y": 68,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 59,
+        "y": 44
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 212,
+        "evId": 1,
+        "evName": "To Path to Trench",
+        "x": 10,
+        "y": 63,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 39,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 212,
+        "evId": 2,
+        "evName": "To Trench",
+        "x": 10,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 216,
+        "x": 11,
+        "y": 44
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 3,
+        "evName": "To Trench",
+        "x": 9,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 446,
+        "x": 14,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 4,
+        "evName": "Face Wall",
+        "x": 18,
+        "y": 26,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 453,
+        "x": 33,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 22,
+        "evName": "HITCHHIKER",
+        "x": 5,
+        "y": 49,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 201,
+        "x": 9,
+        "y": 57
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 216,
+        "evId": 2,
+        "evName": "To Trench",
+        "x": 11,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 212,
+        "x": 10,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 216,
+        "evId": 3,
+        "evName": "To Map of Truth",
+        "x": 10,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 259,
+        "x": 12,
+        "y": 76
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 253,
+        "evId": 1,
+        "evName": "To Abyss",
+        "x": 4,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 201,
+        "x": 10,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 253,
+        "evId": 2,
+        "evName": "To Abyss",
+        "x": 33,
+        "y": 30,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 254,
+        "x": 34,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 253,
+        "evId": 3,
+        "evName": "To Abyss",
+        "x": 10,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 254,
+        "x": 18,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 254,
+        "evId": 1,
+        "evName": "To Abyss",
+        "x": 34,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 253,
+        "x": 33,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 254,
+        "evId": 2,
+        "evName": "To Abyss",
+        "x": 18,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 253,
+        "x": 10,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 254,
+        "evId": 3,
+        "evName": "To Abyss",
+        "x": 24,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 255,
+        "x": 24,
+        "y": 3
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 255,
+        "evId": 1,
+        "evName": "To Abyss",
+        "x": 24,
+        "y": 2,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 254,
+        "x": 24,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 255,
+        "evId": 2,
+        "evName": "To Abyss",
+        "x": 8,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 256,
+        "x": 9,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 255,
+        "evId": 3,
+        "evName": "To Abyss",
+        "x": 14,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 256,
+        "x": 14,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 255,
+        "evId": 4,
+        "evName": "To Abyss",
+        "x": 33,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 256,
+        "x": 34,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 255,
+        "evId": 9,
+        "evName": "HITCHHIKER",
+        "x": 34,
+        "y": 12,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 5,
+        "y": 50
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 256,
+        "evId": 1,
+        "evName": "To Abyss",
+        "x": 9,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 255,
+        "x": 8,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 256,
+        "evId": 2,
+        "evName": "To Abyss",
+        "x": 14,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 255,
+        "x": 14,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 256,
+        "evId": 3,
+        "evName": "To Abyss",
+        "x": 34,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 255,
+        "x": 33,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 256,
+        "evId": 4,
+        "evName": "To Abyss",
+        "x": 13,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 6,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 256,
+        "evId": 11,
+        "evName": "HITCHHIKER",
+        "x": 11,
+        "y": 25,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 5,
+        "y": 50
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 1,
+        "evName": "To Abyss",
+        "x": 6,
+        "y": 25,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 256,
+        "x": 13,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 2,
+        "evName": "To Abyss",
+        "x": 30,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 258,
+        "x": 7,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 3,
+        "evName": "To Abyss",
+        "x": 24,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 38,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 4,
+        "evName": "To Abyss",
+        "x": 38,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 24,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 5,
+        "evName": "To Abyss",
+        "x": 31,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 30,
+        "y": 41
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 6,
+        "evName": "To Abyss",
+        "x": 30,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 31,
+        "y": 37
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 7,
+        "evName": "To Abyss",
+        "x": 26,
+        "y": 36,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 38,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 8,
+        "evName": "To Abyss",
+        "x": 38,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 26,
+        "y": 36
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 9,
+        "evName": "To Abyss",
+        "x": 22,
+        "y": 49,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 15,
+        "y": 52
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 10,
+        "evName": "To Abyss",
+        "x": 15,
+        "y": 52,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 22,
+        "y": 49
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 11,
+        "evName": "To Abyss",
+        "x": 9,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 48,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 12,
+        "evName": "To Abyss",
+        "x": 48,
+        "y": 31,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 9,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 13,
+        "evName": "To Abyss",
+        "x": 4,
+        "y": 50,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 4,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 14,
+        "evName": "To Abyss",
+        "x": 4,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 4,
+        "y": 50
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 15,
+        "evName": "To Abyss",
+        "x": 8,
+        "y": 35,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 32,
+        "y": 24
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 16,
+        "evName": "To Abyss",
+        "x": 32,
+        "y": 24,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 8,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 17,
+        "evName": "To Abyss",
+        "x": 25,
+        "y": 28,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 2,
+        "y": 2
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 18,
+        "evName": "To Abyss",
+        "x": 2,
+        "y": 2,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 25,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 19,
+        "evName": "To Abyss",
+        "x": 8,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 31,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 20,
+        "evName": "To Abyss",
+        "x": 31,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 8,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 21,
+        "evName": "To Abyss",
+        "x": 11,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 49,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 22,
+        "evName": "To Abyss",
+        "x": 49,
+        "y": 20,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 11,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 40,
+        "evName": "HITCHHIKER",
+        "x": 51,
+        "y": 27,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 5,
+        "y": 50
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 43,
+        "evName": "HITCHHIKER",
+        "x": 3,
+        "y": 48,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 5,
+        "y": 50
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 257,
+        "evId": 45,
+        "evName": "HITCHHIKER",
+        "x": 36,
+        "y": 2,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 5,
+        "y": 50
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 258,
+        "evId": 1,
+        "evName": "To Abyss",
+        "x": 7,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 257,
+        "x": 30,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 258,
+        "evId": 1,
+        "evName": "To Abyss",
+        "x": 7,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 201,
+        "x": 10,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 259,
+        "evId": 1,
+        "evName": "EV001",
+        "x": 12,
+        "y": 76,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 216,
+        "x": 10,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 19,
+        "evName": "To Deeper Well",
+        "x": 57,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 446,
+        "evId": 2,
+        "evName": "To Path to Trench",
+        "x": 14,
+        "y": 79,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 9,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 446,
+        "evId": 4,
+        "evName": "To Path to Trench",
+        "x": 14,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 41,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 447,
+        "evId": 1,
+        "evName": "Pool F (F-G-J)",
+        "x": 20,
+        "y": 72,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 54,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 447,
+        "evId": 2,
+        "evName": "Pool G (F-G-J)",
+        "x": 6,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 40,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 447,
+        "evId": 5,
+        "evName": "Pool S (S-T)",
+        "x": 66,
+        "y": 28,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 57
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 447,
+        "evId": 6,
+        "evName": "Pool T (S-T)",
+        "x": 60,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 15,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 23,
+        "evName": "To Deeper Well / Path to Trench",
+        "x": 33,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 18,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 23,
+        "evName": "To Deeper Well / Path to Trench",
+        "x": 33,
+        "y": 15,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 1,
+        "evName": "To Path to Trench",
+        "x": 39,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 212,
+        "x": 10,
+        "y": 62
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 1,
+        "evName": "To Path to Trench",
+        "x": 39,
+        "y": 4,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 212,
+        "x": 10,
+        "y": 62
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 2,
+        "evName": "To Path to Trench",
+        "x": 41,
+        "y": 79,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 446,
+        "x": 14,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 3,
+        "evName": "Pool A (A-B) 40,66",
+        "x": 40,
+        "y": 66,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 57,
+        "y": 58
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 4,
+        "evName": "Pool B (A-B) 35,52",
+        "x": 35,
+        "y": 52,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 65,
+        "y": 48
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 5,
+        "evName": "Pool C (C-D) 32,31",
+        "x": 32,
+        "y": 31,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 25,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 6,
+        "evName": "Pool D (C-D) 23,29",
+        "x": 23,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 6,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 7,
+        "evName": "Pool E (E-Q) 62,12",
+        "x": 54,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 62,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 8,
+        "evName": "Pool I (H-I-L) 62,22",
+        "x": 62,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 30,
+        "y": 53
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 9,
+        "evName": "Pool L (H-I-L) 59,44",
+        "x": 59,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 15,
+        "y": 68
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 10,
+        "evName": "Pool Q (E-Q) 42,30",
+        "x": 42,
+        "y": 30,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 50,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 11,
+        "evName": "Pool H (H-I-L) 45,33",
+        "x": 45,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 210,
+        "x": 10,
+        "y": 51
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 12,
+        "evName": "Pool F (F-G-J) 54,14",
+        "x": 54,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 447,
+        "x": 20,
+        "y": 71
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 13,
+        "evName": "Pool G (F-G-J) 54,14",
+        "x": 40,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 447,
+        "x": 6,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 14,
+        "evName": "Pool S (S-T) 24,57",
+        "x": 24,
+        "y": 57,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 447,
+        "x": 66,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 15,
+        "evName": "Pool T (S-T) 15,17",
+        "x": 15,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 447,
+        "x": 60,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 27,
+        "evName": "Face Wall",
+        "x": 24,
+        "y": 52,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 433,
+        "x": 57,
+        "y": 43
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2104,
+        "evId": 1,
+        "evName": "Pool A (A-B)",
+        "x": 4,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 40,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2104,
+        "evId": 2,
+        "evName": "Pool B (A-B)",
+        "x": 12,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 35,
+        "y": 52
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2101,
+        "evId": 5,
+        "evName": "Pool C (C-D)",
+        "x": 23,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 32,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2101,
+        "evId": 6,
+        "evName": "Pool D (C-D)",
+        "x": 4,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 23,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2102,
+        "evId": 7,
+        "evName": "Pool E (E-Q)",
+        "x": 16,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 54,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2102,
+        "evId": 8,
+        "evName": "Pool Q (E-Q)",
+        "x": 4,
+        "y": 18,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 42,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2103,
+        "evId": 14,
+        "evName": "Pool H (H-I-L)",
+        "x": 4,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 45,
+        "y": 33
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2103,
+        "evId": 15,
+        "evName": "Pool I (H-I-L)",
+        "x": 24,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 62,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 2103,
+        "evId": 16,
+        "evName": "Pool L (H-I-L)",
+        "x": 9,
+        "y": 31,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 59,
+        "y": 44
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 4,
+        "evName": "Face Wall",
+        "x": 18,
+        "y": 26,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4532,
+        "x": 4,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4473,
+        "evId": 1,
+        "evName": "Pool F (F-G-J)",
+        "x": 16,
+        "y": 72,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 54,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4473,
+        "evId": 2,
+        "evName": "Pool G (F-G-J)",
+        "x": 2,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 40,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4471,
+        "evId": 5,
+        "evName": "Pool S (S-T)",
+        "x": 9,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 57
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4471,
+        "evId": 6,
+        "evName": "Pool T (S-T)",
+        "x": 3,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 15,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 3,
+        "evName": "Pool A (A-B) 40,66",
+        "x": 40,
+        "y": 66,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2104,
+        "x": 4,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 4,
+        "evName": "Pool B (A-B) 35,52",
+        "x": 35,
+        "y": 52,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2104,
+        "x": 12,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 5,
+        "evName": "Pool C (C-D) 32,31",
+        "x": 32,
+        "y": 31,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2101,
+        "x": 23,
+        "y": 17
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 6,
+        "evName": "Pool D (C-D) 23,29",
+        "x": 23,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2101,
+        "x": 4,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 7,
+        "evName": "Pool E (E-Q) 62,12",
+        "x": 54,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2102,
+        "x": 16,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 8,
+        "evName": "Pool I (H-I-L) 62,22",
+        "x": 62,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2103,
+        "x": 24,
+        "y": 16
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 9,
+        "evName": "Pool L (H-I-L) 59,44",
+        "x": 59,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2103,
+        "x": 9,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 10,
+        "evName": "Pool Q (E-Q) 42,30",
+        "x": 42,
+        "y": 30,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2102,
+        "x": 4,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 11,
+        "evName": "Pool H (H-I-L) 45,33",
+        "x": 45,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 2103,
+        "x": 4,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 12,
+        "evName": "Pool F (F-G-J) 54,14",
+        "x": 54,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4473,
+        "x": 16,
+        "y": 71
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 13,
+        "evName": "Pool G (F-G-J) 54,14",
+        "x": 40,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4473,
+        "x": 2,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 14,
+        "evName": "Pool S (S-T) 24,57",
+        "x": 24,
+        "y": 57,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4471,
+        "x": 9,
+        "y": 23
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 15,
+        "evName": "Pool T (S-T) 15,17",
+        "x": 15,
+        "y": 17,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4471,
+        "x": 3,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 495,
+        "evId": 27,
+        "evName": "Face Wall",
+        "x": 24,
+        "y": 52,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4336,
+        "x": 3,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 259,
+        "evId": 905,
+        "evName": "Red water — under the north wall",
+        "x": 11,
+        "y": 6,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 259,
+        "x": 11,
+        "y": 6
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 229,
+        "evId": 900,
+        "evName": "From River 3 (landing)",
+        "x": 1,
+        "y": 16,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 229,
+        "x": 1,
+        "y": 16
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 229,
+        "evId": 901,
+        "evName": "From River 2 (landing)",
+        "x": 8,
+        "y": 34,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 1,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 229,
+        "x": 8,
+        "y": 34
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 904,
+        "evName": "To Broken Bridge",
+        "x": 19,
+        "y": 38,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 19,
+        "y": 38
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 905,
+        "evName": "To Underwater Highway",
+        "x": 19,
+        "y": 48,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 19,
+        "y": 48
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 906,
+        "evName": "To Underwater Highway (west)",
+        "x": 0,
+        "y": 49,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 0,
+        "y": 49
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 447,
+        "evId": 908,
+        "evName": "Branch Coral (to Vast Forest)",
+        "x": 36,
+        "y": 8,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 447,
+        "x": 36,
+        "y": 8
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 4473,
+        "evId": 908,
+        "evName": "Branch Coral (to Vast Forest)",
+        "x": 32,
+        "y": 8,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4473,
+        "x": 32,
+        "y": 8
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 242,
+        "evId": 909,
+        "evName": "Warp pad (north)",
+        "x": 10,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 242,
+        "x": 10,
+        "y": 12
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 242,
+        "evId": 910,
+        "evName": "Warp pad (south)",
+        "x": 10,
+        "y": 30,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 242,
+        "x": 10,
+        "y": 30
+      },
+      "kind": "manual"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 212,
+        "evId": 17,
+        "evName": "To Highway",
+        "x": 12,
+        "y": 50,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 191,
+        "x": 6,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 1,
+        "evName": "To Underwater Highway",
+        "x": 19,
+        "y": 48,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 203,
+        "x": 1,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 215,
+        "evId": 2,
+        "evName": "Teleport",
+        "x": 19,
+        "y": 38,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 206,
+        "x": 1,
+        "y": 21
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 216,
+        "evId": 1,
+        "evName": "Humphrey Whale",
+        "x": 9,
+        "y": 10,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 15,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 216,
+        "evId": 1,
+        "evName": "Humphrey Whale",
+        "x": 9,
+        "y": 10,
+        "page": 10,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 219,
+        "x": 15,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 258,
+        "evId": 12,
+        "evName": "Hub: Lost Forest 2",
+        "x": 70,
+        "y": 18,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 267,
+        "x": 23,
+        "y": 64
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 259,
+        "evId": 20,
+        "evName": "EV020",
+        "x": 11,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 88,
+        "x": 11,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 14,
+        "y": 45,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 4,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 2,
+        "evName": "To SW Bedroom",
+        "x": 14,
+        "y": 67,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 186,
+        "x": 5,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 3,
+        "evName": "To SW Library",
+        "x": 36,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 176,
+        "x": 20,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 4,
+        "evName": "To SW SQ",
+        "x": 57,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 180,
+        "x": 28,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 5,
+        "evName": "To SW Ballroom",
+        "x": 57,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 18,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 6,
+        "evName": "shrooms",
+        "x": 36,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 3,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 11,
+        "evName": "To Outskirts",
+        "x": 57,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 129,
+        "x": 35,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 12,
+        "evName": "To Pyrefly",
+        "x": 14,
+        "y": 68,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 153,
+        "x": 5,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 1,
+        "evName": "To Frozen Forest",
+        "x": 8,
+        "y": 38,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 136,
+        "x": 14,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 2,
+        "evName": "To Molly Left 1",
+        "x": 53,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 239,
+        "x": 4,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 3,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 251,
+        "x": 35,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 4,
+        "evName": "To Medusa Maze 2",
+        "x": 53,
+        "y": 59,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 223,
+        "x": 44,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 437,
+        "evId": 9,
+        "evName": "To Orange Oasis",
+        "x": 6,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 106,
+        "x": 78,
+        "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 13,
+        "evName": "To SW Gallery",
+        "x": 33,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 175,
+        "x": 27,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 21,
+        "evName": "Pluto Smash",
+        "x": 10,
+        "y": 42,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 196,
+        "x": 9,
+        "y": 10
+      },
+      "kind": "setValue"
+    }
+  ]
+}

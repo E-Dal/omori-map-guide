@@ -1,0 +1,354 @@
+{
+  "89": {
+    "id": 89,
+    "name": "-- STUMP ENTRANCE",
+    "width": 21,
+    "height": 30,
+    "parallaxName": null,
+    "bgm": "vf_stump"
+  },
+  "90": {
+    "id": 90,
+    "name": "-- NORTH COAST",
+    "width": 20,
+    "height": 57,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "92": {
+    "id": 92,
+    "name": "-- FOREST PLAYGROUND",
+    "width": 42,
+    "height": 46,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_playground"
+  },
+  "95": {
+    "id": 95,
+    "name": "-- PATH TO BASIL (I)",
+    "width": 50,
+    "height": 80,
+    "parallaxName": null,
+    "bgm": "vf_overworld"
+  },
+  "96": {
+    "id": 96,
+    "name": "-- PATH TO BASIL (II)",
+    "width": 23,
+    "height": 80,
+    "parallaxName": null,
+    "bgm": "vf_overworld"
+  },
+  "97": {
+    "id": 97,
+    "name": "-- OLD SHOE ENTRANCE",
+    "width": 24,
+    "height": 33,
+    "parallaxName": null,
+    "bgm": "vf_overworld"
+  },
+  "98": {
+    "id": 98,
+    "name": "-- OLD SHOE INTERIOR",
+    "width": 40,
+    "height": 18,
+    "parallaxName": null,
+    "bgm": "room_peaceful"
+  },
+  "99": {
+    "id": 99,
+    "name": "-- PINWHEEL FOREST EAST",
+    "width": 87,
+    "height": 50,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_overworld"
+  },
+  "100": {
+    "id": 100,
+    "name": "-- KITE KID",
+    "width": 27,
+    "height": 80,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_pinwheel"
+  },
+  "101": {
+    "id": 101,
+    "name": "-- EAST FOREST BRIDGE",
+    "width": 150,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "102": {
+    "id": 102,
+    "name": "-- EAST COAST",
+    "width": 30,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "103": {
+    "id": 103,
+    "name": "-- PINWHEEL FOREST WEST",
+    "width": 87,
+    "height": 58,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_overworld"
+  },
+  "104": {
+    "id": 104,
+    "name": "-- WEST COAST",
+    "width": 30,
+    "height": 20,
+    "parallaxName": null,
+    "bgm": "vf_overworld"
+  },
+  "105": {
+    "id": 105,
+    "name": "-- TRAIN STATION WAITING AREA",
+    "width": 29,
+    "height": 54,
+    "parallaxName": "Space_parallax",
+    "bgm": "vf_train_station"
+  },
+  "326": {
+    "id": 326,
+    "name": "-- VAST FOREST PIER",
+    "width": 36,
+    "height": 40,
+    "parallaxName": null,
+    "bgm": "vf_bridge"
+  },
+  "327": {
+    "id": 327,
+    "name": "-- TRAIN STATION TRAIN",
+    "width": 28,
+    "height": 28,
+    "parallaxName": "Space_parallax",
+    "bgm": null
+  },
+  "357": {
+    "id": 357,
+    "name": "-- OLD SHOE ENTRANCE (ALT I)",
+    "width": 24,
+    "height": 33,
+    "parallaxName": null,
+    "bgm": "vf_overworld"
+  },
+  "358": {
+    "id": 358,
+    "name": "-- OLD SHOE ENTRANCE (ALT II)",
+    "width": 24,
+    "height": 33,
+    "parallaxName": null,
+    "bgm": "theme_basil"
+  },
+  "426": {
+    "id": 426,
+    "name": "-- FOREST ALCOVES",
+    "width": 50,
+    "height": 50,
+    "parallaxName": null,
+    "bgm": "vf_overworld"
+  },
+  "431": {
+    "id": 431,
+    "name": "-- OLD SHOE INTERIOR ROT",
+    "width": 20,
+    "height": 18,
+    "parallaxName": null,
+    "bgm": "theme_basil2"
+  },
+  "432": {
+    "id": 432,
+    "name": "-- OLD SHOE INTERIOR ROTTING",
+    "width": 24,
+    "height": 24,
+    "parallaxName": null,
+    "bgm": "theme_basil"
+  },
+  "434": {
+    "id": 434,
+    "name": "-- OLD SHOE INTERIOR VOID",
+    "width": 24,
+    "height": 24,
+    "parallaxName": null,
+    "bgm": "theme_basil"
+  },
+  "497": {
+    "id": 497,
+    "name": "-- PATH TO BASIL (BS)",
+    "width": 23,
+    "height": 200,
+    "parallaxName": null,
+    "bgm": "fat_cemetary"
+  },
+  "981": {
+    "id": 981,
+    "name": "-- OLD SHOE INTERIOR [main shoe]",
+    "width": 9,
+    "height": 14,
+    "parallaxName": null,
+    "bgm": "room_peaceful",
+    "cropX": 6,
+    "cropY": 0,
+    "polygon": [
+      [
+        6,
+        0
+      ],
+      [
+        15,
+        0
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        6,
+        14
+      ]
+    ]
+  },
+  "982": {
+    "id": 982,
+    "name": "-- OLD SHOE INTERIOR [side shoe]",
+    "width": 5,
+    "height": 10,
+    "parallaxName": null,
+    "bgm": "room_peaceful",
+    "cropX": 28,
+    "cropY": 4,
+    "polygon": [
+      [
+        28,
+        4
+      ],
+      [
+        33,
+        4
+      ],
+      [
+        33,
+        14
+      ],
+      [
+        28,
+        14
+      ]
+    ]
+  },
+  "4261": {
+    "id": 4261,
+    "name": "-- FOREST ALCOVES [alcove TL]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": "vf_overworld",
+    "cropX": 5,
+    "cropY": 3,
+    "polygon": [
+      [
+        5,
+        3
+      ],
+      [
+        12,
+        3
+      ],
+      [
+        12,
+        16
+      ],
+      [
+        5,
+        16
+      ]
+    ]
+  },
+  "4262": {
+    "id": 4262,
+    "name": "-- FOREST ALCOVES [alcove TR]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": "vf_overworld",
+    "cropX": 27,
+    "cropY": 3,
+    "polygon": [
+      [
+        27,
+        3
+      ],
+      [
+        34,
+        3
+      ],
+      [
+        34,
+        16
+      ],
+      [
+        27,
+        16
+      ]
+    ]
+  },
+  "4263": {
+    "id": 4263,
+    "name": "-- FOREST ALCOVES [alcove BR]",
+    "width": 7,
+    "height": 19,
+    "parallaxName": null,
+    "bgm": "vf_overworld",
+    "cropX": 27,
+    "cropY": 25,
+    "polygon": [
+      [
+        27,
+        25
+      ],
+      [
+        34,
+        25
+      ],
+      [
+        34,
+        44
+      ],
+      [
+        27,
+        44
+      ]
+    ]
+  },
+  "4264": {
+    "id": 4264,
+    "name": "-- FOREST ALCOVES [alcove BL]",
+    "width": 7,
+    "height": 13,
+    "parallaxName": null,
+    "bgm": "vf_overworld",
+    "cropX": 5,
+    "cropY": 30,
+    "polygon": [
+      [
+        5,
+        30
+      ],
+      [
+        12,
+        30
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        5,
+        43
+      ]
+    ]
+  }
+}

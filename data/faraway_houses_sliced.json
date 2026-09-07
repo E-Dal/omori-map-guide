@@ -1,0 +1,1809 @@
+{
+  "tile": 32,
+  "houses": {
+    "KEL & HERO'S HOUSE": {
+      "day": {
+        "mapId": 15,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map15_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map15_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map15_room2.png",
+            "tx": 68,
+            "ty": 17,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map15_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map15_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map15_room5.png",
+            "tx": 44,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map15_room6.png",
+            "tx": 15,
+            "ty": 61,
+            "tw": 13,
+            "th": 10
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 19,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map19_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map19_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map19_room2.png",
+            "tx": 68,
+            "ty": 17,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map19_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map19_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map19_room5.png",
+            "tx": 44,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map19_room6.png",
+            "tx": 15,
+            "ty": 61,
+            "tw": 13,
+            "th": 10
+          }
+        ]
+      },
+      "night": {
+        "mapId": 79,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map79_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map79_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map79_room2.png",
+            "tx": 68,
+            "ty": 17,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map79_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map79_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map79_room5.png",
+            "tx": 44,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map79_room6.png",
+            "tx": 15,
+            "ty": 61,
+            "tw": 13,
+            "th": 10
+          }
+        ]
+      }
+    },
+    "CRIS'S HOUSE": {
+      "day": {
+        "mapId": 16,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map16_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map16_room1.png",
+            "tx": 41,
+            "ty": 15,
+            "tw": 13,
+            "th": 13
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map16_room2.png",
+            "tx": 68,
+            "ty": 18,
+            "tw": 9,
+            "th": 9
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map16_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map16_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map16_room5.png",
+            "tx": 45,
+            "ty": 42,
+            "tw": 6,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map16_room6.png",
+            "tx": 19,
+            "ty": 63,
+            "tw": 6,
+            "th": 8
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 20,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map20_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map20_room1.png",
+            "tx": 41,
+            "ty": 15,
+            "tw": 13,
+            "th": 13
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map20_room2.png",
+            "tx": 68,
+            "ty": 18,
+            "tw": 9,
+            "th": 9
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map20_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map20_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map20_room5.png",
+            "tx": 45,
+            "ty": 42,
+            "tw": 6,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map20_room6.png",
+            "tx": 19,
+            "ty": 63,
+            "tw": 6,
+            "th": 8
+          }
+        ]
+      }
+    },
+    "MAVERICK'S HOUSE": {
+      "day": {
+        "mapId": 17,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map17_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map17_room1.png",
+            "tx": 41,
+            "ty": 15,
+            "tw": 13,
+            "th": 13
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map17_room2.png",
+            "tx": 68,
+            "ty": 16,
+            "tw": 9,
+            "th": 11
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map17_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map17_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map17_room5.png",
+            "tx": 44,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map17_room6.png",
+            "tx": 44,
+            "ty": 61,
+            "tw": 7,
+            "th": 10
+          },
+          {
+            "roomIdx": 7,
+            "file": "houses/map17_room7.png",
+            "tx": 18,
+            "ty": 62,
+            "tw": 6,
+            "th": 9
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 21,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map21_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map21_room1.png",
+            "tx": 41,
+            "ty": 15,
+            "tw": 13,
+            "th": 13
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map21_room2.png",
+            "tx": 68,
+            "ty": 16,
+            "tw": 9,
+            "th": 11
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map21_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map21_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map21_room5.png",
+            "tx": 44,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map21_room6.png",
+            "tx": 44,
+            "ty": 61,
+            "tw": 7,
+            "th": 10
+          },
+          {
+            "roomIdx": 7,
+            "file": "houses/map21_room7.png",
+            "tx": 18,
+            "ty": 62,
+            "tw": 6,
+            "th": 9
+          }
+        ]
+      }
+    },
+    "BRENT'S HOUSE": {
+      "day": {
+        "mapId": 23,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map23_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map23_room1.png",
+            "tx": 41,
+            "ty": 15,
+            "tw": 13,
+            "th": 13
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map23_room2.png",
+            "tx": 68,
+            "ty": 17,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map23_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map23_room4.png",
+            "tx": 44,
+            "ty": 41,
+            "tw": 7,
+            "th": 7
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map23_room5.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map23_room6.png",
+            "tx": 43,
+            "ty": 61,
+            "tw": 8,
+            "th": 11
+          },
+          {
+            "roomIdx": 7,
+            "file": "houses/map23_room7.png",
+            "tx": 18,
+            "ty": 62,
+            "tw": 7,
+            "th": 9
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 27,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map27_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map27_room1.png",
+            "tx": 41,
+            "ty": 15,
+            "tw": 13,
+            "th": 13
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map27_room2.png",
+            "tx": 68,
+            "ty": 17,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map27_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map27_room4.png",
+            "tx": 44,
+            "ty": 41,
+            "tw": 7,
+            "th": 7
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map27_room5.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map27_room6.png",
+            "tx": 43,
+            "ty": 61,
+            "tw": 8,
+            "th": 11
+          },
+          {
+            "roomIdx": 7,
+            "file": "houses/map27_room7.png",
+            "tx": 18,
+            "ty": 62,
+            "tw": 7,
+            "th": 9
+          }
+        ]
+      }
+    },
+    "KIM'S HOUSE": {
+      "day": {
+        "mapId": 24,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map24_room0.png",
+            "tx": 14,
+            "ty": 14,
+            "tw": 13,
+            "th": 15
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map24_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map24_room2.png",
+            "tx": 68,
+            "ty": 18,
+            "tw": 9,
+            "th": 9
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map24_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map24_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map24_room5.png",
+            "tx": 44,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map24_room6.png",
+            "tx": 18,
+            "ty": 62,
+            "tw": 7,
+            "th": 9
+          },
+          {
+            "roomIdx": 7,
+            "file": "houses/map24_room7.png",
+            "tx": 44,
+            "ty": 62,
+            "tw": 7,
+            "th": 10
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 28,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map28_room0.png",
+            "tx": 14,
+            "ty": 14,
+            "tw": 13,
+            "th": 15
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map28_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map28_room2.png",
+            "tx": 68,
+            "ty": 18,
+            "tw": 9,
+            "th": 9
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map28_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map28_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map28_room5.png",
+            "tx": 44,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map28_room6.png",
+            "tx": 18,
+            "ty": 62,
+            "tw": 7,
+            "th": 9
+          },
+          {
+            "roomIdx": 7,
+            "file": "houses/map28_room7.png",
+            "tx": 44,
+            "ty": 62,
+            "tw": 7,
+            "th": 10
+          }
+        ]
+      }
+    },
+    "JOY'S HOUSE": {
+      "day": {
+        "mapId": 25,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map25_room0.png",
+            "tx": 14,
+            "ty": 14,
+            "tw": 13,
+            "th": 15
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map25_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map25_room2.png",
+            "tx": 68,
+            "ty": 17,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map25_room3.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map25_room4.png",
+            "tx": 18,
+            "ty": 42,
+            "tw": 9,
+            "th": 7
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map25_room5.png",
+            "tx": 45,
+            "ty": 42,
+            "tw": 7,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map25_room6.png",
+            "tx": 18,
+            "ty": 61,
+            "tw": 7,
+            "th": 9
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 29,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map29_room0.png",
+            "tx": 14,
+            "ty": 14,
+            "tw": 13,
+            "th": 15
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map29_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map29_room2.png",
+            "tx": 68,
+            "ty": 17,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map29_room3.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map29_room4.png",
+            "tx": 18,
+            "ty": 42,
+            "tw": 9,
+            "th": 7
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map29_room5.png",
+            "tx": 45,
+            "ty": 42,
+            "tw": 7,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map29_room6.png",
+            "tx": 18,
+            "ty": 61,
+            "tw": 7,
+            "th": 9
+          }
+        ]
+      }
+    },
+    "CHARLIE'S HOUSE": {
+      "day": {
+        "mapId": 26,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map26_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map26_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map26_room2.png",
+            "tx": 68,
+            "ty": 16,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map26_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map26_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map26_room5.png",
+            "tx": 45,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map26_room6.png",
+            "tx": 18,
+            "ty": 62,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 7,
+            "file": "houses/map26_room7.png",
+            "tx": 44,
+            "ty": 63,
+            "tw": 6,
+            "th": 9
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 30,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map30_room0.png",
+            "tx": 14,
+            "ty": 13,
+            "tw": 13,
+            "th": 16
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map30_room1.png",
+            "tx": 41,
+            "ty": 16,
+            "tw": 13,
+            "th": 12
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map30_room2.png",
+            "tx": 68,
+            "ty": 16,
+            "tw": 9,
+            "th": 10
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map30_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 9,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map30_room4.png",
+            "tx": 68,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 5,
+            "file": "houses/map30_room5.png",
+            "tx": 45,
+            "ty": 42,
+            "tw": 8,
+            "th": 7
+          },
+          {
+            "roomIdx": 6,
+            "file": "houses/map30_room6.png",
+            "tx": 18,
+            "ty": 62,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 7,
+            "file": "houses/map30_room7.png",
+            "tx": 44,
+            "ty": 63,
+            "tw": 6,
+            "th": 9
+          }
+        ]
+      }
+    },
+    "VANCE'S HOUSE": {
+      "day": {
+        "mapId": 32,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map32_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map32_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map32_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map32_room3.png",
+            "tx": 18,
+            "ty": 40,
+            "tw": 7,
+            "th": 9
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map32_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 36,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map36_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map36_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map36_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map36_room3.png",
+            "tx": 18,
+            "ty": 40,
+            "tw": 7,
+            "th": 9
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map36_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      }
+    },
+    "SHAWN & KAREN'S HOUSE": {
+      "day": {
+        "mapId": 33,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map33_room0.png",
+            "tx": 43,
+            "ty": 18,
+            "tw": 12,
+            "th": 10
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map33_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map33_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map33_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map33_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 37,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map37_room0.png",
+            "tx": 43,
+            "ty": 18,
+            "tw": 12,
+            "th": 10
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map37_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map37_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map37_room3.png",
+            "tx": 18,
+            "ty": 41,
+            "tw": 7,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map37_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      }
+    },
+    "SARAH'S HOUSE": {
+      "day": {
+        "mapId": 34,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map34_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map34_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map34_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map34_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map34_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 38,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map38_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map38_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map38_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map38_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map38_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      }
+    },
+    "AUBREY'S HOUSE": {
+      "day": {
+        "mapId": 35,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map35_room0.png",
+            "tx": 43,
+            "ty": 18,
+            "tw": 12,
+            "th": 10
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map35_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map35_room2.png",
+            "tx": 14,
+            "ty": 21,
+            "tw": 13,
+            "th": 7
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map35_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map35_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 39,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map39_room0.png",
+            "tx": 43,
+            "ty": 18,
+            "tw": 12,
+            "th": 10
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map39_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map39_room2.png",
+            "tx": 14,
+            "ty": 21,
+            "tw": 13,
+            "th": 7
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map39_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 8
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map39_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      }
+    },
+    "CHURCH INTERIOR": {
+      "day": {
+        "mapId": 41,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map41_room0.png",
+            "tx": 3,
+            "ty": 1,
+            "tw": 15,
+            "th": 35
+          }
+        ]
+      }
+    },
+    "BASIL'S HOUSE": {
+      "day": {
+        "mapId": 46,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map46_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map46_room1.png",
+            "tx": 69,
+            "ty": 18,
+            "tw": 5,
+            "th": 8
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map46_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map46_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 9
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map46_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 50,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map50_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map50_room1.png",
+            "tx": 69,
+            "ty": 18,
+            "tw": 5,
+            "th": 8
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map50_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map50_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 9
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map50_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "night": {
+        "mapId": 80,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map80_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map80_room1.png",
+            "tx": 69,
+            "ty": 18,
+            "tw": 5,
+            "th": 8
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map80_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map80_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 9
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map80_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      }
+    },
+    "JESSE'S HOUSE": {
+      "day": {
+        "mapId": 47,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map47_room0.png",
+            "tx": 43,
+            "ty": 18,
+            "tw": 12,
+            "th": 10
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map47_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map47_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map47_room3.png",
+            "tx": 19,
+            "ty": 40,
+            "tw": 5,
+            "th": 9
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map47_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 51,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map51_room0.png",
+            "tx": 43,
+            "ty": 18,
+            "tw": 12,
+            "th": 10
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map51_room1.png",
+            "tx": 69,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map51_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map51_room3.png",
+            "tx": 19,
+            "ty": 40,
+            "tw": 5,
+            "th": 9
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map51_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      }
+    },
+    "BEBE'S HOUSE": {
+      "day": {
+        "mapId": 48,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map48_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map48_room1.png",
+            "tx": 69,
+            "ty": 17,
+            "tw": 7,
+            "th": 9
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map48_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map48_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map48_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 52,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map52_room0.png",
+            "tx": 43,
+            "ty": 17,
+            "tw": 12,
+            "th": 11
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map52_room1.png",
+            "tx": 69,
+            "ty": 17,
+            "tw": 7,
+            "th": 9
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map52_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map52_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map52_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      }
+    },
+    "ARTIST'S HOUSE": {
+      "day": {
+        "mapId": 49,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map49_room0.png",
+            "tx": 43,
+            "ty": 18,
+            "tw": 12,
+            "th": 10
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map49_room1.png",
+            "tx": 70,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map49_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map49_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map49_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      },
+      "sunset": {
+        "mapId": 53,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map53_room0.png",
+            "tx": 43,
+            "ty": 18,
+            "tw": 12,
+            "th": 10
+          },
+          {
+            "roomIdx": 1,
+            "file": "houses/map53_room1.png",
+            "tx": 70,
+            "ty": 19,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 2,
+            "file": "houses/map53_room2.png",
+            "tx": 14,
+            "ty": 23,
+            "tw": 13,
+            "th": 5
+          },
+          {
+            "roomIdx": 3,
+            "file": "houses/map53_room3.png",
+            "tx": 19,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          },
+          {
+            "roomIdx": 4,
+            "file": "houses/map53_room4.png",
+            "tx": 47,
+            "ty": 42,
+            "tw": 5,
+            "th": 7
+          }
+        ]
+      }
+    },
+    "TREEHOUSE INTERIOR": {
+      "day": {
+        "mapId": 393,
+        "rooms": [
+          {
+            "roomIdx": 0,
+            "file": "houses/map393_room0.png",
+            "tx": 7,
+            "ty": 2,
+            "tw": 8,
+            "th": 12
+          }
+        ]
+      }
+    }
+  }
+}

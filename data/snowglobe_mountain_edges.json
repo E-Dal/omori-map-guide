@@ -1,0 +1,1359 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 132,
+        "evId": 3,
+        "evName": "TELEPORT",
+        "x": 11,
+        "y": 26,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 132,
+        "x": 31,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 132,
+        "evId": 4,
+        "evName": "TELEPORT",
+        "x": 11,
+        "y": 32,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 132,
+        "x": 11,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 132,
+        "evId": 5,
+        "evName": "TELEPORT",
+        "x": 11,
+        "y": 12,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 132,
+        "x": 11,
+        "y": 32
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 132,
+        "evId": 6,
+        "evName": "TELEPORT",
+        "x": 11,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 132,
+        "x": 31,
+        "y": 30
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 132,
+        "evId": 7,
+        "evName": "Trap Door",
+        "x": 31,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 132,
+        "x": 11,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 132,
+        "evId": 9,
+        "evName": "TO FROZEN FOREST",
+        "x": 31,
+        "y": 36,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 134,
+        "x": 76,
+        "y": 76
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 132,
+        "evId": 17,
+        "evName": "Trap Door",
+        "x": 31,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 132,
+        "x": 11,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 133,
+        "evId": 1,
+        "evName": "To Frozen Forest III",
+        "x": 15,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 48,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 133,
+        "evId": 8,
+        "evName": "To Frozen Forest III",
+        "x": 18,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 140,
+        "x": 18,
+        "y": 58
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 2,
+        "evName": "TELEPORT",
+        "x": 75,
+        "y": 76,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 132,
+        "x": 31,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 4,
+        "evName": "To Frozen Forest I",
+        "x": 75,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 27,
+        "y": 90
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 4,
+        "evName": "To Frozen Forest I",
+        "x": 75,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 27,
+        "y": 86
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 5,
+        "evName": "To Frozen Forest I",
+        "x": 75,
+        "y": 149,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 27,
+        "y": 90
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 5,
+        "evName": "To Frozen Forest I",
+        "x": 75,
+        "y": 149,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 27,
+        "y": 86
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 6,
+        "evName": "To Frozen Forest I",
+        "x": 149,
+        "y": 76,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 27,
+        "y": 90
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 6,
+        "evName": "To Frozen Forest I",
+        "x": 149,
+        "y": 76,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 27,
+        "y": 86
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 7,
+        "evName": "To Frozen Forest I",
+        "x": 0,
+        "y": 76,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 27,
+        "y": 90
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 7,
+        "evName": "To Frozen Forest I",
+        "x": 0,
+        "y": 76,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 27,
+        "y": 86
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 135,
+        "evId": 1,
+        "evName": "To Frozen Forest III",
+        "x": 48,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 133,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 135,
+        "evId": 2,
+        "evName": "To Frozen Forest I",
+        "x": 27,
+        "y": 95,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 134,
+        "x": 80,
+        "y": 76
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 135,
+        "evId": 6,
+        "evName": "holio",
+        "x": 10,
+        "y": 48,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 138,
+        "x": 13,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 135,
+        "evId": 6,
+        "evName": "holio",
+        "x": 10,
+        "y": 48,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 138,
+        "x": 13,
+        "y": 31
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 135,
+        "evId": 7,
+        "evName": "To Frozen Forest III",
+        "x": 18,
+        "y": 79,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 133,
+        "x": 15,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 135,
+        "evId": 24,
+        "evName": "To Frozen Forest V",
+        "x": 10,
+        "y": 59,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 138,
+        "x": 14,
+        "y": 35
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 136,
+        "evId": 1,
+        "evName": "To Frozen Forest VII",
+        "x": 21,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 141,
+        "x": 16,
+        "y": 78
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 136,
+        "evId": 2,
+        "evName": "To Frozen Forest II",
+        "x": 19,
+        "y": 24,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 140,
+        "x": 18,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 137,
+        "evId": 1,
+        "evName": "To Frozen Forest VII",
+        "x": 16,
+        "y": 33,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 141,
+        "x": 7,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 137,
+        "evId": 3,
+        "evName": "To Frozen Forest VIII",
+        "x": 25,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 139,
+        "x": 13,
+        "y": 36
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 137,
+        "evId": 3,
+        "evName": "To Frozen Forest VIII",
+        "x": 25,
+        "y": 8,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 139,
+        "x": 13,
+        "y": 36
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 138,
+        "evId": 1,
+        "evName": "To Frozen Forest II",
+        "x": 14,
+        "y": 36,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 10,
+        "y": 60
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 139,
+        "evId": 1,
+        "evName": "To Frozen Forest VIII",
+        "x": 13,
+        "y": 37,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 137,
+        "x": 25,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 139,
+        "evId": 2,
+        "evName": "To Frozen Forest IX",
+        "x": 13,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 347,
+        "x": 12,
+        "y": 65
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 139,
+        "evId": 2,
+        "evName": "To Frozen Forest IX",
+        "x": 13,
+        "y": 5,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 347,
+        "x": 12,
+        "y": 65
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 140,
+        "evId": 1,
+        "evName": "To Frozen Forest III",
+        "x": 18,
+        "y": 57,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 133,
+        "x": 18,
+        "y": 7
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 140,
+        "evId": 2,
+        "evName": "To Frozen Forest IV",
+        "x": 18,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 136,
+        "x": 19,
+        "y": 23
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 141,
+        "evId": 1,
+        "evName": "To Frozen Forest IV",
+        "x": 16,
+        "y": 77,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 136,
+        "x": 21,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 141,
+        "evId": 2,
+        "evName": "To Frozen Forest VI",
+        "x": 7,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 137,
+        "x": 16,
+        "y": 32
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 347,
+        "evId": 1,
+        "evName": "TELEPORT",
+        "x": 12,
+        "y": 64,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 139,
+        "x": 13,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1323,
+        "evId": 3,
+        "evName": "TELEPORT",
+        "x": 3,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1322,
+        "x": 3,
+        "y": 3
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1323,
+        "evId": 4,
+        "evName": "TELEPORT",
+        "x": 3,
+        "y": 6,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1321,
+        "x": 3,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1321,
+        "evId": 5,
+        "evName": "TELEPORT",
+        "x": 3,
+        "y": 8,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1323,
+        "x": 3,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1321,
+        "evId": 6,
+        "evName": "TELEPORT",
+        "x": 3,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1324,
+        "x": 3,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1322,
+        "evId": 7,
+        "evName": "Trap Door",
+        "x": 3,
+        "y": 2,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1323,
+        "x": 3,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 1324,
+        "evId": 17,
+        "evName": "Trap Door",
+        "x": 3,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1321,
+        "x": 3,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 134,
+        "evId": 2,
+        "evName": "TELEPORT",
+        "x": 75,
+        "y": 76,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 1324,
+        "x": 3,
+        "y": 9
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 139,
+        "evId": 2,
+        "evName": "To Frozen Forest IX",
+        "x": 13,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3471,
+        "x": 6,
+        "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 139,
+        "evId": 2,
+        "evName": "To Frozen Forest IX",
+        "x": 13,
+        "y": 5,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3471,
+        "x": 6,
+        "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 3471,
+        "evId": 1,
+        "evName": "TELEPORT",
+        "x": 6,
+        "y": 58,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 139,
+        "x": 13,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 141,
+        "evId": 906,
+        "evName": "Left side (middle)",
+        "x": 0,
+        "y": 44,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 141,
+        "x": 0,
+        "y": 44
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 141,
+        "evId": 907,
+        "evName": "Right side (middle)",
+        "x": 39,
+        "y": 44,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 141,
+        "x": 39,
+        "y": 44
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 3472,
+        "evId": 900,
+        "evName": "Side branch entry",
+        "x": 3,
+        "y": 1,
+        "hitbox": {
+          "L": 1,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 3472,
+        "x": 3,
+        "y": 1
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 135,
+        "evId": 901,
+        "evName": "Side anchor (west)",
+        "x": 0,
+        "y": 48,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 1,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 0,
+        "y": 48
+      },
+      "kind": "anchor"
+    },
+    {
+      "from": {
+        "mapId": 135,
+        "evId": 902,
+        "evName": "Side anchor (east)",
+        "x": 59,
+        "y": 48,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 1,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 135,
+        "x": 59,
+        "y": 48
+      },
+      "kind": "anchor"
+    },
+    {
+      "from": {
+        "mapId": 140,
+        "evId": 901,
+        "evName": "Side anchor (west)",
+        "x": 0,
+        "y": 35,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 1,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 140,
+        "x": 0,
+        "y": 35
+      },
+      "kind": "anchor"
+    },
+    {
+      "from": {
+        "mapId": 140,
+        "evId": 902,
+        "evName": "Side anchor (east)",
+        "x": 49,
+        "y": 35,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 1,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 140,
+        "x": 49,
+        "y": 35
+      },
+      "kind": "anchor"
+    },
+    {
+      "from": {
+        "mapId": 1322,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 8,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 1322,
+        "x": 3,
+        "y": 8
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 1324,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 9,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 1324,
+        "x": 3,
+        "y": 9
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 3471,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 63,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 3471,
+        "x": 5,
+        "y": 63
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 3472,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 4,
+        "y": 15,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 3472,
+        "x": 4,
+        "y": 15
+      },
+      "kind": "exitStem"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 132,
+        "evId": 1,
+        "evName": "TO FROZEN LAKE",
+        "x": 31,
+        "y": 16,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 131,
+        "x": 8,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 136,
+        "evId": 3,
+        "evName": "Face Wall",
+        "x": 14,
+        "y": 5,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 437,
+        "x": 8,
+        "y": 37
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 140,
+        "evId": 21,
+        "evName": "Telescope",
+        "x": 29,
+        "y": 6,
+        "page": 0,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 492,
+        "x": 0,
+        "y": 0
+      },
+      "kind": "setValue"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "87": {
+    "id": 87,
+    "name": "-- WHITESPACE",
+    "width": 55,
+    "height": 55,
+    "parallaxName": null,
+    "bgm": null
+  },
+  "88": {
+    "id": 88,
+    "name": "-- NEIGHBOUR'S ROOM",
+    "width": 29,
+    "height": 28,
+    "parallaxName": "Space_parallax",
+    "bgm": "dw_neighbors_room"
+  }
+}

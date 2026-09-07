@@ -1,0 +1,2423 @@
+{
+  "internal": [
+    {
+      "from": {
+        "mapId": 152,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 2,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 153,
+        "x": 38,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 152,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 2,
+        "y": 0,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 153,
+        "x": 38,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 153,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 38,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 152,
+        "x": 12,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 153,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 36,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 154,
+        "x": 9,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 153,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 36,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 154,
+        "x": 9,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 153,
+        "evId": 3,
+        "evName": "Face Wall",
+        "x": 5,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 433,
+        "x": 14,
+        "y": 67
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 154,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 7,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 153,
+        "x": 37,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 154,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 7,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 153,
+        "x": 37,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 154,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 155,
+        "x": 23,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 154,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 24,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 156,
+        "x": 19,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 154,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 24,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 156,
+        "x": 19,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 155,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 24,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 154,
+        "x": 1,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 156,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 17,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 154,
+        "x": 26,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 156,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 17,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 154,
+        "x": 26,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 156,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 22,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 157,
+        "x": 1,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 156,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 158,
+        "x": 24,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 156,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 158,
+        "x": 23,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 157,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 2,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 156,
+        "x": 21,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 158,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 24,
+        "y": 2,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 156,
+        "x": 0,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 158,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 24,
+        "y": 2,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 156,
+        "x": 1,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 158,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 9,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 159,
+        "x": 22,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 158,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 3,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 5,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 158,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 3,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 5,
+        "y": 18
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 159,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 23,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 158,
+        "x": 1,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 160,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 4,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 158,
+        "x": 5,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 160,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 4,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 158,
+        "x": 5,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 160,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 20,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 336,
+        "x": 20,
+        "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 160,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 20,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 336,
+        "x": 20,
+        "y": 58
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 160,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 33,
+        "y": 6,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 161,
+        "x": 1,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 160,
+        "evId": 5,
+        "evName": "TRACK BLOCK",
+        "x": 0,
+        "y": 19,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 336,
+        "x": 20,
+        "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 160,
+        "evId": 17,
+        "evName": "Pyrefly Forest",
+        "x": 3,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 433,
+        "x": 14,
+        "y": 44
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 161,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 32,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 161,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 68,
+        "y": 24,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 161,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 68,
+        "y": 24,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 161,
+        "evId": 4,
+        "evName": "reset all",
+        "x": 0,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 161,
+        "x": 15,
+        "y": 13
+      },
+      "kind": "code201"
+    },
+    {
+      "from": {
+        "mapId": 162,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 13,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 161,
+        "x": 68,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 162,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 5,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 162,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 3,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 162,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 9,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 162,
+        "evId": 5,
+        "evName": "Pyrefly Forest",
+        "x": 24,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 162,
+        "evId": 6,
+        "evName": "Pyrefly Forest",
+        "x": 21,
+        "y": 5,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 163,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 10,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 161,
+        "x": 68,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 163,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 10,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 354,
+        "x": 7,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 163,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 10,
+        "y": 27,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 161,
+        "x": 68,
+        "y": 25
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 164,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 10,
+        "y": 66,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 336,
+        "x": 20,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 164,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 10,
+        "y": 66,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 336,
+        "x": 20,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 164,
+        "evId": 2,
+        "evName": "To Sprout Mole Colony",
+        "x": 35,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 14,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 164,
+        "evId": 2,
+        "evName": "To Sprout Mole Colony",
+        "x": 35,
+        "y": 7,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 14,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 165,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 14,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 164,
+        "x": 35,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 165,
+        "evId": 3,
+        "evName": "To Sprout Mole 3",
+        "x": 23,
+        "y": 29,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 167,
+        "x": 28,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 166,
+        "evId": 1,
+        "evName": "To Sprout Mole 3",
+        "x": 25,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 167,
+        "x": 19,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 167,
+        "evId": 1,
+        "evName": "To Sproutmole 1",
+        "x": 28,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 23,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 167,
+        "evId": 2,
+        "evName": "To Sprout Mole 2",
+        "x": 19,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 166,
+        "x": 25,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 167,
+        "evId": 3,
+        "evName": "To Sprout Mole 4",
+        "x": 37,
+        "y": 27,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 335,
+        "x": 17,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 335,
+        "evId": 1,
+        "evName": "To Sprout Mole 2",
+        "x": 17,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 167,
+        "x": 37,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 336,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 18,
+        "y": 59,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 21,
+        "y": 0
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 336,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 18,
+        "y": 59,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 21,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 336,
+        "evId": 3,
+        "evName": "EV003",
+        "x": 18,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 164,
+        "x": 12,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 336,
+        "evId": 3,
+        "evName": "EV003",
+        "x": 18,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 164,
+        "x": 12,
+        "y": 65
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 336,
+        "evId": 4,
+        "evName": "introCam",
+        "x": 20,
+        "y": 55,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 164,
+        "x": 12,
+        "y": 66
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 349,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 9,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 16,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 349,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 9,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 22,
+        "y": 6
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 349,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 14,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 349,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 23,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 349,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 2,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 350,
+        "x": 11,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 349,
+        "evId": 5,
+        "evName": "daddy",
+        "x": 13,
+        "y": 14,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 350,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 7,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 1,
+        "y": 5
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 350,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 350,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 3,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 350,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 20,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 350,
+        "evId": 5,
+        "evName": "Correct",
+        "x": 23,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 351,
+        "x": 2,
+        "y": 22
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 350,
+        "evId": 6,
+        "evName": "daddy",
+        "x": 11,
+        "y": 13,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 351,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 23,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 351,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 8,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 351,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 18,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 5,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 351,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 23,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 351,
+        "evId": 5,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 352,
+        "x": 2,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 351,
+        "evId": 6,
+        "evName": "daddy",
+        "x": 14,
+        "y": 7,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 352,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 351,
+        "x": 1,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 352,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 19,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 352,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 23,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 352,
+        "evId": 4,
+        "evName": "Pyrefly Forest",
+        "x": 2,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 352,
+        "evId": 5,
+        "evName": "Correct",
+        "x": 15,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 353,
+        "x": 16,
+        "y": 1
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 352,
+        "evId": 6,
+        "evName": "daddy",
+        "x": 18,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 353,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 0,
+        "y": 8,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 354,
+        "x": 23,
+        "y": 13
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 353,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 8,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 353,
+        "evId": 3,
+        "evName": "Pyrefly Forest",
+        "x": 13,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 6,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 352,
+        "x": 17,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 353,
+        "evId": 4,
+        "evName": "daddy",
+        "x": 10,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 354,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 4,
+        "y": 0,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 4,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 163,
+        "x": 12,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 354,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 24,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 353,
+        "x": 1,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 354,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 24,
+        "y": 11,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 349,
+        "x": 13,
+        "y": 20
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 354,
+        "evId": 3,
+        "evName": "daddy",
+        "x": 8,
+        "y": 10,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 162,
+        "x": 14,
+        "y": 15
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 14,
+        "y": 45,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 160,
+        "x": 4,
+        "y": 4
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 12,
+        "evName": "To Pyrefly",
+        "x": 14,
+        "y": 68,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 153,
+        "x": 5,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 160,
+        "evId": 17,
+        "evName": "Pyrefly Forest",
+        "x": 3,
+        "y": 3,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4334,
+        "x": 3,
+        "y": 12
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 336,
+        "evId": 900,
+        "evName": "Castle Entrance (cutscene)",
+        "x": 20,
+        "y": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 336,
+        "x": 20,
+        "y": 5
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 165,
+        "evId": 900,
+        "evName": "Top-Left Door",
+        "x": 7,
+        "y": 5,
+        "hitbox": {
+          "L": 1,
+          "R": 1,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 165,
+        "x": 7,
+        "y": 5
+      },
+      "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 4334,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4334,
+        "x": 3,
+        "y": 12
+      },
+      "kind": "exitStem"
+    }
+  ],
+  "external": [
+    {
+      "from": {
+        "mapId": 152,
+        "evId": 1,
+        "evName": "Pyrefly Forest",
+        "x": 55,
+        "y": 4,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 89,
+        "x": 1,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 165,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 5,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 171,
+        "x": 14,
+        "y": 32
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 165,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 5,
+        "y": 12,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 171,
+        "x": 14,
+        "y": 32
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 165,
+        "evId": 2,
+        "evName": "Pyrefly Forest",
+        "x": 5,
+        "y": 12,
+        "page": 3,
+        "hitbox": {
+          "L": 0,
+          "R": 2,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 171,
+        "x": 55,
+        "y": 32
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 165,
+        "evId": 30,
+        "evName": "EV030",
+        "x": 6,
+        "y": 12,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 449,
+        "x": 13,
+        "y": 14
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 2,
+        "evName": "To SW Bedroom",
+        "x": 14,
+        "y": 67,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 186,
+        "x": 5,
+        "y": 19
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 3,
+        "evName": "To SW Library",
+        "x": 36,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 176,
+        "x": 20,
+        "y": 28
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 4,
+        "evName": "To SW SQ",
+        "x": 57,
+        "y": 21,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 180,
+        "x": 28,
+        "y": 8
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 5,
+        "evName": "To SW Ballroom",
+        "x": 57,
+        "y": 43,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 178,
+        "x": 18,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 6,
+        "evName": "shrooms",
+        "x": 36,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 169,
+        "x": 3,
+        "y": 26
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 11,
+        "evName": "To Outskirts",
+        "x": 57,
+        "y": 22,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 129,
+        "x": 35,
+        "y": 29
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 433,
+        "evId": 19,
+        "evName": "To Deeper Well",
+        "x": 57,
+        "y": 44,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 53
+      },
+      "kind": "setValue"
+    }
+  ]
+}
