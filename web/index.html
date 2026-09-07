@@ -139,6 +139,34 @@
   #introBtn { background: #2a2a2a; color: #bbb; border: 1px solid #444; border-radius: 4px;
               font-size: 12px; padding: 4px 9px; cursor: pointer; }
   #introBtn:hover { color: #fff; border-color: #777; }
+  /* Carrying progress in and out. Same shell as the notice above, so the two
+     dialogs do not have to be told apart at a glance. */
+  #progRow { margin-top: 8px; padding-top: 7px; border-top: 1px solid #333;
+             display: flex; align-items: center; gap: 6px; font-size: 10px; color: #8d8d8d; }
+  #progRow button { margin-left: auto; background: #2a2a2a; color: #bbb;
+                    border: 1px solid #444; border-radius: 3px; font-size: 10px;
+                    padding: 2px 7px; cursor: pointer; }
+  #progRow button + button { margin-left: 0; }
+  #progRow button:hover { color: #fff; border-color: #777; }
+  #progBack { position: fixed; inset: 0; z-index: 1300; display: none;
+              background: rgba(0,0,0,0.62); backdrop-filter: blur(2px); }
+  body.prog-open #progBack { display: flex; align-items: center; justify-content: center; }
+  #progBox { width: min(560px, calc(100vw - 32px)); background: #1d1d20;
+             border: 1px solid #4a4a4a; border-radius: 8px; padding: 18px 20px 16px;
+             box-shadow: 0 10px 40px rgba(0,0,0,0.6); font-size: 13px; line-height: 1.6; }
+  #progBox h2 { margin: 0 0 2px; font-size: 16px; color: #ffd97a; font-weight: normal; }
+  #progBox .sub { color: #8d8d8d; font-size: 11px; margin-bottom: 10px; }
+  #progText { width: 100%; height: 130px; box-sizing: border-box; resize: vertical;
+              background: #141416; color: #cfcfcf; border: 1px solid #3a3a3a;
+              border-radius: 4px; padding: 7px 8px; font-family: ui-monospace, monospace;
+              font-size: 11px; line-height: 1.4; }
+  #progBox .foot { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  #progBox .foot button { background: #2a2a2a; color: #ddd; border: 1px solid #4a4a4a;
+                          border-radius: 4px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
+  #progBox .foot button:hover { background: #343438; }
+  #progBox .foot button.primary { margin-left: auto; background: #2f7a3f;
+                                  border-color: #2f7a3f; color: #fff; }
+  #progBox .foot button.primary:hover { background: #389049; }
   .lang-pick { display: inline-flex; border: 1px solid #444; border-radius: 4px; overflow: hidden; }
   .lang-pick button { background: #2a2a2a; color: #999; border: 0; font-size: 11px;
                       padding: 4px 8px; cursor: pointer; }
@@ -281,9 +309,31 @@
     </div>
   </div>
 </div>
+<!-- Ticks live in localStorage, which the browser is entitled to throw away:
+     clearing "cookies and other site data" takes it, a private window never
+     keeps it, another browser never had it, and Safari's ITP drops it after
+     seven days without a visit. 597 markers is too much work to lose to that,
+     so it can be carried out and back in by hand. -->
+<div id="progBack">
+  <div id="progBox">
+    <h2 id="progTitle"></h2>
+    <div class="sub" id="progSub"></div>
+    <textarea id="progText" spellcheck="false"></textarea>
+    <div class="foot">
+      <button id="progDownload" data-i18n="progDownload"></button>
+      <button id="progCopy" data-i18n="progCopy"></button>
+      <button id="progFile" data-i18n="progFile"></button>
+      <button id="progMerge" data-i18n="progMerge"></button>
+      <button id="progReplace" data-i18n="progReplace"></button>
+      <button id="progClose" class="primary" data-i18n="progClose"></button>
+    </div>
+    <input type="file" id="progFileInput" accept=".json,application/json" hidden />
+  </div>
+</div>
 <div id="markerLegend">
   <h4><span data-i18n="markers">MARKERS</span> <button id="clearCollected" style="display:none" data-i18n="clear">clear</button></h4>
   <div id="markerRows"></div>
+  <div id="progRow"><span data-i18n="progress"></span><button id="progExport" data-i18n="progExport"></button><button id="progImport" data-i18n="progImport"></button></div>
   <div class="legend-note" data-i18n-html="legendNote"></div>
   <!-- The map images are somebody else's work and the art is OMOCAT's; the
        README says so but nobody visiting the site reads the README. -->
@@ -403,6 +453,118 @@ const saveCollected = () => {
 };
 const pointKey = p => `${p.layer}:${p.mapId}:${p.evId}`;
 
+// ── Carrying progress between browsers ──────────────────────────────────────
+// localStorage is the browser's to discard, and for a 597-marker checklist that
+// is a real loss: clearing site data takes it, a private window never keeps it,
+// another device never had it, and Safari drops script-written storage after
+// seven days without a visit. So the ticks can be written out and read back.
+//
+// The file is the tick keys and nothing else — no map data, no settings — so it
+// stays small and readable, and an old one still imports after the atlas has
+// grown new layers.
+const PROG_FORMAT = 'omori-map-guide/progress';
+
+function progressBlob() {
+  return JSON.stringify({
+    format: PROG_FORMAT, version: 1,
+    // Stamped so a file found later can be told apart from another file found
+    // later. Local time, because that is the clock the person reading it uses.
+    savedAt: new Date().toLocaleString(),
+    count: collected.size,
+    collected: [...collected].sort(),
+  }, null, 1);
+}
+
+// Accepts what progressBlob() writes, and also a bare array, which is what
+// someone who went digging in localStorage would find and paste.
+function parseProgress(text) {
+  let data;
+  try { data = JSON.parse(text); } catch (e) { return null; }
+  if (Array.isArray(data)) data = { collected: data };
+  if (!data || !Array.isArray(data.collected)) return null;
+  if (data.format && data.format !== PROG_FORMAT) return null;
+  const keys = data.collected.filter(k => typeof k === 'string' && /^[^:]+:[^:]+:.+$/.test(k));
+  return keys.length || !data.collected.length ? keys : null;
+}
+
+let progMode = 'export';
+const progBack = document.getElementById('progBack');
+
+function openProgress(mode) {
+  progMode = mode;
+  const box = document.getElementById('progBox');
+  box.querySelectorAll('.foot button').forEach(b => {
+    const forExport = ['progDownload', 'progCopy'].includes(b.id);
+    const forImport = ['progFile', 'progMerge', 'progReplace'].includes(b.id);
+    b.style.display = (mode === 'export' ? forImport : forExport) ? 'none' : '';
+  });
+  document.getElementById('progTitle').textContent =
+    t(mode === 'export' ? 'progTitleE' : 'progTitleI');
+  document.getElementById('progSub').textContent =
+    mode === 'export' ? t('progSubE')(collected.size) : t('progSubI');
+  const area = document.getElementById('progText');
+  area.value = mode === 'export' ? progressBlob() : '';
+  area.readOnly = mode === 'export';
+  document.body.classList.add('prog-open');
+  if (mode === 'export') area.select();
+}
+const closeProgress = () => document.body.classList.remove('prog-open');
+
+function applyProgress(keys, replace) {
+  const before = collected.size;
+  if (replace) collected.clear();
+  for (const k of keys) collected.add(k);
+  saveCollected();
+  renderMarkers();
+  const added = replace ? collected.size : collected.size - before;
+  document.getElementById('progSub').textContent = t('progDone')(added, collected.size);
+}
+
+function readProgressFromBox(replace) {
+  const keys = parseProgress(document.getElementById('progText').value);
+  if (!keys) { document.getElementById('progSub').textContent = t('progBad'); return; }
+  applyProgress(keys, replace);
+}
+
+document.getElementById('progExport').addEventListener('click', () => openProgress('export'));
+document.getElementById('progImport').addEventListener('click', () => openProgress('import'));
+document.getElementById('progClose').addEventListener('click', closeProgress);
+progBack.addEventListener('click', e => { if (e.target === progBack) closeProgress(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && document.body.classList.contains('prog-open')) closeProgress();
+});
+document.getElementById('progDownload').addEventListener('click', () => {
+  const url = URL.createObjectURL(new Blob([progressBlob()], { type: 'application/json' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `omori-map-guide-progress-${new Date().toISOString().slice(0, 10)}.json`;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+document.getElementById('progCopy').addEventListener('click', async () => {
+  const area = document.getElementById('progText');
+  area.select();
+  // execCommand is deprecated but it is the one that works without a permission
+  // prompt and outside a secure context, so it is the fallback rather than the
+  // other way round.
+  try { await navigator.clipboard.writeText(area.value); }
+  catch (e) { try { document.execCommand('copy'); } catch (e2) { return; } }
+  const btn = document.getElementById('progCopy');
+  btn.textContent = t('progCopied');
+  setTimeout(() => { btn.textContent = t('progCopy'); }, 1500);
+});
+document.getElementById('progFile').addEventListener('click',
+  () => document.getElementById('progFileInput').click());
+document.getElementById('progFileInput').addEventListener('change', async e => {
+  const f = e.target.files && e.target.files[0];
+  if (!f) return;
+  document.getElementById('progText').value = await f.text();
+  e.target.value = '';   // so picking the same file twice still fires
+});
+document.getElementById('progMerge').addEventListener('click', () => readProgressFromBox(false));
+document.getElementById('progReplace').addEventListener('click', () => readProgressFromBox(true));
+
+
 // ── Language ────────────────────────────────────────────────────────────────
 // The atlas is bilingual because its own data is: item names come out of an
 // English build (omori_data_decrypted) and the HANGMAN clues out of the
@@ -460,6 +622,35 @@ const UI = {
   marked:      { en: 'collected — unmark', zh: '已收集 —— 取消标记' },
   needs:       { en: 'Needs',             zh: '需要先' },
   hangmanKey:  { en: 'HANGMAN key',       zh: '吊死鬼按键' },
+  progress:    { en: 'Progress',          zh: '进度' },
+  progExport:  { en: 'export',            zh: '导出' },
+  progImport:  { en: 'import',            zh: '导入' },
+  progTitleE:  { en: 'Take your progress with you', zh: '把进度带走' },
+  progTitleI:  { en: 'Bring progress back',         zh: '把进度带回来' },
+  progSubE: {
+    en: n => `${n} tick(s). Save the file, or copy the text — either brings them `
+           + 'back in another browser, on another device, or after site data is cleared.',
+    zh: n => `${n} 个已打勾。存成文件或复制这段文本 —— `
+           + '换浏览器、换设备、清过网站数据之后都能拿回来。',
+  },
+  progSubI: {
+    en: 'Choose a file or paste the text, then merge it into what is here or '
+      + 'replace it outright.',
+    zh: '选文件或者把文本贴进来，然后选择跟现有进度合并、还是直接覆盖。',
+  },
+  progDownload: { en: 'Save file',        zh: '下载文件' },
+  progCopy:    { en: 'Copy',              zh: '复制' },
+  progCopied:  { en: 'Copied ✓',          zh: '已复制 ✓' },
+  progFile:    { en: 'Choose file…',      zh: '选择文件…' },
+  progMerge:   { en: 'Merge in',          zh: '合并进来' },
+  progReplace: { en: 'Replace',           zh: '直接覆盖' },
+  progClose:   { en: 'Close',             zh: '关闭' },
+  progBad:     { en: 'That is not a progress file from this atlas.',
+                 zh: '这不是本图鉴导出的进度文件。' },
+  progDone: {
+    en: (added, total) => `${added} new tick(s) in — ${total} altogether.`,
+    zh: (added, total) => `新增 ${added} 个勾，现在共 ${total} 个。`,
+  },
   prizeItem:   { en: 'Item: ',            zh: '道具：' },
   prizeWeapon: { en: 'Weapon: ',          zh: '武器：' },
   prizeArmor:  { en: 'Armor: ',           zh: '饰品：' },
@@ -1142,7 +1333,7 @@ function updateMarkerCounts(shown) {
   const btn = document.getElementById('clearCollected');
   if (btn) {
     btn.style.display = collected.size ? '' : 'none';
-    btn.textContent = `clear ${collected.size} ✓`;
+    btn.textContent = `${t('clear')} ${collected.size} ✓`;
   }
 }
 
