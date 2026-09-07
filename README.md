@@ -191,11 +191,6 @@ They are not covered by the code licence and may not be redistributed.
 Most of the extraction scripts and most of the code in `web/index.html` were
 written by [Claude](https://claude.ai/code), across a very long back-and-forth.
 
-The world is not its work. Every one of the 253 maps was placed by hand in the
-stitcher, along with 226 routes and 179 trees and pinwheels — and so was every
-correction that made the data right. Claude had the HANGMAN V key on the wrong
-tile until it was told the key is in the cage, and the sprite sheet then proved
-it; it explained the black outline around the Vast Forest trees twice, wrongly,
-before being told plainly that the stitcher does not have the problem, which is
-what led to the real cause; and it would have shipped a HECTOR quest that does
-not exist. Knowing the game is what fixed all three.
+The world itself is mine: all 253 maps placed by hand in the stitcher, along
+with the 226 routes and the trees and pinwheels — and the game knowledge behind
+every correction that made the data right.
