@@ -168,6 +168,34 @@ layouts. Leaflet uses `CRS.Simple` with the y-axis flipped (`lat = heightPx - y`
 - Map images: [goats.dev](https://goats.dev/omori/) pre-rendered PNGs, plus local
   renders from the game's own encrypted Tiled data
 
+## Credits & permissions
+
+- **OMORI** is © OMOCAT, LLC. This is a non-commercial fan project with no
+  affiliation to, or endorsement by, OMOCAT. All original art, sprites, fonts
+  and audio belong to them.
+- **Map renders** are from [goats.dev](https://goats.dev/omori/), with a few
+  rendered here from the game's own Tiled data where goats.dev has no image.
+- **Chinese text** — region names, item names and the HANGMAN clues — is the
+  game's own Simplified Chinese translation, read out of an installed copy
+  rather than written by hand. See `scripts/37_extract_zh_names.py`.
+
 ## License
 
-MIT for code. Game assets (map images, sprites) are property of OMOCAT.
+The **code** in this repository is released under the MIT License.
+
+**The assets are not.** OMORI's map images and sprites belong to OMOCAT, LLC.
+They are not covered by the code licence and may not be redistributed.
+
+## Colophon
+
+Most of the extraction scripts and most of the code in `web/index.html` were
+written by [Claude](https://claude.ai/code), across a very long back-and-forth.
+
+The world is not its work. Every one of the 253 maps was placed by hand in the
+stitcher, along with 226 routes and 179 trees and pinwheels — and so was every
+correction that made the data right. Claude had the HANGMAN V key on the wrong
+tile until it was told the key is in the cage, and the sprite sheet then proved
+it; it explained the black outline around the Vast Forest trees twice, wrongly,
+before being told plainly that the stitcher does not have the problem, which is
+what led to the real cause; and it would have shipped a HECTOR quest that does
+not exist. Knowing the game is what fixed all three.
