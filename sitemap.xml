@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Two addresses, one page: the root is a redirect and the atlas is the thing
+     itself, so only the atlas is listed. Written by hand; there is nothing here
+     that a generator would keep up to date better. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://e-dal.github.io/omori-map-guide/web/</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
