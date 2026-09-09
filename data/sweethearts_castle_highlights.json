@@ -83,7 +83,7 @@
    "evId": 41,
    "name": "melonCopy",
    "x": 23,
-   "y": 14,
+   "y": 13,
    "color": "blue",
    "prize": {
     "template": "melonCoconut",
@@ -611,7 +611,7 @@
    "evId": 41,
    "name": "melonLifeJam",
    "x": 33,
-   "y": 4,
+   "y": 3,
    "color": "green",
    "prize": {
     "template": null,

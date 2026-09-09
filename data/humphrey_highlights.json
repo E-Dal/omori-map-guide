@@ -408,6 +408,19 @@
     "kind": "Item",
     "itemName": "SPAGHETTI"
    }
+  },
+  {
+   "mapId": 231,
+   "evId": 26,
+   "x": 24,
+   "y": 7,
+   "name": "Item (blue)",
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "APPENDIX"
+   }
   }
  ]
 }

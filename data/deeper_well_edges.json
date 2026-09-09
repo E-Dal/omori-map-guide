@@ -2556,7 +2556,7 @@
       "from": {
         "mapId": 259,
         "evId": 905,
-        "evName": "Red water — under the north wall",
+        "evName": "Red water \u2014 under the north wall",
         "x": 11,
         "y": 6,
         "hitbox": {
@@ -2761,6 +2761,216 @@
         "y": 30
       },
       "kind": "manual"
+    },
+    {
+      "from": {
+        "mapId": 2101,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 20,
+        "y": 22,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 2101,
+        "x": 20,
+        "y": 22
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 2102,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 27,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 2102,
+        "x": 5,
+        "y": 27
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 2104,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 4,
+        "y": 24,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 2104,
+        "x": 4,
+        "y": 24
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4336,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 3,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4336,
+        "x": 3,
+        "y": 11
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4373,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4373,
+        "x": 5,
+        "y": 11
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4376,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4376,
+        "x": 5,
+        "y": 11
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4379,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4379,
+        "x": 5,
+        "y": 11
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4471,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 8,
+        "y": 27,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4471,
+        "x": 8,
+        "y": 27
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4472,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 15,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4472,
+        "x": 5,
+        "y": 15
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4532,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 4,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4532,
+        "x": 4,
+        "y": 11
+      },
+      "kind": "exitStem"
     }
   ],
   "external": [

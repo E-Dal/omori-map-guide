@@ -175,10 +175,26 @@ def main():
     # collectibles.json, and were the one layer still pinned to the tile centre.
     # They are events like any other, so they get the same treatment: look up
     # the event's sprite and record where it lands.
+    #
+    # A melon on a sliced sub-map has to be looked up on the map it was cut
+    # from: there is no Map981.json, only Map098.json. 46 of them were being
+    # skipped for that reason — including all three of Basil's flowers in the
+    # OLD SHOE — and a melon with no rectangle falls back to a fixed pixel size
+    # in the atlas, so it stayed the same size on screen while every other melon
+    # grew to match the art as you zoomed in.
+    #
+    # Only the event lookup goes to the parent. The rectangle is still built
+    # from the melon's own x/y, which the slice already carries in its own
+    # coordinates, so what comes out is slice-local and needs no rebasing.
+    meta = {}
+    for f in sorted((ROOT / 'data').glob('*_maps.json')):
+        meta.update(json.loads(f.read_text()))
+    source_map = lambda mid: str(int(mid) // 10) if 'cropX' in meta.get(str(mid), {}) else str(mid)
+
     melon_rects = {}
     for hl in sorted((ROOT / 'data').glob('*_highlights.json')):
         for m in json.loads(hl.read_text()).get('watermelons', []):
-            src = DECRYPTED / f"Map{int(m['mapId']):03d}.json"
+            src = DECRYPTED / f"Map{int(source_map(m['mapId'])):03d}.json"
             if not src.exists():
                 continue
             evs = {e['id']: e for e in (json.loads(src.read_text()).get('events') or []) if e}

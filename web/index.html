@@ -47,6 +47,15 @@
   .pin.machine.flipped { filter: drop-shadow(0 0 3px #ffd050) drop-shadow(0 0 7px #ff8000); }
   /* Ticked off: greyed, faded, and stamped, so a copy of a sprite still on the
      map reads as "had it" rather than as a second one lying there. */
+  /* A step pin is a place a quest sends you, not a quest of its own. */
+  /* The step number rides on the pin's corner rather than beside it, so a
+     numbered pin takes no more room on the map than an unnumbered one. */
+  .pin-no { position: absolute; top: -5px; right: -6px; min-width: 13px; height: 13px;
+            padding: 0 2px; box-sizing: border-box; border-radius: 7px;
+            background: #ffd97a; color: #1a1a1a; font-family: system-ui, sans-serif;
+            font-size: 9px; font-weight: 700; line-height: 13px; text-align: center;
+            text-shadow: none; box-shadow: 0 0 3px #000; }
+  .pin.quest-step { opacity: 0.85; filter: drop-shadow(0 0 3px #000) drop-shadow(0 0 6px #ffd97a); }
   .pin.done, .melon-icon.done { filter: grayscale(1) brightness(0.65) drop-shadow(0 0 2px #000); opacity: 0.55; }
   .pin.done::after, .melon-icon.done::after {
                      content: '✓'; position: absolute; right: -3px; bottom: -5px;
@@ -64,7 +73,7 @@
   .needs { display: block; margin-top: 4px; color: #ffcf6a; }
   .needs b { color: #ffd97a; }
   .legend-note { margin-top: 8px; border-top: 1px solid #3a3a3a; padding-top: 6px;
-                 color: #8d8d8d; font-size: 10px; line-height: 1.45; max-width: 200px; }
+                 color: #8d8d8d; font-size: 10px; line-height: 1.45; }
   .legend-note b { color: #ffcf6a; }
   .collectBubble button { display: block; margin-top: 7px; width: 100%; cursor: pointer;
     background: #2f7a3f; color: #fff; border: 0; border-radius: 3px; padding: 5px 8px; font-size: 12px; }
@@ -74,18 +83,30 @@
     position: absolute; top: 60px; right: 10px; z-index: 700;
     background: rgba(18,18,20,0.88); border: 1px solid #3a3a3a; border-radius: 6px;
     padding: 8px 10px; font-size: 12px; backdrop-filter: blur(3px);
+    /* Every group open is taller than most screens. Left to grow, it made the
+       page itself longer, and scrolling down to reach Mirrors left the map
+       behind and showed bare page under it. It scrolls inside itself instead.
+       scrollbar-gutter holds the width steady whether the bar is showing or
+       not, which the measuring pass depends on. */
+    max-height: calc(100vh - 78px); overflow-y: auto; scrollbar-gutter: stable;
   }
+  /* The map is the page; nothing else may lengthen it. */
+  html, body { overflow: hidden; }
   #markerLegend h4 { margin: 0 0 6px; font-size: 11px; color: #888; font-weight: normal;
                      display: flex; justify-content: space-between; gap: 10px; align-items: center; }
   #markerLegend h4 button { background: #2f2f2f; color: #bbb; border: 1px solid #4a4a4a;
                             font-size: 10px; padding: 1px 6px; border-radius: 3px; cursor: pointer; }
   #markerLegend h4 button:hover { color: #fff; border-color: #777; }
   #markerLegend .row { display: flex; align-items: center; gap: 6px; padding: 2px 0; }
+  /* Never wrap. A two-line row was the panel being too narrow, and the fix is
+     a wider panel, not a folded label — see holdPanelHeight(), which measures
+     what the widest row actually needs. */
   #markerLegend .row label { display: flex; align-items: center; gap: 5px; cursor: pointer;
-                             width: 132px; color: #ccc; }
+                             min-width: 132px; white-space: nowrap; color: #ccc; }
   #markerLegend .row.off label { color: #666; }
   #markerLegend .row input[type=range] { width: 62px; }
-  #markerLegend .count { color: #777; font-size: 10px; min-width: 26px; text-align: right; }
+  #markerLegend .count { color: #777; font-size: 10px; min-width: 34px; text-align: right; }
+  #markerLegend .count.elsewhere { color: #6a6a6a; font-style: italic; }
   #markerLegend .blinkBtn { background: none; border: 0; cursor: pointer; font-size: 11px;
                             color: #555; padding: 0 1px; }
   #markerLegend .blinkBtn.on { color: #ffd97a; }
@@ -99,10 +120,22 @@
   /* ── World view: one pane per region ── */
   /* Regions overlap by design, so an unfocused one drops to grey and stays as
      context. The focused one keeps its colour and rises above the pile. */
-  #markerRows .group-head { margin: 7px 0 2px; padding-top: 6px;
-                           border-top: 1px solid #333; font-size: 10px;
-                           letter-spacing: .04em; color: #999; }
-  #markerRows .group-head label { display: flex; align-items: center; gap: 5px; cursor: pointer; }
+  #markerRows .group-head { display: flex; align-items: center; gap: 5px;
+                           margin: 5px 0 1px; padding: 3px 0 3px 1px;
+                           border-top: 1px solid #333; font-size: 11px;
+                           color: #bbb; cursor: pointer; user-select: none; }
+  #markerRows .group-head:first-child { border-top: 0; margin-top: 0; }
+  #markerRows .group-head:hover { color: #fff; }
+  #markerRows .group-head .tw { width: 9px; color: #777; font-size: 9px; }
+  #markerRows .group-head label { display: flex; align-items: center; cursor: pointer; }
+  #markerRows .group-head .gname { flex: 1; }
+  #markerRows .group-head .gcount { color: #7a7a7a; font-size: 10px; }
+  #markerRows .group-head.open .gname { color: #ffd97a; }
+  /* A row's checkbox sits one notch right of its group's, which is what says
+     it belongs to it. The 14px is the twisty plus its gap — the offset the
+     header's own checkbox already has. */
+  #markerRows .row { padding-left: 20px; }
+  #markerRows .group-head label { margin-left: 0; }
   /* ── First-visit notice ──────────────────────────────────────────────
      What the atlas does not do yet. Shown once per browser (localStorage),
      reopened any time from the ⓘ button in the header. Not a Leaflet popup:
@@ -141,13 +174,17 @@
   #introBtn:hover { color: #fff; border-color: #777; }
   /* Carrying progress in and out. Same shell as the notice above, so the two
      dialogs do not have to be told apart at a glance. */
-  #progRow { margin-top: 8px; padding-top: 7px; border-top: 1px solid #333;
-             display: flex; align-items: center; gap: 6px; font-size: 10px; color: #8d8d8d; }
-  #progRow button { margin-left: auto; background: #2a2a2a; color: #bbb;
-                    border: 1px solid #444; border-radius: 3px; font-size: 10px;
-                    padding: 2px 7px; cursor: pointer; }
-  #progRow button + button { margin-left: 0; }
-  #progRow button:hover { color: #fff; border-color: #777; }
+  /* Above the layer list, not below it. Ticking things off is the reason to
+     come back, and the browser can drop them without warning — this is the
+     only way out of that, so it should not be the last line in the panel. */
+  #progRow { margin: 0 0 8px; padding: 5px 7px; border: 1px solid #3f3a2c;
+             border-radius: 4px; background: rgba(255,217,122,0.06);
+             display: flex; align-items: center; gap: 6px; font-size: 11px; }
+  #progRow .lbl { color: #d8bd7e; }
+  #progRow button { background: #33301f; color: #ffd97a; border: 1px solid #5c5333;
+                    border-radius: 3px; font-size: 11px; padding: 2px 9px; cursor: pointer; }
+  #progRow button:first-of-type { margin-left: auto; }
+  #progRow button:hover { background: #45402a; border-color: #8a7a45; }
   #progBack { position: fixed; inset: 0; z-index: 1300; display: none;
               background: rgba(0,0,0,0.62); backdrop-filter: blur(2px); }
   body.prog-open #progBack { display: flex; align-items: center; justify-content: center; }
@@ -167,6 +204,17 @@
   #progBox .foot button.primary { margin-left: auto; background: #2f7a3f;
                                   border-color: #2f7a3f; color: #fff; }
   #progBox .foot button.primary:hover { background: #389049; }
+  #mapPeek { position: absolute; z-index: 900; display: none;
+             background: rgba(18,18,20,0.95); border: 1px solid #4a4a4a;
+             border-radius: 5px; padding: 5px 9px; font-size: 12px; color: #ddd;
+             white-space: nowrap; box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+             pointer-events: auto; }
+  body.peek #mapPeek { display: block; }
+  #mapPeek b { color: #ffd97a; font-family: ui-monospace, monospace; }
+  #mapPeek .go { display: block; margin-top: 5px; width: 100%; cursor: pointer;
+                 background: #2f4a7a; color: #fff; border: 0; border-radius: 3px;
+                 padding: 3px 8px; font-size: 11px; }
+  #mapPeek .go:hover { background: #3a5c96; }
   .lang-pick { display: inline-flex; border: 1px solid #444; border-radius: 4px; overflow: hidden; }
   .lang-pick button { background: #2a2a2a; color: #999; border: 0; font-size: 11px;
                       padding: 4px 8px; cursor: pointer; }
@@ -176,7 +224,6 @@
   /* No max-width here and the panel shrink-wraps to this one long line — the
      rows are ~240px, the credit sentence is ~800px. Keep it boxed like .legend-note. */
   .credits { margin-top: 9px; padding-top: 7px; border-top: 1px solid #2c2c2c;
-             max-width: 200px;
              font-size: 9px; line-height: 1.5; color: #6d6d6d; }
   .credits a { color: #8a8a8a; }
   .credits a:hover { color: #bbb; }
@@ -216,8 +263,12 @@
   #regionLegend {
     position: absolute; top: 60px; left: 10px; z-index: 700;
     background: rgba(18,18,20,0.88); border: 1px solid #3a3a3a; border-radius: 6px;
-    padding: 8px 10px; font-size: 12px; max-height: calc(100vh - 90px); overflow-y: auto;
-    backdrop-filter: blur(3px);
+    padding: 8px 10px; font-size: 12px;
+    /* Narrow enough that the four route buttons wrap to two rows. Side by side
+       they are wider than any region name, so the panel was being sized to
+       them: a column of short names in a box twice the width it needed. */
+    width: 214px; max-height: calc(100vh - 78px); overflow-y: auto;
+    scrollbar-gutter: stable; backdrop-filter: blur(3px);
   }
   #regionLegend h4 { margin: 0 0 6px; font-size: 11px; color: #888; font-weight: normal;
                      display: flex; justify-content: space-between; gap: 12px; align-items: center; }
@@ -296,6 +347,10 @@
   </span>
 </header>
 <div id="map"></div>
+<!-- Click a map in world view and it says which one it is, by the cursor.
+     Hover would have been fewer clicks and would also have sat in front of
+     whatever you were looking at the whole time. -->
+<div id="mapPeek"></div>
 <!-- Say the limits out loud rather than letting people find them one by one.
      The forum post is still to come; its URL goes in INTRO_TEXT below. -->
 <div id="introBack">
@@ -323,7 +378,6 @@
       <button id="progDownload" data-i18n="progDownload"></button>
       <button id="progCopy" data-i18n="progCopy"></button>
       <button id="progFile" data-i18n="progFile"></button>
-      <button id="progMerge" data-i18n="progMerge"></button>
       <button id="progReplace" data-i18n="progReplace"></button>
       <button id="progClose" class="primary" data-i18n="progClose"></button>
     </div>
@@ -332,8 +386,12 @@
 </div>
 <div id="markerLegend">
   <h4><span data-i18n="markers">MARKERS</span> <button id="clearCollected" style="display:none" data-i18n="clear">clear</button></h4>
+  <div id="progRow">
+    <span class="lbl" data-i18n="progress"></span>
+    <button id="progExport" data-i18n="progExport"></button>
+    <button id="progImport" data-i18n="progImport"></button>
+  </div>
   <div id="markerRows"></div>
-  <div id="progRow"><span data-i18n="progress"></span><button id="progExport" data-i18n="progExport"></button><button id="progImport" data-i18n="progImport"></button></div>
   <div class="legend-note" data-i18n-html="legendNote"></div>
   <!-- The map images are somebody else's work and the art is OMOCAT's; the
        README says so but nobody visiting the site reads the README. -->
@@ -343,7 +401,6 @@
   <h4><span data-i18n="regions">REGIONS</span> <button id="regionReset" data-i18n="reset">reset</button></h4>
   <div id="routeMode"><span data-i18n="route">Route:</span>
     <select id="routeModeSel">
-      <option value="both" data-i18n="routeBoth">both</option>
       <option value="sunny">SUNNY</option>
       <option value="hikikomori">HIKIKOMORI</option>
     </select>
@@ -380,34 +437,53 @@ let melonArt = null;              // "<mapId>:<evId>" -> sprite rect, same scrip
 // machine's 2:1 frame from being squashed into a square.
 // `blink` offers a slow pulse, for finding a pin in a crowded room.
 const MARKER_LAYERS = [
-  { key: 'route',   label: { en: 'Routes', zh: '路线' },        icon: '🔗', on: true,  size: 3 },
-  { key: 'melon',   label: { en: 'Watermelons', zh: '西瓜' },   icon: '🍉', on: true,  size: 24, blink: false },
-  { key: 'machine', label: { en: 'Belt machines', zh: '传送带' }, icon: '🔧', on: true,  size: 30,
+  { key: 'route',   label: { en: 'Routes', zh: '路线' },        icon: '🔗', on: true,  size: 3, group: 'basics' },
+  { key: 'melon',   label: { en: 'Watermelons', zh: '西瓜' },   icon: '🍉', on: true,  size: 24, blink: false, group: 'basics' },
+  { key: 'machine', label: { en: 'Belt machines', zh: '传送带' }, icon: '🔧', on: true,  size: 30, group: 'basics',
     art: 'assets/machine.png', wide: 62 / 29 },
   // Mari's picnic blanket is the Headspace save point — her event warps you to
   // WHITE SPACE and back. One per map on 28 maps, so it costs almost nothing to
   // leave on, and a save point is worth knowing about before you need it.
-  { key: 'picnic',  label: { en: 'Picnic (save)', zh: '野餐点（存档）' }, icon: '🧺', on: true,  size: 26 },
-  { key: 'hangman', label: { en: 'HANGMAN keys', zh: '吊死鬼按键' },  icon: '⌨️', on: false, size: 24, art: 'hangman' },
+  { key: 'picnic',  label: { en: 'Picnic (save)', zh: '野餐点（存档）' }, icon: '🧺', on: true,  size: 26, group: 'basics' },
+  { key: 'hangman', label: { en: 'HANGMAN keys', zh: '吊死鬼按键' },  icon: '⌨️', on: false, size: 24, art: 'hangman', group: 'find' },
+  // One pin per quest, on whoever asks for it — see 39_extract_quests.js. The
+  // other places a quest sends you are listed in its popup and drawn only when
+  // asked for, so GHOST PARTY is one marker and not seven.
+  // minSize: the icon is a bare exclamation mark, and below about 18px it
+  // stops reading as one — so this row's slider does not go as low as the rest.
+  { key: 'sidequest', label: { en: 'Quests', zh: '任务' },  icon: '❗', on: false, size: 26, minSize: 18, group: 'quests' },
   // The two NPC layers split on what the person hands over, not on who they
-  // are — key items, charms and weapons here, food and drink below — so they
-  // are named as a pair.
-  { key: 'npc',     label: { en: 'NPC (quest)', zh: 'NPC（任务）' }, icon: '🧑', on: false, size: 24 },
-  { key: 'quest',   label: { en: 'Quest items', zh: '任务道具' },   icon: '🎒', on: false, size: 24 },
-  { key: 'charm',   label: { en: 'Charms', zh: '饰品' },        icon: '🧿', on: false, size: 24 },
-  { key: 'weapon',  label: { en: 'Weapons', zh: '武器' },       icon: '🔪', on: false, size: 24 },
+  // are, so they are named as a pair: things you keep here — key items, charms,
+  // weapons — and things you use up below: food, drink, bandages, dynamite.
+  //
+  // Neither is "quest NPCs", which is what this one used to say. 22 of its 75
+  // people are in no side quest at all — DINO with the POTATO SPOON, the moles
+  // handing out the EMOTION CHART — and PESSI is the clearest case: PESSI'S
+  // THING is a real quest in the game's log with no dialogue file, so the quest
+  // layer cannot see it and this pin is the only one that marks it.
+  { key: 'npc',     label: { en: 'NPC (item)', zh: 'NPC（道具）' },  icon: '🧑', on: false, size: 24, group: 'quests' },
+  { key: 'quest',   label: { en: 'Quest items', zh: '任务道具' },   icon: '🎒', on: false, size: 24, group: 'quests' },
+  { key: 'charm',   label: { en: 'Charms', zh: '饰品' },        icon: '🧿', on: false, size: 24, group: 'find' },
+  // Seven wall tentacles, one weapon or charm each. They used to be filed
+  // under whichever of those two they handed over, which split a single
+  // recognisable thing across two rows.
+  { key: 'tentacle', label: { en: 'Tentacles', zh: '触手' },    icon: '🐙', on: false, size: 26, group: 'find' },
   // People who hand you something for talking to them. NPCs giving a KEY item
   // are already under NPC (quest); this is the other 61 — food, drink, bandages
   // — including Reuben behind the CLUB SANDWICH bar.
-  { key: 'giver',   label: { en: 'NPC (item)', zh: 'NPC（物品）' }, icon: '🥤', on: false, size: 24 },
+  { key: 'giver',   label: { en: 'NPC (supplies)', zh: 'NPC（补给）' }, icon: '🥤', on: false, size: 24, group: 'quests' },
   // Both the shells lying on the ground and the people who hand clams over.
   // A player asking "where do I get clams" wants one answer, not two, and the
   // popup names the event either way — CLAM, CLAM SNOWFLAKE, Hoagie, Mari.
   // The one layer whose points can sit under another: Mari in PATH TO TRENCH
   // is a picnic *and* 500 clams, so she carries a pin from each.
-  { key: 'clams',   label: { en: 'CLAMS', zh: '蚌币' },         icon: '🐚', on: false, size: 22 },
-  { key: 'collect', label: { en: 'Collectibles', zh: '收集品' },  icon: '🗑️', on: false, size: 20 },
-  { key: 'sparkle', label: { en: 'Sparkles', zh: '闪光' },      icon: '✨', on: false, size: 20 },
+  { key: 'clams',   label: { en: 'CLAMS', zh: '蚌币' },         icon: '🐚', on: false, size: 22, group: 'find' },
+  // Eleven permanent, one-time skills. Three are behind the LOST LIBRARY books
+  // and so only exist on the HIKIKOMORI route; one is inside a watermelon,
+  // whose own pin only ever mentions the BLENDER it also holds.
+  { key: 'skill',   label: { en: 'Skills', zh: '技能' },        icon: '✴️', on: false, size: 24, group: 'find' },
+  { key: 'collect', label: { en: 'Collectibles', zh: '收集品' },  icon: '🗑️', on: false, size: 20, group: 'find' },
+  { key: 'sparkle', label: { en: 'Sparkles', zh: '闪光' },      icon: '✨', on: false, size: 20, group: 'find' },
   // Both tie to achievements and both are once-only, so they tick off like the
   // rest. The Faraway mirrors carry no sprite of their own — their event is an
   // invisible trigger on a mirror painted into the map art — so those six fall
@@ -431,7 +507,7 @@ const MARKER_LAYERS = [
     group: 'achievement' },
   { key: 'cooler',  label: { en: 'Coolers', zh: '冰桶' },       icon: '🧊', on: false, size: 22, group: 'achievement' },
   { key: 'mirror',  label: { en: 'Mirrors', zh: '镜子' },       icon: '🪞', on: false, size: 22, group: 'achievement' },
-  { key: 'mechanism', label: { en: 'Mechanisms', zh: '可互动物件' },  icon: '⚙️', on: false, size: 26 },
+  { key: 'mechanism', label: { en: 'Mechanisms', zh: '可互动物件' },  icon: '⚙️', on: false, size: 26, group: 'find' },
 ];
 const layerCfg = key => MARKER_LAYERS.find(l => l.key === key);
 const layerLabel = cfg => cfg.label[LANG] || cfg.label.en;
@@ -439,9 +515,9 @@ const layerLabel = cfg => cfg.label[LANG] || cfg.label.en;
 // Layers you can tick off. Clicking one opens a bubble with what it is and a
 // button to mark it; a marked one goes grey with a tick on it, so the copy of
 // the sprite reads as "already had this" rather than as a second item.
-const TICKABLE = new Set(['melon', 'hangman', 'npc', 'quest', 'charm', 'weapon', 'collect',
+const TICKABLE = new Set(['melon', 'hangman', 'sidequest', 'npc', 'quest', 'charm', 'tentacle', 'collect',
                           'sparkle', 'cooler', 'mirror', 'music', 'telescope',
-                          'clubsandwich', 'giver', 'clams']);
+                          'clubsandwich', 'giver', 'clams', 'skill']);
 
 // What has been ticked off, as "<layer>:<mapId>:<evId>". Kept in the browser so
 // a checklist survives a reload; it is the user's progress, not project data.
@@ -495,7 +571,7 @@ function openProgress(mode) {
   const box = document.getElementById('progBox');
   box.querySelectorAll('.foot button').forEach(b => {
     const forExport = ['progDownload', 'progCopy'].includes(b.id);
-    const forImport = ['progFile', 'progMerge', 'progReplace'].includes(b.id);
+    const forImport = ['progFile', 'progReplace'].includes(b.id);
     b.style.display = (mode === 'export' ? forImport : forExport) ? 'none' : '';
   });
   document.getElementById('progTitle').textContent =
@@ -510,20 +586,19 @@ function openProgress(mode) {
 }
 const closeProgress = () => document.body.classList.remove('prog-open');
 
-function applyProgress(keys, replace) {
-  const before = collected.size;
-  if (replace) collected.clear();
+// Import replaces rather than merging. Merging only pays off when two browsers
+// hold different halves of the same run, which is not why anyone exports; and
+// a merge cannot un-tick anything, so a mistake is unrecoverable in the one
+// direction that matters.
+function readProgressFromBox() {
+  const box = document.getElementById('progSub');
+  const keys = parseProgress(document.getElementById('progText').value);
+  if (!keys) { box.textContent = t('progBad'); return; }
+  collected.clear();
   for (const k of keys) collected.add(k);
   saveCollected();
   renderMarkers();
-  const added = replace ? collected.size : collected.size - before;
-  document.getElementById('progSub').textContent = t('progDone')(added, collected.size);
-}
-
-function readProgressFromBox(replace) {
-  const keys = parseProgress(document.getElementById('progText').value);
-  if (!keys) { document.getElementById('progSub').textContent = t('progBad'); return; }
-  applyProgress(keys, replace);
+  box.textContent = t('progDone')(collected.size);
 }
 
 document.getElementById('progExport').addEventListener('click', () => openProgress('export'));
@@ -561,8 +636,7 @@ document.getElementById('progFileInput').addEventListener('change', async e => {
   document.getElementById('progText').value = await f.text();
   e.target.value = '';   // so picking the same file twice still fires
 });
-document.getElementById('progMerge').addEventListener('click', () => readProgressFromBox(false));
-document.getElementById('progReplace').addEventListener('click', () => readProgressFromBox(true));
+document.getElementById('progReplace').addEventListener('click', readProgressFromBox);
 
 
 // ── Language ────────────────────────────────────────────────────────────────
@@ -591,7 +665,6 @@ const UI = {
   regions:     { en: 'REGIONS',           zh: '区域' },
   reset:       { en: 'reset',             zh: '重置' },
   route:       { en: 'Route:',            zh: '路线：' },
-  routeBoth:   { en: 'both',              zh: '两条都要' },
   achievements: { en: 'ACHIEVEMENTS — once each', zh: '成就相关 —— 每个只需一次' },
   maps:        { en: 'maps',              zh: '张地图' },
   regionsWord: { en: 'regions',           zh: '个区域' },
@@ -622,6 +695,22 @@ const UI = {
   marked:      { en: 'collected — unmark', zh: '已收集 —— 取消标记' },
   needs:       { en: 'Needs',             zh: '需要先' },
   hangmanKey:  { en: 'HANGMAN key',       zh: '吊死鬼按键' },
+  qGiver:      { en: 'Ask',               zh: '接取' },
+  // An ordered quest is counted in steps and an unordered one in places: RAIN
+  // TOWN's sixteen vegetables live on two maps, and "2 places, in this order"
+  // is a worse sentence than either half of it.
+  qPlaces:     { en: n => `${n} place(s)`, zh: n => `${n} 个地方` },
+  qStepCount:  { en: n => `${n} step(s)`,  zh: n => `${n} 步` },
+  qShow:       { en: 'Show them',         zh: '显示这些位置' },
+  qHide:       { en: 'Hide them',         zh: '隐藏' },
+  qReward:     { en: 'Reward',            zh: '奖励' },
+  qStepOf:     { en: 'step of',           zh: '属于' },
+  peekOpen:    { en: 'Open this map on its own', zh: '单独看这张地图' },
+  elsewhere:   { en: n => `${n} more on maps that are not being shown`,
+                 zh: n => `另有 ${n} 个在当前没显示的地图上` },
+  qStepNo:     { en: (i, n) => `#${i} of ${n},`, zh: (i, n) => `第 ${i}/${n} 步，` },
+  qOrdered:    { en: 'in this order',     zh: '按这个顺序' },
+  qAnyOrder:   { en: 'any order',         zh: '顺序随意' },
   progress:    { en: 'Progress',          zh: '进度' },
   progExport:  { en: 'export',            zh: '导出' },
   progImport:  { en: 'import',            zh: '导入' },
@@ -634,22 +723,20 @@ const UI = {
            + '换浏览器、换设备、清过网站数据之后都能拿回来。',
   },
   progSubI: {
-    en: 'Choose a file or paste the text, then merge it into what is here or '
-      + 'replace it outright.',
-    zh: '选文件或者把文本贴进来，然后选择跟现有进度合并、还是直接覆盖。',
+    en: 'Choose a file or paste the text. What is here now is replaced.',
+    zh: '选文件，或者把文本贴进来。现在的进度会被这一份取代。',
   },
   progDownload: { en: 'Save file',        zh: '下载文件' },
   progCopy:    { en: 'Copy',              zh: '复制' },
   progCopied:  { en: 'Copied ✓',          zh: '已复制 ✓' },
   progFile:    { en: 'Choose file…',      zh: '选择文件…' },
-  progMerge:   { en: 'Merge in',          zh: '合并进来' },
-  progReplace: { en: 'Replace',           zh: '直接覆盖' },
+  progReplace: { en: 'Load these ticks',  zh: '载入这份进度' },
   progClose:   { en: 'Close',             zh: '关闭' },
   progBad:     { en: 'That is not a progress file from this atlas.',
                  zh: '这不是本图鉴导出的进度文件。' },
   progDone: {
-    en: (added, total) => `${added} new tick(s) in — ${total} altogether.`,
-    zh: (added, total) => `新增 ${added} 个勾，现在共 ${total} 个。`,
+    en: n => `${n} tick(s) loaded.`,
+    zh: n => `载入了 ${n} 个勾。`,
   },
   prizeItem:   { en: 'Item: ',            zh: '道具：' },
   prizeWeapon: { en: 'Weapon: ',          zh: '武器：' },
@@ -683,7 +770,13 @@ const t = key => (UI[key] || {})[LANG] ?? (UI[key] || {}).en ?? key;
 // English name -> the game's Chinese name, loaded once. Missing is normal and
 // harmless: the English name is shown, which is what happened before.
 let zhNames = {};
+// Side quests, and which of them have been asked to show their step pins.
+let quests = null;
+const questStepsOpen = new Set();
 const itemName = n => (LANG === 'zh' && zhNames[n]) || n;
+// Quest names are the one piece of Chinese in the atlas the game does not
+// supply — see the ZH table in 39_extract_quests.js.
+const questName = q => (q.name[LANG] || q.name.en);
 
 // ── First-visit notice ────────────────────────────────────────────────────
 // The rest of the UI is English, but the HANGMAN clues ship in Chinese and so
@@ -994,14 +1087,15 @@ function collectBubble(p, key, title, what) {
   return box;
 }
 
-function pinMarker(lat, lng, cfg, html, extra, art, aspect, height) {
+function pinMarker(lat, lng, cfg, html, extra, art, aspect, height, badge) {
   const h = height || cfg.size, w = Math.round(h * (aspect || cfg.wide || 1));
   const face = art
     ? `<img src="${art}" width="${w}" height="${h}" alt="">`
     : cfg.icon;
   const icon = L.divIcon({
     className: '', html: `<div class="pin ${extra || ''}" style="font-size:${h}px;` +
-      `width:${w}px;height:${h}px">${face}</div>`,
+      `width:${w}px;height:${h}px">${face}` +
+      (badge ? `<span class="pin-no">${badge}</span>` : '') + `</div>`,
     iconSize: [w, h], iconAnchor: [w / 2, h / 2],
   });
   const marker = L.marker([lat, lng], { icon });
@@ -1038,7 +1132,10 @@ function renderMarkers() {
                                                          : ((highlights || {}).watermelons || []);
   if (melonCfg.on) {
     for (const m of melonSrc) {
-      if (!f.has(m.mapId)) continue;
+      if (!f.has(m.mapId)) {
+        (shown.__elsewhere ||= {}).melon = ((shown.__elsewhere || {}).melon || 0) + 1;
+        continue;
+      }
       // On the melon, not on its tile — same rule as every other marker.
       const mart = melonArt && melonArt[`${m.mapId}:${m.evId}`];
       const [lat, lng] = mart
@@ -1052,9 +1149,11 @@ function renderMarkers() {
     }
   }
 
+  const elsewhere = (shown.__elsewhere ||= {});
   for (const p of ((collectibles || {}).points || [])) {
     const cfg = layerCfg(p.layer);
-    if (!cfg || !cfg.on || !f.has(p.mapId)) continue;
+    if (!cfg || !cfg.on) continue;
+    if (!f.has(p.mapId)) { elsewhere[p.layer] = (elsewhere[p.layer] || 0) + 1; continue; }
     const [lat, lng] = f.at(p.mapId, p.x, p.y);
     const title = p.letter ? `${t('hangmanKey')} <b>${p.letter}</b>` : `<b>${p.evName}</b>`;
     const sep = LANG === 'zh' ? '、' : ', ';
@@ -1083,6 +1182,7 @@ function renderMarkers() {
     if (done) (shown.__done ||= {})[p.layer] = ((shown.__done || {})[p.layer] || 0) + 1;
   }
 
+  renderQuestMarkers(f, shown);
   renderConveyorMarkers(f, shown);
   renderWorldRoutes(shown);
   updateMarkerCounts(shown);
@@ -1201,6 +1301,164 @@ function chevrons(pts) {
 // overlay holds only that group's belts in their reversed state and sits in the
 // map's own pane, which keeps the world view's dimming and gradients applying
 // to it exactly as they apply to the map underneath.
+// The name of a map, whichever view is asking.
+function mapName(id) {
+  const m = (worldState && worldState.metaAll && worldState.metaAll[id])
+         || (mapMeta && mapMeta[id]);
+  return (m && m.name ? m.name.replace(/^--\s*/, '') : 'Map' + id);
+}
+
+// One pin per quest on whoever asks for it, plus — only for the quests whose
+// popup has been asked — a smaller pin on each place it sends you.
+// Which map did that click land on? The world is a pile of overlapping regions,
+// so this asks the same question the eye does: of the maps that are actually
+// being shown, the one drawn last is the one you can see.
+function mapAtWorldPoint(x, y) {
+  if (!worldState) return null;
+  let best = null;
+  for (const it of worldState.placed) {
+    if (!selectedRegions.has(it.region)) continue;
+    if (x < it.pos.x || x >= it.pos.x + it.w) continue;
+    if (y < it.pos.y || y >= it.pos.y + it.h) continue;
+    if (!best || (it.pos.zOrder ?? 0) >= (best.pos.zOrder ?? 0)) best = it;
+  }
+  return best;
+}
+
+// One click opens it, the next closes it — wherever that next click lands,
+// including inside the same map. Anything else means panning away to find bare
+// ground before the label will go, which is worse than the label.
+function setupMapPeek() {
+  const peek = document.getElementById('mapPeek');
+  const close = () => document.body.classList.remove('peek');
+  leafletMap.on('click', e => {
+    if (document.body.classList.contains('peek')) { close(); return; }
+    if (currentMode !== 'world' || !worldState) return;
+    const b = worldState.bbox;
+    const hit = mapAtWorldPoint(e.latlng.lng + b.minX, b.ch - e.latlng.lat + b.minY);
+    if (!hit) return;
+    peek.innerHTML =
+      `<b>Map${hit.id}</b> · ${(hit.m.name || '').replace(/^--\s*/, '')}` +
+      `<br><span style="color:#8d8d8d">${regionLabel(hit.region)}</span>` +
+      `<button class="go">${t('peekOpen')}</button>`;
+    peek.querySelector('.go').onclick = ev => {
+      ev.stopPropagation();
+      close();
+      const sel = document.getElementById('regionSelect');
+      sel.value = hit.region;
+      loadRegion(hit.region).then(() => {
+        setMode('perMap');
+        const ms = document.getElementById('mapSelect');
+        ms.value = String(hit.id);
+        loadMap(hit.id);
+      });
+    };
+    // Offset from the cursor, and flipped when that would run off the edge.
+    const box = document.getElementById('map').getBoundingClientRect();
+    document.body.classList.add('peek');
+    const w = peek.offsetWidth, h = peek.offsetHeight;
+    let px = e.originalEvent.clientX + 14, py = e.originalEvent.clientY + 14;
+    if (px + w > box.right - 6) px = e.originalEvent.clientX - w - 14;
+    if (py + h > box.bottom - 6) py = e.originalEvent.clientY - h - 14;
+    peek.style.left = px + 'px';
+    peek.style.top = py + 'px';
+  });
+  // The label sits over the map and swallows clicks, so it has to dismiss
+  // itself too — otherwise the one spot you cannot click to close it is the
+  // label you are trying to get rid of.
+  peek.addEventListener('click', e => { if (!e.target.closest('.go')) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+  // Leaving world view takes the label with it.
+  leafletMap.on('zoomstart movestart', close);
+}
+
+function renderQuestMarkers(f, shown) {
+  const cfg = layerCfg('sidequest');
+  if (!cfg || !cfg.on || !quests) return;
+  for (const q of quests) {
+    for (const g of q.givers) {
+      if (!f.has(g.mapId)) {
+        (shown.__elsewhere ||= {}).sidequest = ((shown.__elsewhere || {}).sidequest || 0) + 1;
+        continue;
+      }
+      const key = pointKey({ layer: 'sidequest', mapId: g.mapId, evId: g.evId });
+      const done = collected.has(key);
+      const [lat, lng] = f.at(g.mapId, g.x, g.y);
+      const mk = pinMarker(lat, lng, cfg,
+        `<b>${questName(q)}</b><br>${t('qGiver')}: ${g.evName} — ${mapName(g.mapId)}`,
+        done ? 'done' : '').addTo(leafletMap);
+      mk.bindPopup(questBubble(q, g, key));
+      melonLayers.push(mk);
+      shown.sidequest = (shown.sidequest || 0) + 1;
+      if (done) (shown.__done ||= {}).sidequest = ((shown.__done || {}).sidequest || 0) + 1;
+    }
+    // In per-map view the steps are drawn without asking: one map holds a
+    // handful of them, and someone staring at HOTEL ROOMS looking for the
+    // ghost should not have to find the quest-giver first to be told where it
+    // is. The world view keeps the opt-in — that is where 200 pins would be a
+    // problem.
+    if (currentMode === 'world' && !questStepsOpen.has(q.file)) continue;
+    // Numbered only when the game gates the steps in a sequence. GHOST PARTY's
+    // ghosts are all behind one switch — numbering them would invent an order
+    // the game does not ask for.
+    q.steps.forEach((st, i) => {
+      if (!f.has(st.mapId)) return;
+      const [lat, lng] = f.at(st.mapId, st.x, st.y);
+      const step = pinMarker(lat, lng, cfg,
+        `<b>${st.evName || '?'}</b><br>` +
+        (q.ordered ? `${t('qStepNo')(i + 1, q.steps.length)} ${t('qStepOf')} ` : `${t('qStepOf')} `) +
+        `<b>${questName(q)}</b> — ${mapName(st.mapId)}`,
+        'quest-step', null, null, Math.round(cfg.size * 0.7),
+        q.ordered ? i + 1 : null).addTo(leafletMap);
+      melonLayers.push(step);
+    });
+  }
+}
+
+function questBubble(q, g, key) {
+  const box = document.createElement('div');
+  box.className = 'collectBubble';
+  const sep = LANG === 'zh' ? '、' : ', ';
+  const places = [...new Set(q.steps.map(s => mapName(s.mapId)))];
+  const head = document.createElement('div');
+  head.innerHTML = `<b>${questName(q)}</b><br>` +
+    `<span class="where">${t('qGiver')}: ${g.evName} — ${mapName(g.mapId)}</span>` +
+    (places.length
+      ? `<br>${q.ordered ? t('qStepCount')(q.steps.length) : t('qPlaces')(places.length)}` +
+        ` · <b>${t(q.ordered ? 'qOrdered' : 'qAnyOrder')}</b><br>${places.join(sep)}`
+      : '') +
+    (q.rewards.length ? `<br><b>${t('qReward')}:</b> ${q.rewards.map(itemName).join(sep)}` : '');
+  box.appendChild(head);
+  if (q.steps.length) {
+    const show = document.createElement('button');
+    const paintShow = () => {
+      show.textContent = questStepsOpen.has(q.file) ? t('qHide') : t('qShow');
+      show.className = questStepsOpen.has(q.file) ? 'done' : '';
+    };
+    show.addEventListener('click', () => {
+      if (questStepsOpen.has(q.file)) questStepsOpen.delete(q.file);
+      else questStepsOpen.add(q.file);
+      paintShow();
+      setTimeout(renderMarkers, 0);
+    });
+    paintShow();
+    box.appendChild(show);
+  }
+  const tick = document.createElement('button');
+  const paint = () => {
+    const done = collected.has(key);
+    tick.textContent = done ? `↺ ${t('marked')}` : `✓ ${t('markAs')}`;
+    tick.className = done ? 'done' : '';
+  };
+  tick.addEventListener('click', () => {
+    if (collected.has(key)) collected.delete(key); else collected.add(key);
+    saveCollected(); paint(); setTimeout(renderMarkers, 0);
+  });
+  paint();
+  box.appendChild(tick);
+  return box;
+}
+
 function renderConveyorMarkers(f, shown) {
   if (!conveyors) return;
   const cfg = layerCfg('machine');
@@ -1261,74 +1519,166 @@ function renderConveyorMarkers(f, shown) {
   }
 }
 
-const groupLabel = g => (g === 'achievement' ? t('achievements') : g);
+// The panel had grown to twenty rows and a scroll bar. Four groups, and only
+// the one you are working in needs to be open — which is also why the open set
+// is remembered: whoever is hunting watermelons opens the same group every time.
+const GROUP_ORDER = ['basics', 'quests', 'find', 'achievement'];
+const GROUP_NAMES = {
+  basics:      { en: 'On the map',    zh: '地图上' },
+  quests:      { en: 'Quests & people', zh: '任务与人' },
+  find:        { en: 'Things to find', zh: '要找的东西' },
+  achievement: { en: 'Achievements — once each', zh: '成就 —— 每个只需一次' },
+};
+const groupLabel = g => (GROUP_NAMES[g] || {})[LANG] || (GROUP_NAMES[g] || {}).en || g;
+
+const GROUPS_KEY = 'omori-atlas-groups';
+const openGroups = new Set((() => {
+  const saved = store.get(GROUPS_KEY);
+  if (saved !== null) { try { return JSON.parse(saved); } catch (e) { /* ignore */ } }
+  return ['basics'];
+})());
+const saveGroups = () => store.set(GROUPS_KEY, JSON.stringify([...openGroups]));
 
 function renderMarkerPanel() {
   const rows = document.getElementById('markerRows');
   rows.innerHTML = '';
-  let openGroup = null;
+  // A layer tied to a route is only offered while that route is being played;
+  // it also goes off, so it cannot stay on the map after the route changes.
   for (const cfg of MARKER_LAYERS) {
-    // A layer tied to a route is only offered while that route is being played;
-    // it also goes off, so it cannot stay on the map after the route changes.
-    if (cfg.route && cfg.route !== routeMode) { cfg.on = false; continue; }
-    if (cfg.group !== openGroup) {
-      openGroup = cfg.group;
-      if (openGroup) {
-        // Bind the name here. `openGroup` is reassigned as the loop walks the
-        // rest of the layers, so a handler closing over the variable would act
-        // on whatever group happened to be last — which is none of them.
-        const group = openGroup;
-        const head = document.createElement('div');
-        head.className = 'group-head';
-        head.innerHTML = `<label><input type="checkbox">${groupLabel(group)}</label>`;
-        const box = head.querySelector('input');
-        const members = () => MARKER_LAYERS.filter(l => l.group === group &&
-                                                       (!l.route || l.route === routeMode));
-        box.checked = members().every(l => l.on);
-        box.addEventListener('change', e => {
-          for (const l of members()) l.on = e.target.checked;
-          renderMarkerPanel();
-          renderMarkers();
-        });
-        rows.appendChild(head);
-      }
-    }
-    const row = document.createElement('div');
-    row.className = 'row' + (cfg.on ? '' : ' off');
-    const range = cfg.key === 'route' ? 'min="1" max="10"' : 'min="10" max="48"';
-    row.innerHTML =
-      `<label><input type="checkbox" ${cfg.on ? 'checked' : ''}>${cfg.icon} ${layerLabel(cfg)}</label>` +
-      `<input type="range" ${range} value="${cfg.size}">` +
-      (cfg.blink === undefined ? ''
-        : `<button class="blinkBtn${cfg.blink ? ' on' : ''}" title="${t('pulse')}">✦</button>`) +
-      `<span class="count" data-count="${cfg.key}"></span>`;
-    row.querySelector('input[type=checkbox]').addEventListener('change', e => {
-      cfg.on = e.target.checked;
-      row.classList.toggle('off', !cfg.on);
-      renderMarkers();
-    });
-    row.querySelector('input[type=range]').addEventListener('input', e => {
-      cfg.size = +e.target.value;
-      renderMarkers();
-    });
-    const blinkBtn = row.querySelector('.blinkBtn');
-    if (blinkBtn) blinkBtn.addEventListener('click', () => {
-      cfg.blink = !cfg.blink;
-      blinkBtn.classList.toggle('on', cfg.blink);
-      renderMarkers();
-    });
-    rows.appendChild(row);
+    if (cfg.route && cfg.route !== routeMode) cfg.on = false;
   }
+  const live = g => MARKER_LAYERS.filter(l => (l.group || 'basics') === g &&
+                                              (!l.route || l.route === routeMode));
+
+  for (const group of GROUP_ORDER) {
+    const members = live(group);
+    if (!members.length) continue;
+    const open = openGroups.has(group);
+    const on = members.filter(l => l.on).length;
+
+    const head = document.createElement('div');
+    head.className = 'group-head' + (open ? ' open' : '');
+    head.innerHTML =
+      `<span class="tw">${open ? '▾' : '▸'}</span>` +
+      `<label><input type="checkbox"${on === members.length ? ' checked' : ''}></label>` +
+      `<span class="gname">${groupLabel(group)}</span>` +
+      `<span class="gcount">${on ? on + '/' + members.length : ''}</span>`;
+    // The checkbox is its own control; clicking anywhere else on the header
+    // opens the group. Without the guard, ticking a group also collapses it.
+    head.addEventListener('click', e => {
+      if (e.target.closest('label')) return;
+      if (open) openGroups.delete(group); else openGroups.add(group);
+      saveGroups();
+      renderMarkerPanel();
+    });
+    head.querySelector('input').addEventListener('change', e => {
+      for (const l of members) l.on = e.target.checked;
+      renderMarkerPanel();
+      renderMarkers();
+    });
+    rows.appendChild(head);
+    if (!open) continue;
+
+    for (const cfg of members) {
+      const row = document.createElement('div');
+      row.className = 'row' + (cfg.on ? '' : ' off');
+      const range = cfg.key === 'route' ? 'min="1" max="10"'
+        : `min="${cfg.minSize || 10}" max="48"`;
+      row.innerHTML =
+        `<label><input type="checkbox" ${cfg.on ? 'checked' : ''}>${cfg.icon} ${layerLabel(cfg)}</label>` +
+        `<input type="range" ${range} value="${cfg.size}">` +
+        (cfg.blink === undefined ? ''
+          : `<button class="blinkBtn${cfg.blink ? ' on' : ''}" title="${t('pulse')}">✦</button>`) +
+        `<span class="count" data-count="${cfg.key}"></span>`;
+      row.querySelector('input[type=checkbox]').addEventListener('change', e => {
+        cfg.on = e.target.checked;
+        row.classList.toggle('off', !cfg.on);
+        renderMarkerPanel();
+        renderMarkers();
+      });
+      row.querySelector('input[type=range]').addEventListener('input', e => {
+        cfg.size = +e.target.value;
+        renderMarkers();
+      });
+      const blinkBtn = row.querySelector('.blinkBtn');
+      if (blinkBtn) blinkBtn.addEventListener('click', () => {
+        cfg.blink = !cfg.blink;
+        blinkBtn.classList.toggle('on', cfg.blink);
+        renderMarkers();
+      });
+      rows.appendChild(row);
+    }
+  }
+  updateMarkerCounts(lastShown);
+  holdPanelHeight(rows);
 }
 
+// Collapsing a group must not move everything under it. The panel is pinned to
+// the height it has with every group open, measured once per (language, route)
+// — those are the two things that change how many rows there are and how they
+// wrap — and re-measured by rendering the full list into the live element and
+// reading it back, because a row's height depends on the font the browser
+// actually picked.
+let panelSizes = {};
+function holdPanelHeight(rows) {
+  if (measuringPanel) return;
+  const key = LANG + ':' + routeMode;
+  const legend = document.getElementById('markerLegend');
+  if (panelSizes[key] === undefined) {
+    const before = new Set(openGroups);
+    measuringPanel = true;
+    rows.style.width = '';
+    legend.style.width = 'max-content';
+    // The note and the credits are prose and would happily be one long line,
+    // so they are taken out of the room while the rows are measured. They wrap
+    // to whatever the rows settle on.
+    const prose = [...legend.querySelectorAll('.legend-note, .credits')];
+    for (const el of prose) el.style.display = 'none';
+    for (const g of GROUP_ORDER) openGroups.add(g);
+    renderMarkerPanel();
+    panelSizes[key] = { w: rows.offsetWidth };
+    for (const el of prose) el.style.display = '';
+    openGroups.clear();
+    for (const g of before) openGroups.add(g);
+    measuringPanel = false;
+    renderMarkerPanel();
+    return;
+  }
+  // Width only. A count that grows from "9" to "0/25" is enough to shove the
+  // whole panel sideways, and that is the movement worth stopping — the panel
+  // shifting under the cursor as you tick things off.
+  //
+  // The height is left to the content. Pinning it to the fully-open size left
+  // a screen of nothing under the credits whenever a group was closed, and
+  // growing downward from a top-anchored panel moves nothing you were reading;
+  // past the viewport it scrolls inside itself rather than growing further.
+  rows.style.width = panelSizes[key].w + 'px';
+  // The panel is set to that too, not left to shrink-wrap: the credits are one
+  // long sentence and would otherwise decide how wide the whole thing is.
+  legend.style.width = panelSizes[key].w + 'px';
+}
+let measuringPanel = false;
+
+let lastShown = null;
 function updateMarkerCounts(shown) {
-  const done = (shown || {}).__done || {};
+  lastShown = shown || lastShown;
+  shown = lastShown || {};
+  const done = shown.__done || {};
   for (const cfg of MARKER_LAYERS) {
     const el = document.querySelector(`[data-count="${cfg.key}"]`);
     if (!el) continue;
     const n = (shown || {})[cfg.key] || 0;
     // Tickable layers read as progress; the rest are just a count.
-    el.textContent = !cfg.on ? '' : (TICKABLE.has(cfg.key) ? `${done[cfg.key] || 0}/${n}` : n);
+    // Only when there is nothing here at all. A layer switched on to an empty
+    // map reads as broken, and "elsewhere: 105" is the answer to that — but
+    // hung off every row it is just noise beside the number you asked for.
+    const hidden = (shown.__elsewhere || {})[cfg.key] || 0;
+    const empty = cfg.on && !n && hidden;
+    el.className = 'count' + (empty ? ' elsewhere' : '');
+    el.textContent = !cfg.on ? ''
+      : empty ? `${hidden} ↗`
+      : TICKABLE.has(cfg.key) ? `${done[cfg.key] || 0}/${n}` : `${n}`;
+    el.title = empty ? t('elsewhere')(hidden) : '';
   }
   const btn = document.getElementById('clearCollected');
   if (btn) {
@@ -1750,8 +2100,9 @@ function stale(why) {
 }
 
 let worldState = null;      // { bbox, byRegion, panes, placed, visibleIds }
-const DEFAULT_WORLD_REGION = 'vast_forest';
-const selectedRegions = new Set([DEFAULT_WORLD_REGION]);
+const DEFAULT_WORLD_REGIONS = ['vast_forest', 'white_space'];
+const DEFAULT_WORLD_REGION = DEFAULT_WORLD_REGIONS[0];
+const selectedRegions = new Set(DEFAULT_WORLD_REGIONS);
 
 async function loadWorld() {
   clearLayers();
@@ -2080,11 +2431,13 @@ const ROUTE_ONLY = {
   ]),
 };
 const ROUTE_ONLY_REGIONS = { hikikomori: new Set(['snowglobe_mountain']) };
-let routeMode = 'both';       // 'both' | 'sunny' | 'hikikomori'
+// There used to be a third choice, "both", which did the same as HIKIKOMORI for
+// maps and was worse for markers — the Sheet music layer is tagged
+// `route: 'hikikomori'`, so "both" was the one setting that hid it.
+let routeMode = 'sunny';       // 'sunny' | 'hikikomori'
 
 // True when this map exists on some route other than the one being played.
 function offRoute(id, region) {
-  if (routeMode === 'both') return false;
   for (const route of Object.keys(ROUTE_ONLY)) {
     if (route === routeMode) continue;
     if (ROUTE_ONLY[route].has(String(id))) return true;
@@ -2093,11 +2446,14 @@ function offRoute(id, region) {
   return false;
 }
 
+// White Space is on every route for the same reason Vast Forest is: it is two
+// maps you can reach from anywhere and it collides with nothing, so leaving it
+// off a route only ever meant the picker had to be clicked twice.
 const REGION_ROUTES = [
-  ['vast_forest', 'otherworld', 'junkyard', 'snowglobe_mountain'],
-  ['vast_forest', 'deep_well', 'last_resort', 'deeper_well', 'humphrey', 'white_space'],
-  ['vast_forest', 'pyrefly_forest', 'sweethearts_castle'],
-  ['vast_forest', 'orange_oasis'],
+  ['vast_forest', 'white_space', 'otherworld', 'junkyard', 'snowglobe_mountain'],
+  ['vast_forest', 'white_space', 'deep_well', 'last_resort', 'deeper_well', 'humphrey'],
+  ['vast_forest', 'white_space', 'pyrefly_forest', 'sweethearts_castle'],
+  ['vast_forest', 'white_space', 'orange_oasis'],
 ];
 // Named after the region each route runs out to, so they follow REGION_NAMES.
 const ROUTE_ANCHORS = ['otherworld', 'deep_well', 'pyrefly_forest', 'orange_oasis'];
@@ -2110,6 +2466,8 @@ const routeLabel = i => i === 3 ? regionLabel(ROUTE_ANCHORS[3])
 // toggle and every fade recalculation goes through here, and a dialog that
 // came back each time would be unusable.
 let lastOverlapKey = null;
+// How many regions were selected last time, so a shrinking selection is known.
+let lastSelectionSize = null;
 // The last selection that sat inside a single route. "Back to one route" used
 // to throw the lot away and leave you on Vast Forest alone, so a mis-click cost
 // you every region you had built up; now it just undoes the one that clashed.
@@ -2131,13 +2489,15 @@ function updateOverlapWarning() {
     box.style.display = 'none';
     if (popup) popup.classList.remove('show');
     lastOverlapKey = null;
+    lastSelectionSize = selectedRegions.size;
     lastGoodRegions = new Set(selectedRegions);
     return;
   }
 
   // Name the routes being mixed, so the fix is obvious.
   const involved = REGION_ROUTES
-    .map((route, i) => [ROUTE_LABELS[i], sel.filter(r => r !== 'vast_forest' && route.includes(r))])
+    .map((route, i) => [routeLabel(i),
+                        sel.filter(r => !DEFAULT_WORLD_REGIONS.includes(r) && route.includes(r))])
     .filter(([, rs]) => rs.length);
   const routeList = involved
     .map(([name, rs]) => `<b>${name}:</b> ${rs.map(label).join(', ')}`).join('<br>');
@@ -2151,7 +2511,13 @@ function updateOverlapWarning() {
   if (!popup) return;
   const key = involved.map(([name, rs]) => name + ':' + rs.slice().sort().join(',')).join('|');
   if (key === lastOverlapKey) return;   // same mix, already answered for
+  // Only interrupt when the mix was walked *into*. Unticking a region is
+  // someone already dealing with the overlap — putting the dialog in front of
+  // them for a mix they just made smaller is the tool arguing with the fix.
+  const shrank = lastSelectionSize !== null && selectedRegions.size < lastSelectionSize;
+  lastSelectionSize = selectedRegions.size;
   lastOverlapKey = key;
+  if (shrank) return;
   popup.innerHTML =
     `<h5>${t('ovTitle')(involved.length)}</h5>` +
     `<div class="routes">${routeList}</div>` +
@@ -2178,7 +2544,7 @@ function updateOverlapWarning() {
 
 function resetWorldLayers() {
   selectedRegions.clear();
-  selectedRegions.add(DEFAULT_WORLD_REGION);
+  for (const r of DEFAULT_WORLD_REGIONS) selectedRegions.add(r);
   applySelection();
 }
 
@@ -2268,23 +2634,29 @@ async function init() {
     // which fights you the moment the world is bigger than the screen.
     zoomSnap: 0, zoomDelta: 0.25, scrollWheelZoom: false,
   });
+  // Bottom-left: the region list lives under the top-left corner in world view
+  // and the +/- buttons were sitting on top of its first two rows.
+  leafletMap.zoomControl.setPosition('bottomleft');
   setupStitcherStyleWheel();
+  setupMapPeek();
   // Icon sizes are tied to the zoom, so they have to be rebuilt when it moves.
   leafletMap.on('zoomend', () => renderMarkers());
 
   // Both files cover the whole game rather than one region, so they load once
   // and stay. A missing file just means those layers stay empty.
-  let pngManifest, names;
-  [collectibles, conveyors, pointSprites, melonArt, pngManifest, names] = await Promise.all([
+  let pngManifest, names, questData;
+  [collectibles, conveyors, pointSprites, melonArt, pngManifest, names, questData] = await Promise.all([
     fetchData('../data/collectibles.json').then(r => r.ok ? r.json() : null).catch(() => null),
     fetchData('../data/conveyors.json').then(r => r.ok ? r.json() : null).catch(() => null),
     fetchData('../data/point_sprites.json').then(r => r.ok ? r.json() : null).catch(() => null),
     fetchData('../data/melon_art.json').then(r => r.ok ? r.json() : null).catch(() => null),
     fetchData('../data/raw_pngs/manifest.json').then(r => r.ok ? r.json() : null).catch(() => null),
     fetchData('../data/names_zh.json').then(r => r.ok ? r.json() : null).catch(() => null),
+    fetchData('../data/quests.json').then(r => r.ok ? r.json() : null).catch(() => null),
   ]);
   pngVersion = pngManifest || {};
   zhNames = (names || {}).names || {};
+  quests = (questData || {}).quests || null;
   renderMarkerPanel();
 
   document.getElementById('mapSelect').addEventListener('change', e => loadMap(e.target.value));

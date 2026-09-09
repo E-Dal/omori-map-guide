@@ -2680,6 +2680,27 @@
         "y": 11
       },
       "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 194,
+        "evId": 904,
+        "evName": "Door anchor (Club Sandwich)",
+        "x": 45,
+        "y": 6,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 194,
+        "x": 45,
+        "y": 6
+      },
+      "kind": "anchor"
     }
   ],
   "external": [

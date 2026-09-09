@@ -573,6 +573,48 @@
    }
   },
   {
+   "mapId": 453,
+   "evId": 16,
+   "name": "melonJamPackets",
+   "x": 33,
+   "y": 36,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 453,
+   "evId": 37,
+   "name": "melonLifeJam",
+   "x": 33,
+   "y": 5,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   }
+  },
+  {
+   "mapId": 453,
+   "evId": 41,
+   "name": "melonLifeJam",
+   "x": 33,
+   "y": 4,
+   "color": "green",
+   "prize": {
+    "template": null,
+    "kind": "Item",
+    "itemName": "JAM PACKETS"
+   },
+   "requires": [
+    "Alternate_Room"
+   ]
+  },
+  {
    "mapId": 1123,
    "evId": 21,
    "name": "melonCopy",
@@ -678,10 +720,16 @@
   },
   {
    "mapId": 334,
+   "evId": 21,
    "x": 13,
    "y": 18,
    "name": "Tomb Prize (blue)",
-   "color": "blue"
+   "color": "blue",
+   "prize": {
+    "template": null,
+    "kind": "Armor",
+    "itemName": "BREADPHONES"
+   }
   }
  ]
 }

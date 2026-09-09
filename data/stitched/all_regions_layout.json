@@ -2,15 +2,15 @@
   "version": 2,
   "layout": {
     "87": {
-      "x": 6464,
-      "y": -1856,
+      "x": 6144,
+      "y": -1824,
       "crop": "full",
       "zOrder": 163,
       "groupId": "white_space"
     },
     "88": {
-      "x": 7008,
-      "y": -2720,
+      "x": 6944,
+      "y": -2624,
       "crop": "full",
       "zOrder": 162,
       "groupId": "white_space"
@@ -170,15 +170,15 @@
       "groupId": "orange_oasis"
     },
     "115": {
-      "x": 2080,
-      "y": -4608,
+      "x": 1696,
+      "y": -4832,
       "crop": "full",
       "zOrder": 46,
       "groupId": "orange_oasis"
     },
     "116": {
-      "x": 4288,
-      "y": -8032,
+      "x": 2016,
+      "y": -8096,
       "crop": "full",
       "zOrder": -2,
       "groupId": "orange_oasis"
@@ -1367,7 +1367,7 @@
       "groupId": "vast_forest"
     },
     "1121": {
-      "x": 1760,
+      "x": 1376,
       "y": -4384,
       "crop": "full",
       "zOrder": 88,
@@ -1690,7 +1690,7 @@
     },
     "4334": {
       "x": 2592,
-      "y": -3008,
+      "y": -3040,
       "crop": "full",
       "zOrder": 50,
       "groupId": "pyrefly_forest"
@@ -1765,12 +1765,40 @@
       "zOrder": 143,
       "groupId": "deeper_well"
     },
+    "4531": {
+      "x": 4320,
+      "y": -12384,
+      "crop": "full",
+      "zOrder": 370,
+      "groupId": "last_resort"
+    },
     "4534": {
       "x": 4832,
       "y": -15872,
       "crop": "full",
       "zOrder": 153,
       "groupId": "last_resort"
+    },
+    "4536": {
+      "x": 1920,
+      "y": -3616,
+      "crop": "full",
+      "zOrder": 371,
+      "groupId": "orange_oasis"
+    },
+    "4537": {
+      "x": 10496,
+      "y": -9792,
+      "crop": "full",
+      "zOrder": 368,
+      "groupId": "otherworld"
+    },
+    "4538": {
+      "x": 2176,
+      "y": -3040,
+      "crop": "full",
+      "zOrder": 369,
+      "groupId": "pyrefly_forest"
     }
   },
   "routes": [
@@ -2045,7 +2073,7 @@
       ]
     },
     {
-      "color": "#ffcc33",
+      "color": "#ff66d9",
       "pts": [
         {
           "x": 1520,
@@ -2207,7 +2235,7 @@
       ]
     },
     {
-      "color": "#22eebb",
+      "color": "#33ccff",
       "pts": [
         {
           "x": -464,
@@ -2423,7 +2451,7 @@
       ]
     },
     {
-      "color": "#22eebb",
+      "color": "#33ccff",
       "pts": [
         {
           "x": -1136,
@@ -2477,7 +2505,7 @@
       ]
     },
     {
-      "color": "#88ddff",
+      "color": "#ff7733",
       "pts": [
         {
           "x": -1072,
@@ -2558,7 +2586,7 @@
       ]
     },
     {
-      "color": "#ff7733",
+      "color": "#ffcc33",
       "pts": [
         {
           "x": -1360,
@@ -3152,7 +3180,7 @@
       ]
     },
     {
-      "color": "#ff66d9",
+      "color": "#ff5566",
       "pts": [
         {
           "x": 1584,
@@ -3166,8 +3194,8 @@
           }
         },
         {
-          "x": 2544,
-          "y": -3568,
+          "x": 2160,
+          "y": -3792,
           "snap": {
             "mapId": 115,
             "evId": 1,
@@ -3503,7 +3531,7 @@
       ]
     },
     {
-      "color": "#88ddff",
+      "color": "#ff66d9",
       "pts": [
         {
           "x": 1104,
@@ -3908,7 +3936,7 @@
       ]
     },
     {
-      "color": "#ff7733",
+      "color": "#33ccff",
       "pts": [
         {
           "x": 1328,
@@ -3922,7 +3950,7 @@
           }
         },
         {
-          "x": 1936,
+          "x": 1552,
           "y": -4080,
           "snap": {
             "mapId": 1121,
@@ -4448,7 +4476,7 @@
       ]
     },
     {
-      "color": "#33ccff",
+      "color": "#ff5566",
       "pts": [
         {
           "x": 3216,
@@ -4799,7 +4827,7 @@
       ]
     },
     {
-      "color": "#66ff66",
+      "color": "#bb88ff",
       "pts": [
         {
           "x": 3376,
@@ -6003,8 +6031,8 @@
           }
         },
         {
-          "x": 6000,
-          "y": -3376,
+          "x": 3728,
+          "y": -3440,
           "snap": {
             "mapId": 116,
             "evId": 901,
@@ -6128,7 +6156,7 @@
       "pts": [
         {
           "x": 2704,
-          "y": -2608,
+          "y": -2640,
           "snap": {
             "mapId": 4334,
             "evId": 900,
@@ -6286,7 +6314,7 @@
       ]
     },
     {
-      "color": "#ffcc33",
+      "color": "#22eebb",
       "pts": [
         {
           "x": 2576,
@@ -6370,7 +6398,7 @@
       "kind": "two"
     },
     {
-      "color": "#ff66d9",
+      "color": "#33ccff",
       "pts": [
         {
           "x": -2352,
@@ -6454,7 +6482,7 @@
       "kind": "two"
     },
     {
-      "color": "#ffcc33",
+      "color": "#88ddff",
       "pts": [
         {
           "x": 720,
@@ -6623,7 +6651,7 @@
       "kind": "one"
     },
     {
-      "color": "#22eebb",
+      "color": "#ffcc33",
       "pts": [
         {
           "x": 2032,
@@ -6651,7 +6679,7 @@
       "kind": "one"
     },
     {
-      "color": "#33ccff",
+      "color": "#ffcc33",
       "pts": [
         {
           "x": 976,
@@ -6710,8 +6738,8 @@
       "color": "#ffcc33",
       "pts": [
         {
-          "x": 7632,
-          "y": -2384,
+          "x": 7568,
+          "y": -2288,
           "snap": {
             "mapId": 88,
             "evId": 7,
@@ -6748,8 +6776,8 @@
           }
         },
         {
-          "x": 7376,
-          "y": -2288,
+          "x": 7312,
+          "y": -2192,
           "snap": {
             "mapId": 88,
             "evId": 12,
@@ -7609,21 +7637,6 @@
       "kind": "one"
     },
     {
-      "color": "#bb88ff",
-      "pts": [
-        {
-          "x": 13714.014983758048,
-          "y": -1485.8134259468147,
-          "snap": null
-        },
-        {
-          "x": 13834.014983758048,
-          "y": -1485.8134259468147,
-          "snap": null
-        }
-      ]
-    },
-    {
       "color": "#66ff66",
       "pts": [
         {
@@ -7734,7 +7747,7 @@
       ]
     },
     {
-      "color": "#bb88ff",
+      "color": "#22eebb",
       "pts": [
         {
           "x": 3568,
@@ -7836,7 +7849,7 @@
       ]
     },
     {
-      "color": "#ff7733",
+      "color": "#66ff66",
       "pts": [
         {
           "x": 3216,
@@ -7866,8 +7879,8 @@
       "color": "#bb88ff",
       "pts": [
         {
-          "x": 7344,
-          "y": -1008,
+          "x": 7024,
+          "y": -976,
           "snap": {
             "mapId": 87,
             "evId": 3,
@@ -7877,14 +7890,176 @@
           }
         },
         {
-          "x": 7504,
-          "y": -1968,
+          "x": 7440,
+          "y": -1872,
           "snap": {
             "mapId": 88,
             "evId": 6,
             "evName": "TELEPORT TO WHITESPACE",
             "ox": 496,
             "oy": 752
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": -400,
+          "y": -4016,
+          "snap": {
+            "mapId": 106,
+            "evId": 4,
+            "evName": "To Orange Joe's Cliff",
+            "ox": 624,
+            "oy": 16
+          }
+        },
+        {
+          "x": -1360,
+          "y": -11280,
+          "snap": {
+            "mapId": 182,
+            "evId": 903,
+            "evName": "Arrival anchor (top-left cell)",
+            "ox": 240,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 2352,
+          "y": -2640,
+          "snap": {
+            "mapId": 4538,
+            "evId": 900,
+            "evName": "Exit stem (south)",
+            "ox": 176,
+            "oy": 400
+          }
+        },
+        {
+          "x": 2704,
+          "y": -2928,
+          "snap": {
+            "mapId": 4334,
+            "evId": 900,
+            "evName": "Exit stem (south)",
+            "ox": 112,
+            "oy": 112
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 3376,
+          "y": -7952,
+          "snap": {
+            "mapId": 116,
+            "evId": 1,
+            "evName": "To Orange Oasis",
+            "ox": 1360,
+            "oy": 144
+          }
+        },
+        {
+          "x": 1488,
+          "y": -3728,
+          "snap": {
+            "mapId": 106,
+            "evId": 62,
+            "evName": "Arrow Cave Exit",
+            "ox": 2512,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 3952,
+          "y": -12336,
+          "snap": {
+            "mapId": 194,
+            "evId": 904,
+            "evName": "Door anchor (billiard room)",
+            "ox": 1456,
+            "oy": 208
+          }
+        },
+        {
+          "x": 4496,
+          "y": -11984,
+          "snap": {
+            "mapId": 4531,
+            "evId": 900,
+            "evName": "Exit stem (south)",
+            "ox": 176,
+            "oy": 400
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 1648,
+          "y": -3056,
+          "snap": {
+            "mapId": 106,
+            "evId": 904,
+            "evName": "Door anchor (Club Sandwich)",
+            "ox": 2672,
+            "oy": 976
+          }
+        },
+        {
+          "x": 2096,
+          "y": -3216,
+          "snap": {
+            "mapId": 4536,
+            "evId": 900,
+            "evName": "Exit stem (south)",
+            "ox": 176,
+            "oy": 400
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 10320,
+          "y": -9680,
+          "snap": {
+            "mapId": 348,
+            "evId": 904,
+            "evName": "Door anchor (Club Sandwich)",
+            "ox": 528,
+            "oy": 432
+          }
+        },
+        {
+          "x": 10672,
+          "y": -9392,
+          "snap": {
+            "mapId": 4537,
+            "evId": 900,
+            "evName": "Exit stem (south)",
+            "ox": 176,
+            "oy": 400
           }
         }
       ]
@@ -12712,6 +12887,34 @@
         ]
       ]
     },
+    "4531": {
+      "id": 4531,
+      "name": "-- CLUB SANDWICH [bar — Last Resort]",
+      "width": 11,
+      "height": 13,
+      "parallaxName": "parallax_dw_1",
+      "bgm": "theme_basil2",
+      "cropX": 4,
+      "cropY": 1,
+      "polygon": [
+        [
+          4,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          14
+        ],
+        [
+          4,
+          14
+        ]
+      ]
+    },
     "4534": {
       "id": 4534,
       "name": "-- CLUB SANDWICH [pluto room]",
@@ -12737,6 +12940,90 @@
         [
           7,
           42
+        ]
+      ]
+    },
+    "4536": {
+      "id": 4536,
+      "name": "-- CLUB SANDWICH [bar — Orange Oasis]",
+      "width": 11,
+      "height": 13,
+      "parallaxName": "parallax_dw_1",
+      "bgm": "theme_basil2",
+      "cropX": 4,
+      "cropY": 1,
+      "polygon": [
+        [
+          4,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          14
+        ],
+        [
+          4,
+          14
+        ]
+      ]
+    },
+    "4537": {
+      "id": 4537,
+      "name": "-- CLUB SANDWICH [bar — Otherworld]",
+      "width": 11,
+      "height": 13,
+      "parallaxName": "parallax_dw_1",
+      "bgm": "theme_basil2",
+      "cropX": 4,
+      "cropY": 1,
+      "polygon": [
+        [
+          4,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          14
+        ],
+        [
+          4,
+          14
+        ]
+      ]
+    },
+    "4538": {
+      "id": 4538,
+      "name": "-- CLUB SANDWICH [bar — Pyrefly]",
+      "width": 11,
+      "height": 13,
+      "parallaxName": "parallax_dw_1",
+      "bgm": "theme_basil2",
+      "cropX": 4,
+      "cropY": 1,
+      "polygon": [
+        [
+          4,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          15,
+          14
+        ],
+        [
+          4,
+          14
         ]
       ]
     }

@@ -29,6 +29,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 ANCHOR_EV = 903
+DOOR_EV = 904
 KIND = 'anchor'
 
 # region -> [(mapId, x, y, name)]. Hand-written: "has no exit of its own" is
@@ -44,14 +45,41 @@ ARRIVALS = {
 }
 
 
+# Doors the game draws but never wired up — no transfer, no arrival, nothing to
+# check them against, so these are placed by eye against the render and the
+# comment has to say where. Unlike ARRIVALS they cannot be validated, which is
+# why they are a separate table: a wrong entry here is silent.
+DOORS = {
+    'last_resort': [
+        # CASINO, top right: the teal door in the north wall at tile (45, 5).
+        # It is the LAST RESORT entrance to CLUB SANDWICH — the same tile the
+        # 'Club Sandwich' event stands on — and (45, 6) is its threshold.
+        (194, 45, 6, 'Door anchor (Club Sandwich)'),
+    ],
+    'otherworld': [
+        # MOONWALK MAP: the sandwich-shaped door in the north wall at (16, 12),
+        # the OTHERWORLD entrance. Floor starts at row 13.
+        (348, 16, 13, 'Door anchor (Club Sandwich)'),
+    ],
+    'orange_oasis': [
+        # ORANGE OASIS, east side: the ORANGE OASIS entrance at (83, 29), an
+        # unmarked gap in the cake wall between two palms. Floor at row 30.
+        (106, 83, 30, 'Door anchor (Club Sandwich)'),
+    ],
+}
+
+
 def main(argv):
-    regions = argv or sorted(ARRIVALS)
+    regions = argv or sorted(set(ARRIVALS) | set(DOORS))
     total = 0
     for region in regions:
         entries = ARRIVALS.get(region)
-        if entries is None:
+        doors = DOORS.get(region)
+        if entries is None and doors is None:
             print(f'  {region}: nothing listed — skipped')
             continue
+        entries = entries or []
+        doors = doors or []
         maps_path = ROOT / 'data' / f'{region}_maps.json'
         edges_path = ROOT / 'data' / f'{region}_edges.json'
         if not edges_path.exists():
@@ -62,16 +90,20 @@ def main(argv):
         internal = edges.get('internal', [])
 
         internal = [e for e in internal
-                    if not (e.get('kind') == KIND and e['from'].get('evId') == ANCHOR_EV)]
+                    if not (e.get('kind') == KIND
+                            and e['from'].get('evId') in (ANCHOR_EV, DOOR_EV))]
 
         for map_id, x, y, name in entries:
             m = meta.get(str(map_id))
             if not m:
                 print(f'  ⚠ map{map_id}: not in {region}_maps.json — skipped')
                 continue
+            # Anchors point at themselves, so they would otherwise turn up here
+            # as evidence for their own existence.
             senders = [e for e in edges.get('internal', []) + edges.get('external', [])
                        if e['to']['mapId'] == map_id
-                       and (e['to']['x'], e['to']['y']) == (x, y)]
+                       and (e['to']['x'], e['to']['y']) == (x, y)
+                       and e.get('kind') != KIND]
             if not senders:
                 print(f'  ⚠ map{map_id} ({x}, {y}): nothing in {region}_edges.json '
                       f'arrives there — stale entry?')
@@ -89,10 +121,27 @@ def main(argv):
                                     for e in senders}))
             print(f'  map{map_id} {m["name"]}: {name} at ({x}, {y})  ← arrives from {who}')
 
+        for map_id, x, y, name in doors:
+            m = meta.get(str(map_id))
+            if not m:
+                print(f'  ⚠ map{map_id}: not in {region}_maps.json — skipped')
+                continue
+            if not (0 <= x < m['width'] and 0 <= y < m['height']):
+                print(f'  ⚠ map{map_id} ({x}, {y}): outside a {m["width"]}x{m["height"]} map')
+                continue
+            internal.append({
+                'from': {'mapId': map_id, 'evId': DOOR_EV, 'evName': name,
+                         'x': x, 'y': y, 'hitbox': {'L': 0, 'R': 0, 'T': 0, 'B': 0}},
+                'to': {'mapId': map_id, 'x': x, 'y': y},
+                'kind': KIND,
+            })
+            total += 1
+            print(f'  map{map_id} {m["name"]}: {name} at ({x}, {y})  ← placed by eye')
+
         edges['internal'] = internal
         edges_path.write_text(json.dumps(edges, indent=2))
 
-    print(f'\n{total} arrival anchor(s) written')
+    print(f'\n{total} anchor(s) written')
 
 
 if __name__ == '__main__':

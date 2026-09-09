@@ -1,0 +1,4065 @@
+{
+ "quests": [
+  {
+   "file": "dreamworld_bed",
+   "name": {
+    "en": "B.E.D.",
+    "zh": "B.E.D."
+   },
+   "named": true,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "335",
+     "evId": 3,
+     "evName": "ELDERMOLE3N",
+     "x": 22,
+     "y": 7,
+     "msg": 0,
+     "sprite": "DW_SPRM_1|4|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "166",
+     "evId": 5,
+     "evName": "SLEEPYMOLE3N",
+     "x": 34,
+     "y": 23,
+     "msg": 3,
+     "sprite": "DW_SPRM_1|1|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "166",
+     "evId": 4,
+     "evName": "SPORTYMOLE3N",
+     "x": 33,
+     "y": 9,
+     "msg": 10,
+     "sprite": "DW_SPRM_1|3|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "165",
+     "evId": 6,
+     "evName": "BANDITOMOLE3N",
+     "x": 25,
+     "y": 24,
+     "msg": 20,
+     "sprite": "$dw_sm_bandito_mole|0|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "335",
+     "evId": 4,
+     "evName": "Bed Scene",
+     "x": 20,
+     "y": 8,
+     "msg": 50
+    },
+    {
+     "mapId": "335",
+     "evId": 2,
+     "evName": "SLEEPYMOLE3N",
+     "x": 17,
+     "y": 1,
+     "msg": 71,
+     "sprite": "DW_SPRM_1|1|8|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "BLACKMAIL",
+    "BIG AIRHORN",
+    "B.E.D."
+   ]
+  },
+  {
+   "file": "dreamworld_coffeemachine",
+   "name": {
+    "en": "THE COFFEE MACHINE",
+    "zh": "咖啡机"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "125",
+     "evId": 5,
+     "evName": "COFFEE_1N2",
+     "x": 36,
+     "y": 37,
+     "msg": 1,
+     "sprite": "DW_OT_tvgirl_sit|3|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "1254",
+     "evId": 5,
+     "evName": "COFFEE_1N2",
+     "x": 3,
+     "y": 6,
+     "msg": 1,
+     "sprite": "DW_OT_tvgirl_sit|3|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "125",
+     "evId": 6,
+     "evName": "COFFEE_1N2_2",
+     "x": 34,
+     "y": 36,
+     "msg": 29,
+     "sprite": "$objects_ot_coffee_maker|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "1254",
+     "evId": 6,
+     "evName": "COFFEE_1N2_2",
+     "x": 1,
+     "y": 5,
+     "msg": 29,
+     "sprite": "$objects_ot_coffee_maker|0|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "STRANGE LIST",
+    "DYNAMITE",
+    "COFFEE"
+   ]
+  },
+  {
+   "file": "dreamworld_crowfriends",
+   "name": {
+    "en": "CROW FRIENDS",
+    "zh": "乌鸦朋友"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "119",
+     "evId": 19,
+     "evName": "CROW1N2",
+     "x": 68,
+     "y": 38,
+     "msg": 1,
+     "sprite": "DW_NPC_12|2|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "119",
+     "evId": 20,
+     "evName": "CROW1N2_1",
+     "x": 7,
+     "y": 29,
+     "msg": 10,
+     "sprite": "DW_Crow|1|2|0",
+     "prio": 1
+    },
+    {
+     "mapId": "119",
+     "evId": 21,
+     "evName": "CROW1N2_2",
+     "x": 40,
+     "y": 47,
+     "msg": 10,
+     "sprite": "DW_Crow|1|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "119",
+     "evId": 22,
+     "evName": "CROW1N2_3",
+     "x": 92,
+     "y": 19,
+     "msg": 10,
+     "sprite": "DW_Crow|1|2|2",
+     "prio": 1
+    },
+    {
+     "mapId": "119",
+     "evId": 24,
+     "evName": "5-Leaf Clover",
+     "x": 68,
+     "y": 39,
+     "msg": 29,
+     "sprite": "DW_IMPORTANTOBJ|1|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "5-LEAF CLOVER"
+   ]
+  },
+  {
+   "file": "dreamworld_deliversprout",
+   "name": {
+    "en": "SPROUT DELIVERY",
+    "zh": "树苗鼹鼠快递"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "165",
+     "evId": 12,
+     "evName": "DELIVER2N_1",
+     "x": 23,
+     "y": 15,
+     "msg": 1,
+     "sprite": "DW_SPRM_1|2|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "120",
+     "evId": 7,
+     "evName": "DELIVER2N_2",
+     "x": 10,
+     "y": 36,
+     "msg": 6,
+     "sprite": "DW_SPRM_1|2|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "LIFE JAM",
+    "CARE PACKAGE"
+   ]
+  },
+  {
+   "file": "dreamworld_demonboy",
+   "name": {
+    "en": "DEMON BOY",
+    "zh": "恶魔男孩"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "155",
+     "evId": 7,
+     "evName": "DEMONBOY2N",
+     "x": 1,
+     "y": 14,
+     "msg": 0,
+     "sprite": "DW_NPC_8|0|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "176",
+     "evId": 71,
+     "evName": "DEMONBOY2N_2",
+     "x": 21,
+     "y": 19,
+     "msg": 2,
+     "sprite": "DW_OBJECTS_2|7|8|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "DEEP POETRY BOOK",
+    "INTERESTING BOOK"
+   ]
+  },
+  {
+   "file": "dreamworld_feedhumphrey",
+   "name": {
+    "en": "FEED HUMPHREY",
+    "zh": "喂饱汉弗莱"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "196",
+     "evId": 5,
+     "evName": "Jawsum",
+     "x": 15,
+     "y": 13,
+     "msg": 0,
+     "sprite": "DW_jawsum|1|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "1961",
+     "evId": 5,
+     "evName": "Jawsum",
+     "x": 8,
+     "y": 9,
+     "msg": 0,
+     "sprite": "DW_jawsum|1|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "216",
+     "evId": 1,
+     "evName": "Humphrey Whale",
+     "x": 9,
+     "y": 10,
+     "msg": 21,
+     "sprite": "$DW_WHALEY_1|0|2|0",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "GIANT CHECK"
+   ]
+  },
+  {
+   "file": "dreamworld_fliphim",
+   "name": {
+    "en": "FLIP HIM OVER",
+    "zh": "把他翻过来"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "106",
+     "evId": 23,
+     "evName": "FLIPHIM",
+     "x": 68,
+     "y": 20,
+     "msg": 0,
+     "sprite": "DW_DoughDungeon2|2|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "dreamworld_flowerpuzzle",
+   "name": {
+    "en": "DAISY’S DILEMMA",
+    "zh": "雏菊的难题"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "92",
+     "evId": 31,
+     "evName": "DAISY",
+     "x": 5,
+     "y": 28,
+     "msg": 0,
+     "sprite": "DW_NPC_PLAYGROUND|4|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "192",
+     "evId": 20,
+     "evName": "DAISY 2",
+     "x": 57,
+     "y": 11,
+     "msg": 0,
+     "sprite": "DW_NPC_PLAYGROUND|4|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "1922",
+     "evId": 20,
+     "evName": "DAISY 2",
+     "x": 9,
+     "y": 4,
+     "msg": 0,
+     "sprite": "DW_NPC_PLAYGROUND|4|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "DAISY"
+   ]
+  },
+  {
+   "file": "dreamworld_ghostgathering",
+   "name": {
+    "en": "GHOST PARTY",
+    "zh": "鬼魂聚会"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "198",
+     "evId": 1,
+     "evName": "TOPHATGHOST",
+     "x": 15,
+     "y": 26,
+     "msg": 0
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "106",
+     "evId": 10,
+     "evName": "BEARDGHOST",
+     "x": 85,
+     "y": 63,
+     "msg": 10
+    },
+    {
+     "mapId": "144",
+     "evId": 111,
+     "evName": "GLASSESGHOST",
+     "x": 27,
+     "y": 21,
+     "msg": 14,
+     "sprite": "DW_GHOSTPARTY2|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "193",
+     "evId": 12,
+     "evName": "MUSTACHEGHOST",
+     "x": 15,
+     "y": 50,
+     "msg": 17
+    },
+    {
+     "mapId": "1937",
+     "evId": 12,
+     "evName": "MUSTACHEGHOST",
+     "x": 3,
+     "y": 3,
+     "msg": 17
+    },
+    {
+     "mapId": "175",
+     "evId": 2,
+     "evName": "PRINCESSGHOST",
+     "x": 18,
+     "y": 23,
+     "msg": 21
+    },
+    {
+     "mapId": "100",
+     "evId": 3,
+     "evName": "PROPELLORGHOST",
+     "x": 22,
+     "y": 22,
+     "msg": 25
+    },
+    {
+     "mapId": "131",
+     "evId": 35,
+     "evName": "SUNHATGHOST",
+     "x": 15,
+     "y": 7,
+     "msg": 29
+    }
+   ],
+   "rewards": [
+    "SPOOKY MAP",
+    "TOP HAT",
+    "WAFFLE",
+    "PRESENT",
+    "BIG RUBBER BAND",
+    "LIFE JAM",
+    "FRUIT JUICE?",
+    "DEAD BATTERIES"
+   ]
+  },
+  {
+   "file": "dreamworld_hector",
+   "name": {
+    "en": "HECTOR",
+    "zh": "赫克托"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "325",
+     "evId": 7,
+     "evName": "Pet Rock",
+     "x": 14,
+     "y": 47,
+     "msg": 0
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "108",
+     "evId": 18,
+     "evName": "HECTOR_2",
+     "x": 38,
+     "y": 23,
+     "msg": 15,
+     "sprite": "DW_PuzzleObjects4|1|6|2",
+     "prio": 1
+    },
+    {
+     "mapId": "108",
+     "evId": 19,
+     "evName": "HECTOR_3",
+     "x": 39,
+     "y": 22,
+     "msg": 16,
+     "sprite": "DW_PuzzleObjects4|1|6|2",
+     "prio": 1
+    }
+   ],
+   "rewards": []
+  },
+  {
+   "file": "dreamworld_hectorjr",
+   "name": {
+    "en": "HECTOR",
+    "zh": "小赫克托"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "108",
+     "evId": 15,
+     "evName": "HECTOR",
+     "x": 39,
+     "y": 24,
+     "msg": 0,
+     "sprite": "DW_PuzzleObjects4|1|6|0",
+     "prio": 1
+    },
+    {
+     "mapId": "108",
+     "evId": 31,
+     "evName": "backup",
+     "x": 0,
+     "y": 5,
+     "msg": 0,
+     "sprite": "DW_PuzzleObjects4|1|6|2",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "HECTOR JR"
+   ]
+  },
+  {
+   "file": "dreamworld_itch",
+   "name": {
+    "en": "ITCHY",
+    "zh": "好痒"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "106",
+     "evId": 12,
+     "evName": "ITCH",
+     "x": 14,
+     "y": 30,
+     "msg": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "HARD HAT"
+   ]
+  },
+  {
+   "file": "dreamworld_lostrarebear",
+   "name": {
+    "en": "THE LOST RARE BEAR",
+    "zh": "走失的稀有小熊"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "157",
+     "evId": 3,
+     "evName": "CANDLIE",
+     "x": 22,
+     "y": 4,
+     "msg": 0,
+     "sprite": "DW_NPC_7|7|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "RUBBER DUCK"
+   ]
+  },
+  {
+   "file": "dreamworld_lostson",
+   "name": {
+    "en": "THE LOST SON",
+    "zh": "走失的儿子"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "125",
+     "evId": 9,
+     "evName": "Duck Father",
+     "x": 11,
+     "y": 37,
+     "msg": 0,
+     "sprite": "DW_NPC_OTHERWORLD|1|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "1253",
+     "evId": 9,
+     "evName": "Duck Father",
+     "x": 1,
+     "y": 6,
+     "msg": 0,
+     "sprite": "DW_NPC_OTHERWORLD|1|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "129",
+     "evId": 102,
+     "evName": "LOSTSON_2",
+     "x": 49,
+     "y": 9,
+     "msg": 2,
+     "sprite": "DW_NPC_OTHERWORLD|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "125",
+     "evId": 10,
+     "evName": "Duck Mom",
+     "x": 13,
+     "y": 38,
+     "msg": 17,
+     "sprite": "DW_NPC_OTHERWORLD|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "1253",
+     "evId": 10,
+     "evName": "Duck Mom",
+     "x": 3,
+     "y": 7,
+     "msg": 17,
+     "sprite": "DW_NPC_OTHERWORLD|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "125",
+     "evId": 11,
+     "evName": "Duck Jr",
+     "x": 14,
+     "y": 38,
+     "msg": 17,
+     "sprite": "DW_NPC_OTHERWORLD|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "1253",
+     "evId": 11,
+     "evName": "Duck Jr",
+     "x": 4,
+     "y": 7,
+     "msg": 17,
+     "sprite": "DW_NPC_OTHERWORLD|2|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "DANDELION"
+   ]
+  },
+  {
+   "file": "dreamworld_marina",
+   "name": {
+    "en": "MARINA'S OPERATION",
+    "zh": "玛丽娜的手术"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "227",
+     "evId": 9,
+     "evName": "MARINA_1",
+     "x": 18,
+     "y": 14,
+     "msg": 0,
+     "sprite": "DW_NPC_10|5|8|1",
+     "prio": 0
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "FINGER"
+   ]
+  },
+  {
+   "file": "dreamworld_medusa",
+   "name": {
+    "en": "MEDUSA'S EXPERIMENT",
+    "zh": "美杜莎的实验"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "234",
+     "evId": 11,
+     "evName": "MEDUSA_1",
+     "x": 19,
+     "y": 18,
+     "msg": 1,
+     "sprite": "DW_NPC_10|6|2|1",
+     "prio": 0
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "234",
+     "evId": 42,
+     "evName": "EV042",
+     "x": 21,
+     "y": 11,
+     "msg": 8,
+     "sprite": "$sprite_sg_medusa_labcoat|0|8|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "MYSTERY POTION"
+   ]
+  },
+  {
+   "file": "dreamworld_molly",
+   "name": {
+    "en": "MOLLY'S ANALYSIS",
+    "zh": "莫莉的分析"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "248",
+     "evId": 10,
+     "evName": "MOLLY_1",
+     "x": 12,
+     "y": 21,
+     "msg": 0,
+     "sprite": "DW_SLIMEGIRLS|4|2|1",
+     "prio": 0
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "248",
+     "evId": 62,
+     "evName": "Scene Object",
+     "x": 14,
+     "y": 16,
+     "msg": 13,
+     "sprite": "DW_OBJECTS|1|6|0",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "HIGH HEELS"
+   ]
+  },
+  {
+   "file": "dreamworld_oragne",
+   "name": {
+    "en": "THE CONVICTION OF ORANGE JOE",
+    "zh": "橙子乔的信念"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "113",
+     "evId": 4,
+     "evName": "ORANGEJOE",
+     "x": 10,
+     "y": 11,
+     "msg": 0,
+     "sprite": "DW_DD_ORANGES|6|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "109",
+     "evId": 14,
+     "evName": "ORAGNEJOE2",
+     "x": 21,
+     "y": 20,
+     "msg": 14,
+     "sprite": "DW_OBJECTS_2|6|2|0",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "LIFE JAM",
+    "ORANGE CREST"
+   ]
+  },
+  {
+   "file": "dreamworld_peanutjelly",
+   "name": {
+    "en": "PEANUT AND JELLY",
+    "zh": "花生和果酱"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "115",
+     "evId": 3,
+     "evName": "JELLY",
+     "x": 18,
+     "y": 23,
+     "msg": 0,
+     "sprite": "DW_NPC_6|4|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "115",
+     "evId": 4,
+     "evName": "PEANUT",
+     "x": 14,
+     "y": 15,
+     "msg": 7,
+     "sprite": "DW_NPC_6|5|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "SNO-CONE TICKET"
+   ]
+  },
+  {
+   "file": "dreamworld_perfectwind",
+   "name": {
+    "en": "THE PERFECT WIND",
+    "zh": "完美的风"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "100",
+     "evId": 14,
+     "evName": "PINWHEEL TEXT",
+     "x": 21,
+     "y": 35,
+     "msg": 7
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "dreamworld_pinkbeard",
+   "name": {
+    "en": "SON OF A SPACE PIRATE",
+    "zh": "太空海盗之子"
+   },
+   "named": true,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "126",
+     "evId": 12,
+     "evName": "PINKBEARD4N2_1",
+     "x": 21,
+     "y": 15,
+     "msg": 0,
+     "sprite": "$dw_dr_pinkbeard|0|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "347",
+     "evId": 11,
+     "evName": "SH Fight",
+     "x": 12,
+     "y": 10,
+     "msg": 2
+    },
+    {
+     "mapId": "3471",
+     "evId": 11,
+     "evName": "SH Fight",
+     "x": 6,
+     "y": 4,
+     "msg": 2
+    },
+    {
+     "mapId": "126",
+     "evId": 19,
+     "evName": "PINKBEARD4N2_3",
+     "x": 22,
+     "y": 15,
+     "msg": 29,
+     "sprite": "DW_OBJECTS_2|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "132",
+     "evId": 20,
+     "evName": "Door Bass",
+     "x": 33,
+     "y": 9,
+     "msg": 32,
+     "sprite": "$objects_dw_singing_bass_2|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "1322",
+     "evId": 20,
+     "evName": "Door Bass",
+     "x": 5,
+     "y": 2,
+     "msg": 32,
+     "sprite": "$objects_dw_singing_bass_2|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "132",
+     "evId": 1,
+     "evName": "TO FROZEN LAKE",
+     "x": 31,
+     "y": 16,
+     "msg": 36
+    }
+   ],
+   "rewards": [
+    "BATTERIES",
+    "WEDDING RING"
+   ]
+  },
+  {
+   "file": "dreamworld_rabbitkiller",
+   "name": {
+    "en": "RABBIT KILLER",
+    "zh": "兔子杀手"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "105",
+     "evId": 5,
+     "evName": "LEAFY_1",
+     "x": 14,
+     "y": 38,
+     "msg": 1,
+     "sprite": "DW_NPC_3|1|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "COTTON BALL",
+    "BUNNY EARS",
+    "RABBIT FOOT"
+   ]
+  },
+  {
+   "file": "dreamworld_seasons",
+   "name": {
+    "en": "THE SEASONS",
+    "zh": "四季"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "166",
+     "evId": 33,
+     "evName": "SUMMERMOLE_1",
+     "x": 7,
+     "y": 9,
+     "msg": 0,
+     "sprite": "DW_SPRM_4|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "166",
+     "evId": 28,
+     "evName": "SPRINGMOLE_1",
+     "x": 6,
+     "y": 9,
+     "msg": 6,
+     "sprite": "DW_SPRM_4|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "166",
+     "evId": 35,
+     "evName": "FALLMOLE_1",
+     "x": 8,
+     "y": 9,
+     "msg": 11,
+     "sprite": "DW_SPRM_1|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "166",
+     "evId": 34,
+     "evName": "WINTERMOLE_1",
+     "x": 9,
+     "y": 9,
+     "msg": 16,
+     "sprite": "DW_SPRM_1|7|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "WATERING PAIL",
+    "SUNSCREEN",
+    "SCARF",
+    "RAKE"
+   ]
+  },
+  {
+   "file": "dreamworld_squizzards",
+   "name": {
+    "en": "SQUIZZARDS",
+    "zh": "松鼠蜥"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "200",
+     "evId": 5,
+     "evName": "SEACOWFARMER",
+     "x": 16,
+     "y": 17,
+     "msg": 0,
+     "sprite": "DW_DeepReef2|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "dreamworld_stargazing",
+   "name": {
+    "en": "STARGAZING",
+    "zh": "观星"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "119",
+     "evId": 17,
+     "evName": "PO",
+     "x": 42,
+     "y": 13,
+     "msg": 1,
+     "sprite": "DW_NPC_19|1|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "dreamworld_stolen",
+   "name": {
+    "en": "CAPTAIN OF THE SPACE PIRATES",
+    "zh": "太空海盗船长"
+   },
+   "named": true,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "191",
+     "evId": 44,
+     "evName": "SHADYMOLE",
+     "x": 16,
+     "y": 50,
+     "msg": 80,
+     "sprite": "$dw_sm_bandito_mole|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "207",
+     "evId": 7,
+     "evName": "SHADYMOLE",
+     "x": 12,
+     "y": 12,
+     "msg": 103,
+     "sprite": "$dw_sm_bandito_mole|0|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "335",
+     "evId": 9,
+     "evName": "EV009",
+     "x": 20,
+     "y": 7,
+     "msg": 105
+    }
+   ],
+   "rewards": [
+    "CLEMS"
+   ]
+  },
+  {
+   "file": "dreamworld_stoprain",
+   "name": {
+    "en": "RAIN TOWN",
+    "zh": "雨镇"
+   },
+   "named": true,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "111",
+     "evId": 7,
+     "evName": "PotatoGirl",
+     "x": 16,
+     "y": 35,
+     "msg": 1,
+     "sprite": "DW_NPC_5|4|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "111",
+     "evId": 9,
+     "evName": "Eggplant1",
+     "x": 21,
+     "y": 43,
+     "msg": 4,
+     "sprite": "DW_NPC_5|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 13,
+     "evName": "TomatoGirl1",
+     "x": 24,
+     "y": 30,
+     "msg": 5,
+     "sprite": "DW_NPC_5|5|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 18,
+     "evName": "Onion1",
+     "x": 7,
+     "y": 35,
+     "msg": 6,
+     "sprite": "DW_NPC_5|3|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 10,
+     "evName": "Eggplant2",
+     "x": 16,
+     "y": 28,
+     "msg": 7,
+     "sprite": "DW_NPC_5|4|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 14,
+     "evName": "TomatoGirl2",
+     "x": 20,
+     "y": 27,
+     "msg": 8,
+     "sprite": "DW_NPC_5|5|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 19,
+     "evName": "Onion2",
+     "x": 7,
+     "y": 40,
+     "msg": 9,
+     "sprite": "DW_NPC_5|3|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 11,
+     "evName": "Eggplant3",
+     "x": 25,
+     "y": 37,
+     "msg": 10,
+     "sprite": "DW_NPC_5|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 15,
+     "evName": "TomatoGirl3",
+     "x": 12,
+     "y": 27,
+     "msg": 11,
+     "sprite": "DW_NPC_5|4|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 20,
+     "evName": "Onion3",
+     "x": 12,
+     "y": 42,
+     "msg": 12,
+     "sprite": "DW_NPC_5|3|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 12,
+     "evName": "Eggplant4",
+     "x": 24,
+     "y": 42,
+     "msg": 13,
+     "sprite": "DW_NPC_5|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 17,
+     "evName": "TomatoGirl4",
+     "x": 8,
+     "y": 31,
+     "msg": 14,
+     "sprite": "DW_NPC_5|4|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 21,
+     "evName": "Onion4",
+     "x": 16,
+     "y": 39,
+     "msg": 15,
+     "sprite": "DW_NPC_5|3|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 16,
+     "evName": "Eggplant5",
+     "x": 21,
+     "y": 35,
+     "msg": 16,
+     "sprite": "DW_NPC_5|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 8,
+     "evName": "TomatoGirl5",
+     "x": 25,
+     "y": 34,
+     "msg": 17,
+     "sprite": "DW_NPC_5|5|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "111",
+     "evId": 6,
+     "evName": "Valve",
+     "x": 26,
+     "y": 19,
+     "msg": 18,
+     "sprite": "DW_PuzzleObjects6|6|4|0",
+     "prio": 1
+    },
+    {
+     "mapId": "106",
+     "evId": 3,
+     "evName": "To Rain Town",
+     "x": 51,
+     "y": 41,
+     "msg": 50,
+     "sprite": "DW_IMPORTANTOBJ|7|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "VEGGIE KID"
+   ]
+  },
+  {
+   "file": "dreamworld_tentacle",
+   "name": {
+    "en": "STRANGE REQUEST",
+    "zh": "奇怪的请求"
+   },
+   "named": true,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "258",
+     "evId": 2,
+     "evName": "ABBY_1",
+     "x": 38,
+     "y": 18,
+     "msg": 0,
+     "sprite": "DW_NPC_20|0|4|2",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "88",
+     "evId": 20,
+     "evName": "TENTACLE",
+     "x": 9,
+     "y": 22,
+     "msg": 7,
+     "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "102",
+     "evId": 4,
+     "evName": "TENTACLE",
+     "x": 13,
+     "y": 15,
+     "msg": 7,
+     "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "106",
+     "evId": 40,
+     "evName": "TENTACLE",
+     "x": 4,
+     "y": 40,
+     "msg": 7,
+     "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "119",
+     "evId": 25,
+     "evName": "TENTACLE",
+     "x": 90,
+     "y": 42,
+     "msg": 7,
+     "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "140",
+     "evId": 3,
+     "evName": "TENTACLE",
+     "x": 29,
+     "y": 55,
+     "msg": 7,
+     "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "184",
+     "evId": 17,
+     "evName": "TENTACLE",
+     "x": 3,
+     "y": 15,
+     "msg": 7,
+     "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "203",
+     "evId": 33,
+     "evName": "TENTACLE",
+     "x": 10,
+     "y": 7,
+     "msg": 7,
+     "sprite": "DW_NEIGHBOURSROOM|6|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "BASEBALL BAT",
+    "BASKETBALL",
+    "CHEF'S HAT",
+    "HEADBAND",
+    "PRETTY BOW",
+    "RED KNIFE",
+    "OL' RELIABLE",
+    "ABBI'S EYE"
+   ]
+  },
+  {
+   "file": "farawaytown_anniversarychoco",
+   "name": {
+    "en": "ANNIVERSARY CHOCOLATE",
+    "zh": "纪念日巧克力"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "71",
+     "evId": 22,
+     "evName": "SarahsDad2S",
+     "x": 7,
+     "y": 11,
+     "msg": 0,
+     "sprite": "FA_SARAH|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "38",
+     "evId": 52,
+     "evName": "SarahsMom2S_2",
+     "x": 46,
+     "y": 21,
+     "msg": 14,
+     "sprite": "fa_sarah|1|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "38",
+     "evId": 57,
+     "evName": "KEL",
+     "x": 51,
+     "y": 22,
+     "msg": 14,
+     "sprite": "FA_BREAKTIME|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "38",
+     "evId": 51,
+     "evName": "SarahsDad2S_2",
+     "x": 44,
+     "y": 21,
+     "msg": 23,
+     "sprite": "fa_sarah|0|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "38",
+     "evId": 54,
+     "evName": "Sarah event",
+     "x": 52,
+     "y": 21,
+     "msg": 23,
+     "sprite": "fa_sarah|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "71",
+     "evId": 19,
+     "evName": "EV019",
+     "x": 8,
+     "y": 8,
+     "msg": 25
+    },
+    {
+     "mapId": "71",
+     "evId": 12,
+     "evName": "EV012",
+     "x": 8,
+     "y": 7,
+     "msg": 26
+    },
+    {
+     "mapId": "71",
+     "evId": 11,
+     "evName": "EV011",
+     "x": 7,
+     "y": 8,
+     "msg": 27
+    },
+    {
+     "mapId": "38",
+     "evId": 20,
+     "evName": "PizzaCandy",
+     "x": 44,
+     "y": 24,
+     "msg": 40
+    },
+    {
+     "mapId": "61",
+     "evId": 22,
+     "evName": "CANDICE1D",
+     "x": 6,
+     "y": 7,
+     "msg": 60,
+     "sprite": "FA_candice|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "71",
+     "evId": 23,
+     "evName": "CANDICE1D",
+     "x": 6,
+     "y": 7,
+     "msg": 60,
+     "sprite": "FA_candice|0|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "PIZZA SLICE"
+   ]
+  },
+  {
+   "file": "farawaytown_anniversarypizza",
+   "name": {
+    "en": "ANNIVERSARY PIZZA",
+    "zh": "纪念日披萨"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "67",
+     "evId": 27,
+     "evName": "SarahsMom2S",
+     "x": 8,
+     "y": 10,
+     "msg": 1,
+     "sprite": "FA_SARAH|1|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "38",
+     "evId": 51,
+     "evName": "SarahsDad2S_2",
+     "x": 44,
+     "y": 21,
+     "msg": 10,
+     "sprite": "fa_sarah|0|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "38",
+     "evId": 54,
+     "evName": "Sarah event",
+     "x": 52,
+     "y": 21,
+     "msg": 10,
+     "sprite": "fa_sarah|2|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "PIZZA SLICE"
+   ]
+  },
+  {
+   "file": "farawaytown_artist",
+   "name": {
+    "en": "THE ARTIST",
+    "zh": "画家"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "49",
+     "evId": 53,
+     "evName": "ARTIST1D",
+     "x": 52,
+     "y": 21,
+     "msg": 0,
+     "sprite": "FA_artist_painting|0|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "53",
+     "evId": 55,
+     "evName": "ARTIST1D",
+     "x": 52,
+     "y": 21,
+     "msg": 0,
+     "sprite": "FA_artist_painting|0|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "RARE CARD"
+   ]
+  },
+  {
+   "file": "farawaytown_birthdaygift1",
+   "name": {
+    "en": "BIRTHDAY GIFT (I)",
+    "zh": "生日礼物（一）"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "51",
+     "evId": 50,
+     "evName": "JESSESDAD2S",
+     "x": 44,
+     "y": 23,
+     "msg": 0,
+     "sprite": "fa_jesses_dad|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "63",
+     "evId": 47,
+     "evName": "JESSESDAD2S",
+     "x": 24,
+     "y": 11,
+     "msg": 0,
+     "sprite": "fa_jesses_dad|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "68",
+     "evId": 26,
+     "evName": "JESSESDAD1S",
+     "x": 10,
+     "y": 13,
+     "msg": 0,
+     "sprite": "fa_jesses_dad|0|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "58",
+     "evId": 56,
+     "evName": "EV056",
+     "x": 15,
+     "y": 12,
+     "msg": 5,
+     "sprite": "!FA_PLAYERHOUSE_OBJ|5|4|2",
+     "prio": 1
+    },
+    {
+     "mapId": "68",
+     "evId": 8,
+     "evName": "EV008",
+     "x": 15,
+     "y": 12,
+     "msg": 5,
+     "sprite": "!FA_OBJECTS_2|5|2|2",
+     "prio": 1
+    },
+    {
+     "mapId": "68",
+     "evId": 1,
+     "evName": "To Shopping Center (Morning)",
+     "x": 12,
+     "y": 15,
+     "msg": 31
+    },
+    {
+     "mapId": "51",
+     "evId": 49,
+     "evName": "JESSESDAD1S_3",
+     "x": 43,
+     "y": 21,
+     "msg": 32,
+     "sprite": "fa_jesses_dad|0|8|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "SLICE OF CAKE",
+    "SEASHELL"
+   ]
+  },
+  {
+   "file": "farawaytown_birthdaygift2",
+   "name": {
+    "en": "BIRTHDAY GIFT (II)",
+    "zh": "生日礼物（二）"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "47",
+     "evId": 47,
+     "evName": "JESSE2S",
+     "x": 21,
+     "y": 44,
+     "msg": 0,
+     "sprite": "$FA_Jesse_chair|0|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "51",
+     "evId": 47,
+     "evName": "JESSE2S",
+     "x": 21,
+     "y": 44,
+     "msg": 1,
+     "sprite": "$FA_Jesse_chair|0|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "51",
+     "evId": 51,
+     "evName": "JESSE2S_2",
+     "x": 45,
+     "y": 22,
+     "msg": 28
+    },
+    {
+     "mapId": "51",
+     "evId": 50,
+     "evName": "JESSESDAD2S",
+     "x": 44,
+     "y": 23,
+     "msg": 51,
+     "sprite": "fa_jesses_dad|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "63",
+     "evId": 47,
+     "evName": "JESSESDAD2S",
+     "x": 24,
+     "y": 11,
+     "msg": 51,
+     "sprite": "fa_jesses_dad|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "51",
+     "evId": 48,
+     "evName": "JESSE2S_3",
+     "x": 45,
+     "y": 24,
+     "msg": 53,
+     "sprite": "FA_Sitting|1|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "51",
+     "evId": 52,
+     "evName": "EV052",
+     "x": 44,
+     "y": 24,
+     "msg": 58,
+     "sprite": "!FA_PLAYERHOUSE_OBJ|5|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "SLICE OF CAKE"
+   ]
+  },
+  {
+   "file": "farawaytown_bringangel",
+   "name": {
+    "en": "BRING THE ANGEL",
+    "zh": "把天使带来"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "49",
+     "evId": 53,
+     "evName": "ARTIST1D",
+     "x": 52,
+     "y": 21,
+     "msg": 0,
+     "sprite": "FA_artist_painting|0|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "53",
+     "evId": 55,
+     "evName": "ARTIST1D",
+     "x": 52,
+     "y": 21,
+     "msg": 0,
+     "sprite": "FA_artist_painting|0|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "58",
+     "evId": 25,
+     "evName": "ANGEL3D",
+     "x": 15,
+     "y": 10,
+     "msg": 3,
+     "sprite": "FA_ANGEL|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "68",
+     "evId": 33,
+     "evName": "ANGEL3D",
+     "x": 15,
+     "y": 10,
+     "msg": 3,
+     "sprite": "FA_ANGEL|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "45",
+     "evId": 5,
+     "evName": "ARTISTS HOME (MORNING)",
+     "x": 52,
+     "y": 9,
+     "msg": 20,
+     "sprite": "!objects_fa_doors_3|7|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "45",
+     "evId": 12,
+     "evName": "ARTISTS HOME (MORNING)",
+     "x": 52,
+     "y": 46,
+     "msg": 20,
+     "sprite": "!objects_fa_doors_3|7|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "RARE CARD"
+   ]
+  },
+  {
+   "file": "farawaytown_brushteeth",
+   "name": {
+    "en": "BRUSH YOUR TEETH",
+    "zh": "刷牙"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "14",
+     "evId": 157,
+     "evName": "BRUSHTEETH1D",
+     "x": 47,
+     "y": 43,
+     "msg": 1
+    },
+    {
+     "mapId": "18",
+     "evId": 78,
+     "evName": "BRUSHTEETH1D",
+     "x": 47,
+     "y": 43,
+     "msg": 1
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_claus",
+   "name": {
+    "en": "CLAUS",
+    "zh": "克劳斯"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "13",
+     "evId": 16,
+     "evName": "CLAUS2D",
+     "x": 6,
+     "y": 12,
+     "msg": 1
+    },
+    {
+     "mapId": "44",
+     "evId": 92,
+     "evName": "CLAUS3D",
+     "x": 6,
+     "y": 8,
+     "msg": 1,
+     "sprite": "fa_pets|0|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "45",
+     "evId": 63,
+     "evName": "CLAUS1S",
+     "x": 12,
+     "y": 46,
+     "msg": 1
+    },
+    {
+     "mapId": "63",
+     "evId": 41,
+     "evName": "CLAUS1D",
+     "x": 21,
+     "y": 20,
+     "msg": 1
+    },
+    {
+     "mapId": "64",
+     "evId": 2,
+     "evName": "CLAUS3D",
+     "x": 18,
+     "y": 35,
+     "msg": 1,
+     "sprite": "fa_pets|0|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "65",
+     "evId": 40,
+     "evName": "Tree",
+     "x": 25,
+     "y": 22,
+     "msg": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "BUBBLE WRAP",
+    "TRASH",
+    "ARCADE PIECE",
+    "SEASHELL",
+    "TRANQUIL CD"
+   ]
+  },
+  {
+   "file": "farawaytown_cooking",
+   "name": {
+    "en": "COOKING",
+    "zh": "下厨"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "31",
+     "evId": 3,
+     "evName": "SHAWNKAREN HOME (MORNING)",
+     "x": 21,
+     "y": 9,
+     "msg": 0,
+     "sprite": "!objects_fa_doors_2|3|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "33",
+     "evId": 38,
+     "evName": "Karen3D_2",
+     "x": 45,
+     "y": 21,
+     "msg": 10,
+     "sprite": "FA_karen|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "33",
+     "evId": 40,
+     "evName": "SEAN3D_2",
+     "x": 49,
+     "y": 28,
+     "msg": 18
+    },
+    {
+     "mapId": "31",
+     "evId": 12,
+     "evName": "SHAWNKAREN HOME (MORNING)",
+     "x": 21,
+     "y": 46,
+     "msg": 100,
+     "sprite": "!objects_fa_doors_sunset_2|3|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "37",
+     "evId": 49,
+     "evName": "Cookies",
+     "x": 46,
+     "y": 20,
+     "msg": 101,
+     "sprite": "!FA_PLAYERHOUSE_OBJ|5|2|2",
+     "prio": 1
+    },
+    {
+     "mapId": "37",
+     "evId": 43,
+     "evName": "Pie",
+     "x": 51,
+     "y": 23,
+     "msg": 102
+    },
+    {
+     "mapId": "37",
+     "evId": 54,
+     "evName": "Pie",
+     "x": 51,
+     "y": 24,
+     "msg": 102,
+     "sprite": "!FA_PLAYERHOUSE_OBJ|6|4|0",
+     "prio": 2
+    },
+    {
+     "mapId": "33",
+     "evId": 45,
+     "evName": "EV045",
+     "x": 44,
+     "y": 20,
+     "msg": 104,
+     "sprite": "!FA_OBJECTS_2|5|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "37",
+     "evId": 51,
+     "evName": "EV051",
+     "x": 51,
+     "y": 20,
+     "msg": 104,
+     "sprite": "!FA_OBJECTS_2|5|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "37",
+     "evId": 13,
+     "evName": "Salad",
+     "x": 53,
+     "y": 23,
+     "msg": 105
+    },
+    {
+     "mapId": "37",
+     "evId": 55,
+     "evName": "Salad",
+     "x": 53,
+     "y": 24,
+     "msg": 105,
+     "sprite": "!FA_PLAYERHOUSE_OBJ|2|6|0",
+     "prio": 2
+    },
+    {
+     "mapId": "31",
+     "evId": 131,
+     "evName": "EV131",
+     "x": 19,
+     "y": 13,
+     "msg": 106,
+     "sprite": "FA_sean|0|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "37",
+     "evId": 47,
+     "evName": "plates",
+     "x": 47,
+     "y": 25,
+     "msg": 107,
+     "sprite": "!FA_PLAYERHOUSE_OBJ|1|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "37",
+     "evId": 11,
+     "evName": "Cookies",
+     "x": 47,
+     "y": 24,
+     "msg": 108,
+     "sprite": "!FA_PLAYERHOUSE_OBJ|5|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_fixarcademachine",
+   "name": {
+    "en": "FIX THE ARCADE MACHINE",
+    "zh": "修好街机"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "57",
+     "evId": 29,
+     "evName": "GINO2D",
+     "x": 16,
+     "y": 6,
+     "msg": 1,
+     "sprite": "FA_Residents1|7|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "67",
+     "evId": 23,
+     "evName": "GINO2D-S",
+     "x": 16,
+     "y": 6,
+     "msg": 1,
+     "sprite": "FA_Residents1|7|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "DEVILISH CD"
+   ]
+  },
+  {
+   "file": "farawaytown_fixpipe",
+   "name": {
+    "en": "FIX THE PIPE",
+    "zh": "修好水管"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "59",
+     "evId": 43,
+     "evName": "VANCEDAD1D",
+     "x": 11,
+     "y": 13,
+     "msg": 1,
+     "sprite": "FA_Residents1|2|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "69",
+     "evId": 42,
+     "evName": "VANCEDAD1D",
+     "x": 11,
+     "y": 13,
+     "msg": 1,
+     "sprite": "FA_Residents1|2|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "31",
+     "evId": 6,
+     "evName": "VANCE HOME (MORNING)",
+     "x": 7,
+     "y": 9,
+     "msg": 9,
+     "sprite": "!objects_fa_doors_2|4|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "31",
+     "evId": 76,
+     "evName": "VANCE HOME (MORNING)",
+     "x": 7,
+     "y": 46,
+     "msg": 9,
+     "sprite": "!objects_fa_doors_sunset_2|4|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "32",
+     "evId": 51,
+     "evName": "VANCEDAD1D_3",
+     "x": 54,
+     "y": 21,
+     "msg": 10,
+     "sprite": "FA_Residents1|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "32",
+     "evId": 54,
+     "evName": "EV054",
+     "x": 50,
+     "y": 23,
+     "msg": 10
+    },
+    {
+     "mapId": "36",
+     "evId": 51,
+     "evName": "VANCEDAD___1D_3",
+     "x": 54,
+     "y": 21,
+     "msg": 10,
+     "sprite": "FA_Residents1|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "36",
+     "evId": 56,
+     "evName": "EV056",
+     "x": 50,
+     "y": 23,
+     "msg": 10
+    },
+    {
+     "mapId": "59",
+     "evId": 44,
+     "evName": "VANCEDAD2D",
+     "x": 10,
+     "y": 13,
+     "msg": 14,
+     "sprite": "FA_Residents1|2|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "69",
+     "evId": 43,
+     "evName": "VANCEDAD2D",
+     "x": 10,
+     "y": 13,
+     "msg": 14,
+     "sprite": "FA_Residents1|2|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "59",
+     "evId": 45,
+     "evName": "VANCEDAD3D",
+     "x": 9,
+     "y": 13,
+     "msg": 23,
+     "sprite": "FA_Residents1|2|8|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "SEASHELL",
+    "GHOULISH CD"
+   ]
+  },
+  {
+   "file": "farawaytown_forgotmeat",
+   "name": {
+    "en": "THE FORGOTTEN MEAT",
+    "zh": "忘了买肉"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "63",
+     "evId": 52,
+     "evName": "KelsDad3D",
+     "x": 45,
+     "y": 21,
+     "msg": 1,
+     "sprite": "FA_KELS_DAD|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "73",
+     "evId": 40,
+     "evName": "KelsDad3S",
+     "x": 46,
+     "y": 20,
+     "msg": 2,
+     "sprite": "FA_KELS_DAD|0|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "HAMBURGER"
+   ]
+  },
+  {
+   "file": "farawaytown_fruitwaradrian",
+   "name": {
+    "en": "FRUIT WAR — ADRIAN",
+    "zh": "水果之战 — 艾德里安"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "63",
+     "evId": 61,
+     "evName": "ADRIANALLDAYS",
+     "x": 37,
+     "y": 14,
+     "msg": 1,
+     "sprite": "FA_fruitseller_mango|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "73",
+     "evId": 51,
+     "evName": "ADRIANALLDAYS",
+     "x": 37,
+     "y": 14,
+     "msg": 1,
+     "sprite": "FA_fruitseller_mango|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "APPLE JUICE",
+    "RED HEADBAND"
+   ]
+  },
+  {
+   "file": "farawaytown_fruitwarbrayden",
+   "name": {
+    "en": "FRUIT WAR — BRAYDEN",
+    "zh": "水果之战 — 布雷登"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "55",
+     "evId": 41,
+     "evName": "BRAYDENALLDAYS",
+     "x": 29,
+     "y": 19,
+     "msg": 1,
+     "sprite": "FA_fruitseller_brayen|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "65",
+     "evId": 35,
+     "evName": "BRAYDENALLDAYS",
+     "x": 29,
+     "y": 19,
+     "msg": 1,
+     "sprite": "FA_fruitseller_brayen|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "ORANGE JUICE",
+    "ORANGE HEADBAND"
+   ]
+  },
+  {
+   "file": "farawaytown_ginohighscore",
+   "name": {
+    "en": "GINO'S HIGH SCORE",
+    "zh": "吉诺的最高分"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "57",
+     "evId": 29,
+     "evName": "GINO2D",
+     "x": 16,
+     "y": 6,
+     "msg": 1,
+     "sprite": "FA_Residents1|7|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "67",
+     "evId": 23,
+     "evName": "GINO2D-S",
+     "x": 16,
+     "y": 6,
+     "msg": 1,
+     "sprite": "FA_Residents1|7|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "57",
+     "evId": 37,
+     "evName": "ARCADE",
+     "x": 16,
+     "y": 5,
+     "msg": 7
+    },
+    {
+     "mapId": "67",
+     "evId": 34,
+     "evName": "ARCADE",
+     "x": 16,
+     "y": 5,
+     "msg": 7
+    }
+   ],
+   "rewards": [
+    "DEVILISH CD",
+    "SEASHELL"
+   ]
+  },
+  {
+   "file": "farawaytown_ginojukebox",
+   "name": {
+    "en": "GINO'S JUKEBOX",
+    "zh": "吉诺的点唱机"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "57",
+     "evId": 35,
+     "evName": "JUKEBOX1D",
+     "x": 13,
+     "y": 5,
+     "msg": 1
+    },
+    {
+     "mapId": "67",
+     "evId": 47,
+     "evName": "JUKEBOX1D",
+     "x": 13,
+     "y": 5,
+     "msg": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "453",
+     "evId": 36,
+     "evName": "JUKEBOX1D",
+     "x": 9,
+     "y": 5,
+     "msg": 6
+    },
+    {
+     "mapId": "4531",
+     "evId": 36,
+     "evName": "JUKEBOX1D",
+     "x": 5,
+     "y": 4,
+     "msg": 6
+    },
+    {
+     "mapId": "4536",
+     "evId": 36,
+     "evName": "JUKEBOX1D",
+     "x": 5,
+     "y": 4,
+     "msg": 6
+    },
+    {
+     "mapId": "4537",
+     "evId": 36,
+     "evName": "JUKEBOX1D",
+     "x": 5,
+     "y": 4,
+     "msg": 6
+    },
+    {
+     "mapId": "4538",
+     "evId": 36,
+     "evName": "JUKEBOX1D",
+     "x": 5,
+     "y": 4,
+     "msg": 6
+    },
+    {
+     "mapId": "57",
+     "evId": 3,
+     "evName": "EV003",
+     "x": 12,
+     "y": 6,
+     "msg": 50,
+     "sprite": "FA_rai|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "67",
+     "evId": 48,
+     "evName": "EV048",
+     "x": 12,
+     "y": 6,
+     "msg": 50,
+     "sprite": "FA_rai|0|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_hobbeezhighscore",
+   "name": {
+    "en": "HOBBEEZ HIGH SCORE",
+    "zh": "蜂玩堂的最高分"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "58",
+     "evId": 32,
+     "evName": "HOBBEEZARCADE1D",
+     "x": 7,
+     "y": 6,
+     "msg": 1
+    },
+    {
+     "mapId": "68",
+     "evId": 32,
+     "evName": "HOBBEEZARCADE1D",
+     "x": 7,
+     "y": 6,
+     "msg": 1
+    },
+    {
+     "mapId": "82",
+     "evId": 16,
+     "evName": "HOBBEEZARCADE1D",
+     "x": 7,
+     "y": 6,
+     "msg": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "COOL GLASSES"
+   ]
+  },
+  {
+   "file": "farawaytown_jackson",
+   "name": {
+    "en": "JACKSON",
+    "zh": "杰克逊"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "58",
+     "evId": 31,
+     "evName": "JACKSON1D",
+     "x": 16,
+     "y": 6,
+     "msg": 1
+    },
+    {
+     "mapId": "68",
+     "evId": 31,
+     "evName": "JACKSON1D",
+     "x": 16,
+     "y": 6,
+     "msg": 1
+    },
+    {
+     "mapId": "82",
+     "evId": 15,
+     "evName": "JACKSON1D",
+     "x": 16,
+     "y": 6,
+     "msg": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "HANDS",
+    "MERRY CD"
+   ]
+  },
+  {
+   "file": "farawaytown_lostlucas",
+   "name": {
+    "en": "LOST LUCAS",
+    "zh": "走失的卢卡斯"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "45",
+     "evId": 89,
+     "evName": "ARTIST2D",
+     "x": 52,
+     "y": 10,
+     "msg": 1,
+     "sprite": "FA_artist_painting|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "13",
+     "evId": 79,
+     "evName": "Lucas2D",
+     "x": 36,
+     "y": 16,
+     "msg": 3,
+     "sprite": "fa_pets|1|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "49",
+     "evId": 54,
+     "evName": "ARTIST2D_2",
+     "x": 48,
+     "y": 23,
+     "msg": 4,
+     "sprite": "FA_artist_painting|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "53",
+     "evId": 61,
+     "evName": "ARTIST2D_2",
+     "x": 48,
+     "y": 23,
+     "msg": 4,
+     "sprite": "FA_artist_painting|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "49",
+     "evId": 58,
+     "evName": "Lucas2D_2",
+     "x": 48,
+     "y": 24,
+     "msg": 7,
+     "sprite": "fa_pets|1|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "53",
+     "evId": 58,
+     "evName": "Lucas2S",
+     "x": 48,
+     "y": 24,
+     "msg": 7,
+     "sprite": "fa_pets|1|4|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "PAINT BRUSH",
+    "TRASH"
+   ]
+  },
+  {
+   "file": "farawaytown_medication",
+   "name": {
+    "en": "THE MEDICATION",
+    "zh": "取药"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "22",
+     "evId": 50,
+     "evName": "BunLady1D",
+     "x": 58,
+     "y": 9,
+     "msg": 1,
+     "sprite": "FA_charlies_mom|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "22",
+     "evId": 51,
+     "evName": "BunLady1D",
+     "x": 58,
+     "y": 44,
+     "msg": 1,
+     "sprite": "FA_charlies_mom|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "62",
+     "evId": 12,
+     "evName": "Pharmacist1D",
+     "x": 12,
+     "y": 3,
+     "msg": 9,
+     "sprite": "FA_PHARM_STRICT|2|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "72",
+     "evId": 12,
+     "evName": "Pharmacist1D",
+     "x": 12,
+     "y": 3,
+     "msg": 9,
+     "sprite": "FA_PHARM_STRICT|2|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "PRESCRIPTION",
+    "ID CARD",
+    "GRANNY'S MEDICINE"
+   ]
+  },
+  {
+   "file": "farawaytown_michaelslunch",
+   "name": {
+    "en": "MICHAEL'S LUNCH",
+    "zh": "迈克尔的午餐"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "25",
+     "evId": 93,
+     "evName": "JOYSDAD3D",
+     "x": 22,
+     "y": 45,
+     "msg": 1,
+     "sprite": "FA_joysdad|0|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "29",
+     "evId": 93,
+     "evName": "JOYSDAD3D",
+     "x": 72,
+     "y": 22,
+     "msg": 1,
+     "sprite": "FA_Sitting|0|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "55",
+     "evId": 39,
+     "evName": "MICHAEL1D",
+     "x": 18,
+     "y": 18,
+     "msg": 4,
+     "sprite": "FA_michael|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "65",
+     "evId": 36,
+     "evName": "MICHAEL1D",
+     "x": 18,
+     "y": 18,
+     "msg": 4,
+     "sprite": "FA_michael|0|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "LUNCHBOX",
+    "LETTER FOR DAD",
+    "SECRET CD"
+   ]
+  },
+  {
+   "file": "farawaytown_michaelthemusician",
+   "name": {
+    "en": "MICHAEL THE MUSICIAN",
+    "zh": "音乐家迈克尔"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "55",
+     "evId": 39,
+     "evName": "MICHAEL1D",
+     "x": 18,
+     "y": 18,
+     "msg": 1,
+     "sprite": "FA_michael|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "65",
+     "evId": 36,
+     "evName": "MICHAEL1D",
+     "x": 18,
+     "y": 18,
+     "msg": 1,
+     "sprite": "FA_michael|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "55",
+     "evId": 40,
+     "evName": "MICHAEL1D_2",
+     "x": 19,
+     "y": 18,
+     "msg": 9,
+     "sprite": "Objects_FA|0|2|2",
+     "prio": 1
+    },
+    {
+     "mapId": "65",
+     "evId": 37,
+     "evName": "MICHAEL1D_2",
+     "x": 19,
+     "y": 18,
+     "msg": 9,
+     "sprite": "Objects_FA|0|2|2",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "LETTER FOR DAD",
+    "SECRET CD"
+   ]
+  },
+  {
+   "file": "farawaytown_mincy",
+   "name": {
+    "en": "MINCY",
+    "zh": "敏西"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "63",
+     "evId": 55,
+     "evName": "MINCY1D",
+     "x": 23,
+     "y": 13,
+     "msg": 1,
+     "sprite": "FA_mincy|1|6|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "66",
+     "evId": 63,
+     "evName": "MINCY1S",
+     "x": 3,
+     "y": 24,
+     "msg": 22,
+     "sprite": "FA_mincy|1|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "61",
+     "evId": 21,
+     "evName": "MINCY2D",
+     "x": 14,
+     "y": 6,
+     "msg": 28,
+     "sprite": "FA_mincy|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "70",
+     "evId": 33,
+     "evName": "MINCY2S",
+     "x": 10,
+     "y": 13,
+     "msg": 41,
+     "sprite": "FA_mincy|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "41",
+     "evId": 14,
+     "evName": "MINCY3D",
+     "x": 10,
+     "y": 17,
+     "msg": 47,
+     "sprite": "FA_mincy|1|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "73",
+     "evId": 42,
+     "evName": "MINCY3S",
+     "x": 25,
+     "y": 14,
+     "msg": 57,
+     "sprite": "FA_mincy|0|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "SMALL SKETCH"
+   ]
+  },
+  {
+   "file": "farawaytown_missingshears",
+   "name": {
+    "en": "THE MISSING SHEARS",
+    "zh": "不见的园艺剪"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "22",
+     "evId": 52,
+     "evName": "KimsMom1D",
+     "x": 28,
+     "y": 10,
+     "msg": 1,
+     "sprite": "FA_Residents1|1|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "22",
+     "evId": 62,
+     "evName": "KimsMom1D_3",
+     "x": 7,
+     "y": 15,
+     "msg": 6,
+     "sprite": "!FA_PLAYERHOUSE_OBJ|1|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "22",
+     "evId": 7,
+     "evName": "KIM (MORNING)",
+     "x": 25,
+     "y": 43,
+     "msg": 9,
+     "sprite": "!objects_fa_sunset_doors|6|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "GARDEN SHEARS"
+   ]
+  },
+  {
+   "file": "farawaytown_mypie",
+   "name": {
+    "en": "SWEATY SNACK",
+    "zh": "汗流浃背的点心"
+   },
+   "named": true,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "16",
+     "evId": 49,
+     "evName": "CrisMom1D",
+     "x": 23,
+     "y": 44,
+     "msg": 1,
+     "sprite": "FA_AVERAGE|2|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "20",
+     "evId": 89,
+     "evName": "CrisMom1D",
+     "x": 23,
+     "y": 44,
+     "msg": 1,
+     "sprite": "FA_AVERAGE|2|8|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "PIE"
+   ]
+  },
+  {
+   "file": "farawaytown_oldhobo",
+   "name": {
+    "en": "THE OLD HOBO",
+    "zh": "老流浪汉"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "63",
+     "evId": 63,
+     "evName": "OLDHOBO1D",
+     "x": 48,
+     "y": 15,
+     "msg": 0,
+     "sprite": "FA_Residents1|6|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "73",
+     "evId": 49,
+     "evName": "OLDHOBO1D",
+     "x": 48,
+     "y": 15,
+     "msg": 0,
+     "sprite": "FA_Residents1|6|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "83",
+     "evId": 10,
+     "evName": "OLDHOBO1D",
+     "x": 48,
+     "y": 15,
+     "msg": 0,
+     "sprite": "$fa_hobo_socrates|0|8|0",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_pickingpaint",
+   "name": {
+    "en": "PICKING PAINT",
+    "zh": "挑油漆"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "59",
+     "evId": 41,
+     "evName": "Karen1D",
+     "x": 12,
+     "y": 21,
+     "msg": 1,
+     "sprite": "FA_karen|0|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "59",
+     "evId": 46,
+     "evName": "SEAN1D",
+     "x": 13,
+     "y": 21,
+     "msg": 1,
+     "sprite": "FA_sean|0|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "69",
+     "evId": 24,
+     "evName": "Karen1D",
+     "x": 12,
+     "y": 21,
+     "msg": 1,
+     "sprite": "FA_karen|0|6|1",
+     "prio": 1
+    },
+    {
+     "mapId": "69",
+     "evId": 41,
+     "evName": "SEAN1D",
+     "x": 13,
+     "y": 21,
+     "msg": 1,
+     "sprite": "FA_sean|0|4|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_pickupfurniture",
+   "name": {
+    "en": "PICK UP THE FURNITURE",
+    "zh": "搬家具"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "45",
+     "evId": 90,
+     "evName": "BebesMom2S",
+     "x": 38,
+     "y": 49,
+     "msg": 1,
+     "sprite": "FA_PRIMADONAS|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "59",
+     "evId": 40,
+     "evName": "BILLY2D",
+     "x": 6,
+     "y": 17,
+     "msg": 3,
+     "sprite": "FA_PRIMADONAS|2|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "69",
+     "evId": 40,
+     "evName": "BILLY2S",
+     "x": 6,
+     "y": 17,
+     "msg": 3,
+     "sprite": "FA_PRIMADONAS|2|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "69",
+     "evId": 46,
+     "evName": "MANDO1D",
+     "x": 15,
+     "y": 30,
+     "msg": 18,
+     "sprite": "FA_mondo_hardware|0|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "69",
+     "evId": 1,
+     "evName": "To Shopping Center (Morning)",
+     "x": 10,
+     "y": 35,
+     "msg": 31
+    },
+    {
+     "mapId": "48",
+     "evId": 50,
+     "evName": "COFFEE_1N2_2",
+     "x": 45,
+     "y": 20,
+     "msg": 50
+    },
+    {
+     "mapId": "52",
+     "evId": 56,
+     "evName": "COFFEE_1N2_2",
+     "x": 45,
+     "y": 20,
+     "msg": 50
+    }
+   ],
+   "rewards": [
+    "COFFEE",
+    "FLOOR LAMP"
+   ]
+  },
+  {
+   "file": "farawaytown_ringinthesink",
+   "name": {
+    "en": "THE RING IN THE SINK",
+    "zh": "掉进水槽的戒指"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "31",
+     "evId": 13,
+     "evName": "SARAHS HOME (MORNING)",
+     "x": 34,
+     "y": 46,
+     "msg": 1,
+     "sprite": "!objects_fa_doors_sunset_2|5|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "38",
+     "evId": 50,
+     "evName": "SarahsDad1S_2",
+     "x": 49,
+     "y": 24,
+     "msg": 7,
+     "sprite": "FA_SARAH|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "38",
+     "evId": 53,
+     "evName": "SarahsDad1S",
+     "x": 45,
+     "y": 20,
+     "msg": 12,
+     "sprite": "DW_IMPORTANTOBJ|1|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "38",
+     "evId": 5,
+     "evName": "SARAHS HOME (MORNING)",
+     "x": 48,
+     "y": 20,
+     "msg": 18
+    },
+    {
+     "mapId": "38",
+     "evId": 6,
+     "evName": "SARAHS HOME (MORNING)",
+     "x": 49,
+     "y": 27,
+     "msg": 18
+    },
+    {
+     "mapId": "38",
+     "evId": 14,
+     "evName": "EV014",
+     "x": 48,
+     "y": 25,
+     "msg": 19
+    }
+   ],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_seashells",
+   "name": {
+    "en": "SEASHELLS",
+    "zh": "贝壳"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "16",
+     "evId": 79,
+     "evName": "CRIS1D",
+     "x": 22,
+     "y": 66,
+     "msg": 0,
+     "sprite": "FA_AVERAGE|1|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "20",
+     "evId": 43,
+     "evName": "CRIS1D",
+     "x": 22,
+     "y": 66,
+     "msg": 0,
+     "sprite": "FA_AVERAGE|1|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "63",
+     "evId": 43,
+     "evName": "CRIS2D",
+     "x": 46,
+     "y": 20,
+     "msg": 0,
+     "sprite": "FA_AVERAGE|1|6|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "60",
+     "evId": 34,
+     "evName": "EV034",
+     "x": 15,
+     "y": 6,
+     "msg": 100,
+     "sprite": "!FA_OBJECTS_2|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "64",
+     "evId": 31,
+     "evName": "EV031",
+     "x": 18,
+     "y": 6,
+     "msg": 100,
+     "sprite": "!FA_OBJECTS_2|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "70",
+     "evId": 34,
+     "evName": "EV034",
+     "x": 15,
+     "y": 6,
+     "msg": 100,
+     "sprite": "!FA_OBJECTS_2|6|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "74",
+     "evId": 54,
+     "evName": "EV054",
+     "x": 18,
+     "y": 6,
+     "msg": 100,
+     "sprite": "!FA_OBJECTS_2|6|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "SEASHELL NECKLACE",
+    "SEASHELL"
+   ]
+  },
+  {
+   "file": "farawaytown_shutin",
+   "name": {
+    "en": "THE SHUT-IN",
+    "zh": "闭门不出的人"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "47",
+     "evId": 3,
+     "evName": "JESSES HOME (MORNING)",
+     "x": 25,
+     "y": 24,
+     "msg": 1,
+     "sprite": "!objects_fa_doors|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "51",
+     "evId": 3,
+     "evName": "JESSES HOME (MORNING)",
+     "x": 25,
+     "y": 24,
+     "msg": 1,
+     "sprite": "!objects_fa_doors|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_smellyhobo",
+   "name": {
+    "en": "THE SMELLY HOBO",
+    "zh": "臭烘烘的流浪汉"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "63",
+     "evId": 65,
+     "evName": "SMELLYHOBO1D",
+     "x": 13,
+     "y": 11,
+     "msg": 0,
+     "sprite": "$fa_hobo_smelly|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "73",
+     "evId": 9,
+     "evName": "SMELLYHOBO1D",
+     "x": 13,
+     "y": 11,
+     "msg": 0,
+     "sprite": "$fa_hobo_smelly|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "83",
+     "evId": 11,
+     "evName": "SMELLYHOBO1D",
+     "x": 13,
+     "y": 11,
+     "msg": 0,
+     "sprite": "$fa_hobo_smelly2|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [],
+   "rewards": [
+    "GOLD WATCH",
+    "\"GOLD\" WATCH"
+   ]
+  },
+  {
+   "file": "farawaytown_sneakingoutbrent",
+   "name": {
+    "en": "SNEAKING OUT — BRENT",
+    "zh": "溜出门 — 布伦特"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "23",
+     "evId": 60,
+     "evName": "BRENT1D",
+     "x": 21,
+     "y": 67,
+     "msg": 1,
+     "sprite": "FA_PHARM_STRICT|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "23",
+     "evId": 100,
+     "evName": "BRENT2D_4",
+     "x": 24,
+     "y": 68,
+     "msg": 11
+    },
+    {
+     "mapId": "27",
+     "evId": 95,
+     "evName": "BRENT2D_4",
+     "x": 24,
+     "y": 68,
+     "msg": 11
+    },
+    {
+     "mapId": "27",
+     "evId": 102,
+     "evName": "BRENT1D",
+     "x": 21,
+     "y": 67,
+     "msg": 27,
+     "sprite": "FA_PHARM_STRICT|0|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "23",
+     "evId": 7,
+     "evName": "BRENTS HOME (MORNING)",
+     "x": 49,
+     "y": 27,
+     "msg": 28
+    },
+    {
+     "mapId": "27",
+     "evId": 7,
+     "evName": "BRENTS HOME (MORNING)",
+     "x": 49,
+     "y": 27,
+     "msg": 28
+    },
+    {
+     "mapId": "25",
+     "evId": 90,
+     "evName": "JOY2D_4",
+     "x": 24,
+     "y": 67,
+     "msg": 1000
+    }
+   ],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_sneakingoutjoy",
+   "name": {
+    "en": "SNEAKING OUT — JOY",
+    "zh": "溜出门 — 乔伊"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "25",
+     "evId": 87,
+     "evName": "JOY1D_3",
+     "x": 21,
+     "y": 66,
+     "msg": 1,
+     "sprite": "$fa_joy|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "25",
+     "evId": 90,
+     "evName": "JOY2D_4",
+     "x": 24,
+     "y": 67,
+     "msg": 11
+    },
+    {
+     "mapId": "29",
+     "evId": 91,
+     "evName": "JOY2D_4",
+     "x": 24,
+     "y": 67,
+     "msg": 11
+    },
+    {
+     "mapId": "25",
+     "evId": 8,
+     "evName": "JOYS HOME (MORNING)",
+     "x": 49,
+     "y": 27,
+     "msg": 25
+    },
+    {
+     "mapId": "29",
+     "evId": 8,
+     "evName": "JOYS HOME (MORNING)",
+     "x": 49,
+     "y": 27,
+     "msg": 25
+    },
+    {
+     "mapId": "29",
+     "evId": 88,
+     "evName": "JOY1D_3",
+     "x": 21,
+     "y": 66,
+     "msg": 1000,
+     "sprite": "$fa_joy|0|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_toiletseat",
+   "name": {
+    "en": "THE TOILET SEAT",
+    "zh": "马桶圈"
+   },
+   "named": false,
+   "ordered": false,
+   "givers": [
+    {
+     "mapId": "78",
+     "evId": 26,
+     "evName": "Examine Toilet",
+     "x": 45,
+     "y": 43,
+     "msg": 2
+    },
+    {
+     "mapId": "80",
+     "evId": 30,
+     "evName": "Examine Toilet",
+     "x": 47,
+     "y": 43,
+     "msg": 2
+    }
+   ],
+   "steps": [],
+   "rewards": []
+  },
+  {
+   "file": "farawaytown_trashpickup",
+   "name": {
+    "en": "TRASH PICKUP",
+    "zh": "捡垃圾"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "63",
+     "evId": 64,
+     "evName": "OLDLADY1D",
+     "x": 27,
+     "y": 10,
+     "msg": 0,
+     "sprite": "$fa_old_lady|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "73",
+     "evId": 50,
+     "evName": "OLDLADY1D",
+     "x": 27,
+     "y": 10,
+     "msg": 0,
+     "sprite": "$fa_old_lady|0|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "64",
+     "evId": 18,
+     "evName": "EV018",
+     "x": 18,
+     "y": 20,
+     "msg": 12,
+     "sprite": "!FA_OBJECTS_2|3|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "64",
+     "evId": 19,
+     "evName": "EV019",
+     "x": 19,
+     "y": 23,
+     "msg": 12,
+     "sprite": "!FA_OBJECTS_2|3|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "64",
+     "evId": 23,
+     "evName": "EV023",
+     "x": 15,
+     "y": 24,
+     "msg": 12,
+     "sprite": "!FA_OBJECTS_2|3|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "64",
+     "evId": 30,
+     "evName": "EV030",
+     "x": 11,
+     "y": 21,
+     "msg": 12,
+     "sprite": "!FA_OBJECTS_2|3|4|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "ETHEREAL CD"
+   ]
+  },
+  {
+   "file": "farawaytown_tutorbrent",
+   "name": {
+    "en": "TUTORING BRENT",
+    "zh": "给布伦特补课"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "56",
+     "evId": 71,
+     "evName": "PRINCIPAL1D",
+     "x": 3,
+     "y": 9,
+     "msg": 0,
+     "sprite": "Objects_FA|4|2|2",
+     "prio": 1
+    },
+    {
+     "mapId": "66",
+     "evId": 73,
+     "evName": "PRINCIPAL1D",
+     "x": 3,
+     "y": 9,
+     "msg": 0,
+     "sprite": "Objects_FA|4|2|2",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "22",
+     "evId": 8,
+     "evName": "BRENTS HOME (MORNING)",
+     "x": 9,
+     "y": 43,
+     "msg": 5,
+     "sprite": "!objects_fa_sunset_doors|5|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "22",
+     "evId": 11,
+     "evName": "BRENTS HOME (MORNING)",
+     "x": 9,
+     "y": 8,
+     "msg": 5,
+     "sprite": "!objects_fa_doors|5|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "23",
+     "evId": 60,
+     "evName": "BRENT1D",
+     "x": 21,
+     "y": 67,
+     "msg": 9,
+     "sprite": "FA_PHARM_STRICT|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "27",
+     "evId": 102,
+     "evName": "BRENT1D",
+     "x": 21,
+     "y": 67,
+     "msg": 9,
+     "sprite": "FA_PHARM_STRICT|0|4|1",
+     "prio": 1
+    },
+    {
+     "mapId": "23",
+     "evId": 102,
+     "evName": "PRINCIPAL1D_4",
+     "x": 19,
+     "y": 71,
+     "msg": 33
+    },
+    {
+     "mapId": "27",
+     "evId": 103,
+     "evName": "PRINCIPAL1D_4",
+     "x": 19,
+     "y": 71,
+     "msg": 33
+    },
+    {
+     "mapId": "23",
+     "evId": 103,
+     "evName": "PRINCIPAL1D_2",
+     "x": 49,
+     "y": 20,
+     "msg": 36,
+     "sprite": "FA_PHARM_STRICT|1|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "27",
+     "evId": 106,
+     "evName": "PRINCIPAL1D_2",
+     "x": 49,
+     "y": 20,
+     "msg": 36,
+     "sprite": "FA_PHARM_STRICT|1|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "23",
+     "evId": 100,
+     "evName": "BRENT2D_4",
+     "x": 24,
+     "y": 68,
+     "msg": 50
+    },
+    {
+     "mapId": "23",
+     "evId": 101,
+     "evName": "PRINCIPAL1D_2",
+     "x": 47,
+     "y": 20,
+     "msg": 200,
+     "sprite": "FA_PHARM_STRICT|1|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "27",
+     "evId": 101,
+     "evName": "PRINCIPAL1D_2",
+     "x": 48,
+     "y": 25,
+     "msg": 200,
+     "sprite": "FA_PHARM_STRICT|1|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "25",
+     "evId": 87,
+     "evName": "JOY1D_3",
+     "x": 21,
+     "y": 66,
+     "msg": 1000,
+     "sprite": "$fa_joy|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "29",
+     "evId": 88,
+     "evName": "JOY1D_3",
+     "x": 21,
+     "y": 66,
+     "msg": 1000,
+     "sprite": "$fa_joy|0|2|1",
+     "prio": 1
+    }
+   ],
+   "rewards": [
+    "GREEN FLYER"
+   ]
+  },
+  {
+   "file": "farawaytown_tutorjoy",
+   "name": {
+    "en": "TUTORING JOY",
+    "zh": "给乔伊补课"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "56",
+     "evId": 72,
+     "evName": "JOY1D_1",
+     "x": 4,
+     "y": 9,
+     "msg": 0,
+     "sprite": "Objects_FA|0|8|2",
+     "prio": 1
+    },
+    {
+     "mapId": "66",
+     "evId": 75,
+     "evName": "JOY1D_1",
+     "x": 4,
+     "y": 9,
+     "msg": 0,
+     "sprite": "Objects_FA|0|8|2",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "22",
+     "evId": 2,
+     "evName": "JOY (MORNING)",
+     "x": 41,
+     "y": 8,
+     "msg": 4,
+     "sprite": "!objects_fa_doors|7|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "22",
+     "evId": 6,
+     "evName": "JOY (MORNING)",
+     "x": 41,
+     "y": 43,
+     "msg": 4,
+     "sprite": "!objects_fa_sunset_doors|7|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "25",
+     "evId": 87,
+     "evName": "JOY1D_3",
+     "x": 21,
+     "y": 66,
+     "msg": 8,
+     "sprite": "$fa_joy|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "29",
+     "evId": 88,
+     "evName": "JOY1D_3",
+     "x": 21,
+     "y": 66,
+     "msg": 8,
+     "sprite": "$fa_joy|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "25",
+     "evId": 92,
+     "evName": "JOYSDAD1D_2",
+     "x": 23,
+     "y": 70,
+     "msg": 32
+    },
+    {
+     "mapId": "29",
+     "evId": 87,
+     "evName": "JOYSDAD1D_2",
+     "x": 23,
+     "y": 70,
+     "msg": 32
+    },
+    {
+     "mapId": "25",
+     "evId": 88,
+     "evName": "JOYSDAD1D",
+     "x": 46,
+     "y": 20,
+     "msg": 37,
+     "sprite": "FA_joysdad|0|8|1",
+     "prio": 1
+    },
+    {
+     "mapId": "29",
+     "evId": 92,
+     "evName": "JOYSDAD1D",
+     "x": 48,
+     "y": 24,
+     "msg": 37,
+     "sprite": "FA_joysdad|0|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "25",
+     "evId": 90,
+     "evName": "JOY2D_4",
+     "x": 24,
+     "y": 67,
+     "msg": 1000
+    }
+   ],
+   "rewards": [
+    "BLUE FLYER"
+   ]
+  },
+  {
+   "file": "farawaytown_wherestheremote",
+   "name": {
+    "en": "WHERE'S THE REMOTE",
+    "zh": "遥控器在哪儿"
+   },
+   "named": false,
+   "ordered": true,
+   "givers": [
+    {
+     "mapId": "16",
+     "evId": 48,
+     "evName": "CRISDAD1D",
+     "x": 48,
+     "y": 22,
+     "msg": 1,
+     "sprite": "FA_AVERAGE|4|2|1",
+     "prio": 1
+    },
+    {
+     "mapId": "20",
+     "evId": 48,
+     "evName": "CRISDAD1D",
+     "x": 48,
+     "y": 22,
+     "msg": 1,
+     "sprite": "FA_AVERAGE|4|2|1",
+     "prio": 1
+    }
+   ],
+   "steps": [
+    {
+     "mapId": "16",
+     "evId": 81,
+     "evName": "CRISDAD1D_2",
+     "x": 48,
+     "y": 24,
+     "msg": 5,
+     "sprite": "Objects_FA|0|4|1",
+     "prio": 0
+    },
+    {
+     "mapId": "20",
+     "evId": 82,
+     "evName": "CRISDAD1D_2",
+     "x": 48,
+     "y": 24,
+     "msg": 5,
+     "sprite": "Objects_FA|0|4|1",
+     "prio": 0
+    },
+    {
+     "mapId": "16",
+     "evId": 83,
+     "evName": "CRISDAD1D_3",
+     "x": 50,
+     "y": 45,
+     "msg": 13,
+     "sprite": "Objects_FA|0|4|1",
+     "prio": 0
+    },
+    {
+     "mapId": "20",
+     "evId": 67,
+     "evName": "CRISDAD1D_3",
+     "x": 50,
+     "y": 45,
+     "msg": 13,
+     "sprite": "Objects_FA|0|4|1",
+     "prio": 0
+    },
+    {
+     "mapId": "16",
+     "evId": 82,
+     "evName": "CRISDAD1D_4",
+     "x": 21,
+     "y": 45,
+     "msg": 19,
+     "sprite": "Objects_FA|0|4|2",
+     "prio": 1
+    },
+    {
+     "mapId": "20",
+     "evId": 88,
+     "evName": "CRISDAD1D_4",
+     "x": 21,
+     "y": 45,
+     "msg": 19,
+     "sprite": "Objects_FA|0|4|2",
+     "prio": 1
+    },
+    {
+     "mapId": "16",
+     "evId": 3,
+     "evName": "CRIS HOME (MORNING)",
+     "x": 49,
+     "y": 27,
+     "msg": 33
+    },
+    {
+     "mapId": "20",
+     "evId": 3,
+     "evName": "CRIS HOME (MORNING)",
+     "x": 49,
+     "y": 27,
+     "msg": 33
+    }
+   ],
+   "rewards": [
+    "ORANGE JOE",
+    "TV REMOTE"
+   ]
+  }
+ ]
+}

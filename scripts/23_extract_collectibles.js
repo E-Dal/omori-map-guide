@@ -42,7 +42,7 @@ const LAYERS = [
   { key: 'npc',       label: 'NPC (quest)',  icon: '🧑' },
   { key: 'quest',     label: 'Quest items',  icon: '🎒' },
   { key: 'charm',     label: 'Charms',       icon: '🧿' },
-  { key: 'weapon',    label: 'Weapons',      icon: '🔪' },
+  { key: 'tentacle',  label: 'Tentacles',    icon: '🐙' },
   { key: 'collect',   label: 'Collectibles', icon: '🗑️' },
   { key: 'sparkle',   label: 'Sparkles',     icon: '✨' },
   { key: 'picnic',    label: 'Picnic (save)', icon: '🧺' },
@@ -51,6 +51,7 @@ const LAYERS = [
   { key: 'clubsandwich', label: 'Club Sandwich', icon: '🥪' },
   { key: 'giver',     label: 'NPC (item)',   icon: '🥤' },
   { key: 'clams',     label: 'CLAMS',        icon: '🐚' },
+  { key: 'skill',     label: 'Skills',       icon: '✴️' },
   { key: 'cooler',    label: 'Coolers',      icon: '🧊' },
   { key: 'mirror',    label: 'Mirrors',      icon: '🪞' },
   { key: 'mechanism', label: 'Mechanisms',   icon: '⚙️' },
@@ -136,6 +137,32 @@ const GIVES_A_TREAT = (gainedIds, sheet, isShopEvent) =>
 // extra point on top of whatever the event already was, because Mari being a
 // save point and Mari being 500 clams are both true and a player toggling
 // "CLAMS" wants to see her.
+// A skill learned by talking to something. RPG Maker's Change Skill is code
+// 318, [actorIsVariable, actorId, operation (0 = learn), skillId]. Eleven of
+// them on drawn maps and every one is worth a pin: they are permanent, they are
+// one-time, and three of them (CRIPPLE, VERTIGO, SUFFOCATE) are behind the
+// LOST LIBRARY books that only the HIKIKOMORI route reaches.
+//
+// Like CLAMS this does not claim the event, it adds a point on top of whatever
+// the event already was. That matters for melonBlender in MARINA MAZE, which
+// is a watermelon holding a BLENDER *and* teaches REFRESH — the melon's own pin
+// says "Weapon: BLENDER" and would never mention the skill.
+const skillsFrom = (pages, skills, actors) => {
+  const out = [];
+  for (const p of pages || []) {
+    for (const c of p.list || []) {
+      if (c.code !== 318 || c.parameters[2] !== 0) continue;
+      const skill = skills[c.parameters[3]];
+      if (!skill || !skill.name) continue;
+      const who = c.parameters[0] === 0 && actors[c.parameters[1]]
+        ? actors[c.parameters[1]].name : null;
+      const tag = who ? `${skill.name} (${who})` : skill.name;
+      if (!out.includes(tag)) out.push(tag);
+    }
+  }
+  return out;
+};
+
 const clamsFrom = pages => {
   const amounts = new Set();
   let variable = false;
@@ -178,6 +205,25 @@ const MECHANISMS = [
   /^cards -- base$/i, /^tree$/i, /^tube$/i, /^chimera$/i, /^case$/i, /^cheese$/i,
 ];
 
+// The tentacles. Seven of them across Headspace, each reaching out of a wall
+// with one weapon or charm to hand over — BASEBALL BAT in NEIGHBOUR'S ROOM,
+// RED KNIFE in the TORTURE ROOM, PRETTY BOW in FROZEN FOREST (VII). They were
+// split across 'weapon' and 'charm' by what they happened to give, which is
+// the least interesting thing about them; as one layer they are a thing you go
+// looking for.
+//
+// The name has to carry a gain: ABYSS FINAL has seven more events called
+// `Tentacle`, and those are the boss's, not a present.
+const IS_TENTACLE = /^tentacle$/i;
+
+// Hand corrections, keyed "<mapId>:<evId>". An event's tile is where the game
+// puts the trigger, which is not always where the thing you are looking at is
+// drawn — and 29 can only measure the ones whose sprite is in the shipped PNG.
+// Everything here was checked against the render before it was written down.
+const POINT_NUDGES = {
+  '96:3': { dx: 1 },   // BOSS FIGHT in PATH TO BASIL (II) sits a tile left of the mound
+};
+
 // A repeated pickup is a collection quest, not a story beat. TRASH turns up in
 // 65 places and SEASHELL in 11 because the JUNKYARD wants a pile of them;
 // TEDDY BEAR and WOODEN TRACK turn up once or three times because they are the
@@ -188,6 +234,8 @@ const COLLECTION_MIN = 5;
 const items = JSON.parse(fs.readFileSync(path.join(DECRYPTED, 'Items.json'), 'utf8'));
 const weapons = JSON.parse(fs.readFileSync(path.join(DECRYPTED, 'Weapons.json'), 'utf8'));
 const armors = JSON.parse(fs.readFileSync(path.join(DECRYPTED, 'Armors.json'), 'utf8'));
+const skills = JSON.parse(fs.readFileSync(path.join(DECRYPTED, 'Skills.json'), 'utf8'));
+const actors = JSON.parse(fs.readFileSync(path.join(DECRYPTED, 'Actors.json'), 'utf8'));
 // Watermelons have their own layer already, out of the region highlight files,
 // and their marker names the prize in its own tooltip. Twelve of the 21 charms
 // and two of the 14 weapons were the *same event* as a melon — `melonGLAD`,
@@ -232,7 +280,10 @@ for (const [id, m] of Object.entries(mapMeta)) {
     }
   }
 }
-const locateSub = (mapId, x, y) => (subsOf[mapId] || []).find(({ m }) =>
+// Every slice covering the point, not the first — CLUB SANDWICH's bar is cut
+// four times from the same rectangle, once per door into it, and Reuben has to
+// be behind all four counters.
+const locateSubs = (mapId, x, y) => (subsOf[mapId] || []).filter(({ m }) =>
   x >= m.cropX && x < m.cropX + m.width && y >= m.cropY && y < m.cropY + m.height);
 
 const IS_SPARKLE = /sparkl/i;
@@ -308,6 +359,25 @@ for (const f of fs.readdirSync(DECRYPTED)) {
   for (const ev of (data.events || []).filter(Boolean)) {
     const name = ev.name || '';
     const gained = new Set(), gotWeapons = [], gotCharms = [];
+    // Items handed back on a page *other* than the one that gives them — see
+    // below. Same-page pairs are excluded on purpose: an event that gives and
+    // takes inside one page is branching on something (the sixteen TRASH piles
+    // in RECYCULTIST HQ do), and those are real pickups.
+    const givenOn = new Map(), takenOn = new Map();
+    (ev.pages || []).forEach((p, pi) => (p.list || []).forEach(c => {
+      if (c.code !== 126) return;
+      // And the page that takes it back has to be the empty state — no
+      // graphic, because the ingredient is no longer on the shelf. A quest
+      // NPC also takes her item back, on a later page, but she is still
+      // standing there: BunLady hands over the PRESCRIPTION and the ID CARD
+      // and takes both when the errand is done, and she is a real pin.
+      if (c.parameters[1] === 1 && (p.image || {}).characterName) return;
+      const bag = c.parameters[1] === 0 ? givenOn : takenOn;
+      if (!bag.has(c.parameters[0])) bag.set(c.parameters[0], new Set());
+      bag.get(c.parameters[0]).add(pi);
+    }));
+    const returned = new Set([...givenOn].filter(([id, pages]) =>
+      [...(takenOn.get(id) || [])].some(pi => !pages.has(pi))).map(([id]) => id));
     let isShop = false, operates = false;
     for (const p of ev.pages || []) {
       // A page that hands over a weapon or charm and then equips it onto more
@@ -328,6 +398,13 @@ for (const f of fs.readdirSync(DECRYPTED)) {
       const outfits = new Set((p.list || [])
         .filter(c => c.code === 319).map(c => c.parameters[0])).size > 1;
       for (const c of p.list || []) {
+        // Taking it back on another page means it was never yours to find.
+        // SWEETHEART CASTLE's KITCHEN is a shelf of twelve ingredients for the
+        // baking errand — EGG, FLOUR, LEATHER SHOE — each on an event whose
+        // first page hands the item over and whose second takes the same one
+        // away again, so you can put it back and choose another. They were
+        // showing up as twelve quest items to go and collect.
+        if (c.code === 126 && c.parameters[1] === 0 && returned.has(c.parameters[0])) continue;
         // [itemId, operation(0 = gain), operandType, operand]
         if (c.code === 126 && c.parameters[1] === 0) gained.add(c.parameters[0]);
         if (c.code === 127 && c.parameters[1] === 0 && weapons[c.parameters[0]] && !outfits)
@@ -353,8 +430,24 @@ for (const f of fs.readdirSync(DECRYPTED)) {
     // they carry no graphic on any page and are still exactly where you look.
     const visible = (ev.pages || []).some(p =>
       (p.image || {}).characterName && p.image.characterName !== 'DEV_TEST');
+    // A spare. `backup` on map108 is parked at (0, 5) — the corner of
+    // EXCAVATION SITE (GRAINS) — with a DEV_TEST placeholder on its first page,
+    // and nothing on that map ever moves it (the one Set Event Location there
+    // points at ev32). Its later pages do carry the dig-mound graphic, which is
+    // enough to pass the test above, so it was drawing a second HECTOR JR in an
+    // empty corner. Three events are named this way in the whole game and two
+    // open on a placeholder; both are spares.
+    const isSpare = /^backup\b/i.test(name) &&
+      ((ev.pages || [])[0]?.image || {}).characterName === 'DEV_TEST';
     const isView = /^--\s*VIEW:/i.test((mapMeta[mapId] || {}).name || '');
-    if (!visible && !letter && !IS_MIRROR.test(name) &&
+    // Skills are exempt from the has-a-graphic test for the same reason the
+    // HANGMAN keys are: half of them are taught by something with no sprite of
+    // its own — the door of BASIL'S HOME, the LOST LIBRARY's fears, and the
+    // FOREST PLAYGROUND event that is at once BERLY'S LOST BALL and AUBREY's
+    // HEADBUTT. They are still exactly where you go.
+    const learned = skillsFrom(ev.pages, skills, actors);
+    if (isSpare) continue;
+    if (!visible && !letter && !learned.length && !IS_MIRROR.test(name) &&
         !(IS_TELESCOPE.test(name) && !isView)) continue;
     const keyItems = [...gained].filter(id => KEY_ITEM.has(id)).map(itemName);
     // The frame this event shows, so the atlas can draw the thing itself rather
@@ -381,8 +474,23 @@ for (const f of fs.readdirSync(DECRYPTED)) {
     else if (IS_SPARKLE.test(name))
       layer = (gained.size || gotWeapons.length || gotCharms.length) ? 'sparkle' : null;
     else if (keyItems.length) layer = 'quest';   // may become 'collect' below
+    else if (IS_TENTACLE.test(name) && (gotCharms.length || gotWeapons.length))
+      layer = 'tentacle';
     else if (gotCharms.length) layer = 'charm';
-    else if (gotWeapons.length) layer = 'weapon';
+    // No 'weapon' layer. Eight events reached it and one was a thing you can
+    // pick up — the STEAK KNIFE in the kitchen. The rest were the front door of
+    // PLAYER'S HOME (which sets your weapon to HANDS, i.e. takes the knife
+    // away), the OTHERMART door handing the party three FLY SWATTERs for the
+    // minigame, the dinner table, and WHITE SPACE's `INITIALIZE + KNIFE` parked
+    // at (0, 0). Every one is the story changing what you are holding, and the
+    // last was the only one the world map ever showed: a pin in an empty
+    // corner. Weapons that are genuinely found come from a tentacle or a
+    // watermelon, and both have their own layer.
+    //
+    // A *person* handing one over is still worth a pin, and goes straight to
+    // 'npc' the way charm- and quest-givers do below: PESSI in SPROUTMOLE TOWN
+    // gives the SWEETHEART BUST and is the whole of PESSI'S THING.
+    else if (gotWeapons.length && isPerson(img && img.characterName)) layer = 'npc';
     else if (operates && !beltMachines.has(`${mapId}:${ev.id}`) &&
              MECHANISMS.some(re => re.test(name))) layer = 'mechanism';
     else if (GIVES_A_TREAT(gained, img && img.characterName, isShop)) layer = 'giver';
@@ -390,6 +498,18 @@ for (const f of fs.readdirSync(DECRYPTED)) {
     // Emitted before the layer chain's verdict is acted on, so a CLAM shell
     // (which claims no layer of its own) and Mari (who is already a picnic)
     // both get one.
+    if (learned.length) {
+      const at = placedAt(ev.id) || { x: ev.x, y: ev.y };
+      points.push({
+        layer: 'skill', mapId, x: at.x, y: at.y, evId: ev.id, evName: name,
+        sprite: img ? `${img.characterName}|${img.characterIndex || 0}|` +
+                      `${img.direction || 2}|${img.pattern === undefined ? 1 : img.pattern}`
+                    : undefined,
+        prio: page ? (page.priorityType === undefined ? 1 : page.priorityType) : undefined,
+        items: learned,
+      });
+    }
+
     const clams = isShop ? { amounts: [], variable: false } : clamsFrom(ev.pages);
     if (clams.amounts.length || clams.variable) {
       const at = placedAt(ev.id) || { x: ev.x, y: ev.y };
@@ -411,9 +531,11 @@ for (const f of fs.readdirSync(DECRYPTED)) {
     // Anything handed over by a person goes to its own layer whatever it was.
     // Mari is a person and her picnic is still not an NPC errand, so 'picnic'
     // stays out of this — it is a save point wearing her sprite.
-    if (['quest', 'collect', 'charm', 'weapon'].includes(layer) &&
+    if (['quest', 'collect', 'charm'].includes(layer) &&
         isPerson(img && img.characterName)) layer = 'npc';
-    const spot = placedAt(ev.id) || { x: ev.x, y: ev.y };
+    let spot = placedAt(ev.id) || { x: ev.x, y: ev.y };
+    const nudge = POINT_NUDGES[`${mapId}:${ev.id}`];
+    if (nudge) spot = { x: spot.x + (nudge.dx || 0), y: spot.y + (nudge.dy || 0) };
     points.push({
       layer, mapId, x: spot.x, y: spot.y, evId: ev.id, evName: name,
       letter: letter ? letter[1].toUpperCase() : undefined,
@@ -449,8 +571,9 @@ for (const p of points) {
 
 // Slices inherit their parent's pickups, rebased to slice-local coordinates.
 for (const p of points.slice()) {
-  const sub = locateSub(p.mapId, p.x, p.y);
-  if (sub) points.push({ ...p, mapId: sub.id, x: p.x - sub.m.cropX, y: p.y - sub.m.cropY });
+  for (const sub of locateSubs(p.mapId, p.x, p.y)) {
+    points.push({ ...p, mapId: sub.id, x: p.x - sub.m.cropX, y: p.y - sub.m.cropY });
+  }
 }
 
 fs.writeFileSync(OUT, JSON.stringify({ layers: LAYERS, points }, null, 1));

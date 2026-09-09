@@ -167,6 +167,14 @@
     "parallaxName": null,
     "bgm": "fat_sunset"
   },
+  "453": {
+    "id": 453,
+    "name": "-- CLUB SANDWICH",
+    "width": 66,
+    "height": 50,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2"
+  },
   "1251": {
     "id": 1251,
     "name": "-- OTHERWORLD INTERIORS [top-L]",
@@ -332,6 +340,34 @@
       [
         5,
         38
+      ]
+    ]
+  },
+  "4537": {
+    "id": 4537,
+    "name": "-- CLUB SANDWICH [bar — Otherworld]",
+    "width": 11,
+    "height": 13,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2",
+    "cropX": 4,
+    "cropY": 1,
+    "polygon": [
+      [
+        4,
+        1
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        4,
+        14
       ]
     ]
   }

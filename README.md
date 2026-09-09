@@ -68,8 +68,10 @@ python3 scripts/31_blackletter_clues.py
 # 5. The Chinese half of the interface. Reads the *installed* (Simplified
 #    Chinese) build and pairs its names to the English dump's by row id.
 python3 scripts/37_extract_zh_names.py
+# 6. Side quests: who asks, where it sends you, what it pays.
+node    scripts/39_extract_quests.js
 
-# 6. Serve the repo root (the web pages fetch ../data/*)
+# 7. Serve the repo root (the web pages fetch ../data/*)
 python3 -m http.server 8000
 # then open http://localhost:8000/web/
 ```
@@ -139,6 +141,7 @@ layouts. Leaflet uses `CRS.Simple` with the y-axis flipped (`lat = heightPx - y`
 | `34_add_side_anchors.py <region> <mapId>…` | Adds one anchor on the left and right edge of a map, for open maps that run into their neighbours along a whole side with no door event anywhere near it — FROZEN FOREST (II) and (VII). The anchor's hitbox is vertical, which pins X and lets Y slide, so one point stands for the entire side. |
 | `14_add_exit_anchors.py <region>` | Most sliced rooms leave through a narrow path stub at the bottom that carries no event, so the stitcher had nothing to snap a route to there. Measures each cut PNG and appends a synthetic anchor edge on the stub. Run after `01` and `05`. |
 | `13_render_tiled_map.py <id>...` | Renders a map from a local Steam install: decrypts `.AUBREY` (AES-256-CTR) and `.rpgmvp` tilesets (header XOR), composites the visible Tiled layers. |
+| `39_extract_quests.js` | Writes `data/quests.json`. Nothing in the map data says which quest an event belongs to, but every line of dialogue lives in a file named after its quest (`sidequest_dreamworld_ghostgathering`) and events cite it by key — so a quest's events are the events that quote its file, and the message number they quote is the order you do them in. `message_0` is the giver in every quest checked by hand. 67 quests, 35 of them named by the game's own log (`data/Quests.PLUTO`). |
 | `37_extract_zh_names.py` | Writes `data/names_zh.json`: every item, weapon and charm name in the installed Simplified Chinese build, keyed by the English dump's name for the same row id. The two builds number their rows identically, so the pairing is exact. `index.html` swaps names at render time — `collectibles.json` stays English. |
 | `36_bake_deco_clusters.py` | Composites each contiguous run of decorations into one PNG under `web/assets/decorations/baked/`, plus `data/stitched/deco_clusters.json`. The trees bridge holes in the layout, so what is behind them is `#map`'s background; Leaflet rounds each of the 179 overlays separately and lets it through the hairline cracks as a black outline round every tree. One image cannot crack against itself. **Run after every layout import**, next to `33_recolor_close_routes.py`, with the same flag each time — `index.html` checks the manifest against the layout and falls back to per-sprite drawing when it is stale. `--all-below` puts every cluster under every map instead of honouring the layout's z-order, which makes each spatial cluster exactly one file and survives maps moving; this atlas uses it, because nearly every tree hangs over a hole and has no map to be in front of anyway. |
 

@@ -1886,6 +1886,48 @@
         "y": 12
       },
       "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 4537,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 12,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4537,
+        "x": 5,
+        "y": 12
+      },
+      "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 348,
+        "evId": 904,
+        "evName": "Door anchor (Club Sandwich)",
+        "x": 16,
+        "y": 13,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 348,
+        "x": 16,
+        "y": 13
+      },
+      "kind": "anchor"
     }
   ],
   "external": [
@@ -2480,6 +2522,94 @@
         "mapId": 106,
         "x": 78,
         "y": 59
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 13,
+        "evName": "To SW Gallery",
+        "x": 33,
+        "y": 41,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 175,
+        "x": 27,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 21,
+        "evName": "Pluto Smash",
+        "x": 10,
+        "y": 42,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 196,
+        "x": 9,
+        "y": 10
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 23,
+        "evName": "To Deeper Well / Path to Trench",
+        "x": 33,
+        "y": 15,
+        "page": 1,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 215,
+        "x": 18,
+        "y": 27
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 453,
+        "evId": 23,
+        "evName": "To Deeper Well / Path to Trench",
+        "x": 33,
+        "y": 15,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 495,
+        "x": 24,
+        "y": 53
       },
       "kind": "setValue"
     }

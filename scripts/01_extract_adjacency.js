@@ -27,9 +27,9 @@ const REGIONS = {
   faraway:             { roots: [12, 77],   prefix: 'faraway'             },
   junkyard:            { roots: [128, 142], prefix: 'junkyard'            },
   orange_oasis:        { roots: [106],      prefix: 'orange_oasis',
-                         extraMaps: [437] },                                  // face wall reward
+                         extraMaps: [437, 453] },                             // face wall reward + its club sandwich door
   pyrefly_forest:      { roots: [152],      prefix: 'pyrefly_forest',
-                         extraMaps: [433] },                                  // waterfall + face wall reward
+                         extraMaps: [433, 453] },                             // waterfall + face wall + its club sandwich door
   sweethearts_castle:  { roots: [171],      prefix: 'sweethearts_castle',
                          extraMaps: [433, 437, 453] },                        // face walls + club sandwich
   vast_forest:         { roots: [93],       prefix: 'vast_forest',
@@ -39,7 +39,7 @@ const REGIONS = {
                          // FROZEN FOREST ENTRANCE and everything under it, plus
                          // Map132's igloo rooms, are Snowglobe Mountain's.
                          excludeRoots: [128, 142, 133],
-                         extraMaps: [433, 437] },                             // face walls (453 club sandwich
+                         extraMaps: [433, 437, 453] },                        // face walls (453 club sandwich
                                                                               // dropped: no otherworld door leads there)
   deep_well:           { roots: [188],      prefix: 'deep_well',
                          extraMaps: [
@@ -303,7 +303,16 @@ for (const mapId of regionIds) {
     //   2. read the <Copy Event: NAME> notetag (YEP_EventCopier) — at runtime the
     //      event clones a template from Map 2 ("❀ > TREASURES"). If the template
     //      gives a real prize, upgrade color to 'blue' and stash prize info.
-    const evImg = ev.pages?.[0]?.image;
+    // The sheet says what colour the melon is, and it has to be read off the
+    // first page that actually draws something. `CAMERA - melonTULIP` in the
+    // OLD SHOE opens with a DEV_TEST placeholder and only shows the melon on
+    // page 1 — reading page 0 alone gave it no colour, so it fell out of the
+    // watermelon list entirely and turned up in the atlas as a loose charm.
+    // It is a watermelon like any other: same sprite, same 302/51/303 common
+    // events, same open/closed pair of pages as melonGLAD beside it.
+    const evImg = (ev.pages || []).map(p => p.image)
+      .find(i => i && i.characterName && i.characterName !== 'DEV_TEST')
+      || ev.pages?.[0]?.image;
     if (evImg && /melon/i.test(ev.name || '')) {
       let color = (evImg.characterName === 'DW_IMPORTANTOBJ_2') ? 'blue'
                 : (evImg.characterName === 'DW_IMPORTANTOBJ')   ? 'green' : null;
@@ -448,6 +457,7 @@ const PATCHES = {
     // Map344 PANTRY is 3 disconnected pantry rooms — slice into sub-maps.
     // Map112 OASIS INTERIORS is 4 disconnected rooms — slice the same way.
     subMaps: {
+      4536: { src: 453, name: '[bar — Orange Oasis]', polygon: [[4,1],[15,1],[15,14],[4,14]] },
       // ALCOVES II alcove 1 — reached from Map106 (ORANGE OASIS) "Face Wall".
       4371: { src: 437, name: '[alcove 1]', polygon: [[3,4],[12,4],[12,16],[3,16]] },
       3441: { src: 344, name: '[pantry 1]', polygon: [[11,11],[18,11],[18,20],[11,20]] },
@@ -462,7 +472,14 @@ const PATCHES = {
     },
     // Manual watermelons NOT detected by the melonCopy scan (e.g. Tomb Prize uses a different event template).
     manualWatermelons: [
-      { mapId: 334, x: 13, y: 18, name: 'Tomb Prize (blue)', color: 'blue' },
+      // TOAST GRAVE's melon is not called one — no "melon" in the name, so the
+      // scan above cannot see it. The event id matters as much as the position:
+      // without it 23 cannot tell that its own `Tomb Prize` charm point is this
+      // same event, and the tile ended up carrying a watermelon and a charm on
+      // top of each other; and 28 has nothing to key the sprite rectangle by,
+      // so it was the last melon in the game drawn at a fixed size.
+      { mapId: 334, evId: 21, x: 13, y: 18, name: 'Tomb Prize (blue)', color: 'blue',
+        prize: { template: null, kind: 'Armor', itemName: 'BREADPHONES' } },
     ],
     dimFixes: {
       113: { width: 29 },
@@ -597,6 +614,7 @@ const PATCHES = {
     dimFixes: {},
     vanillaAliases: {},
     subMaps: {
+      4538: { src: 453, name: '[bar — Pyrefly]',      polygon: [[4,1],[15,1],[15,14],[4,14]] },
       // ALCOVES I alcove 4 — reached from Map160 (PYREFLY V) "Pyrefly Forest".
       4334: { src: 433, name: '[alcove 4]', polygon: [[11,32],[18,32],[18,45],[11,45]] },
     },
@@ -666,6 +684,7 @@ const PATCHES = {
     dimFixes: {},
     vanillaAliases: {},
     subMaps: {
+      4537: { src: 453, name: '[bar — Otherworld]',   polygon: [[4,1],[15,1],[15,14],[4,14]] },
       // ALCOVES I keeps one map per alcove but runs it as two rooms. The
       // watermelon is a single event with self-switch A for one approach and
       // B for the other, gated on switch 1499, so taking it on one route
@@ -717,6 +736,9 @@ const PATCHES = {
     },
   },
   sweethearts_castle: {
+    // The melon's event tile is a row below the melon as it is drawn in the
+    // KITCHEN, so the pin sat on the counter's edge instead of on the fruit.
+    melonNudges: { '41': { dy: -1 } },
     // Manual route anchor points — virtual events that exist only for stitcher snapping.
     // Use these for visual features (light pillars, etc.) that aren't real game events.
     syntheticEdges: [
@@ -796,7 +818,16 @@ const PATCHES = {
       // five rooms belong here: the bar itself, reached from the
       // '★ CLUB SANDWICH' common event, and the room behind Map196
       // 'Pluto Smash'.
-      4531: { src: 453, name: '[bar]',         polygon: [[4,1],[15,1],[15,14],[4,14]] },
+      // One bar, four doors into it — the game keeps a switch per entrance
+      // ("Last Resort CS", "Orange Oasis CS", "Otherworld CS", "Pyrefly CS")
+      // and all four lead to the same room. A map can only be placed once, so
+      // the world would have three routes running clear across it to reach a
+      // single bar. Four copies of the same eleven-by-thirteen room, one per
+      // door, is the honest lie: the geography is invented, the room is not,
+      // and each entrance gets somewhere to arrive.
+      // …and each copy is declared in the region whose door it serves, so the
+      // stitcher lists it beside the map you would place it next to.
+      4531: { src: 453, name: '[bar — Last Resort]',  polygon: [[4,1],[15,1],[15,14],[4,14]] },
       4534: { src: 453, name: '[pluto room]',  polygon: [[7,30],[14,30],[14,42],[7,42]] },
       // Cut content: fully built (floor, walls and collision are all authored)
       // but no event and no transfer anywhere in the game points at it — a
@@ -830,6 +861,19 @@ const PATCHES = {
       1939: { src: 193, name: '[guest room — doll]',         polygon: [[49,49],[56,49],[56,58],[49,58]] },
     },
   },
+  humphrey: {
+    manualWatermelons: [
+      // MEDUSA ROOM TO BOSS's melon is called `Item`, so the name scan cannot
+      // see it either. It is one all the same: page 0 is DW_IMPORTANTOBJ_2
+      // index 3, the whole blue watermelon, and page 1 is index 7, the same
+      // melon with its top cut off. Without this it came through as a loose
+      // charm sitting on a watermelon sprite.
+      { mapId: 231, evId: 26, x: 24, y: 7, name: 'Item (blue)', color: 'blue',
+        prize: { template: null, kind: 'Armor', itemName: 'APPENDIX' } },
+    ],
+    dimFixes: {},
+    vanillaAliases: {},
+  },
   junkyard: {
     dimFixes: {},
     vanillaAliases: {},
@@ -850,6 +894,19 @@ const PATCHES = {
   },
 };
 const patches = PATCHES[region] || { dimFixes: {}, vanillaAliases: {} };
+
+// A melon's event tile is where the game wants the trigger, which is not always
+// the tile the fruit is drawn on. Keyed by event id within the region.
+for (const evId in (patches.melonNudges || {})) {
+  const move = patches.melonNudges[evId];
+  const hit = highlights.watermelons.filter(m => String(m.evId) === String(evId));
+  if (!hit.length) {
+    console.warn(`  ⚠ melonNudges ${evId}: no watermelon with that event id — stale entry?`);
+    continue;
+  }
+  for (const m of hit) { m.x += move.dx || 0; m.y += move.dy || 0; }
+  console.log(`  · nudged melon ev${evId} -> (${hit[0].x}, ${hit[0].y})`);
+}
 
 // Snap points come straight off the event's tile, which is where the game
 // wants the trigger, not always where the doorway is. `anchorNudges` moves the

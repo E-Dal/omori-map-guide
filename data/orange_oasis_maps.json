@@ -175,6 +175,14 @@
     "parallaxName": null,
     "bgm": null
   },
+  "453": {
+    "id": 453,
+    "name": "-- CLUB SANDWICH",
+    "width": 66,
+    "height": 50,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2"
+  },
   "1121": {
     "id": 1121,
     "name": "-- OASIS INTERIORS [top-L Mina]",
@@ -396,6 +404,34 @@
       [
         3,
         16
+      ]
+    ]
+  },
+  "4536": {
+    "id": 4536,
+    "name": "-- CLUB SANDWICH [bar — Orange Oasis]",
+    "width": 11,
+    "height": 13,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2",
+    "cropX": 4,
+    "cropY": 1,
+    "polygon": [
+      [
+        4,
+        1
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        4,
+        14
       ]
     ]
   }

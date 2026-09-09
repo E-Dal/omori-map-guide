@@ -199,6 +199,14 @@
     "parallaxName": null,
     "bgm": null
   },
+  "453": {
+    "id": 453,
+    "name": "-- CLUB SANDWICH",
+    "width": 66,
+    "height": 50,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2"
+  },
   "4334": {
     "id": 4334,
     "name": "-- ALCOVES I [alcove 4]",
@@ -224,6 +232,34 @@
       [
         11,
         45
+      ]
+    ]
+  },
+  "4538": {
+    "id": 4538,
+    "name": "-- CLUB SANDWICH [bar — Pyrefly]",
+    "width": 11,
+    "height": 13,
+    "parallaxName": "parallax_dw_1",
+    "bgm": "theme_basil2",
+    "cropX": 4,
+    "cropY": 1,
+    "polygon": [
+      [
+        4,
+        1
+      ],
+      [
+        15,
+        1
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        4,
+        14
       ]
     ]
   }
