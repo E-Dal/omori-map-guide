@@ -752,11 +752,15 @@ const UI = {
     en: 'Map renders from <a href="https://goats.dev/omori/" target="_blank" rel="noopener">goats.dev</a>, '
       + "a few rendered from the game's own data · OMORI and all its art © "
       + '<a href="https://www.omocat-shop.com/" target="_blank" rel="noopener">OMOCAT</a> · '
-      + 'a fan project, not affiliated',
+      + 'a fan project, not affiliated · visits counted by '
+      + '<a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a>'
+      + ' (no cookies, no personal data)',
     zh: '地图渲染来自 <a href="https://goats.dev/omori/" target="_blank" rel="noopener">goats.dev</a>，'
       + '少数由游戏数据自行渲染 · OMORI 及其全部美术版权归 '
       + '<a href="https://www.omocat-shop.com/" target="_blank" rel="noopener">OMOCAT</a> 所有 · '
-      + '同人项目，非官方',
+      + '同人项目，非官方 · 访问量由 '
+      + '<a href="https://www.goatcounter.com" target="_blank" rel="noopener">GoatCounter</a>'
+      + ' 统计（无 cookie，不收集个人信息）',
   },
 };
 let LANG = (() => {
@@ -2699,5 +2703,16 @@ async function init() {
 
 init();
 </script>
+<!-- Visitor counts. GoatCounter sets no cookies and stores no personal data,
+     so there is nothing to ask consent for; the credits line says it is there
+     anyway. count.js skips localhost and file:// on its own, so testing this
+     page locally does not show up in the numbers.
+
+     The site code is `e-dal`, which is registered against e-dal.github.io and
+     already covers everything under it — the atlas arrives in the dashboard as
+     the path /omori-map-guide/web/, beside whatever else lives on that domain.
+     A separate GoatCounter site would only change the word `e-dal` below. -->
+<script data-goatcounter="https://e-dal.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
