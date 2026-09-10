@@ -177,8 +177,8 @@
       "groupId": "orange_oasis"
     },
     "116": {
-      "x": 2016,
-      "y": -8096,
+      "x": 1216,
+      "y": -8160,
       "crop": "full",
       "zOrder": -2,
       "groupId": "orange_oasis"
@@ -198,8 +198,8 @@
       "groupId": "otherworld"
     },
     "119": {
-      "x": 3424,
-      "y": -8672,
+      "x": 928,
+      "y": -8704,
       "crop": "full",
       "zOrder": 5,
       "groupId": "otherworld"
@@ -285,64 +285,55 @@
       "x": 13152,
       "y": -10848,
       "crop": "full",
-      "zOrder": 7,
-      "groupId": "gmsigak47"
+      "zOrder": 7
     },
     "134": {
       "x": 9696,
       "y": -6304,
       "crop": "full",
-      "zOrder": 51,
-      "groupId": "gmsigak47"
+      "zOrder": 51
     },
     "135": {
       "x": 12096,
       "y": -10112,
       "crop": "full",
-      "zOrder": 0,
-      "groupId": "gmsigak47"
+      "zOrder": 0
     },
     "136": {
       "x": 12992,
       "y": -13760,
       "crop": "full",
-      "zOrder": 8,
-      "groupId": "gmsigak47"
+      "zOrder": 8
     },
     "137": {
       "x": 12864,
       "y": -17664,
       "crop": "full",
-      "zOrder": 10,
-      "groupId": "gmsigak47"
+      "zOrder": 10
     },
     "138": {
-      "x": 11328,
-      "y": -9376,
+      "x": 11040,
+      "y": -9664,
       "crop": "full",
-      "zOrder": 4,
-      "groupId": "gmsigak47"
+      "zOrder": 4
     },
     "139": {
       "x": 13248,
       "y": -18752,
       "crop": "full",
-      "zOrder": 11,
-      "groupId": "gmsigak47"
+      "zOrder": 11
     },
     "140": {
       "x": 13024,
       "y": -12992,
       "crop": "full",
-      "zOrder": 6,
-      "groupId": "gmsigak47"
+      "zOrder": 6
     },
     "141": {
       "x": 13152,
       "y": -16608,
       "crop": "full",
-      "zOrder": 9,
-      "groupId": "gmsigak47"
+      "zOrder": 9
     },
     "142": {
       "x": 7840,
@@ -513,7 +504,7 @@
       "groupId": "pyrefly_forest"
     },
     "168": {
-      "x": -3744,
+      "x": -3808,
       "y": -7744,
       "crop": "full",
       "zOrder": 14,
@@ -541,7 +532,7 @@
       "groupId": "sweethearts_castle"
     },
     "173": {
-      "x": -3840,
+      "x": -3904,
       "y": -8672,
       "crop": "full",
       "zOrder": 0,
@@ -555,29 +546,29 @@
       "groupId": "sweethearts_castle"
     },
     "175": {
-      "x": -3424,
+      "x": -3488,
       "y": -9920,
       "crop": "full",
       "zOrder": 9,
       "groupId": "sweethearts_castle"
     },
     "176": {
-      "x": -4064,
+      "x": -4128,
       "y": -9664,
       "crop": "full",
       "zOrder": 2,
       "groupId": "sweethearts_castle"
     },
     "177": {
-      "x": 1152,
-      "y": -8608,
+      "x": 352,
+      "y": -8672,
       "crop": "full",
       "zOrder": 1,
       "groupId": "sweethearts_castle"
     },
     "178": {
-      "x": 3648,
-      "y": -9568,
+      "x": 1152,
+      "y": -9600,
       "crop": "full",
       "zOrder": 8,
       "groupId": "sweethearts_castle"
@@ -646,8 +637,8 @@
       "groupId": "sweethearts_castle"
     },
     "189": {
-      "x": 3936,
-      "y": -11104,
+      "x": 1440,
+      "y": -11136,
       "crop": "full",
       "zOrder": 61,
       "groupId": "deep_well"
@@ -660,8 +651,8 @@
       "groupId": "deep_well"
     },
     "191": {
-      "x": 2848,
-      "y": -10880,
+      "x": 352,
+      "y": -10912,
       "crop": "full",
       "zOrder": 90,
       "groupId": "last_resort"
@@ -723,7 +714,7 @@
       "groupId": "last_resort"
     },
     "203": {
-      "x": -3904,
+      "x": -3968,
       "y": -9248,
       "crop": "full",
       "zOrder": 66,
@@ -744,7 +735,7 @@
       "groupId": "deep_well"
     },
     "206": {
-      "x": -3840,
+      "x": -3904,
       "y": -10496,
       "crop": "full",
       "zOrder": 130,
@@ -765,8 +756,8 @@
       "groupId": "deep_well"
     },
     "209": {
-      "x": 4576,
-      "y": -10048,
+      "x": 2080,
+      "y": -10080,
       "crop": "full",
       "zOrder": 149,
       "groupId": "deep_well"
@@ -800,7 +791,7 @@
       "groupId": "deep_well"
     },
     "215": {
-      "x": -4544,
+      "x": -4608,
       "y": -10528,
       "crop": "full",
       "zOrder": 109,
@@ -818,224 +809,224 @@
       "y": -19840,
       "crop": "full",
       "zOrder": 2,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "220": {
       "x": -4800,
       "y": -21056,
       "crop": "full",
       "zOrder": 1,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "221": {
       "x": -4832,
       "y": -22144,
       "crop": "full",
       "zOrder": 3,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "222": {
       "x": -4544,
       "y": -22720,
       "crop": "full",
       "zOrder": 4,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "223": {
       "x": -3264,
       "y": -23744,
       "crop": "full",
       "zOrder": 5,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "224": {
       "x": -3232,
       "y": -24960,
       "crop": "full",
       "zOrder": 6,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "225": {
       "x": -3584,
       "y": -27360,
       "crop": "full",
       "zOrder": 7,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "226": {
       "x": -3232,
       "y": -28480,
       "crop": "full",
       "zOrder": 0,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "227": {
       "x": -3072,
       "y": -29152,
       "crop": "full",
       "zOrder": 9,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "228": {
       "x": -3904,
       "y": -19712,
       "crop": "full",
       "zOrder": 10,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "229": {
       "x": 1312,
       "y": -24000,
       "crop": "full",
       "zOrder": 11,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "230": {
       "x": 1760,
       "y": -22880,
       "crop": "full",
       "zOrder": 12,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "231": {
       "x": 1760,
       "y": -20800,
       "crop": "full",
       "zOrder": 101,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "232": {
       "x": 608,
       "y": -22208,
       "crop": "full",
       "zOrder": 133,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "233": {
       "x": 608,
       "y": -23808,
       "crop": "full",
       "zOrder": 134,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "234": {
       "x": 3168,
       "y": -21664,
       "crop": "full",
       "zOrder": 28,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "235": {
       "x": -6240,
       "y": -19968,
       "crop": "full",
       "zOrder": 16,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "236": {
       "x": -7968,
       "y": -20128,
       "crop": "full",
       "zOrder": 17,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "237": {
       "x": -8096,
       "y": -18656,
       "crop": "full",
       "zOrder": 18,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "238": {
       "x": -7232,
       "y": -19136,
       "crop": "full",
       "zOrder": 19,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "239": {
       "x": -9184,
       "y": -18336,
       "crop": "full",
       "zOrder": 94,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "240": {
       "x": -9600,
       "y": -19328,
       "crop": "full",
       "zOrder": 22,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "241": {
       "x": -8096,
       "y": -17920,
       "crop": "full",
       "zOrder": 20,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "242": {
       "x": -6432,
       "y": -21344,
       "crop": "full",
       "zOrder": 26,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "243": {
       "x": -7328,
       "y": -17920,
       "crop": "full",
       "zOrder": 30,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "244": {
       "x": -7808,
       "y": -20864,
       "crop": "full",
       "zOrder": 23,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "245": {
       "x": -6560,
       "y": -17920,
       "crop": "full",
       "zOrder": 31,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "247": {
       "x": -5792,
       "y": -17920,
       "crop": "full",
       "zOrder": 32,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "248": {
       "x": -7424,
       "y": -20128,
       "crop": "full",
       "zOrder": 27,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "249": {
       "x": -5536,
       "y": -22944,
       "crop": "full",
       "zOrder": 29,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "250": {
       "x": -1408,
       "y": -21376,
       "crop": "full",
       "zOrder": 100,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "251": {
       "x": -1312,
       "y": -23008,
       "crop": "full",
       "zOrder": 132,
-      "groupId": "humphrey"
+      "groupId": "deeper_well"
     },
     "252": {
       "x": 4672,
@@ -1223,8 +1214,7 @@
       "x": 13280,
       "y": -20896,
       "crop": "full",
-      "zOrder": 12,
-      "groupId": "gmsigak47"
+      "zOrder": 12
     },
     "348": {
       "x": 9792,
@@ -1297,8 +1287,8 @@
       "groupId": "junkyard"
     },
     "430": {
-      "x": 704,
-      "y": -8512,
+      "x": -96,
+      "y": -8576,
       "crop": "full",
       "zOrder": -10,
       "groupId": "deep_well"
@@ -1419,29 +1409,25 @@
       "x": 11104,
       "y": -6944,
       "crop": "full",
-      "zOrder": 76,
-      "groupId": "gmsigak47"
+      "zOrder": 76
     },
     "1322": {
       "x": 10848,
       "y": -6848,
       "crop": "full",
-      "zOrder": 77,
-      "groupId": "gmsigak47"
+      "zOrder": 77
     },
     "1323": {
       "x": 11360,
       "y": -6880,
       "crop": "full",
-      "zOrder": 78,
-      "groupId": "gmsigak47"
+      "zOrder": 78
     },
     "1324": {
       "x": 11616,
       "y": -6880,
       "crop": "full",
-      "zOrder": 79,
-      "groupId": "gmsigak47"
+      "zOrder": 79
     },
     "1712": {
       "x": -480,
@@ -1615,8 +1601,7 @@
       "x": 12704,
       "y": -11520,
       "crop": "full",
-      "zOrder": 80,
-      "groupId": "gmsigak47"
+      "zOrder": 80
     },
     "4211": {
       "x": 6720,
@@ -1682,8 +1667,8 @@
       "groupId": "junkyard"
     },
     "4332": {
-      "x": -3264,
-      "y": -8672,
+      "x": -3296,
+      "y": -8640,
       "crop": "full",
       "zOrder": 32,
       "groupId": "sweethearts_castle"
@@ -1710,15 +1695,15 @@
       "groupId": "deeper_well"
     },
     "4338": {
-      "x": 4128,
-      "y": -9920,
+      "x": 1632,
+      "y": -9952,
       "crop": "full",
       "zOrder": 151,
       "groupId": "sweethearts_castle"
     },
     "4339": {
-      "x": 3360,
-      "y": -11168,
+      "x": 1088,
+      "y": -10944,
       "crop": "full",
       "zOrder": 150,
       "groupId": "sweethearts_castle"
@@ -1992,11 +1977,11 @@
       ]
     },
     {
-      "color": "#ff66d9",
+      "color": "#33ccff",
       "pts": [
         {
-          "x": 6576,
-          "y": -7248,
+          "x": 4080,
+          "y": -7280,
           "snap": {
             "mapId": 119,
             "evId": 1,
@@ -2141,7 +2126,7 @@
           }
         },
         {
-          "x": -2224,
+          "x": -2288,
           "y": -7920,
           "snap": {
             "mapId": 173,
@@ -2262,11 +2247,11 @@
       ]
     },
     {
-      "color": "#eeaa44",
+      "color": "#ff66d9",
       "pts": [
         {
-          "x": 4240,
-          "y": -9264,
+          "x": 1744,
+          "y": -9296,
           "snap": {
             "mapId": 178,
             "evId": 58,
@@ -2276,8 +2261,8 @@
           }
         },
         {
-          "x": 4240,
-          "y": -9552,
+          "x": 1744,
+          "y": -9584,
           "snap": {
             "mapId": 4338,
             "evId": 5,
@@ -2303,8 +2288,8 @@
           }
         },
         {
-          "x": 3440,
-          "y": -10832,
+          "x": 1168,
+          "y": -10608,
           "snap": {
             "mapId": 4339,
             "evId": 4,
@@ -2316,7 +2301,7 @@
       ]
     },
     {
-      "color": "#ffcc33",
+      "color": "#33ccff",
       "pts": [
         {
           "x": -944,
@@ -2400,7 +2385,7 @@
       "color": "#ff7733",
       "pts": [
         {
-          "x": -3408,
+          "x": -3472,
           "y": -8784,
           "snap": {
             "mapId": 176,
@@ -2411,8 +2396,8 @@
           }
         },
         {
-          "x": -3152,
-          "y": -8496,
+          "x": -3184,
+          "y": -8464,
           "snap": {
             "mapId": 4332,
             "evId": 3,
@@ -2451,7 +2436,7 @@
       ]
     },
     {
-      "color": "#33ccff",
+      "color": "#ff7733",
       "pts": [
         {
           "x": -1136,
@@ -2505,7 +2490,7 @@
       ]
     },
     {
-      "color": "#ff7733",
+      "color": "#ffcc33",
       "pts": [
         {
           "x": -1072,
@@ -2616,8 +2601,8 @@
       "color": "#ff66d9",
       "pts": [
         {
-          "x": 4112,
-          "y": -8144,
+          "x": 1616,
+          "y": -8176,
           "snap": {
             "mapId": 119,
             "evId": 18,
@@ -2640,7 +2625,7 @@
       ]
     },
     {
-      "color": "#33ccff",
+      "color": "#bb88ff",
       "pts": [
         {
           "x": 7120,
@@ -2697,8 +2682,8 @@
       "color": "#33ccff",
       "pts": [
         {
-          "x": 11792,
-          "y": -8208,
+          "x": 11504,
+          "y": -8496,
           "snap": {
             "mapId": 138,
             "evId": 1,
@@ -2905,33 +2890,6 @@
             "evName": "Teleport",
             "ox": 112,
             "oy": 656
-          }
-        }
-      ]
-    },
-    {
-      "color": "#ffcc33",
-      "pts": [
-        {
-          "x": 12208,
-          "y": -14032,
-          "snap": {
-            "mapId": 4283,
-            "evId": 4,
-            "evName": "Teleport",
-            "ox": 112,
-            "oy": 144
-          }
-        },
-        {
-          "x": 12176,
-          "y": -14160,
-          "snap": {
-            "mapId": 145,
-            "evId": 1,
-            "evName": "Teleport",
-            "ox": 624,
-            "oy": 1584
           }
         }
       ]
@@ -3747,7 +3705,7 @@
       ]
     },
     {
-      "color": "#ff5566",
+      "color": "#ff66d9",
       "pts": [
         {
           "x": 5872,
@@ -3761,8 +3719,8 @@
           }
         },
         {
-          "x": 4272,
-          "y": -11088,
+          "x": 1776,
+          "y": -11120,
           "snap": {
             "mapId": 189,
             "evId": 1,
@@ -4425,8 +4383,8 @@
       "color": "#66ff66",
       "pts": [
         {
-          "x": 3376,
-          "y": -10512,
+          "x": 880,
+          "y": -10544,
           "snap": {
             "mapId": 191,
             "evId": 7,
@@ -4722,8 +4680,8 @@
       "color": "#33ccff",
       "pts": [
         {
-          "x": 3760,
-          "y": -10384,
+          "x": 1264,
+          "y": -10416,
           "snap": {
             "mapId": 191,
             "evId": 18,
@@ -5181,7 +5139,7 @@
       "color": "#ff66d9",
       "pts": [
         {
-          "x": -944,
+          "x": -1008,
           "y": -9072,
           "snap": {
             "mapId": 203,
@@ -5208,7 +5166,7 @@
       "color": "#ff66d9",
       "pts": [
         {
-          "x": -2896,
+          "x": -2960,
           "y": -9232,
           "snap": {
             "mapId": 203,
@@ -5219,7 +5177,7 @@
           }
         },
         {
-          "x": -2576,
+          "x": -2640,
           "y": -9328,
           "snap": {
             "mapId": 206,
@@ -5235,7 +5193,7 @@
       "color": "#88ddff",
       "pts": [
         {
-          "x": -3920,
+          "x": -3984,
           "y": -9264,
           "snap": {
             "mapId": 215,
@@ -5246,7 +5204,7 @@
           }
         },
         {
-          "x": -3824,
+          "x": -3888,
           "y": -9808,
           "snap": {
             "mapId": 206,
@@ -5637,7 +5595,7 @@
       ]
     },
     {
-      "color": "#ff7733",
+      "color": "#66ff66",
       "pts": [
         {
           "x": -4272,
@@ -5718,7 +5676,7 @@
       ]
     },
     {
-      "color": "#bb88ff",
+      "color": "#ffcc33",
       "pts": [
         {
           "x": -4848,
@@ -5746,7 +5704,7 @@
       "kind": "one"
     },
     {
-      "color": "#eeaa44",
+      "color": "#bb88ff",
       "pts": [
         {
           "x": -7760,
@@ -5962,7 +5920,7 @@
       ]
     },
     {
-      "color": "#ff5566",
+      "color": "#ff7733",
       "pts": [
         {
           "x": -7632,
@@ -6031,8 +5989,8 @@
           }
         },
         {
-          "x": 3728,
-          "y": -3440,
+          "x": 2928,
+          "y": -3504,
           "snap": {
             "mapId": 116,
             "evId": 901,
@@ -6071,7 +6029,7 @@
       ]
     },
     {
-      "color": "#88ddff",
+      "color": "#ffcc33",
       "pts": [
         {
           "x": 5744,
@@ -6085,8 +6043,8 @@
           }
         },
         {
-          "x": 5744,
-          "y": -7024,
+          "x": 3248,
+          "y": -7056,
           "snap": {
             "mapId": 209,
             "evId": 8,
@@ -6209,7 +6167,7 @@
       "color": "#ff7733",
       "pts": [
         {
-          "x": -4528,
+          "x": -4592,
           "y": -8848,
           "snap": {
             "mapId": 215,
@@ -6247,8 +6205,8 @@
           }
         },
         {
-          "x": 4208,
-          "y": -7216,
+          "x": 1712,
+          "y": -7248,
           "snap": {
             "mapId": 189,
             "evId": 2,
@@ -6260,7 +6218,7 @@
       ]
     },
     {
-      "color": "#ffcc33",
+      "color": "#ff5566",
       "pts": [
         {
           "x": -4496,
@@ -6274,8 +6232,8 @@
           }
         },
         {
-          "x": 3056,
-          "y": -10480,
+          "x": 560,
+          "y": -10512,
           "snap": {
             "mapId": 191,
             "evId": 33,
@@ -6290,7 +6248,7 @@
       "color": "#22eebb",
       "pts": [
         {
-          "x": -2096,
+          "x": -2160,
           "y": -9040,
           "snap": {
             "mapId": 203,
@@ -6314,7 +6272,7 @@
       ]
     },
     {
-      "color": "#22eebb",
+      "color": "#ff7733",
       "pts": [
         {
           "x": 2576,
@@ -6328,8 +6286,8 @@
           }
         },
         {
-          "x": 3088,
-          "y": -8976,
+          "x": 592,
+          "y": -9008,
           "snap": {
             "mapId": 191,
             "evId": 8,
@@ -6342,10 +6300,10 @@
       "kind": "two"
     },
     {
-      "color": "#88ddff",
+      "color": "#ffcc33",
       "pts": [
         {
-          "x": -3504,
+          "x": -3568,
           "y": -8752,
           "snap": {
             "mapId": 203,
@@ -6356,8 +6314,8 @@
           }
         },
         {
-          "x": 3088,
-          "y": -8976,
+          "x": 592,
+          "y": -9008,
           "snap": {
             "mapId": 191,
             "evId": 8,
@@ -6401,7 +6359,7 @@
       "color": "#33ccff",
       "pts": [
         {
-          "x": -2352,
+          "x": -2416,
           "y": -10064,
           "snap": {
             "mapId": 206,
@@ -6468,7 +6426,7 @@
           }
         },
         {
-          "x": -368,
+          "x": -432,
           "y": -8720,
           "snap": {
             "mapId": 203,
@@ -6482,11 +6440,11 @@
       "kind": "two"
     },
     {
-      "color": "#88ddff",
+      "color": "#ff5566",
       "pts": [
         {
-          "x": 720,
-          "y": -7888,
+          "x": -80,
+          "y": -7952,
           "snap": {
             "mapId": 430,
             "evId": 4,
@@ -6496,8 +6454,8 @@
           }
         },
         {
-          "x": 3760,
-          "y": -7888,
+          "x": 2960,
+          "y": -7952,
           "snap": {
             "mapId": 430,
             "evId": 3,
@@ -6595,7 +6553,7 @@
       "kind": "one"
     },
     {
-      "color": "#ff7733",
+      "color": "#ffcc33",
       "pts": [
         {
           "x": 2640,
@@ -6609,8 +6567,8 @@
           }
         },
         {
-          "x": 720,
-          "y": -7856,
+          "x": -80,
+          "y": -7920,
           "snap": {
             "mapId": 430,
             "evId": 4,
@@ -6623,7 +6581,7 @@
       "kind": "one"
     },
     {
-      "color": "#66ff66",
+      "color": "#88ddff",
       "pts": [
         {
           "x": 1904,
@@ -6637,8 +6595,8 @@
           }
         },
         {
-          "x": 3760,
-          "y": -7856,
+          "x": 2960,
+          "y": -7920,
           "snap": {
             "mapId": 430,
             "evId": 3,
@@ -6651,11 +6609,11 @@
       "kind": "one"
     },
     {
-      "color": "#ffcc33",
+      "color": "#33ccff",
       "pts": [
         {
-          "x": 2032,
-          "y": -7824,
+          "x": 1232,
+          "y": -7888,
           "snap": {
             "mapId": 430,
             "evId": 2,
@@ -6665,8 +6623,8 @@
           }
         },
         {
-          "x": 3088,
-          "y": -8976,
+          "x": 592,
+          "y": -9008,
           "snap": {
             "mapId": 191,
             "evId": 8,
@@ -6679,11 +6637,11 @@
       "kind": "one"
     },
     {
-      "color": "#ffcc33",
+      "color": "#66ff66",
       "pts": [
         {
-          "x": 976,
-          "y": -7920,
+          "x": 176,
+          "y": -7984,
           "snap": {
             "mapId": 430,
             "evId": 1,
@@ -6817,11 +6775,11 @@
       "kind": "loop"
     },
     {
-      "color": "#33ccff",
+      "color": "#22eebb",
       "pts": [
         {
-          "x": 3440,
-          "y": -8176,
+          "x": 944,
+          "y": -8208,
           "snap": {
             "mapId": 119,
             "evId": 2,
@@ -7774,27 +7732,6 @@
       ]
     },
     {
-      "color": "#ff66d9",
-      "pts": [
-        {
-          "x": 9520,
-          "y": -15440,
-          "snap": {
-            "mapId": 4282,
-            "evId": 10,
-            "evName": "Teleport",
-            "ox": 16,
-            "oy": 432
-          }
-        },
-        {
-          "x": 5149.033672992462,
-          "y": -15468.977597745305,
-          "snap": null
-        }
-      ]
-    },
-    {
       "color": "#66ff66",
       "pts": [
         {
@@ -7960,8 +7897,8 @@
       "color": "#eeaa44",
       "pts": [
         {
-          "x": 3376,
-          "y": -7952,
+          "x": 2576,
+          "y": -8016,
           "snap": {
             "mapId": 116,
             "evId": 1,
@@ -8060,6 +7997,33 @@
             "evName": "Exit stem (south)",
             "ox": 176,
             "oy": 400
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 12208,
+          "y": -14032,
+          "snap": {
+            "mapId": 4283,
+            "evId": 4,
+            "evName": "Teleport",
+            "ox": 112,
+            "oy": 144
+          }
+        },
+        {
+          "x": 12208,
+          "y": -14160,
+          "snap": {
+            "mapId": 145,
+            "evId": 1,
+            "evName": "Teleport",
+            "ox": 656,
+            "oy": 1584
           }
         }
       ]
