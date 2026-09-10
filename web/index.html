@@ -333,6 +333,12 @@
   .rl-row .alt { font-size: 9px; color: #9a8348; border: 1px solid #5a4a2a;
                  border-radius: 3px; padding: 0 3px; flex: none; letter-spacing: .3px; }
   .rl-row.focused { color: #ffd97a; font-weight: bold; }
+  /* It is not a thirteenth region, and styled as one it read as exactly that.
+     A tree instead of a colour swatch, and a panel of its own to sit in. */
+  #decoRow { margin-top: 8px; padding: 4px 6px; border-radius: 4px;
+             background: rgba(255,255,255,0.05); border: 1px solid #3a3a3a; }
+  #decoRow .ico { width: 12px; font-size: 11px; line-height: 1; flex: none; text-align: center; }
+  body.no-decos .world-deco { display: none; }
   .rl-row.off .nm { color: #555; text-decoration: line-through; }
   .rl-row .eye { background: none; border: 0; color: #777; cursor: pointer; font-size: 11px; padding: 0 2px; }
   .rl-row .eye:hover { color: #fff; }
@@ -550,6 +556,10 @@
   </div>
   <div id="routeRows"></div>
   <div id="regionRows"></div>
+  <!-- Scenery is drawn by the layout, not by a marker layer, so its switch
+       belongs with the maps rather than in MARKERS. -->
+  <div id="decoRow" class="rl-row"><span class="ico">🌲</span>
+    <span class="nm"></span><span class="ct" id="decoCount"></span></div>
   <div id="overlapWarn"></div>
 </div>
 <div id="overlapPopup" class="world-only">
@@ -818,6 +828,9 @@ const UI = {
   maps:        { en: 'maps',              zh: '张地图' },
   regionsWord: { en: 'regions',           zh: '个区域' },
   scenery:     { en: 'scenery',           zh: '个装饰' },
+  sceneryRow:  { en: 'Scenery',           zh: '装饰' },
+  sceneryTitle: { en: 'The trees and pinwheels drawn over the maps',
+                  zh: '画在地图之上的树木和风车' },
   tiles:       { en: 'tiles',             zh: '格' },
   bgm:         { en: 'BGM: ',             zh: '音乐：' },
   routeSuffix: { en: 'route',             zh: '路线' },
@@ -2244,7 +2257,11 @@ async function bakedDecos(decos) {
       seen.add(uid);
     }
     if (!c.uids.length) continue;
+    // Which maps this cluster's sprites stand next to. A single sprite carries
+    // one nearId; a baked image carries its members', so it can still be hidden
+    // with the maps it dresses instead of hanging over empty ground.
     out.push({ deco: c, w: c.w, h: c.h, region,
+               nearIds: [...new Set(c.uids.map(uid => byUid.get(uid).nearId))],
                pos: { x: c.x, y: c.y, zOrder: c.zOrder },
                url: c.file + CACHE_BUST });
   }
@@ -2557,11 +2574,20 @@ function applySelection() {
   // it stands nearest goes, and also when that map is fading at a region edge —
   // a tree standing solid over an edge busy dissolving reads worse than the
   // gap it was hiding.
-  for (const it of (worldState.decos || [])) {
+  // drawnDecos, not decos: in baked mode the 179 sprites have no layer of their
+  // own — the 15 baked images do — so this loop ran over the wrong list and did
+  // nothing at all, which is why the trees stayed when their region was turned
+  // off. A baked image goes only once every map it dresses is gone; one sprite
+  // still standing on a visible map keeps its whole cluster.
+  const decoShown = it => it.nearIds
+    ? it.nearIds.some(id => worldState.visibleIds.has(id) && !fading.has(id))
+    : (worldState.visibleIds.has(it.nearId) && !fading.has(it.nearId));
+  for (const it of (worldState.drawnDecos || [])) {
     const el = it.layer && it.layer.getElement && it.layer.getElement();
     if (!el) continue;
-    el.style.display = (worldState.visibleIds.has(it.nearId) && !fading.has(it.nearId))
-      ? '' : 'none';
+    // '' rather than 'block': the Scenery switch is a CSS rule, and an inline
+    // display would win over it.
+    el.style.display = decoShown(it) ? '' : 'none';
   }
 
   for (const [r, pane] of Object.entries(panes)) {
@@ -2635,6 +2661,9 @@ function rebuildLegend() {
     };
     rows.appendChild(row);
   }
+  // Same panel, so it follows the language switch and the world reload without
+  // needing its own hook.
+  renderDecoRow();
 }
 
 // The layout stitches every region into one plane, and the regions were never
@@ -2674,6 +2703,27 @@ let routeMode = 'sunny';       // 'sunny' | 'hikikomori'
 
 // The route a region belongs to when that is not the one being played — the
 // reason every one of its maps is hidden. Null when there is nothing to explain.
+// Scenery on/off. The trees bridge holes between maps, so turning them off
+// shows the seams the layout has — which is the point of being able to.
+const DECO_KEY = 'omori-atlas-decos';
+let showDecos = store.get(DECO_KEY) !== 'off';
+
+function renderDecoRow() {
+  const row = document.getElementById('decoRow');
+  if (!row) return;
+  document.body.classList.toggle('no-decos', !showDecos);
+  row.querySelector('.nm').textContent = (showDecos ? '\u2611' : '\u2610') + ' ' + t('sceneryRow');
+  row.classList.toggle('focused', showDecos);
+  row.title = t('sceneryTitle');
+  const n = worldState ? worldState.decos.length : 0;
+  document.getElementById('decoCount').textContent = n || '';
+  row.onclick = () => {
+    showDecos = !showDecos;
+    store.set(DECO_KEY, showDecos ? 'on' : 'off');
+    renderDecoRow();
+  };
+}
+
 function altRouteOf(region) {
   for (const route of Object.keys(ROUTE_ONLY_REGIONS)) {
     if (route === routeMode) continue;
