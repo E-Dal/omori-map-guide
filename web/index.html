@@ -27,7 +27,13 @@
   .view-toggle { display: inline-flex; border: 1px solid #444; border-radius: 4px; overflow: hidden; }
   .view-toggle button { background: #2a2a2a; color: #ddd; border: 0; padding: 4px 10px; cursor: pointer; font-size: 12px; }
   .view-toggle button.active { background: #ff80c0; color: #000; }
-  #map { width: 100vw; height: calc(100vh - 50px); background: #0a0a0a; }
+  /* 50, 60 and 78 below all encoded the same assumption: that the header is
+     one 50px row. It wraps to three on a phone, which pushed the map's bottom
+     half off screen and left the panels sitting on top of the mode buttons.
+     --head-h is measured from the header itself and set in init(), so every
+     width gets the real number and the desktop keeps the same one it had. */
+  :root { --head-h: 50px; }
+  #map { width: 100vw; height: calc(100vh - var(--head-h)); background: #0a0a0a; }
   .leaflet-container { background: #0a0a0a; }
   .map-event-marker {
     background: #ff4080; border: 2px solid #fff; border-radius: 50%;
@@ -92,7 +98,7 @@
   .collectBubble button.done { background: #555; }
 
   #markerLegend {
-    position: absolute; top: 60px; right: 10px; z-index: 700;
+    position: absolute; top: calc(var(--head-h) + 10px); right: 10px; z-index: 700;
     background: rgba(18,18,20,0.88); border: 1px solid #3a3a3a; border-radius: 6px;
     padding: 8px 10px; font-size: 12px; backdrop-filter: blur(3px);
     /* Every group open is taller than most screens. Left to grow, it made the
@@ -100,10 +106,27 @@
        behind and showed bare page under it. It scrolls inside itself instead.
        scrollbar-gutter holds the width steady whether the bar is showing or
        not, which the measuring pass depends on. */
-    max-height: calc(100vh - 78px); overflow-y: auto; scrollbar-gutter: stable;
+    max-height: calc(100vh - var(--head-h) - 28px); overflow-y: auto; scrollbar-gutter: stable;
   }
   /* The map is the page; nothing else may lengthen it. */
   html, body { overflow: hidden; }
+  /* Narrow-screen notice. The panels are absolutely positioned at top: 60px and
+     the header is in flow, so anything added to the flow would push the header
+     down and leave the panels behind on top of it — this is fixed instead, and
+     costs the existing layout nothing. Overlap measures in from 559px wide;
+     700 keeps a margin without firing on a merely small desktop window. */
+  #narrowNote { display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 1100;
+                background: rgba(24,20,14,0.96); border-top: 1px solid #5a4a2a;
+                color: #e8d9b0; font-size: 12px; line-height: 1.45;
+                padding: 9px 12px; gap: 10px; align-items: flex-start; }
+  #narrowNote button { background: transparent; color: #b9a677; border: 1px solid #5a4a2a;
+                       border-radius: 4px; font-size: 15px; line-height: 1;
+                       padding: 3px 8px; margin-left: auto; flex: none; cursor: pointer; }
+  #narrowNote button:hover { color: #fff; border-color: #8a7440; }
+  /* The fold button exists only on a narrow screen; on a desktop it is not
+     rendered at all, so nothing about that layout changes. */
+  #markerLegend h4 .fold, #regionLegend h4 .fold { display: none; }
+
   #markerLegend h4 { margin: 0 0 6px; font-size: 11px; color: #888; font-weight: normal;
                      display: flex; justify-content: space-between; gap: 10px; align-items: center; }
   #markerLegend h4 button { background: #2f2f2f; color: #bbb; border: 1px solid #4a4a4a;
@@ -126,7 +149,7 @@
   /* Hide elements not relevant to current mode */
   body.stitched .perMap-only { display: none; }
   body:not(.stitched) .stitched-only { display: none; }
-  body.world .perMap-only, body.world .stitched-only { display: none; }
+  body.world .perMap-only, body.world .stitched-only, body.world .not-world { display: none; }
   body:not(.world) .world-only { display: none; }
 
   /* ── World view: one pane per region ── */
@@ -273,13 +296,13 @@
   .region-pane.hidden { display: none; }
 
   #regionLegend {
-    position: absolute; top: 60px; left: 10px; z-index: 700;
+    position: absolute; top: calc(var(--head-h) + 10px); left: 10px; z-index: 700;
     background: rgba(18,18,20,0.88); border: 1px solid #3a3a3a; border-radius: 6px;
     padding: 8px 10px; font-size: 12px;
     /* Narrow enough that the four route buttons wrap to two rows. Side by side
        they are wider than any region name, so the panel was being sized to
        them: a column of short names in a box twice the width it needed. */
-    width: 214px; max-height: calc(100vh - 78px); overflow-y: auto;
+    width: 214px; max-height: calc(100vh - var(--head-h) - 28px); overflow-y: auto;
     scrollbar-gutter: stable; backdrop-filter: blur(3px);
   }
   #regionLegend h4 { margin: 0 0 6px; font-size: 11px; color: #888; font-weight: normal;
@@ -325,12 +348,90 @@
   #overlapPopup button:hover { background: #3d3527; }
   #overlapPopup button.primary { background: #a8792a; color: #1a1a1a; border-color: #a8792a; }
   #overlapPopup button.primary:hover { background: #c08f36; }
+
+  /* Narrow screens last: several of the rules above are written with the
+     same specificity, so these have to come after them to win. */
+  @media (max-width: 700px) {
+    body:not(.narrow-seen) #narrowNote { display: flex; }
+    /* The zoom control sits bottom-left, exactly where the bar lands. 52px was
+       a guess at the bar's height, and the bar wraps to three lines on a narrow
+       phone — so it is measured, same treatment as the header. */
+    body:not(.narrow-seen) .leaflet-bottom.leaflet-left {
+      bottom: calc(var(--note-h, 40px) + 12px); }
+
+    #markerLegend h4 .fold, #regionLegend h4 .fold {
+      display: inline-block; background: transparent; border: 0; color: #999;
+      font-size: 12px; line-height: 1; padding: 2px 6px 2px 0; cursor: pointer; }
+    #markerLegend h4 .fold:hover, #regionLegend h4 .fold:hover { color: #fff; }
+    /* holdPanelHeight pins both widths inline so the desktop panel cannot
+       jitter as rows appear. That pin is exactly what makes the two panels
+       overlap on a phone, so it is overridden here rather than removed — it
+       still does its job at every width the desktop layout uses. */
+    /* max-content, not auto: an absolutely positioned box with width:auto is
+       shrink-to-fit, which will happily narrow itself to the space available
+       and wrap the rows. max-content is the rows' own width and nothing less,
+       so nothing wraps; max-width still keeps it inside the screen. */
+    /* border-box, and it matters: max-width bounds the *content* box by
+       default, so calc(100vw - 20px) still let 10px of padding and 1px of
+       border out each side. The panel hung 12px off the screen, which both
+       clipped its own right edge and gave the document something to overflow
+       into — with overflow:hidden that cannot be scrolled back, so the header
+       ended up shifted and cut at both ends. */
+    #markerLegend, #regionLegend { box-sizing: border-box; max-width: calc(100vw - 20px); }
+    /* REGIONS has no prose in it, so its own max-content is the region rows and
+       nothing wider. MARKERS does, hence --rows-w — plus the 22px of padding
+       and border that border-box now folds into the width. */
+    #regionLegend { width: max-content !important; }
+    #markerLegend.folded { width: max-content !important; }
+    #markerLegend:not(.folded) { width: calc(var(--rows-w, 300px) + 22px) !important; }
+    /* Below the panels rather than over them: at this width the zoom buttons
+       sit on top of the last rows of an open REGIONS. Leaflet puts its control
+       corners at z-index 1000 and the panels are at 700. */
+    .leaflet-bottom.leaflet-left { z-index: 400; }
+    /* The header wraps to four rows on a phone and every row is map you cannot
+       see. Two of them are recoverable:
+       - the stats line is only ever a count in world view; in per-map and
+         stitched it carries the map's name and messages like "no stitched
+         layout for this region yet", so it stays there.
+       - the language picker and the notice button are 115px against a 156px
+         title. They were on their own row only because margin-left:auto put
+         them last; ordering them second puts both on row one. */
+    body.world #mapInfo { display: none; }
+    header > h1 { order: 0; }
+    header > span:last-child { order: 1; }
+    header > *:not(h1):not(:last-child) { order: 2; }
+    #markerRows { width: auto !important; }
+    #markerLegend.folded > :not(h4), #regionLegend.folded > :not(h4) { display: none; }
+    #markerLegend.folded, #regionLegend.folded { max-height: none; overflow: visible; }
+    #markerLegend h4, #regionLegend h4 { margin-bottom: 0; }
+    #markerLegend:not(.folded) h4, #regionLegend:not(.folded) h4 { margin-bottom: 6px; }
+    /* An open panel takes the full width, which would bury the other one's
+       header — and with it the only way to reach it. Only one is ever open, so
+       the folded one steps aside instead of being covered; closing brings both
+       headers back. */
+    body.panel-open #markerLegend.folded,
+    body.panel-open #regionLegend.folded { display: none; }
+    /* space-between belongs to the desktop panel, where the header is only as
+       wide as its contents. Across a full phone width it flings the title to
+       one edge and the fold arrow to the other. */
+    #markerLegend h4, #regionLegend h4 { justify-content: flex-start;
+      cursor: pointer; user-select: none; -webkit-user-select: none; }
+    /* The buttons inside it are not part of the fold target. */
+    #markerLegend h4 > button:not(.fold),
+    #regionLegend h4 > button:not(.fold) { cursor: pointer; }
+    #markerLegend h4 > button:not(.fold),
+    #regionLegend h4 > button:not(.fold) { margin-left: auto; }
+  }
 </style>
 </head>
 <body>
 <header>
   <h1>OMORI Map Guide</h1>
-  <label><span data-i18n="region">Region</span>
+  <!-- Per-Map and Stitched both need it; World does not — its regions are the
+       checkboxes in the REGIONS panel, and loadRegion() has no world branch, so
+       changing this there does nothing at all. Hidden rather than removed: the
+       options are also the lookup table for region display names. -->
+  <label class="not-world"><span data-i18n="region">Region</span>
     <select id="regionSelect"></select>
   </label>
   <span class="view-toggle">
@@ -355,7 +456,6 @@
   <span style="margin-left:auto;display:flex;align-items:center;gap:12px;font-size:13px">
     <span class="lang-pick"><button type="button" data-lang="zh">中文</button><button type="button" data-lang="en">EN</button></span>
     <button id="introBtn" data-i18n-title="introBtnTitle" data-i18n="introBtn">ⓘ</button>
-    <a href="stitcher_all.html" style="color:#80c0ff;font-weight:bold">★ Stitcher ↗</a>
   </span>
 </header>
 <div id="map"></div>
@@ -363,6 +463,10 @@
      Hover would have been fewer clicks and would also have sat in front of
      whatever you were looking at the whole time. -->
 <div id="mapPeek"></div>
+<div id="narrowNote">
+  <span data-i18n="narrowNote"></span>
+  <button id="narrowClose" data-i18n-title="narrowClose">&times;</button>
+</div>
 <!-- Say the limits out loud rather than letting people find them one by one. -->
 <div id="introBack">
   <div id="introBox">
@@ -396,7 +500,7 @@
   </div>
 </div>
 <div id="markerLegend">
-  <h4><span data-i18n="markers">MARKERS</span> <button id="clearCollected" style="display:none" data-i18n="clear">clear</button></h4>
+  <h4><button class="fold" data-i18n-title="fold">▾</button><span data-i18n="markers">MARKERS</span> <button id="clearCollected" style="display:none" data-i18n="clear">clear</button></h4>
   <div id="progRow">
     <span class="lbl" data-i18n="progress"></span>
     <button id="progExport" data-i18n="progExport"></button>
@@ -409,7 +513,7 @@
   <div class="credits" data-i18n-html="credits"></div>
 </div>
 <div id="regionLegend" class="world-only">
-  <h4><span data-i18n="regions">REGIONS</span> <button id="regionReset" data-i18n="reset">reset</button></h4>
+  <h4><button class="fold" data-i18n-title="fold">▾</button><span data-i18n="regions">REGIONS</span> <button id="regionReset" data-i18n="reset">reset</button></h4>
   <div id="routeMode"><span data-i18n="route">Route:</span>
     <select id="routeModeSel">
       <option value="sunny">SUNNY</option>
@@ -674,6 +778,10 @@ const UI = {
   markers:     { en: 'MARKERS',           zh: '标记' },
   clear:       { en: 'clear',             zh: '清除' },
   regions:     { en: 'REGIONS',           zh: '区域' },
+  narrowNote:  { en: 'Built for a desktop browser. Both panels start folded — tap ▸ on either to open it. A proper phone layout is on the way.',
+                 zh: '这个图集是按电脑浏览器做的。两个面板默认收起 —— 点标题上的 ▸ 展开。完整的手机版正在做。' },
+  narrowClose: { en: 'Dismiss',            zh: '不再显示' },
+  fold:        { en: 'Fold this panel away', zh: '收起这个面板' },
   reset:       { en: 'reset',             zh: '重置' },
   route:       { en: 'Route:',            zh: '路线：' },
   achievements: { en: 'ACHIEVEMENTS — once each', zh: '成就相关 —— 每个只需一次' },
@@ -1672,6 +1780,11 @@ function holdPanelHeight(rows) {
   // The panel is set to that too, not left to shrink-wrap: the credits are one
   // long sentence and would otherwise decide how wide the whole thing is.
   legend.style.width = panelSizes[key].w + 'px';
+  // The narrow layout wants the same number and cannot measure it from CSS:
+  // max-content there is decided by the credits, which is how the panel ended
+  // up spanning the screen with the rows stranded on the left. Published as a
+  // property so the media query can use exactly what the desktop uses.
+  document.documentElement.style.setProperty('--rows-w', panelSizes[key].w + 'px');
 }
 let measuringPanel = false;
 
@@ -1838,7 +1951,7 @@ function renderRoutesOverlay() {
 // Order matters: the first region to claim a map keeps it. Snowglobe Mountain
 // comes before Otherworld because Map132 is listed by both — Otherworld holds
 // the uncut igloo, Snowglobe Mountain the four rooms cut out of it, and it is
-// the rooms that are actually drawn. Deeper Well comes before Inside Humphrey
+// the rooms that are actually drawn. Deeper Well comes before Humphrey
 // for the same reason: ALCOVES II (437) is a reward room both open onto, Deeper
 // Well keeps it, and that is why Humphrey shows 16 of its 31 watermelons here.
 const ALL_REGIONS = ['faraway', 'vast_forest', 'orange_oasis', 'snowglobe_mountain',
@@ -1862,7 +1975,7 @@ const REGION_NAMES = {
   forest_playground:  { en: 'Forest Playground',  zh: '森林游乐场' },
   snowglobe_mountain: { en: 'Snowglobe Mountain', zh: '雪花球山' },
   white_space:        { en: 'White Space',        zh: '白色空间' },
-  humphrey:           { en: 'Inside Humphrey',    zh: '汉弗莱体内' },
+  humphrey:           { en: 'Humphrey',           zh: '汉弗莱' },
 };
 const regionLabel = r => (REGION_NAMES[r] || {})[LANG] || (REGION_NAMES[r] || {}).en || r;
 
@@ -2256,7 +2369,13 @@ async function loadWorld() {
 
   worldState = { bbox, byRegion, panes, layout, melons, regionOf, metaAll, placed,
                  decos, drawnDecos, drawOrder, visibleIds: new Set() };
-  leafletMap.fitBounds([[0, 0], [bbox.ch, bbox.cw]]);
+  // Not animated: fitVisibleWorld reframes this a tick later, and an animated
+  // zoom still in flight ends by snapping the view to *its* target, throwing
+  // away the reframe. That is a race — at some widths the animation finished
+  // first and the reframe stood, at others it landed last and the world came
+  // back zoomed out to the whole canvas. This is only a floor anyway, so that
+  // there is a sane view even if the reframe finds nothing visible.
+  leafletMap.fitBounds([[0, 0], [bbox.ch, bbox.cw]], { animate: false });
   document.getElementById('mapInfo').textContent =
     `${placed.length} ${t('maps')} · ${bbox.cw}×${bbox.ch}px · ` +
     `${Object.values(byRegion).filter(v => v.length).length} ${t('regionsWord')}` +
@@ -2307,12 +2426,27 @@ function mapImageUrl(id, m) {
 // too, fading outward, so you can see where the region connects without the
 // neighbour's whole sprawl arriving with it. Vast Forest's are OTHERWORLD
 // LADDER, PYREFLY FOREST, NORTH LAKE and TRAIN STATION.
+// The panels hang off the header and the map fills what is left, so both need
+// its height. Writing it to a custom property keeps that number in one place
+// instead of the three hard-coded 50/60/78s it used to be spelled as.
+function syncHeadHeight() {
+  const h = document.querySelector('header').offsetHeight;
+  const root = document.documentElement;
+  if (root.style.getPropertyValue('--head-h') === h + 'px') return;
+  root.style.setProperty('--head-h', h + 'px');
+  if (leafletMap) leafletMap.invalidateSize();
+}
+
 // fitBounds on the whole canvas frames all twelve regions' worth of empty
 // space — with the default two selected that is a thumbnail in the corner of a
 // 24704x36448 sheet. Frame what is actually on screen instead. Bounds are
 // rebuilt the same way the overlays were, so the two cannot drift apart.
 function fitVisibleWorld(opts) {
   if (!worldState) return;
+  // ResizeObserver fires at the end of a frame and this runs from a timeout;
+  // which lands first is not defined, so the height is settled here rather
+  // than framed against a stale one.
+  syncHeadHeight();
   const { placed, bbox, visibleIds } = worldState;
   let top = Infinity, left = Infinity, bottom = -Infinity, right = -Infinity;
   for (const it of placed) {
@@ -2754,6 +2888,58 @@ async function init() {
   // region is still loaded first so the state matches what clicking World by
   // hand produces, and a #region link still opens that region per-map, so
   // links shared before this keep working.
+  // Both panels start folded on a narrow screen. Unfolded they cover the map
+  // outright — 236px + 303px of panel against a 390px phone — which is what
+  // made the atlas unusable there rather than merely cramped. Opening one
+  // folds the other, so the two can never be on screen together at a width
+  // that cannot hold them.
+  syncHeadHeight();
+  // Same reason as the header: the notice wraps, so the zoom control's
+  // clearance above it cannot be a constant.
+  const note = document.getElementById('narrowNote');
+  const syncNoteHeight = () => document.documentElement.style.setProperty(
+    '--note-h', note.offsetHeight + 'px');
+  syncNoteHeight();
+  new ResizeObserver(syncNoteHeight).observe(note);
+  // The header grows after this point, not before it: loadWorld writes the map
+  // count into it and that wraps another line. Watching it is the only way to
+  // catch every cause — a language switch and a mode switch reflow it too.
+  new ResizeObserver(syncHeadHeight).observe(document.querySelector('header'));
+
+  const narrowMQ = window.matchMedia('(max-width: 700px)');
+  const panels = ['markerLegend', 'regionLegend'].map(id => document.getElementById(id));
+  const setFolded = (el, folded) => {
+    el.classList.toggle('folded', folded);
+    const b = el.querySelector('h4 .fold');
+    if (b) b.textContent = folded ? '\u25b8' : '\u25be';
+  };
+  const syncPanelOpen = () => document.body.classList.toggle('panel-open',
+    narrowMQ.matches && panels.some(el => !el.classList.contains('folded')));
+  const applyNarrow = narrow => { for (const el of panels) setFolded(el, narrow); syncPanelOpen(); };
+  applyNarrow(narrowMQ.matches);
+  narrowMQ.addEventListener('change', e => applyNarrow(e.matches));
+  for (const el of panels) {
+    // The whole title bar is the target, not just the triangle — on a phone
+    // that arrow is a 12px tap. The listener sits on the h4 and the arrow's own
+    // clicks bubble to it, so there is one handler rather than two. `reset` and
+    // `clear` live in the same bar and keep doing their own job.
+    el.querySelector('h4').addEventListener('click', ev => {
+      if (!narrowMQ.matches) return;          // on a desktop the bar is a label
+      if (ev.target.closest('button:not(.fold)')) return;
+      const opening = el.classList.contains('folded');
+      setFolded(el, !opening);
+      if (opening) for (const other of panels) if (other !== el) setFolded(other, true);
+      syncPanelOpen();
+    });
+  }
+
+  const NARROW_KEY = 'omori-atlas-narrow-v1';
+  if (store.get(NARROW_KEY) === 'seen') document.body.classList.add('narrow-seen');
+  document.getElementById('narrowClose').addEventListener('click', () => {
+    store.set(NARROW_KEY, 'seen');
+    document.body.classList.add('narrow-seen');
+  });
+
   const hash = location.hash.replace('#', '');
   const region = REGION_DEFAULTS[hash] ? hash : DEFAULT_WORLD_REGION;
   document.getElementById('regionSelect').value = region;
