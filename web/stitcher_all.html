@@ -1543,7 +1543,15 @@ function renderLayerPanel() {
       `title="Focus: this region in colour on top, the rest grey">◉</button>` +
       `<span class="nm">${regionLabel(r)}</span><span class="ct">${counts[r]}</span>`;
     row.querySelector('[data-act=eye]').onclick = () => {
-      if (hiddenRegions.has(r)) hiddenRegions.delete(r); else hiddenRegions.add(r);
+      if (hiddenRegions.has(r)) hiddenRegions.delete(r);
+      else {
+        hiddenRegions.add(r);
+        // Selection does not survive being hidden: a map still marked selected
+        // behind a hidden layer would join the next drag unseen.
+        for (const el of world.querySelectorAll('.placed-map.selected')) {
+          if ((REGION_OF_MAP[el.dataset.id] || '') === r) el.classList.remove('selected');
+        }
+      }
       applyLayers(); renderLayerPanel();
     };
     row.querySelector('[data-act=focus]').onclick = () => {
@@ -2209,9 +2217,14 @@ function setupDrag(el, id) {
       // If part of an imported group, select whole group (unless Alt to break)
       const groupId = placed[id].groupId;
       if (groupId && !e.altKey) {
-        Object.keys(placed).filter(gid => placed[gid].groupId === groupId).forEach(gid => {
-          world.querySelector(`.placed-map[data-id="${gid}"]`)?.classList.add('selected');
-        });
+        // Same rule as the marquee: a hidden member of the group stays out of
+        // the selection, so it cannot be dragged from behind a hidden layer.
+        Object.keys(placed)
+          .filter(gid => placed[gid].groupId === groupId
+                      && !hiddenRegions.has(REGION_OF_MAP[gid] || ''))
+          .forEach(gid => {
+            world.querySelector(`.placed-map[data-id="${gid}"]`)?.classList.add('selected');
+          });
       } else {
         el.classList.add('selected');
       }
@@ -2339,7 +2352,12 @@ function redo() {
 // A group = a set of placed maps that share the same `groupId`. Selecting
 // any member auto-selects all members on plain click (Alt to break out).
 function selectedMapIds() {
-  return [...world.querySelectorAll('.placed-map.selected')].map(n => n.dataset.id);
+  // The last line of defence: whatever put `.selected` on a node, a map inside a
+  // hidden layer is never returned. Nudge, group, ungroup and delete all come
+  // through here, so none of them can reach something off screen.
+  return [...world.querySelectorAll('.placed-map.selected')]
+    .map(n => n.dataset.id)
+    .filter(id => !hiddenRegions.has(REGION_OF_MAP[id] || ''));
 }
 function groupSelected() {
   const ids = selectedMapIds();
@@ -2440,6 +2458,11 @@ function setupViewportPan() {
     for (const id in placed) {
       const m = mapMeta[id]; if (!m) continue;
       const el = els[id]; if (!el) continue;
+      // A hidden layer is still in `placed` with a full-size DOM node, so this
+      // hit test used to select maps nobody could see — drag once and a whole
+      // hidden region moved with the selection, silently. Nothing invisible can
+      // be picked up.
+      if (hiddenRegions.has(REGION_OF_MAP[id] || '')) { el.classList.remove('selected'); continue; }
       const p = placed[id];
       const mw = m.width * TILE_PX, mh = m.height * TILE_PX;
       const hit = !(p.x+mw < wx0 || p.x > wx1 || p.y+mh < wy0 || p.y > wy1);
@@ -2459,6 +2482,8 @@ function setupViewportPan() {
     document.querySelectorAll('.route-dot').forEach(dot => {
       const ri = +dot.dataset.routeIdx, pi = +dot.dataset.ptIdx;
       const r = routes[ri]; if (!r) return;
+      const reg = regionOfPoint(r.pts[pi]);
+      if (reg !== null && hiddenRegions.has(reg)) { dot.classList.remove('selected'); return; }
       const px = r.pts[pi].x, py = r.pts[pi].y;
       const hit = px >= wx0 && px <= wx1 && py >= wy0 && py <= wy1;
       if (hit) dot.classList.add('selected');
