@@ -96,6 +96,14 @@
                          z-index: 100; }
   .placed-map.selected.grouped { outline-color: #6ee7ff;
                                  box-shadow: 0 0 calc(12px / var(--zoom, 1)) rgba(110,231,255,0.7); }
+  /* A map with no group moves alone while its neighbours move as a region, and
+     until now the two looked identical unless the map happened to be selected
+     — which is how three whole regions came apart one map at a time without it
+     ever being visible. Being in a group is the normal state, so the exception
+     is what gets marked. */
+  .placed-map.ungrouped { outline: calc(2px / var(--zoom, 1)) dashed rgba(255,176,32,0.85);
+                          outline-offset: calc(-1px / var(--zoom, 1)); }
+  .placed-map.selected.ungrouped { outline-style: solid; }
   .marquee { position: absolute; pointer-events: none;
              border: 1.5px dashed #80c0ff;
              background: rgba(128,192,255,0.10);
@@ -281,7 +289,7 @@
     <span class="info">
       zoom: <span id="zoomLabel">100%</span>
       &nbsp;|&nbsp;
-      placed: <span id="placedLabel">0/0</span>
+      placed: <span id="placedLabel">0/0</span><span id="ungroupedLabel" style="color:#ffb020;margin-left:8px"></span>
       <span id="selInfo" style="color:#ffeb3b;margin-left:8px"></span>
       &nbsp;|&nbsp;
       <span style="color:#666">drag · ←↑↓→ nudge · [ / ] back/front · Shift-click multi · Delete</span>
@@ -1911,7 +1919,7 @@ function renderPlaced() {
     const cropH = cr.h * TILE_PX;
     const cropOffsetY = cr.y * TILE_PX;
     const div = document.createElement('div');
-    div.className = 'placed-map' + (pos.groupId ? ' grouped' : '');
+    div.className = 'placed-map' + (pos.groupId ? ' grouped' : ' ungrouped');
     div.style.left = pos.x + 'px';
     div.style.top = pos.y + 'px';
     div.style.width = w + 'px';
@@ -2609,14 +2617,37 @@ function resetView() {
 
 function updatePlacedLabel() {
   $('placedLabel').textContent = `${Object.keys(placed).length}/${MAP_IDS.length}`;
+  // Silent when every map is in a group, which is the state to be in.
+  const ungrouped = Object.values(placed).filter(p => !p.groupId).length;
+  $('ungroupedLabel').textContent = ungrouped ? `${ungrouped} ungrouped` : '';
   renderLayerPanel();
 }
 
+// Identity for the import filter: where a thing sits, not which object it is.
+// Two imports of the same layout make different objects in the same place.
+const routeGeomKey = r => (r.pts || [])
+  .map(p => `${Math.round(p.x)},${Math.round(p.y)}`).sort().join('|');
+const decoKey = d => `${d.kind}|${Math.round(d.x)},${Math.round(d.y)}|${d.scale}|${d.flip}`;
+
+// A route straight off the + Route button and never touched: two dots on one
+// horizontal line, exactly the 120px apart addRoute() puts them, neither one
+// snapped. Nothing else can look like that, and one of these has ridden along
+// in almost every export. A route that was actually dragged or snapped is kept
+// even with a loose end — that may well be deliberate.
+function isUntouchedNewRoute(r) {
+  const pts = r.pts || [];
+  return pts.length === 2 && pts[0].y === pts[1].y
+    && Math.abs(pts[1].x - pts[0].x) === 120
+    && !pts[0].snap && !pts[1].snap;
+}
+
 function saveLayout() {
+  const dropped = routes.filter(isUntouchedNewRoute).length;
+  if (dropped) console.log(`Dropped ${dropped} untouched new route(s) from the export.`);
   const data = {
     version: 2,
     layout: placed,
-    routes,  // route annotations (dots + dashed lines)
+    routes: routes.filter(r => !isUntouchedNewRoute(r)),
     decorations,  // loose scenery — empty on layouts saved before it existed
     maps: Object.fromEntries(
       Object.keys(placed).map(id => [id, mapMeta[id]])
@@ -2662,13 +2693,29 @@ function loadLayout(e) {
           sn.oy = p.y - mapPos.y;
         }
       }
-      routes.push(...data.routes);
+      // Append what is new, not everything: importing a layout on top of
+      // itself doubled every route, and the copies sit exactly on top of the
+      // originals so nothing looks wrong until something is deleted twice over.
+      // Composing two different regions still works — their geometry differs.
+      const seenR = new Set(routes.map(routeGeomKey));
+      let dupR = 0;
+      for (const r of data.routes) {
+        const k = routeGeomKey(r);
+        if (seenR.has(k)) { dupR++; continue; }
+        seenR.add(k); routes.push(r);
+      }
+      if (dupR) console.log(`Skipped ${dupR} route(s) already on the board.`);
     }
     // uids are handles for this session's DOM only, so they are reissued on
     // import — two layouts loaded in a row would otherwise both claim uid 1.
+    const seenD = new Set(decorations.map(decoKey));
+    let dupD = 0;
     for (const d of (data.decorations || [])) {
-      decorations.push({ scale: 1, flip: false, ...d, uid: ++decoSeq });
+      const item = { scale: 1, flip: false, ...d, uid: ++decoSeq };
+      if (seenD.has(decoKey(item))) { dupD++; decoSeq--; continue; }
+      seenD.add(decoKey(item)); decorations.push(item);
     }
+    if (dupD) console.log(`Skipped ${dupD} decoration(s) already on the board.`);
     renderPlaced();
     renderThumbs();
     renderRoutes();
