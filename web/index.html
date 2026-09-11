@@ -1294,8 +1294,13 @@ function mapScale() {
 // pixels and do not scale themselves, which is why this has to be recomputed
 // whenever the zoom changes.
 function artHeight(cfg, art) {
-  if (!art) return cfg.size;
-  return Math.max(cfg.size, Math.round(art.h * mapScale()));
+  // No sprite to measure — an emoji pin marks a tile, so it is sized as one.
+  // It used to be pinned to cfg.size at every zoom, which reads as the pin
+  // shrinking: zoom into a bench and the bench grows while the ❗ stays 26px,
+  // until it is a speck on a piece of furniture. The floor is what cfg.size is
+  // for, and it still applies at the other end.
+  const h = art ? art.h : TILE_PX;
+  return Math.max(cfg.size, Math.round(h * mapScale()));
 }
 
 function renderMarkers() {
@@ -1563,7 +1568,7 @@ function renderQuestMarkers(f, shown) {
       const [lat, lng] = f.at(g.mapId, g.x, g.y);
       const mk = pinMarker(lat, lng, cfg,
         `<b>${questName(q)}</b><br>${t('qGiver')}: ${g.evName} — ${mapName(g.mapId)}`,
-        done ? 'done' : '').addTo(leafletMap);
+        done ? 'done' : '', null, null, artHeight(cfg, null)).addTo(leafletMap);
       mk.bindPopup(questBubble(q, g, key));
       melonLayers.push(mk);
       shown.sidequest = (shown.sidequest || 0) + 1;
@@ -1585,7 +1590,7 @@ function renderQuestMarkers(f, shown) {
         `<b>${st.evName || '?'}</b><br>` +
         (q.ordered ? `${t('qStepNo')(i + 1, q.steps.length)} ${t('qStepOf')} ` : `${t('qStepOf')} `) +
         `<b>${questName(q)}</b> — ${mapName(st.mapId)}`,
-        'quest-step', null, null, Math.round(cfg.size * 0.7),
+        'quest-step', null, null, Math.round(artHeight(cfg, null) * 0.7),
         q.ordered ? i + 1 : null).addTo(leafletMap);
       melonLayers.push(step);
     });
