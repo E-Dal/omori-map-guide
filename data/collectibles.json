@@ -3662,7 +3662,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u5728\u5de8\u5927\u7684\u98ce\u8f66\u4e4b\u95f4"
+   "clue": {
+    "zh": "\u5728\u5de8\u5927\u7684\u98ce\u8f66\u4e4b\u95f4",
+    "en": "Between giant pinwheels"
+   }
   },
   {
    "layer": "mirror",
@@ -4079,7 +4082,10 @@
     "h": 18,
     "artFit": "rule"
    },
-   "clue": "\u5728\u5730\u56fe\u7684\u5c3d\u5934"
+   "clue": {
+    "zh": "\u5728\u5730\u56fe\u7684\u5c3d\u5934",
+    "en": "At the end of a map"
+   }
   },
   {
    "layer": "quest",
@@ -4543,7 +4549,10 @@
    "requires": [
     "Day0DW - Capt. Spaceboy"
    ],
-   "clue": "\u5728\u6e7f\u6795\u5934\u5e95\u4e0b"
+   "clue": {
+    "zh": "\u5728\u6e7f\u6795\u5934\u5e95\u4e0b",
+    "en": "Underneath a wet pillow"
+   }
   },
   {
    "layer": "quest",
@@ -5951,7 +5960,10 @@
     "h": 89,
     "artFit": "rule"
    },
-   "clue": "\u5728\u8ff7\u5931\u7684\u711a\u706b\u4e2d"
+   "clue": {
+    "zh": "\u5728\u8ff7\u5931\u7684\u711a\u706b\u4e2d",
+    "en": "In a lost pyre\u2019s flame"
+   }
   },
   {
    "layer": "mechanism",
@@ -6502,7 +6514,10 @@
     "h": 32,
     "artFit": "rule"
    },
-   "clue": "\u5728\u6846\u7740\u9762\u5bb9\u7684\u753b\u5eca\u4e2d"
+   "clue": {
+    "zh": "\u5728\u6846\u7740\u9762\u5bb9\u7684\u753b\u5eca\u4e2d",
+    "en": "In a hall of framed faces"
+   }
   },
   {
    "layer": "giver",
@@ -6811,7 +6826,10 @@
     "h": 32,
     "artFit": "rule"
    },
-   "clue": "\u56f0\u5728\u7c89\u8272\u7684\u7b3c\u5b50\u4e2d"
+   "clue": {
+    "zh": "\u56f0\u5728\u7c89\u8272\u7684\u7b3c\u5b50\u4e2d",
+    "en": "Trapped in a pink cage"
+   }
   },
   {
    "layer": "mirror",
@@ -6884,7 +6902,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u8eba\u5728\u9ed1\u6697\u7684\u5730\u7262\u4e2d"
+   "clue": {
+    "zh": "\u8eba\u5728\u9ed1\u6697\u7684\u5730\u7262\u4e2d",
+    "en": "Lying in a dark cell"
+   }
   },
   {
    "layer": "telescope",
@@ -7098,7 +7119,10 @@
     "h": 29,
     "artFit": "rule"
    },
-   "clue": "\u5728\u5927\u821e\u53f0\u7684\u4e0b\u65b9\u6df1\u5904"
+   "clue": {
+    "zh": "\u5728\u5927\u821e\u53f0\u7684\u4e0b\u65b9\u6df1\u5904",
+    "en": "Far below a big stage"
+   }
   },
   {
    "layer": "hangman",
@@ -7112,7 +7136,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u4e0e\u9752\u86d9\u5171\u5ea6\u65f6\u5149"
+   "clue": {
+    "zh": "\u4e0e\u9752\u86d9\u5171\u5ea6\u65f6\u5149",
+    "en": "Spending time with a frog"
+   }
   },
   {
    "layer": "cooler",
@@ -7394,7 +7421,10 @@
     "h": 32,
     "artFit": "rule"
    },
-   "clue": "\u5728\u62bd\u6c34\u9a6c\u6876\u91cc\u9762"
+   "clue": {
+    "zh": "\u5728\u62bd\u6c34\u9a6c\u6876\u91cc\u9762",
+    "en": "In a water closet"
+   }
   },
   {
    "layer": "hangman",
@@ -7417,7 +7447,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u5728\u5c0f\u5c0f\u7684\u4f1a\u52a8\u7684\u623f\u95f4\u91cc"
+   "clue": {
+    "zh": "\u5728\u5c0f\u5c0f\u7684\u4f1a\u52a8\u7684\u623f\u95f4\u91cc",
+    "en": "In a small moving room"
+   }
   },
   {
    "layer": "clams",
@@ -7491,7 +7524,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u5728\u8f6e\u76d8\u8d4c\u7684\u9644\u8fd1"
+   "clue": {
+    "zh": "\u5728\u8f6e\u76d8\u8d4c\u7684\u9644\u8fd1",
+    "en": "Near a game of roulette"
+   }
   },
   {
    "layer": "giver",
@@ -7924,7 +7960,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u6df7\u5728\u522b\u7684O\u4e4b\u4e2d"
+   "clue": {
+    "zh": "\u6df7\u5728\u522b\u7684O\u4e4b\u4e2d",
+    "en": "Amongst other O's"
+   }
   },
   {
    "layer": "giver",
@@ -7986,7 +8025,10 @@
     "h": 32,
     "artFit": "rule"
    },
-   "clue": "\u8d8a\u8fc7\u516c\u8def\u7684\u5c3d\u5934"
+   "clue": {
+    "zh": "\u8d8a\u8fc7\u516c\u8def\u7684\u5c3d\u5934",
+    "en": "Past the end of the road"
+   }
   },
   {
    "layer": "picnic",
@@ -8026,7 +8068,10 @@
     "h": 32,
     "artFit": "rule"
    },
-   "clue": "\u5728\u6d3b\u8d1d\u58f3\u7684\u4f53\u5185"
+   "clue": {
+    "zh": "\u5728\u6d3b\u8d1d\u58f3\u7684\u4f53\u5185",
+    "en": "Within a live shell"
+   }
   },
   {
    "layer": "mirror",
@@ -8648,7 +8693,10 @@
     "h": 29,
     "artFit": "rule"
    },
-   "clue": "\u5728\u5de8\u5927\u7684\u753b\u6846\u5185"
+   "clue": {
+    "zh": "\u5728\u5de8\u5927\u7684\u753b\u6846\u5185",
+    "en": "Within a large frame"
+   }
   },
   {
    "layer": "cooler",
@@ -8809,7 +8857,10 @@
    "requires": [
     "SGL_FinalBoss \u2265 17"
    ],
-   "clue": "\u5728\u9cb8\u9c7c\u7684\u809a\u5b50\u91cc"
+   "clue": {
+    "zh": "\u5728\u9cb8\u9c7c\u7684\u809a\u5b50\u91cc",
+    "en": "In the gut of a whale"
+   }
   },
   {
    "layer": "hangman",
@@ -8834,7 +8885,10 @@
    "requires": [
     "SGL_FinalBoss \u2265 17"
    ],
-   "clue": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d"
+   "clue": {
+    "zh": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d",
+    "en": "In a large bubbly tank"
+   }
   },
   {
    "layer": "mechanism",
@@ -8928,7 +8982,10 @@
     "h": 32,
     "artFit": "rule"
    },
-   "clue": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d"
+   "clue": {
+    "zh": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d",
+    "en": "In a large bubbly tank"
+   }
   },
   {
    "layer": "mechanism",
@@ -9042,7 +9099,10 @@
     "h": 32,
     "artFit": "rule"
    },
-   "clue": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d"
+   "clue": {
+    "zh": "\u5728\u6709\u6ce1\u6ce1\u7684\u5927\u6c34\u7bb1\u4e2d",
+    "en": "In a large bubbly tank"
+   }
   },
   {
    "layer": "mechanism",
@@ -9293,7 +9353,10 @@
     "h": 28,
     "artFit": "rule"
    },
-   "clue": "\u88ab\u7c98\u6db2\u6240\u5305\u56f4"
+   "clue": {
+    "zh": "\u88ab\u7c98\u6db2\u6240\u5305\u56f4",
+    "en": "Surrounded by goo"
+   }
   },
   {
    "layer": "mechanism",
@@ -9559,7 +9622,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u88ab\u94c1\u5236\u673a\u5173\u6355\u83b7"
+   "clue": {
+    "zh": "\u88ab\u94c1\u5236\u673a\u5173\u6355\u83b7",
+    "en": "Captured in a steel trap"
+   }
   },
   {
    "layer": "mechanism",
@@ -9829,7 +9895,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u5728\u6728\u677f\u7684\u5c3d\u5934"
+   "clue": {
+    "zh": "\u5728\u6728\u677f\u7684\u5c3d\u5934",
+    "en": "At the end of a plank"
+   }
   },
   {
    "layer": "skill",
@@ -10938,7 +11007,10 @@
     "h": 32,
     "artFit": "rule"
    },
-   "clue": "\u5728\u62bd\u6c34\u9a6c\u6876\u91cc\u9762"
+   "clue": {
+    "zh": "\u5728\u62bd\u6c34\u9a6c\u6876\u91cc\u9762",
+    "en": "In a water closet"
+   }
   },
   {
    "layer": "hangman",
@@ -10961,7 +11033,10 @@
    "requires": [
     "Day0DW - Basil is Missing"
    ],
-   "clue": "\u5728\u5c0f\u5c0f\u7684\u4f1a\u52a8\u7684\u623f\u95f4\u91cc"
+   "clue": {
+    "zh": "\u5728\u5c0f\u5c0f\u7684\u4f1a\u52a8\u7684\u623f\u95f4\u91cc",
+    "en": "In a small moving room"
+   }
   },
   {
    "layer": "clams",
@@ -11558,7 +11633,10 @@
     "Blackletter A"
    ],
    "placedFrom": "clue",
-   "clue": "\u5728\u6811\u6869\u65c1\u8fb9\u7684\u8349\u4e1b\u4e2d"
+   "clue": {
+    "zh": "\u5728\u6811\u6869\u65c1\u8fb9\u7684\u8349\u4e1b\u4e2d",
+    "en": "In the grass near a stump"
+   }
   },
   {
    "layer": "hangman",
@@ -11574,7 +11652,10 @@
     "Blackletter B"
    ],
    "placedFrom": "clue",
-   "clue": "\u5728\u4e00\u5ea7\u82e5\u9690\u82e5\u73b0\u7684\u8001\u6865\u4e0a"
+   "clue": {
+    "zh": "\u5728\u4e00\u5ea7\u82e5\u9690\u82e5\u73b0\u7684\u8001\u6865\u4e0a",
+    "en": "On a shrouded old bridge"
+   }
   },
   {
    "layer": "hangman",
@@ -11590,7 +11671,10 @@
     "Blackletter D"
    ],
    "placedFrom": "clue",
-   "clue": "\u5728\u5e9f\u5f03\u7684\u5bb9\u5668\u9644\u8fd1"
+   "clue": {
+    "zh": "\u5728\u5e9f\u5f03\u7684\u5bb9\u5668\u9644\u8fd1",
+    "en": "Near a castoff cartridge"
+   }
   },
   {
    "layer": "hangman",
@@ -11606,7 +11690,10 @@
     "Blackletter G"
    ],
    "placedFrom": "clue",
-   "clue": "\u5728\u6d3b\u677f\u95e8\u5e95\u4e0b"
+   "clue": {
+    "zh": "\u5728\u6d3b\u677f\u95e8\u5e95\u4e0b",
+    "en": "Beneath a trap door"
+   }
   },
   {
    "layer": "hangman",
@@ -11622,7 +11709,10 @@
     "Blackletter Y"
    ],
    "placedFrom": "clue",
-   "clue": "\u5728\u767d\u96ea\u7684\u539f\u91ce\u4e2d"
+   "clue": {
+    "zh": "\u5728\u767d\u96ea\u7684\u539f\u91ce\u4e2d",
+    "en": "In a field of white snow"
+   }
   }
  ]
 }

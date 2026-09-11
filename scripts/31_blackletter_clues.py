@@ -60,6 +60,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
 GAME = (Path.home() / 'Library/Application Support/Steam/steamapps/common/OMORI'
         / 'OMORI.app/Contents/Resources/app.nw')
+# The English build, already decrypted. Same notetags, English text — the
+# clues are the one thing this atlas shows that had no English at all.
+DUMP = Path('/Users/vicky/Documents/scripts/OMORI/omori_data_decrypted')
 KEY = _keys.aubrey_key()
 
 # letter -> (map id, event id, event name). See the table in the docstring for
@@ -79,10 +82,10 @@ def decrypt_json(path):
     return json.loads(cipher.decrypt(raw[16:]).decode('utf-8'))
 
 
-def clues():
-    """letter -> the game's hint text."""
+def _clues_from(items):
+    """letter -> hint text, out of one build's Items list."""
     out = {}
-    for item in decrypt_json(GAME / 'data/Items.KEL'):
+    for item in items:
         if not item:
             continue
         note = item.get('note') or ''
@@ -91,6 +94,31 @@ def clues():
             continue
         clue = re.search(r'<BlackLetterClue:\s*(.*?)>', note)
         out[letter.group(1)] = (clue.group(1).strip() if clue else '')
+    return out
+
+
+def clues():
+    """letter -> {'zh': …, 'en': …}.
+
+    Both builds carry the notetag — an earlier note here claimed the English
+    dump had none, which is simply wrong: Items.json has all 26, reading
+    `<BlackLetterClue: In the grass near a stump>` where the installed Chinese
+    build reads 在树桩旁边的草丛中. The atlas showed Chinese to English readers
+    for want of asking the other file.
+    """
+    zh = _clues_from(decrypt_json(GAME / 'data/Items.KEL'))
+    en = {}
+    dump = DUMP / 'Items.json'
+    if dump.exists():
+        en = _clues_from(json.loads(dump.read_text()))
+    else:
+        print(f'  ⚠ no {dump} — English clues will be missing')
+    letters = sorted(set(zh) | set(en))
+    out = {}
+    for k in letters:
+        out[k] = {'zh': zh.get(k, ''), 'en': en.get(k, '')}
+        if not out[k]['zh'] or not out[k]['en']:
+            print(f'  ⚠ {k}: zh={out[k]["zh"]!r} en={out[k]["en"]!r}')
     return out
 
 
@@ -147,7 +175,8 @@ def main():
             'placedFrom': 'clue',
         })
         added += 1
-        print(f'  + {letter}: map{map_id} ev{ev_id} — {hints.get(letter, "(no clue)")}')
+        h = hints.get(letter) or {}
+        print(f'  + {letter}: map{map_id} ev{ev_id} — {h.get("en") or h.get("zh") or "(no clue)"}')
 
     # A letter can own more than one point — T is on four maps, and a sliced
     # sub-map carries a copy of its parent's — so count letters, not points.
@@ -156,8 +185,9 @@ def main():
         if p['layer'] != 'hangman' or not p.get('letter'):
             continue
         clue = hints.get(p['letter'])
-        if clue:
-            p['clue'] = clue
+        if clue and (clue.get('zh') or clue.get('en')):
+            # Both languages, keyed the way index.html keys everything else.
+            p['clue'] = {k: v for k, v in clue.items() if v}
             tagged.add(p['letter'])
         else:
             p.pop('clue', None)

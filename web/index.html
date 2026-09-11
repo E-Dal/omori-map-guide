@@ -947,8 +947,8 @@ const itemName = n => (LANG === 'zh' && zhNames[n]) || n;
 const questName = q => (q.name[LANG] || q.name.en);
 
 // ── First-visit notice ────────────────────────────────────────────────────
-// The rest of the UI is English, but the HANGMAN clues ship in Chinese and so
-// does half the audience, so this one panel is bilingual. Only six strings, so
+// Half the audience reads Chinese, so this one panel is bilingual too. Only
+// six strings, so
 // a table beats duplicating the markup; the language is picked from the
 // browser and remembered separately from whether the notice was dismissed.
 const INTRO_TEXT = {
@@ -1219,13 +1219,21 @@ function requiresNote(p) {
 }
 
 // The game's own hint for a HANGMAN key, straight off the item's
-// <BlackLetterClue> notetag — see 31_blackletter_clues.py. It is in whatever
-// language the installed copy is, because that is where it was read from.
+// <BlackLetterClue> notetag — see 31_blackletter_clues.py. Both builds carry
+// it, so it follows the language picker like everything else; it used to be
+// read only from the installed Chinese copy, which is why an English reader
+// got 在树桩旁边的草丛中. A plain string is still honoured, for a
+// collectibles.json written before the pair existed.
 // Five of the 26 keys are on the map at all only because the clue said which
 // event they were: A is the one beside the stump.
+function clueText(p) {
+  const c = p && p.clue;
+  if (!c) return '';
+  return typeof c === 'string' ? c : (c[LANG] || c.en || c.zh || '');
+}
 function clueNote(p) {
-  if (!p || !p.clue) return '';
-  return `<span class="clue">🔎 ${p.clue}</span>`;
+  const t = clueText(p);
+  return t ? `<span class="clue">🔎 ${t}</span>` : '';
 }
 
 // The bubble a tickable marker opens: what it is, and the one button that
