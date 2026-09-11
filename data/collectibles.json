@@ -3593,11 +3593,11 @@
     "SELF-HELP GUIDE"
    ],
    "art": {
-    "x": 338,
+    "x": 322,
     "y": 2140,
     "w": 61,
     "h": 62,
-    "artFit": "rule"
+    "artFit": "rule+nudge"
    }
   },
   {

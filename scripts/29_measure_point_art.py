@@ -122,6 +122,16 @@ def find(png, spr, x0, y0, radius):
     return int(xs + ix), int(ys + iy), float(share[iy, ix])
 
 
+# Hand corrections in pixels, keyed "<mapId>:<evId>", applied after the rule or
+# the measurement. The tile stays what the game says — a marker's tooltip should
+# not read "@ (11.5, 68)" — so anything that is only about where the art sits
+# belongs here rather than in 23's POINT_NUDGES, which moves the tile itself.
+ART_NUDGES = {
+    '96:3': (-16, 0),   # BOSS FIGHT: the mound straddles two tiles, so the rule
+                        # lands the marker half a tile right of its middle.
+}
+
+
 class Fixer:
     """Measures one (map, tile, sprite) at a time and keeps the tally."""
 
@@ -140,7 +150,7 @@ class Fixer:
         """
         return bool(self.only) and map_id not in self.only
 
-    def rect(self, map_id, key, tx, ty, what, prio=1):
+    def rect(self, map_id, key, tx, ty, what, prio=1, nudge_key=None):
         """The rectangle to record, or None when the sprite renders to nothing."""
         sheet, index, direction, pattern = _r28['parse_key'](key)
         rule = _r28['placed_rect'](sheet, index, direction, tx, ty, pattern, prio)
@@ -152,11 +162,11 @@ class Fixer:
         png, spr = load_png(map_id), trimmed_frame(key)
         if png is None or spr is None:
             self.ruled += 1
-            return out
+            return self._nudge(out, nudge_key)
         got = find(png, spr, rx, ry, self.radius)
         if got is None:
             self.ruled += 1
-            return out
+            return self._nudge(out, nudge_key)
         x, y, share = got
         self.measured += 1
         self.share.append(share)
@@ -165,6 +175,14 @@ class Fixer:
             self.big.append((abs(x - rx) + abs(y - ry), f'map{map_id} {what} '
                              f'{key} moved ({x - rx:+d}, {y - ry:+d})'))
         out.update(x=x, y=y, artFit='measured')
+        return self._nudge(out, nudge_key)
+
+    def _nudge(self, out, key):
+        d = ART_NUDGES.get(key)
+        if d and out:
+            out['x'] += d[0]
+            out['y'] += d[1]
+            out['artFit'] = out.get('artFit', 'rule') + '+nudge'
         return out
 
 
@@ -209,7 +227,8 @@ def main():
             p.pop('art', None)
             continue
         r = fix.rect(p['mapId'], p['sprite'], p['x'], p['y'],
-                     f'ev{p["evId"]} {p["evName"]}', p.get('prio', 1))
+                     f'ev{p["evId"]} {p["evName"]}', p.get('prio', 1),
+                     f'{p["mapId"]}:{p["evId"]}')
         if r:
             p['art'] = r
         else:
