@@ -33,6 +33,25 @@ TILE = 32
 OPP = {'L': 'R', 'R': 'L', 'T': 'B', 'B': 'T'}
 
 
+# Gaps that are meant to be there, keyed "<a>:<b>:<side>" with the offset in
+# pixels. A map's edge can carry two doors, and only one of the two maps behind
+# them can abut it — the other is set a little apart and reached by a drawn
+# route instead. That is a layout decision, not a mistake, and re-closing one
+# undoes deliberate work. Recorded so the checker stays quiet about them and
+# still speaks up the moment an offset changes or a new one appears.
+KNOWN_GAPS = {
+    '92:99:R':    192,   # FOREST PLAYGROUND ↔ PINWHEEL FOREST EAST
+    '131:331:L': -224,   # FROZEN LAKE ↔ PATH TO FROZEN LAKE
+    '172:177:R':  800,   # FOYER ↔ RIGHT HALL
+    '160:336:T':  -64,   # PYREFLY V ↔ PYREFLY TO SWEETHEART
+    '153:154:T': -160,   # PYREFLY I ↔ PYREFLY II
+}
+
+
+def gap_key(ai, bi, side):
+    return f'{ai}:{bi}:{side}'
+
+
 def load():
     lay = json.loads((ROOT / 'data/stitched/all_regions_layout.json').read_text())['layout']
     meta, owner = {}, {}
@@ -63,7 +82,7 @@ def sides(meta, mid, x, y):
 
 def constraints(lay, meta, edges, max_gap):
     """mapId -> [(neighbour, which side of me it is on, axis, px I must move)]."""
-    cons, seen, skipped = defaultdict(list), set(), 0
+    cons, seen, skipped, accepted = defaultdict(list), set(), 0, []
     for e in edges:
         a, b = e['from'], e['to']
         ai, bi = str(a.get('mapId')), str(b.get('mapId'))
@@ -85,9 +104,17 @@ def constraints(lay, meta, edges, max_gap):
         if abs(off) > max_gap:
             skipped += 1
             continue
+        # An accepted gap is treated as though it closed: the pair is checked
+        # against the number that was signed off, so a change still shows.
+        for key in (gap_key(ai, bi, side), gap_key(bi, ai, OPP[side])):
+            if key in KNOWN_GAPS:
+                if off == KNOWN_GAPS[key] or -off == KNOWN_GAPS[key]:
+                    off = 0
+                    accepted.append(key)
+                break
         cons[bi].append((ai, side, axis, off))
         cons[ai].append((bi, OPP[side], axis, -off))
-    return cons, len(seen), skipped
+    return cons, len(seen), skipped, accepted
 
 
 def main():
@@ -97,14 +124,14 @@ def main():
     args = ap.parse_args()
 
     lay, meta, owner, edges = load()
-    cons, pairs, skipped = constraints(lay, meta, edges, args.max_gap)
+    cons, pairs, skipped, accepted = constraints(lay, meta, edges, args.max_gap)
     name = lambda m: (meta[m].get('name') or '').replace('-- ', '')[:26]
 
     broken = {m for m, cs in cons.items() if any(c[3] for c in cs)}
     if args.region:
         broken = {m for m in broken if owner.get(m) == args.region}
     print(f'{pairs} abutting pair(s) checked, {skipped} skipped as jumps '
-          f'(> {args.max_gap}px apart)')
+          f'(> {args.max_gap}px apart), {len(set(accepted))} deliberate gap(s) accepted')
     if not broken:
         print('every map lines up with the neighbours it touches')
         return
