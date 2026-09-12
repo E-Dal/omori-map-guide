@@ -96,14 +96,12 @@
                          z-index: 100; }
   .placed-map.selected.grouped { outline-color: #6ee7ff;
                                  box-shadow: 0 0 calc(12px / var(--zoom, 1)) rgba(110,231,255,0.7); }
-  /* A map with no group moves alone while its neighbours move as a region, and
-     until now the two looked identical unless the map happened to be selected
-     — which is how three whole regions came apart one map at a time without it
-     ever being visible. Being in a group is the normal state, so the exception
-     is what gets marked. */
-  .placed-map.ungrouped { outline: calc(2px / var(--zoom, 1)) dashed rgba(255,176,32,0.85);
-                          outline-offset: calc(-1px / var(--zoom, 1)); }
-  .placed-map.selected.ungrouped { outline-style: solid; }
+  /* A map with no group moves alone while its neighbours move as a region, which
+     is how three whole regions came apart one map at a time without it ever being
+     visible. That used to be drawn as a dashed outline on every such map; over a
+     canvas this dense it was noise on top of the work rather than a warning, so
+     the count in the toolbar carries it instead. The `ungrouped` class stays on
+     the node — it costs nothing and makes the state findable in the inspector. */
   .marquee { position: absolute; pointer-events: none;
              border: 1.5px dashed #80c0ff;
              background: rgba(128,192,255,0.10);
