@@ -328,10 +328,10 @@
   .rl-row .ct { color: #666; font-size: 10px; }
   /* A region that only exists on another route: its maps are all filtered out
      here, so the row would tick on and show an empty screen with no reason
-     given. Dimmed and labelled instead. */
+     given. Dimmed, and the tooltip says which route — it used to carry a
+     HIKIKOMORI badge as well, which was a lot of shouting for one row. Ticking
+     it still switches the route, so the reason arrives the moment it matters. */
   .rl-row.alt-route { color: #7d7d7d; }
-  .rl-row .alt { font-size: 9px; color: #9a8348; border: 1px solid #5a4a2a;
-                 border-radius: 3px; padding: 0 3px; flex: none; letter-spacing: .3px; }
   .rl-row.focused { color: #ffd97a; font-weight: bold; }
   /* It is not a thirteenth region, and styled as one it read as exactly that.
      A tree instead of a colour swatch, and a panel of its own to sit in. */
@@ -1314,6 +1314,7 @@ function renderMarkers() {
                                                          : ((highlights || {}).watermelons || []);
   if (melonCfg.on) {
     for (const m of melonSrc) {
+      if (offRoutePoint('melon', m.mapId, m.evId)) continue;
       if (!f.has(m.mapId)) {
         (shown.__elsewhere ||= {}).melon = ((shown.__elsewhere || {}).melon || 0) + 1;
         continue;
@@ -1335,6 +1336,7 @@ function renderMarkers() {
   for (const p of ((collectibles || {}).points || [])) {
     const cfg = layerCfg(p.layer);
     if (!cfg || !cfg.on) continue;
+    if (offRoutePoint(p.layer, p.mapId, p.evId)) continue;
     if (!f.has(p.mapId)) { elsewhere[p.layer] = (elsewhere[p.layer] || 0) + 1; continue; }
     const [lat, lng] = f.at(p.mapId, p.x, p.y);
     const title = p.letter ? `${t('hangmanKey')} <b>${p.letter}</b>` : `<b>${p.evName}</b>`;
@@ -2661,7 +2663,6 @@ function rebuildLegend() {
     row.classList.toggle('alt-route', !!alt);
     row.innerHTML = `<span class="sw" style="background:${REGION_COLORS[r] || '#888'}"></span>` +
       `<span class="nm">${on ? '☑' : '☐'} ${regionLabel(r)}</span>` +
-      (alt ? `<span class="alt">${alt.toUpperCase()}</span>` : '') +
       `<span class="ct">${items.length}${extra ? ' +' + extra : ''}</span>`;
     row.title = alt ? t('altRoute')(alt.toUpperCase())
       : extra ? `${items.length} maps, ${extra} fading at the edge` : `${items.length} maps`;
@@ -2715,6 +2716,24 @@ const ROUTE_ONLY = {
   ]),
 };
 const ROUTE_ONLY_REGIONS = { hikikomori: new Set(['snowglobe_mountain']) };
+
+// Single pickups that only one route ever puts in the world. The comment above
+// said item-level differences were not covered because nothing derives them —
+// that is still true, so this is hand-written too, but the mechanism exists now
+// and the list can grow.
+//
+// OLD SHOE INTERIOR's four blue watermelons are the first entries. All four
+// hang off switch 1057 "Day2DW - Saved Basil?" — the TULIP one on its page 2,
+// which is why the requirements extractor, reading page 1 only, tagged three of
+// them and missed the fourth. map981 is the same room sliced out for the world
+// layout, so its copies are listed alongside.
+// Keys are `layer:mapId:evId`, the same shape pointKey builds.
+const ROUTE_ONLY_POINTS = {
+  hikikomori: new Set([
+    'melon:98:9', 'melon:98:32', 'melon:98:34', 'melon:98:35',       // TULIP, GLADIOLUS, ROSE, CACTUS
+    'melon:981:9', 'melon:981:32', 'melon:981:34', 'melon:981:35',
+  ]),
+};
 // There used to be a third choice, "both", which did the same as HIKIKOMORI for
 // maps and was worse for markers — the Sheet music layer is tagged
 // `route: 'hikikomori'`, so "both" was the one setting that hid it.
@@ -2749,6 +2768,18 @@ function altRouteOf(region) {
     if (ROUTE_ONLY_REGIONS[route].has(region)) return route;
   }
   return null;
+}
+
+// True when this one pickup exists on some route other than the one being
+// played — the per-point counterpart of offRoute, for the cases where the map
+// is on both routes and only the thing standing on it is not.
+function offRoutePoint(layer, mapId, evId) {
+  const key = `${layer}:${mapId}:${evId}`;
+  for (const route of Object.keys(ROUTE_ONLY_POINTS)) {
+    if (route === routeMode) continue;
+    if (ROUTE_ONLY_POINTS[route].has(key)) return true;
+  }
+  return false;
 }
 
 // True when this map exists on some route other than the one being played.
