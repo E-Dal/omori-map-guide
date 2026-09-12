@@ -1,0 +1,5695 @@
+{
+ "tile": 32,
+ "houses": {
+  "15": {
+   "mapId": 15,
+   "name": "KEL & HERO'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map15.png",
+   "width": 1152,
+   "height": 1312,
+   "rooms": [
+    {
+     "rid": "r15_0",
+     "roomIdx": 0,
+     "x": 352,
+     "y": 352,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r15_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 992,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 17
+    },
+    {
+     "rid": "r15_1",
+     "roomIdx": 1,
+     "x": 448,
+     "y": 864,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r15_3",
+     "roomIdx": 3,
+     "x": 32,
+     "y": 736,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r15_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 64,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r15_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 96,
+     "w": 256,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 42
+    },
+    {
+     "rid": "r15_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 416,
+     "h": 320,
+     "srcTx": 15,
+     "srcTy": 61
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r15_3",
+        "evId": 10,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 304,
+       "y": 880
+      },
+      {
+       "snap": {
+        "mapId": "r15_1",
+        "evId": 7,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 464,
+       "y": 1040
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r15_2",
+        "evId": 9,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1168
+      },
+      {
+       "snap": {
+        "mapId": "r15_1",
+        "evId": 7,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 464,
+       "y": 1168
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r15_0",
+        "evId": 4,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 272,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r15_5",
+        "evId": 12,
+        "evName": "Kels HOME (MORNING)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r15_0",
+        "evId": 5,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 336,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r15_6",
+        "evId": 14,
+        "evName": "Kels HOME (MORNING)",
+        "ox": 208,
+        "oy": 304
+       },
+       "x": 944,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r15_4",
+        "evId": 13,
+        "evName": "Kels HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r15_0",
+        "evId": 3,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 80,
+        "oy": 112
+       },
+       "x": 432,
+       "y": 464
+      }
+     ]
+    }
+   ]
+  },
+  "16": {
+   "mapId": 16,
+   "name": "CRIS'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map16.png",
+   "width": 896,
+   "height": 1216,
+   "rooms": [
+    {
+     "rid": "r16_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 288,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r16_1",
+     "roomIdx": 1,
+     "x": 416,
+     "y": 768,
+     "w": 416,
+     "h": 416,
+     "srcTx": 41,
+     "srcTy": 15
+    },
+    {
+     "rid": "r16_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 928,
+     "w": 288,
+     "h": 288,
+     "srcTx": 68,
+     "srcTy": 18
+    },
+    {
+     "rid": "r16_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 672,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r16_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 0,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r16_5",
+     "roomIdx": 5,
+     "x": 480,
+     "y": 32,
+     "w": 192,
+     "h": 224,
+     "srcTx": 45,
+     "srcTy": 42
+    },
+    {
+     "rid": "r16_6",
+     "roomIdx": 6,
+     "x": 704,
+     "y": 0,
+     "w": 192,
+     "h": 256,
+     "srcTx": 19,
+     "srcTy": 63
+    }
+   ],
+   "routes": [
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r16_2",
+        "evId": 11,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1104
+      },
+      {
+       "snap": {
+        "mapId": "r16_1",
+        "evId": 5,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 16,
+        "oy": 336
+       },
+       "x": 432,
+       "y": 1104
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r16_3",
+        "evId": 12,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 816
+      },
+      {
+       "snap": {
+        "mapId": "r16_1",
+        "evId": 5,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 16,
+        "oy": 208
+       },
+       "x": 432,
+       "y": 976
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r16_0",
+        "evId": 9,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 368,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r16_6",
+        "evId": 15,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 48,
+        "oy": 240
+       },
+       "x": 752,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r16_0",
+        "evId": 8,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 304,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r16_5",
+        "evId": 4,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 144,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r16_0",
+        "evId": 1,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 48,
+        "oy": 112
+       },
+       "x": 368,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r16_4",
+        "evId": 14,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 240
+      }
+     ]
+    }
+   ]
+  },
+  "17": {
+   "mapId": 17,
+   "name": "MAVERICK'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map17.png",
+   "width": 960,
+   "height": 1312,
+   "rooms": [
+    {
+     "rid": "r17_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 352,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r17_1",
+     "roomIdx": 1,
+     "x": 384,
+     "y": 832,
+     "w": 416,
+     "h": 416,
+     "srcTx": 41,
+     "srcTy": 15
+    },
+    {
+     "rid": "r17_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 960,
+     "w": 288,
+     "h": 352,
+     "srcTx": 68,
+     "srcTy": 16
+    },
+    {
+     "rid": "r17_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 704,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r17_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 64,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r17_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 96,
+     "w": 256,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 42
+    },
+    {
+     "rid": "r17_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 224,
+     "h": 320,
+     "srcTx": 44,
+     "srcTy": 61
+    },
+    {
+     "rid": "r17_7",
+     "roomIdx": 7,
+     "x": 96,
+     "y": 384,
+     "w": 192,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 62
+    }
+   ],
+   "routes": [
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r17_3",
+        "evId": 14,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 848
+      },
+      {
+       "snap": {
+        "mapId": "r17_1",
+        "evId": 2,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 16,
+        "oy": 208
+       },
+       "x": 400,
+       "y": 1040
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r17_2",
+        "evId": 10,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 272,
+        "oy": 208
+       },
+       "x": 272,
+       "y": 1168
+      },
+      {
+       "snap": {
+        "mapId": "r17_1",
+        "evId": 2,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 16,
+        "oy": 336
+       },
+       "x": 400,
+       "y": 1168
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r17_0",
+        "evId": 5,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 48,
+        "oy": 112
+       },
+       "x": 368,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r17_4",
+        "evId": 11,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r17_0",
+        "evId": 6,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 304,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r17_5",
+        "evId": 12,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r17_0",
+        "evId": 17,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 368,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r17_6",
+        "evId": 15,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 112,
+        "oy": 304
+       },
+       "x": 848,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r17_7",
+        "evId": 16,
+        "evName": "Mavericks HOME (MORNING)",
+        "ox": 112,
+        "oy": 272
+       },
+       "x": 208,
+       "y": 656
+      },
+      {
+       "snap": {
+        "mapId": "r17_0",
+        "evId": 5,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 48,
+        "oy": 368
+       },
+       "x": 368,
+       "y": 720
+      }
+     ]
+    }
+   ]
+  },
+  "19": {
+   "mapId": 19,
+   "name": "KEL & HERO'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map19.png",
+   "width": 1152,
+   "height": 1312,
+   "rooms": [
+    {
+     "rid": "r19_0",
+     "roomIdx": 0,
+     "x": 352,
+     "y": 352,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r19_1",
+     "roomIdx": 1,
+     "x": 448,
+     "y": 864,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r19_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 992,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 17
+    },
+    {
+     "rid": "r19_3",
+     "roomIdx": 3,
+     "x": 32,
+     "y": 736,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r19_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 64,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r19_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 96,
+     "w": 256,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 42
+    },
+    {
+     "rid": "r19_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 416,
+     "h": 320,
+     "srcTx": 15,
+     "srcTy": 61
+    }
+   ],
+   "routes": [
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r19_2",
+        "evId": 9,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1168
+      },
+      {
+       "snap": {
+        "mapId": "r19_1",
+        "evId": 7,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 464,
+       "y": 1168
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r19_3",
+        "evId": 10,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 304,
+       "y": 880
+      },
+      {
+       "snap": {
+        "mapId": "r19_1",
+        "evId": 7,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 464,
+       "y": 1040
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r19_0",
+        "evId": 4,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 272,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r19_5",
+        "evId": 12,
+        "evName": "Kels HOME (MORNING)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r19_0",
+        "evId": 5,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 336,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r19_6",
+        "evId": 14,
+        "evName": "Kels HOME (MORNING)",
+        "ox": 208,
+        "oy": 304
+       },
+       "x": 944,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r19_0",
+        "evId": 3,
+        "evName": "KELS HOME (MORNING)",
+        "ox": 80,
+        "oy": 112
+       },
+       "x": 432,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r19_4",
+        "evId": 13,
+        "evName": "Kels HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 304
+      }
+     ]
+    }
+   ]
+  },
+  "20": {
+   "mapId": 20,
+   "name": "CRIS'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map20.png",
+   "width": 896,
+   "height": 1216,
+   "rooms": [
+    {
+     "rid": "r20_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 288,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r20_1",
+     "roomIdx": 1,
+     "x": 416,
+     "y": 768,
+     "w": 416,
+     "h": 416,
+     "srcTx": 41,
+     "srcTy": 15
+    },
+    {
+     "rid": "r20_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 928,
+     "w": 288,
+     "h": 288,
+     "srcTx": 68,
+     "srcTy": 18
+    },
+    {
+     "rid": "r20_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 672,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r20_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 0,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r20_5",
+     "roomIdx": 5,
+     "x": 480,
+     "y": 32,
+     "w": 192,
+     "h": 224,
+     "srcTx": 45,
+     "srcTy": 42
+    },
+    {
+     "rid": "r20_6",
+     "roomIdx": 6,
+     "x": 704,
+     "y": 0,
+     "w": 192,
+     "h": 256,
+     "srcTx": 19,
+     "srcTy": 63
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r20_2",
+        "evId": 11,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1104
+      },
+      {
+       "snap": {
+        "mapId": "r20_1",
+        "evId": 5,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 16,
+        "oy": 336
+       },
+       "x": 432,
+       "y": 1104
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r20_3",
+        "evId": 12,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 816
+      },
+      {
+       "snap": {
+        "mapId": "r20_1",
+        "evId": 5,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 16,
+        "oy": 208
+       },
+       "x": 432,
+       "y": 976
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r20_0",
+        "evId": 9,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 368,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r20_6",
+        "evId": 15,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 48,
+        "oy": 240
+       },
+       "x": 752,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r20_0",
+        "evId": 8,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 304,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r20_5",
+        "evId": 4,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 144,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r20_0",
+        "evId": 1,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 48,
+        "oy": 112
+       },
+       "x": 368,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r20_4",
+        "evId": 14,
+        "evName": "CRIS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 240
+      }
+     ]
+    }
+   ]
+  },
+  "21": {
+   "mapId": 21,
+   "name": "MAVERICK'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map21.png",
+   "width": 960,
+   "height": 1312,
+   "rooms": [
+    {
+     "rid": "r21_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 96,
+     "w": 256,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 42
+    },
+    {
+     "rid": "r21_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 64,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r21_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 704,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r21_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 960,
+     "w": 288,
+     "h": 352,
+     "srcTx": 68,
+     "srcTy": 16
+    },
+    {
+     "rid": "r21_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 224,
+     "h": 320,
+     "srcTx": 44,
+     "srcTy": 61
+    },
+    {
+     "rid": "r21_1",
+     "roomIdx": 1,
+     "x": 384,
+     "y": 832,
+     "w": 416,
+     "h": 416,
+     "srcTx": 41,
+     "srcTy": 15
+    },
+    {
+     "rid": "r21_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 352,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r21_7",
+     "roomIdx": 7,
+     "x": 96,
+     "y": 384,
+     "w": 192,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 62
+    }
+   ],
+   "routes": [
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r21_0",
+        "evId": 6,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 304,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r21_5",
+        "evId": 12,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r21_6",
+        "evId": 15,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 112,
+        "oy": 304
+       },
+       "x": 848,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r21_0",
+        "evId": 17,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 368,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 464
+      }
+     ]
+    },
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r21_0",
+        "evId": 5,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 48,
+        "oy": 112
+       },
+       "x": 368,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r21_4",
+        "evId": 11,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r21_2",
+        "evId": 10,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 272,
+        "oy": 208
+       },
+       "x": 272,
+       "y": 1168
+      },
+      {
+       "snap": {
+        "mapId": "r21_1",
+        "evId": 2,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 16,
+        "oy": 336
+       },
+       "x": 400,
+       "y": 1168
+      }
+     ]
+    },
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r21_3",
+        "evId": 14,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 848
+      },
+      {
+       "snap": {
+        "mapId": "r21_1",
+        "evId": 2,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 16,
+        "oy": 208
+       },
+       "x": 400,
+       "y": 1040
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r21_7",
+        "evId": 16,
+        "evName": "Mavericks HOME (MORNING)",
+        "ox": 112,
+        "oy": 272
+       },
+       "x": 208,
+       "y": 656
+      },
+      {
+       "snap": {
+        "mapId": "r21_0",
+        "evId": 5,
+        "evName": "MAVERICKS HOME (MORNING)",
+        "ox": 48,
+        "oy": 368
+       },
+       "x": 368,
+       "y": 720
+      }
+     ]
+    }
+   ]
+  },
+  "23": {
+   "mapId": 23,
+   "name": "BRENT'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map23.png",
+   "width": 1024,
+   "height": 1248,
+   "rooms": [
+    {
+     "rid": "r23_5",
+     "roomIdx": 5,
+     "x": 192,
+     "y": 32,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r23_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 320,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r23_1",
+     "roomIdx": 1,
+     "x": 416,
+     "y": 800,
+     "w": 416,
+     "h": 416,
+     "srcTx": 41,
+     "srcTy": 15
+    },
+    {
+     "rid": "r23_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 928,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 17
+    },
+    {
+     "rid": "r23_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 672,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r23_4",
+     "roomIdx": 4,
+     "x": 448,
+     "y": 64,
+     "w": 224,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 41
+    },
+    {
+     "rid": "r23_6",
+     "roomIdx": 6,
+     "x": 768,
+     "y": 352,
+     "w": 256,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 61
+    },
+    {
+     "rid": "r23_7",
+     "roomIdx": 7,
+     "x": 704,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 62
+    }
+   ],
+   "routes": [
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r23_3",
+        "evId": 10,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 816
+      },
+      {
+       "snap": {
+        "mapId": "r23_1",
+        "evId": 5,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 16,
+        "oy": 208
+       },
+       "x": 432,
+       "y": 1008
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r23_2",
+        "evId": 9,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 272,
+        "oy": 208
+       },
+       "x": 272,
+       "y": 1136
+      },
+      {
+       "snap": {
+        "mapId": "r23_1",
+        "evId": 5,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 16,
+        "oy": 336
+       },
+       "x": 432,
+       "y": 1136
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r23_0",
+        "evId": 2,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 80,
+        "oy": 112
+       },
+       "x": 400,
+       "y": 432
+      },
+      {
+       "snap": {
+        "mapId": "r23_5",
+        "evId": 13,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r23_0",
+        "evId": 99,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 304,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 432
+      },
+      {
+       "snap": {
+        "mapId": "r23_4",
+        "evId": 12,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r23_0",
+        "evId": 16,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 336,
+        "oy": 368
+       },
+       "x": 656,
+       "y": 688
+      },
+      {
+       "snap": {
+        "mapId": "r23_6",
+        "evId": 15,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 144,
+        "oy": 336
+       },
+       "x": 912,
+       "y": 688
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r23_0",
+        "evId": 3,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 368,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 432
+      },
+      {
+       "snap": {
+        "mapId": "r23_7",
+        "evId": 14,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 48,
+        "oy": 272
+       },
+       "x": 752,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "24": {
+   "mapId": 24,
+   "name": "KIM'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map24.png",
+   "width": 992,
+   "height": 1184,
+   "rooms": [
+    {
+     "rid": "r24_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 320,
+     "w": 416,
+     "h": 480,
+     "srcTx": 14,
+     "srcTy": 14
+    },
+    {
+     "rid": "r24_1",
+     "roomIdx": 1,
+     "x": 384,
+     "y": 768,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r24_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 896,
+     "w": 288,
+     "h": 288,
+     "srcTx": 68,
+     "srcTy": 18
+    },
+    {
+     "rid": "r24_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 640,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r24_7",
+     "roomIdx": 7,
+     "x": 768,
+     "y": 352,
+     "w": 224,
+     "h": 320,
+     "srcTx": 44,
+     "srcTy": 62
+    },
+    {
+     "rid": "r24_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 32,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r24_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 64,
+     "w": 256,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 42
+    },
+    {
+     "rid": "r24_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 62
+    }
+   ],
+   "routes": [
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r24_2",
+        "evId": 9,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1072
+      },
+      {
+       "snap": {
+        "mapId": "r24_1",
+        "evId": 5,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 400,
+       "y": 1072
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r24_1",
+        "evId": 5,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 400,
+       "y": 944
+      },
+      {
+       "snap": {
+        "mapId": "r24_3",
+        "evId": 10,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 784
+      }
+     ]
+    },
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r24_0",
+        "evId": 16,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 336,
+        "oy": 336
+       },
+       "x": 656,
+       "y": 656
+      },
+      {
+       "snap": {
+        "mapId": "r24_7",
+        "evId": 15,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 112,
+        "oy": 304
+       },
+       "x": 880,
+       "y": 656
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r24_0",
+        "evId": 75,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 304,
+        "oy": 80
+       },
+       "x": 624,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r24_5",
+        "evId": 12,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r24_0",
+        "evId": 2,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 80,
+        "oy": 80
+       },
+       "x": 400,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r24_4",
+        "evId": 13,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r24_0",
+        "evId": 3,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 368,
+        "oy": 80
+       },
+       "x": 688,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r24_6",
+        "evId": 14,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 48,
+        "oy": 272
+       },
+       "x": 784,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "25": {
+   "mapId": 25,
+   "name": "JOY'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map25.png",
+   "width": 928,
+   "height": 1216,
+   "rooms": [
+    {
+     "rid": "r25_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 896,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 17
+    },
+    {
+     "rid": "r25_1",
+     "roomIdx": 1,
+     "x": 416,
+     "y": 768,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r25_3",
+     "roomIdx": 3,
+     "x": 192,
+     "y": 32,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r25_4",
+     "roomIdx": 4,
+     "x": 0,
+     "y": 672,
+     "w": 288,
+     "h": 224,
+     "srcTx": 18,
+     "srcTy": 42
+    },
+    {
+     "rid": "r25_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 64,
+     "w": 224,
+     "h": 224,
+     "srcTx": 45,
+     "srcTy": 42
+    },
+    {
+     "rid": "r25_6",
+     "roomIdx": 6,
+     "x": 704,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 61
+    },
+    {
+     "rid": "r25_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 320,
+     "w": 416,
+     "h": 480,
+     "srcTx": 14,
+     "srcTy": 14
+    }
+   ],
+   "routes": [
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r25_0",
+        "evId": 3,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 272,
+        "oy": 80
+       },
+       "x": 592,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r25_5",
+        "evId": 13,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 144,
+        "oy": 208
+       },
+       "x": 592,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r25_0",
+        "evId": 4,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 336,
+        "oy": 80
+       },
+       "x": 656,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r25_6",
+        "evId": 15,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 176,
+        "oy": 272
+       },
+       "x": 880,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r25_0",
+        "evId": 2,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 80,
+        "oy": 80
+       },
+       "x": 400,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r25_3",
+        "evId": 14,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r25_2",
+        "evId": 10,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1072
+      },
+      {
+       "snap": {
+        "mapId": "r25_1",
+        "evId": 6,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 432,
+       "y": 1072
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r25_4",
+        "evId": 11,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 816
+      },
+      {
+       "snap": {
+        "mapId": "r25_1",
+        "evId": 6,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 432,
+       "y": 944
+      }
+     ]
+    }
+   ]
+  },
+  "26": {
+   "mapId": 26,
+   "name": "CHARLIE'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map26.png",
+   "width": 960,
+   "height": 1184,
+   "rooms": [
+    {
+     "rid": "r26_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 288,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r26_1",
+     "roomIdx": 1,
+     "x": 384,
+     "y": 768,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r26_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 864,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 16
+    },
+    {
+     "rid": "r26_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 608,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r26_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 0,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r26_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 32,
+     "w": 256,
+     "h": 224,
+     "srcTx": 45,
+     "srcTy": 42
+    },
+    {
+     "rid": "r26_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 224,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 62
+    },
+    {
+     "rid": "r26_7",
+     "roomIdx": 7,
+     "x": 96,
+     "y": 320,
+     "w": 192,
+     "h": 288,
+     "srcTx": 44,
+     "srcTy": 63
+    }
+   ],
+   "routes": [
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r26_2",
+        "evId": 10,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 272,
+        "oy": 208
+       },
+       "x": 272,
+       "y": 1072
+      },
+      {
+       "snap": {
+        "mapId": "r26_1",
+        "evId": 6,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 400,
+       "y": 1072
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r26_3",
+        "evId": 11,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 752
+      },
+      {
+       "snap": {
+        "mapId": "r26_1",
+        "evId": 6,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 400,
+       "y": 944
+      }
+     ]
+    },
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r26_0",
+        "evId": 3,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 272,
+        "oy": 112
+       },
+       "x": 592,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r26_5",
+        "evId": 13,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 144,
+        "oy": 208
+       },
+       "x": 592,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r26_0",
+        "evId": 4,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 336,
+        "oy": 112
+       },
+       "x": 656,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r26_6",
+        "evId": 15,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 48,
+        "oy": 240
+       },
+       "x": 784,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r26_0",
+        "evId": 2,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 80,
+        "oy": 112
+       },
+       "x": 400,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r26_4",
+        "evId": 14,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r26_7",
+        "evId": 16,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 112,
+        "oy": 272
+       },
+       "x": 208,
+       "y": 592
+      },
+      {
+       "snap": {
+        "mapId": "r26_0",
+        "evId": 17,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 80,
+        "oy": 368
+       },
+       "x": 400,
+       "y": 656
+      }
+     ]
+    }
+   ]
+  },
+  "27": {
+   "mapId": 27,
+   "name": "BRENT'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map27.png",
+   "width": 1024,
+   "height": 1248,
+   "rooms": [
+    {
+     "rid": "r27_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 320,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r27_1",
+     "roomIdx": 1,
+     "x": 416,
+     "y": 800,
+     "w": 416,
+     "h": 416,
+     "srcTx": 41,
+     "srcTy": 15
+    },
+    {
+     "rid": "r27_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 928,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 17
+    },
+    {
+     "rid": "r27_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 672,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r27_4",
+     "roomIdx": 4,
+     "x": 448,
+     "y": 64,
+     "w": 224,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 41
+    },
+    {
+     "rid": "r27_5",
+     "roomIdx": 5,
+     "x": 192,
+     "y": 32,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r27_6",
+     "roomIdx": 6,
+     "x": 768,
+     "y": 352,
+     "w": 256,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 61
+    },
+    {
+     "rid": "r27_7",
+     "roomIdx": 7,
+     "x": 736,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 62
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r27_2",
+        "evId": 9,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 272,
+        "oy": 208
+       },
+       "x": 272,
+       "y": 1136
+      },
+      {
+       "snap": {
+        "mapId": "r27_1",
+        "evId": 5,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 16,
+        "oy": 336
+       },
+       "x": 432,
+       "y": 1136
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r27_3",
+        "evId": 10,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 816
+      },
+      {
+       "snap": {
+        "mapId": "r27_1",
+        "evId": 5,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 16,
+        "oy": 208
+       },
+       "x": 432,
+       "y": 1008
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r27_0",
+        "evId": 99,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 304,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 432
+      },
+      {
+       "snap": {
+        "mapId": "r27_4",
+        "evId": 12,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r27_0",
+        "evId": 3,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 368,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 432
+      },
+      {
+       "snap": {
+        "mapId": "r27_7",
+        "evId": 14,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 48,
+        "oy": 272
+       },
+       "x": 784,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r27_0",
+        "evId": 2,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 80,
+        "oy": 112
+       },
+       "x": 400,
+       "y": 432
+      },
+      {
+       "snap": {
+        "mapId": "r27_5",
+        "evId": 13,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r27_0",
+        "evId": 16,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 336,
+        "oy": 368
+       },
+       "x": 656,
+       "y": 688
+      },
+      {
+       "snap": {
+        "mapId": "r27_6",
+        "evId": 15,
+        "evName": "BRENTS HOME (MORNING)",
+        "ox": 144,
+        "oy": 336
+       },
+       "x": 912,
+       "y": 688
+      }
+     ]
+    }
+   ]
+  },
+  "28": {
+   "mapId": 28,
+   "name": "KIM'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map28.png",
+   "width": 992,
+   "height": 1184,
+   "rooms": [
+    {
+     "rid": "r28_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 640,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r28_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 64,
+     "w": 256,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 42
+    },
+    {
+     "rid": "r28_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 62
+    },
+    {
+     "rid": "r28_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 32,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r28_7",
+     "roomIdx": 7,
+     "x": 768,
+     "y": 352,
+     "w": 224,
+     "h": 320,
+     "srcTx": 44,
+     "srcTy": 62
+    },
+    {
+     "rid": "r28_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 896,
+     "w": 288,
+     "h": 288,
+     "srcTx": 68,
+     "srcTy": 18
+    },
+    {
+     "rid": "r28_1",
+     "roomIdx": 1,
+     "x": 384,
+     "y": 768,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r28_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 320,
+     "w": 416,
+     "h": 480,
+     "srcTx": 14,
+     "srcTy": 14
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r28_2",
+        "evId": 9,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1072
+      },
+      {
+       "snap": {
+        "mapId": "r28_1",
+        "evId": 5,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 400,
+       "y": 1072
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r28_3",
+        "evId": 10,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 784
+      },
+      {
+       "snap": {
+        "mapId": "r28_1",
+        "evId": 5,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 400,
+       "y": 944
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r28_0",
+        "evId": 2,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 80,
+        "oy": 80
+       },
+       "x": 400,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r28_4",
+        "evId": 13,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r28_0",
+        "evId": 75,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 304,
+        "oy": 80
+       },
+       "x": 624,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r28_5",
+        "evId": 12,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r28_0",
+        "evId": 3,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 368,
+        "oy": 80
+       },
+       "x": 688,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r28_6",
+        "evId": 14,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 48,
+        "oy": 272
+       },
+       "x": 784,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r28_0",
+        "evId": 16,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 336,
+        "oy": 336
+       },
+       "x": 656,
+       "y": 656
+      },
+      {
+       "snap": {
+        "mapId": "r28_7",
+        "evId": 15,
+        "evName": "KIMS HOME (MORNING)",
+        "ox": 112,
+        "oy": 304
+       },
+       "x": 880,
+       "y": 656
+      }
+     ]
+    }
+   ]
+  },
+  "29": {
+   "mapId": 29,
+   "name": "JOY'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map29.png",
+   "width": 928,
+   "height": 1216,
+   "rooms": [
+    {
+     "rid": "r29_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 320,
+     "w": 416,
+     "h": 480,
+     "srcTx": 14,
+     "srcTy": 14
+    },
+    {
+     "rid": "r29_1",
+     "roomIdx": 1,
+     "x": 416,
+     "y": 768,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r29_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 896,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 17
+    },
+    {
+     "rid": "r29_3",
+     "roomIdx": 3,
+     "x": 192,
+     "y": 32,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r29_4",
+     "roomIdx": 4,
+     "x": 0,
+     "y": 672,
+     "w": 288,
+     "h": 224,
+     "srcTx": 18,
+     "srcTy": 42
+    },
+    {
+     "rid": "r29_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 64,
+     "w": 224,
+     "h": 224,
+     "srcTx": 45,
+     "srcTy": 42
+    },
+    {
+     "rid": "r29_6",
+     "roomIdx": 6,
+     "x": 704,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 61
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r29_2",
+        "evId": 10,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1072
+      },
+      {
+       "snap": {
+        "mapId": "r29_1",
+        "evId": 6,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 432,
+       "y": 1072
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r29_4",
+        "evId": 11,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 816
+      },
+      {
+       "snap": {
+        "mapId": "r29_1",
+        "evId": 6,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 432,
+       "y": 944
+      }
+     ]
+    },
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r29_0",
+        "evId": 3,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 272,
+        "oy": 80
+       },
+       "x": 592,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r29_5",
+        "evId": 13,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 144,
+        "oy": 208
+       },
+       "x": 592,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r29_0",
+        "evId": 2,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 80,
+        "oy": 80
+       },
+       "x": 400,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r29_3",
+        "evId": 14,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r29_0",
+        "evId": 4,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 336,
+        "oy": 80
+       },
+       "x": 656,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r29_6",
+        "evId": 15,
+        "evName": "JOYS HOME (MORNING)",
+        "ox": 176,
+        "oy": 272
+       },
+       "x": 880,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "30": {
+   "mapId": 30,
+   "name": "CHARLIE'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map30.png",
+   "width": 960,
+   "height": 1184,
+   "rooms": [
+    {
+     "rid": "r30_0",
+     "roomIdx": 0,
+     "x": 320,
+     "y": 288,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r30_1",
+     "roomIdx": 1,
+     "x": 384,
+     "y": 768,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r30_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 864,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 16
+    },
+    {
+     "rid": "r30_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 608,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r30_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 0,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r30_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 32,
+     "w": 256,
+     "h": 224,
+     "srcTx": 45,
+     "srcTy": 42
+    },
+    {
+     "rid": "r30_7",
+     "roomIdx": 7,
+     "x": 96,
+     "y": 288,
+     "w": 192,
+     "h": 288,
+     "srcTx": 44,
+     "srcTy": 63
+    },
+    {
+     "rid": "r30_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 224,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 62
+    }
+   ],
+   "routes": [
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r30_3",
+        "evId": 11,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 272,
+       "y": 752
+      },
+      {
+       "snap": {
+        "mapId": "r30_1",
+        "evId": 6,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 400,
+       "y": 944
+      }
+     ]
+    },
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r30_2",
+        "evId": 10,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 272,
+        "oy": 208
+       },
+       "x": 272,
+       "y": 1072
+      },
+      {
+       "snap": {
+        "mapId": "r30_1",
+        "evId": 6,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 400,
+       "y": 1072
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r30_0",
+        "evId": 4,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 336,
+        "oy": 112
+       },
+       "x": 656,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r30_6",
+        "evId": 15,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 48,
+        "oy": 240
+       },
+       "x": 784,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r30_0",
+        "evId": 3,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 272,
+        "oy": 112
+       },
+       "x": 592,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r30_5",
+        "evId": 13,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 144,
+        "oy": 208
+       },
+       "x": 592,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r30_0",
+        "evId": 2,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 80,
+        "oy": 112
+       },
+       "x": 400,
+       "y": 400
+      },
+      {
+       "snap": {
+        "mapId": "r30_4",
+        "evId": 14,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 240
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r30_7",
+        "evId": 16,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 112,
+        "oy": 272
+       },
+       "x": 208,
+       "y": 560
+      },
+      {
+       "snap": {
+        "mapId": "r30_0",
+        "evId": 17,
+        "evName": "CHARLIES HOME (MORNING)",
+        "ox": 80,
+        "oy": 368
+       },
+       "x": 400,
+       "y": 656
+      }
+     ]
+    }
+   ]
+  },
+  "32": {
+   "mapId": 32,
+   "name": "VANCE'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map32.png",
+   "width": 640,
+   "height": 800,
+   "rooms": [
+    {
+     "rid": "r32_1",
+     "roomIdx": 1,
+     "x": 480,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r32_0",
+     "roomIdx": 0,
+     "x": 96,
+     "y": 448,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r32_2",
+     "roomIdx": 2,
+     "x": 64,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r32_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 40
+    },
+    {
+     "rid": "r32_4",
+     "roomIdx": 4,
+     "x": 288,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r32_2",
+        "evId": 48,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 368,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r32_4",
+        "evId": 6,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 368,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r32_2",
+        "evId": 7,
+        "evName": "PLAYER HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 432,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r32_1",
+        "evId": 5,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 560,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r32_2",
+        "evId": 1,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 112,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r32_3",
+        "evId": 49,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 112,
+        "oy": 272
+       },
+       "x": 112,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "33": {
+   "mapId": 33,
+   "name": "SHAWN & KAREN'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map33.png",
+   "width": 480,
+   "height": 704,
+   "rooms": [
+    {
+     "rid": "r33_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 384,
+     "w": 384,
+     "h": 320,
+     "srcTx": 43,
+     "srcTy": 18
+    },
+    {
+     "rid": "r33_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r33_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 224,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r33_4",
+     "roomIdx": 4,
+     "x": 320,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": []
+  },
+  "34": {
+   "mapId": 34,
+   "name": "SARAH'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map34.png",
+   "width": 608,
+   "height": 736,
+   "rooms": [
+    {
+     "rid": "r34_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r34_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r34_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 384,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r34_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 256,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r34_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r34_2",
+        "evId": 2,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r34_4",
+        "evId": 9,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 208
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r34_2",
+        "evId": 2,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r34_3",
+        "evId": 8,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 528,
+       "y": 208
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r34_2",
+        "evId": 1,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r34_1",
+        "evId": 7,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 80,
+       "y": 208
+      }
+     ]
+    }
+   ]
+  },
+  "35": {
+   "mapId": 35,
+   "name": "AUBREY'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map35.png",
+   "width": 576,
+   "height": 800,
+   "rooms": [
+    {
+     "rid": "r35_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 480,
+     "w": 384,
+     "h": 320,
+     "srcTx": 43,
+     "srcTy": 18
+    },
+    {
+     "rid": "r35_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r35_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 256,
+     "w": 416,
+     "h": 224,
+     "srcTx": 14,
+     "srcTy": 21
+    },
+    {
+     "rid": "r35_3",
+     "roomIdx": 3,
+     "x": 416,
+     "y": 0,
+     "w": 160,
+     "h": 256,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r35_4",
+     "roomIdx": 4,
+     "x": 224,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r35_2",
+        "evId": 6,
+        "evName": "AUBREYS HOME (MORNING)",
+        "ox": 336,
+        "oy": 112
+       },
+       "x": 368,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r35_4",
+        "evId": 5,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 304,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "36": {
+   "mapId": 36,
+   "name": "VANCE'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map36.png",
+   "width": 640,
+   "height": 800,
+   "rooms": [
+    {
+     "rid": "r36_0",
+     "roomIdx": 0,
+     "x": 96,
+     "y": 448,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r36_1",
+     "roomIdx": 1,
+     "x": 480,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r36_2",
+     "roomIdx": 2,
+     "x": 64,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r36_3",
+     "roomIdx": 3,
+     "x": 0,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 18,
+     "srcTy": 40
+    },
+    {
+     "rid": "r36_4",
+     "roomIdx": 4,
+     "x": 288,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r36_2",
+        "evId": 48,
+        "evName": "PLAYER HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 368,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r36_4",
+        "evId": 6,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 368,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r36_2",
+        "evId": 7,
+        "evName": "PLAYER HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 432,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r36_1",
+        "evId": 5,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 560,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r36_2",
+        "evId": 1,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 112,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r36_3",
+        "evId": 49,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 112,
+        "oy": 272
+       },
+       "x": 112,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "37": {
+   "mapId": 37,
+   "name": "SHAWN & KAREN'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map37.png",
+   "width": 480,
+   "height": 704,
+   "rooms": [
+    {
+     "rid": "r37_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 384,
+     "w": 384,
+     "h": 320,
+     "srcTx": 43,
+     "srcTy": 18
+    },
+    {
+     "rid": "r37_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r37_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 224,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r37_4",
+     "roomIdx": 4,
+     "x": 320,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": []
+  },
+  "38": {
+   "mapId": 38,
+   "name": "SARAH'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map38.png",
+   "width": 608,
+   "height": 736,
+   "rooms": [
+    {
+     "rid": "r38_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 384,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r38_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r38_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 256,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r38_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r38_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r38_2",
+        "evId": 2,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r38_4",
+        "evId": 9,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 208
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r38_2",
+        "evId": 2,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r38_3",
+        "evId": 8,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 528,
+       "y": 208
+      }
+     ]
+    },
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r38_2",
+        "evId": 1,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r38_1",
+        "evId": 7,
+        "evName": "SARAHS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 80,
+       "y": 208
+      }
+     ]
+    }
+   ]
+  },
+  "39": {
+   "mapId": 39,
+   "name": "AUBREY'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map39.png",
+   "width": 576,
+   "height": 800,
+   "rooms": [
+    {
+     "rid": "r39_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 480,
+     "w": 384,
+     "h": 320,
+     "srcTx": 43,
+     "srcTy": 18
+    },
+    {
+     "rid": "r39_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r39_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 256,
+     "w": 416,
+     "h": 224,
+     "srcTx": 14,
+     "srcTy": 21
+    },
+    {
+     "rid": "r39_3",
+     "roomIdx": 3,
+     "x": 416,
+     "y": 0,
+     "w": 160,
+     "h": 256,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r39_4",
+     "roomIdx": 4,
+     "x": 224,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r39_2",
+        "evId": 6,
+        "evName": "AUBREYS HOME (MORNING)",
+        "ox": 336,
+        "oy": 112
+       },
+       "x": 368,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r39_4",
+        "evId": 5,
+        "evName": "VANCE HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 304,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "46": {
+   "mapId": 46,
+   "name": "BASIL'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map46.png",
+   "width": 608,
+   "height": 832,
+   "rooms": [
+    {
+     "rid": "r46_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 480,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r46_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 32,
+     "w": 160,
+     "h": 256,
+     "srcTx": 69,
+     "srcTy": 18
+    },
+    {
+     "rid": "r46_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r46_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 288,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r46_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r46_2",
+        "evId": 1,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r46_1",
+        "evId": 6,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 80,
+        "oy": 240
+       },
+       "x": 80,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r46_4",
+        "evId": 8,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 272
+      },
+      {
+       "snap": {
+        "mapId": "r46_2",
+        "evId": 2,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 368
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r46_2",
+        "evId": 2,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r46_3",
+        "evId": 7,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 80,
+        "oy": 272
+       },
+       "x": 528,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "47": {
+   "mapId": 47,
+   "name": "JESSE'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map47.png",
+   "width": 608,
+   "height": 800,
+   "rooms": [
+    {
+     "rid": "r47_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 480,
+     "w": 384,
+     "h": 320,
+     "srcTx": 43,
+     "srcTy": 18
+    },
+    {
+     "rid": "r47_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r47_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r47_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 288,
+     "srcTx": 19,
+     "srcTy": 40
+    },
+    {
+     "rid": "r47_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r47_2",
+        "evId": 2,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r47_4",
+        "evId": 8,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r47_2",
+        "evId": 2,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r47_3",
+        "evId": 7,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 80,
+        "oy": 272
+       },
+       "x": 528,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r47_2",
+        "evId": 1,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r47_1",
+        "evId": 6,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 80,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "48": {
+   "mapId": 48,
+   "name": "BEBE'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map48.png",
+   "width": 608,
+   "height": 800,
+   "rooms": [
+    {
+     "rid": "r48_0",
+     "roomIdx": 0,
+     "x": 96,
+     "y": 448,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r48_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 69,
+     "srcTy": 17
+    },
+    {
+     "rid": "r48_2",
+     "roomIdx": 2,
+     "x": 64,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r48_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r48_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r48_2",
+        "evId": 1,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 112,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r48_1",
+        "evId": 6,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 80,
+        "oy": 272
+       },
+       "x": 80,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r48_2",
+        "evId": 2,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 272,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r48_4",
+        "evId": 8,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r48_2",
+        "evId": 2,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 432,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r48_3",
+        "evId": 7,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 528,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "49": {
+   "mapId": 49,
+   "name": "ARTIST'S HOUSE",
+   "phase": "day",
+   "file": "houses_stitched/map49.png",
+   "width": 608,
+   "height": 736,
+   "rooms": [
+    {
+     "rid": "r49_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 416,
+     "w": 384,
+     "h": 320,
+     "srcTx": 43,
+     "srcTy": 18
+    },
+    {
+     "rid": "r49_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 256,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r49_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 70,
+     "srcTy": 19
+    },
+    {
+     "rid": "r49_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r49_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r49_2",
+        "evId": 2,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r49_3",
+        "evId": 7,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 528,
+       "y": 208
+      }
+     ]
+    },
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r49_2",
+        "evId": 2,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r49_4",
+        "evId": 8,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 208
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r49_2",
+        "evId": 1,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r49_1",
+        "evId": 6,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 80,
+       "y": 208
+      }
+     ]
+    }
+   ]
+  },
+  "50": {
+   "mapId": 50,
+   "name": "BASIL'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map50.png",
+   "width": 608,
+   "height": 832,
+   "rooms": [
+    {
+     "rid": "r50_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 480,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r50_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 32,
+     "w": 160,
+     "h": 256,
+     "srcTx": 69,
+     "srcTy": 18
+    },
+    {
+     "rid": "r50_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r50_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 288,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r50_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff7733",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r50_2",
+        "evId": 2,
+        "evName": "BATHROOM DOOR",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r50_3",
+        "evId": 7,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 80,
+        "oy": 272
+       },
+       "x": 528,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r50_2",
+        "evId": 2,
+        "evName": "BATHROOM DOOR",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r50_4",
+        "evId": 8,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r50_2",
+        "evId": 1,
+        "evName": "GRANDMAS DOOR",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r50_1",
+        "evId": 6,
+        "evName": "BASILS HOME (MORNING)",
+        "ox": 80,
+        "oy": 240
+       },
+       "x": 80,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "51": {
+   "mapId": 51,
+   "name": "JESSE'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map51.png",
+   "width": 608,
+   "height": 800,
+   "rooms": [
+    {
+     "rid": "r51_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r51_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 288,
+     "srcTx": 19,
+     "srcTy": 40
+    },
+    {
+     "rid": "r51_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 69,
+     "srcTy": 19
+    },
+    {
+     "rid": "r51_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    },
+    {
+     "rid": "r51_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 480,
+     "w": 384,
+     "h": 320,
+     "srcTx": 43,
+     "srcTy": 18
+    }
+   ],
+   "routes": [
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r51_2",
+        "evId": 2,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r51_4",
+        "evId": 8,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r51_3",
+        "evId": 7,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 80,
+        "oy": 272
+       },
+       "x": 528,
+       "y": 272
+      },
+      {
+       "snap": {
+        "mapId": "r51_2",
+        "evId": 2,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 368
+      }
+     ]
+    },
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r51_2",
+        "evId": 1,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r51_1",
+        "evId": 6,
+        "evName": "JESSES HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 80,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "52": {
+   "mapId": 52,
+   "name": "BEBE'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map52.png",
+   "width": 608,
+   "height": 800,
+   "rooms": [
+    {
+     "rid": "r52_0",
+     "roomIdx": 0,
+     "x": 96,
+     "y": 448,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r52_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 0,
+     "w": 224,
+     "h": 288,
+     "srcTx": 69,
+     "srcTy": 17
+    },
+    {
+     "rid": "r52_2",
+     "roomIdx": 2,
+     "x": 64,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r52_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r52_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#bb88ff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r52_2",
+        "evId": 2,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 272,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r52_4",
+        "evId": 8,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r52_2",
+        "evId": 2,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 432,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r52_3",
+        "evId": 7,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 528,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r52_2",
+        "evId": 1,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 112,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r52_1",
+        "evId": 6,
+        "evName": "BEBES HOME (MORNING)",
+        "ox": 80,
+        "oy": 272
+       },
+       "x": 80,
+       "y": 272
+      }
+     ]
+    }
+   ]
+  },
+  "53": {
+   "mapId": 53,
+   "name": "ARTIST'S HOUSE",
+   "phase": "sunset",
+   "file": "houses_stitched/map53.png",
+   "width": 608,
+   "height": 736,
+   "rooms": [
+    {
+     "rid": "r53_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 256,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r53_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 70,
+     "srcTy": 19
+    },
+    {
+     "rid": "r53_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r53_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 0,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    },
+    {
+     "rid": "r53_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 416,
+     "w": 384,
+     "h": 320,
+     "srcTx": 43,
+     "srcTy": 18
+    }
+   ],
+   "routes": [
+    {
+     "color": "#33ccff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r53_2",
+        "evId": 2,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r53_4",
+        "evId": 8,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 208
+      }
+     ]
+    },
+    {
+     "color": "#66ff66",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r53_2",
+        "evId": 2,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r53_3",
+        "evId": 7,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 528,
+       "y": 208
+      }
+     ]
+    },
+    {
+     "color": "#ffcc33",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r53_2",
+        "evId": 1,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 304
+      },
+      {
+       "snap": {
+        "mapId": "r53_1",
+        "evId": 6,
+        "evName": "ARTISTS HOME (MORNING)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 80,
+       "y": 208
+      }
+     ]
+    }
+   ]
+  },
+  "79": {
+   "mapId": 79,
+   "name": "KEL & HERO'S HOUSE",
+   "phase": "night",
+   "file": "houses_stitched/map79.png",
+   "width": 1152,
+   "height": 1312,
+   "rooms": [
+    {
+     "rid": "r79_0",
+     "roomIdx": 0,
+     "x": 352,
+     "y": 352,
+     "w": 416,
+     "h": 512,
+     "srcTx": 14,
+     "srcTy": 13
+    },
+    {
+     "rid": "r79_1",
+     "roomIdx": 1,
+     "x": 448,
+     "y": 864,
+     "w": 416,
+     "h": 384,
+     "srcTx": 41,
+     "srcTy": 16
+    },
+    {
+     "rid": "r79_2",
+     "roomIdx": 2,
+     "x": 0,
+     "y": 992,
+     "w": 288,
+     "h": 320,
+     "srcTx": 68,
+     "srcTy": 17
+    },
+    {
+     "rid": "r79_3",
+     "roomIdx": 3,
+     "x": 32,
+     "y": 736,
+     "w": 288,
+     "h": 256,
+     "srcTx": 18,
+     "srcTy": 41
+    },
+    {
+     "rid": "r79_4",
+     "roomIdx": 4,
+     "x": 192,
+     "y": 64,
+     "w": 224,
+     "h": 256,
+     "srcTx": 68,
+     "srcTy": 41
+    },
+    {
+     "rid": "r79_5",
+     "roomIdx": 5,
+     "x": 448,
+     "y": 96,
+     "w": 256,
+     "h": 224,
+     "srcTx": 44,
+     "srcTy": 42
+    },
+    {
+     "rid": "r79_6",
+     "roomIdx": 6,
+     "x": 736,
+     "y": 0,
+     "w": 416,
+     "h": 320,
+     "srcTx": 15,
+     "srcTy": 61
+    }
+   ],
+   "routes": [
+    {
+     "color": "#ff5566",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r79_2",
+        "evId": 10,
+        "evName": "KELS HOME (NIGHT)",
+        "ox": 272,
+        "oy": 176
+       },
+       "x": 272,
+       "y": 1168
+      },
+      {
+       "snap": {
+        "mapId": "r79_1",
+        "evId": 6,
+        "evName": "KELS HOME (NIGHT)",
+        "ox": 16,
+        "oy": 304
+       },
+       "x": 464,
+       "y": 1168
+      }
+     ]
+    },
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r79_3",
+        "evId": 12,
+        "evName": "KELS HOME (NIGHT)",
+        "ox": 272,
+        "oy": 144
+       },
+       "x": 304,
+       "y": 880
+      },
+      {
+       "snap": {
+        "mapId": "r79_1",
+        "evId": 6,
+        "evName": "KELS HOME (NIGHT)",
+        "ox": 16,
+        "oy": 176
+       },
+       "x": 464,
+       "y": 1040
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r79_0",
+        "evId": 2,
+        "evName": "KELS HOME (NIGHT)",
+        "ox": 272,
+        "oy": 112
+       },
+       "x": 624,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r79_5",
+        "evId": 13,
+        "evName": "Kels HOME (NIGHT)",
+        "ox": 176,
+        "oy": 208
+       },
+       "x": 624,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r79_0",
+        "evId": 3,
+        "evName": "KELS HOME (NIGHT)",
+        "ox": 336,
+        "oy": 112
+       },
+       "x": 688,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r79_6",
+        "evId": 15,
+        "evName": "Kels HOME (NIGHT)",
+        "ox": 208,
+        "oy": 304
+       },
+       "x": 944,
+       "y": 304
+      }
+     ]
+    },
+    {
+     "color": "#ff66d9",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r79_0",
+        "evId": 1,
+        "evName": "KELS HOME (NIGHT)",
+        "ox": 80,
+        "oy": 112
+       },
+       "x": 432,
+       "y": 464
+      },
+      {
+       "snap": {
+        "mapId": "r79_4",
+        "evId": 14,
+        "evName": "Kels HOME (NIGHT)",
+        "ox": 176,
+        "oy": 240
+       },
+       "x": 368,
+       "y": 304
+      }
+     ]
+    }
+   ]
+  },
+  "80": {
+   "mapId": 80,
+   "name": "BASIL'S HOUSE",
+   "phase": "night",
+   "file": "houses_stitched/map80.png",
+   "width": 608,
+   "height": 832,
+   "rooms": [
+    {
+     "rid": "r80_0",
+     "roomIdx": 0,
+     "x": 64,
+     "y": 480,
+     "w": 384,
+     "h": 352,
+     "srcTx": 43,
+     "srcTy": 17
+    },
+    {
+     "rid": "r80_1",
+     "roomIdx": 1,
+     "x": 0,
+     "y": 32,
+     "w": 160,
+     "h": 256,
+     "srcTx": 69,
+     "srcTy": 18
+    },
+    {
+     "rid": "r80_2",
+     "roomIdx": 2,
+     "x": 32,
+     "y": 320,
+     "w": 416,
+     "h": 160,
+     "srcTx": 14,
+     "srcTy": 23
+    },
+    {
+     "rid": "r80_3",
+     "roomIdx": 3,
+     "x": 448,
+     "y": 0,
+     "w": 160,
+     "h": 288,
+     "srcTx": 19,
+     "srcTy": 42
+    },
+    {
+     "rid": "r80_4",
+     "roomIdx": 4,
+     "x": 256,
+     "y": 64,
+     "w": 160,
+     "h": 224,
+     "srcTx": 47,
+     "srcTy": 42
+    }
+   ],
+   "routes": [
+    {
+     "color": "#22eebb",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r80_2",
+        "evId": 1,
+        "evName": "BASILS HOME (NIGHT)",
+        "ox": 48,
+        "oy": 48
+       },
+       "x": 80,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r80_1",
+        "evId": 7,
+        "evName": "BASILS HOME (NIGHT)",
+        "ox": 80,
+        "oy": 240
+       },
+       "x": 80,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#eeaa44",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r80_2",
+        "evId": 2,
+        "evName": "BASILS HOME (NIGHT)",
+        "ox": 304,
+        "oy": 48
+       },
+       "x": 336,
+       "y": 368
+      },
+      {
+       "snap": {
+        "mapId": "r80_4",
+        "evId": 9,
+        "evName": "BASILS HOME (NIGHT)",
+        "ox": 80,
+        "oy": 208
+       },
+       "x": 336,
+       "y": 272
+      }
+     ]
+    },
+    {
+     "color": "#88ddff",
+     "pts": [
+      {
+       "snap": {
+        "mapId": "r80_3",
+        "evId": 8,
+        "evName": "Door",
+        "ox": 80,
+        "oy": 272
+       },
+       "x": 528,
+       "y": 272
+      },
+      {
+       "snap": {
+        "mapId": "r80_2",
+        "evId": 2,
+        "evName": "BASILS HOME (NIGHT)",
+        "ox": 368,
+        "oy": 48
+       },
+       "x": 400,
+       "y": 368
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

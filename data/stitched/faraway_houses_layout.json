@@ -1,0 +1,6650 @@
+{
+  "version": 2,
+  "layout": {
+    "r23_5": {
+      "x": -96,
+      "y": -1088,
+      "crop": "full",
+      "zOrder": 28,
+      "groupId": "faraway"
+    },
+    "r23_0": {
+      "x": 32,
+      "y": -800,
+      "crop": "full",
+      "zOrder": 29,
+      "groupId": "faraway"
+    },
+    "r23_1": {
+      "x": 128,
+      "y": -320,
+      "crop": "full",
+      "zOrder": 30,
+      "groupId": "faraway"
+    },
+    "r23_2": {
+      "x": -288,
+      "y": -192,
+      "crop": "full",
+      "zOrder": 31,
+      "groupId": "faraway"
+    },
+    "r23_3": {
+      "x": -288,
+      "y": -448,
+      "crop": "full",
+      "zOrder": 32,
+      "groupId": "faraway"
+    },
+    "r23_4": {
+      "x": 160,
+      "y": -1056,
+      "crop": "full",
+      "zOrder": 33,
+      "groupId": "faraway"
+    },
+    "r23_6": {
+      "x": 480,
+      "y": -768,
+      "crop": "full",
+      "zOrder": 34,
+      "groupId": "faraway"
+    },
+    "r23_7": {
+      "x": 416,
+      "y": -1120,
+      "crop": "full",
+      "zOrder": 35,
+      "groupId": "faraway"
+    },
+    "r15_0": {
+      "x": 1312,
+      "y": -1280,
+      "crop": "full",
+      "zOrder": 36,
+      "groupId": "gmtxvw0r9"
+    },
+    "r15_2": {
+      "x": 960,
+      "y": -640,
+      "crop": "full",
+      "zOrder": 37,
+      "groupId": "gmtxvw0r9"
+    },
+    "r15_1": {
+      "x": 1408,
+      "y": -768,
+      "crop": "full",
+      "zOrder": 38,
+      "groupId": "gmtxvw0r9"
+    },
+    "r15_3": {
+      "x": 992,
+      "y": -896,
+      "crop": "full",
+      "zOrder": 39,
+      "groupId": "gmtxvw0r9"
+    },
+    "r15_4": {
+      "x": 1152,
+      "y": -1568,
+      "crop": "full",
+      "zOrder": 40,
+      "groupId": "gmtxvw0r9"
+    },
+    "r15_5": {
+      "x": 1408,
+      "y": -1536,
+      "crop": "full",
+      "zOrder": 41,
+      "groupId": "gmtxvw0r9"
+    },
+    "r15_6": {
+      "x": 1696,
+      "y": -1632,
+      "crop": "full",
+      "zOrder": 42,
+      "groupId": "gmtxvw0r9"
+    },
+    "r19_0": {
+      "x": 2400,
+      "y": -1504,
+      "crop": "full",
+      "zOrder": 43,
+      "groupId": "faraway"
+    },
+    "r19_1": {
+      "x": 2496,
+      "y": -992,
+      "crop": "full",
+      "zOrder": 44,
+      "groupId": "faraway"
+    },
+    "r19_2": {
+      "x": 2048,
+      "y": -864,
+      "crop": "full",
+      "zOrder": 45,
+      "groupId": "faraway"
+    },
+    "r19_3": {
+      "x": 2080,
+      "y": -1120,
+      "crop": "full",
+      "zOrder": 46,
+      "groupId": "faraway"
+    },
+    "r19_4": {
+      "x": 2240,
+      "y": -1792,
+      "crop": "full",
+      "zOrder": 47,
+      "groupId": "faraway"
+    },
+    "r19_5": {
+      "x": 2496,
+      "y": -1760,
+      "crop": "full",
+      "zOrder": 48,
+      "groupId": "faraway"
+    },
+    "r19_6": {
+      "x": 2784,
+      "y": -1856,
+      "crop": "full",
+      "zOrder": 49,
+      "groupId": "faraway"
+    },
+    "r79_0": {
+      "x": 1152,
+      "y": 160,
+      "crop": "full",
+      "zOrder": 50,
+      "groupId": "faraway"
+    },
+    "r79_1": {
+      "x": 1248,
+      "y": 672,
+      "crop": "full",
+      "zOrder": 51,
+      "groupId": "faraway"
+    },
+    "r79_2": {
+      "x": 800,
+      "y": 800,
+      "crop": "full",
+      "zOrder": 52,
+      "groupId": "faraway"
+    },
+    "r79_3": {
+      "x": 832,
+      "y": 544,
+      "crop": "full",
+      "zOrder": 53,
+      "groupId": "faraway"
+    },
+    "r79_4": {
+      "x": 992,
+      "y": -128,
+      "crop": "full",
+      "zOrder": 54,
+      "groupId": "faraway"
+    },
+    "r79_5": {
+      "x": 1248,
+      "y": -96,
+      "crop": "full",
+      "zOrder": 55,
+      "groupId": "faraway"
+    },
+    "r79_6": {
+      "x": 1536,
+      "y": -192,
+      "crop": "full",
+      "zOrder": 56,
+      "groupId": "faraway"
+    },
+    "r16_0": {
+      "x": -64,
+      "y": 864,
+      "crop": "full",
+      "zOrder": 57,
+      "groupId": "faraway"
+    },
+    "r16_1": {
+      "x": 32,
+      "y": 1344,
+      "crop": "full",
+      "zOrder": 58,
+      "groupId": "faraway"
+    },
+    "r16_2": {
+      "x": -384,
+      "y": 1504,
+      "crop": "full",
+      "zOrder": 59,
+      "groupId": "faraway"
+    },
+    "r16_3": {
+      "x": -384,
+      "y": 1248,
+      "crop": "full",
+      "zOrder": 60,
+      "groupId": "faraway"
+    },
+    "r16_4": {
+      "x": -192,
+      "y": 576,
+      "crop": "full",
+      "zOrder": 61,
+      "groupId": "faraway"
+    },
+    "r16_5": {
+      "x": 96,
+      "y": 608,
+      "crop": "full",
+      "zOrder": 62,
+      "groupId": "faraway"
+    },
+    "r16_6": {
+      "x": 320,
+      "y": 576,
+      "crop": "full",
+      "zOrder": 63,
+      "groupId": "faraway"
+    },
+    "r20_0": {
+      "x": 832,
+      "y": 1600,
+      "crop": "full",
+      "zOrder": 64,
+      "groupId": "faraway"
+    },
+    "r20_1": {
+      "x": 928,
+      "y": 2080,
+      "crop": "full",
+      "zOrder": 65,
+      "groupId": "faraway"
+    },
+    "r20_2": {
+      "x": 512,
+      "y": 2240,
+      "crop": "full",
+      "zOrder": 66,
+      "groupId": "faraway"
+    },
+    "r20_3": {
+      "x": 512,
+      "y": 1984,
+      "crop": "full",
+      "zOrder": 67,
+      "groupId": "faraway"
+    },
+    "r20_4": {
+      "x": 704,
+      "y": 1312,
+      "crop": "full",
+      "zOrder": 68,
+      "groupId": "faraway"
+    },
+    "r20_5": {
+      "x": 992,
+      "y": 1344,
+      "crop": "full",
+      "zOrder": 69,
+      "groupId": "faraway"
+    },
+    "r20_6": {
+      "x": 1216,
+      "y": 1312,
+      "crop": "full",
+      "zOrder": 70,
+      "groupId": "faraway"
+    },
+    "r17_0": {
+      "x": 1984,
+      "y": 1472,
+      "crop": "full",
+      "zOrder": 71,
+      "groupId": "faraway"
+    },
+    "r17_1": {
+      "x": 2048,
+      "y": 1952,
+      "crop": "full",
+      "zOrder": 72,
+      "groupId": "faraway"
+    },
+    "r17_2": {
+      "x": 1664,
+      "y": 2080,
+      "crop": "full",
+      "zOrder": 73,
+      "groupId": "faraway"
+    },
+    "r17_3": {
+      "x": 1664,
+      "y": 1824,
+      "crop": "full",
+      "zOrder": 74,
+      "groupId": "faraway"
+    },
+    "r17_4": {
+      "x": 1856,
+      "y": 1184,
+      "crop": "full",
+      "zOrder": 75,
+      "groupId": "faraway"
+    },
+    "r17_5": {
+      "x": 2112,
+      "y": 1216,
+      "crop": "full",
+      "zOrder": 76,
+      "groupId": "faraway"
+    },
+    "r17_6": {
+      "x": 2400,
+      "y": 1120,
+      "crop": "full",
+      "zOrder": 77,
+      "groupId": "faraway"
+    },
+    "r17_7": {
+      "x": 1760,
+      "y": 1504,
+      "crop": "full",
+      "zOrder": 78,
+      "groupId": "faraway"
+    },
+    "r21_5": {
+      "x": 2528,
+      "y": -320,
+      "crop": "full",
+      "zOrder": 79,
+      "groupId": "faraway"
+    },
+    "r21_4": {
+      "x": 2272,
+      "y": -352,
+      "crop": "full",
+      "zOrder": 80,
+      "groupId": "faraway"
+    },
+    "r21_3": {
+      "x": 2080,
+      "y": 288,
+      "crop": "full",
+      "zOrder": 81,
+      "groupId": "faraway"
+    },
+    "r21_2": {
+      "x": 2080,
+      "y": 544,
+      "crop": "full",
+      "zOrder": 82,
+      "groupId": "faraway"
+    },
+    "r21_6": {
+      "x": 2816,
+      "y": -416,
+      "crop": "full",
+      "zOrder": 83,
+      "groupId": "faraway"
+    },
+    "r21_1": {
+      "x": 2464,
+      "y": 416,
+      "crop": "full",
+      "zOrder": 84,
+      "groupId": "faraway"
+    },
+    "r21_0": {
+      "x": 2400,
+      "y": -64,
+      "crop": "full",
+      "zOrder": 85,
+      "groupId": "faraway"
+    },
+    "r21_7": {
+      "x": 2176,
+      "y": -32,
+      "crop": "full",
+      "zOrder": 86,
+      "groupId": "faraway"
+    },
+    "r27_0": {
+      "x": 3008,
+      "y": 1216,
+      "crop": "full",
+      "zOrder": 87,
+      "groupId": "faraway"
+    },
+    "r27_1": {
+      "x": 3104,
+      "y": 1696,
+      "crop": "full",
+      "zOrder": 88,
+      "groupId": "faraway"
+    },
+    "r27_2": {
+      "x": 2688,
+      "y": 1824,
+      "crop": "full",
+      "zOrder": 89,
+      "groupId": "faraway"
+    },
+    "r27_3": {
+      "x": 2688,
+      "y": 1568,
+      "crop": "full",
+      "zOrder": 90,
+      "groupId": "faraway"
+    },
+    "r27_4": {
+      "x": 3136,
+      "y": 960,
+      "crop": "full",
+      "zOrder": 91,
+      "groupId": "faraway"
+    },
+    "r27_5": {
+      "x": 2880,
+      "y": 928,
+      "crop": "full",
+      "zOrder": 92,
+      "groupId": "faraway"
+    },
+    "r27_6": {
+      "x": 3456,
+      "y": 1248,
+      "crop": "full",
+      "zOrder": 93,
+      "groupId": "faraway"
+    },
+    "r27_7": {
+      "x": 3424,
+      "y": 896,
+      "crop": "full",
+      "zOrder": 94,
+      "groupId": "faraway"
+    },
+    "r26_0": {
+      "x": 3552,
+      "y": -192,
+      "crop": "full",
+      "zOrder": 95,
+      "groupId": "faraway"
+    },
+    "r26_1": {
+      "x": 3616,
+      "y": 288,
+      "crop": "full",
+      "zOrder": 96,
+      "groupId": "faraway"
+    },
+    "r26_2": {
+      "x": 3232,
+      "y": 384,
+      "crop": "full",
+      "zOrder": 97,
+      "groupId": "faraway"
+    },
+    "r26_3": {
+      "x": 3232,
+      "y": 128,
+      "crop": "full",
+      "zOrder": 98,
+      "groupId": "faraway"
+    },
+    "r26_4": {
+      "x": 3424,
+      "y": -480,
+      "crop": "full",
+      "zOrder": 99,
+      "groupId": "faraway"
+    },
+    "r26_5": {
+      "x": 3680,
+      "y": -448,
+      "crop": "full",
+      "zOrder": 100,
+      "groupId": "faraway"
+    },
+    "r26_6": {
+      "x": 3968,
+      "y": -480,
+      "crop": "full",
+      "zOrder": 101,
+      "groupId": "faraway"
+    },
+    "r26_7": {
+      "x": 3328,
+      "y": -160,
+      "crop": "full",
+      "zOrder": 102,
+      "groupId": "faraway"
+    },
+    "r30_0": {
+      "x": 3552,
+      "y": -1600,
+      "crop": "full",
+      "zOrder": 103,
+      "groupId": "faraway"
+    },
+    "r30_1": {
+      "x": 3616,
+      "y": -1120,
+      "crop": "full",
+      "zOrder": 104,
+      "groupId": "faraway"
+    },
+    "r30_2": {
+      "x": 3232,
+      "y": -1024,
+      "crop": "full",
+      "zOrder": 105,
+      "groupId": "faraway"
+    },
+    "r30_3": {
+      "x": 3232,
+      "y": -1280,
+      "crop": "full",
+      "zOrder": 106,
+      "groupId": "faraway"
+    },
+    "r30_4": {
+      "x": 3424,
+      "y": -1888,
+      "crop": "full",
+      "zOrder": 107,
+      "groupId": "faraway"
+    },
+    "r30_5": {
+      "x": 3680,
+      "y": -1856,
+      "crop": "full",
+      "zOrder": 108,
+      "groupId": "faraway"
+    },
+    "r30_7": {
+      "x": 3328,
+      "y": -1600,
+      "crop": "full",
+      "zOrder": 109,
+      "groupId": "faraway"
+    },
+    "r30_6": {
+      "x": 3968,
+      "y": -1888,
+      "crop": "full",
+      "zOrder": 110,
+      "groupId": "faraway"
+    },
+    "r33_0": {
+      "x": 288,
+      "y": -1696,
+      "crop": "full",
+      "zOrder": 111,
+      "groupId": "faraway"
+    },
+    "r33_1": {
+      "x": 224,
+      "y": -2080,
+      "crop": "full",
+      "zOrder": 112,
+      "groupId": "faraway"
+    },
+    "r33_2": {
+      "x": 256,
+      "y": -1856,
+      "crop": "full",
+      "zOrder": 113,
+      "groupId": "faraway"
+    },
+    "r33_4": {
+      "x": 544,
+      "y": -2080,
+      "crop": "full",
+      "zOrder": 114,
+      "groupId": "faraway"
+    },
+    "r37_0": {
+      "x": 3936,
+      "y": 1312,
+      "crop": "full",
+      "zOrder": 115,
+      "groupId": "faraway"
+    },
+    "r37_1": {
+      "x": 3872,
+      "y": 928,
+      "crop": "full",
+      "zOrder": 116,
+      "groupId": "faraway"
+    },
+    "r37_2": {
+      "x": 3904,
+      "y": 1152,
+      "crop": "full",
+      "zOrder": 117,
+      "groupId": "faraway"
+    },
+    "r37_4": {
+      "x": 4192,
+      "y": 928,
+      "crop": "full",
+      "zOrder": 118,
+      "groupId": "faraway"
+    },
+    "r34_3": {
+      "x": 4736,
+      "y": -1376,
+      "crop": "full",
+      "zOrder": 119,
+      "groupId": "faraway"
+    },
+    "r34_1": {
+      "x": 4288,
+      "y": -1376,
+      "crop": "full",
+      "zOrder": 120,
+      "groupId": "faraway"
+    },
+    "r34_0": {
+      "x": 4352,
+      "y": -992,
+      "crop": "full",
+      "zOrder": 121,
+      "groupId": "faraway"
+    },
+    "r34_2": {
+      "x": 4320,
+      "y": -1120,
+      "crop": "full",
+      "zOrder": 122,
+      "groupId": "faraway"
+    },
+    "r34_4": {
+      "x": 4544,
+      "y": -1376,
+      "crop": "full",
+      "zOrder": 123,
+      "groupId": "faraway"
+    },
+    "r38_0": {
+      "x": 5344,
+      "y": -960,
+      "crop": "full",
+      "zOrder": 124,
+      "groupId": "faraway"
+    },
+    "r38_1": {
+      "x": 5280,
+      "y": -1344,
+      "crop": "full",
+      "zOrder": 125,
+      "groupId": "faraway"
+    },
+    "r38_2": {
+      "x": 5312,
+      "y": -1088,
+      "crop": "full",
+      "zOrder": 126,
+      "groupId": "faraway"
+    },
+    "r38_3": {
+      "x": 5728,
+      "y": -1344,
+      "crop": "full",
+      "zOrder": 127,
+      "groupId": "faraway"
+    },
+    "r38_4": {
+      "x": 5536,
+      "y": -1344,
+      "crop": "full",
+      "zOrder": 128,
+      "groupId": "faraway"
+    },
+    "r24_0": {
+      "x": 1216,
+      "y": -2560,
+      "crop": "full",
+      "zOrder": 129,
+      "groupId": "faraway"
+    },
+    "r24_1": {
+      "x": 1280,
+      "y": -2112,
+      "crop": "full",
+      "zOrder": 130,
+      "groupId": "faraway"
+    },
+    "r24_2": {
+      "x": 896,
+      "y": -1984,
+      "crop": "full",
+      "zOrder": 131,
+      "groupId": "faraway"
+    },
+    "r24_3": {
+      "x": 896,
+      "y": -2240,
+      "crop": "full",
+      "zOrder": 132,
+      "groupId": "faraway"
+    },
+    "r24_7": {
+      "x": 1664,
+      "y": -2528,
+      "crop": "full",
+      "zOrder": 133,
+      "groupId": "faraway"
+    },
+    "r24_4": {
+      "x": 1088,
+      "y": -2848,
+      "crop": "full",
+      "zOrder": 134,
+      "groupId": "faraway"
+    },
+    "r24_5": {
+      "x": 1344,
+      "y": -2816,
+      "crop": "full",
+      "zOrder": 135,
+      "groupId": "faraway"
+    },
+    "r24_6": {
+      "x": 1632,
+      "y": -2880,
+      "crop": "full",
+      "zOrder": 136,
+      "groupId": "faraway"
+    },
+    "r28_3": {
+      "x": 2272,
+      "y": -2496,
+      "crop": "full",
+      "zOrder": 137,
+      "groupId": "faraway"
+    },
+    "r28_5": {
+      "x": 2720,
+      "y": -3072,
+      "crop": "full",
+      "zOrder": 138,
+      "groupId": "faraway"
+    },
+    "r28_6": {
+      "x": 3008,
+      "y": -3136,
+      "crop": "full",
+      "zOrder": 139,
+      "groupId": "faraway"
+    },
+    "r28_4": {
+      "x": 2464,
+      "y": -3104,
+      "crop": "full",
+      "zOrder": 140,
+      "groupId": "faraway"
+    },
+    "r28_7": {
+      "x": 3040,
+      "y": -2784,
+      "crop": "full",
+      "zOrder": 141,
+      "groupId": "faraway"
+    },
+    "r28_2": {
+      "x": 2272,
+      "y": -2240,
+      "crop": "full",
+      "zOrder": 142,
+      "groupId": "faraway"
+    },
+    "r28_1": {
+      "x": 2656,
+      "y": -2368,
+      "crop": "full",
+      "zOrder": 143,
+      "groupId": "faraway"
+    },
+    "r28_0": {
+      "x": 2592,
+      "y": -2816,
+      "crop": "full",
+      "zOrder": 144,
+      "groupId": "faraway"
+    },
+    "r25_2": {
+      "x": 3456,
+      "y": -2336,
+      "crop": "full",
+      "zOrder": 145,
+      "groupId": "faraway"
+    },
+    "r25_1": {
+      "x": 3872,
+      "y": -2464,
+      "crop": "full",
+      "zOrder": 146,
+      "groupId": "faraway"
+    },
+    "r25_3": {
+      "x": 3648,
+      "y": -3200,
+      "crop": "full",
+      "zOrder": 147,
+      "groupId": "faraway"
+    },
+    "r25_4": {
+      "x": 3456,
+      "y": -2560,
+      "crop": "full",
+      "zOrder": 148,
+      "groupId": "faraway"
+    },
+    "r25_5": {
+      "x": 3904,
+      "y": -3168,
+      "crop": "full",
+      "zOrder": 149,
+      "groupId": "faraway"
+    },
+    "r25_6": {
+      "x": 4160,
+      "y": -3232,
+      "crop": "full",
+      "zOrder": 150,
+      "groupId": "faraway"
+    },
+    "r25_0": {
+      "x": 3776,
+      "y": -2912,
+      "crop": "full",
+      "zOrder": 151,
+      "groupId": "faraway"
+    },
+    "r29_0": {
+      "x": 4576,
+      "y": -192,
+      "crop": "full",
+      "zOrder": 152,
+      "groupId": "faraway"
+    },
+    "r29_1": {
+      "x": 4672,
+      "y": 256,
+      "crop": "full",
+      "zOrder": 153,
+      "groupId": "faraway"
+    },
+    "r29_2": {
+      "x": 4256,
+      "y": 384,
+      "crop": "full",
+      "zOrder": 154,
+      "groupId": "faraway"
+    },
+    "r29_3": {
+      "x": 4448,
+      "y": -480,
+      "crop": "full",
+      "zOrder": 155,
+      "groupId": "faraway"
+    },
+    "r29_4": {
+      "x": 4256,
+      "y": 160,
+      "crop": "full",
+      "zOrder": 156,
+      "groupId": "faraway"
+    },
+    "r29_5": {
+      "x": 4704,
+      "y": -448,
+      "crop": "full",
+      "zOrder": 157,
+      "groupId": "faraway"
+    },
+    "r29_6": {
+      "x": 4960,
+      "y": -512,
+      "crop": "full",
+      "zOrder": 158,
+      "groupId": "faraway"
+    },
+    "r35_0": {
+      "x": 4512,
+      "y": -1856,
+      "crop": "full",
+      "zOrder": 159,
+      "groupId": "faraway"
+    },
+    "r35_1": {
+      "x": 4448,
+      "y": -2272,
+      "crop": "full",
+      "zOrder": 160,
+      "groupId": "faraway"
+    },
+    "r35_2": {
+      "x": 4480,
+      "y": -2080,
+      "crop": "full",
+      "zOrder": 161,
+      "groupId": "faraway"
+    },
+    "r35_3": {
+      "x": 4864,
+      "y": -2336,
+      "crop": "full",
+      "zOrder": 162,
+      "groupId": "faraway"
+    },
+    "r35_4": {
+      "x": 4672,
+      "y": -2272,
+      "crop": "full",
+      "zOrder": 163,
+      "groupId": "faraway"
+    },
+    "r39_0": {
+      "x": 5312,
+      "y": -1856,
+      "crop": "full",
+      "zOrder": 164,
+      "groupId": "faraway"
+    },
+    "r39_1": {
+      "x": 5248,
+      "y": -2272,
+      "crop": "full",
+      "zOrder": 165,
+      "groupId": "faraway"
+    },
+    "r39_2": {
+      "x": 5280,
+      "y": -2080,
+      "crop": "full",
+      "zOrder": 166,
+      "groupId": "faraway"
+    },
+    "r39_3": {
+      "x": 5664,
+      "y": -2336,
+      "crop": "full",
+      "zOrder": 167,
+      "groupId": "faraway"
+    },
+    "r39_4": {
+      "x": 5472,
+      "y": -2272,
+      "crop": "full",
+      "zOrder": 168,
+      "groupId": "faraway"
+    },
+    "r46_0": {
+      "x": 5280,
+      "y": 384,
+      "crop": "full",
+      "zOrder": 169,
+      "groupId": "faraway"
+    },
+    "r46_1": {
+      "x": 5216,
+      "y": -64,
+      "crop": "full",
+      "zOrder": 170,
+      "groupId": "faraway"
+    },
+    "r46_2": {
+      "x": 5248,
+      "y": 224,
+      "crop": "full",
+      "zOrder": 171,
+      "groupId": "faraway"
+    },
+    "r46_3": {
+      "x": 5664,
+      "y": -96,
+      "crop": "full",
+      "zOrder": 172,
+      "groupId": "faraway"
+    },
+    "r46_4": {
+      "x": 5472,
+      "y": -32,
+      "crop": "full",
+      "zOrder": 173,
+      "groupId": "faraway"
+    },
+    "r50_0": {
+      "x": 4608,
+      "y": 1280,
+      "crop": "full",
+      "zOrder": 174,
+      "groupId": "faraway"
+    },
+    "r50_1": {
+      "x": 4544,
+      "y": 832,
+      "crop": "full",
+      "zOrder": 175,
+      "groupId": "faraway"
+    },
+    "r50_2": {
+      "x": 4576,
+      "y": 1120,
+      "crop": "full",
+      "zOrder": 176,
+      "groupId": "faraway"
+    },
+    "r50_3": {
+      "x": 4992,
+      "y": 800,
+      "crop": "full",
+      "zOrder": 177,
+      "groupId": "faraway"
+    },
+    "r50_4": {
+      "x": 4800,
+      "y": 864,
+      "crop": "full",
+      "zOrder": 178,
+      "groupId": "faraway"
+    },
+    "r80_0": {
+      "x": 5344,
+      "y": 1312,
+      "crop": "full",
+      "zOrder": 179,
+      "groupId": "faraway"
+    },
+    "r80_1": {
+      "x": 5280,
+      "y": 864,
+      "crop": "full",
+      "zOrder": 180,
+      "groupId": "faraway"
+    },
+    "r80_2": {
+      "x": 5312,
+      "y": 1152,
+      "crop": "full",
+      "zOrder": 181,
+      "groupId": "faraway"
+    },
+    "r80_3": {
+      "x": 5728,
+      "y": 832,
+      "crop": "full",
+      "zOrder": 182,
+      "groupId": "faraway"
+    },
+    "r80_4": {
+      "x": 5536,
+      "y": 896,
+      "crop": "full",
+      "zOrder": 183,
+      "groupId": "faraway"
+    },
+    "r32_1": {
+      "x": -576,
+      "y": 864,
+      "crop": "full",
+      "zOrder": 184
+    },
+    "r32_0": {
+      "x": -960,
+      "y": 1248,
+      "crop": "full",
+      "zOrder": 185
+    },
+    "r32_2": {
+      "x": -992,
+      "y": 1120,
+      "crop": "full",
+      "zOrder": 186
+    },
+    "r32_3": {
+      "x": -1056,
+      "y": 800,
+      "crop": "full",
+      "zOrder": 187
+    },
+    "r32_4": {
+      "x": -768,
+      "y": 864,
+      "crop": "full",
+      "zOrder": 188
+    },
+    "r36_0": {
+      "x": -896,
+      "y": -352,
+      "crop": "full",
+      "zOrder": 189
+    },
+    "r36_1": {
+      "x": -512,
+      "y": -736,
+      "crop": "full",
+      "zOrder": 190
+    },
+    "r36_2": {
+      "x": -928,
+      "y": -480,
+      "crop": "full",
+      "zOrder": 191
+    },
+    "r36_3": {
+      "x": -992,
+      "y": -800,
+      "crop": "full",
+      "zOrder": 192
+    },
+    "r36_4": {
+      "x": -704,
+      "y": -736,
+      "crop": "full",
+      "zOrder": 193
+    },
+    "r47_0": {
+      "x": 4512,
+      "y": -2720,
+      "crop": "full",
+      "zOrder": 194
+    },
+    "r47_1": {
+      "x": 4448,
+      "y": -3136,
+      "crop": "full",
+      "zOrder": 195
+    },
+    "r47_2": {
+      "x": 4480,
+      "y": -2880,
+      "crop": "full",
+      "zOrder": 196
+    },
+    "r47_3": {
+      "x": 4896,
+      "y": -3200,
+      "crop": "full",
+      "zOrder": 197
+    },
+    "r47_4": {
+      "x": 4704,
+      "y": -3136,
+      "crop": "full",
+      "zOrder": 198
+    },
+    "r51_2": {
+      "x": 5184,
+      "y": -2880,
+      "crop": "full",
+      "zOrder": 199
+    },
+    "r51_3": {
+      "x": 5600,
+      "y": -3200,
+      "crop": "full",
+      "zOrder": 200
+    },
+    "r51_1": {
+      "x": 5152,
+      "y": -3136,
+      "crop": "full",
+      "zOrder": 201
+    },
+    "r51_4": {
+      "x": 5408,
+      "y": -3136,
+      "crop": "full",
+      "zOrder": 202
+    },
+    "r51_0": {
+      "x": 5216,
+      "y": -2720,
+      "crop": "full",
+      "zOrder": 203
+    },
+    "r48_0": {
+      "x": 3808,
+      "y": 2144,
+      "crop": "full",
+      "zOrder": 204
+    },
+    "r48_1": {
+      "x": 3712,
+      "y": 1696,
+      "crop": "full",
+      "zOrder": 205
+    },
+    "r48_2": {
+      "x": 3776,
+      "y": 2016,
+      "crop": "full",
+      "zOrder": 206
+    },
+    "r48_3": {
+      "x": 4160,
+      "y": 1760,
+      "crop": "full",
+      "zOrder": 207
+    },
+    "r48_4": {
+      "x": 3968,
+      "y": 1760,
+      "crop": "full",
+      "zOrder": 208
+    },
+    "r52_0": {
+      "x": 4576,
+      "y": 2144,
+      "crop": "full",
+      "zOrder": 209
+    },
+    "r52_1": {
+      "x": 4480,
+      "y": 1696,
+      "crop": "full",
+      "zOrder": 210
+    },
+    "r52_2": {
+      "x": 4544,
+      "y": 2016,
+      "crop": "full",
+      "zOrder": 211
+    },
+    "r52_3": {
+      "x": 4928,
+      "y": 1760,
+      "crop": "full",
+      "zOrder": 212
+    },
+    "r52_4": {
+      "x": 4736,
+      "y": 1760,
+      "crop": "full",
+      "zOrder": 213
+    },
+    "r49_0": {
+      "x": -640,
+      "y": -1216,
+      "crop": "full",
+      "zOrder": 214
+    },
+    "r49_2": {
+      "x": -672,
+      "y": -1376,
+      "crop": "full",
+      "zOrder": 215
+    },
+    "r49_1": {
+      "x": -704,
+      "y": -1632,
+      "crop": "full",
+      "zOrder": 216
+    },
+    "r49_3": {
+      "x": -256,
+      "y": -1632,
+      "crop": "full",
+      "zOrder": 217
+    },
+    "r49_4": {
+      "x": -448,
+      "y": -1632,
+      "crop": "full",
+      "zOrder": 218
+    },
+    "r53_2": {
+      "x": -352,
+      "y": -2272,
+      "crop": "full",
+      "zOrder": 219
+    },
+    "r53_1": {
+      "x": -384,
+      "y": -2528,
+      "crop": "full",
+      "zOrder": 220
+    },
+    "r53_3": {
+      "x": 64,
+      "y": -2528,
+      "crop": "full",
+      "zOrder": 221
+    },
+    "r53_4": {
+      "x": -128,
+      "y": -2528,
+      "crop": "full",
+      "zOrder": 222
+    },
+    "r53_0": {
+      "x": -320,
+      "y": -2112,
+      "crop": "full",
+      "zOrder": 223
+    }
+  },
+  "routes": [
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": -16,
+          "y": -304,
+          "snap": {
+            "mapId": "r23_3",
+            "evId": 10,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 144,
+          "y": -112,
+          "snap": {
+            "mapId": "r23_1",
+            "evId": 5,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 16,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": -16,
+          "y": 16,
+          "snap": {
+            "mapId": "r23_2",
+            "evId": 9,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 272,
+            "oy": 208
+          }
+        },
+        {
+          "x": 144,
+          "y": 16,
+          "snap": {
+            "mapId": "r23_1",
+            "evId": 5,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 16,
+            "oy": 336
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 112,
+          "y": -688,
+          "snap": {
+            "mapId": "r23_0",
+            "evId": 2,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 80,
+            "oy": 112
+          }
+        },
+        {
+          "x": 80,
+          "y": -848,
+          "snap": {
+            "mapId": "r23_5",
+            "evId": 13,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 336,
+          "y": -688,
+          "snap": {
+            "mapId": "r23_0",
+            "evId": 99,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 304,
+            "oy": 112
+          }
+        },
+        {
+          "x": 336,
+          "y": -848,
+          "snap": {
+            "mapId": "r23_4",
+            "evId": 12,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 368,
+          "y": -432,
+          "snap": {
+            "mapId": "r23_0",
+            "evId": 16,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 336,
+            "oy": 368
+          }
+        },
+        {
+          "x": 624,
+          "y": -432,
+          "snap": {
+            "mapId": "r23_6",
+            "evId": 15,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 144,
+            "oy": 336
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 400,
+          "y": -688,
+          "snap": {
+            "mapId": "r23_0",
+            "evId": 3,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 368,
+            "oy": 112
+          }
+        },
+        {
+          "x": 464,
+          "y": -848,
+          "snap": {
+            "mapId": "r23_7",
+            "evId": 14,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 48,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 1264,
+          "y": -752,
+          "snap": {
+            "mapId": "r15_3",
+            "evId": 10,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 1424,
+          "y": -592,
+          "snap": {
+            "mapId": "r15_1",
+            "evId": 7,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 1232,
+          "y": -464,
+          "snap": {
+            "mapId": "r15_2",
+            "evId": 9,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 1424,
+          "y": -464,
+          "snap": {
+            "mapId": "r15_1",
+            "evId": 7,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 1584,
+          "y": -1168,
+          "snap": {
+            "mapId": "r15_0",
+            "evId": 4,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 272,
+            "oy": 112
+          }
+        },
+        {
+          "x": 1584,
+          "y": -1328,
+          "snap": {
+            "mapId": "r15_5",
+            "evId": 12,
+            "evName": "Kels HOME (MORNING)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 1648,
+          "y": -1168,
+          "snap": {
+            "mapId": "r15_0",
+            "evId": 5,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 336,
+            "oy": 112
+          }
+        },
+        {
+          "x": 1904,
+          "y": -1328,
+          "snap": {
+            "mapId": "r15_6",
+            "evId": 14,
+            "evName": "Kels HOME (MORNING)",
+            "ox": 208,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 1328,
+          "y": -1328,
+          "snap": {
+            "mapId": "r15_4",
+            "evId": 13,
+            "evName": "Kels HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        },
+        {
+          "x": 1392,
+          "y": -1168,
+          "snap": {
+            "mapId": "r15_0",
+            "evId": 3,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 80,
+            "oy": 112
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 2320,
+          "y": -688,
+          "snap": {
+            "mapId": "r19_2",
+            "evId": 9,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 2512,
+          "y": -688,
+          "snap": {
+            "mapId": "r19_1",
+            "evId": 7,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 2352,
+          "y": -976,
+          "snap": {
+            "mapId": "r19_3",
+            "evId": 10,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 2512,
+          "y": -816,
+          "snap": {
+            "mapId": "r19_1",
+            "evId": 7,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 2672,
+          "y": -1392,
+          "snap": {
+            "mapId": "r19_0",
+            "evId": 4,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 272,
+            "oy": 112
+          }
+        },
+        {
+          "x": 2672,
+          "y": -1552,
+          "snap": {
+            "mapId": "r19_5",
+            "evId": 12,
+            "evName": "Kels HOME (MORNING)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 2736,
+          "y": -1392,
+          "snap": {
+            "mapId": "r19_0",
+            "evId": 5,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 336,
+            "oy": 112
+          }
+        },
+        {
+          "x": 2992,
+          "y": -1552,
+          "snap": {
+            "mapId": "r19_6",
+            "evId": 14,
+            "evName": "Kels HOME (MORNING)",
+            "ox": 208,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 2480,
+          "y": -1392,
+          "snap": {
+            "mapId": "r19_0",
+            "evId": 3,
+            "evName": "KELS HOME (MORNING)",
+            "ox": 80,
+            "oy": 112
+          }
+        },
+        {
+          "x": 2416,
+          "y": -1552,
+          "snap": {
+            "mapId": "r19_4",
+            "evId": 13,
+            "evName": "Kels HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 1072,
+          "y": 976,
+          "snap": {
+            "mapId": "r79_2",
+            "evId": 10,
+            "evName": "KELS HOME (NIGHT)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 1264,
+          "y": 976,
+          "snap": {
+            "mapId": "r79_1",
+            "evId": 6,
+            "evName": "KELS HOME (NIGHT)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 1104,
+          "y": 688,
+          "snap": {
+            "mapId": "r79_3",
+            "evId": 12,
+            "evName": "KELS HOME (NIGHT)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 1264,
+          "y": 848,
+          "snap": {
+            "mapId": "r79_1",
+            "evId": 6,
+            "evName": "KELS HOME (NIGHT)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 1424,
+          "y": 272,
+          "snap": {
+            "mapId": "r79_0",
+            "evId": 2,
+            "evName": "KELS HOME (NIGHT)",
+            "ox": 272,
+            "oy": 112
+          }
+        },
+        {
+          "x": 1424,
+          "y": 112,
+          "snap": {
+            "mapId": "r79_5",
+            "evId": 13,
+            "evName": "Kels HOME (NIGHT)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 1488,
+          "y": 272,
+          "snap": {
+            "mapId": "r79_0",
+            "evId": 3,
+            "evName": "KELS HOME (NIGHT)",
+            "ox": 336,
+            "oy": 112
+          }
+        },
+        {
+          "x": 1744,
+          "y": 112,
+          "snap": {
+            "mapId": "r79_6",
+            "evId": 15,
+            "evName": "Kels HOME (NIGHT)",
+            "ox": 208,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 1232,
+          "y": 272,
+          "snap": {
+            "mapId": "r79_0",
+            "evId": 1,
+            "evName": "KELS HOME (NIGHT)",
+            "ox": 80,
+            "oy": 112
+          }
+        },
+        {
+          "x": 1168,
+          "y": 112,
+          "snap": {
+            "mapId": "r79_4",
+            "evId": 14,
+            "evName": "Kels HOME (NIGHT)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": -112,
+          "y": 1680,
+          "snap": {
+            "mapId": "r16_2",
+            "evId": 11,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 48,
+          "y": 1680,
+          "snap": {
+            "mapId": "r16_1",
+            "evId": 5,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 16,
+            "oy": 336
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": -112,
+          "y": 1392,
+          "snap": {
+            "mapId": "r16_3",
+            "evId": 12,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 48,
+          "y": 1552,
+          "snap": {
+            "mapId": "r16_1",
+            "evId": 5,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 16,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 304,
+          "y": 976,
+          "snap": {
+            "mapId": "r16_0",
+            "evId": 9,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 368,
+            "oy": 112
+          }
+        },
+        {
+          "x": 368,
+          "y": 816,
+          "snap": {
+            "mapId": "r16_6",
+            "evId": 15,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 48,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 240,
+          "y": 976,
+          "snap": {
+            "mapId": "r16_0",
+            "evId": 8,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 304,
+            "oy": 112
+          }
+        },
+        {
+          "x": 240,
+          "y": 816,
+          "snap": {
+            "mapId": "r16_5",
+            "evId": 4,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 144,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": -16,
+          "y": 976,
+          "snap": {
+            "mapId": "r16_0",
+            "evId": 1,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 48,
+            "oy": 112
+          }
+        },
+        {
+          "x": -16,
+          "y": 816,
+          "snap": {
+            "mapId": "r16_4",
+            "evId": 14,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 784,
+          "y": 2416,
+          "snap": {
+            "mapId": "r20_2",
+            "evId": 11,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 944,
+          "y": 2416,
+          "snap": {
+            "mapId": "r20_1",
+            "evId": 5,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 16,
+            "oy": 336
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 784,
+          "y": 2128,
+          "snap": {
+            "mapId": "r20_3",
+            "evId": 12,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 944,
+          "y": 2288,
+          "snap": {
+            "mapId": "r20_1",
+            "evId": 5,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 16,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 1200,
+          "y": 1712,
+          "snap": {
+            "mapId": "r20_0",
+            "evId": 9,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 368,
+            "oy": 112
+          }
+        },
+        {
+          "x": 1264,
+          "y": 1552,
+          "snap": {
+            "mapId": "r20_6",
+            "evId": 15,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 48,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 1136,
+          "y": 1712,
+          "snap": {
+            "mapId": "r20_0",
+            "evId": 8,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 304,
+            "oy": 112
+          }
+        },
+        {
+          "x": 1136,
+          "y": 1552,
+          "snap": {
+            "mapId": "r20_5",
+            "evId": 4,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 144,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 880,
+          "y": 1712,
+          "snap": {
+            "mapId": "r20_0",
+            "evId": 1,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 48,
+            "oy": 112
+          }
+        },
+        {
+          "x": 880,
+          "y": 1552,
+          "snap": {
+            "mapId": "r20_4",
+            "evId": 14,
+            "evName": "CRIS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 1936,
+          "y": 1968,
+          "snap": {
+            "mapId": "r17_3",
+            "evId": 14,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 2064,
+          "y": 2160,
+          "snap": {
+            "mapId": "r17_1",
+            "evId": 2,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 16,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 1936,
+          "y": 2288,
+          "snap": {
+            "mapId": "r17_2",
+            "evId": 10,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 272,
+            "oy": 208
+          }
+        },
+        {
+          "x": 2064,
+          "y": 2288,
+          "snap": {
+            "mapId": "r17_1",
+            "evId": 2,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 16,
+            "oy": 336
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 2032,
+          "y": 1584,
+          "snap": {
+            "mapId": "r17_0",
+            "evId": 5,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 48,
+            "oy": 112
+          }
+        },
+        {
+          "x": 2032,
+          "y": 1424,
+          "snap": {
+            "mapId": "r17_4",
+            "evId": 11,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 2288,
+          "y": 1584,
+          "snap": {
+            "mapId": "r17_0",
+            "evId": 6,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 304,
+            "oy": 112
+          }
+        },
+        {
+          "x": 2288,
+          "y": 1424,
+          "snap": {
+            "mapId": "r17_5",
+            "evId": 12,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 2352,
+          "y": 1584,
+          "snap": {
+            "mapId": "r17_0",
+            "evId": 17,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 368,
+            "oy": 112
+          }
+        },
+        {
+          "x": 2512,
+          "y": 1424,
+          "snap": {
+            "mapId": "r17_6",
+            "evId": 15,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 112,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 1872,
+          "y": 1776,
+          "snap": {
+            "mapId": "r17_7",
+            "evId": 16,
+            "evName": "Mavericks HOME (MORNING)",
+            "ox": 112,
+            "oy": 272
+          }
+        },
+        {
+          "x": 2032,
+          "y": 1840,
+          "snap": {
+            "mapId": "r17_0",
+            "evId": 5,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 48,
+            "oy": 368
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 2704,
+          "y": 48,
+          "snap": {
+            "mapId": "r21_0",
+            "evId": 6,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 304,
+            "oy": 112
+          }
+        },
+        {
+          "x": 2704,
+          "y": -112,
+          "snap": {
+            "mapId": "r21_5",
+            "evId": 12,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 2928,
+          "y": -112,
+          "snap": {
+            "mapId": "r21_6",
+            "evId": 15,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 112,
+            "oy": 304
+          }
+        },
+        {
+          "x": 2768,
+          "y": 48,
+          "snap": {
+            "mapId": "r21_0",
+            "evId": 17,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 368,
+            "oy": 112
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 2448,
+          "y": 48,
+          "snap": {
+            "mapId": "r21_0",
+            "evId": 5,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 48,
+            "oy": 112
+          }
+        },
+        {
+          "x": 2448,
+          "y": -112,
+          "snap": {
+            "mapId": "r21_4",
+            "evId": 11,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 2352,
+          "y": 752,
+          "snap": {
+            "mapId": "r21_2",
+            "evId": 10,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 272,
+            "oy": 208
+          }
+        },
+        {
+          "x": 2480,
+          "y": 752,
+          "snap": {
+            "mapId": "r21_1",
+            "evId": 2,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 16,
+            "oy": 336
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 2352,
+          "y": 432,
+          "snap": {
+            "mapId": "r21_3",
+            "evId": 14,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 2480,
+          "y": 624,
+          "snap": {
+            "mapId": "r21_1",
+            "evId": 2,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 16,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 2288,
+          "y": 240,
+          "snap": {
+            "mapId": "r21_7",
+            "evId": 16,
+            "evName": "Mavericks HOME (MORNING)",
+            "ox": 112,
+            "oy": 272
+          }
+        },
+        {
+          "x": 2448,
+          "y": 304,
+          "snap": {
+            "mapId": "r21_0",
+            "evId": 5,
+            "evName": "MAVERICKS HOME (MORNING)",
+            "ox": 48,
+            "oy": 368
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 2960,
+          "y": 2032,
+          "snap": {
+            "mapId": "r27_2",
+            "evId": 9,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 272,
+            "oy": 208
+          }
+        },
+        {
+          "x": 3120,
+          "y": 2032,
+          "snap": {
+            "mapId": "r27_1",
+            "evId": 5,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 16,
+            "oy": 336
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 2960,
+          "y": 1712,
+          "snap": {
+            "mapId": "r27_3",
+            "evId": 10,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 3120,
+          "y": 1904,
+          "snap": {
+            "mapId": "r27_1",
+            "evId": 5,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 16,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 3312,
+          "y": 1328,
+          "snap": {
+            "mapId": "r27_0",
+            "evId": 99,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 304,
+            "oy": 112
+          }
+        },
+        {
+          "x": 3312,
+          "y": 1168,
+          "snap": {
+            "mapId": "r27_4",
+            "evId": 12,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 3376,
+          "y": 1328,
+          "snap": {
+            "mapId": "r27_0",
+            "evId": 3,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 368,
+            "oy": 112
+          }
+        },
+        {
+          "x": 3472,
+          "y": 1168,
+          "snap": {
+            "mapId": "r27_7",
+            "evId": 14,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 48,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 3088,
+          "y": 1328,
+          "snap": {
+            "mapId": "r27_0",
+            "evId": 2,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 80,
+            "oy": 112
+          }
+        },
+        {
+          "x": 3056,
+          "y": 1168,
+          "snap": {
+            "mapId": "r27_5",
+            "evId": 13,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 3344,
+          "y": 1584,
+          "snap": {
+            "mapId": "r27_0",
+            "evId": 16,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 336,
+            "oy": 368
+          }
+        },
+        {
+          "x": 3600,
+          "y": 1584,
+          "snap": {
+            "mapId": "r27_6",
+            "evId": 15,
+            "evName": "BRENTS HOME (MORNING)",
+            "ox": 144,
+            "oy": 336
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 3504,
+          "y": 592,
+          "snap": {
+            "mapId": "r26_2",
+            "evId": 10,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 272,
+            "oy": 208
+          }
+        },
+        {
+          "x": 3632,
+          "y": 592,
+          "snap": {
+            "mapId": "r26_1",
+            "evId": 6,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 3504,
+          "y": 272,
+          "snap": {
+            "mapId": "r26_3",
+            "evId": 11,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 3632,
+          "y": 464,
+          "snap": {
+            "mapId": "r26_1",
+            "evId": 6,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 3824,
+          "y": -80,
+          "snap": {
+            "mapId": "r26_0",
+            "evId": 3,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 272,
+            "oy": 112
+          }
+        },
+        {
+          "x": 3824,
+          "y": -240,
+          "snap": {
+            "mapId": "r26_5",
+            "evId": 13,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 144,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 3888,
+          "y": -80,
+          "snap": {
+            "mapId": "r26_0",
+            "evId": 4,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 336,
+            "oy": 112
+          }
+        },
+        {
+          "x": 4016,
+          "y": -240,
+          "snap": {
+            "mapId": "r26_6",
+            "evId": 15,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 48,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 3632,
+          "y": -80,
+          "snap": {
+            "mapId": "r26_0",
+            "evId": 2,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 80,
+            "oy": 112
+          }
+        },
+        {
+          "x": 3600,
+          "y": -240,
+          "snap": {
+            "mapId": "r26_4",
+            "evId": 14,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 3440,
+          "y": 112,
+          "snap": {
+            "mapId": "r26_7",
+            "evId": 16,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 112,
+            "oy": 272
+          }
+        },
+        {
+          "x": 3632,
+          "y": 176,
+          "snap": {
+            "mapId": "r26_0",
+            "evId": 17,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 80,
+            "oy": 368
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 3504,
+          "y": -1136,
+          "snap": {
+            "mapId": "r30_3",
+            "evId": 11,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 3632,
+          "y": -944,
+          "snap": {
+            "mapId": "r30_1",
+            "evId": 6,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 3504,
+          "y": -816,
+          "snap": {
+            "mapId": "r30_2",
+            "evId": 10,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 272,
+            "oy": 208
+          }
+        },
+        {
+          "x": 3632,
+          "y": -816,
+          "snap": {
+            "mapId": "r30_1",
+            "evId": 6,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 3888,
+          "y": -1488,
+          "snap": {
+            "mapId": "r30_0",
+            "evId": 4,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 336,
+            "oy": 112
+          }
+        },
+        {
+          "x": 4016,
+          "y": -1648,
+          "snap": {
+            "mapId": "r30_6",
+            "evId": 15,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 48,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 3824,
+          "y": -1488,
+          "snap": {
+            "mapId": "r30_0",
+            "evId": 3,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 272,
+            "oy": 112
+          }
+        },
+        {
+          "x": 3824,
+          "y": -1648,
+          "snap": {
+            "mapId": "r30_5",
+            "evId": 13,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 144,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 3632,
+          "y": -1488,
+          "snap": {
+            "mapId": "r30_0",
+            "evId": 2,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 80,
+            "oy": 112
+          }
+        },
+        {
+          "x": 3600,
+          "y": -1648,
+          "snap": {
+            "mapId": "r30_4",
+            "evId": 14,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 3440,
+          "y": -1328,
+          "snap": {
+            "mapId": "r30_7",
+            "evId": 16,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 112,
+            "oy": 272
+          }
+        },
+        {
+          "x": 3632,
+          "y": -1232,
+          "snap": {
+            "mapId": "r30_0",
+            "evId": 17,
+            "evName": "CHARLIES HOME (MORNING)",
+            "ox": 80,
+            "oy": 368
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 4624,
+          "y": -1072,
+          "snap": {
+            "mapId": "r34_2",
+            "evId": 2,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4624,
+          "y": -1168,
+          "snap": {
+            "mapId": "r34_4",
+            "evId": 9,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 4688,
+          "y": -1072,
+          "snap": {
+            "mapId": "r34_2",
+            "evId": 2,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4816,
+          "y": -1168,
+          "snap": {
+            "mapId": "r34_3",
+            "evId": 8,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 4368,
+          "y": -1072,
+          "snap": {
+            "mapId": "r34_2",
+            "evId": 1,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4368,
+          "y": -1168,
+          "snap": {
+            "mapId": "r34_1",
+            "evId": 7,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 5616,
+          "y": -1040,
+          "snap": {
+            "mapId": "r38_2",
+            "evId": 2,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5616,
+          "y": -1136,
+          "snap": {
+            "mapId": "r38_4",
+            "evId": 9,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 5680,
+          "y": -1040,
+          "snap": {
+            "mapId": "r38_2",
+            "evId": 2,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5808,
+          "y": -1136,
+          "snap": {
+            "mapId": "r38_3",
+            "evId": 8,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 5360,
+          "y": -1040,
+          "snap": {
+            "mapId": "r38_2",
+            "evId": 1,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5360,
+          "y": -1136,
+          "snap": {
+            "mapId": "r38_1",
+            "evId": 7,
+            "evName": "SARAHS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 1168,
+          "y": -1808,
+          "snap": {
+            "mapId": "r24_2",
+            "evId": 9,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 1296,
+          "y": -1808,
+          "snap": {
+            "mapId": "r24_1",
+            "evId": 5,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 1296,
+          "y": -1936,
+          "snap": {
+            "mapId": "r24_1",
+            "evId": 5,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 16,
+            "oy": 176
+          }
+        },
+        {
+          "x": 1168,
+          "y": -2096,
+          "snap": {
+            "mapId": "r24_3",
+            "evId": 10,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 1552,
+          "y": -2224,
+          "snap": {
+            "mapId": "r24_0",
+            "evId": 16,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 336,
+            "oy": 336
+          }
+        },
+        {
+          "x": 1776,
+          "y": -2224,
+          "snap": {
+            "mapId": "r24_7",
+            "evId": 15,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 112,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 1520,
+          "y": -2480,
+          "snap": {
+            "mapId": "r24_0",
+            "evId": 75,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 304,
+            "oy": 80
+          }
+        },
+        {
+          "x": 1520,
+          "y": -2608,
+          "snap": {
+            "mapId": "r24_5",
+            "evId": 12,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 1296,
+          "y": -2480,
+          "snap": {
+            "mapId": "r24_0",
+            "evId": 2,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 80,
+            "oy": 80
+          }
+        },
+        {
+          "x": 1264,
+          "y": -2608,
+          "snap": {
+            "mapId": "r24_4",
+            "evId": 13,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 1584,
+          "y": -2480,
+          "snap": {
+            "mapId": "r24_0",
+            "evId": 3,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 368,
+            "oy": 80
+          }
+        },
+        {
+          "x": 1680,
+          "y": -2608,
+          "snap": {
+            "mapId": "r24_6",
+            "evId": 14,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 48,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 2544,
+          "y": -2064,
+          "snap": {
+            "mapId": "r28_2",
+            "evId": 9,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 2672,
+          "y": -2064,
+          "snap": {
+            "mapId": "r28_1",
+            "evId": 5,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 2544,
+          "y": -2352,
+          "snap": {
+            "mapId": "r28_3",
+            "evId": 10,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 2672,
+          "y": -2192,
+          "snap": {
+            "mapId": "r28_1",
+            "evId": 5,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 2672,
+          "y": -2736,
+          "snap": {
+            "mapId": "r28_0",
+            "evId": 2,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 80,
+            "oy": 80
+          }
+        },
+        {
+          "x": 2640,
+          "y": -2864,
+          "snap": {
+            "mapId": "r28_4",
+            "evId": 13,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 2896,
+          "y": -2736,
+          "snap": {
+            "mapId": "r28_0",
+            "evId": 75,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 304,
+            "oy": 80
+          }
+        },
+        {
+          "x": 2896,
+          "y": -2864,
+          "snap": {
+            "mapId": "r28_5",
+            "evId": 12,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 176,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 2960,
+          "y": -2736,
+          "snap": {
+            "mapId": "r28_0",
+            "evId": 3,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 368,
+            "oy": 80
+          }
+        },
+        {
+          "x": 3056,
+          "y": -2864,
+          "snap": {
+            "mapId": "r28_6",
+            "evId": 14,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 48,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 2928,
+          "y": -2480,
+          "snap": {
+            "mapId": "r28_0",
+            "evId": 16,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 336,
+            "oy": 336
+          }
+        },
+        {
+          "x": 3152,
+          "y": -2480,
+          "snap": {
+            "mapId": "r28_7",
+            "evId": 15,
+            "evName": "KIMS HOME (MORNING)",
+            "ox": 112,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 4048,
+          "y": -2832,
+          "snap": {
+            "mapId": "r25_0",
+            "evId": 3,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 272,
+            "oy": 80
+          }
+        },
+        {
+          "x": 4048,
+          "y": -2960,
+          "snap": {
+            "mapId": "r25_5",
+            "evId": 13,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 144,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 4112,
+          "y": -2832,
+          "snap": {
+            "mapId": "r25_0",
+            "evId": 4,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 336,
+            "oy": 80
+          }
+        },
+        {
+          "x": 4336,
+          "y": -2960,
+          "snap": {
+            "mapId": "r25_6",
+            "evId": 15,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 176,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 3856,
+          "y": -2832,
+          "snap": {
+            "mapId": "r25_0",
+            "evId": 2,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 80,
+            "oy": 80
+          }
+        },
+        {
+          "x": 3824,
+          "y": -2960,
+          "snap": {
+            "mapId": "r25_3",
+            "evId": 14,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 3728,
+          "y": -2160,
+          "snap": {
+            "mapId": "r25_2",
+            "evId": 10,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 3888,
+          "y": -2160,
+          "snap": {
+            "mapId": "r25_1",
+            "evId": 6,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 3728,
+          "y": -2416,
+          "snap": {
+            "mapId": "r25_4",
+            "evId": 11,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 3888,
+          "y": -2288,
+          "snap": {
+            "mapId": "r25_1",
+            "evId": 6,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 4528,
+          "y": 560,
+          "snap": {
+            "mapId": "r29_2",
+            "evId": 10,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 272,
+            "oy": 176
+          }
+        },
+        {
+          "x": 4688,
+          "y": 560,
+          "snap": {
+            "mapId": "r29_1",
+            "evId": 6,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 16,
+            "oy": 304
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 4528,
+          "y": 304,
+          "snap": {
+            "mapId": "r29_4",
+            "evId": 11,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 272,
+            "oy": 144
+          }
+        },
+        {
+          "x": 4688,
+          "y": 432,
+          "snap": {
+            "mapId": "r29_1",
+            "evId": 6,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 4848,
+          "y": -112,
+          "snap": {
+            "mapId": "r29_0",
+            "evId": 3,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 272,
+            "oy": 80
+          }
+        },
+        {
+          "x": 4848,
+          "y": -240,
+          "snap": {
+            "mapId": "r29_5",
+            "evId": 13,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 144,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 4656,
+          "y": -112,
+          "snap": {
+            "mapId": "r29_0",
+            "evId": 2,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 80,
+            "oy": 80
+          }
+        },
+        {
+          "x": 4624,
+          "y": -240,
+          "snap": {
+            "mapId": "r29_3",
+            "evId": 14,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 176,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 4912,
+          "y": -112,
+          "snap": {
+            "mapId": "r29_0",
+            "evId": 4,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 336,
+            "oy": 80
+          }
+        },
+        {
+          "x": 5136,
+          "y": -240,
+          "snap": {
+            "mapId": "r29_6",
+            "evId": 15,
+            "evName": "JOYS HOME (MORNING)",
+            "ox": 176,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 4816,
+          "y": -1968,
+          "snap": {
+            "mapId": "r35_2",
+            "evId": 6,
+            "evName": "AUBREYS HOME (MORNING)",
+            "ox": 336,
+            "oy": 112
+          }
+        },
+        {
+          "x": 4752,
+          "y": -2064,
+          "snap": {
+            "mapId": "r35_4",
+            "evId": 5,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 5616,
+          "y": -1968,
+          "snap": {
+            "mapId": "r39_2",
+            "evId": 6,
+            "evName": "AUBREYS HOME (MORNING)",
+            "ox": 336,
+            "oy": 112
+          }
+        },
+        {
+          "x": 5552,
+          "y": -2064,
+          "snap": {
+            "mapId": "r39_4",
+            "evId": 5,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 5296,
+          "y": 272,
+          "snap": {
+            "mapId": "r46_2",
+            "evId": 1,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5296,
+          "y": 176,
+          "snap": {
+            "mapId": "r46_1",
+            "evId": 6,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 80,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 5552,
+          "y": 176,
+          "snap": {
+            "mapId": "r46_4",
+            "evId": 8,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        },
+        {
+          "x": 5552,
+          "y": 272,
+          "snap": {
+            "mapId": "r46_2",
+            "evId": 2,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 5616,
+          "y": 272,
+          "snap": {
+            "mapId": "r46_2",
+            "evId": 2,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5744,
+          "y": 176,
+          "snap": {
+            "mapId": "r46_3",
+            "evId": 7,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 80,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 4944,
+          "y": 1168,
+          "snap": {
+            "mapId": "r50_2",
+            "evId": 2,
+            "evName": "BATHROOM DOOR",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5072,
+          "y": 1072,
+          "snap": {
+            "mapId": "r50_3",
+            "evId": 7,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 80,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 4880,
+          "y": 1168,
+          "snap": {
+            "mapId": "r50_2",
+            "evId": 2,
+            "evName": "BATHROOM DOOR",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4880,
+          "y": 1072,
+          "snap": {
+            "mapId": "r50_4",
+            "evId": 8,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 4624,
+          "y": 1168,
+          "snap": {
+            "mapId": "r50_2",
+            "evId": 1,
+            "evName": "GRANDMAS DOOR",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4624,
+          "y": 1072,
+          "snap": {
+            "mapId": "r50_1",
+            "evId": 6,
+            "evName": "BASILS HOME (MORNING)",
+            "ox": 80,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 5360,
+          "y": 1200,
+          "snap": {
+            "mapId": "r80_2",
+            "evId": 1,
+            "evName": "BASILS HOME (NIGHT)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5360,
+          "y": 1104,
+          "snap": {
+            "mapId": "r80_1",
+            "evId": 7,
+            "evName": "BASILS HOME (NIGHT)",
+            "ox": 80,
+            "oy": 240
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 5616,
+          "y": 1200,
+          "snap": {
+            "mapId": "r80_2",
+            "evId": 2,
+            "evName": "BASILS HOME (NIGHT)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5616,
+          "y": 1104,
+          "snap": {
+            "mapId": "r80_4",
+            "evId": 9,
+            "evName": "BASILS HOME (NIGHT)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 5808,
+          "y": 1104,
+          "snap": {
+            "mapId": "r80_3",
+            "evId": 8,
+            "evName": "Door",
+            "ox": 80,
+            "oy": 272
+          }
+        },
+        {
+          "x": 5680,
+          "y": 1200,
+          "snap": {
+            "mapId": "r80_2",
+            "evId": 2,
+            "evName": "BASILS HOME (NIGHT)",
+            "ox": 368,
+            "oy": 48
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": -688,
+          "y": 1168,
+          "snap": {
+            "mapId": "r32_2",
+            "evId": 48,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": -688,
+          "y": 1072,
+          "snap": {
+            "mapId": "r32_4",
+            "evId": 6,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": -624,
+          "y": 1168,
+          "snap": {
+            "mapId": "r32_2",
+            "evId": 7,
+            "evName": "PLAYER HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": -496,
+          "y": 1072,
+          "snap": {
+            "mapId": "r32_1",
+            "evId": 5,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": -944,
+          "y": 1168,
+          "snap": {
+            "mapId": "r32_2",
+            "evId": 1,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": -944,
+          "y": 1072,
+          "snap": {
+            "mapId": "r32_3",
+            "evId": 49,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 112,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": -624,
+          "y": -432,
+          "snap": {
+            "mapId": "r36_2",
+            "evId": 48,
+            "evName": "PLAYER HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": -624,
+          "y": -528,
+          "snap": {
+            "mapId": "r36_4",
+            "evId": 6,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": -560,
+          "y": -432,
+          "snap": {
+            "mapId": "r36_2",
+            "evId": 7,
+            "evName": "PLAYER HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": -432,
+          "y": -528,
+          "snap": {
+            "mapId": "r36_1",
+            "evId": 5,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": -880,
+          "y": -432,
+          "snap": {
+            "mapId": "r36_2",
+            "evId": 1,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": -880,
+          "y": -528,
+          "snap": {
+            "mapId": "r36_3",
+            "evId": 49,
+            "evName": "VANCE HOME (MORNING)",
+            "ox": 112,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 4784,
+          "y": -2832,
+          "snap": {
+            "mapId": "r47_2",
+            "evId": 2,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4784,
+          "y": -2928,
+          "snap": {
+            "mapId": "r47_4",
+            "evId": 8,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 4848,
+          "y": -2832,
+          "snap": {
+            "mapId": "r47_2",
+            "evId": 2,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4976,
+          "y": -2928,
+          "snap": {
+            "mapId": "r47_3",
+            "evId": 7,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 80,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": 4528,
+          "y": -2832,
+          "snap": {
+            "mapId": "r47_2",
+            "evId": 1,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4528,
+          "y": -2928,
+          "snap": {
+            "mapId": "r47_1",
+            "evId": 6,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": 5488,
+          "y": -2832,
+          "snap": {
+            "mapId": "r51_2",
+            "evId": 2,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5488,
+          "y": -2928,
+          "snap": {
+            "mapId": "r51_4",
+            "evId": 8,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": 5680,
+          "y": -2928,
+          "snap": {
+            "mapId": "r51_3",
+            "evId": 7,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 80,
+            "oy": 272
+          }
+        },
+        {
+          "x": 5552,
+          "y": -2832,
+          "snap": {
+            "mapId": "r51_2",
+            "evId": 2,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": 5232,
+          "y": -2832,
+          "snap": {
+            "mapId": "r51_2",
+            "evId": 1,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5232,
+          "y": -2928,
+          "snap": {
+            "mapId": "r51_1",
+            "evId": 6,
+            "evName": "JESSES HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 3824,
+          "y": 2064,
+          "snap": {
+            "mapId": "r48_2",
+            "evId": 1,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 3792,
+          "y": 1968,
+          "snap": {
+            "mapId": "r48_1",
+            "evId": 6,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 80,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": 4048,
+          "y": 2064,
+          "snap": {
+            "mapId": "r48_2",
+            "evId": 2,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 272,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4048,
+          "y": 1968,
+          "snap": {
+            "mapId": "r48_4",
+            "evId": 8,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff7733",
+      "pts": [
+        {
+          "x": 4144,
+          "y": 2064,
+          "snap": {
+            "mapId": "r48_2",
+            "evId": 2,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4240,
+          "y": 1968,
+          "snap": {
+            "mapId": "r48_3",
+            "evId": 7,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#bb88ff",
+      "pts": [
+        {
+          "x": 4816,
+          "y": 2064,
+          "snap": {
+            "mapId": "r52_2",
+            "evId": 2,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 272,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4816,
+          "y": 1968,
+          "snap": {
+            "mapId": "r52_4",
+            "evId": 8,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff5566",
+      "pts": [
+        {
+          "x": 4912,
+          "y": 2064,
+          "snap": {
+            "mapId": "r52_2",
+            "evId": 2,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": 5008,
+          "y": 1968,
+          "snap": {
+            "mapId": "r52_3",
+            "evId": 7,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#22eebb",
+      "pts": [
+        {
+          "x": 4592,
+          "y": 2064,
+          "snap": {
+            "mapId": "r52_2",
+            "evId": 1,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": 4560,
+          "y": 1968,
+          "snap": {
+            "mapId": "r52_1",
+            "evId": 6,
+            "evName": "BEBES HOME (MORNING)",
+            "ox": 80,
+            "oy": 272
+          }
+        }
+      ]
+    },
+    {
+      "color": "#eeaa44",
+      "pts": [
+        {
+          "x": -304,
+          "y": -1328,
+          "snap": {
+            "mapId": "r49_2",
+            "evId": 2,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": -176,
+          "y": -1424,
+          "snap": {
+            "mapId": "r49_3",
+            "evId": 7,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#88ddff",
+      "pts": [
+        {
+          "x": -368,
+          "y": -1328,
+          "snap": {
+            "mapId": "r49_2",
+            "evId": 2,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": -368,
+          "y": -1424,
+          "snap": {
+            "mapId": "r49_4",
+            "evId": 8,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ff66d9",
+      "pts": [
+        {
+          "x": -624,
+          "y": -1328,
+          "snap": {
+            "mapId": "r49_2",
+            "evId": 1,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": -624,
+          "y": -1424,
+          "snap": {
+            "mapId": "r49_1",
+            "evId": 6,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": -48,
+          "y": -2224,
+          "snap": {
+            "mapId": "r53_2",
+            "evId": 2,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 304,
+            "oy": 48
+          }
+        },
+        {
+          "x": -48,
+          "y": -2320,
+          "snap": {
+            "mapId": "r53_4",
+            "evId": 8,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": 16,
+          "y": -2224,
+          "snap": {
+            "mapId": "r53_2",
+            "evId": 2,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 368,
+            "oy": 48
+          }
+        },
+        {
+          "x": 144,
+          "y": -2320,
+          "snap": {
+            "mapId": "r53_3",
+            "evId": 7,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    },
+    {
+      "color": "#ffcc33",
+      "pts": [
+        {
+          "x": -304,
+          "y": -2224,
+          "snap": {
+            "mapId": "r53_2",
+            "evId": 1,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 48,
+            "oy": 48
+          }
+        },
+        {
+          "x": -304,
+          "y": -2320,
+          "snap": {
+            "mapId": "r53_1",
+            "evId": 6,
+            "evName": "ARTISTS HOME (MORNING)",
+            "ox": 80,
+            "oy": 208
+          }
+        }
+      ]
+    }
+  ],
+  "decorations": [],
+  "maps": {
+    "r23_5": {
+      "name": "BRENT'S HOUSE (day) — Room 5",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map23_room5.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 23,
+      "_roomIdx": 5
+    },
+    "r23_0": {
+      "name": "BRENT'S HOUSE (day) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map23_room0.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 23,
+      "_roomIdx": 0
+    },
+    "r23_1": {
+      "name": "BRENT'S HOUSE (day) — Room 1",
+      "width": 13,
+      "height": 13,
+      "image": "houses/map23_room1.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 23,
+      "_roomIdx": 1
+    },
+    "r23_2": {
+      "name": "BRENT'S HOUSE (day) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map23_room2.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 23,
+      "_roomIdx": 2
+    },
+    "r23_3": {
+      "name": "BRENT'S HOUSE (day) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map23_room3.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 23,
+      "_roomIdx": 3
+    },
+    "r23_4": {
+      "name": "BRENT'S HOUSE (day) — Room 4",
+      "width": 7,
+      "height": 7,
+      "image": "houses/map23_room4.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 23,
+      "_roomIdx": 4
+    },
+    "r23_6": {
+      "name": "BRENT'S HOUSE (day) — Room 6",
+      "width": 8,
+      "height": 11,
+      "image": "houses/map23_room6.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 23,
+      "_roomIdx": 6
+    },
+    "r23_7": {
+      "name": "BRENT'S HOUSE (day) — Room 7",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map23_room7.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 23,
+      "_roomIdx": 7
+    },
+    "r15_0": {
+      "name": "KEL & HERO'S HOUSE (day) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map15_room0.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 15,
+      "_roomIdx": 0
+    },
+    "r15_2": {
+      "name": "KEL & HERO'S HOUSE (day) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map15_room2.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 15,
+      "_roomIdx": 2
+    },
+    "r15_1": {
+      "name": "KEL & HERO'S HOUSE (day) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map15_room1.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 15,
+      "_roomIdx": 1
+    },
+    "r15_3": {
+      "name": "KEL & HERO'S HOUSE (day) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map15_room3.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 15,
+      "_roomIdx": 3
+    },
+    "r15_4": {
+      "name": "KEL & HERO'S HOUSE (day) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map15_room4.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 15,
+      "_roomIdx": 4
+    },
+    "r15_5": {
+      "name": "KEL & HERO'S HOUSE (day) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map15_room5.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 15,
+      "_roomIdx": 5
+    },
+    "r15_6": {
+      "name": "KEL & HERO'S HOUSE (day) — Room 6",
+      "width": 13,
+      "height": 10,
+      "image": "houses/map15_room6.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 15,
+      "_roomIdx": 6
+    },
+    "r19_0": {
+      "name": "KEL & HERO'S HOUSE (sunset) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map19_room0.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 19,
+      "_roomIdx": 0
+    },
+    "r19_1": {
+      "name": "KEL & HERO'S HOUSE (sunset) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map19_room1.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 19,
+      "_roomIdx": 1
+    },
+    "r19_2": {
+      "name": "KEL & HERO'S HOUSE (sunset) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map19_room2.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 19,
+      "_roomIdx": 2
+    },
+    "r19_3": {
+      "name": "KEL & HERO'S HOUSE (sunset) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map19_room3.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 19,
+      "_roomIdx": 3
+    },
+    "r19_4": {
+      "name": "KEL & HERO'S HOUSE (sunset) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map19_room4.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 19,
+      "_roomIdx": 4
+    },
+    "r19_5": {
+      "name": "KEL & HERO'S HOUSE (sunset) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map19_room5.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 19,
+      "_roomIdx": 5
+    },
+    "r19_6": {
+      "name": "KEL & HERO'S HOUSE (sunset) — Room 6",
+      "width": 13,
+      "height": 10,
+      "image": "houses/map19_room6.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 19,
+      "_roomIdx": 6
+    },
+    "r79_0": {
+      "name": "KEL & HERO'S HOUSE (night) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map79_room0.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 79,
+      "_roomIdx": 0
+    },
+    "r79_1": {
+      "name": "KEL & HERO'S HOUSE (night) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map79_room1.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 79,
+      "_roomIdx": 1
+    },
+    "r79_2": {
+      "name": "KEL & HERO'S HOUSE (night) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map79_room2.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 79,
+      "_roomIdx": 2
+    },
+    "r79_3": {
+      "name": "KEL & HERO'S HOUSE (night) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map79_room3.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 79,
+      "_roomIdx": 3
+    },
+    "r79_4": {
+      "name": "KEL & HERO'S HOUSE (night) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map79_room4.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 79,
+      "_roomIdx": 4
+    },
+    "r79_5": {
+      "name": "KEL & HERO'S HOUSE (night) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map79_room5.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 79,
+      "_roomIdx": 5
+    },
+    "r79_6": {
+      "name": "KEL & HERO'S HOUSE (night) — Room 6",
+      "width": 13,
+      "height": 10,
+      "image": "houses/map79_room6.png",
+      "_house": "KEL & HERO'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 79,
+      "_roomIdx": 6
+    },
+    "r16_0": {
+      "name": "CRIS'S HOUSE (day) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map16_room0.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 16,
+      "_roomIdx": 0
+    },
+    "r16_1": {
+      "name": "CRIS'S HOUSE (day) — Room 1",
+      "width": 13,
+      "height": 13,
+      "image": "houses/map16_room1.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 16,
+      "_roomIdx": 1
+    },
+    "r16_2": {
+      "name": "CRIS'S HOUSE (day) — Room 2",
+      "width": 9,
+      "height": 9,
+      "image": "houses/map16_room2.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 16,
+      "_roomIdx": 2
+    },
+    "r16_3": {
+      "name": "CRIS'S HOUSE (day) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map16_room3.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 16,
+      "_roomIdx": 3
+    },
+    "r16_4": {
+      "name": "CRIS'S HOUSE (day) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map16_room4.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 16,
+      "_roomIdx": 4
+    },
+    "r16_5": {
+      "name": "CRIS'S HOUSE (day) — Room 5",
+      "width": 6,
+      "height": 7,
+      "image": "houses/map16_room5.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 16,
+      "_roomIdx": 5
+    },
+    "r16_6": {
+      "name": "CRIS'S HOUSE (day) — Room 6",
+      "width": 6,
+      "height": 8,
+      "image": "houses/map16_room6.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 16,
+      "_roomIdx": 6
+    },
+    "r20_0": {
+      "name": "CRIS'S HOUSE (sunset) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map20_room0.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 20,
+      "_roomIdx": 0
+    },
+    "r20_1": {
+      "name": "CRIS'S HOUSE (sunset) — Room 1",
+      "width": 13,
+      "height": 13,
+      "image": "houses/map20_room1.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 20,
+      "_roomIdx": 1
+    },
+    "r20_2": {
+      "name": "CRIS'S HOUSE (sunset) — Room 2",
+      "width": 9,
+      "height": 9,
+      "image": "houses/map20_room2.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 20,
+      "_roomIdx": 2
+    },
+    "r20_3": {
+      "name": "CRIS'S HOUSE (sunset) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map20_room3.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 20,
+      "_roomIdx": 3
+    },
+    "r20_4": {
+      "name": "CRIS'S HOUSE (sunset) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map20_room4.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 20,
+      "_roomIdx": 4
+    },
+    "r20_5": {
+      "name": "CRIS'S HOUSE (sunset) — Room 5",
+      "width": 6,
+      "height": 7,
+      "image": "houses/map20_room5.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 20,
+      "_roomIdx": 5
+    },
+    "r20_6": {
+      "name": "CRIS'S HOUSE (sunset) — Room 6",
+      "width": 6,
+      "height": 8,
+      "image": "houses/map20_room6.png",
+      "_house": "CRIS'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 20,
+      "_roomIdx": 6
+    },
+    "r17_0": {
+      "name": "MAVERICK'S HOUSE (day) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map17_room0.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 17,
+      "_roomIdx": 0
+    },
+    "r17_1": {
+      "name": "MAVERICK'S HOUSE (day) — Room 1",
+      "width": 13,
+      "height": 13,
+      "image": "houses/map17_room1.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 17,
+      "_roomIdx": 1
+    },
+    "r17_2": {
+      "name": "MAVERICK'S HOUSE (day) — Room 2",
+      "width": 9,
+      "height": 11,
+      "image": "houses/map17_room2.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 17,
+      "_roomIdx": 2
+    },
+    "r17_3": {
+      "name": "MAVERICK'S HOUSE (day) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map17_room3.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 17,
+      "_roomIdx": 3
+    },
+    "r17_4": {
+      "name": "MAVERICK'S HOUSE (day) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map17_room4.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 17,
+      "_roomIdx": 4
+    },
+    "r17_5": {
+      "name": "MAVERICK'S HOUSE (day) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map17_room5.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 17,
+      "_roomIdx": 5
+    },
+    "r17_6": {
+      "name": "MAVERICK'S HOUSE (day) — Room 6",
+      "width": 7,
+      "height": 10,
+      "image": "houses/map17_room6.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 17,
+      "_roomIdx": 6
+    },
+    "r17_7": {
+      "name": "MAVERICK'S HOUSE (day) — Room 7",
+      "width": 6,
+      "height": 9,
+      "image": "houses/map17_room7.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 17,
+      "_roomIdx": 7
+    },
+    "r21_5": {
+      "name": "MAVERICK'S HOUSE (sunset) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map21_room5.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 21,
+      "_roomIdx": 5
+    },
+    "r21_4": {
+      "name": "MAVERICK'S HOUSE (sunset) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map21_room4.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 21,
+      "_roomIdx": 4
+    },
+    "r21_3": {
+      "name": "MAVERICK'S HOUSE (sunset) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map21_room3.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 21,
+      "_roomIdx": 3
+    },
+    "r21_2": {
+      "name": "MAVERICK'S HOUSE (sunset) — Room 2",
+      "width": 9,
+      "height": 11,
+      "image": "houses/map21_room2.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 21,
+      "_roomIdx": 2
+    },
+    "r21_6": {
+      "name": "MAVERICK'S HOUSE (sunset) — Room 6",
+      "width": 7,
+      "height": 10,
+      "image": "houses/map21_room6.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 21,
+      "_roomIdx": 6
+    },
+    "r21_1": {
+      "name": "MAVERICK'S HOUSE (sunset) — Room 1",
+      "width": 13,
+      "height": 13,
+      "image": "houses/map21_room1.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 21,
+      "_roomIdx": 1
+    },
+    "r21_0": {
+      "name": "MAVERICK'S HOUSE (sunset) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map21_room0.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 21,
+      "_roomIdx": 0
+    },
+    "r21_7": {
+      "name": "MAVERICK'S HOUSE (sunset) — Room 7",
+      "width": 6,
+      "height": 9,
+      "image": "houses/map21_room7.png",
+      "_house": "MAVERICK'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 21,
+      "_roomIdx": 7
+    },
+    "r27_0": {
+      "name": "BRENT'S HOUSE (sunset) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map27_room0.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 27,
+      "_roomIdx": 0
+    },
+    "r27_1": {
+      "name": "BRENT'S HOUSE (sunset) — Room 1",
+      "width": 13,
+      "height": 13,
+      "image": "houses/map27_room1.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 27,
+      "_roomIdx": 1
+    },
+    "r27_2": {
+      "name": "BRENT'S HOUSE (sunset) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map27_room2.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 27,
+      "_roomIdx": 2
+    },
+    "r27_3": {
+      "name": "BRENT'S HOUSE (sunset) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map27_room3.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 27,
+      "_roomIdx": 3
+    },
+    "r27_4": {
+      "name": "BRENT'S HOUSE (sunset) — Room 4",
+      "width": 7,
+      "height": 7,
+      "image": "houses/map27_room4.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 27,
+      "_roomIdx": 4
+    },
+    "r27_5": {
+      "name": "BRENT'S HOUSE (sunset) — Room 5",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map27_room5.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 27,
+      "_roomIdx": 5
+    },
+    "r27_6": {
+      "name": "BRENT'S HOUSE (sunset) — Room 6",
+      "width": 8,
+      "height": 11,
+      "image": "houses/map27_room6.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 27,
+      "_roomIdx": 6
+    },
+    "r27_7": {
+      "name": "BRENT'S HOUSE (sunset) — Room 7",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map27_room7.png",
+      "_house": "BRENT'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 27,
+      "_roomIdx": 7
+    },
+    "r26_0": {
+      "name": "CHARLIE'S HOUSE (day) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map26_room0.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 26,
+      "_roomIdx": 0
+    },
+    "r26_1": {
+      "name": "CHARLIE'S HOUSE (day) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map26_room1.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 26,
+      "_roomIdx": 1
+    },
+    "r26_2": {
+      "name": "CHARLIE'S HOUSE (day) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map26_room2.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 26,
+      "_roomIdx": 2
+    },
+    "r26_3": {
+      "name": "CHARLIE'S HOUSE (day) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map26_room3.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 26,
+      "_roomIdx": 3
+    },
+    "r26_4": {
+      "name": "CHARLIE'S HOUSE (day) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map26_room4.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 26,
+      "_roomIdx": 4
+    },
+    "r26_5": {
+      "name": "CHARLIE'S HOUSE (day) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map26_room5.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 26,
+      "_roomIdx": 5
+    },
+    "r26_6": {
+      "name": "CHARLIE'S HOUSE (day) — Room 6",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map26_room6.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 26,
+      "_roomIdx": 6
+    },
+    "r26_7": {
+      "name": "CHARLIE'S HOUSE (day) — Room 7",
+      "width": 6,
+      "height": 9,
+      "image": "houses/map26_room7.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 26,
+      "_roomIdx": 7
+    },
+    "r30_0": {
+      "name": "CHARLIE'S HOUSE (sunset) — Room 0",
+      "width": 13,
+      "height": 16,
+      "image": "houses/map30_room0.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 30,
+      "_roomIdx": 0
+    },
+    "r30_1": {
+      "name": "CHARLIE'S HOUSE (sunset) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map30_room1.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 30,
+      "_roomIdx": 1
+    },
+    "r30_2": {
+      "name": "CHARLIE'S HOUSE (sunset) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map30_room2.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 30,
+      "_roomIdx": 2
+    },
+    "r30_3": {
+      "name": "CHARLIE'S HOUSE (sunset) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map30_room3.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 30,
+      "_roomIdx": 3
+    },
+    "r30_4": {
+      "name": "CHARLIE'S HOUSE (sunset) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map30_room4.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 30,
+      "_roomIdx": 4
+    },
+    "r30_5": {
+      "name": "CHARLIE'S HOUSE (sunset) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map30_room5.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 30,
+      "_roomIdx": 5
+    },
+    "r30_7": {
+      "name": "CHARLIE'S HOUSE (sunset) — Room 7",
+      "width": 6,
+      "height": 9,
+      "image": "houses/map30_room7.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 30,
+      "_roomIdx": 7
+    },
+    "r30_6": {
+      "name": "CHARLIE'S HOUSE (sunset) — Room 6",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map30_room6.png",
+      "_house": "CHARLIE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 30,
+      "_roomIdx": 6
+    },
+    "r33_0": {
+      "name": "SHAWN & KAREN'S HOUSE (day) — Room 0",
+      "width": 12,
+      "height": 10,
+      "image": "houses/map33_room0.png",
+      "_house": "SHAWN & KAREN'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 33,
+      "_roomIdx": 0
+    },
+    "r33_1": {
+      "name": "SHAWN & KAREN'S HOUSE (day) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map33_room1.png",
+      "_house": "SHAWN & KAREN'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 33,
+      "_roomIdx": 1
+    },
+    "r33_2": {
+      "name": "SHAWN & KAREN'S HOUSE (day) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map33_room2.png",
+      "_house": "SHAWN & KAREN'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 33,
+      "_roomIdx": 2
+    },
+    "r33_4": {
+      "name": "SHAWN & KAREN'S HOUSE (day) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map33_room4.png",
+      "_house": "SHAWN & KAREN'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 33,
+      "_roomIdx": 4
+    },
+    "r37_0": {
+      "name": "SHAWN & KAREN'S HOUSE (sunset) — Room 0",
+      "width": 12,
+      "height": 10,
+      "image": "houses/map37_room0.png",
+      "_house": "SHAWN & KAREN'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 37,
+      "_roomIdx": 0
+    },
+    "r37_1": {
+      "name": "SHAWN & KAREN'S HOUSE (sunset) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map37_room1.png",
+      "_house": "SHAWN & KAREN'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 37,
+      "_roomIdx": 1
+    },
+    "r37_2": {
+      "name": "SHAWN & KAREN'S HOUSE (sunset) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map37_room2.png",
+      "_house": "SHAWN & KAREN'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 37,
+      "_roomIdx": 2
+    },
+    "r37_4": {
+      "name": "SHAWN & KAREN'S HOUSE (sunset) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map37_room4.png",
+      "_house": "SHAWN & KAREN'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 37,
+      "_roomIdx": 4
+    },
+    "r34_3": {
+      "name": "SARAH'S HOUSE (day) — Room 3",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map34_room3.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 34,
+      "_roomIdx": 3
+    },
+    "r34_1": {
+      "name": "SARAH'S HOUSE (day) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map34_room1.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 34,
+      "_roomIdx": 1
+    },
+    "r34_0": {
+      "name": "SARAH'S HOUSE (day) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map34_room0.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 34,
+      "_roomIdx": 0
+    },
+    "r34_2": {
+      "name": "SARAH'S HOUSE (day) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map34_room2.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 34,
+      "_roomIdx": 2
+    },
+    "r34_4": {
+      "name": "SARAH'S HOUSE (day) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map34_room4.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 34,
+      "_roomIdx": 4
+    },
+    "r38_0": {
+      "name": "SARAH'S HOUSE (sunset) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map38_room0.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 38,
+      "_roomIdx": 0
+    },
+    "r38_1": {
+      "name": "SARAH'S HOUSE (sunset) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map38_room1.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 38,
+      "_roomIdx": 1
+    },
+    "r38_2": {
+      "name": "SARAH'S HOUSE (sunset) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map38_room2.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 38,
+      "_roomIdx": 2
+    },
+    "r38_3": {
+      "name": "SARAH'S HOUSE (sunset) — Room 3",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map38_room3.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 38,
+      "_roomIdx": 3
+    },
+    "r38_4": {
+      "name": "SARAH'S HOUSE (sunset) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map38_room4.png",
+      "_house": "SARAH'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 38,
+      "_roomIdx": 4
+    },
+    "r24_0": {
+      "name": "KIM'S HOUSE (day) — Room 0",
+      "width": 13,
+      "height": 15,
+      "image": "houses/map24_room0.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 24,
+      "_roomIdx": 0
+    },
+    "r24_1": {
+      "name": "KIM'S HOUSE (day) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map24_room1.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 24,
+      "_roomIdx": 1
+    },
+    "r24_2": {
+      "name": "KIM'S HOUSE (day) — Room 2",
+      "width": 9,
+      "height": 9,
+      "image": "houses/map24_room2.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 24,
+      "_roomIdx": 2
+    },
+    "r24_3": {
+      "name": "KIM'S HOUSE (day) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map24_room3.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 24,
+      "_roomIdx": 3
+    },
+    "r24_7": {
+      "name": "KIM'S HOUSE (day) — Room 7",
+      "width": 7,
+      "height": 10,
+      "image": "houses/map24_room7.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 24,
+      "_roomIdx": 7
+    },
+    "r24_4": {
+      "name": "KIM'S HOUSE (day) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map24_room4.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 24,
+      "_roomIdx": 4
+    },
+    "r24_5": {
+      "name": "KIM'S HOUSE (day) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map24_room5.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 24,
+      "_roomIdx": 5
+    },
+    "r24_6": {
+      "name": "KIM'S HOUSE (day) — Room 6",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map24_room6.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 24,
+      "_roomIdx": 6
+    },
+    "r28_3": {
+      "name": "KIM'S HOUSE (sunset) — Room 3",
+      "width": 9,
+      "height": 8,
+      "image": "houses/map28_room3.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 28,
+      "_roomIdx": 3
+    },
+    "r28_5": {
+      "name": "KIM'S HOUSE (sunset) — Room 5",
+      "width": 8,
+      "height": 7,
+      "image": "houses/map28_room5.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 28,
+      "_roomIdx": 5
+    },
+    "r28_6": {
+      "name": "KIM'S HOUSE (sunset) — Room 6",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map28_room6.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 28,
+      "_roomIdx": 6
+    },
+    "r28_4": {
+      "name": "KIM'S HOUSE (sunset) — Room 4",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map28_room4.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 28,
+      "_roomIdx": 4
+    },
+    "r28_7": {
+      "name": "KIM'S HOUSE (sunset) — Room 7",
+      "width": 7,
+      "height": 10,
+      "image": "houses/map28_room7.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 28,
+      "_roomIdx": 7
+    },
+    "r28_2": {
+      "name": "KIM'S HOUSE (sunset) — Room 2",
+      "width": 9,
+      "height": 9,
+      "image": "houses/map28_room2.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 28,
+      "_roomIdx": 2
+    },
+    "r28_1": {
+      "name": "KIM'S HOUSE (sunset) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map28_room1.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 28,
+      "_roomIdx": 1
+    },
+    "r28_0": {
+      "name": "KIM'S HOUSE (sunset) — Room 0",
+      "width": 13,
+      "height": 15,
+      "image": "houses/map28_room0.png",
+      "_house": "KIM'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 28,
+      "_roomIdx": 0
+    },
+    "r25_2": {
+      "name": "JOY'S HOUSE (day) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map25_room2.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 25,
+      "_roomIdx": 2
+    },
+    "r25_1": {
+      "name": "JOY'S HOUSE (day) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map25_room1.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 25,
+      "_roomIdx": 1
+    },
+    "r25_3": {
+      "name": "JOY'S HOUSE (day) — Room 3",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map25_room3.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 25,
+      "_roomIdx": 3
+    },
+    "r25_4": {
+      "name": "JOY'S HOUSE (day) — Room 4",
+      "width": 9,
+      "height": 7,
+      "image": "houses/map25_room4.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 25,
+      "_roomIdx": 4
+    },
+    "r25_5": {
+      "name": "JOY'S HOUSE (day) — Room 5",
+      "width": 7,
+      "height": 7,
+      "image": "houses/map25_room5.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 25,
+      "_roomIdx": 5
+    },
+    "r25_6": {
+      "name": "JOY'S HOUSE (day) — Room 6",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map25_room6.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 25,
+      "_roomIdx": 6
+    },
+    "r25_0": {
+      "name": "JOY'S HOUSE (day) — Room 0",
+      "width": 13,
+      "height": 15,
+      "image": "houses/map25_room0.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 25,
+      "_roomIdx": 0
+    },
+    "r29_0": {
+      "name": "JOY'S HOUSE (sunset) — Room 0",
+      "width": 13,
+      "height": 15,
+      "image": "houses/map29_room0.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 29,
+      "_roomIdx": 0
+    },
+    "r29_1": {
+      "name": "JOY'S HOUSE (sunset) — Room 1",
+      "width": 13,
+      "height": 12,
+      "image": "houses/map29_room1.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 29,
+      "_roomIdx": 1
+    },
+    "r29_2": {
+      "name": "JOY'S HOUSE (sunset) — Room 2",
+      "width": 9,
+      "height": 10,
+      "image": "houses/map29_room2.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 29,
+      "_roomIdx": 2
+    },
+    "r29_3": {
+      "name": "JOY'S HOUSE (sunset) — Room 3",
+      "width": 7,
+      "height": 8,
+      "image": "houses/map29_room3.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 29,
+      "_roomIdx": 3
+    },
+    "r29_4": {
+      "name": "JOY'S HOUSE (sunset) — Room 4",
+      "width": 9,
+      "height": 7,
+      "image": "houses/map29_room4.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 29,
+      "_roomIdx": 4
+    },
+    "r29_5": {
+      "name": "JOY'S HOUSE (sunset) — Room 5",
+      "width": 7,
+      "height": 7,
+      "image": "houses/map29_room5.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 29,
+      "_roomIdx": 5
+    },
+    "r29_6": {
+      "name": "JOY'S HOUSE (sunset) — Room 6",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map29_room6.png",
+      "_house": "JOY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 29,
+      "_roomIdx": 6
+    },
+    "r35_0": {
+      "name": "AUBREY'S HOUSE (day) — Room 0",
+      "width": 12,
+      "height": 10,
+      "image": "houses/map35_room0.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 35,
+      "_roomIdx": 0
+    },
+    "r35_1": {
+      "name": "AUBREY'S HOUSE (day) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map35_room1.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 35,
+      "_roomIdx": 1
+    },
+    "r35_2": {
+      "name": "AUBREY'S HOUSE (day) — Room 2",
+      "width": 13,
+      "height": 7,
+      "image": "houses/map35_room2.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 35,
+      "_roomIdx": 2
+    },
+    "r35_3": {
+      "name": "AUBREY'S HOUSE (day) — Room 3",
+      "width": 5,
+      "height": 8,
+      "image": "houses/map35_room3.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 35,
+      "_roomIdx": 3
+    },
+    "r35_4": {
+      "name": "AUBREY'S HOUSE (day) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map35_room4.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 35,
+      "_roomIdx": 4
+    },
+    "r39_0": {
+      "name": "AUBREY'S HOUSE (sunset) — Room 0",
+      "width": 12,
+      "height": 10,
+      "image": "houses/map39_room0.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 39,
+      "_roomIdx": 0
+    },
+    "r39_1": {
+      "name": "AUBREY'S HOUSE (sunset) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map39_room1.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 39,
+      "_roomIdx": 1
+    },
+    "r39_2": {
+      "name": "AUBREY'S HOUSE (sunset) — Room 2",
+      "width": 13,
+      "height": 7,
+      "image": "houses/map39_room2.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 39,
+      "_roomIdx": 2
+    },
+    "r39_3": {
+      "name": "AUBREY'S HOUSE (sunset) — Room 3",
+      "width": 5,
+      "height": 8,
+      "image": "houses/map39_room3.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 39,
+      "_roomIdx": 3
+    },
+    "r39_4": {
+      "name": "AUBREY'S HOUSE (sunset) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map39_room4.png",
+      "_house": "AUBREY'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 39,
+      "_roomIdx": 4
+    },
+    "r46_0": {
+      "name": "BASIL'S HOUSE (day) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map46_room0.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 46,
+      "_roomIdx": 0
+    },
+    "r46_1": {
+      "name": "BASIL'S HOUSE (day) — Room 1",
+      "width": 5,
+      "height": 8,
+      "image": "houses/map46_room1.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 46,
+      "_roomIdx": 1
+    },
+    "r46_2": {
+      "name": "BASIL'S HOUSE (day) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map46_room2.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 46,
+      "_roomIdx": 2
+    },
+    "r46_3": {
+      "name": "BASIL'S HOUSE (day) — Room 3",
+      "width": 5,
+      "height": 9,
+      "image": "houses/map46_room3.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 46,
+      "_roomIdx": 3
+    },
+    "r46_4": {
+      "name": "BASIL'S HOUSE (day) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map46_room4.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 46,
+      "_roomIdx": 4
+    },
+    "r50_0": {
+      "name": "BASIL'S HOUSE (sunset) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map50_room0.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 50,
+      "_roomIdx": 0
+    },
+    "r50_1": {
+      "name": "BASIL'S HOUSE (sunset) — Room 1",
+      "width": 5,
+      "height": 8,
+      "image": "houses/map50_room1.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 50,
+      "_roomIdx": 1
+    },
+    "r50_2": {
+      "name": "BASIL'S HOUSE (sunset) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map50_room2.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 50,
+      "_roomIdx": 2
+    },
+    "r50_3": {
+      "name": "BASIL'S HOUSE (sunset) — Room 3",
+      "width": 5,
+      "height": 9,
+      "image": "houses/map50_room3.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 50,
+      "_roomIdx": 3
+    },
+    "r50_4": {
+      "name": "BASIL'S HOUSE (sunset) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map50_room4.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 50,
+      "_roomIdx": 4
+    },
+    "r80_0": {
+      "name": "BASIL'S HOUSE (night) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map80_room0.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 80,
+      "_roomIdx": 0
+    },
+    "r80_1": {
+      "name": "BASIL'S HOUSE (night) — Room 1",
+      "width": 5,
+      "height": 8,
+      "image": "houses/map80_room1.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 80,
+      "_roomIdx": 1
+    },
+    "r80_2": {
+      "name": "BASIL'S HOUSE (night) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map80_room2.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 80,
+      "_roomIdx": 2
+    },
+    "r80_3": {
+      "name": "BASIL'S HOUSE (night) — Room 3",
+      "width": 5,
+      "height": 9,
+      "image": "houses/map80_room3.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 80,
+      "_roomIdx": 3
+    },
+    "r80_4": {
+      "name": "BASIL'S HOUSE (night) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map80_room4.png",
+      "_house": "BASIL'S HOUSE",
+      "_phase": "night",
+      "_parentMapId": 80,
+      "_roomIdx": 4
+    },
+    "r32_1": {
+      "name": "VANCE'S HOUSE (day) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map32_room1.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 32,
+      "_roomIdx": 1
+    },
+    "r32_0": {
+      "name": "VANCE'S HOUSE (day) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map32_room0.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 32,
+      "_roomIdx": 0
+    },
+    "r32_2": {
+      "name": "VANCE'S HOUSE (day) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map32_room2.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 32,
+      "_roomIdx": 2
+    },
+    "r32_3": {
+      "name": "VANCE'S HOUSE (day) — Room 3",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map32_room3.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 32,
+      "_roomIdx": 3
+    },
+    "r32_4": {
+      "name": "VANCE'S HOUSE (day) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map32_room4.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 32,
+      "_roomIdx": 4
+    },
+    "r36_0": {
+      "name": "VANCE'S HOUSE (sunset) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map36_room0.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 36,
+      "_roomIdx": 0
+    },
+    "r36_1": {
+      "name": "VANCE'S HOUSE (sunset) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map36_room1.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 36,
+      "_roomIdx": 1
+    },
+    "r36_2": {
+      "name": "VANCE'S HOUSE (sunset) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map36_room2.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 36,
+      "_roomIdx": 2
+    },
+    "r36_3": {
+      "name": "VANCE'S HOUSE (sunset) — Room 3",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map36_room3.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 36,
+      "_roomIdx": 3
+    },
+    "r36_4": {
+      "name": "VANCE'S HOUSE (sunset) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map36_room4.png",
+      "_house": "VANCE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 36,
+      "_roomIdx": 4
+    },
+    "r47_0": {
+      "name": "JESSE'S HOUSE (day) — Room 0",
+      "width": 12,
+      "height": 10,
+      "image": "houses/map47_room0.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 47,
+      "_roomIdx": 0
+    },
+    "r47_1": {
+      "name": "JESSE'S HOUSE (day) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map47_room1.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 47,
+      "_roomIdx": 1
+    },
+    "r47_2": {
+      "name": "JESSE'S HOUSE (day) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map47_room2.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 47,
+      "_roomIdx": 2
+    },
+    "r47_3": {
+      "name": "JESSE'S HOUSE (day) — Room 3",
+      "width": 5,
+      "height": 9,
+      "image": "houses/map47_room3.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 47,
+      "_roomIdx": 3
+    },
+    "r47_4": {
+      "name": "JESSE'S HOUSE (day) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map47_room4.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 47,
+      "_roomIdx": 4
+    },
+    "r51_2": {
+      "name": "JESSE'S HOUSE (sunset) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map51_room2.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 51,
+      "_roomIdx": 2
+    },
+    "r51_3": {
+      "name": "JESSE'S HOUSE (sunset) — Room 3",
+      "width": 5,
+      "height": 9,
+      "image": "houses/map51_room3.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 51,
+      "_roomIdx": 3
+    },
+    "r51_1": {
+      "name": "JESSE'S HOUSE (sunset) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map51_room1.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 51,
+      "_roomIdx": 1
+    },
+    "r51_4": {
+      "name": "JESSE'S HOUSE (sunset) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map51_room4.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 51,
+      "_roomIdx": 4
+    },
+    "r51_0": {
+      "name": "JESSE'S HOUSE (sunset) — Room 0",
+      "width": 12,
+      "height": 10,
+      "image": "houses/map51_room0.png",
+      "_house": "JESSE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 51,
+      "_roomIdx": 0
+    },
+    "r48_0": {
+      "name": "BEBE'S HOUSE (day) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map48_room0.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 48,
+      "_roomIdx": 0
+    },
+    "r48_1": {
+      "name": "BEBE'S HOUSE (day) — Room 1",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map48_room1.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 48,
+      "_roomIdx": 1
+    },
+    "r48_2": {
+      "name": "BEBE'S HOUSE (day) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map48_room2.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 48,
+      "_roomIdx": 2
+    },
+    "r48_3": {
+      "name": "BEBE'S HOUSE (day) — Room 3",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map48_room3.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 48,
+      "_roomIdx": 3
+    },
+    "r48_4": {
+      "name": "BEBE'S HOUSE (day) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map48_room4.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 48,
+      "_roomIdx": 4
+    },
+    "r52_0": {
+      "name": "BEBE'S HOUSE (sunset) — Room 0",
+      "width": 12,
+      "height": 11,
+      "image": "houses/map52_room0.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 52,
+      "_roomIdx": 0
+    },
+    "r52_1": {
+      "name": "BEBE'S HOUSE (sunset) — Room 1",
+      "width": 7,
+      "height": 9,
+      "image": "houses/map52_room1.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 52,
+      "_roomIdx": 1
+    },
+    "r52_2": {
+      "name": "BEBE'S HOUSE (sunset) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map52_room2.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 52,
+      "_roomIdx": 2
+    },
+    "r52_3": {
+      "name": "BEBE'S HOUSE (sunset) — Room 3",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map52_room3.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 52,
+      "_roomIdx": 3
+    },
+    "r52_4": {
+      "name": "BEBE'S HOUSE (sunset) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map52_room4.png",
+      "_house": "BEBE'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 52,
+      "_roomIdx": 4
+    },
+    "r49_0": {
+      "name": "ARTIST'S HOUSE (day) — Room 0",
+      "width": 12,
+      "height": 10,
+      "image": "houses/map49_room0.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 49,
+      "_roomIdx": 0
+    },
+    "r49_2": {
+      "name": "ARTIST'S HOUSE (day) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map49_room2.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 49,
+      "_roomIdx": 2
+    },
+    "r49_1": {
+      "name": "ARTIST'S HOUSE (day) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map49_room1.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 49,
+      "_roomIdx": 1
+    },
+    "r49_3": {
+      "name": "ARTIST'S HOUSE (day) — Room 3",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map49_room3.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 49,
+      "_roomIdx": 3
+    },
+    "r49_4": {
+      "name": "ARTIST'S HOUSE (day) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map49_room4.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "day",
+      "_parentMapId": 49,
+      "_roomIdx": 4
+    },
+    "r53_2": {
+      "name": "ARTIST'S HOUSE (sunset) — Room 2",
+      "width": 13,
+      "height": 5,
+      "image": "houses/map53_room2.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 53,
+      "_roomIdx": 2
+    },
+    "r53_1": {
+      "name": "ARTIST'S HOUSE (sunset) — Room 1",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map53_room1.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 53,
+      "_roomIdx": 1
+    },
+    "r53_3": {
+      "name": "ARTIST'S HOUSE (sunset) — Room 3",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map53_room3.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 53,
+      "_roomIdx": 3
+    },
+    "r53_4": {
+      "name": "ARTIST'S HOUSE (sunset) — Room 4",
+      "width": 5,
+      "height": 7,
+      "image": "houses/map53_room4.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 53,
+      "_roomIdx": 4
+    },
+    "r53_0": {
+      "name": "ARTIST'S HOUSE (sunset) — Room 0",
+      "width": 12,
+      "height": 10,
+      "image": "houses/map53_room0.png",
+      "_house": "ARTIST'S HOUSE",
+      "_phase": "sunset",
+      "_parentMapId": 53,
+      "_roomIdx": 0
+    }
+  }
+}
