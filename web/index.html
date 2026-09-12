@@ -304,6 +304,10 @@
      pixels changes nothing — Chrome composites premultiplied and never samples
      RGB where alpha is 0, so 32_bleed_deco_edges.py is insurance, not a fix. */
   .world-deco { image-rendering: auto; }
+  /* The band itself has no size: it is only a coordinate frame for the sprites
+     inside it, and one transform to scale them all as a unit. */
+  .deco-band { position: absolute; left: 0; top: 0; width: 0; height: 0;
+               transform-origin: 0 0; pointer-events: none; }
   .region-pane.dimmed { filter: grayscale(1) brightness(0.45) contrast(0.95); }
   .region-pane.hidden { display: none; }
 
@@ -2223,10 +2227,105 @@ function flippedSrc(art) {
 }
 
 
-// One overlay per sprite is still what happens when the manifest does not
-// match the layout, and ?deco=plain forces it — the only way to see what the
-// bake is for without deleting the manifest.
-const DECO_MODE = new URLSearchParams(location.search).get('deco') || 'baked';
+// One sprite per image is now the default: the bands below scale them as a
+// unit, so there is nothing left for the bake to prevent, and the bake could
+// only ever fit them into one image by dropping the whole set below every map.
+// ?deco=baked still loads the manifest — the clusters go into the bands like
+// anything else — which is how to compare the two without deleting anything.
+const DECO_MODE = new URLSearchParams(location.search).get('deco') || 'sprites';
+
+// ── Decoration bands ────────────────────────────────────────────────────────
+// One container per region and band, holding every sprite in it, scaled by a
+// single transform.
+//
+// Leaflet gives each overlay its own position and size in fractional CSS
+// pixels. Neighbours round separately, hairline cracks open between them at
+// any zoom short of 1:1, and #map's own background shows through — which is
+// the black outline people saw around the Vast Forest trees, where the sprites
+// bridge a real 192px hole in the layout and there is nothing else behind them.
+//
+// 36_bake_deco_clusters.py answered that by compositing contiguous runs into
+// single PNGs, and it worked: 179 sprites became 15 images, none of them
+// touching. But it only fit them into one image by flattening every decoration
+// below every map (`--all-below`), because a baked image can sit at exactly one
+// z. That traded the layout's own layering for the seams.
+//
+// A container costs neither. Sprites are laid out once at layout pixels and
+// never repositioned; the parent's transform does all the scaling, so two that
+// touch at 1:1 touch at every zoom — which is precisely why stitcher_all.html
+// has never shown this. Masking, dimming and hiding keep working through it:
+// they are paint operations and never needed Leaflet to place the element.
+//
+// Two bands are enough, and exactly enough. Of the 179 decorations 76 must sit
+// under a map they overlap and 13 over one; none needs both, and no overlapping
+// pair ends up the wrong way round when they are split like that. A sprite over
+// no map at all goes below, with the majority.
+// L.ImageOverlay defaults to `zIndex: 1` and writes it onto every image, so a
+// band left at `z-index: auto` paints under every map however late it comes in
+// the DOM. The below band happened to want that; the above band was invisible.
+// Both are now explicit: 0 under the maps, 2 over them.
+const MAP_Z = 1;
+const DecoBand = L.Layer.extend({
+  initialize(paneName, origin, zIndex) {
+    this._paneName = paneName;
+    this._origin = origin;          // latLng of layout-relative (0, 0)
+    this._zIndex = zIndex;
+    // Built here, not in onAdd: sprites are put in during the draw loop, and
+    // the above-maps band is not added to the map until after it. Creating the
+    // container late meant those thirteen were appended to nothing and the
+    // band came up empty.
+    this._el = L.DomUtil.create('div', 'deco-band');
+    this._el.style.zIndex = this._zIndex;
+  },
+  onAdd() {
+    // Leaflet transitions anything wearing this class along with the map pane,
+    // so the band zooms smoothly instead of jumping at the end.
+    if (this._map._zoomAnimated) L.DomUtil.addClass(this._el, 'leaflet-zoom-animated');
+    this.getPane(this._paneName).appendChild(this._el);
+    this._reset();
+  },
+  onRemove() { L.DomUtil.remove(this._el); },
+  getEvents() {
+    // Not moveend: a pan moves the map pane and leaves layer points alone, so
+    // recomputing there would apply the pan a second time.
+    const ev = { viewreset: this._reset, zoom: this._reset };
+    if (this._map._zoomAnimated) ev.zoomanim = this._onAnimZoom;
+    return ev;
+  },
+  _onAnimZoom(e) {
+    L.DomUtil.setTransform(this._el,
+      this._map._latLngToNewLayerPoint(this._origin, e.zoom, e.center),
+      this._map.getZoomScale(e.zoom, 0));
+  },
+  _reset() {
+    L.DomUtil.setTransform(this._el,
+      this._map.latLngToLayerPoint(this._origin),
+      this._map.getZoomScale(this._map.getZoom(), 0));
+  },
+  addSprite(url, x, y, w, h) {
+    const img = L.DomUtil.create('img', 'world-deco', this._el);
+    img.src = url;
+    img.style.cssText =
+      `position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px`;
+    return img;
+  },
+});
+
+// Which side of the maps a decoration belongs on. A map stacked over it wins
+// outright — that is the case the layout is being explicit about.
+function decoBand(it, placed) {
+  const x0 = it.pos.x, y0 = it.pos.y, x1 = x0 + it.w, y1 = y0 + it.h;
+  const z = it.pos.zOrder ?? 0;
+  let above = false;
+  for (const m of placed) {
+    if (m.pos.x >= x1 || x0 >= m.pos.x + m.w ||
+        m.pos.y >= y1 || y0 >= m.pos.y + m.h) continue;
+    const mz = m.pos.zOrder ?? 0;
+    if (mz > z) return 'below';
+    if (mz < z) above = true;
+  }
+  return above ? 'above' : 'below';
+}
 
 // ── Baked decoration clusters ───────────────────────────────────────────────
 // The trees bridge holes in the layout, so what sits behind them is #map's own
@@ -2309,13 +2408,18 @@ async function loadWorld() {
     // Coming back from another mode: clearLayers() pulled the overlays off the
     // map but the panes and geometry are still good, so just put them back.
     // Re-add in the order they were first laid down, not region by region:
-    // stacking inside a pane is DOM order, so putting every map back before
-    // every decoration would float the trees above the maps they were placed
-    // behind.
+    // stacking inside a pane is DOM order, so the bands have to go back around
+    // the maps the same way they were built, or the trees float.
+    for (const band of worldState.bands.below) {
+      band.addTo(leafletMap); currentLayers.push(band);
+    }
     for (const it of worldState.drawOrder) {
       if (!it.layer) continue;
       it.layer.addTo(leafletMap);
       currentLayers.push(it.layer);
+    }
+    for (const band of worldState.bands.above) {
+      band.addTo(leafletMap); currentLayers.push(band);
     }
     applySelection();
     return;
@@ -2408,8 +2512,7 @@ async function loadWorld() {
     ? (await bakedDecos(decos) || decos)
     : decos;
   if (DECO_MODE !== 'baked') {
-    console.log(`Decorations: ?deco=${DECO_MODE} — ${decos.length} sprites, `
-                + `one overlay each.`);
+    console.log(`Decorations: ${decos.length} sprite(s) in scaled bands.`);
   }
 
   // Draw in the stitcher's z-order, not map-id order. Leaflet stacks overlays
@@ -2421,24 +2524,49 @@ async function loadWorld() {
   // focused region's pane above the rest.
   const drawOrder = [...placed, ...drawnDecos].sort(
     (a, b) => (a.pos.zOrder ?? 0) - (b.pos.zOrder ?? 0));
+
+  // Stacking inside a pane is DOM order, so the bands are added around the
+  // maps rather than among them: every below-band first, then the maps, then
+  // every above-band. Within a band the sprites keep their own order.
+  const origin = L.latLng(bbox.ch, 0);          // layout-relative (0, 0)
+  const bands = { below: [], above: [] };
+  const bandOf = new Map();
+  for (const side of ['below', 'above']) {
+    for (const r of ALL_REGIONS) {
+      if (!panes[r] || !drawnDecos.some(it => it.region === r &&
+                                              decoBand(it, placed) === side)) continue;
+      const band = new DecoBand('region-' + r, origin,
+                                side === 'below' ? MAP_Z - 1 : MAP_Z + 1);
+      bandOf.set(side + ':' + r, band);
+      bands[side].push(band);
+    }
+  }
+  for (const band of bands.below) { band.addTo(leafletMap); currentLayers.push(band); }
+
   for (const it of drawOrder) {
     if (!panes[it.region]) continue;
-    const lat = bbox.ch - (it.pos.y - bbox.minY);
-    const lng = it.pos.x - bbox.minX;
-    const layer = L.imageOverlay(it.deco ? it.url : mapImageUrl(it.id, it.m),
+    const x = it.pos.x - bbox.minX, y = it.pos.y - bbox.minY;
+    if (it.deco) {
+      const band = bandOf.get(decoBand(it, placed) + ':' + it.region);
+      if (band) it.el = band.addSprite(it.url, x, y, it.w, it.h);
+      continue;
+    }
+    const lat = bbox.ch - y, lng = x;
+    const layer = L.imageOverlay(mapImageUrl(it.id, it.m),
                                  [[lat - it.h, lng], [lat, lng + it.w]],
-                                 { pane: 'region-' + it.region,
-                                   className: it.deco ? 'world-deco' : '' });
+                                 { pane: 'region-' + it.region });
     layer.addTo(leafletMap);
     currentLayers.push(layer);
     it.layer = layer;
     // byRegion drives the region legend's counts, so only maps go in it — a
     // region has no business being reported as holding 91 more maps than it has.
-    if (!it.deco) byRegion[it.region].push(it);
+    byRegion[it.region].push(it);
   }
 
+  for (const band of bands.above) { band.addTo(leafletMap); currentLayers.push(band); }
+
   worldState = { bbox, byRegion, panes, layout, melons, regionOf, metaAll, placed,
-                 decos, drawnDecos, drawOrder, visibleIds: new Set() };
+                 decos, drawnDecos, drawOrder, bands, visibleIds: new Set() };
   // Not animated: fitVisibleWorld reframes this a tick later, and an animated
   // zoom still in flight ends by snapping the view to *its* target, throwing
   // away the reframe. That is a race — at some widths the animation finished
@@ -2604,7 +2732,7 @@ function applySelection() {
     ? it.nearIds.some(id => worldState.visibleIds.has(id) && !fading.has(id))
     : (worldState.visibleIds.has(it.nearId) && !fading.has(it.nearId));
   for (const it of (worldState.drawnDecos || [])) {
-    const el = it.layer && it.layer.getElement && it.layer.getElement();
+    const el = it.el;
     if (!el) continue;
     // '' rather than 'block': the Scenery switch is a CSS rule, and an inline
     // display would win over it.
