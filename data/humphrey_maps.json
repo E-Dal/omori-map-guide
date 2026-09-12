@@ -278,5 +278,33 @@
     "height": 70,
     "parallaxName": null,
     "bgm": "fat_sunset"
+  },
+  "4373": {
+    "id": 4373,
+    "name": "-- ALCOVES II [alcove 3]",
+    "width": 10,
+    "height": 12,
+    "parallaxName": null,
+    "bgm": "fat_sunset",
+    "cropX": 48,
+    "cropY": 3,
+    "polygon": [
+      [
+        48,
+        3
+      ],
+      [
+        58,
+        3
+      ],
+      [
+        58,
+        15
+      ],
+      [
+        48,
+        15
+      ]
+    ]
   }
 }

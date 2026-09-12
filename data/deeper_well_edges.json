@@ -2848,27 +2848,6 @@
     },
     {
       "from": {
-        "mapId": 4373,
-        "evId": 900,
-        "evName": "Exit stem (south)",
-        "x": 5,
-        "y": 11,
-        "hitbox": {
-          "L": 0,
-          "R": 0,
-          "T": 0,
-          "B": 1
-        }
-      },
-      "to": {
-        "mapId": 4373,
-        "x": 5,
-        "y": 11
-      },
-      "kind": "exitStem"
-    },
-    {
-      "from": {
         "mapId": 4376,
         "evId": 900,
         "evName": "Exit stem (south)",

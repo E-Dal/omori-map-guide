@@ -524,19 +524,6 @@
    }
   },
   {
-   "mapId": 4373,
-   "evId": 5,
-   "name": "melonJamPackets",
-   "x": 4,
-   "y": 5,
-   "color": "green",
-   "prize": {
-    "template": null,
-    "kind": "Item",
-    "itemName": "JAM PACKETS"
-   }
-  },
-  {
    "mapId": 4376,
    "evId": 6,
    "name": "melonJamPackets",
@@ -560,84 +547,6 @@
     "template": null,
     "kind": "Item",
     "itemName": "JAM PACKETS"
-   }
-  },
-  {
-   "mapId": 4373,
-   "evId": 15,
-   "name": "melonSpaghetti",
-   "x": 3,
-   "y": 4,
-   "color": "green",
-   "prize": {
-    "template": null,
-    "kind": "Item",
-    "itemName": "SPAGHETTI"
-   }
-  },
-  {
-   "mapId": 4373,
-   "evId": 16,
-   "name": "melonSpaghetti",
-   "x": 6,
-   "y": 4,
-   "color": "green",
-   "prize": {
-    "template": null,
-    "kind": "Item",
-    "itemName": "SPAGHETTI"
-   }
-  },
-  {
-   "mapId": 4373,
-   "evId": 17,
-   "name": "melonSpaghetti",
-   "x": 4,
-   "y": 7,
-   "color": "green",
-   "prize": {
-    "template": null,
-    "kind": "Item",
-    "itemName": "SPAGHETTI"
-   }
-  },
-  {
-   "mapId": 4373,
-   "evId": 18,
-   "name": "melonSpaghetti",
-   "x": 6,
-   "y": 6,
-   "color": "green",
-   "prize": {
-    "template": null,
-    "kind": "Item",
-    "itemName": "SPAGHETTI"
-   }
-  },
-  {
-   "mapId": 4373,
-   "evId": 19,
-   "name": "melonSpaghetti",
-   "x": 2,
-   "y": 6,
-   "color": "green",
-   "prize": {
-    "template": null,
-    "kind": "Item",
-    "itemName": "SPAGHETTI"
-   }
-  },
-  {
-   "mapId": 4373,
-   "evId": 20,
-   "name": "melonSpaghetti",
-   "x": 7,
-   "y": 7,
-   "color": "green",
-   "prize": {
-    "template": null,
-    "kind": "Item",
-    "itemName": "SPAGHETTI"
    }
   },
   {

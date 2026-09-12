@@ -2639,6 +2639,49 @@
         "y": 22
       },
       "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 239,
+        "evId": 129,
+        "evName": "Face Wall",
+        "x": 4,
+        "y": 9,
+        "page": 2,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4373,
+        "x": 5,
+        "y": 11
+      },
+      "kind": "setValue"
+    },
+    {
+      "from": {
+        "mapId": 4373,
+        "evId": 900,
+        "evName": "Exit stem (south)",
+        "x": 5,
+        "y": 11,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 1
+        }
+      },
+      "to": {
+        "mapId": 4373,
+        "x": 5,
+        "y": 11
+      },
+      "kind": "exitStem"
     }
   ],
   "external": [

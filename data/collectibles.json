@@ -11636,7 +11636,10 @@
    "clue": {
     "zh": "\u5728\u6811\u6869\u65c1\u8fb9\u7684\u8349\u4e1b\u4e2d",
     "en": "In the grass near a stump"
-   }
+   },
+   "requires": [
+    "Day0FA - Throw Up"
+   ]
   },
   {
    "layer": "hangman",
@@ -11655,7 +11658,10 @@
    "clue": {
     "zh": "\u5728\u4e00\u5ea7\u82e5\u9690\u82e5\u73b0\u7684\u8001\u6865\u4e0a",
     "en": "On a shrouded old bridge"
-   }
+   },
+   "requires": [
+    "Day0FA - Throw Up"
+   ]
   },
   {
    "layer": "hangman",

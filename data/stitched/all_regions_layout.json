@@ -1799,6 +1799,13 @@
       "crop": "full",
       "zOrder": 369,
       "groupId": "pyrefly_forest"
+    },
+    "4373": {
+      "x": -9504,
+      "y": -18336,
+      "crop": "full",
+      "zOrder": 372,
+      "groupId": "humphrey"
     }
   },
   "routes": [
@@ -13024,6 +13031,34 @@
         [
           4,
           14
+        ]
+      ]
+    },
+    "4373": {
+      "id": 4373,
+      "name": "-- ALCOVES II [alcove 3]",
+      "width": 10,
+      "height": 12,
+      "parallaxName": null,
+      "bgm": "fat_sunset",
+      "cropX": 48,
+      "cropY": 3,
+      "polygon": [
+        [
+          48,
+          3
+        ],
+        [
+          58,
+          3
+        ],
+        [
+          58,
+          15
+        ],
+        [
+          48,
+          15
         ]
       ]
     }

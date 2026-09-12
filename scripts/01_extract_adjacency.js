@@ -546,9 +546,12 @@ const PATCHES = {
       // versions tell themselves apart on screen. So: one slice per route.
       4336: { src: 433, name: '[ocean alcove — via deeper well]', polygon: [[54,32],[60,32],[60,44],[54,44]] },
 
-      // ALCOVES II — the three alcoves whose face walls are in this region:
-      // Map239 -> 4373, Map251 (MEDUSA MAZE 2) -> 4376, Map223 -> 4379.
-      4373: { src: 437, name: '[alcove 3]', polygon: [[48,3],[58,3],[58,15],[48,15]] },
+      // ALCOVES II — alcoves 6 and 10, cut here because that is where they were
+      // first noticed rather than because they belong. Their face walls are
+      // Map251 (MEDUSA MAZE 2) and Map223 (MARINA ROOM 3), and both of those
+      // are Humphrey maps, the same as alcove 3's Map239 — which is why 4373
+      // now lives in the humphrey block below. These two are unplaced in the
+      // layout, so moving them can wait until they are wanted.
       4376: { src: 437, name: '[alcove 6]', polygon: [[48,25],[58,25],[58,37],[48,37]] },
       4379: { src: 437, name: '[alcove 10]', polygon: [[48,47],[58,47],[58,59],[48,59]] },
       // Map453 CLUB SANDWICH is a room atlas: 5 isolated rooms on one 66x50
@@ -862,6 +865,14 @@ const PATCHES = {
     },
   },
   humphrey: {
+    subMaps: {
+      // ALCOVES II alcove 3. Its face wall is in Map239 MOLLY ROOM LEFT 1, so
+      // this is Humphrey's alcove; it was cut under deeper_well, where the
+      // other two ALCOVES II slices still sit. A slice belongs to the region
+      // its door is in, because that is the region whose layout has to make
+      // room for it.
+      4373: { src: 437, name: '[alcove 3]', polygon: [[48,3],[58,3],[58,15],[48,15]] },
+    },
     manualWatermelons: [
       // MEDUSA ROOM TO BOSS's melon is called `Item`, so the name scan cannot
       // see it either. It is one all the same: page 0 is DW_IMPORTANTOBJ_2
