@@ -36,6 +36,18 @@ KIND = 'anchor'
 # true of a great many interiors, and anchoring all of them would bury the
 # stitcher in dots. These are the rooms a route actually needs to reach.
 ARRIVALS = {
+    'faraway': [
+        # AUBREY'S HOUSE, the door at the left end of the upstairs hallway. Its
+        # room is one of four in Faraway you can walk out of and never into:
+        # ev4 (71, 25) leaves for the hallway, but the hallway has no door
+        # event coming back, because these houses were copied from VANCE'S
+        # HOUSE and the spare door events were deleted rather than the rooms.
+        # The door is still painted on the wall — behind a cardboard box and a
+        # wardrobe, which is presumably why it was the one dropped. Anchoring
+        # the arrival tile lets a route reach the room anyway.
+        (35, 15, 25, 'Arrival anchor (blocked hallway door)'),
+        (39, 15, 25, 'Arrival anchor (blocked hallway door)'),
+    ],
     'sweethearts_castle': [
         # Reached from map171 (and its slice map1711) ev76, the Sweetheart's
         # quest warp. The cell is a dead end otherwise — the other three cells

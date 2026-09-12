@@ -17553,6 +17553,48 @@
         "y": 13
       },
       "kind": "exitStem"
+    },
+    {
+      "from": {
+        "mapId": 35,
+        "evId": 903,
+        "evName": "Arrival anchor (blocked hallway door)",
+        "x": 15,
+        "y": 25,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 35,
+        "x": 15,
+        "y": 25
+      },
+      "kind": "anchor"
+    },
+    {
+      "from": {
+        "mapId": 39,
+        "evId": 903,
+        "evName": "Arrival anchor (blocked hallway door)",
+        "x": 15,
+        "y": 25,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 39,
+        "x": 15,
+        "y": 25
+      },
+      "kind": "anchor"
     }
   ],
   "external": [
