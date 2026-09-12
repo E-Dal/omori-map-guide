@@ -14,6 +14,16 @@ MOLLY ROOM RIGHT 2 cost 361 tiles of holograms, computers and puzzle parts.
     python3 scripts/16_render_event_sprites.py 240
     python3 scripts/16_render_event_sprites.py 240 --events 1,3,24
     python3 scripts/16_render_event_sprites.py 240 --sprite DW_PuzzleObjects5
+    python3 scripts/16_render_event_sprites.py 80 --events 3 --copy-from 15,24
+
+`--copy-from` takes the pixels off the map instead of off the sheet. A night
+map is rendered darker than the sheet it was drawn from — BASIL'S HOME
+(NIGHT) paints its doors at roughly 0.68x the blue of !objects_fa_night_doors
+— so a sprite composited straight from the sheet lands as a lit door on an
+unlit wall. When the same sprite is already drawn correctly somewhere on the
+same map, that instance is the right source: give its tile and the block is
+lifted from the canvas, tone and all. The donor's background has to match the
+target's, which for a repeating wall it does; check before trusting it.
 
 For each event the *first page carrying the wanted sprite* is used, not page 0
 — Map240's pads sit on page 1 behind an invisible DEV_TEST placeholder on
@@ -221,6 +231,12 @@ def main():
     no_clip = '--no-clip' in args
     if no_clip:
         args.remove('--no-clip')
+    copy_from = None
+    if '--copy-from' in args:
+        i = args.index('--copy-from')
+        copy_from = tuple(int(v) for v in args[i + 1].split(','))
+        del args[i:i + 2]
+        no_clip = True          # lifting a finished block; nothing to trim
     if '--sprite' in args:
         i = args.index('--sprite')
         want_sprite = args[i + 1]
@@ -284,6 +300,20 @@ def main():
             frame = sprite_frame(img['characterName'], img.get('characterIndex', 0),
                                  img.get('direction', 2), img.get('pattern', 1))
             if frame is None:
+                continue
+            if copy_from:
+                # The sheet gives the size; the map gives the pixels.
+                dx, dy = copy_from
+                px = dx * TILE + TILE // 2 - frame.width // 2
+                py = (dy + 1) * TILE - frame.height
+                donor = canvas.crop((px, py, px + frame.width, py + frame.height))
+                ex, ey = ev['x'] - off_x, ev['y'] - off_y
+                canvas.alpha_composite(
+                    donor, (max(0, ex * TILE + TILE // 2 - donor.width // 2),
+                            max(0, (ey + 1) * TILE - donor.height)))
+                drawn += 1
+                print(f'  + map{map_id} ev{ev["id"]} "{ev.get("name","")}" '
+                      f'copied from tile ({dx},{dy}) to ({ev["x"]},{ev["y"]})')
                 continue
             box = content_box(frame)
             frame = frame.crop(box) if box else frame

@@ -27,12 +27,19 @@ OUT = PNG_DIR / 'manifest.json'
 
 
 def rebuild():
-    """{filename: mtime as whole seconds}. Seconds are plenty — nothing here
-    changes twice in one second, and it keeps the file small."""
+    """{path: mtime as whole seconds}. Seconds are plenty — nothing here
+    changes twice in one second, and it keeps the file small.
+
+    The key is the path relative to raw_pngs, because that is what the pages
+    ask for: a sliced house room is `houses/map24_room0.png` and a top-level
+    render is `map24.png`. A `*.png`-only scan left all 200 room images out of
+    the manifest, so `stampPng` had nothing to stamp them with and every
+    re-slice stayed invisible behind the browser cache — Kim's two repainted
+    doors were sitting on disk while the stitcher drew last week's room."""
     if not PNG_DIR.is_dir():
         return {}
-    entries = {p.name: int(p.stat().st_mtime)
-               for p in sorted(PNG_DIR.glob('*.png'))}
+    entries = {p.relative_to(PNG_DIR).as_posix(): int(p.stat().st_mtime)
+               for p in sorted(PNG_DIR.rglob('*.png'))}
     OUT.write_text(json.dumps(entries, separators=(',', ':'), sort_keys=True))
     return entries
 
