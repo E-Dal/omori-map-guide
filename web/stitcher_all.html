@@ -674,11 +674,11 @@ let placed = {}; // mapId -> {x, y, crop}  (crop is 'full' | 'top3' | 'mid3' | '
 // it at all — and three angles is enough that eleven of them do not read as
 // eleven copies of one picture. Drop one so its middle sits on a pole's tip.
 const DECORATIONS = [
-  { key: 'tree_part',  label: 'Tree (partial)',  src: 'assets/decorations/tree_part.png',  w: 61, h: 65 },
-  { key: 'tree_full',  label: 'Tree (full)',     src: 'assets/decorations/tree_full.png',  w: 61, h: 60 },
-  { key: 'pinwheel',   label: 'Pinwheel',        src: 'assets/decorations/pinwheel.png',   w: 59, h: 59 },
-  { key: 'pinwheel_2', label: 'Pinwheel (turn 2)', src: 'assets/decorations/pinwheel_2.png', w: 68, h: 69 },
-  { key: 'pinwheel_3', label: 'Pinwheel (turn 3)', src: 'assets/decorations/pinwheel_3.png', w: 57, h: 56 },
+  { key: 'dw_tree_part',  label: 'DW Tree (partial)',    src: 'assets/decorations/dw_tree_part.png',  w: 61, h: 65 },
+  { key: 'dw_tree_full',  label: 'DW Tree (full)',       src: 'assets/decorations/dw_tree_full.png',  w: 61, h: 60 },
+  { key: 'dw_pinwheel',   label: 'DW Pinwheel',          src: 'assets/decorations/dw_pinwheel.png',   w: 59, h: 59 },
+  { key: 'dw_pinwheel_2', label: 'DW Pinwheel (turn 2)', src: 'assets/decorations/dw_pinwheel_2.png', w: 68, h: 69 },
+  { key: 'dw_pinwheel_3', label: 'DW Pinwheel (turn 3)', src: 'assets/decorations/dw_pinwheel_3.png', w: 57, h: 56 },
 ];
 const decoDef = key => DECORATIONS.find(d => d.key === key);
 // [{uid, kind, x, y, zOrder, scale, flip}] — uid is a stable handle for the

@@ -83,11 +83,11 @@ PAD = 8          # gap, in world px, that still counts as "touching"
 
 # Mirrors DECO_ART in index.html and DECOS in stitcher_all.html.
 DECO_ART = {
-    'tree_part':  ('tree_part.png',  61, 65),
-    'tree_full':  ('tree_full.png',  61, 60),
-    'pinwheel':   ('pinwheel.png',   59, 59),
-    'pinwheel_2': ('pinwheel_2.png', 68, 69),
-    'pinwheel_3': ('pinwheel_3.png', 57, 56),
+    'dw_tree_part':  ('dw_tree_part.png',  61, 65),
+    'dw_tree_full':  ('dw_tree_full.png',  61, 60),
+    'dw_pinwheel':   ('dw_pinwheel.png',   59, 59),
+    'dw_pinwheel_2': ('dw_pinwheel_2.png', 68, 69),
+    'dw_pinwheel_3': ('dw_pinwheel_3.png', 57, 56),
 }
 
 # Both mirror index.html. First region to claim a map keeps it, in this order.
