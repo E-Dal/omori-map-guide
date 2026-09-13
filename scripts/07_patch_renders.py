@@ -8,10 +8,13 @@ stamp the correct sprite from the decrypted character sheet.
 Run: python3 scripts/07_patch_renders.py
 Backs up originals as map<id>_orig.png on first run.
 """
+import sys
 import json, os, shutil
 from pathlib import Path
 from PIL import Image
 import numpy as np
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 ROOT     = Path(__file__).resolve().parent.parent
 RAW      = ROOT / 'data' / 'raw_pngs'
@@ -58,8 +61,8 @@ def inpaint_region(arr, mask):
 
 # ── Patch helpers ───────────────────────────────────────────────────────────
 def ensure_backup(map_id):
-    src = RAW / f'map{map_id}.png'
-    bk  = RAW / f'map{map_id}_orig.png'
+    src = RAW / f'map{map_id}.webp'
+    bk  = RAW / f'map{map_id}_orig.webp'
     if not bk.exists() and src.exists():
         shutil.copy(src, bk)
         print(f"  backed up → {bk.name}")
@@ -83,7 +86,7 @@ def patch_event(map_id, sprite_path, sprite_index, tile_x, tile_y,
       - sprite_offset: (dx, dy) tweak for sprite placement relative to anchor.
     Sprite is stamped with bottom-center at tile bottom-center."""
     ensure_backup(map_id)
-    src = RAW / f'map{map_id}.png'
+    src = RAW / f'map{map_id}.webp'
     im = Image.open(src).convert('RGBA')
     arr = np.array(im)
 
@@ -121,7 +124,7 @@ def patch_event(map_id, sprite_path, sprite_index, tile_x, tile_y,
     if sprite is not None:
         out.paste(sprite, (sx_left, sy_top), sprite)
         print(f"    stamped sprite at ({sx_left},{sy_top}) size {sw}×{sh}")
-    out.save(src)
+    save(out, src)
     print(f"  wrote {src.name}")
 
 # ── Bulk-remove tiles by repeating color signature ───────────────────────────
@@ -130,7 +133,7 @@ def remove_tile_color(map_id, signature_rgb, tol=10):
     them (horizontal nearest). Useful for nuking the green '28' debug blocks
     that goats.dev sprinkled across Map333."""
     ensure_backup(map_id)
-    src = RAW / f'map{map_id}.png'
+    src = RAW / f'map{map_id}.webp'
     im = Image.open(src).convert('RGBA')
     arr = np.array(im)
     # Mask = pixels close to signature_rgb (and inside the green block — extend
@@ -153,7 +156,7 @@ def remove_tile_color(map_id, signature_rgb, tol=10):
         return
     print(f"  removing {mask.sum()} px matching {signature_rgb}")
     inpaint_region(arr, mask)
-    Image.fromarray(arr).save(src)
+    save(Image.fromarray(arr), src)
     print(f"  wrote {src.name}")
 
 # ── Patches ─────────────────────────────────────────────────────────────────
@@ -173,7 +176,7 @@ def main():
 
     print("\n[4/4] Map333 — remove green '28' debug placeholders")
     # Sample a known '28' block to get its background green color, then nuke
-    im333 = Image.open(RAW/'map333.png').convert('RGBA')
+    im333 = Image.open(RAW/'map333.webp').convert('RGBA')
     a333 = np.array(im333)
     # Sample tile at row 7 cols 5-22 — these are the visible '28' row in user's view
     # Pick a pixel that is clearly green-block bg

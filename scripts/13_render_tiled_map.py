@@ -26,6 +26,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _keys  # noqa: E402
 from PIL import Image
 
+from _img import save  # noqa: E402
+
 GAME_ROOT = Path.home() / 'Library/Application Support/Steam/steamapps/common/OMORI/OMORI.app/Contents/Resources/app.nw'
 MAPS_DIR = GAME_ROOT / 'maps'
 TILESETS_DIR = GAME_ROOT / 'img/tilesets'
@@ -311,8 +313,8 @@ def render_map(map_id: int, fallback_sibling: int = None, drop_void: bool = Fals
             y = (i // W) * TH
             out.alpha_composite(tile, dest=(x, y))
             n_drawn += 1
-    out_path = OUT_DIR / f'map{map_id}.png'
-    out.save(out_path)
+    out_path = OUT_DIR / f'map{map_id}.webp'
+    save(out, out_path)
     print(f'  ✓ {out_path.name}: drew {n_drawn} tiles '
           f'({n_skipped} skipped, no tileset'
           + (f'; {n_void} void tiles left transparent' if n_void else '') + ')')

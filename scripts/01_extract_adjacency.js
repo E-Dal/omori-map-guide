@@ -1061,7 +1061,7 @@ if (fs.existsSync(AUBREY_MAPS_DIR)) {
   for (const id of Object.keys(mapMeta)) {
     if (SYNTHETIC_IDS.has(id)) continue;
     if (aubrey.has(`map${id}.aubrey`)) continue;
-    if (fs.existsSync(path.join(OUT_DIR, 'raw_pngs', mapMeta[id].image || `map${id}.png`))) continue;
+    if (fs.existsSync(path.join(OUT_DIR, 'raw_pngs', mapMeta[id].image || `map${id}.webp`))) continue;
     dropped.push(`${id} "${mapMeta[id].name}"`);
     delete mapMeta[id];
   }

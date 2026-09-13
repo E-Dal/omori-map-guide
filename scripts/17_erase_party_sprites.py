@@ -143,7 +143,7 @@ def main():
     n_maps = n_erased = 0
     skipped = []
     for map_id in ids:
-        target = pngs / f'map{map_id}.png'
+        target = pngs / f'map{map_id}.webp'
         if not target.exists():
             continue
         wanted = set(ERASE_EVENTS.get(map_id, []))
@@ -159,7 +159,7 @@ def main():
         except Exception as exc:                       # noqa: BLE001
             skipped.append((map_id, 0, f'tile render failed: {exc}'))
             continue
-        tiles_png = scratch / f'map{map_id}.png'
+        tiles_png = scratch / f'map{map_id}.webp'
         if not tiles_png.exists():
             skipped.append((map_id, 0, 'no .AUBREY to render from'))
             continue
@@ -240,7 +240,7 @@ def main():
             strip.convert('RGB').save(review_dir / f'map{map_id}.png')
         if not dry:
             if backup_dir:
-                shutil.copy2(target, backup_dir / f'map{map_id}.png')
+                shutil.copy2(target, backup_dir / f'map{map_id}.webp')
             result.save(target)
         n_maps += 1
         n_erased += done

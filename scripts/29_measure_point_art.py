@@ -57,7 +57,7 @@ def load_png(map_id, _cache={}):
     """The map's image as RGB. One map at a time — the atlas is 637 PNGs."""
     if map_id not in _cache:
         _cache.clear()
-        p = PNGS / f'map{map_id}.png'
+        p = PNGS / f'map{map_id}.webp'
         _cache[map_id] = np.array(Image.open(p).convert('RGB')).astype(np.int16) \
             if p.exists() else None
     return _cache[map_id]

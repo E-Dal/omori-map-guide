@@ -99,7 +99,7 @@ def main():
 
     report = []
     for map_id in ids:
-        shipped = pngs / f'map{map_id}.png'
+        shipped = pngs / f'map{map_id}.webp'
         if not shipped.exists() or not (_r13['MAPS_DIR'] / f'map{map_id}.AUBREY').exists():
             continue
         try:
@@ -107,7 +107,7 @@ def main():
         except Exception as exc:                       # noqa: BLE001
             print(f'  !! map{map_id} render failed: {exc}', file=sys.stderr)
             continue
-        fresh_path = scratch / f'map{map_id}.png'
+        fresh_path = scratch / f'map{map_id}.webp'
         if not fresh_path.exists():
             continue
         a = Image.open(shipped).convert('RGBA')

@@ -266,7 +266,7 @@ const mapMeta = {};
 for (const f of fs.readdirSync(path.join(ROOT, 'data'))) {
   if (f.endsWith('_maps.json')) Object.assign(mapMeta, JSON.parse(fs.readFileSync(path.join(ROOT, 'data', f), 'utf8')));
 }
-const drawn = id => fs.existsSync(path.join(ROOT, 'data', 'raw_pngs', `map${id}.png`));
+const drawn = id => fs.existsSync(path.join(ROOT, 'data', 'raw_pngs', `map${id}.webp`));
 
 // Sub-maps carry cropX/cropY and a name extending their parent's, so a point on
 // the parent can be rebased onto whichever slice contains it.

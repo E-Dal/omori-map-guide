@@ -193,7 +193,7 @@ def main():
         map_id = int(path.stem[3:])
         if ids and map_id not in ids:
             continue
-        png = ROOT / 'data' / 'raw_pngs' / f'map{map_id}.png'
+        png = ROOT / 'data' / 'raw_pngs' / f'map{map_id}.webp'
         if not png.exists():
             continue
         events = {e['id']: e for e in (json.loads(path.read_text()).get('events') or []) if e}

@@ -7,13 +7,15 @@ We flood-fill the non-transparent pixels to find each room's connected
 component, snap its bbox to the 32px tile grid, crop, and save.
 
 Output:
-  data/raw_pngs/houses/map{mid}_room{n}.png  — individual room images
+  data/raw_pngs/houses/map{mid}_room{n}.webp  — individual room images
   data/faraway_houses.json                   — metadata bundle
 """
 import json, os, sys
 from pathlib import Path
 from PIL import Image
 import numpy as np
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 TILE = 32
 MIN_ROOM_TILES = 3 * 3   # discard noise smaller than 3x3 tiles
@@ -54,7 +56,7 @@ def flood_components(mask):
     return comps
 
 def slice_house(mid):
-    src = RAW_DIR / f'map{mid}.png'
+    src = RAW_DIR / f'map{mid}.webp'
     if not src.exists():
         print(f'  skip map{mid}: no PNG')
         return []
@@ -91,8 +93,8 @@ def slice_house(mid):
     rooms.sort(key=lambda r: (r['ty'], r['tx']))
     out = []
     for i, r in enumerate(rooms):
-        out_path = OUT_DIR / f'map{mid}_room{i}.png'
-        r['image'].save(out_path)
+        out_path = OUT_DIR / f'map{mid}_room{i}.webp'
+        save(r['image'], out_path)
         out.append({
             'roomIdx': i,
             'file': str(out_path.relative_to('data/raw_pngs')),

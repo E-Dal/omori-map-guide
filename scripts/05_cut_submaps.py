@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Cut polygon-clipped sub-maps from raw_pngs/map<src>.png.
+Cut polygon-clipped sub-maps from raw_pngs/map<src>.webp.
 
 Reads data/<region>_maps.json. For each entry that has a `polygon` field,
 masks pixels outside the polygon to transparent and crops to the polygon's
-bounding box. Output: data/raw_pngs/map<id>.png.
+bounding box. Output: data/raw_pngs/map<id>.webp.
 
 Usage: python3 scripts/05_cut_submaps.py <region>
 """
@@ -12,6 +12,8 @@ import json
 import sys
 from pathlib import Path
 from PIL import Image, ImageDraw
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 T = 32  # tile size in px
 
@@ -49,7 +51,7 @@ def main():
             print(f"!! Cannot find source for sub-map {fake_id} ({m['name']}), skipping", file=sys.stderr)
             continue
 
-        src_png = pngs_dir / f'map{src_id}.png'
+        src_png = pngs_dir / f'map{src_id}.webp'
         if not src_png.exists():
             print(f"!! Missing source PNG {src_png}", file=sys.stderr)
             continue
@@ -65,8 +67,8 @@ def main():
         cx, cy, w, h = m['cropX'], m['cropY'], m['width'], m['height']
         bbox = (cx*T, cy*T, (cx+w)*T, (cy+h)*T)
         out = masked.crop(bbox)
-        out_path = pngs_dir / f'map{fake_id}.png'
-        out.save(out_path)
+        out_path = pngs_dir / f'map{fake_id}.webp'
+        save(out, out_path)
         print(f"  cut map{fake_id} from map{src_id}: {len(poly)}-gon, "
               f"bbox cols {cx}-{cx+w} rows {cy}-{cy+h} → {out_path.name} ({out.size[0]}×{out.size[1]} px)")
         n_cut += 1

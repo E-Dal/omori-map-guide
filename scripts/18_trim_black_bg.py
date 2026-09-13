@@ -22,6 +22,8 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_THRESHOLD = 30       # max R+G+B still counted as backdrop black
@@ -74,7 +76,7 @@ def main():
 
     pngs = ROOT / 'data' / 'raw_pngs'
     for arg in args:
-        p = pngs / f'map{int(arg)}.png'
+        p = pngs / f'map{int(arg)}.webp'
         if not p.exists():
             print(f'  !! {p.name} not found', file=sys.stderr)
             continue
@@ -88,7 +90,7 @@ def main():
         if not dry:
             if backup_dir:
                 shutil.copy2(p, backup_dir / p.name)
-            out.save(p)
+            save(out, p)
 
 
 if __name__ == '__main__':

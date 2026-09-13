@@ -63,7 +63,7 @@ def main():
 
     report, skipped = [], []
     for n, map_id in enumerate(ids, 1):
-        have = pngs / f'map{map_id}.png'
+        have = pngs / f'map{map_id}.webp'
         if not have.exists() or not (_r13['MAPS_DIR'] / f'map{map_id}.AUBREY').exists():
             skipped.append(map_id)
             continue
@@ -73,7 +73,7 @@ def main():
             skipped.append(map_id)
             print(f'  !! map{map_id} render failed: {exc}', file=sys.stderr)
             continue
-        fresh = scratch / f'map{map_id}.png'
+        fresh = scratch / f'map{map_id}.webp'
         if not fresh.exists():
             skipped.append(map_id)
             continue

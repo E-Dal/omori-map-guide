@@ -5,7 +5,7 @@
    "mapId": 15,
    "name": "KEL & HERO'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map15.png",
+   "file": "houses_stitched/map15.webp",
    "width": 1152,
    "height": 1312,
    "rooms": [
@@ -222,7 +222,7 @@
    "mapId": 16,
    "name": "CRIS'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map16.png",
+   "file": "houses_stitched/map16.webp",
    "width": 896,
    "height": 1216,
    "rooms": [
@@ -439,7 +439,7 @@
    "mapId": 17,
    "name": "MAVERICK'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map17.png",
+   "file": "houses_stitched/map17.webp",
    "width": 960,
    "height": 1312,
    "rooms": [
@@ -693,7 +693,7 @@
    "mapId": 19,
    "name": "KEL & HERO'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map19.png",
+   "file": "houses_stitched/map19.webp",
    "width": 1152,
    "height": 1312,
    "rooms": [
@@ -910,7 +910,7 @@
    "mapId": 20,
    "name": "CRIS'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map20.png",
+   "file": "houses_stitched/map20.webp",
    "width": 896,
    "height": 1216,
    "rooms": [
@@ -1127,7 +1127,7 @@
    "mapId": 21,
    "name": "MAVERICK'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map21.png",
+   "file": "houses_stitched/map21.webp",
    "width": 960,
    "height": 1312,
    "rooms": [
@@ -1381,7 +1381,7 @@
    "mapId": 23,
    "name": "BRENT'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map23.png",
+   "file": "houses_stitched/map23.webp",
    "width": 1024,
    "height": 1248,
    "rooms": [
@@ -1635,7 +1635,7 @@
    "mapId": 24,
    "name": "KIM'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map24.png",
+   "file": "houses_stitched/map24.webp",
    "width": 992,
    "height": 1184,
    "rooms": [
@@ -1889,7 +1889,7 @@
    "mapId": 25,
    "name": "JOY'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map25.png",
+   "file": "houses_stitched/map25.webp",
    "width": 928,
    "height": 1216,
    "rooms": [
@@ -2106,7 +2106,7 @@
    "mapId": 26,
    "name": "CHARLIE'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map26.png",
+   "file": "houses_stitched/map26.webp",
    "width": 960,
    "height": 1184,
    "rooms": [
@@ -2360,7 +2360,7 @@
    "mapId": 27,
    "name": "BRENT'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map27.png",
+   "file": "houses_stitched/map27.webp",
    "width": 1024,
    "height": 1248,
    "rooms": [
@@ -2614,7 +2614,7 @@
    "mapId": 28,
    "name": "KIM'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map28.png",
+   "file": "houses_stitched/map28.webp",
    "width": 992,
    "height": 1184,
    "rooms": [
@@ -2868,7 +2868,7 @@
    "mapId": 29,
    "name": "JOY'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map29.png",
+   "file": "houses_stitched/map29.webp",
    "width": 928,
    "height": 1216,
    "rooms": [
@@ -3085,7 +3085,7 @@
    "mapId": 30,
    "name": "CHARLIE'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map30.png",
+   "file": "houses_stitched/map30.webp",
    "width": 960,
    "height": 1184,
    "rooms": [
@@ -3339,7 +3339,7 @@
    "mapId": 32,
    "name": "VANCE'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map32.png",
+   "file": "houses_stitched/map32.webp",
    "width": 640,
    "height": 800,
    "rooms": [
@@ -3482,7 +3482,7 @@
    "mapId": 33,
    "name": "SHAWN & KAREN'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map33.png",
+   "file": "houses_stitched/map33.webp",
    "width": 480,
    "height": 704,
    "rooms": [
@@ -3533,7 +3533,7 @@
    "mapId": 34,
    "name": "SARAH'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map34.png",
+   "file": "houses_stitched/map34.webp",
    "width": 608,
    "height": 736,
    "rooms": [
@@ -3676,7 +3676,7 @@
    "mapId": 35,
    "name": "AUBREY'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map35.png",
+   "file": "houses_stitched/map35.webp",
    "width": 576,
    "height": 800,
    "rooms": [
@@ -3765,7 +3765,7 @@
    "mapId": 36,
    "name": "VANCE'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map36.png",
+   "file": "houses_stitched/map36.webp",
    "width": 640,
    "height": 800,
    "rooms": [
@@ -3908,7 +3908,7 @@
    "mapId": 37,
    "name": "SHAWN & KAREN'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map37.png",
+   "file": "houses_stitched/map37.webp",
    "width": 480,
    "height": 704,
    "rooms": [
@@ -3959,7 +3959,7 @@
    "mapId": 38,
    "name": "SARAH'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map38.png",
+   "file": "houses_stitched/map38.webp",
    "width": 608,
    "height": 736,
    "rooms": [
@@ -4102,7 +4102,7 @@
    "mapId": 39,
    "name": "AUBREY'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map39.png",
+   "file": "houses_stitched/map39.webp",
    "width": 576,
    "height": 800,
    "rooms": [
@@ -4191,7 +4191,7 @@
    "mapId": 46,
    "name": "BASIL'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map46.png",
+   "file": "houses_stitched/map46.webp",
    "width": 608,
    "height": 832,
    "rooms": [
@@ -4334,7 +4334,7 @@
    "mapId": 47,
    "name": "JESSE'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map47.png",
+   "file": "houses_stitched/map47.webp",
    "width": 608,
    "height": 800,
    "rooms": [
@@ -4477,7 +4477,7 @@
    "mapId": 48,
    "name": "BEBE'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map48.png",
+   "file": "houses_stitched/map48.webp",
    "width": 608,
    "height": 800,
    "rooms": [
@@ -4620,7 +4620,7 @@
    "mapId": 49,
    "name": "ARTIST'S HOUSE",
    "phase": "day",
-   "file": "houses_stitched/map49.png",
+   "file": "houses_stitched/map49.webp",
    "width": 608,
    "height": 736,
    "rooms": [
@@ -4763,7 +4763,7 @@
    "mapId": 50,
    "name": "BASIL'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map50.png",
+   "file": "houses_stitched/map50.webp",
    "width": 608,
    "height": 832,
    "rooms": [
@@ -4906,7 +4906,7 @@
    "mapId": 51,
    "name": "JESSE'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map51.png",
+   "file": "houses_stitched/map51.webp",
    "width": 608,
    "height": 800,
    "rooms": [
@@ -5049,7 +5049,7 @@
    "mapId": 52,
    "name": "BEBE'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map52.png",
+   "file": "houses_stitched/map52.webp",
    "width": 608,
    "height": 800,
    "rooms": [
@@ -5192,7 +5192,7 @@
    "mapId": 53,
    "name": "ARTIST'S HOUSE",
    "phase": "sunset",
-   "file": "houses_stitched/map53.png",
+   "file": "houses_stitched/map53.webp",
    "width": 608,
    "height": 736,
    "rooms": [
@@ -5335,7 +5335,7 @@
    "mapId": 79,
    "name": "KEL & HERO'S HOUSE",
    "phase": "night",
-   "file": "houses_stitched/map79.png",
+   "file": "houses_stitched/map79.webp",
    "width": 1152,
    "height": 1312,
    "rooms": [
@@ -5552,7 +5552,7 @@
    "mapId": 80,
    "name": "BASIL'S HOUSE",
    "phase": "night",
-   "file": "houses_stitched/map80.png",
+   "file": "houses_stitched/map80.webp",
    "width": 608,
    "height": 832,
    "rooms": [

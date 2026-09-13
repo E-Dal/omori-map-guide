@@ -40,6 +40,8 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DECRYPTED = Path('/Users/vicky/Documents/scripts/OMORI/omori_data_decrypted')
@@ -255,7 +257,7 @@ def main():
 
     pngs = ROOT / 'data' / 'raw_pngs'
     for map_id in ids:
-        out = pngs / f'map{map_id}.png'
+        out = pngs / f'map{map_id}.webp'
         if not out.exists():
             print(f'  !! no map{map_id}.png', file=sys.stderr)
             continue
@@ -340,7 +342,7 @@ def main():
                   f'at tile ({ev["x"]},{ev["y"]})'
                   + (f' — clipped to {frame.height // TILE} tile(s), wall above' if was_clipped else ''))
         if drawn:
-            canvas.save(out)
+            save(canvas, out)
             print(f'  ✓ map{map_id}.png: {drawn} sprite(s) composited\n')
 
 

@@ -23,6 +23,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import _keys  # noqa: E402
 from PIL import Image
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -189,12 +191,12 @@ def render_map(map_id):
             dy = (i // w_tiles) * th
             canvas.alpha_composite(src_tile, (dx, dy))
 
-    out_path = RAW_OUT / f'map{map_id}.png'
+    out_path = RAW_OUT / f'map{map_id}.webp'
     # Backup _orig if not already
-    bk = RAW_OUT / f'map{map_id}_orig.png'
+    bk = RAW_OUT / f'map{map_id}_orig.webp'
     if not bk.exists() and out_path.exists():
         shutil.copy(out_path, bk)
-    canvas.save(out_path)
+    save(canvas, out_path)
     print(f"    ✓ wrote {out_path.name} ({canvas.size})")
     return True
 

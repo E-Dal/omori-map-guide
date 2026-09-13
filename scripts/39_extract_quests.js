@@ -220,7 +220,7 @@ function main() {
       Object.assign(mapMeta, JSON.parse(fs.readFileSync(path.join(ROOT, 'data', f), 'utf8')));
     }
   }
-  const drawn = id => fs.existsSync(path.join(ROOT, 'data', 'raw_pngs', `map${id}.png`));
+  const drawn = id => fs.existsSync(path.join(ROOT, 'data', 'raw_pngs', `map${id}.webp`));
 
   // Sliced rooms carry cropX/cropY and a name extending their parent's, the
   // same shape 23 uses. HOTEL ROOMS is the case that made this necessary: the

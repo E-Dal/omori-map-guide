@@ -67,7 +67,7 @@ const TILE = 32;
     i.onerror = () => res({ ok: false });
     i.src = src;
   });
-  const base = await load('../data/raw_pngs/map240.png' + V);
+  const base = await load('../data/raw_pngs/map240.webp' + V);
   base.ok ? ok(`map240.png loaded — ${base.w}x${base.h}`) : bad('map240.png did NOT load');
   const ov = await load(`../data/conveyors/${g.overlay.file}${V}`);
   ov.ok ? ok(`${g.overlay.file} loaded — ${ov.w}x${ov.h}`)
@@ -79,7 +79,7 @@ const TILE = 32;
   // 3 — the map, exactly as Per-Map view builds it
   const map = L.map('map', { crs: L.CRS.Simple, minZoom: -4, maxZoom: 3, attributionControl: false });
   const h = base.h, w = base.w;
-  L.imageOverlay('../data/raw_pngs/map240.png' + V, [[0, 0], [h, w]]).addTo(map);
+  L.imageOverlay('../data/raw_pngs/map240.webp' + V, [[0, 0], [h, w]]).addTo(map);
   ok('base map added');
 
   // 4 — the overlay, added and removed the way a flip does it

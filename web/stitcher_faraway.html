@@ -409,7 +409,7 @@ function renderThumbs() {
     div.className = 'map-thumb';
     div.dataset.id = id;
     div.innerHTML = `
-      <img src="../data/raw_pngs/map${id}.png" />
+      <img src="../data/raw_pngs/map${id}.webp" />
       <div class="meta">
         <div class="id">Map ${id}</div>
         <div class="name">${m.name.replace(/^[- ]+/, '')}</div>
@@ -470,7 +470,7 @@ function renderPlaced() {
     div.style.top = pos.y + 'px';
     div.style.width = w + 'px';
     div.style.height = cropH + 'px';
-    div.style.backgroundImage = `url(../data/raw_pngs/map${id}.png)`;
+    div.style.backgroundImage = `url(../data/raw_pngs/map${id}.webp)`;
     div.style.backgroundSize = `${w}px ${fullH}px`;
     div.style.backgroundPosition = `0 -${cropOffsetY}px`;
     div.dataset.id = id;
@@ -812,7 +812,7 @@ async function exportPNG() {
     const m = mapMeta[id];
     const cr = cropRect(pos.crop || 'full', m, id);
     const img = new Image();
-    img.src = `../data/raw_pngs/map${id}.png`;
+    img.src = `../data/raw_pngs/map${id}.webp`;
     await new Promise(r => { img.onload = r; img.onerror = r; });
     // Some PNGs from goats.dev don't match meta dims exactly (e.g. map64 LAKE
     // is 1408px tall but meta says 1440px). Match the preview's CSS

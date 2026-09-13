@@ -29,7 +29,10 @@ echo "Downloading $REGION PNGs ($(echo $IDS | wc -w | tr -d ' ') maps)..."
 ok=0; skip=0; miss=0; fail=0
 for id in $IDS; do
   out="$OUT_DIR/map${id}.png"
-  if [ -f "$out" ]; then
+  # goats.dev serves PNG, so that is what lands here; 44_png_to_webp.py at the
+  # end re-encodes the lot. The skip has to know about both, or a second run
+  # would fetch several hundred images again just because they are now .webp.
+  if [ -f "$out" ] || [ -f "$OUT_DIR/map${id}.webp" ]; then
     skip=$((skip+1))
     continue
   fi
@@ -64,3 +67,10 @@ done
 echo ""
 echo "Done.  ok=$ok  skip=$skip  missing=$miss  fail=$fail"
 echo "Output: $OUT_DIR/"
+
+# The renders are stored as lossless WebP — same pixels, about a quarter of the
+# bytes, and the pages ask for .webp. Anything just downloaded is still a PNG.
+if [ "$ok" -gt 0 ]; then
+  echo
+  python3 scripts/44_png_to_webp.py
+fi

@@ -88,7 +88,7 @@ def main():
 
         drawn = missing = 0
         for i in sorted(ids, key=lambda k: layout[k].get('zOrder', 0)):
-            path = DATA / 'raw_pngs' / (meta[i].get('image') or f'map{i}.png')
+            path = DATA / 'raw_pngs' / (meta[i].get('image') or f'map{i}.webp')
             if not path.exists():
                 missing += 1
                 continue

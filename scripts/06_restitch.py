@@ -64,7 +64,7 @@ def restitch(layout_path: Path, out_path: Path):
         pos = layout['layout'][mid]
         m = meta.get(mid)
         if not m: continue
-        png = RAW / f'map{mid}.png'
+        png = RAW / f'map{mid}.webp'
         if not png.exists():
             print(f"  ⚠ missing {png.name}, skipping")
             continue

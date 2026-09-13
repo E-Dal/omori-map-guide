@@ -24,6 +24,8 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 TILE = 32
@@ -60,14 +62,14 @@ def main():
 
     map_id = int(args[0])
     rects = [parse_rect(a) for a in args[1:]]
-    target = ROOT / 'data' / 'raw_pngs' / f'map{map_id}.png'
+    target = ROOT / 'data' / 'raw_pngs' / f'map{map_id}.webp'
     if not target.exists():
         raise SystemExit(f'Missing {target}')
 
     scratch = Path(tempfile.mkdtemp(prefix='repaint-'))
     _r13['OUT_DIR'] = scratch
     _r13['render_map'](map_id)
-    fresh_path = scratch / f'map{map_id}.png'
+    fresh_path = scratch / f'map{map_id}.webp'
     if not fresh_path.exists():
         raise SystemExit(f'Could not render map{map_id} (no .AUBREY?)')
 
@@ -101,7 +103,7 @@ def main():
     if not dry and painted:
         if backup_dir:
             shutil.copy2(target, backup_dir / target.name)
-        Image.fromarray(arr).save(target)
+        save(Image.fromarray(arr), target)
 
 
 if __name__ == '__main__':

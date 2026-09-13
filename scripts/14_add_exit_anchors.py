@@ -83,7 +83,7 @@ def main():
     for map_id, m in sorted(meta.items(), key=lambda kv: int(kv[0])):
         if not m.get('polygon'):
             continue
-        png = pngs / (m.get('image') or f'map{map_id}.png')
+        png = pngs / (m.get('image') or f'map{map_id}.webp')
         if not png.exists():
             print(f"!! Missing {png.name} for map{map_id}, skipping", file=sys.stderr)
             continue

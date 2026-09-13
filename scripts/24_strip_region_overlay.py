@@ -38,6 +38,8 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 TILE = 32
@@ -129,7 +131,7 @@ def main():
         if only and map_id not in only:
             continue
         src = _r13['MAPS_DIR'] / f'map{map_id}.AUBREY'
-        target = ROOT / 'data' / 'raw_pngs' / f'map{map_id}.png'
+        target = ROOT / 'data' / 'raw_pngs' / f'map{map_id}.webp'
         if not src.exists() or not target.exists():
             continue
         try:
@@ -146,7 +148,7 @@ def main():
         except Exception as exc:                        # noqa: BLE001
             print(f'  !! map{map_id} render failed: {exc}', file=sys.stderr)
             continue
-        fresh_path = scratch / f'map{map_id}.png'
+        fresh_path = scratch / f'map{map_id}.webp'
         if not fresh_path.exists():
             continue
         canvas = Image.open(target).convert('RGBA')
@@ -193,7 +195,7 @@ def main():
             if not dry:
                 if backup_dir:
                     shutil.copy2(target, backup_dir / target.name)
-                Image.fromarray(arr).save(target)
+                save(Image.fromarray(arr), target)
 
     scratch.rmdir()
     print(f'\n{total_tiles} square(s) erased across {total_maps} map(s)'

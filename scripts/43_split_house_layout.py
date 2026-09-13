@@ -14,7 +14,7 @@ this needs: no house shares a map with another, and every route in the layout
 has both ends snapped inside a single house, so nothing has to be cut in half.
 
 Output, per house:
-  data/raw_pngs/houses_stitched/map<id>.png   rooms pasted where they were
+  data/raw_pngs/houses_stitched/map<id>.webp   rooms pasted where they were
                                               placed, transparent between them
   data/faraway_houses_stitched.json           where each room and route landed,
                                               in that image's own pixels
@@ -31,6 +31,8 @@ import sys
 from pathlib import Path
 
 from PIL import Image
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 LAYOUT = ROOT / 'data' / 'stitched' / 'faraway_houses_layout.json'
@@ -111,8 +113,8 @@ def main(argv):
                              # marker known by map tile can still be placed.
                              'srcTx': r['tx'], 'srcTy': r['ty']})
 
-        name = f'map{map_id}.png'
-        canvas.save(OUT_DIR / name)
+        name = f'map{map_id}.webp'
+        save(canvas, OUT_DIR / name)
 
         routes_out = []
         for r in by_house.get(map_id, []):

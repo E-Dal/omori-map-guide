@@ -656,7 +656,10 @@ const stampPng = file => CACHE_BUST || (pngVersion[file] ? `?v=${pngVersion[file
 
 function mapImageUrl(id) {
   const m = mapMeta?.[id];
-  const file = (m && m.image) || `map${id}.png`;
+  // The renders are lossless WebP — same pixels, a quarter of the bytes.
+  // `m.image` is whatever the metadata says, so a map still carrying a PNG
+  // path keeps working; only the default is assumed.
+  const file = (m && m.image) || `map${id}.webp`;
   return `../data/raw_pngs/${file}${stampPng(file)}`;
 }
 let placed = {}; // mapId -> {x, y, crop}  (crop is 'full' | 'top3' | 'mid3' | 'bot3')

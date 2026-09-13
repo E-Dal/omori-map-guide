@@ -31,15 +31,20 @@ def rebuild():
     changes twice in one second, and it keeps the file small.
 
     The key is the path relative to raw_pngs, because that is what the pages
-    ask for: a sliced house room is `houses/map24_room0.png` and a top-level
-    render is `map24.png`. A `*.png`-only scan left all 200 room images out of
-    the manifest, so `stampPng` had nothing to stamp them with and every
+    ask for: a sliced house room is `houses/map24_room0.webp` and a top-level
+    render is `map24.webp`. A top-level-only scan left all 200 room images out
+    of the manifest, so `stampPng` had nothing to stamp them with and every
     re-slice stayed invisible behind the browser cache — Kim's two repainted
-    doors were sitting on disk while the stitcher drew last week's room."""
+    doors were sitting on disk while the stitcher drew last week's room.
+
+    Both suffixes are collected. The renders are WebP now, but a stray PNG that
+    has not been through 44 yet is still a file the pages might ask for, and
+    leaving it unstamped would be the same bug again."""
     if not PNG_DIR.is_dir():
         return {}
     entries = {p.relative_to(PNG_DIR).as_posix(): int(p.stat().st_mtime)
-               for p in sorted(PNG_DIR.rglob('*.png'))}
+               for p in sorted(PNG_DIR.rglob('*.*'))
+               if p.suffix.lower() in ('.png', '.webp')}
     OUT.write_text(json.dumps(entries, separators=(',', ':'), sort_keys=True))
     return entries
 
