@@ -1937,7 +1937,18 @@ async function loadStitched(region, variant) {
   clearLayers();
   const suffix = variant ? `_${variant}` : '';
   const layoutPath = `../data/stitched/${region}_layout${suffix}.json`;
-  const pngPath    = `../data/stitched/stitched_${region}${suffix}.png${CACHE_BUST}`;
+  // Lossless WebP, same as the per-map renders — except where the composite is
+  // too big for the format. WebP keeps 14 bits per side, so nothing longer than
+  // 16383px fits, and two of these are: deeper_well is 26688 tall and
+  // snowglobe_mountain 19392. Those stay PNG, and rather than keep a list of
+  // which, the overlay asks for .webp and Leaflet swaps in the .png if that
+  // 404s. One wasted request, on two regions, once.
+  //
+  // These have no per-file stamp of their own — they are not in raw_pngs and so
+  // not in its manifest — so a restitch still needs ?fresh to be seen. The
+  // change of suffix busts the cache once, on its own.
+  const stitchedBase = `../data/stitched/stitched_${region}${suffix}`;
+  const pngPath      = `${stitchedBase}.webp${CACHE_BUST}`;
   let layout;
   try {
     layout = await (await fetchData(layoutPath)).json();
@@ -1966,7 +1977,9 @@ async function loadStitched(region, variant) {
     `${layout.routes?.length || 0} ${t('routes')} · ${cw}×${ch}px`;
 
   const bounds = [[0, 0], [ch, cw]];
-  const layer = L.imageOverlay(pngPath, bounds).addTo(leafletMap);
+  const layer = L.imageOverlay(pngPath, bounds,
+                               { errorOverlayUrl: `${stitchedBase}.png${CACHE_BUST}` })
+                 .addTo(leafletMap);
   currentLayers.push(layer);
   leafletMap.fitBounds(bounds);
 

@@ -113,8 +113,7 @@ def main(argv):
                              # marker known by map tile can still be placed.
                              'srcTx': r['tx'], 'srcTy': r['ty']})
 
-        name = f'map{map_id}.webp'
-        save(canvas, OUT_DIR / name)
+        name = save(canvas, OUT_DIR / f'map{map_id}.webp').name
 
         routes_out = []
         for r in by_house.get(map_id, []):

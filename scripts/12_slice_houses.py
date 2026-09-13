@@ -94,7 +94,7 @@ def slice_house(mid):
     out = []
     for i, r in enumerate(rooms):
         out_path = OUT_DIR / f'map{mid}_room{i}.webp'
-        save(r['image'], out_path)
+        out_path = save(r['image'], out_path)
         out.append({
             'roomIdx': i,
             'file': str(out_path.relative_to('data/raw_pngs')),

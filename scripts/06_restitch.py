@@ -17,6 +17,8 @@ Usage:
 import json, math, sys, os
 from pathlib import Path
 from PIL import Image, ImageDraw
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 T = 32
 ROOT = Path(__file__).resolve().parent.parent
@@ -108,7 +110,7 @@ def restitch(layout_path: Path, out_path: Path):
                 cx, cy_ = p['x'] - minX, p['y'] - minY
                 d.ellipse([cx-9, cy_-9, cx+9, cy_+9], fill=color, outline='white', width=2)
 
-    canvas.convert('RGB').save(out_path)
+    out_path = save(canvas.convert('RGB'), out_path)
     print(f"  ✓ {out_path.name}  ({cw}×{ch_canvas} px, {len(ids)} maps, {len(layout.get('routes',[]))} routes)")
 
 def main(argv):
@@ -124,7 +126,7 @@ def main(argv):
         variant = stem.split('_layout_')[1] if '_layout_' in stem else ''
         if target_region and region != target_region: continue
         if target_variant and variant != target_variant: continue
-        out = STITCHED / f'stitched_{region}{("_"+variant) if variant else ""}.png'
+        out = STITCHED / f'stitched_{region}{("_"+variant) if variant else ""}.webp'
         print(f"Restitching {lp.name} → {out.name}")
         restitch(lp, out)
 

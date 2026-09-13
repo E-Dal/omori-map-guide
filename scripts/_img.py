@@ -22,10 +22,23 @@ from pathlib import Path
 # files are written once and served forever, so the encoder gets the time.
 WEBP = {'lossless': True, 'quality': 100, 'method': 6, 'exact': True}
 
+# WebP cannot hold a side longer than this, at any quality — the format keeps
+# 14 bits for each dimension. Two stitched composites are past it:
+# deeper_well is 13792x26688 and snowglobe_mountain 4928x19392. They stay PNG,
+# which is why nothing may assume the suffix it asked for is the one it got.
+WEBP_MAX_SIDE = 16383
+
 
 def save(im, path, **kw):
-    """Write `im` to `path`, with the right options for whatever it ends in."""
+    """Write `im` to `path` and return where it actually went.
+
+    A `.webp` too tall or too wide for the format is written as `.png` beside
+    it instead of raising. Callers that record the filename should use the
+    return value rather than the path they passed in.
+    """
     path = Path(path)
+    if path.suffix.lower() == '.webp' and max(im.size) > WEBP_MAX_SIDE:
+        path = path.with_suffix('.png')
     opts = {**WEBP, **kw} if path.suffix.lower() == '.webp' else kw
     im.save(path, **opts)
     return path

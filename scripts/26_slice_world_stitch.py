@@ -18,7 +18,7 @@ Written as the "world" variant, so it appears alongside any hand-stitched
 version rather than overwriting it:
 
     data/stitched/<region>_layout_world.json
-    data/stitched/stitched_<region>_world.png
+    data/stitched/stitched_<region>_world.webp
 
     python3 scripts/26_slice_world_stitch.py
     python3 scripts/26_slice_world_stitch.py junkyard deep_well
@@ -28,6 +28,8 @@ import sys
 from pathlib import Path
 
 from PIL import Image
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _img import save  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
@@ -109,8 +111,8 @@ def main():
         # exactly as it does for a hand-stitched layout.
         (OUT / f'{region}_layout_{VARIANT}.json').write_text(json.dumps(
             {'layout': {i: layout[i] for i in ids}, 'routes': kept}, indent=1))
-        canvas.save(OUT / f'stitched_{region}_{VARIANT}.png')
-        print(f'  ✓ {region}: {drawn} map(s), {len(kept)} route(s), '
+        written = save(canvas, OUT / f'stitched_{region}_{VARIANT}.webp')
+        print(f'  ✓ {written.suffix[1:]} {region}: {drawn} map(s), {len(kept)} route(s), '
               f'{canvas.width}×{canvas.height}px'
               + (f'  [{missing} PNG missing]' if missing else ''))
 
