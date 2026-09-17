@@ -3,6 +3,16 @@
 <head>
 <meta charset="UTF-8" />
 <title>OMORI ALL-REGION Stitcher</title>
+<!-- The green watermelon, the game's own 32x32 sprite, cropped to its own edges
+     and centred so it fills the tab rather than sitting in a corner of it.
+     icon-32.png is the sprite at 1:1 — no scaling, so not a pixel of it is
+     guessed at. favicon.ico carries 16 and 32 for anything that still asks for
+     an .ico. The Apple one is opaque: iOS composites a transparent touch icon
+     onto black or white of its own choosing, so it gets the site's own #1a1a1a
+     rather than whatever iOS feels like. -->
+<link rel="icon" type="image/png" sizes="32x32" href="icon-32.png" />
+<link rel="icon" href="favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <!-- The authoring tool, not part of the atlas. Nothing links to it any more,
      but it was linked from the header until now, so tell Google to drop it
      rather than leave a drag-and-drop editor sitting in the results. -->
