@@ -71,6 +71,13 @@ from pathlib import Path
 
 from PIL import Image
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+_b32 = {'__name__': 'imported',
+        '__file__': str(Path(__file__).resolve().parent / '32_bleed_deco_edges.py')}
+exec(compile((Path(__file__).resolve().parent / '32_bleed_deco_edges.py').read_text(),
+             'b32', 'exec'), _b32)
+bleed = _b32['bleed']
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
 LAYOUT = DATA / 'stitched' / 'all_regions_layout.json'
@@ -289,6 +296,16 @@ def main():
             canvas.alpha_composite(sprite, (int(round(it['x'] - x0)),
                                             int(round(it['y'] - y0))))
         if not dry:
+            # The sprites arrive with their edges already bled — 32 gave every
+            # transparent pixel the colour of the nearest opaque one, so a
+            # filter reaching past the edge finds the tree and not the void.
+            # Compositing onto a transparent *black* canvas throws that away:
+            # wherever alpha stays 0 the RGB stays (0, 0, 0), so every baked
+            # image came out with a hundred per cent black behind its alpha and
+            # wore a dark fringe at any zoom that resampled it. Bleed again,
+            # after the run is assembled and the edges are where they finally
+            # are.
+            canvas, _ = bleed(canvas)
             canvas.save(OUT_DIR / name)
         total_px += w * h
 
