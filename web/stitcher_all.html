@@ -2686,13 +2686,25 @@ function isUntouchedNewRoute(r) {
 function saveLayout() {
   const dropped = routes.filter(isUntouchedNewRoute).length;
   if (dropped) console.log(`Dropped ${dropped} untouched new route(s) from the export.`);
+  // Ungroup to move one map, then move on — nobody regroups, and the export
+  // carries the hole: thirty-three Sweetheart's Castle maps came back with no
+  // groupId at all. It costs nothing on the page (index.html never reads it)
+  // and loadLayout backfills it on the way in, so the only thing the gap ever
+  // did was wait for the next session. Backfill on the way out instead, and it
+  // stops being something to remember. The live board is untouched — whatever
+  // is ungrouped stays ungrouped and keeps dragging alone.
+  const grouped = Object.fromEntries(Object.entries(placed).map(([id, pos]) =>
+    [id, pos.groupId ? pos : { ...pos, groupId: REGION_OF_MAP[id] || 'ungrouped' }]));
+  const regrouped = Object.values(placed).filter(p => !p.groupId).length;
+  if (regrouped) console.log(`Wrote ${regrouped} ungrouped map(s) back into their region.`);
+
   const data = {
     version: 2,
-    layout: placed,
+    layout: grouped,
     routes: routes.filter(r => !isUntouchedNewRoute(r)),
     decorations,  // loose scenery — empty on layouts saved before it existed
     maps: Object.fromEntries(
-      Object.keys(placed).map(id => [id, mapMeta[id]])
+      Object.keys(grouped).map(id => [id, mapMeta[id]])
     ),
   };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
