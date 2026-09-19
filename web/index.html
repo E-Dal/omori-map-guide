@@ -2250,12 +2250,25 @@ function flippedSrc(art) {
 }
 
 
-// One sprite per image is now the default: the bands below scale them as a
-// unit, so there is nothing left for the bake to prevent, and the bake could
-// only ever fit them into one image by dropping the whole set below every map.
-// ?deco=baked still loads the manifest — the clusters go into the bands like
-// anything else — which is how to compare the two without deleting anything.
-const DECO_MODE = new URLSearchParams(location.search).get('deco') || 'sprites';
+// Baked *and* banded. Each answers a different half of the problem and neither
+// is enough alone.
+//
+// The bands stop sprites drifting apart: one transform scales them as a unit,
+// so nothing can crack against its neighbour. What they cannot help is that
+// each sprite is still its own element, antialiased against the backdrop on
+// its own. At 1:1 that edge is a pixel of a 61px tree and invisible. Zoomed
+// out to 5% — the whole world in one screen, which is how the atlas opens —
+// that tree is 3.4px, the soft edge is most of it, and a hundred of them in a
+// column read as a dark hatched stripe down the middle of the forest. Worse
+// than the seams the bands were built to remove.
+//
+// So the run is baked into one image first, and the image goes in a band. One
+// image has no internal edges to soften, and the band keeps it where the
+// layout put it — which is what `--all-below` had to give up when the bake was
+// the whole answer and every cluster had to share one z.
+//
+// ?deco=sprites draws them one by one again, which is how to see the above.
+const DECO_MODE = new URLSearchParams(location.search).get('deco') || 'baked';
 
 // ── Decoration bands ────────────────────────────────────────────────────────
 // One container per region and band, holding every sprite in it, scaled by a
