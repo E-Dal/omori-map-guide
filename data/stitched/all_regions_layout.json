@@ -569,8 +569,8 @@
       "groupId": "sweethearts_castle"
     },
     "177": {
-      "x": 1152,
-      "y": -8608,
+      "x": 352,
+      "y": -8672,
       "crop": "full",
       "zOrder": 1,
       "groupId": "sweethearts_castle"
@@ -1737,6 +1737,13 @@
       "zOrder": 20,
       "groupId": "sweethearts_castle"
     },
+    "4373": {
+      "x": -9504,
+      "y": -18336,
+      "crop": "full",
+      "zOrder": 372,
+      "groupId": "humphrey"
+    },
     "4381": {
       "x": -544,
       "y": -4992,
@@ -1799,13 +1806,6 @@
       "crop": "full",
       "zOrder": 369,
       "groupId": "pyrefly_forest"
-    },
-    "4373": {
-      "x": -9504,
-      "y": -18336,
-      "crop": "full",
-      "zOrder": 372,
-      "groupId": "humphrey"
     }
   },
   "routes": [
@@ -12766,6 +12766,34 @@
         ]
       ]
     },
+    "4373": {
+      "id": 4373,
+      "name": "-- ALCOVES II [alcove 3]",
+      "width": 10,
+      "height": 12,
+      "parallaxName": null,
+      "bgm": "fat_sunset",
+      "cropX": 48,
+      "cropY": 3,
+      "polygon": [
+        [
+          48,
+          3
+        ],
+        [
+          58,
+          3
+        ],
+        [
+          58,
+          15
+        ],
+        [
+          48,
+          15
+        ]
+      ]
+    },
     "4381": {
       "id": 4381,
       "name": "-- SWEETHEART DUNGEON 3 [main room]",
@@ -13031,34 +13059,6 @@
         [
           4,
           14
-        ]
-      ]
-    },
-    "4373": {
-      "id": 4373,
-      "name": "-- ALCOVES II [alcove 3]",
-      "width": 10,
-      "height": 12,
-      "parallaxName": null,
-      "bgm": "fat_sunset",
-      "cropX": 48,
-      "cropY": 3,
-      "polygon": [
-        [
-          48,
-          3
-        ],
-        [
-          58,
-          3
-        ],
-        [
-          58,
-          15
-        ],
-        [
-          48,
-          15
         ]
       ]
     }

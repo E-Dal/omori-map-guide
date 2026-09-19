@@ -42,7 +42,6 @@ OPP = {'L': 'R', 'R': 'L', 'T': 'B', 'B': 'T'}
 KNOWN_GAPS = {
     '92:99:R':    192,   # FOREST PLAYGROUND ↔ PINWHEEL FOREST EAST
     '131:331:L': -224,   # FROZEN LAKE ↔ PATH TO FROZEN LAKE
-    '172:177:R':  800,   # FOYER ↔ RIGHT HALL
     '160:336:T':  -64,   # PYREFLY V ↔ PYREFLY TO SWEETHEART
     '153:154:T': -160,   # PYREFLY I ↔ PYREFLY II
 }
@@ -132,6 +131,12 @@ def main():
         broken = {m for m in broken if owner.get(m) == args.region}
     print(f'{pairs} abutting pair(s) checked, {skipped} skipped as jumps '
           f'(> {args.max_gap}px apart), {len(set(accepted))} deliberate gap(s) accepted')
+    # An entry nobody used is an entry that will wave through the next accident
+    # at that pair. FOYER ↔ RIGHT HALL's 800px gap was closed in the layout and
+    # its line sat here for a while afterwards, ready to accept 800px again.
+    for key in sorted(set(KNOWN_GAPS) - set(accepted)):
+        print(f'  · KNOWN_GAPS {key} was not needed — the pair lines up now. '
+              f'Delete the line, or it will accept that gap again.')
     if not broken:
         print('every map lines up with the neighbours it touches')
         return
