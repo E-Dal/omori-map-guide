@@ -222,6 +222,23 @@ def sprite_frame(char_name, index, direction, pattern):
                        bx + (col + 1) * fw, by + (row + 1) * fh))
 
 
+def lands_on(canvas, px, py, w, h, ev, map_id):
+    """False when the sprite would fall outside the image, with a word on it.
+
+    A slice is a window onto its parent, and `--sprite` selects by sheet across
+    the parent's whole event list, so most of what it finds is somewhere else
+    on the map. Clamping the paste to (0, 0) — which is what this used to do —
+    silently stacked every one of them in the top-left corner: asking a
+    Sweetheart's Castle alcove for its cake drew all four of the castle's
+    cakes, three of them in a pile off the edge of the room.
+    """
+    if px + w <= 0 or py + h <= 0 or px >= canvas.width or py >= canvas.height:
+        print(f'  · map{map_id} ev{ev["id"]} "{ev.get("name","")}" is at tile '
+              f'({ev["x"]},{ev["y"]}), outside this image — skipped')
+        return False
+    return True
+
+
 def main():
     args = sys.argv[1:]
     want_events = None
@@ -310,9 +327,11 @@ def main():
                 py = (dy + 1) * TILE - frame.height
                 donor = canvas.crop((px, py, px + frame.width, py + frame.height))
                 ex, ey = ev['x'] - off_x, ev['y'] - off_y
-                canvas.alpha_composite(
-                    donor, (max(0, ex * TILE + TILE // 2 - donor.width // 2),
-                            max(0, (ey + 1) * TILE - donor.height)))
+                px = ex * TILE + TILE // 2 - donor.width // 2
+                py = (ey + 1) * TILE - donor.height
+                if not lands_on(canvas, px, py, donor.width, donor.height, ev, map_id):
+                    continue
+                canvas.alpha_composite(donor, (px, py))
                 drawn += 1
                 print(f'  + map{map_id} ev{ev["id"]} "{ev.get("name","")}" '
                       f'copied from tile ({dx},{dy}) to ({ev["x"]},{ev["y"]})')
@@ -335,7 +354,9 @@ def main():
             else:
                 px = ex * TILE + TILE // 2 - frame.width // 2
                 py = ey * TILE + TILE - frame.height
-            canvas.alpha_composite(frame, (max(0, px), max(0, py)))
+            if not lands_on(canvas, px, py, frame.width, frame.height, ev, map_id):
+                continue
+            canvas.alpha_composite(frame, (px, py))
             drawn += 1
             print(f'  + map{map_id} ev{ev["id"]} "{ev.get("name","")}" '
                   f'{img["characterName"]}[{img.get("characterIndex",0)}] '
