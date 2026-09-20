@@ -843,6 +843,7 @@ async function init() {
     fetch(`../data/${r}_highlights.json`, { cache: 'no-cache' }),
   ]));
   mapMeta = {}; edges = { internal: [], external: [] }; highlights = { watermelons: [] };
+  const REGION_OF_MAP_FROM_FILE = {};   // which region file claimed each id first
   for (let i = 0; i < REGIONS.length; i++) {
     const meta = await responses[i*3].json();
     Object.assign(mapMeta, meta);
@@ -850,7 +851,20 @@ async function init() {
     // REGION_OF_MAP below predates several sliced sub-maps (1322, 4212, the
     // CLUB SANDWICH rooms), which left them unfiltered in the thumbnail list
     // and ungrouped on import.
-    for (const id of Object.keys(meta)) REGION_OF_MAP[id] = REGIONS[i];
+    //
+    // First file wins, the same rule index.html uses. Five maps are listed by
+    // more than one region — map92 because FOREST PLAYGROUND is both its own
+    // one-map region and part of Vast Forest, the other four because they are
+    // parents of slices that several regions cut from. Taking the last file
+    // instead meant the two pages disagreed about every one of them, and map92
+    // in particular sat in its own layer here while the atlas had it in Vast
+    // Forest all along.
+    for (const id of Object.keys(meta)) {
+      if (!(id in REGION_OF_MAP_FROM_FILE)) {
+        REGION_OF_MAP_FROM_FILE[id] = REGIONS[i];
+        REGION_OF_MAP[id] = REGIONS[i];
+      }
+    }
     const eg = await responses[i*3+1].json();
     edges.internal.push(...(eg.internal || []));
     edges.external.push(...(eg.external || []));
