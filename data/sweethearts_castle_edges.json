@@ -3247,6 +3247,48 @@
     },
     {
       "from": {
+        "mapId": 4354,
+        "evId": 903,
+        "evName": "Arrival anchor (from the dais)",
+        "x": 0,
+        "y": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4354,
+        "x": 0,
+        "y": 5
+      },
+      "kind": "anchor"
+    },
+    {
+      "from": {
+        "mapId": 4382,
+        "evId": 903,
+        "evName": "Arrival anchor (from the dais)",
+        "x": 0,
+        "y": 5,
+        "hitbox": {
+          "L": 0,
+          "R": 0,
+          "T": 0,
+          "B": 0
+        }
+      },
+      "to": {
+        "mapId": 4382,
+        "x": 0,
+        "y": 5
+      },
+      "kind": "anchor"
+    },
+    {
+      "from": {
         "mapId": 182,
         "evId": 903,
         "evName": "Arrival anchor (top-left cell)",

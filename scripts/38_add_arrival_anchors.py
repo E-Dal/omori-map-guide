@@ -49,6 +49,16 @@ ARRIVALS = {
         (39, 15, 25, 'Arrival anchor (blocked hallway door)'),
     ],
     'sweethearts_castle': [
+        # The two ends of map435's 'Heaven and Hell'. Each room has a way out
+        # at its right edge — ev7 and ev3, both returning to the dais — so a
+        # route home snaps at both ends on its own. The arrival does not: you
+        # land at the left edge, and a landing tile is a `to`, which the
+        # stitcher has nothing to offer a dot. So the leg *into* each room had
+        # a loose end while the leg back did not, which is easy to miss when
+        # checking that a room is connected at all.
+        (4354, 0, 5, 'Arrival anchor (from the dais)'),
+        (4382, 0, 5, 'Arrival anchor (from the dais)'),
+
         # Reached from map171 (and its slice map1711) ev76, the Sweetheart's
         # quest warp. The cell is a dead end otherwise — the other three cells
         # on this row each have a "To Dungeon B1" hole and this one does not.
