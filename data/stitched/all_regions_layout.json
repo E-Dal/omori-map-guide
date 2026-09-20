@@ -619,7 +619,7 @@
     },
     "184": {
       "x": -128,
-      "y": -12640,
+      "y": -12480,
       "crop": "full",
       "zOrder": 28,
       "groupId": "sweethearts_castle"
@@ -1725,7 +1725,7 @@
     },
     "4351": {
       "x": -2912,
-      "y": -7744,
+      "y": -7680,
       "crop": "full",
       "zOrder": 21,
       "groupId": "sweethearts_castle"
@@ -1806,6 +1806,20 @@
       "crop": "full",
       "zOrder": 369,
       "groupId": "pyrefly_forest"
+    },
+    "4382": {
+      "x": -4512,
+      "y": -6272,
+      "crop": "full",
+      "zOrder": 373,
+      "groupId": "sweethearts_castle"
+    },
+    "4354": {
+      "x": -4512,
+      "y": -6272,
+      "crop": "full",
+      "zOrder": 374,
+      "groupId": "sweethearts_castle"
     }
   },
   "routes": [
@@ -2138,7 +2152,7 @@
       "pts": [
         {
           "x": -2320,
-          "y": -7248,
+          "y": -7184,
           "snap": {
             "mapId": 4351,
             "evId": 1,
@@ -3823,7 +3837,7 @@
         },
         {
           "x": 272,
-          "y": -11536,
+          "y": -11376,
           "snap": {
             "mapId": 184,
             "evId": 1,
@@ -8070,6 +8084,118 @@
           }
         }
       ]
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": -1904,
+          "y": -5968,
+          "snap": {
+            "mapId": 4351,
+            "evId": 6,
+            "evName": "Heaven and Hell",
+            "ox": 1008,
+            "oy": 1712
+          }
+        },
+        {
+          "x": -4496,
+          "y": -6096,
+          "snap": {
+            "mapId": 4382,
+            "evId": 903,
+            "evName": "Arrival anchor (from the dais)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ],
+      "kind": "one"
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": -3024,
+          "y": -6096,
+          "snap": {
+            "mapId": 4382,
+            "evId": 3,
+            "evName": "Heaven and Hell",
+            "ox": 1488,
+            "oy": 176
+          }
+        },
+        {
+          "x": -1904,
+          "y": -5968,
+          "snap": {
+            "mapId": 4351,
+            "evId": 6,
+            "evName": "Heaven and Hell",
+            "ox": 1008,
+            "oy": 1712
+          }
+        }
+      ],
+      "kind": "one"
+    },
+    {
+      "color": "#33ccff",
+      "pts": [
+        {
+          "x": -1904,
+          "y": -5968,
+          "snap": {
+            "mapId": 4351,
+            "evId": 6,
+            "evName": "Heaven and Hell",
+            "ox": 1008,
+            "oy": 1712
+          }
+        },
+        {
+          "x": -4496,
+          "y": -6096,
+          "snap": {
+            "mapId": 4354,
+            "evId": 903,
+            "evName": "Arrival anchor (from the dais)",
+            "ox": 16,
+            "oy": 176
+          }
+        }
+      ],
+      "kind": "one"
+    },
+    {
+      "color": "#66ff66",
+      "pts": [
+        {
+          "x": -3024,
+          "y": -6096,
+          "snap": {
+            "mapId": 4354,
+            "evId": 7,
+            "evName": "Heaven and Hell",
+            "ox": 1488,
+            "oy": 176
+          }
+        },
+        {
+          "x": -1904,
+          "y": -5968,
+          "snap": {
+            "mapId": 4351,
+            "evId": 6,
+            "evName": "Heaven and Hell",
+            "ox": 1008,
+            "oy": 1712
+          }
+        }
+      ],
+      "kind": "one"
     }
   ],
   "decorations": [
@@ -13059,6 +13185,62 @@
         [
           4,
           14
+        ]
+      ]
+    },
+    "4382": {
+      "id": 4382,
+      "name": "-- SWEETHEART DUNGEON 3 [heaven]",
+      "width": 47,
+      "height": 9,
+      "parallaxName": "!parallax_mountain",
+      "bgm": "xx_ambient_loop",
+      "cropX": 7,
+      "cropY": 30,
+      "polygon": [
+        [
+          7,
+          30
+        ],
+        [
+          54,
+          30
+        ],
+        [
+          54,
+          39
+        ],
+        [
+          7,
+          39
+        ]
+      ]
+    },
+    "4354": {
+      "id": 4354,
+      "name": "-- SWEETHEART DUNGEON 2 [hell]",
+      "width": 47,
+      "height": 8,
+      "parallaxName": "parallax_stump_red",
+      "bgm": "xx_ambient_loop",
+      "cropX": 7,
+      "cropY": 76,
+      "polygon": [
+        [
+          7,
+          76
+        ],
+        [
+          54,
+          76
+        ],
+        [
+          54,
+          84
+        ],
+        [
+          7,
+          84
         ]
       ]
     }
