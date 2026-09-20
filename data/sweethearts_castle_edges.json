@@ -2950,11 +2950,11 @@
     },
     {
       "from": {
-        "mapId": 435,
+        "mapId": 4354,
         "evId": 7,
         "evName": "Heaven and Hell",
-        "x": 53,
-        "y": 81,
+        "x": 46,
+        "y": 5,
         "page": 1,
         "hitbox": {
           "L": 0,
@@ -2994,11 +2994,11 @@
     },
     {
       "from": {
-        "mapId": 438,
+        "mapId": 4382,
         "evId": 3,
         "evName": "Heaven and Hell",
-        "x": 53,
-        "y": 35,
+        "x": 46,
+        "y": 5,
         "page": 1,
         "hitbox": {
           "L": 0,

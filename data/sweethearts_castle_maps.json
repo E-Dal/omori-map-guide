@@ -566,7 +566,7 @@
   "4354": {
     "id": 4354,
     "name": "-- SWEETHEART DUNGEON 2 [hell]",
-    "width": 46,
+    "width": 47,
     "height": 8,
     "parallaxName": "parallax_stump_red",
     "bgm": "xx_ambient_loop",
@@ -578,11 +578,11 @@
         76
       ],
       [
-        53,
+        54,
         76
       ],
       [
-        53,
+        54,
         84
       ],
       [
@@ -734,7 +734,7 @@
   "4382": {
     "id": 4382,
     "name": "-- SWEETHEART DUNGEON 3 [heaven]",
-    "width": 46,
+    "width": 47,
     "height": 9,
     "parallaxName": "!parallax_mountain",
     "bgm": "xx_ambient_loop",
@@ -746,11 +746,11 @@
         30
       ],
       [
-        53,
+        54,
         30
       ],
       [
-        53,
+        54,
         39
       ],
       [

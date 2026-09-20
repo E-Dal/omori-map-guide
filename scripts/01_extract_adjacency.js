@@ -783,13 +783,19 @@ const PATCHES = {
       4351: { src: 435, name: '[dungeon main]', polygon: [[10,4],[45,4],[45,62],[10,62]] },
       4352: { src: 435, name: '[right corridor]', polygon: [[64,11],[71,11],[71,33],[64,33]] },
       4353: { src: 435, name: '[bottom small]',   polygon: [[37,38],[46,38],[46,49],[37,49]] },
-      // The easter egg. Stand on the red dais at (41, 57) — inside 4351 — for
+      // The easter egg. Both run one column wider than the lit part of the
+      // corridor, to col 53, because that is where the way back stands: ev7
+      // here and ev3 in map438, both returning to the dais. A column of unlit
+      // floor is worth a real edge — without it the room can only be arrived
+      // at, and a route into it would have nothing to hold on to at this end.
+      //
+      // Stand on the red dais at (41, 57) — inside 4351 — for
       // about six seconds and ev6, named 'Heaven and Hell', walks you through
       // two corridors: this one first, then map438's. Neither is in goats.dev's
       // render, because both are drawn by the map's parallax rather than by
       // tiles, and neither had a slice, which is why the atlas had no trace of
       // either. ev7 at (53, 81) is the way back to the dais.
-      4354: { src: 435, name: '[hell]', polygon: [[7,76],[53,76],[53,84],[7,84]] },
+      4354: { src: 435, name: '[hell]', polygon: [[7,76],[54,76],[54,84],[7,84]] },
       // Map437 ALCOVES II — 9 main alcoves (skip noise alcove 7)
       4372: { src: 437, name: '[alcove 2]', polygon: [[26,3],[34,3],[34,16],[26,16]] },
       4375: { src: 437, name: '[alcove 5]', polygon: [[27,25],[34,25],[34,38],[27,38]] },
@@ -798,7 +804,7 @@ const PATCHES = {
       // Map438 SWEETHEART DUNGEON 3 — 1 main room
       4381: { src: 438, name: '[main room]', polygon: [[7,6],[30,6],[30,17],[7,17]] },
       // The other half of map435's 'Heaven and Hell', arrived at second.
-      4382: { src: 438, name: '[heaven]', polygon: [[7,30],[53,30],[53,39],[7,39]] },
+      4382: { src: 438, name: '[heaven]', polygon: [[7,30],[54,30],[54,39],[7,39]] },
       // Map453 CLUB SANDWICH room atlas — this room is reached from Map175 'Face Wall'.
       4535: { src: 453, name: '[jam packets room]', polygon: [[30,31],[37,31],[37,41],[30,41]] },
     },

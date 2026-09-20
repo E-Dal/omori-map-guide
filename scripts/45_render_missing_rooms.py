@@ -43,8 +43,8 @@ TILE = 32
 # (mapId, col0, row0, col1, row1, what it is). Inclusive tile bounds, taken
 # from where the self-render has light in it — see the module docstring.
 ROOMS = [
-    (435, 7, 76, 52, 83, "HELL — 'Heaven and Hell' first stop"),
-    (438, 7, 30, 52, 38, "HEAVEN — 'Heaven and Hell' second stop"),
+    (435, 7, 76, 53, 83, "HELL — 'Heaven and Hell' first stop"),
+    (438, 7, 30, 53, 38, "HEAVEN — 'Heaven and Hell' second stop"),
 ]
 
 
