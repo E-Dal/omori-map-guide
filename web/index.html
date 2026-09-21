@@ -2878,12 +2878,13 @@ function rebuildLegend() {
 // the one with things hidden from it — but offRoute walks every key, so the
 // other direction works too and HEAVEN uses it.
 //
-// HEAVEN and HELL are the exception in another way: they sit on exactly the
-// same tile, one zOrder apart, because they are the same corridor in two
-// colours. Two maps on one square would be a mess if both were ever drawn, and
-// putting each on its own route is what keeps only one of them up. Note this is
-// the atlas's arrangement, not the game's — map435's dais shows you both, on
-// either route.
+// HEAVEN and HELL sit on exactly the same tile, one zOrder apart, because the
+// game puts them there: map435 ev6 branches on variable 1100 `Stayed_Home`,
+// set on Day 1 in PLAYER'S HOUSE by whether Sunny goes outside. Stayed home and
+// the dais takes you to the black corridor with `bs_waiting_for` playing;
+// went out and it is the white one with `bs_glade`. One dais, one trip, and
+// which corridor you get is the route you are on. So they can share a square,
+// and the route each belongs to is the game's own, not a convenience.
 const ROUTE_ONLY = {
   sunny: new Set([
     '4382',                                               // HEAVEN
